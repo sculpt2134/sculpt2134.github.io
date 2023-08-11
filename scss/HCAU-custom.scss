@@ -1,0 +1,35 @@
+#wrap{
+    display:flex;
+    min-height: 100vh;
+    .HCAU-sidebar{
+        background: #00AAD2;
+        flex:0 0 64px;
+    }
+    .HCAU-menubar{
+        flex:1 1 0;
+        background:#fff;
+        
+        .menu{
+            float:right;
+            width:305px;
+            min-height: 100vh;
+            padding-left: 20px;
+            border-right:1px solid #dedede;
+        }
+    }
+    .HCAU-container{
+        display: flex;
+        flex-direction: column;
+        flex:1 1 700px;
+        .HCAU-contents{
+            width:975px;
+           // border:1px solid;
+            flex:1 0 auto;
+        }
+        .HCAU-footer{
+            height:80px;
+            background:#333;
+            color:#fff;
+        }
+      }
+}
