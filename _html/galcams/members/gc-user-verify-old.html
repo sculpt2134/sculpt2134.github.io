@@ -1,0 +1,470 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+    <title>본인 인증</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="date" content="">
+    <meta name="sitecode" content="">
+
+    <meta name="google-site-verification" content="">
+
+    <meta name="twitter:card" content="">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:type" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:locale" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:country-name" content="">
+
+    <link rel="shortcut icon" href="">
+    <link rel="apple-touch-icon" href="" sizes="">
+
+    <title>갤럭시 캠퍼스 스토어</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="date" content="">
+    <meta name="sitecode" content="">
+
+
+    <meta name="twitter:card" content="">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+
+    <meta property="og:url" content="">
+    <meta property="og:image" content="https://www.samsung.com/sec/static/samsung_logo.png">
+    <meta property="og:type" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:locale" content="ko">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:country-name" content="">
+
+    <meta itemprop="name" content="">
+    <meta itemprop="image" content="">
+    <meta itemprop="url" content="">
+    <meta itemprop="description" content="">
+    <meta itemprop="keywords" content="">
+
+    <link rel="dns-prefetch" href="https://images.samsung.com">
+    <link rel="preconnect" href="https://images.samsung.com">
+    <link rel="shortcut icon" href="../../../_images/favicon.ico">
+    <link rel="stylesheet" href="../../../_css/reset.css">
+    <link rel="stylesheet" href="../../../_css/style.css">
+    <link rel="stylesheet" href="../../../_css/default.css">
+    <link rel="stylesheet" href="../../../_css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../../_css/gc-common.css"><!-- 20220509 gc 추가 -->
+    <script src="../../../_script/jquery-3.3.1.min.js"></script>
+    <script src="../../../_script/jquery-ui.min.js"></script>
+    <script src="../../../_script/jquery.cookie.js"></script>
+    <script src="../../../_script/jquery.blockUI.js"></script>
+    <script src="../../../_script/common.js"></script>
+    <script src="../../../_script/base.js"></script>
+    <script src="../../../_script/layerPop.js"></script>
+    <script src="../../../_script/netfunnel.js" charset="UTF-8"></script>
+    <script src="../../../_script/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../../_script/jquery.countdown.js"></script>
+    <script src="../../../_script/default.js"></script> <!-- 20220511 gc 추가-->
+    <!-- s : AA 태깅 -->
+    <script type="text/javascript">
+        var pageURL = window.location.href;
+        var siteCode = "ebiz-event";
+        var siteName = "갤럭시 캠퍼스 스토어";
+
+        var digitalData = {
+            "page": {
+                "pageInfo": {
+                    "siteCode": siteCode,
+                    "siteSection": "",
+                    "pageName": "",
+                    "pageURL": pageURL,
+                    "pageTrack": "microsite",
+                    "version": "KDP"
+                },
+                "pathIndicator": {
+                    "depth_2": "",
+                    "depth_3": "",
+                    "depth_4": "",
+                    "depth_5": ""
+                }
+            },
+            "user": {
+                "loginStatus": ""
+            },
+            "product": {
+                "category": "",
+                "model_code": "",
+                "model_name": "",
+                "displayName": "",
+                "pvi_type_code": "",
+                "pvi_type_name": "",
+                "pvi_subtype_code": "",
+                "pvi_subtype_name": ""
+
+            }
+        }
+
+        // depth Info.
+        var depth = window.location.href.split("/").length;
+        var depth_last = window.location.href.split("/")[depth - 1];
+        if (depth_last == "" || depth_last.charAt(0) == "?") {
+            depth -= 1;
+        }
+
+        // set site code
+        if (siteName != "") siteCode = siteCode + ":" + siteName.toLowerCase();
+
+        // set site section value
+        if ((digitalData.page.pathIndicator.depth_2 != "") || (digitalData.page.pageInfo.pageTrack == "flagship pdp")) {
+            if (digitalData.page.pathIndicator.depth_2 == "shop" || digitalData.page.pathIndicator.depth_2 ==
+                "my account") {
+                digitalData.page.pageInfo.siteSection = siteCode + ":" + digitalData.page.pathIndicator.depth_2;
+            } else {
+                digitalData.page.pageInfo.siteSection = siteCode + ":consumer"; //product page
+            }
+        } else if (depth == 5) {
+            digitalData.page.pageInfo.siteSection = siteCode + ":home"; //home
+        } else {
+            digitalData.page.pageInfo.siteSection = siteCode + ":" + window.location.href.split("/")[5];
+        }
+
+        // set product category value
+        /* 	if(digitalData.page.pathIndicator.depth_3 != ""){
+        	    digitalData.product.category = digitalData.page.pathIndicator.depth_3;
+        	} */
+
+        // set pathIndicator(not product page)
+        if (digitalData.page.pathIndicator.depth_2 == "") {
+            if (depth >= 6) digitalData.page.pathIndicator.depth_2 = window.location.href.split("/")[5].toLowerCase();
+            if (depth >= 7) digitalData.page.pathIndicator.depth_3 = window.location.href.split("/")[6].toLowerCase();
+            if (depth >= 8) digitalData.page.pathIndicator.depth_4 = window.location.href.split("/")[7].toLowerCase();
+            if (depth >= 9) digitalData.page.pathIndicator.depth_5 = window.location.href.split("/")[8].toLowerCase();
+        }
+
+        // set pageName
+        var pageName = siteCode;
+        if (digitalData.page.pathIndicator.depth_2 != "")
+            pageName += ":" + digitalData.page.pathIndicator.depth_2;
+        if (digitalData.page.pathIndicator.depth_3 != "")
+            pageName += ":" + digitalData.page.pathIndicator.depth_3;
+        if (digitalData.page.pathIndicator.depth_4 != "")
+            pageName += ":" + digitalData.page.pathIndicator.depth_4;
+        if (digitalData.page.pathIndicator.depth_5 != "")
+            pageName += ":" + digitalData.page.pathIndicator.depth_5.replace(/^\s+|\s+$/gm, '');
+
+        // check PD, GPD
+        var pageTrackName = digitalData.page.pageInfo.pageTrack;
+        if (pageTrackName == "product detail" || pageTrackName == "generic product details") {
+            pageName += ":" + digitalData.product.model_code;
+            var displayName = "".replace(/(<([^>]+)>)/gi, "");
+            digitalData.product.displayName = displayName;
+        }
+        digitalData.page.pageInfo.pageName = pageName;
+    </script>
+    <script async src="https://assets.adobedtm.com/c8a575b84bb9/0d8938615268/launch-160c25cdcd93.min.js"></script>
+    <!-- e : AA 태깅 -->
+
+    <!-- Google Tag Manager -->
+    <!-- <script>
+			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-NVX3V74');
+		</script> -->
+    <!-- End Google Tag Manager -->
+
+    <!-- s : 20220511 gc 추가 -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            GCFront.detectScroll2();
+        });
+    </script>
+    <!-- s : 20220511 gc 추가 -->
+</head>
+
+<body class="gc_gray">
+    <script type="text/javascript">
+        let stContextPath;
+
+        $(document).ready(function () {
+
+            //===================================================================
+            stContextPath = "/event/galaxycampus/";
+            stContextPath = stContextPath.replace("/event/", "").replace("/", "");
+            $("#ctPath").val(stContextPath);
+            //===================================================================
+
+            // init
+            $(".error-msg").hide();
+            $(".authComp").show();
+
+            // F5, ctrl + F5, ctrl + r 새로고침 막기
+            $(document).keydown(function (e) {
+                if (e.which === 116) {
+                    if (typeof event == "object") {
+                        event.keyCode = 0;
+                    }
+                    return false;
+                } else if (e.which === 82 && e.ctrlKey) {
+                    return false;
+                }
+            });
+
+        }); // End Ready
+
+        var certification = {
+
+            validationYN: "Y",
+            validationPassyn: "Y",
+
+            authComplete: function () {
+                if (certification.validationCheck()) {
+                    var option = {
+                        url: "/event/galaxycampus/xhr/join/insertCheckGalaxyCampus",
+                        type: "post",
+                        data: {
+                            joinPathCd: $("#documentList").find("li.focused").attr("value"),
+                            joinPathCdNm: $("#inpUserAccount").val(),
+                            stSht: $("#shtId").val()
+                        },
+                        done: function (data) {
+                            //if(data == 1)
+                            //location.href = '/event/galaxycampus/member/documentAuthPage/?joinPathCd=' +  + "&joinPathCdNm=" + 
+                            location.href = '/event/galaxycampus/member/documentAuthPage/?joinPathCd=' +
+                                data.joinPathCd + '&joinPathCdNm=' + data.joinPathCdNm
+                        }
+
+                    };
+                    ajax.call(option);
+                }
+
+            },
+            validationCheck: function () {
+                certification.validationPassyn = "Y";
+                let check = $("#documentList").find("li.focused").attr("value");
+                let userCheck = $("#inpUserAccount").val();
+
+
+                if (check != 0) {
+                    $(".listCheck").hide();
+                    if (check == 6 && userCheck == "") {
+                        $(".checkSelf").show();
+
+                        return false;
+                    } else {
+                        $(".checkSelf").hide();
+                        return true;
+                    }
+                } else {
+                    $(".listCheck").show();
+                    certification.validationPassyn = "N";
+                }
+
+
+                return certification.validationPassyn == "Y" ? true : false;
+            }
+
+        }
+
+
+
+        $(document).on("click", "#emailBtn", function () {
+
+            location.href = 'gc-emailAuthPage.html';
+
+        });
+
+        $(document).on("click", "#documentList li", function () {
+            var docuCheck = $(this).val();
+            $("#docuCheck").val(docuCheck);
+            if ($("#docuCheck").val() == 6) {
+                $("#docuSelf").show()
+            } else {
+                $("#inpUserAccount").val("");
+                $("#docuSelf").hide();
+            }
+
+        });
+    </script>
+
+    <!-- s : 스킵 -->
+    <div id="skip_content"></div>
+    <!-- e : 스킵 -->
+    <div id="wrap" class="wrapper">
+        <!-- s : 머리글 영역 -->
+        <input type="hidden" id="loginYn" value="" />
+        <header id="header" class="header">
+            <!-- 20220504 클래스 추가 -->
+            <div class="s-inner">
+                <a href="/" class="logo">
+                    <h1><span>로그인/회원가입</span><img src="https://account.samsung.com/accounts/v1/resources/one-ui/images/svg/txt_logo.svg" onerror="this.src='https://account.samsung.com/accounts/v1/resources/one-ui/images/layout/txt_logo.png';" alt="Samsung account" class="gc_mo_hide"></h1>
+                </a>
+                <!-- s : 20220519 gc 추가 -->
+                <div class="util_box">
+                    <a href="javascript:;" onclick="history.back();" class="gc_btn_prev">
+                        <i class="gc_icon i-prev-wh">뒤로가기</i>
+                    </a>
+                </div>
+                <!-- e : 20220519 gc 추가 -->
+            </div>
+        </header>
+        <!-- e : 머리글 영역 -->
+
+        <!-- s : 본문 영역 -->
+        <div id="container" class="gc_container member-bg">
+            <!-- s : 인증방식 선택 -->
+            <div class="content">
+                <!-- s : 2022-01-18 갤캠스 수정 -->
+                <div class="section-login login-front login-certify-wrap gc_account subpage">
+                    <!-- 2022-01-18 갤캠스일 경우 login-certify-wrap 클래스 추가 -->
+                    <div class="wrap-login-content">
+                        <!-- header, footer가 붙는 경우 클래스 subpage 삽입 -->
+                        <div class="box-content-rounded">
+                            <!-- s : 타이틀 -->
+                            <div class="tit-box-logo" style="display:block">
+                                <h1 class="title">본인 인증</h1>
+                                <p>삼성 서비스를 이용하려면 본인 인증이 필요합니다.</p>
+                            </div>
+                            <!-- e : 타이틀 -->
+                            <!-- s : 2022-01-19 -->
+                            <div class="flex flex_cert">
+                                <div class="flex_box">
+                                    <a href="javascript:;" title="I-PIN 인증">
+                                        <figure>
+                                            <img src="../../../_images/icons/icon-cert-ipin.svg" alt="I-PIN">
+                                            <figcaption class="flex_tit">I-PIN</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="flex_box">
+                                    <a href="javascript:;" title="휴대폰 인증">
+                                        <figure>
+                                            <img src="../../../_images/icons/icon-cert-phone.svg" alt="휴대폰">
+                                            <figcaption class="flex_tit">휴대폰</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- e : 2022-01-19 -->
+                        </div>
+                    </div>
+                </div>
+                <!-- e : 2022-01-18 갤캠스 수정 -->
+            </div>
+            <!-- e : 인증방식 선택 -->
+            <!-- 레이어 팝업 모음 -------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <!-- s : 공통 팝업(alert)  -->
+            <div class="layer-pop layer-default alert" id="commonAlert" tabindex="0" data-popup-layer="commonAlert"
+                data-focus="commonAlert">
+                <div class="layer-header blind">
+                    <h2></h2>
+                </div>
+                <div class="layer-content">
+                    <p style="word-break:keep-all;"></p>
+                    <div class="btn-box">
+                        <a href="javascript:void(0)" onclick="" class="btn btn-d btn-type2">확인</a>
+                    </div>
+                </div>
+            </div>
+            <!-- e : 공통 팝업(alert)  -->
+            <!-- s : 공통 팝업(confirm)  -->
+            <div class="layer-pop layer-default" id="commonConfirm" tabindex="0" data-popup-layer="commonConfirm"
+                data-focus="commonConfirm">
+                <div class="layer-header blind">
+                    <h2></h2>
+                </div>
+                <div class="layer-content">
+                    <p></p>
+                    <div class="btn-box double">
+                        <!-- 버튼 두개시 클래스 double 추가 -->
+                        <a href="javascript:void(0)" class="btn btn-d btn-type1" id="commonConfirmCancelBtn"
+                            onclick="closeLayer('commonConfirm');">취소</a>
+                        <a href="javascript:void(0)" class="btn btn-d btn-type2" id="commonConfirmOkBtn">확인</a>
+                    </div>
+                </div>
+                <button type="button" class="pop-close" id="closeCommonConfirmBtn" name="closeCommonConfirmBtn"
+                    data-focus-next="commonConfirm">팝업닫기</button>
+            </div>
+            <!-- e : 공통 팝업(confirm)  -->
+
+
+            <!-- s : gc 본인인증 성공 팝업 20220513 -->
+            <div class="layer-pop layer-default layer_gc alert" id="popCertSuccess" tabindex="0"
+                data-popup-layer="popCertSuccess" data-focus="popCertSuccess">
+                <div class="layer-header blind">
+                    <h2></h2>
+                </div>
+                <!-- s : 본문 영역 -->
+                <div class="layer-content">
+                    <p class="txt_item">본인인증이 완료되었습니다.</p>
+                </div>
+                <div class="btn-box">
+                    <button type="button" class="btn btn-d btn-type2" id="">확인</button>
+                </div>
+                <button type="button" class="pop-close" data-focus-next="popCertSuccess" onclick="closeLayer('popCertSuccess');">팝업닫기</button>
+                <!-- e : 본문 영역 -->
+            </div>
+            <!-- e : gc 본인인증 성공 팝업 20220513 -->
+            <!-- s : gc 본인인증 실패 팝업 20220513 -->
+            <div class="layer-pop layer-default layer_gc alert" id="popCertFail" tabindex="0" data-popup-layer="popCertFail" data-focus="popCertFail">
+                <div class="layer-header blind">
+                    <h2></h2>
+                </div>
+                <!-- s : 본문 영역 -->
+                <div class="layer-content">
+                    <p class="txt_item">본인인증에 실패하였습니다.<br>본인인증이 안되는 경우 학생증 인증을 통해 회원가입을 진행해 주세요.</p>
+                </div>
+                <div class="btn-box">
+                    <button type="button" class="btn btn-d btn-type2" id="">확인</button>
+                </div>
+                <button type="button" class="pop-close" data-focus-next="popCertFail"
+                    onclick="closeLayer('popCertFail');">팝업닫기</button>
+                <!-- e : 본문 영역 -->
+            </div>
+            <!-- e : gc 본인인증 실패 팝업 20220513 -->
+
+            <script src="../../../_script/jquery.form.min.js"></script>
+        </div>
+        <!-- e : 본문 영역 -->
+
+        <!-- s : 바닥글 영역 -->
+        <!-- <footer id="footer">
+			
+			    </footer> -->
+        <!-- e : 바닥글 영역 -->
+        <script type="text/javascript">
+            function showSafety() {
+                $(".dropDown-content .subDesc").hide();
+                $(".dropDown-content .dropButton").hide();
+    
+                $(".dropDown-content .dropcontent").show();
+            }
+        </script>    
+    </div>
+</body>
+
+</html>

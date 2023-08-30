@@ -1,0 +1,1314 @@
+
+            @charset "UTF-8";
+
+            .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+                right: 10px;
+                left: auto;
+            }
+            .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+                left:10px;
+                right:auto;
+            }
+            .swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+                opacity: 0.35;
+                cursor: auto;
+                pointer-events: none;
+            }
+            
+            .section {
+            	position:relative;
+            }
+            .chat-sticky-wrap {
+                display: none; }
+
+            .s-gotop-wrap {
+                display: none !important; }
+
+            .QSISlider {
+                display: none !important; }
+
+            #currentUrl {
+                position: absolute;
+                left: -9999px;
+                width: 1px;
+                height: 1px; }
+
+            .bez-body button {
+                border: 0;
+                outline: 0;
+                background-color: white; }
+
+            .bez-body .bez-model-screen {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                pointer-events: none;
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/model_4drF_screen.png?$ORIGIN_PNG$&fmt=png-alpha);
+                background-repeat: no-repeat;
+                background-size: 30%;
+                background-position: 85% 15%; }
+
+            .bez-body #bezLoading {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 999;
+                display: none; }
+            .bez-body #bezLoading .dimd {
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.9);
+                position: absolute;
+                top: 0;
+                left: 0; }
+            .bez-body #bezLoading img {
+                position: absolute;
+                top: 70vw;
+                left: 50vw;
+                width: 24vw;
+                margin: -12vw 0 0 -12vw; }
+            .bez-body #bezLoading .loading-back {
+                opacity: .6; }
+
+			.bespoke-color-chip {
+				background-color:#fff;
+			}
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color  .bez-color-area {
+                -webkit-overflow-scrolling: touch;
+                display: block;
+                width: auto;
+                height: 72%;
+                white-space: nowrap; }
+            .bez-body .bez-contents .bez-content .bez-mobile .bez-wrapper.kf .bez-color .bez-color-interface .bez-color-area {
+                height: 72%;
+            }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes {
+                width: 95%;
+                height: 27vw; /* 20201019 변경 */
+                left: 5%;
+                padding-top: 9vw; }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .info-btn {
+                width: auto;
+                font-size: 3.5vw;
+                position: absolute;
+                left: 1.2vw;
+                top: 13%;
+                padding-right: 4.5vw;
+                font-weight: 700;
+                color: #333333;
+                letter-spacing: -0.2vw;
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/icon_color_info.png?$ORIGIN_PNG$&fmt=png-alpha);
+                background-repeat: no-repeat;
+                background-position: right;
+                background-size: auto 3.4vw; }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color-wrapper {
+                width: 100%;
+                height: 9.5vw; }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .colors.selected .color-wrapper {
+                background: -webkit-gradient(linear, left bottom, left top, from(#9c6dd1), to(#7dbdec));
+                background: linear-gradient(to top, #9c6dd1, #7dbdec);
+                border-radius: 25vw; }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .colors.disable {
+                opacity: .2;
+                pointer-events: none; }
+            .bez-body .bez-contents .bez-content .bez-wrapper.fs .bez-color .bez-color-interface .bez-color-area .palettes .colors.cmf2.disable,
+            .bez-body .bez-contents .bez-content .bez-wrapper.fs .bez-color .bez-color-interface .bez-color-area .palettes .colors.cmf3.disable{
+                display:none;
+                visibility: hidden; }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .colors {
+                position:relative;
+                float: left;
+                width: 9.4vw;
+                height: 16vw;
+                margin: .7vw;
+                margin-left: 1.1vw;
+                background-position: center bottom;
+                background-repeat: no-repeat;
+                background-size: 80%; }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .colors .color-img {
+                width: 100%;
+                height: 100%;
+                background-size: 9.5vw;
+                background-position: center;
+                background-repeat: no-repeat;
+                text-align: center;
+                text-indent: 100; }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .colors .color-img.sel{
+                position:absolute;;
+                top:0;
+                left:0;
+                opacity:0;
+                z-index:9;
+            }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .colors.selected .color-img.sel{opacity:1;}
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .colors p {
+                font-size: 2.2vw;
+                line-height: 2.45vw;
+                text-align: center;
+                padding-top: 0.3vw;
+                color: #5c5c5c; }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color1_1 .color-img {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_1_1.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color1_2 .color-img {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_1_2.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color1_3 .color-img {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_1_3.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color1_4 .color-img {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_1_4.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color1_5 .color-img {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_1_5.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color1_6 .color-img {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_1_6.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color1_7 .color-img {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_1_7.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color1_8 .color-img {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_1_8.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color2_1 .color-img {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_2_1.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color2_2 .color-img {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_2_2.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color2_3 .color-img {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_2_3.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color2_4 .color-img {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_2_4.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color2_5 .color-img {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_2_5.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color2_6 .color-img {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_2_6.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color3_1 .color-img {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_3_1.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color3_2 .color-img {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_3_2.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color1_1 .color-img.sel {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_1_1_sel.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color1_2 .color-img.sel {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_1_2_sel.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color1_3 .color-img.sel {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_1_3_sel.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color1_4 .color-img.sel {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_1_4_sel.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color1_5 .color-img.sel {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_1_5_sel.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color1_6 .color-img.sel {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_1_6_sel.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color1_7 .color-img.sel {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_1_7_sel.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color1_8 .color-img.sel {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_1_8_sel.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color2_1 .color-img.sel {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_2_1_sel.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color2_2 .color-img.sel {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_2_2_sel.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color2_3 .color-img.sel {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_2_3_sel.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color2_4 .color-img.sel {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_2_4_sel.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color2_5 .color-img.sel {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_2_5_sel.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color2_6 .color-img.sel {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_2_6_sel.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color3_1 .color-img.sel {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_3_1_sel.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color3_2 .color-img.sel {
+                background-image: url(//images.samsung.com/is/image/samsung/p5/sec/2020bespoke/experience/img/color_3_2_sel.png?$ORIGIN_PNG$&fmt=png-alpha); }
+            /* .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area #bezColorPalette2 {
+                width: 56%;
+                display: inline-block; }
+            .bez-body .bez-contents .bez-content .bez-mobile .bez-wrapper.fs .bez-color .bez-color-interface .bez-color-area #bezColorPalette2 {
+                width: 43% !important;
+            }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area #bezColorPalette3 {
+                width: 35%;
+                display: inline-block; } */
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes.kf {
+                height: 29vw; } /* 20201017 19 > 29 수정 */
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes.kf .colors {
+                width: 12vw;
+                height: 18vw;
+                margin: .3vw;
+                background-size: 80%;
+                margin-right: .6vw !important; }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes.kf .colors .color-wrapper {
+                width: 100%;
+                height: 12vw; }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes.kf .colors .color-img {
+                background-size: 12vw;
+                background-position: center;
+                background-repeat: no-repeat;
+                text-align: center;
+                text-indent: 100; }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes.kf .colors p {
+                font-size: 2.2vw;
+                line-height: 2.45vw;
+                text-align: center;
+                padding-top: 0.3vw;
+                color: #5c5c5c; }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area #bezColorPalette1.kf {
+                font-weight: 400; }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area #bezColorPalette2.kf {
+                display: block;
+                width: 95%;
+                top: -2vw; }
+            .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area #bezColorPalette3.kf {
+                display: block;
+                width: 95%;
+                top: -4vw;
+                left: 5%;}
+            .bez-body .bez-contents .bez-content .bez-mobile .bez-wrapper .bez-color .bez-color-interface .line {
+                width: 94%;
+                height: 1px;
+                background-color: #c0c0c0;
+                margin: 0 3%; }
+            .bez-body .bez-contents .bez-content .bez-mobile .bez-wrapper .bez-color .bez-color-interface .bez-color-description-area {
+                position: absolute;
+                width: 100%;
+                height: auto;
+                bottom: 21%;
+                text-align: center;
+                margin: 0 auto; }
+            .bez-body .bez-contents .bez-content .bez-mobile .bez-wrapper.kf .bez-color .bez-color-interface .bez-color-description-area {
+                bottom: 19.6%;
+            }
+            .bez-body .bez-contents .bez-content .bez-mobile .bez-wrapper.fs .bez-color .bez-color-interface .bez-color-description-area {
+                bottom: 6%;
+            }
+			
+			/* new버튼 추가 : 20210524 */
+			.ico_new {display:inline-block; background-color:#2089fe; border-radius:20px; padding:0 10px; color:#fff; height:25px; line-height:25px; font-size:16px; margin:-5px 0 0 5px;}
+			@media screen and (max-width: 1440px) {
+				.ico_new {font-size:1.1vw; height:1.736vw; line-height:1.736vw; margin:-0.3472vw 0 0 0.3472vw;}
+			}
+			@media screen and (max-width: 768px) {
+				.ico_new {font-size:2.6vw; height:3.776vw; line-height:3.776vw; padding:0 1.3vw; margin:-0.6510vw 0 0 0.6510vw;}
+			}
+
+
+            @media screen and (min-width: 1020px) {
+                .m {
+                    display: none !important; }
+                 .bez-body .bez-contents .bez-content .bez-mobile .bez-wrapper #bezColor .bez-color-interface .line {
+                    width: 100%;
+                    margin: -20px 0 0; }
+                /* .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area {
+                    height: 300px;
+                    margin-top: 350px;
+                    overflow: visible; } */
+                .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes {
+                    width: 100%;
+                    height: 40%;
+                    left: -3px;
+                    padding-top: 0;
+                    margin-bottom: 20px; }
+                .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .info-btn {
+                    position: absolute;
+                    left: 5px;
+                    top: -36px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    letter-spacing: -1px;
+                    padding-right: 25px !important;
+                    padding-top: 2px;
+                    background-size: auto 75%;
+                    background-position: right 4px; }
+                .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .color-wrapper {
+                    width: 90%;
+                    left: 5%;
+                    height: 48px; }
+                .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .colors {
+                    float: left;
+                    width: 52px;
+                    height: 48%;
+                    margin: 2px !important;
+                    cursor: pointer;
+                    background-position: center bottom;
+                    background-repeat: no-repeat;
+                    background-size: 80%; }
+                .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .colors .color-img {
+                    width: 100%;
+                    height: 100%;
+                    background-size: 100%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    text-align: center;
+                    text-indent: 100; }
+                .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .colors p {
+                    font-size: 12px;
+                    padding-top: 3px;
+                    line-height: 14px; }
+                .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes.kf {
+                    margin-top: 0; }
+                .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes.kf .color-wrapper {
+                    width: 98%;
+                    height: 51px; }
+                .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes.kf .colors {
+                    float: left;
+                    width: 52px;
+                    height: 48%;
+                    margin: 2px !important;
+                    margin-right: 4px !important;
+                    cursor: pointer;
+                    background-position: center bottom;
+                    background-repeat: no-repeat;
+                    background-size: 80%; }
+                .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes.kf .colors .color-img {
+                    width: 100%;
+                    height: 100%;
+                    background-size: 100%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    text-align: center;
+                    text-indent: 100; }
+                .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes.kf .colors p {
+                    font-size: 12px;
+                    padding-top: 3px;
+                    line-height: 14px; }
+                /* .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area #bezColorPalette2 {
+                    width: 68%;
+                    display: inline-block;
+                    top: 0; }
+                .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area #bezColorPalette3 {
+                    width: 37%;
+                    display: inline-block;
+                    top: 0; } */
+
+            }
+
+
+
+/***********************************************/
+
+
+/* 00 공통 - 추천컬러 아웃라인 */
+
+#bezColorListMatchBox .color-wrapper, 
+#bezColorListMatchBoxJeju .color-wrapper {outline:1px solid rgba(0,0,0,0.5);}
+
+
+/***********************************************/
+
+
+/* 00 공통 - 화살표 disable */
+
+.new-palette-prev.disable,
+.new-palette-next.disable,
+.new-box-prev-btn.disable,
+.new-box-next-btn.disable {opacity:0.2; pointer-events: none;}
+
+.new-palette-prev.disable:hover,
+.new-palette-next.disable:hover,
+.new-box-prev-btn.disable:hover,
+.new-box-next-btn.disable:hover {cursor:default;}
+
+
+/***********************************************/
+
+
+/* 00 공통 - 선택된 컬러 */
+
+
+#bezColor .bespoke-color-chip .palettes .color-wrapper {left:0; width:100%; height:100%; border-radius:0;}
+#bezColor .bespoke-color-chip .palettes .colors.selected {z-index:10;}
+#bezColor .bespoke-color-chip .palettes .colors.selected .color-wrapper {background:none; border-radius:0;}
+#bezColor .bespoke-color-chip .palettes .colors.selected .color-wrapper:before {
+		content:''; position:absolute; top:-4px; left:-4px; box-sizing:content-box; width:100%; height:100%; padding:4px; border-radius:5px; background:-webkit-gradient(linear, left bottom, left top, from(#9c6dd1), to(#7dbdec)); background:linear-gradient(to top, #9c6dd1, #7dbdec);}
+#bezColor .bespoke-color-chip .palettes p {font-size:0;}
+
+/* 다른 class로 */
+.bespoke-color-chip .bespoke-color-wrap .palettes .colors.is-choice {z-index:10;}
+.bespoke-color-chip .bespoke-color-wrap .palettes .colors.is-choice .color-wrapper {background:none; border-radius:0;}
+.bespoke-color-chip .bespoke-color-wrap .palettes .colors.is-choice .color-wrapper:before {
+		content:''; position:absolute; top:-4px; left:-4px; box-sizing:content-box; width:100%; height:100%; padding:4px; border-radius:5px; background:-webkit-gradient(linear, left bottom, left top, from(#9c6dd1), to(#7dbdec)); background:linear-gradient(to top, #9c6dd1, #7dbdec);}
+
+
+@media screen and (max-width: 1019px) {
+    .bez-body .bez-contents .bez-content .bez-mobile .bez-wrapper #bezPopup .popups {top:30%;}
+
+    /* 공통-선택된 컬러 */
+    .bespoke-color-chip .bespoke-color-wrap .palettes .colors.selected .color-wrapper:before {top:-0.8vw; left:-0.8vw;  padding:0.8vw; border-radius:1.2vw;}
+
+    /* 다른 class로 */
+    .bespoke-color-chip .bespoke-color-wrap .palettes .colors.is-choice .color-wrapper:before {top:-0.8vw; left:-0.8vw;  padding:0.8vw; border-radius:1.2vw;}
+}
+
+
+
+/***********************************************/
+
+
+/* 02 컬러선택 */
+
+/* 02-1 레이이아웃 */
+
+@media screen and (max-width: 768px) {
+    /* 오른쪽 */
+    .bez-body .bez-contents .bez-content .bez-mobile .bez-wrapper.fs .bez-color .bez-color-interface .bez-color-area #bezColorPalette2 {width:177vw !important;}
+    .bez-body .bez-contents .bez-content .bez-mobile.onColor {height:240vw !important;}
+}
+
+@media screen and (min-width: 1440px) {
+    /* 왼쪽 */
+    .bez-body .bez-contents .bez-content .bez-mobile .bez-wrapper #bezColor {height:890px; margin-top:-475px;}
+    .bez-body .bez-contents .bez-content .bez-mobile .bez-wrapper #bezColor #bezColorPreviewArea {height:770px; margin-top:90px; margin-left:40px;}
+    /* 오른쪽 */
+    .bez-body .bez-contents .bez-content .bez-mobile .bez-wrapper #bezColor .bez-color-interface {height:770px; margin-top:90px;}
+    .bez-body .bez-contents .bez-content .bez-mobile .bez-wrapper #bezColor .bez-color-interface .bez-title-area {padding-top:0; border-bottom:0;}
+	
+    .bez-body .bez-contents .bez-content .bez-mobile .bez-wrapper.fs .bez-color .bez-color-interface .bez-color-area #bezColorPalette2 {width:694px !important;}
+}
+
+
+/***********************************************/
+
+
+/* 02-1 모바일 전체 높이값 */
+
+@media screen and (max-width: 768px) {
+	/* .bez-body .bez-contents .bez-content .bez-mobile.onColor {height:220vw;} */
+	/* .bez-body .bez-contents .bez-content .bez-mobile.onColor {height:250vw;} */
+    
+	.bez-body .bez-contents .bez-content .bez-mobile .bez-wrapper #bezColor .bez-color .bez-preview-area {height:74.4vw;}
+	.bez-body .bez-contents .bez-content .bez-mobile .bez-wrapper #bezColor .bez-color .bez-color-interface {height:auto; padding-bottom:22vw;}
+	.bez-body .bez-contents .bez-content .bez-mobile .bez-wrapper #bezColor .bez-color .bez-color-interface .bez-btn-area {bottom:0;}
+}
+
+
+/***********************************************/
+
+
+/* 02-1 글라스 페인팅이란 */
+
+.new-color-desc .info-btn {display:inline-block; color:#333; font-weight:bold;}
+
+@media screen and (max-width: 768px) {
+    .new-color-desc {padding:4vw 5vw 0;}
+    .new-color-desc .info-btn {padding-right:4.5vw; background-position:right; background-size:auto 3.4vw; font-weight:700; font-size:3.5vw; letter-spacing:-0.2vw;}
+}
+
+@media screen and (max-width: 1440px) {
+    .new-color-desc {margin-top:185px;}
+    .new-color-desc .info-btn {padding-top:2px; padding-right:23px; background-position:right 3px; background-size:auto 75%; font-size:16px; letter-spacing:-1px;}
+}
+
+
+/***********************************************/
+
+
+/* 02-1 컬러선택 탭 */
+
+.new-color-tab img {width:100%; border-radius:50%; position:absolute; top:0;left:0;}
+.new-color-tab li {display:inline-block; text-align:center;}
+.new-color-tab li a {display:block;}
+
+.new-color-icon {position:relative; display:block;}
+.new-color-icon.new-js-tab-selected:before {
+	content:''; position:absolute; box-sizing:content-box; width:100%; height:100%; border-radius:50%; background:-webkit-gradient(linear, left bottom, left top, from(#9c6dd1), to(#7dbdec)); background: linear-gradient(to top, #9c6dd1, #7dbdec);}
+
+.new-color-tab {padding-top:30px; text-align:center;}
+.new-color-tab li {margin-right:33px;}
+.new-color-tab li:last-child {margin-right:0;}
+.new-color-tab li a {font-size:14px; padding:0 0 1.5vw;}
+.new-color-icon {width:62px; height:62px; margin-bottom:10px;}
+.new-color-icon.new-js-tab-selected:before {top:-4px; left:-4px; padding:4px;}
+	    
+@media screen and (max-width: 768px) {
+    .new-color-tab {margin-top:3.9215vw; text-align:center; font-size:0;}
+    .new-color-tab li {margin-right:2.6042vw;}
+    .new-color-tab li:last-child {margin-right:0;}
+    .new-color-tab li a {font-size:2.7vw; padding:1.5vw 0 1.778vw;}
+    .new-color-icon {width:10.6771vw; height:10.6771vw; margin-bottom:2vw; }
+    .new-color-icon.new-js-tab-selected:before {top:-0.8vw; left:-0.8vw; padding:0.8vw;}
+}
+
+@media screen and (max-width: 1440px) {
+
+    
+}
+
+
+/***********************************************/
+
+
+/* 02-1 팔레트 */
+
+/* 이전다음 버튼 */
+.new-palette-wrap {position:relative; width:574px; margin:10px auto 0;}
+.new-palette-wrap .new-palette-prev,
+.new-palette-wrap .new-palette-next {display:none; position:absolute; top:50%; width:31px; height:31px; margin-top:-15px;}
+.new-palette-wrap .new-palette-prev {left:-32px; background:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/bespoke-color-prev.png?$ORIGIN_PNG$') no-repeat 50% 50%; background-size:31px auto;}
+.new-palette-wrap .new-palette-next {display:block; right:-36px; background:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/bespoke-color-next.png?$ORIGIN_PNG$') no-repeat 50% 50%; background-size:31px auto;}
+.new-palette-wrap .new-palette-prev.last-time {left:auto; right:-32px;}
+/* 0311 arr */
+.new-palette-wrap .new-palette-next.modi-arr {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/bespoke-color-prev.png?$ORIGIN_PNG$');}
+
+/* 팔레트1~6 */
+/* 464 = (컬러칩 42 + 마진 2) * 10 + 좌마진2 + 우마진2 */
+.bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap #bezColorList.bez-color-area {overflow:hidden; width:574px; height:auto; margin:0 auto;}
+/* 694 = (컬러칩 42 + 마진 2) * 15 + 좌마진2 + 우마진2 */
+.bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes {display:none !important; overflow:hidden; position:static; width:860px; height:232px; padding:2px; margin-bottom:0 !important; transition:transform 0.5s;}
+.bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes.new-js-tab-show {display:block !important;}
+
+/* 컬러칩 */
+.bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-paletter-wrap #bezColorList.bez-color-area {margin-top:0;}
+.bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .colors {width:53px; height:53px; margin:2px !important; margin-right:2px !important; background-size:100%; position:relative;}
+.my-edition-color_list .color_btn.active:after, .my-edition-color_list .color_btn:hover:after { width: 100%; height: 80px; content: ''; display: block; position: absolute; top: 0; left: 0; box-sizing: border-box; background: url("//images.samsung.com/kdp/bespoke/images/v1/pc_colorchip_hover.png") no-repeat center top 2px; }
+.palettes .color-wrapper.active:after, .palettes .color-wrapper.hover:after {width: 100%; height: 80px; content: ''; display: block; position: absolute; top: 0; left: 0; border-radius: 50%; box-sizing: border-box; background: url("//images.samsung.com/kdp/bespoke/images/v1/pc_colorchip_hover.png") no-repeat center top 2px; }
+/* { cursor: url("//images.samsung.com/kdp/bespoke/cursor/cursor_grabbing.cur"), move; } */
+
+
+/***********************************************/
+
+
+/* 02-1 색상 모두 보기 */
+
+.new-colors-view {width:574px; margin:6px auto 0; text-align:right;}
+.new-colors-view .new-color-pop-open {font-size:14px; font-weight:bold; border-bottom:1px solid #000;}
+.new-colors-view .new-color-pop-open + .new-color-pop-open {margin-left:12px;}
+
+.my-edition-step_cont .new-colors-view {width:598px}
+
+
+/***********************************************/
+
+
+/* 02-1 프리즘+오리지널 탭 */
+
+.new-match-wrap {display:none;}
+.new-match-wrap.js-this-show {display:block; text-align:center;}
+
+/* 우측 레이아웃 */
+@media screen and (max-width: 768px) {
+    .bez-body .bez-contents .bez-content .bez-mobile .bez-wrapper #bezColor .bez-color-interface {/*width:540px;*//*0309*/width:556px;}
+}
+
+/* 우측 전체 */
+.bespoke-color-wrap {box-sizing:border-box; border:2px solid #e5e5e5; border-radius:20px; padding-bottom:55px;}
+
+/* 360 + 오리지날 탭 */
+.bespoke-color-tab {overflow:hidden;}
+.bespoke-color-tab > li {float:left; width:50%;}
+.bespoke-color-tab > li > a {display:block; height:56px; background:#e5e5e5; line-height:56px; text-align:center; font-weight:bold; font-size:17px; border-radius:0 17px 0 0;}
+.bespoke-color-tab > li.on > a {background:#fff;}
+.bespoke-color-tab > li:first-child > a {border-radius:17px 0 0 0;}
+
+/* 360 + 오리지날 탭내용 */
+.bespoke-color {display:none; border-radius:0 0 20px 20px; background-color:#fff;}
+.bespoke-color.on {display:block;}
+
+
+/** [ 360 : 프리셋, 추천컬러 ] **/
+
+/* 프리셋, 추천컬러 상단 */
+#setSelectArea {margin-top:15px;}
+
+/* 회색박스 (화살표 기준) */
+#bezColor #setSelectArea .color-border-box {display:inline-block; border:1px solid #ebebeb; border-radius:10px;}
+/* 제주 추천컬러 박스 */
+#bezColor #setSelectArea .color-border-box.jeju-color-box {display:none;}
+#bezColor #setSelectArea .type-jeju-edi .color-border-box.jeju-color-box {display:inline-block;}
+
+/* 긴거 */
+#bezColor #setSelectArea .palettes {position:static; width:auto; height:auto; margin:0; white-space:nowrap; font-size:0;}
+#bezColor #setSelectArea .colors {float:none; display:inline-block;}
+
+/* #bezColorListMatchJeju {display:none;}
+.type-jeju-edi #bezColorListMatchJeju {display:block;} */
+
+
+/* 360 - 썸네일 */
+#bezColor #setSelectArea .colors {box-sizing:border-box; }
+    /* 추천컬러 */
+    #bezColor #setSelectArea #bezColorListMatch .colors {width:40px; height:40px; margin:45px 20px !important;}
+    /* 추천컬러-제주일때-오른쪽 */
+    #bezColor #setSelectArea .type-jeju-edi #bezColorListMatch .colors {width:40px; height:40px; margin:45px 14px !important;}
+    /* 추천컬러-제주일때-왼쪽 0309 */
+    #bezColor #setSelectArea .type-jeju-edi #bezColorListMatchJeju .colors {width:40px; height:40px; margin:27px auto 0 !important; text-align:center;}
+    #bezColor #setSelectArea .type-jeju-edi #bezColorListMatchJeju .colors p {position:absolute; left:50%; margin-top:7px; transform:translateX(-50%); font-weight:bold; font-size:12px; color:#000;}
+    #bezColor #setSelectArea .type-jeju-edi #bezColorListMatchJeju .colors p span {display:block; margin-top:4px; vertical-align:baseline; font-weight:inherit; font-size:inherit; color:#737373;}
+    
+    /* 배지 */
+    #bezColor #setSelectArea .type-jeju-edi #bezColorListMatchJeju .color-wrapper:after,
+    #bezColor #setSelectArea #bezColorListSetJeju .color-wrapper:after,
+    #bezColor .color-wrapper.t-badge:after {position:absolute; z-index:10; width:13px; height:17px; content:'';}
+
+    /* 배지-추천컬러-왼쪽제주 */
+    #bezColor #setSelectArea .type-jeju-edi #bezColorListMatchJeju .color-wrapper:after {top:-3px; right:1px; background:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-recom-color-badge.png?$ORIGIN_PNG$') no-repeat 0 0; background-size:100% 100%;}
+    /* 배지-프리셋-왼쪽제주 */
+    #bezColor #setSelectArea #bezColorListSetJeju .color-wrapper:after {top:-3px; right:3px; background:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-recom-color-badge.png?$ORIGIN_PNG$') no-repeat 0 0; background-size:100% 100%;}
+    /* 배지-오리지날-코타2개 */
+    #bezColor .color-wrapper.t-badge:after {top:-1px; right:0; background:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/new-icon-badge-pc.png?$ORIGIN_PNG$') no-repeat 0 0; background-size:100% 100%;}
+    
+    /* 프리셋 */
+    #bezColor #setSelectArea #bezColorListSet .colors {width:67px; height:65px; margin:17px 6px !important;}
+    /* 프리셋-왼쪽제주 */
+    #bezColor #setSelectArea #bezColorListSetJeju .colors {width:67px; height:65px; margin:17px 15px !important;}
+
+/* 360 - 딱 해당영역 */
+#bezColor #setSelectArea .bez-color-area {overflow:hidden; height:auto; margin:0;}
+    /* 추천컬러 (가로40 + 좌마진20 + 우마진20) * 5개) */
+    #bezColor #setSelectArea #bezColorListMatch.bez-color-area {width:400px; margin:0 44px;} 
+    /* 추천컬러-제주일때-오른쪽 (가로40 + 좌마진14 + 우마진14) * 4개) */
+    #bezColor #setSelectArea .type-jeju-edi #bezColorListMatch.bez-color-area {width:272px; margin:0 40px;}
+    /* 추천컬러-제주일때-왼쪽 */
+    #bezColor #setSelectArea .type-jeju-edi #bezColorListMatchJeju.bez-color-area {width:auto;}
+    /* 0309 */
+    #bezColor .type-jeju-edi .color-border-box.jeju-color-box {margin-right:8px;}
+    #bezColor #bezColorListMatchBoxJeju.palettes {width:120px; height:132px;}
+
+    /* 추천컬러-제주일때-좌우정렬 */
+    #bezColor #setSelectArea .type-jeju-edi #bezColorListMatch,
+    #bezColor #setSelectArea .type-jeju-edi #bezColorListMatchJeju {font-size:0;}
+    #bezColor #setSelectArea .type-jeju-edi #bezColorListMatch.bez-color-area,
+    #bezColor #setSelectArea .type-jeju-edi #bezColorListMatchJeju.bez-color-area {display:inline-block; vertical-align:top; }
+
+    /* 프리셋 (가로67 + 좌마진5 + 우마진5 * 4개) 
+    #bezColor #setSelectArea #bezColorListSet.bez-color-area {width:308px;}
+    #bezColor #setSelectArea #bezColorListSetJeju.bez-color-area {width:auto;} */
+    /* 0311 mod 프리셋 (가로67 + 좌마진6 + 우마진6 * 3개)  */
+    #bezColor #setSelectArea #bezColorListSet.bez-color-area {width:237px; margin:0 40px 0 39px;}
+    #bezColor #setSelectArea #bezColorListSetJeju.bez-color-area {width:auto;}
+
+/* 화살표 */
+.new-box-prev-btn,
+.new-box-next-btn {position:absolute; z-index:20; top:50%; bottom:0; width:31px; height:31px; margin-top:-15px;}
+.new-box-prev-btn {display:none; left:-35px; background:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/bespoke-color-prev.png?$ORIGIN_PNG$') no-repeat 50% 50%; background-size:31px auto;}
+.new-box-next-btn {right:-35px; background:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/bespoke-color-next.png?$ORIGIN_PNG$') no-repeat 50% 50%; background-size:31px auto;}
+.new-box-next-btn.modi-arr {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/bespoke-color-prev.png?$ORIGIN_PNG$');}
+
+/* 화살표 (추천컬러) */
+.new-match-prev.new-box-prev-btn {left:16px;}
+.new-match-prev.new-box-prev-btn.last-time {left:auto; right:16px;}
+.new-match-next.new-box-next-btn {right:16px;}
+
+/* 화살표 (추천컬러-제주일때) */
+.type-jeju-edi .new-match-prev.new-box-prev-btn {left:10px;}
+.type-jeju-edi .new-match-prev.new-box-prev-btn.last-time {left:auto; right:10px;}
+.type-jeju-edi .new-match-next.new-box-next-btn {right:10px;}
+
+/* 화살표 (프리셋) */
+.new-set-prev.new-box-prev-btn {left:7px;}
+.new-set-prev.new-box-prev-btn.last-time {left:auto; right:16px;}
+.new-set-next.new-box-next-btn {right:8px;}
+
+/* 프리셋 */
+.freeset-jeju,
+.freeset-all {display:inline-block; vertical-align:top;}
+.freeset-jeju {position:relative; padding:22px 7px 0 40px; text-align:center;}
+.freeset-jeju:after {position:absolute; top:22px; bottom:0; right:-17px; border-right:1px solid #e5e5e5; content:'';}
+.freeset-all {padding-left:37px;}
+.freeset-title {margin-bottom:12px; font-weight:bold; font-size:12px;}
+.freeset-title img {display:block; width:136px; margin-bottom:10px;}
+
+/* 추천컬러 */
+.new-match-box {width:490px; margin-left:46px; text-align:center;}
+.new-match-box .new-match-tit {margin-bottom:10px; text-align:left; font-size:16px;}
+/* 추천컬러-제주 */
+.bespoke-color-chip .bespoke-color-wrap #bezColorListMatchBoxJeju.palettes p {font-size:12px;}
+
+
+/** [ 오리지날 ] **/
+
+/* 초기화 */
+[id*=bezColorListOrigin] {width:100% !important; height:auto !important; margin:0 !important;}
+
+#originColorArea.disable .original-title:not(.original-title-glam),
+#originColorArea.disable .original-special .freeset-title {opacity:0.2;}
+
+/* 배지설명 */
+.new-badge-desc {position:absolute; bottom:10px; right:15px; font-size:14px; color:#737373;}
+.new-badge-desc img {width:14px; vertical-align:middle;}
+
+/* 타이틀 */
+.original-title {padding-left:4px; margin:25px 0 3px; font-weight:bold; font-size:15px;}
+
+/* 회색박스 (화살표 기준) */
+#bezColor #originColorArea .color-border-box {display:inline-block; border:1px solid #ebebeb; border-radius:10px;}
+
+/* 긴거,썸네일 (오리지날+프리셋 공통) */
+#bezColor #originColorArea .palettes {position:static; width:auto; height:auto !important; padding-top:0; padding-bottom:2px; margin:0 !important; font-size:0;}
+#bezColor #originColorArea .colors {float:none; display:inline-block;}
+
+/* 오리지날 - 썸네일 */
+#bezColor #originColorArea [id*=bezColorListOrigin] .colors {width:61px; height:61px; margin:5px 2.5px!important; text-align:center;}
+#bezColor #originColorArea [id*=bezColorListOrigin] .colors:first-child {margin-left:5px !important;}
+#bezColor #originColorArea [id*=bezColorListOrigin] .colors p {margin-top:5px; font-weight:bold; font-size:12px; line-height:1.3; color:#000; letter-spacing:-0.04em; }
+
+/* 프리셋 */
+#bezColor #originColorArea #bezColorListSetBoxOrigin {font-size:0;}
+#bezColor #originColorArea #bezColorListSetOrigin .colors {width:67px; height:65px; margin:7px 9px !important;}
+
+/* 오리지날 - 딱 해당영역 (공통) */
+#bezColor #originColorArea .bez-color-area {overflow:hidden; height:auto; margin:0;}
+
+/* 프리셋 (가로67 + 좌마진9 + 우마진9 * 3개) */
+#bezColor #originColorArea #bezColorListSetOrigin.bez-color-area {width:auto; height:auto; }
+
+/* 제주 에디션 텍스트 */
+.jeju-edition-txt {display:inline-block; position:relative; left:4px; box-sizing:border-box; width:134px; padding-top:10px; text-align:center; font-weight:bold; font-size:12px; color:#727272;}
+
+.jeju-edition-txt:before {position:absolute; top:3px; left:0; width:100%; height:13px; border:1px solid #e5e5e5; border-top:0; content:'';}
+.jeju-edition-txt > span {padding:0 10px; background:#fff; vertical-align:baseline; font-weight:inherit; font-size:inherit; color:inherit;}
+
+/* 제주 스페셜 에디션 */
+.original-special {padding-left:4px;}
+#originColorArea .freeset-title {margin-top:25px; font-size:15px;}
+
+.step-box_color .my-edition-step_cont {border:0 !important;}
+.bespoke-color-chip .step-box_color .my-edition-step_cont {border:0 !important;}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+	.bespoke-color-wrap {height:auto; padding-bottom:3.8vw; background-color:#fff;}
+	.new-color-tab li {margin-right:2.2917vw;}
+	.new-color-icon {width:4.3056vw; height:4.3056vw; margin: 0 auto 10px;}
+    .new-palette-wrap {width:39.861vw;}
+    .bespoke-color-tab > li > a {font-size:1.1806vw; height:3.8vw; line-height:3.8vw;}
+
+	/* 이전다음 버튼 */
+    .new-palette-wrap .new-palette-prev,
+    .new-palette-wrap .new-palette-next {width:31px; width:2.2vw; height:31px; height:2.2vw; margin-top:-1vw}
+    .new-palette-wrap .new-palette-prev {left:1.3021vw; background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/new-big-prev-icon-mo.png?$ORIGIN_PNG$'); background-size:100% auto;}
+    .new-palette-wrap .new-palette-next {right:-2.5vw; background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/new-big-next-icon-mo.png?$ORIGIN_PNG$'); background-size:100% auto;}
+    .new-palette-wrap .new-palette-prev.last-time {left:auto; right:4.5vw;}
+	/* 0311 arr */
+	.new-palette-wrap .new-palette-next."WebContent/sec/static/evt/_css/app.css"modi-arr {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/new-big-prev-icon-mo.png?$ORIGIN_PNG$');}
+
+	/* 컬러칩 */
+	.bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap #bezColorList.bez-color-area {width:570px; width:39.5833vw; overflow:hidden; height:auto; margin:0 auto;}
+    .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-paletter-wrap #bezColorList.bez-color-area {width:828px; width:57.5vw; margin:0 auto; }
+    .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes {width:860px; width:59.9vw; height:16.1vw;}
+    .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .colors {width:53px; width:3.6806vw; height:53px; height:3.6806vw; margin:2px !important; margin:0.1389vw !important;}
+
+	/* 컬러칩 아래 하단부분 */
+	.new-colors-view {width:39.861vw;}
+	.new-colors-view .new-color-pop-open {font-size:0.9722vw;}
+	
+	.my-edition-step_cont .new-colors-view {width:41.5278vw;}
+}
+
+
+@media screen and (max-width: 768px) {
+    .new-palette-wrap {width:100%; margin-top:2.8vw}
+
+	/* 이전다음 버튼 */
+    .new-palette-wrap .new-palette-prev,
+    .new-palette-wrap .new-palette-next {width:5.9896vw; height:5.9896vw; margin-top:-2.9948vw}
+    .new-palette-wrap .new-palette-prev {left:1.3021vw; background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/new-big-prev-icon-mo.png?$ORIGIN_PNG$'); background-size:100% auto;}
+    .new-palette-wrap .new-palette-next {right:0.7813vw; background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/new-big-next-icon-mo.png?$ORIGIN_PNG$'); background-size:100% auto;}
+    .new-palette-wrap .new-palette-prev.last-time {left:auto; right:4.5vw;}
+	/* 0311 arr */
+	.new-palette-wrap .new-palette-next.modi-arr {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/new-big-prev-icon-mo.png?$ORIGIN_PNG$');}
+
+	/* 컬러칩 */
+	.bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap #bezColorList.bez-color-area {width:523px; width:68vw; overflow:hidden; height:auto; margin:0 auto;}
+    .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-paletter-wrap #bezColorList.bez-color-area {width:828px; width:107.8125vw; margin:0 auto; }
+    .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes {width:1120px; /*width:156.8627vw;*/width:146vw; height:374px !important; height:37.3vw !important;}
+    .bespoke-color-chip .bespoke-color-wrap .bespoke-color-content .bespoke-color .new-palette-wrap .bez-color-area .palettes .colors {width:66px; width:8.5938vw; height:61px; height:8vw; margin:6px !important; margin:0.5208vw !important;}
+
+	/* 컬러칩 아래 하단부분 */
+	.new-colors-view {width:66.4063vw; margin:2vw auto 0;}
+	.new-colors-view .new-color-pop-open {font-size:2.8vw;}
+	.my-edition-step_cont .new-colors-view {width:68vw;}	
+	
+	.my-edition-step_cont .new-colors-view {width:77.8646vw;}
+}
+
+
+
+/***********************************************/
+
+
+/* 02-1 프리즘+오리지널 탭 (모바일) */
+
+@media screen and (max-width:768px) {
+
+    /*0323 프리셋*/ 
+    .new-match-wrap.new-set-box {overflow:hidden; width:90.3vw; margin:0 auto;}
+    .new-match-wrap.new-set-box .freeset-jeju {float:left; padding-left:0;}
+    .new-match-wrap.new-set-box .freeset-all {float:right; padding-left:0;}
+
+    /* 우측 전체 */
+    .bespoke-color-wrap {height:auto; padding-bottom:5.8824vw; border-width:0.1961vw; /* border-radius:1.9608vw; */ /*0323 margin:4.4118vw 0.5882vw 0;*/margin:4.4118vw 2.5% 0;}
+    /* 360 + 오리지날 탭 */
+    .bespoke-color-tab > li > a {height:11.0677vw; line-height:11.0677vw; font-size:2.9948vw; border-radius:0 20px 0 0;}
+    .bespoke-color-tab > li:first-child > a {border-radius:20px 0 0 0;}
+
+    /** [ 360 : 프리셋, 추천컬러 ] **/
+
+    /* 프리셋, 추천컬러 상단 */
+    #setSelectArea {margin-top:3.9216vw;}
+    /* 회색박스 (화살표 기준) */
+    #bezColor #setSelectArea .color-border-box {border-radius:0.9804vw;}
+    /* 긴거 */
+    #bezColor #setSelectArea .palettes {padding-top:0;}
+
+    /* 썸네일 */
+        /* 추천컬러 */
+        #bezColor #setSelectArea #bezColorListMatch .colors {width:9.7059vw; height:9.7059vw; margin:6.0784vw 2.4510vw !important;}
+        /* 추천컬러-제주일때-오른쪽 */
+        #bezColor #setSelectArea .type-jeju-edi #bezColorListMatch .colors {width:9.7059vw; height:9.7059vw; margin:6.0784vw 1.4705vw !important;}
+        /* 추천컬러-제주일때-왼쪽 0309 */
+        #bezColor #setSelectArea .type-jeju-edi #bezColorListMatchJeju .colors {width:9.7059vw; height:9.7059vw; margin:2.9411vw 0 0 !important;}
+        #bezColor #setSelectArea .type-jeju-edi #bezColorListMatchJeju .colors p {margin-top:1.4706vw; font-size:1.9608vw;}
+        #bezColor #setSelectArea .type-jeju-edi #bezColorListMatchJeju .colors p span {margin-top:0.3922vw;}
+
+        /* 배지 */
+        #bezColor #setSelectArea .type-jeju-edi #bezColorListMatchJeju .color-wrapper:after,
+        #bezColor #setSelectArea #bezColorListSetJeju .color-wrapper:after {width:3.0392vw; height:3.9216vw;}
+        #bezColor .color-wrapper.t-badge:after {width:2.3529vw; height:2.8431vw;}
+        
+        /* 배지-추천컬러-왼쪽제주 */
+        #bezColor #setSelectArea .type-jeju-edi #bezColorListMatchJeju .color-wrapper:after {top:-0.6vw; right:0.2vw;}
+        /* 배지-프리셋-왼쪽제주 */
+        #bezColor #setSelectArea #bezColorListSetJeju .color-wrapper:after {top:-0.3922vw; right:0.5882vw;}
+        /* 배지-오리지날 */
+        #bezColor .color-wrapper.t-badge:after {top:-1px; right:0; background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/new-icon-badge-mo.png?$ORIGIN_PNG$');}
+
+        /* 프리셋 */
+        #bezColor #setSelectArea #bezColorListSet .colors {width:12.5490vw; height:12.1569vw; margin:3.3333vw 1.7647vw !important;}
+        /* 프리셋-왼쪽제주 */
+        #bezColor #setSelectArea #bezColorListSetJeju .colors {width:12.5490vw; height:12.1569vw; margin:3.3333vw 3.6764vw !important;}
+
+    /* 딱 해당영역 */
+    #bezColor #setSelectArea .bez-color-area {height:auto; margin:0;}
+        /* 추천컬러 (가로 + 좌마진 + 우마진) * 5개) */
+        #bezColor #setSelectArea #bezColorListMatch.bez-color-area {width:73.0392vw; margin:0 8vw;} 
+        /* 추천컬러-제주일때-오른쪽 (가로 + 좌마진 + 우마진) * 4개) */
+        #bezColor #setSelectArea .type-jeju-edi #bezColorListMatch.bez-color-area {width:50.5876vw; margin:0 8vw;}
+        /* 추천컬러-제주일때-왼쪽 (가로 + 좌마진 + 우마진) * 1개) */
+        #bezColor .type-jeju-edi .color-border-box.jeju-color-box {margin-right:0.9803vw;}
+        #bezColor #bezColorListMatchBoxJeju.palettes {width:21.0784vw; height:21.9607vw;}
+
+        /* 프리셋 (가로67 + 좌마진5 + 우마진5 * 4개) */
+        /* #bezColor #setSelectArea #bezColorListSet.bez-color-area {width:58.0392vw; margin:0 0.7843vw;} */
+        /* 0311 mod 프리셋 (가로 + 좌마진 + 우마진 * 3개) */
+        #bezColor #setSelectArea #bezColorListSet.bez-color-area {width:48.2352vw; /*0323 margin:0 8.1vw;*/margin:0 8vw;}
+
+    /* 화살표 */
+    .new-box-prev-btn,
+    .new-box-next-btn {width:5.8823vw; height:5.8823vw; margin-top:-2.9411vw;}
+    .new-box-prev-btn {left:-5.8824vw; background:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/new-big-prev-icon-mo.png?$ORIGIN_PNG$') no-repeat 50% 50%; background-size:100% 100%;}
+    .new-box-next-btn {right:-5.8824vw; background:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/new-big-next-icon-mo.png?$ORIGIN_PNG$') no-repeat 50% 50%; background-size:100% 100%;}
+	.new-box-next-btn.modi-arr {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/new-big-prev-icon-mo.png?$ORIGIN_PNG$');}
+
+    /* 화살표 (추천컬러) */
+    .new-match-prev.new-box-prev-btn {left:2.2vw;}
+    .new-match-prev.new-box-prev-btn.last-time {left:auto; right:2.2vw;}
+    .new-match-next.new-box-next-btn {right:2.2vw}
+
+    /* 화살표 (추천컬러-제주일때) */
+    .type-jeju-edi .new-match-prev.new-box-prev-btn {left:1.6vw;}
+    .type-jeju-edi .new-match-prev.new-box-prev-btn.last-time {left:auto; right:1.6vw;}
+    .type-jeju-edi .new-match-next.new-box-next-btn {right:1.6vw;}
+
+    /* 화살표 (프리셋) */
+    .new-set-prev.new-box-prev-btn {left:2vw;}
+    .new-set-prev.new-box-prev-btn.last-time {left:auto; right:2vw;}
+    .new-set-next.new-box-next-btn {right:2vw;}
+
+    /* 프리셋 */
+    .freeset-jeju {/*0323 padding:3.1373vw 0 0 3.2352vw;*/padding:3.1373vw 0 0 2vw;}
+    .freeset-jeju:after {top:3.1373vw; /*0323 right:-3.1373vw;*/ right:-2.7vw; border-right-width:0.1961vw}
+    .freeset-all {/*0323 padding-left:5.7vw;*/padding-left:4.5vw;}
+    .freeset-title {margin-bottom:1.9608vw; font-size:1.9608vw;}
+    .freeset-title img {width:25.4902vw; margin-bottom:0.9804vw;}
+
+    /* 추천컬러 */
+    .new-match-box {width:91vw; margin:0 auto;}
+    .new-match-box .new-match-tit {padding-top:0.9804vw; margin-bottom:2.7451vw; font-size:2.7451vw;}
+
+    /* 추천컬러-제주 */
+    .bespoke-color-chip .bespoke-color-wrap #bezColorListMatchBoxJeju.palettes p {font-size:1.1765vw;}
+
+
+    /** [ 오리지날 ] **/
+
+    #originColorArea {/*0323 padding-left:3vw;*/padding-left:1.4vw;}
+
+    /* 배지설명 */
+    .new-badge-desc {bottom:-3.3333vw; right:2.9412vw; font-size:1.8627vw;}
+    .new-badge-desc img {width:2.1569vw; }
+
+    /* 타이틀 */
+    .original-title {padding-left:0.8vw; margin:4.9020vw 0 0.9804vw; font-size:2.3529vw;}
+    .original-title.type-satin-gl {margin-top:4.9020vw;}
+    .original-title:first-of-type {margin-top:4.4118vw;}
+
+    /* 회색박스 (화살표 기준) */
+    #bezColor #originColorArea .color-border-box {border-radius:0.9804vw;}
+    /* 긴거,썸네일 (오리지날+프리셋 공통) */
+    /* #bezColor #originColorArea .palettes {padding:0;} */
+
+    /* 썸네일 (오리지날) */
+    #bezColor #originColorArea [id*=bezColorListOrigin] .colors {width:9.7059vw; height:9.7059vw; margin:0.8vw 0.9vw !important;}
+    #bezColor #originColorArea [id*=bezColorListOrigin] .colors:first-child {margin-left:0.8vw !important;}
+    #bezColor #originColorArea [id*=bezColorListOrigin] .colors p {margin-top:0.4902vw; font-size:1.8627vw;}
+        /* 프리셋 */
+        #bezColor #originColorArea #bezColorListSetOrigin .colors {width:12.5490vw; height:12.1569vw; margin:3.3333vw 1.4706vw !important;}
+
+    /* 딱 해당영역 (공통) */
+        /* 프리셋 (가로67 + 좌마진9 + 우마진9 * 3개) */
+        #bezColor #originColorArea #bezColorListSetOrigin.bez-color-area {margin:0 1.4706vw;}
+
+    /* 제주 에디션 텍스트 */
+    .jeju-edition-txt {left:0.8vw; width:22.1569vw; padding-top:1.4706vw; font-size:1.9608vw;}
+
+    .jeju-edition-txt:before {top:0.9804vw; height:1.5686vw;}
+    .jeju-edition-txt > span {padding:0 0.9804vw;}
+
+    /* 제주 스페셜 에디션 */
+    .original-special {padding-left:0.8vw;}
+    #originColorArea .freeset-title {margin-top:4.4118vw; margin-bottom:1.4706vw; font-size:2.3529vw;}
+}
+
+
+/***********************************************/
+
+
+/** 02-1 컬러 **/
+
+.effect-cover {display:none !important;}
+
+
+/***********************************************/
+
+
+/** 02-1 팝업 **/
+
+.new-color-pop-wrap {display:none;}
+.new-color-pop-wrap.js-new-pop-show {display:block; z-index:999;}
+
+.new-color-pop-wrap {position:fixed; z-index:11; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7);}
+.new-color-pop-wrap .new-color-pop-inner {position:fixed; top:50%; left:50%; width:894px; transform:translate(-50%, -50%);/* transform:translate(-50%, -50%); */}
+.new-color-pop-wrap .new-color-pop-close {position:absolute; top:0; right:0; width:50px; height:50px; background:transparent;}
+.new-color-pop-wrap .new-color-pop-close button {width:100%; height:100%;}
+.new-color-pop-wrap .new-color-pop-close span {font-size:0;}
+
+.new-pc-show {display:block;} 
+.new-mo-show {display:none;}
+
+@media (max-width:1440px) {
+	.new-color-pop-wrap .new-color-pop-inner {width:62vw;}
+	.new-color-pop-wrap .new-color-pop-close {width:3.472vw; height:3.472vw;}
+}
+
+@media (max-width:768px) {
+	.new-color-pop-wrap {position:absolute;}
+	.new-color-pop-wrap .new-color-pop-inner {position:absolute; top:unset; bottom:0; left:50%; width:89.2156vw; transform:translate(-50%, -115%);}
+    /* .new-color-pop-wrap .new-color-pop-inner {width:90%; height:80%; transform:translate(-50%,-50%);} */
+    .new-color-pop-wrap .new-color-pop-close {width:14.7058vw; height:11.2745vw;}
+    /* .new-color-pop-wrap .new-color-pop-close button {width:150px; width:14.7058vw; height:115px; height:11.2745vw;} */
+    .new-mo-show {display:block; /* margin:0 auto; height:100%; */}
+    .new-pc-show {display:none;}               
+}
+
+
+/***********************************************/
+
+
+/* 03 결과 */
+
+/** 왼쪽 **/
+
+.bez-body .bez-contents .bez-content .bez-mobile .bez-wrapper #bezResult .bez-result {z-index:10; box-sizing:border-box; width:506px; height:auto; padding:30px 30px 110px; margin-top:25px; border:1px solid #ebebeb; border-radius:20px; background:#fff; box-shadow:5px 0 5px #ecebe7;}
+/* 캡처 */
+.bez-body .bez-contents .bez-content .bez-mobile .bez-wrapper #bezResult #bezResultImageContainer {position:static; display:block; width:100%; height:auto; margin:0; border-radius:0;}
+
+/* 0308 타이틀 */
+.new-result-title {margin-bottom:18px; font-weight:bold; font-size:18px;}
+
+/* 이미지 */
+.bez-result .swiper-wrapper {display:block; width:444px; height:444px;}
+.bez-result .swiper-slide {display:block; width:100%; height:100%; border-radius:10px;}
+.bez-result .swiper-slide canvas {border-radius:0;}
+/* 안내문구 */
+.new-result-info {padding:10px 0 20px; font-size:18px; color:#585858;}
+/* 결과값 */
+.bez-result-pdf-info {overflow:auto; overflow-x:hidden; box-sizing:border-box; height:160px; padding-top:10px; margin-top:35px; text-align:center;}
+
+/* 스크롤바 */
+.bez-result-pdf-info::-webkit-scrollbar {-webkit-appearance:none;} 
+.bez-result-pdf-info::-webkit-scrollbar:vertical {width:3px;}
+/* 스크롤 부분 */
+.bez-result-pdf-info::-webkit-scrollbar-thumb {background-color:#999; border-radius:10px; border:0;} 
+/* 안보이는 밑부분 */
+.bez-result-pdf-info::-webkit-scrollbar-track {border-radius:20px; background-color:transparent;}
+
+.bez-result-pdf-info > p {margin-bottom:10px; font-size:18px;}
+.bez-result-pdf-info > h2 {margin-bottom:18px; font-weight:bold; font-size:26px;}
+.bez-result-pdf-info > ul {margin-bottom:27px; font-size:16px; line-height:1.4; color:#585858;}
+.bez-result-pdf-info > ul * {font-size:inherit;}
+/* 슬라이드 좌우버튼 */
+.bez-result .swiper-button-next, 
+.bez-result .swiper-button-prev,
+.bez-result .bez-result-pagination {display:none;}
+/* 버튼 */
+.bez-body .bez-contents .bez-content .bez-mobile .bez-wrapper #bezResult .bez-result-save {bottom:28px; left:0; right:0; width:100%; height:auto; text-align:center;}
+#bezResult #bezBtnColor,
+#bezResult #saveResultImage {box-sizing:border-box; display:inline-block; height:53px; border:1px solid #000; border-radius:50px; vertical-align:top; font-size:18px; line-height:53px; margin:0 9px;}
+#bezResult #bezBtnColor {width:176px; background:#fff;}
+#bezResult #saveResultImage {width:250px; background:#000; color:#fff;}
+
+@media screen and (min-width: 1020px) {
+    /* 왼쪽 */
+    .bez-body .bez-contents .bez-content .bez-mobile .bez-wrapper #bezResult {width:1200px; margin-top:-420px; margin-left:-600px;}
+}
+
+
+/** 오른쪽 **/
+
+.new-store-search {overflow:hidden; position:absolute; right:0; top:25px; bottom:0; box-sizing:border-box; width:708px; padding-left:18px;  background:#f5f3f1; border-top-right-radius:20px; border-bottom-right-radius:20px;}
+.new-store-search img {width:100%;}
+.new-store-inner {padding:60px 55px 0 107px;}
+
+/* 큰타이틀 */
+.new-store-big-tit {position:relative; font-size:28px; line-height:1.28;}
+.new-store-big-tit:after {position:absolute; top:0; left:-107px; width:107px; height:100%; background:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/new-result-more-icon.png?$ORIGIN_PNG$') no-repeat 50% 5px; background-size:22px 22px; content:'';}
+.new-store-big-tit strong {font-weight:bold; font-size:inherit; vertical-align:baseline;}
+
+.new-store-note {margin-top:15px; font-size:19px; color:#545352;}
+
+/* 슬라이드 */
+.new-store-view {width:500px; margin-top:30px;}
+.new-store-side {overflow:hidden; width:498px;}
+.new-store-side li {float:left;}
+
+/* 매장정보 */
+.new-store-box {width:498px; margin-top:30px;}
+.new-store-name {font-weight:bold; font-size:22px;}
+.new-store-info {overflow:hidden; margin-top:15px;}
+.new-store-list {float:left; width:70%;}
+.new-store-list > li {padding-left:22px; font-size:16px;}
+.new-store-list > li a {font-size:inherit;}
+.new-store-list > li:first-child {background:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/new-store-icon-address-pc.png?$ORIGIN_PNG$') no-repeat 0 0; background-size:13px 17px;}
+.new-store-list > li:last-child {margin-top:10px; background:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/new-store-icon-tel-pc.png?$ORIGIN_PNG$') no-repeat 0 0; background-size:14px 15px;}
+.new-store-book {float:right; display:inline-block; padding:15px 30px; border:1px solid #626160; border-radius:30px; font-weight:bold; font-size:16px;}
+
+
+/** 모바일 **/
+
+@media screen and (max-width: 1019px) {
+    /* 왼쪽 */
+    .bez-body .bez-contents .bez-content .bez-mobile .bez-wrapper #bezResult .bez-result {width:95%; padding:2.9411vw; padding-bottom:7vw; margin:14.2156vw auto 0; border-radius:2.9411vw; box-shadow:0 0.9803vw 0.9803vw #ecebe7;}
+    
+    /* 타이틀 */
+    .new-result-title {margin-bottom:2.97411vw; font-size:3.5294vw;}
+
+    /* 이미지 */
+    .bez-result .swiper-wrapper {width:907px; width:89vw; height:907px; height:89vw;}
+    .bez-result .swiper-slide {border-radius:2vw;}
+    /* 안내문구 */
+    .new-result-info {padding:2vw 0 4vw; font-size:2.7451vw;}
+    /* 결과값 */
+    .bez-result-pdf-info {height:36vw; padding-top:5vw; margin-top:7vw;}
+    .bez-result-pdf-info > p {margin-bottom:2.45vw; font-size:42px; font-size:4.11vw;}
+    .bez-result-pdf-info > h2 {margin-bottom:3.9215vw; font-size:60px; font-size:5.8823vw;}
+    .bez-result-pdf-info > ul {margin-bottom:4vw; font-size:3.3333vw;}
+    /* 버튼 */
+    .bez-body .bez-contents .bez-content .bez-mobile .bez-wrapper #bezResult .bez-result-save {position:static; margin-top:7vw;}
+    #bezResult #bezBtnColor,
+    #bezResult #saveResultImage {width:40vw; height:9.7222vw; border-radius:10vw; font-size:3.3vw; line-height:9.7222vw; margin:0 0.9803vw;}
+    
+    /* 오른쪽 */
+    .new-store-search {overflow:hidden; position:relative; top:auto; bottom:auto; width:95%; border-radius:0; border-bottom-left-radius:2.9411vw; border-bottom-right-radius:2.9411vw; padding-left:0; margin:-2vw auto 5.8823vw;}
+    .new-store-inner {padding:12.2222vw 5vw 8.5vw;}
+
+    .new-store-view {width:100%; margin-top:3.3333vw;}
+    .new-store-note {padding-left:6vw; margin-top:2vw; font-size:2.745vw;}
+    .new-store-big-tit {font-size:4.1176vw; /*추가*/margin-left:6vw;}
+    .new-store-big-tit:after {left:-8.3333vw; width:8.3333vw; background-position:50% 1.1111vw; background-size:3.7778vw 3.8889vw;}
+
+    /* 슬라이드 */
+    .new-store-view {width:69.6078vw; margin:4.4118vw auto 0;}
+    .new-store-side {width:100%;}
+
+    /* 매장정보 */
+    /* .new-store-box {width:710px; margin:55px auto 0;}
+    .new-store-name {font-size:34px;}
+    .new-store-info {margin-top:20px;}
+    .new-store-list > li {padding:15px 0 15px 60px; font-size:30px;}
+    .new-store-list > li:first-child {background:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/new-store-icon-address-mo.png?$ORIGIN_PNG$') no-repeat 0 50%; background-size:39px 48px;}
+    .new-store-list > li:last-child {margin-top:5px; background:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/new-store-icon-tel-mo.png?$ORIGIN_PNG$') no-repeat 0 50%; background-size:43px 43px;}
+    .new-store-book {padding:20px 40px; border-radius:40px; margin-top:15px; font-size:24px;} */
+    .new-store-box {width:69.6078vw; margin:5.3922vw auto 0;}
+    .new-store-name {font-size:3.3333vw;}
+    .new-store-info {margin-top:1.9608vw;}
+    .new-store-list > li {padding:1.4706vw 0 1.4706vw 5.1vw; font-size:2.9412vw;}
+    .new-store-list > li:first-child {background:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/new-store-icon-address-mo.png?$ORIGIN_PNG$') no-repeat 0.196vw 50%; /*background-size:3.8235vw 4.7059vw;*/background-size:2.9411vw 3.6274vw;}
+    .new-store-list > li:last-child {margin-top:0.4902vw; background:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/new-store-icon-tel-mo.png?$ORIGIN_PNG$') no-repeat 0 50%; /*background-size:4.2157vw 4.2157vw;*/background-size:3.3333vw 3.3333vw;}
+    .new-store-book {padding:1.9608vw 3.9216vw; border-radius:3.9216vw; margin-top:1.4706vw; font-size:2.3529vw;}
+}
+
+
+/***********************************************/
+
+
+/* 캔버스 개발 */
+#bezResultInfo {position: absolute;right: 0;top: 0;z-index:-1;width:1px;height:1px;overflow:hidden;}
+
+
+/***********************************************/
+
+
+/* 프리셋 아이콘 */
+#bezColor .palettes .colors.selected .color-img,
+#bezColor .palettes .colors.is-choice .color-img {background-color:#fff;}
+#bezColor .palettes .colors .color-img,
+#bezColor .palettes .colors .color-img.sel {background-image:none; background-size:100% 100%;}
+
+#bezColorMoreArea #bezColorListSetBox .colors.color1_0 .color-img {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-thumb-freeset-test.png?$ORIGIN_PNG$');}
+#bezColorMoreArea #bezColorListSetBox .colors.color1_0 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-thumb-freeset-test.png?$ORIGIN_PNG$');}
+
+#bezColorMoreArea #bezColorListSetBox .colors.color1_1 .color-img {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-thumb-freeset-test.png?$ORIGIN_PNG$');}
+#bezColorMoreArea #bezColorListSetBox .colors.color1_1 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-thumb-freeset-test.png?$ORIGIN_PNG$');}
+
+#bezColorMoreArea #bezColorListSetBox .colors.color1_2 .color-img {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-thumb-freeset-test.png?$ORIGIN_PNG$');}
+#bezColorMoreArea #bezColorListSetBox .colors.color1_2 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-thumb-freeset-test.png?$ORIGIN_PNG$');}
+
+#bezColorMoreArea #bezColorListSetBox .colors.color1_3 .color-img {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-thumb-freeset-test.png?$ORIGIN_PNG$');}
+#bezColorMoreArea #bezColorListSetBox .colors.color1_3 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-thumb-freeset-test.png?$ORIGIN_PNG$');}
+
+#bezColorMoreArea #bezColorListSetBox .colors.color1_4 .color-img {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-thumb-freeset-test.png?$ORIGIN_PNG$');}
+#bezColorMoreArea #bezColorListSetBox .colors.color1_4 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-thumb-freeset-test.png?$ORIGIN_PNG$');}
+
+#bezColorMoreArea #bezColorListSetBox .colors.color1_5 .color-img {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-thumb-freeset-test.png?$ORIGIN_PNG$');}
+#bezColorMoreArea #bezColorListSetBox .colors.color1_5 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-thumb-freeset-test.png?$ORIGIN_PNG$');}
+
+#bezColorMoreArea #bezColorListSetBox .colors.color1_6 .color-img {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-thumb-freeset-test.png?$ORIGIN_PNG$');}
+#bezColorMoreArea #bezColorListSetBox .colors.color1_6 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-thumb-freeset-test.png?$ORIGIN_PNG$');}
+
+#bezColorMoreArea #bezColorListSetBox .colors.color1_7 .color-img {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-thumb-freeset-test.png?$ORIGIN_PNG$');}
+#bezColorMoreArea #bezColorListSetBox .colors.color1_7 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-thumb-freeset-test.png?$ORIGIN_PNG$');}
+
+#bezColorMoreArea #bezColorListSetBox .colors.color1_8 .color-img {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-thumb-freeset-test.png?$ORIGIN_PNG$');}
+#bezColorMoreArea #bezColorListSetBox .colors.color1_8 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-thumb-freeset-test.png?$ORIGIN_PNG$');}
+
+#bezColorMoreArea #bezColorListSetBox .colors.color1_9 .color-img {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-thumb-freeset-test.png?$ORIGIN_PNG$');}
+#bezColorMoreArea #bezColorListSetBox .colors.color1_9 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-thumb-freeset-test.png?$ORIGIN_PNG$');}
+
+#bezColorMoreArea #bezColorListSetBox .colors.color1_10 .color-img {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-thumb-freeset-test.png?$ORIGIN_PNG$');}
+#bezColorMoreArea #bezColorListSetBox .colors.color1_10 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-thumb-freeset-test.png?$ORIGIN_PNG$');}
+
+#bezColorMoreArea #bezColorListSetBox .colors.color1_11 .color-img {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-thumb-freeset-test.png?$ORIGIN_PNG$');}
+#bezColorMoreArea #bezColorListSetBox .colors.color1_11 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-thumb-freeset-test.png?$ORIGIN_PNG$');}
+
+#bezColorMoreArea #bezColorListSetBox .colors.color1_12 .color-img {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-thumb-freeset-test.png?$ORIGIN_PNG$');}
+#bezColorMoreArea #bezColorListSetBox .colors.color1_12 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-thumb-freeset-test.png?$ORIGIN_PNG$');}
+
+/* 제주 프리셋 (대표1) */
+#bezColorMoreArea #bezColorListSetBoxJeju .colors.color1_1 .color-img {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/new-original-freeset-icon-01.jpg?$ORIGIN_JPG$');}
+#bezColorMoreArea #bezColorListSetBoxJeju .colors.color1_1 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/new-original-freeset-icon-01.jpg?$ORIGIN_JPG$');}
+
+/* 제주 프리셋 */
+/* #bezColorMoreArea #bezColorListSetBoxOrigin .colors.color1_0 .color-img {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-freeset-test-jeju.png?$ORIGIN_PNG$');}
+#bezColorMoreArea #bezColorListSetBoxOrigin .colors.color1_0 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/icon-freeset-test-jeju.png?$ORIGIN_PNG$');} */
+
+#bezColorMoreArea #bezColorListSetBoxOrigin .colors.color1_1 .color-img {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/new-original-freeset-icon-01.jpg?$ORIGIN_JPG$');}
+#bezColorMoreArea #bezColorListSetBoxOrigin .colors.color1_1 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/new-original-freeset-icon-01.jpg?$ORIGIN_JPG$');}
+
+#bezColorMoreArea #bezColorListSetBoxOrigin .colors.color1_2 .color-img {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/new-original-freeset-icon-02.jpg?$ORIGIN_JPG$');}
+#bezColorMoreArea #bezColorListSetBoxOrigin .colors.color1_2 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/new-original-freeset-icon-02.jpg?$ORIGIN_JPG$');}
+
+#bezColorMoreArea #bezColorListSetBoxOrigin .colors.color1_3 .color-img {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/new-original-freeset-icon-03.jpg?$ORIGIN_JPG$');}
+#bezColorMoreArea #bezColorListSetBoxOrigin .colors.color1_3 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/new-original-freeset-icon-03.jpg?$ORIGIN_JPG$');}
+
+
+
+
+
+/* 코타 메탈 */
+#bezColorListOrigin1Box .colors.color1_1 .color-img,
+#bezColorListOrigin1Box .colors.color1_1 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_cotta_01_pc.jpg?$ORIGIN_JPG$');}
+#bezColorListOrigin1Box .colors.color1_2 .color-img,
+#bezColorListOrigin1Box .colors.color1_2 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_cotta_02_pc.jpg?$ORIGIN_JPG$');}
+#bezColorListOrigin1Box .colors.color1_3 .color-img,
+#bezColorListOrigin1Box .colors.color1_3 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_cotta_03_pc.jpg?$ORIGIN_JPG$');}
+#bezColorListOrigin1Box .colors.color1_4 .color-img,
+#bezColorListOrigin1Box .colors.color1_4 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_cotta_04_pc.jpg?$ORIGIN_JPG$');}
+#bezColorListOrigin1Box .colors.color1_5 .color-img,
+#bezColorListOrigin1Box .colors.color1_5 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_cotta_05_pc.jpg?$ORIGIN_JPG$');}
+#bezColorListOrigin1Box .colors.color1_6 .color-img,
+#bezColorListOrigin1Box .colors.color1_6 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_cotta_06_pc.jpg?$ORIGIN_JPG$');}
+
+/* 글램 글래스 */
+#bezColorListOrigin2Box .colors.color2_1 .color-img,
+#bezColorListOrigin2Box .colors.color2_1 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_glam_01_pc.jpg?$ORIGIN_JPG$');}
+#bezColorListOrigin2Box .colors.color2_2 .color-img,
+#bezColorListOrigin2Box .colors.color2_2 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_glam_02_pc.jpg?$ORIGIN_JPG$');}
+#bezColorListOrigin2Box .colors.color2_3 .color-img,
+#bezColorListOrigin2Box .colors.color2_3 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_glam_03_pc.jpg?$ORIGIN_JPG$');}
+#bezColorListOrigin2Box .colors.color2_4 .color-img,
+#bezColorListOrigin2Box .colors.color2_4 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_glam_04_pc.jpg?$ORIGIN_JPG$');}
+#bezColorListOrigin2Box .colors.color2_5 .color-img,
+#bezColorListOrigin2Box .colors.color2_5 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_glam_05_pc.jpg?$ORIGIN_JPG$');}
+#bezColorListOrigin2Box .colors.color2_6 .color-img,
+#bezColorListOrigin2Box .colors.color2_6 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_glam_06_pc-v2.jpg?$ORIGIN_JPG$');}
+#bezColorListOrigin2Box .colors.color2_7 .color-img,
+#bezColorListOrigin2Box .colors.color2_7 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_glam_07_pc-v2.jpg?$ORIGIN_JPG$');}
+#bezColorListOrigin2Box .colors.color2_8 .color-img,
+#bezColorListOrigin2Box .colors.color2_8 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_glam_08_pc.jpg?$ORIGIN_JPG$');}
+
+/* 글램딥차콜 */
+#bezColorListOrigin2Box .color2_8 {display:none !important;}
+#bezColorListOrigin2Box .color2_8.show-gldc {display:inline-block !important;}
+
+/* 새틴 글래스 */
+#bezColorListOrigin3Box .colors.color3_1 .color-img,
+#bezColorListOrigin3Box .colors.color3_1 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_satin_01_pc.jpg?$ORIGIN_JPG$');}
+#bezColorListOrigin3Box .colors.color3_2 .color-img,
+#bezColorListOrigin3Box .colors.color3_2 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_satin_02_pc.jpg?$ORIGIN_JPG$');}
+#bezColorListOrigin3Box .colors.color3_3 .color-img,
+#bezColorListOrigin3Box .colors.color3_3 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_satin_03_pc.jpg?$ORIGIN_JPG$');}
+#bezColorListOrigin3Box .colors.color3_4 .color-img,
+#bezColorListOrigin3Box .colors.color3_4 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_satin_04_pc.jpg?$ORIGIN_JPG$');}
+#bezColorListOrigin3Box .colors.color3_5 .color-img,
+#bezColorListOrigin3Box .colors.color3_5 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_satin_05_pc.jpg?$ORIGIN_JPG$');}
+
+@media (max-width:1019px) {
+    /* 코타 메탈 */
+    #bezColorListOrigin1Box .colors.color1_1 .color-img,
+    #bezColorListOrigin1Box .colors.color1_1 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_cotta_01_mo.png?$ORIGIN_PNG$');}
+    #bezColorListOrigin1Box .colors.color1_2 .color-img,
+    #bezColorListOrigin1Box .colors.color1_2 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_cotta_02_mo.png?$ORIGIN_PNG$');}
+    #bezColorListOrigin1Box .colors.color1_3 .color-img,
+    #bezColorListOrigin1Box .colors.color1_3 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_cotta_03_mo.png?$ORIGIN_PNG$');}
+    #bezColorListOrigin1Box .colors.color1_4 .color-img,
+    #bezColorListOrigin1Box .colors.color1_4 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_cotta_04_mo.png?$ORIGIN_PNG$');}
+    #bezColorListOrigin1Box .colors.color1_5 .color-img,
+    #bezColorListOrigin1Box .colors.color1_5 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_cotta_05_mo.png?$ORIGIN_PNG$');}
+    #bezColorListOrigin1Box .colors.color1_6 .color-img,
+    #bezColorListOrigin1Box .colors.color1_6 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_cotta_06_mo.png?$ORIGIN_PNG$');}
+
+    /* 글램 글래스 */
+    #bezColorListOrigin2Box .colors.color2_1 .color-img,
+    #bezColorListOrigin2Box .colors.color2_1 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_glam_01_mo.png?$ORIGIN_PNG$');}
+    #bezColorListOrigin2Box .colors.color2_2 .color-img,
+    #bezColorListOrigin2Box .colors.color2_2 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_glam_02_mo.png?$ORIGIN_PNG$');}
+    #bezColorListOrigin2Box .colors.color2_3 .color-img,
+    #bezColorListOrigin2Box .colors.color2_3 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_glam_03_mo.png?$ORIGIN_PNG$');}
+    #bezColorListOrigin2Box .colors.color2_4 .color-img,
+    #bezColorListOrigin2Box .colors.color2_4 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_glam_04_mo.png?$ORIGIN_PNG$');}
+    #bezColorListOrigin2Box .colors.color2_5 .color-img,
+    #bezColorListOrigin2Box .colors.color2_5 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_glam_05_mo.png?$ORIGIN_PNG$');}
+    #bezColorListOrigin2Box .colors.color2_6 .color-img,
+    #bezColorListOrigin2Box .colors.color2_6 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_glam_06_mo-v2.png?$ORIGIN_PNG$');}
+    #bezColorListOrigin2Box .colors.color2_7 .color-img,
+    #bezColorListOrigin2Box .colors.color2_7 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_glam_07_mo-v2.png?$ORIGIN_PNG$');}
+    #bezColorListOrigin2Box .colors.color2_8 .color-img,
+    #bezColorListOrigin2Box .colors.color2_8 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_glam_08_mo.png?$ORIGIN_PNG$');}
+
+    /* 새틴 글래스 */
+    #bezColorListOrigin3Box .colors.color3_1 .color-img,
+    #bezColorListOrigin3Box .colors.color3_1 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_satin_01_mo.png?$ORIGIN_PNG$');}
+    #bezColorListOrigin3Box .colors.color3_2 .color-img,
+    #bezColorListOrigin3Box .colors.color3_2 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_satin_02_mo.png?$ORIGIN_PNG$');}
+    #bezColorListOrigin3Box .colors.color3_3 .color-img,
+    #bezColorListOrigin3Box .colors.color3_3 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_satin_03_mo.png?$ORIGIN_PNG$');}
+    #bezColorListOrigin3Box .colors.color3_4 .color-img,
+    #bezColorListOrigin3Box .colors.color3_4 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_satin_04_mo.png?$ORIGIN_PNG$');}
+    #bezColorListOrigin3Box .colors.color3_5 .color-img,
+    #bezColorListOrigin3Box .colors.color3_5 .color-img.sel {background-image:url('//images.samsung.com/is/image/samsung/p5/sec/mkt/bespokestudio/colorchip_origin_color_satin_05_mo.png?$ORIGIN_PNG$');}
+}

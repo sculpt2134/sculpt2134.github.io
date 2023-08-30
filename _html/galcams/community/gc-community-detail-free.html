@@ -1,0 +1,1685 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+
+	<title>상세보기 | 자유 게시판 | 커뮤니티</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="canonical" href="https://www.samsung.com/sec/">
+	<meta name="keywords" content="모바일 | TV | 가전 | IT">
+	<meta name="description" content="모바일 | TV | 가전 | IT">
+	<meta name="date" content="">
+	<meta name="sitecode" content="sec">
+
+
+	<meta name="twitter:card" content="Summary">
+	<meta name="twitter:site" content="@samsungtomorrow">
+	<meta name="twitter:creator" content="@samsungtomorrow">
+	<meta name="twitter:url" content="https://www.samsung.com/sec/">
+	<meta name="twitter:title" content="Samsung 대한민국 | 모바일 | TV | 가전 | IT">
+	<meta name="twitter:description" content="모바일 | TV | 가전 | IT">
+	<meta name="twitter:image" content="">
+
+	<!-- s: 2022.03.15 VAC 광고 세팅 중 웹사이트 확인을 위한 tag -->
+	<meta name="google-site-verification" content="Y5FXtKRkwrMXPsNBUlQe-3vZp4mtp_PZRy1jmEyp6wM" />
+	<!-- e: 2022.03.15 VAC 광고 세팅 중 웹사이트 확인을 위한 tag -->
+
+	<meta property="og:url" content="https://www.samsung.com/sec/">
+	<meta property="og:image" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Samsung sec">
+	<meta property="og:locale" content="ko">
+	<meta property="og:title" content="Samsung 대한민국 | 모바일 | TV | 가전 | IT">
+	<meta property="og:description" content="모바일 | TV | 가전 | IT">
+	<meta property="og:country-name" content="sec">
+
+	<meta itemprop="name" content="Samsung sec">
+	<meta itemprop="image" content="">
+	<meta itemprop="url" content="https://www.samsung.com/sec/">
+	<meta itemprop="description" content="모바일 | TV | 가전 | IT">
+	<meta itemprop="keywords" content="모바일 | TV | 가전 | IT">
+
+	<link rel="dns-prefetch" href="https://images.samsung.com">
+	<link rel="preconnect" href="https://images.samsung.com">
+	<link rel="shortcut icon" href="../../_images/favicon.ico">
+	<link rel="apple-touch-icon" href="" sizes="">
+	
+	<link rel="stylesheet" href="../../_css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../_css/swiper.min.css">
+	<link rel="stylesheet" href="../../_css/slick.css">
+	<link rel="stylesheet" href="../../_css/reset.css">
+	<link rel="stylesheet" href="../../_css/style.css">
+	<link rel="stylesheet" href="../../_css/common.css">
+	<link rel="stylesheet" href="../../_css/component.css">
+	<link rel="stylesheet" href="../../_css/layout.css">
+	<link rel="stylesheet" href="../../_css/content_part02.css">
+	<link rel="stylesheet" href="../../_css/app.css">
+	<link rel="stylesheet" href="../../_css/homefitness.css">
+    <link rel="stylesheet" href="../../_css/gc-common.css"><!-- 20220509 gc 추가 -->
+    <link rel="stylesheet" href="../../_css/gc-common-hkh.css"><!-- 20220509 gc 추가 -->
+
+	<script src="../../_script/jquery-3.3.1.min.js"></script>
+	<script src="../../_script/jquery-ui.min.js"></script>
+	<script src="../../_script/slick.js"></script>
+	<script src="../../_script/slick-init.js"></script>
+	<script src="../../_script/swiper.min.js"></script>
+	<script src="../../_script/masonry.min.js"></script><!-- masonry js -->
+	<script src="../../_script/jquery.blockUI.js"></script>
+	<script src="../../_script/base.js"></script>
+	<script src="../../_script/layerPop.js"></script>
+	<script src="../../_script/netfunnel.js" charset="UTF-8"></script>
+	<script src="../../_script/netfunnel_skin.js" charset="UTF-8"></script>
+	<script src="../../_script/common.js"></script>
+	<script src="../../_script/custom.js"></script>
+	<script src="../../_script/default.js"></script><!-- 20220504 gc 추가 -->
+	<script src="../../_script/sly.min.js"></script><!-- 20220504 gc 추가 -->
+	<script src="../../_script/sticky.min.js"></script>
+	<script src="../../_script/jquery.cookie.js"></script>
+	<script src="../../_script/search.js"></script>
+	<script src="../../_script/component.js"></script>
+	<script src="../../_script/jquery.ui.touch-punch.min.js"></script>
+	<script src="../../_script/event/event.js"></script>
+	<script src="../../_script/clipboard.min.js"></script>
+	<script src="../../_script/buynow.js"></script>
+	<script type="text/javascript" src="../../_script/picturePolyfill.min.js"></script>
+
+	<!-- 댓글 textarea 높이조절 20220526 추가-->
+	<script>
+		function reply_textarea_resize(obj) {
+			obj.style.height = '1px';
+			obj.style.height = (obj.scrollHeight) + 'px';
+		}
+	</script>
+	<!-- //댓글 textarea 높이조절 20220526 추가-->
+
+	<!-- s : 20220610 -->	
+	<script>
+		$(function (){
+			$(".alarm").click(function (){
+			$("#alarm").show();
+				$(".alarm").click(function (){
+					$("#alarm .cont_text").text("댓글에 대한 알림이 해지되었습니다");
+				});
+				$(".alarm.on").click(function (){
+					$("#alarm .cont_text").text("댓글에 대한 업데이트 알림을 받습니다");
+				});
+			});
+		});
+	</script>
+	<!-- e : 20220610 -->
+
+	<!-- s : 20220607 -->
+	<script>
+		function change1() {
+			$('#sub_list01').toggle();
+			var button = document.getElementById("sub_list_1");
+			var buttonState = button.dataset.buttonState;
+			var buttonText;
+			var buttonState;
+			if (buttonState === 'report') {
+				buttonText = "답글 1개 보기";
+				buttonState = "close";
+			} else {
+				buttonText = "답글 숨기기";
+				buttonState = "report"
+			}
+			button.innerHTML = buttonText;
+			button.dataset.buttonState = buttonState;
+		}
+
+		function change2() {
+			$('#sub_list02').toggle();
+			var button = document.getElementById("sub_list_2");
+			var buttonState = button.dataset.buttonState;
+			var buttonText;
+			var buttonState;
+			if (buttonState === 'report') {
+				buttonText = "답글 1개 보기";
+				buttonState = "close";
+			} else {
+				buttonText = "답글 숨기기";
+				buttonState = "report"
+			}
+			button.innerHTML = buttonText;
+			button.dataset.buttonState = buttonState;
+		}
+
+		function change3() {
+			$('#sub_list03').toggle();
+			var button = document.getElementById("sub_list_3");
+			var buttonState = button.dataset.buttonState;
+			var buttonText;
+			var buttonState;
+			if (buttonState === 'report') {
+				buttonText = "답글 1개 보기";
+				buttonState = "close";
+			} else {
+				buttonText = "답글 숨기기";
+				buttonState = "report"
+			}
+			button.innerHTML = buttonText;
+			button.dataset.buttonState = buttonState;
+		}
+	</script>
+	<script type="text/javascript">
+
+		function getShow(){
+			$('#text_box').toggle();
+			$('#reply_comment').css('display','block');
+		}
+		
+		function getHide(){
+			$('#text_box').show();
+			$('#reply_comment').css('display','none');
+		}
+		function getShow1(){
+			$('#text_box1').toggle();
+			$('#reply_comment1').css('display','block');
+		}
+		
+		function getHide1(){
+			$('#text_box1').show();
+			$('#reply_comment1').css('display','none');
+		}
+
+		function write_show(){
+			$('#new_write').toggle();
+		}
+	</script>
+	<!-- e : 20220607 -->
+
+	<script>
+		viewportChange();
+	</script>
+
+	<script src="../../_script/lozad.min.js"></script>
+	<script src="../../_script/polyfill.min.js"></script>
+	<!-- s: 20220518 gc 추가 -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			GCFront.headerFixed();
+			GCFront.detectScroll2();
+			GCFront.hScroll();
+			GCFront.btnToggle();
+			GCFront.catOpen();
+			GCFront.commonTab();
+			GCFront.detectScroll5();
+			GCFront.hScroll2();
+			GCFront.swipeBanner();
+			GCFront.gnbOpen();
+			GCFront.commonAccordion();
+			GCFront.resizeInit();
+			GCFront.commonFooter(); //20220602 추가 : footer 스크립트
+			
+		});
+	</script>
+	<!-- e: 20220518 gc 추가 -->
+	<!-- s: 20220517 gc 추가 -->
+    <script type="text/javascript">
+        function popupAlert01() {
+            openLayer('popupAlert01');
+        }
+
+		function popupAlert02() {
+            openLayer('popupAlert02');
+        }
+		
+		function lyr01() {
+			openLayer('lyr01');
+		}
+
+		function lyr03() {
+			openLayer('lyr03');
+		}
+
+		function lyr08() {
+			openLayer('lyr08');
+		}
+    </script>
+    <!-- e: 20220517 gc 추가 -->
+	<!-- s: 20220518 gc 추가 -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			GCFront.commonTab();
+		});
+	</script>
+	<!-- e: 20220518 gc 추가 -->
+
+	<!-- s: 20220526 gc 추가 -->
+	<script type="text/javascript">
+		function openCategory() {
+			openLayer('openCategory')
+		}
+		function openKV() {
+			openLayer('openKV')
+		}
+		function openKV2() {
+			openLayer('openKV2')
+		}
+	</script>
+	<!-- e: 20220526 gc 추가 -->
+</head>
+
+<body>
+
+<!-- s : 스킵 -->
+<div id="skip_content">
+	<a href="#container">본문 바로가기</a>
+</div>
+<!-- e : 스킵 -->
+
+<div id="wrap" class="gc_free"> <!-- 게시판 별 테마 적용 클레스명: gc_school, gc_free, gc_support -->
+	<!-- s : 머리글 영역 -->
+	<input type="hidden" id="loginYn" value="" />
+	<header id="header" class="header"><!-- 20220504 클래스 추가 -->
+		<div class="s-inner">
+			<a href="/" class="logo">
+				<h1>경희대학교 게시판</h1>
+			</a>
+			<div class="header-right gnbMenu">
+				<ul>
+					<li>
+						<a href="javascript:;" id="link-search" class="link-search" data-omni="search"><i class="icon ico-large ico-zoom">검색</i></a>
+					</li>
+					<li>
+						<a href="javascript:;" onclick="getCartList()" aria-controls="cart-menu" aria-selected="false" class="link-cart" data-omni="cart"><i class="icon ico-large ico-cart">장바구니</i>
+							<span class="cart-inner-count"></span>
+						</a>
+						<div class="s-gnbSubWrap textSubWrap cartMenu" id="cart-menu">
+							<div class="gnbSubRound">
+								<div>
+									<ul class="gnb-cartList">
+									</ul>
+									<div class="btn-box">
+										<button type="button" class="btn btn-d btn-type2" onclick="NetFunnel_Action({action_id :'b2c_cart_view'},function(ev, ret){location.href='/sec/cart/';});" data-omni="cart">장바구니 보기</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<input type="hidden" name="useLogin" id="useLogin" value="" />
+
+						<a href="javascript:;" aria-controls="login-menu" aria-selected="false" class="link-login" data-omni="login"><i class="icon ico-large ico-people">로그인</i></a>
+						<div class="s-gnbSubWrap textSubWrap loginMenu" id="login-menu">
+							<div class="gnbSubRound loginBefore">
+								<div>
+									<dl>
+										<dt><a href="" onclick="NetFunnel_Action({action_id:'b2c_gnb_login'},'/sec/member/indexLogin/?returnUrl=/sec/');return false;" data-omni='login'>로그인</a></dt>
+										<dt><a href="/mypage/order/indexDeliveryList/" data-omni='orders'>주문/배송조회</a></dt>
+										<dt><a href="/customer/myDigitalReservationSearch/" data-omni='store reservation'>매장상담 예약 신청 조회</a></dt>
+										<dt><a href="" onclick="NetFunnel_Action({action_id:'b2c_gnb_login'},'/sec/member/indexLogin/?returnUrl=/sec/mypage/coupon/indexMyCoupon/');return false;" data-omni='login'>쿠폰존</a></dt>
+									</dl>
+								</div>
+							</div>
+							<div class="gnbSubRound loginAfter">
+								<div>
+									<dl>
+										<dt><span class="greet-txt"></span></dt>
+										<dd><a href="/membership/point/" data-omni='my account'>나의 정보</a></dd>
+										<dd><a href="/mypage/review/indexMyReview/" data-omni='my comment'>상품평 작성 : <span class="cmt-num writableCnt"></span> 건</a></dd>
+										<dd><a href="/mypage/order/indexDeliveryList/" data-omni='orders'>주문/배송 조회</a></dd>
+										<dd><a href="/mypage/coupon/indexMyCoupon/" data-omni='coupon zone'>쿠폰존</a></dd>
+										<dd><a href="/member/logout/" data-omni='logout'>로그아웃</a></dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;" class="link-m-nav" data-omni="gnb:open"><i class="icon ico-large ico-nav">전체메뉴</i></a>
+					</li>
+				</ul>
+			</div>
+			<!-- s : 20220519 gc 추가 -->
+			<div class="util_box">
+				<a href="javascript:;" onclick="history.back();" class="gc_btn_prev">
+					<i class="gc_icon i-prev-wh">뒤로가기</i>
+				</a>
+			</div>
+			<!-- e : 20220519 gc 추가 -->
+		</div>
+	</header>
+	<!-- e : 머리글 영역 -->
+	<!-- s : 통합검색 -->
+	<script type="text/javascript">
+		var searchInputManager = {
+			isMobileDevice: function() {
+				var that = this,
+						winW = $(window).width();
+				if (winW > 800) {
+					return 'N';
+				} else {
+					return 'Y';
+				}
+			},
+			init: function() {
+				var that = searchInputManager;
+				$.cookie.json = true;
+				$.cookie.data = {
+					SEARCH_HISTORY: 'sh-b2c',
+					SEARCH_MAX_SIZE: 10,
+					option: {
+						expires: 30,
+						path: '/'
+					}
+				};
+
+				that.$appendingTarget = {
+					searchHistory: $('#searchkeywordRecent ul.list'),
+					popular: $('#searchkeywordPopular ul.list'),
+					makeTime: $('#makeTime'),
+					autoComplete: $('#searchAuto ul.list')
+				};
+
+				that.cookieName = $.cookie.data.SEARCH_HISTORY;
+				that.isMobileYN = that.isMobileDevice();
+			},
+			searchHistoryTemplate: function(keyword) {
+				return {
+					keyword: keyword,
+					date: searchDatetimestampToString(new Date())
+				};
+			},
+			getKeywordList: function(cookieName) {
+				var searchKeywordList = new Array(),
+						dataList = $.cookie(cookieName).data;
+
+				if (!dataList || '' == dataList || undefined == dataList) {
+					return searchKeywordList;
+				}
+
+				$.each(dataList, function(idx, element) {
+					searchKeywordList.push(element.keyword);
+				});
+
+				return searchKeywordList;
+			},
+			saveSearchHistory: function(keyword) {
+				var that = searchInputManager,
+						$cookie = $.cookie,
+						cookieValue = $cookie(that.cookieName),
+						dataList = null;
+
+				if (cookieValue == undefined) {
+					dataList = [that.searchHistoryTemplate(keyword)];
+				} else {
+					if (cookieValue.length == 0) {
+						dataList = [that.searchHistoryTemplate(keyword)];
+
+					} else {
+						dataList = cookieValue.data;
+
+						if ($.inArray(keyword, that.getKeywordList(that.cookieName)) >= 0) {
+							return;
+						}
+
+						if (dataList.length >= $cookie.data.SEARCH_MAX_SIZE) {
+							dataList.splice(0, 1);
+						}
+						dataList.push(that.searchHistoryTemplate(keyword));
+					}
+				}
+
+				$cookie(that.cookieName, {
+					'data': dataList
+				}, $cookie.data.option);
+			},
+			getSearchHistory: function() {
+				var cookieValue = $.cookie(searchInputManager.cookieName);
+
+				if (undefined != cookieValue) {
+					return cookieValue;
+				}
+			},
+			getSearchDate: function(keyword) {
+				var date = '',
+						that = searchInputManager,
+						cookieValue = $.cookie(that.cookieName),
+						searchHistoryList = that.getSearchHistory();
+
+				if ('' == searchHistoryList || searchHistoryList == undefined || cookieValue == undefined) {
+					return date;
+				}
+
+				var dataList = cookieValue.data;
+
+				var idx = -1;
+				for (var i = 0; i < dataList.length; ++i) {
+					var keywordInList = dataList[i].keyword;
+
+					if (keywordInList != undefined) {
+						if (keywordInList.toLocaleLowerCase() == keyword.toLocaleLowerCase()) {
+							idx = i;
+							break;
+						}
+					}
+				}
+				if (idx > -1) {
+					date = dataList[idx].date;
+				}
+
+				return date;
+			},
+			drawSearchHistory: function() {
+				var that = searchInputManager,
+						$cookie = $.cookie,
+						cookieValue = $cookie(that.cookieName);
+
+				if (undefined == cookieValue) {
+					return;
+				} else if (cookieValue.length == 0) {
+					return;
+				}
+
+				var dataList = cookieValue.data,
+						template = '';
+
+				for (var i = dataList.length - 1; i >= 0; i--) {
+					var element = dataList[i],
+							keyword = element.keyword;
+					template += '<li class="item">';
+					template += '<a href="javascript:void(0);" class="link">' + keyword + '</a>';
+					template += '<button type="button" class="btn-delete delete" keyword="' + keyword + '" onclick="searchInputManager.clearSearchHistory(this)">';
+					template += '<span class="blind">삭제</span>';
+					template += '</button>';
+					template += '</li>';
+				}
+				that.$appendingTarget.searchHistory.html(template);
+				that.$appendingTarget.searchHistory.off('click').on('click', 'a', function(e) {
+					that.getSearchResult($(e.target).text());
+				});
+			},
+			clearSearchHistory: function(element) {
+				var that = searchInputManager,
+						$element = $(element),
+						$cookie = $.cookie;
+
+				if ($element.hasClass('delete-all')) {
+					$.removeCookie(that.cookieName, {
+						path: $cookie.data.option.path
+					});
+					that.$appendingTarget.searchHistory.empty();
+
+				} else if ($element.hasClass('delete')) {
+					var selectedKeyword = $element.attr('keyword'),
+							cookieValue = $cookie(that.cookieName),
+							dataList = cookieValue.data;
+
+					var idx = -1;
+					for (var i = 0; i < dataList.length; ++i) {
+						var keyword = dataList[i].keyword;
+						if (keyword == undefined) {
+							keyword = 'undefined';
+						}
+
+						if (keyword == selectedKeyword) {
+							idx = i;
+							break;
+						}
+					}
+					if (idx > -1) {
+						dataList.splice(idx, 1);
+						$cookie(that.cookieName, {
+							'data': dataList
+						}, $cookie.data.option);
+
+						$element.parent().remove();
+					}
+				}
+			},
+			callAjax: function(options) {
+				$.ajax({
+					url: options.url,
+					type: options.type,
+					data: options.data
+
+				}).done(
+						function(data, textStatus, jqXHR) {
+							if (data.exCode != null && data.exCode !== "") {
+								if (options.fail !== undefined) {
+									options.fail();
+								}
+								let alertData = {
+									title: "alert",
+									content: data.exMsg
+								};
+								commonAlert(alertData);
+								openLayer('commonAlert');
+							} else {
+								options.done(data);
+							}
+						}).fail(function(jqXHR, textStatus, errorThrown) {
+					if (options.fail !== undefined) {
+						options.fail();
+					}
+					if (jqXHR.status !== 0) {
+						ajax.error(jqXHR.status, jqXHR.responseText);
+					}
+				}).always(function() {}).then(function(data, textStatus, jqXHR) {});
+			},
+
+			getRecommendKeyword: function(callback) {
+				var that = searchInputManager;
+				that.callAjax({
+					url: '/sec/xhr/search/recommendkeyword/',
+					type: 'GET',
+					done: function(result) {
+						that.recommendKeyword = result.recommendKeyword;
+
+						if (callback != undefined) {
+							callback();
+						}
+					}
+				});
+			},
+			setRecommendKeyword: function() {
+				var that = searchInputManager;
+
+				if (that.recommendKeyword == undefined) {
+					that.getRecommendKeyword(that.setRecommendKeywordCallback);
+					return;
+				}
+				that.setRecommendKeywordCallback();
+			},
+
+			setRecommendKeywordCallback: function() {
+				var that = searchInputManager;
+				//$('#unifiedInputSearch').attr('placeholder', that.recommendKeyword); // 20200917 삭제
+				$('.inp-placeholder').text(that.recommendKeyword); // 20200917 추가
+			},
+
+			getPopularKeyword: function() {
+				var that = searchInputManager;
+				that.callAjax({
+					url: '/sec/xhr/search/popword/',
+					type: 'POST',
+					data: new wnAddonParamVo('', 'popword', 'D', 'B2C_SearchWord', 'json', ''),
+					done: function(result) {
+						var popwordResult = result.popwordResult;
+						if (popwordResult.Data == undefined) {
+							return;
+						}
+
+						var queryList = popwordResult.Data.Query,
+								popularList = '';
+
+						$.each(queryList, function(idx, element) {
+							var order = idx + Number(1);
+							popularList += '<li class="item">' +
+									'<span class="rank">' + order + '</span>' +
+									'<a href="javascript:void(0);" class="link">' + element.content + '</a>';
+							if (element.updown == 'U') {
+								popularList += '<span class="change arr-up"><span class="blind">순위상승</span></span>';
+							} else if (element.updown == 'D') {
+								popularList += '<span class="change arr-down"><span class="blind">순위하락</span></span>';
+							} else if (element.updown == 'C') {
+								popularList += '<span class="change arr-same"><span class="blind">순위유지</span></span>';
+							}
+							popularList += '</li>';
+						});
+
+						that.$appendingTarget.popular.off('click').on('click', 'a', function(e) {
+							that.getSearchResult($(e.target).text());
+						});
+						that.$appendingTarget.popular.empty();
+						that.$appendingTarget.makeTime.empty();
+
+						that.$appendingTarget.popular.append(popularList);
+						that.$appendingTarget.makeTime.append(popwordResult.Data.MakeTime + ' 기준');
+					}
+				});
+			},
+			getSearchInputAutoComplete: function(keyword) {
+				var that = searchInputManager;
+				keyword = keyword.trim();
+
+				that.callAjax({
+					url: '/sec/xhr/search/autocom/',
+					type: 'POST',
+					data: new wnAddonParamVo(keyword, 'b2c', '', '', 'json', 'fw'),
+					done: function(result) {
+						var template = '';
+						var autoCompleteResultList = result.autoCompleteResult;
+						that.$appendingTarget.autoComplete.empty();
+
+						if (autoCompleteResultList.length > 0 && autoCompleteResultList != undefined) {
+							$.each(autoCompleteResultList, function(idx, element) {
+								template += '<li class="item">';
+								template += '<a href="javascript:void(0);" class="link" text="' + element.text + '">';
+								template += (element.modified).replace(/\<!HS\>(.*)\<!HE\>/gi, "\<span class=\"key\"\>$1\</span\>");
+								template += '</a>';
+								template += '<span class="date">' + searchInputManager.getSearchDate(element.text) + '</span>';
+								template += '</li>';
+							});
+
+							that.$appendingTarget.autoComplete.html(template);
+
+							that.$appendingTarget.autoComplete.off('click').on('click', 'a', function(e) {
+								that.getSearchResult($(e.target).attr('text'));
+							});
+
+							$('.unified-search-layer.type-keyword').hide();
+							$('.unified-search-layer.type-auto').show();
+
+						} else {
+							$('.unified-search-layer.type-auto').hide();
+							if (keyword == '') {
+								//$('#unifiedInputSearch').attr('placeholder', searchInputManager.recommendKeyword); // 20200917 삭제
+								$('.inp-placeholder').text(that.recommendKeyword); // 20200917 추가
+								$('.unified-search-layer.type-keyword').show();
+							}
+						}
+					}
+				})
+			},
+
+			getSearchResult: function(keyword, searchResultInputId) {
+				console.log(keyword);
+				keyword = escapeHtml(keyword);
+
+				var that = searchInputManager;
+				keyword = keyword.trim();
+				console.log("@@ keyword1 : " + keyword);
+				keyword = filterAcc(keyword); // 에어컨액세서리
+
+				if (searchResultInputId != undefined) {
+					that.searchResultInputId = searchResultInputId;
+				}
+
+				if (keyword == '') {
+					var recommendKeyword = that.recommendKeyword;
+					if (recommendKeyword == undefined) {
+						that.getRecommendKeyword(that.getSearchResultNoKeywordCallback);
+					}
+					that.getSearchResultCallback(recommendKeyword);
+					return;
+				}
+				that.getSearchResultCallback(keyword);
+			},
+			getSearchResultNoKeywordCallback: function() {
+				var that = searchInputManager,
+						recommendKeyword = that.recommendKeyword,
+						searchResultInputId = that.searchResultInputId;
+
+				if (searchResultInputId != undefined) {
+					$(searchResultInputId).val(recommendKeyword);
+					$(searchResultInputId).attr('placeholder', recommendKeyword);
+				}
+
+				that.getSearchResultCallback(recommendKeyword);
+			},
+			getSearchResultCallback: function(keyword) {
+				console.log("@@ start getSearchResultCallback");
+				var that = searchInputManager,
+						isMobileYN = that.isMobileDevice();
+				console.log("@@ keyword : " + keyword);
+				that.saveSearchHistory(keyword);
+				ajax.call({
+					url: '/sec/xhr/search/keywordRedirect?keyword=' + encodeURIComponent(keyword),
+					data: new WNSearchParamVo(keyword, '', '', '', '', '', '', '', '', '', '', '', '', 'b2c', isMobileYN),
+					dataType: 'json',
+					contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+					done: function(result) {
+						console.log("@@ ajax success");
+						console.log("@@result : " + JSON.stringify(result));
+						//yhj
+						$(".unified-search-input-wrap").removeClass("is-active");
+						$("body").removeClass("is-pc is-mo");
+						$(".unified-search-layer").hide();
+						$("body").removeClass("fixed-scroll");
+						$("#gnbmask").hide();
+						$(".unified-search-input-wrap .inp").val("");
+						$(".unified-search-input-wrap .btn-inp-clear").hide();
+						$(".inp-placeholder").show();
+						if (isSecApp() == "true") {
+							window.secapp.showAndHideGnb('VISIBLE');
+						}
+
+
+						var keywordRedirect = result.keywordRedirect;
+
+						if (keywordRedirect.totalCount > 0) {
+							window.location.href = keywordRedirect.REDIRECT_URL;
+							return;
+						}
+						var $form = document.createElement("form");
+						$form.setAttribute('charset', 'UTF-8');
+						$form.setAttribute('method', 'POST');
+						$form.setAttribute('action', '/sec/search/searchresult/?keyword=' + encodeURIComponent(keyword));
+
+						var $input = document.createElement('input');
+						$input.setAttribute('type', 'hidden');
+						$input.setAttribute('name', 'isMobileYN');
+						$input.setAttribute('value', searchInputManager.isMobileYN);
+						$form.appendChild($input);
+						document.body.appendChild($form);
+
+						$form.submit();
+					}
+				});
+			}
+		}
+
+		function filterAcc(keyword) {
+			if ((keyword.indexOf("에어컨") > -1 || keyword.indexOf("무풍에어컨") > -1) && (keyword.indexOf("액세서리") > -1 || keyword.indexOf("악세서리") > -1 || keyword.indexOf("엑세서리") > -1)) {
+				keyword = "에어컨액세서리";
+				console.log("@@ keyword2: " + keyword);
+			}
+			return keyword;
+		}
+
+		function escapeHtml(string) {
+			return String(string).replace(/[&<>"'`=\/]/g, function(s) {
+				return entityMap[s];
+			});
+		}
+		var entityMap = {
+			'&': '&amp;',
+			'<': '&lt;',
+			'>': '&gt;',
+			'"': '&quot;',
+			"'": '&#39;',
+			'/': '&#x2F;',
+			'`': '&#x60;',
+			'=': '&#x3D;'
+		};
+
+		/* s: APP용 함수 */
+		function isSecApp() {
+			return 'false';
+		}
+
+		function once(func) {
+			var flag, result;
+
+			return function() {
+				if (flag) {
+					return result;
+				}
+				flag = true;
+				return result = func.apply(this);
+			}
+		}
+
+		/* s : 20200917 수정 */
+		var searchLinkforApp = once(function() {
+			var that = searchInputManager;
+
+			that.setRecommendKeyword();
+			that.drawSearchHistory();
+			that.getPopularKeyword();
+
+		});
+
+		function searchOpenforApp() { // 20200917 추가
+			searchLinkforApp();
+			headerSearch.eventListener.uinifiedSearchOpen();
+		}
+		/* e : 20200917 수정 */
+
+		/* e: APP용 함수 */
+
+		/* s : 닷컴 웹 검색시 챗봇 검색 연계 구현  jiwon0.id 22.04.26 */
+		function chat_open4(chatbotKeyword) {
+			fcTrack('click', 'floating chat:chat online');
+
+			var keyword = encodeURIComponent(chatbotKeyword);
+			var popupX = (window.screen.width / 2) - (356 / 2);
+			var popupY = (window.screen.height / 2) - (750 / 2);
+
+			window.open('/sec/chatbot/?keyword=' + keyword, '_chatbot4', 'status=no, height=750, width=356, left=' + popupX + ', top=' + popupY + ', screenX=' + popupX + ', screenY= ' + popupY);
+		}
+		/* e : 닷컴 웹 검색시 챗봇 검색 연계 구현  jiwon0.id 22.04.26 */
+
+		$(document).ready(function() {
+			var that = searchInputManager;
+
+			$('#link-search').on('click', function() {
+				that.setRecommendKeyword();
+				that.drawSearchHistory();
+				that.getPopularKeyword();
+			});
+
+			$('#unifiedInputSearch').on('keyup', function(e) {
+				var $target = $(e.target),
+						keyword = $target.val().replace(/\\/gi, '');
+				$target.val(keyword);
+
+				that.getSearchInputAutoComplete(keyword);
+			});
+
+			$('#unifiedInputSearch').on('click', function() { //20210324 추가
+				$('.inp-placeholder').hide();
+			});
+
+			/* s : 닷컴 웹 검색시 챗봇 검색 연계 구현  jiwon0.id 22.04.26 */
+			$('.chatbot-search').on('click', function() {
+				var chatbotKeyword = "";
+				var length = $(".chatbot-inp").length;
+				var array = new Array(length);
+
+				for (var i = 0; i < length; i++) {
+					array[i] = $(".chatbot-inp").eq(i).val();
+					if (array[i]) {
+						chatbotKeyword = array[i];
+						break;
+					}
+				}
+				chat_open4(chatbotKeyword);
+			});
+			/* e : 닷컴 웹 검색시 챗봇 검색 연계 구현  jiwon0.id 22.04.26 */
+
+		});
+	</script>
+	<div class="unified-search-input-wrap">
+		<div class="unified-search-input-inner">
+			<div class="search-box">
+				<label for="unifiedInputSearch" class="blind">통합 검색</label>
+				<input type="text" id="unifiedInputSearch" class="inp chatbot-inp" onfocus="headerSearch.eventListener.uinifiedSearchInp()" onkeydown="headerSearch.eventListener.uinifiedSearchChange()">
+				<span class="inp-placeholder"></span>
+				<button type="button" class="btn-inp-clear" title="삭제"><span class="blind">삭제</span></button>
+				<button type="button" class="btn-search chatbot-search" title="검색" id="unifiedSearchButton" onclick="javascript:searchInputManager.getSearchResult($('#unifiedInputSearch').val(), '#unifiedInputSearch')"><span class="blind">검색</span></button>
+			</div>
+		</div>
+
+		<!-- s : 검색레이어 : 최근, 인기-->
+		<div class="unified-search-layer type-keyword" style="display:none">
+			<div class="unified-search-layer-inner">
+				<!-- 20200618 감싸는 태그 unified-search-layer-inner 추가 -->
+				<div class="layer-cont">
+					<div class="cont-inner box-recent" id="searchkeywordRecent" role="tabpanel">
+						<strong class="tit">최근 검색어</strong>
+						<ul class="list">
+						</ul>
+						<div class="etc"><a href="javascript:void(0);" class="btn-delete delete-all" onclick="searchInputManager.clearSearchHistory(this)">최근 검색어 전체 삭제</a></div>
+					</div>
+					<div class="cont-inner box-popular" id="searchkeywordPopular" role="tabpanel">
+						<strong class="tit">인기 검색어</strong>
+						<ul class="list">
+						</ul>
+						<div class="etc" id="makeTime">
+							<p class="date"></p>
+						</div>
+					</div>
+				</div>
+			</div><!-- 20200618 감싸는 태그 unified-search-layer-inner의 닫는 태그 추가 -->
+			<button type="button" class="btn-close-search"><span class="blind">검색 레이어 닫기</span></button><!-- 20200618 닫는 태그 추가-->
+			<!-- 20200622 button type 변경-->
+		</div>
+		<!-- e : 검색레이어 : 최근, 인기-->
+
+		<!-- s : 검색레이어 : 자동 완성-->
+		<div class="unified-search-layer type-auto" style="display:none">
+			<div class="unified-search-layer-inner">
+				<!-- 20200618 감싸는 태그 unified-search-layer-inner 추가 -->
+				<div class="layer-cont" id="searchAuto">
+					<ul class="list">
+					</ul>
+				</div>
+			</div><!-- 20200618 감싸는 태그 unified-search-layer-inner의 닫는 태그 추가 -->
+			<button type="button" class="btn-close-search"><span class="blind">검색 레이어 닫기</span></button><!-- 20200618 닫는 태그 추가-->
+			<!-- 20200622 button type 변경-->
+		</div>
+		<!-- e : 검색레이어 : 자동 완성-->
+
+		<button type="button" class="btn-close-search"><span class="blind">검색 레이어 닫기</span></button><!-- 20200622 button type 변경-->
+	</div>
+	<!-- e : 통합검색 -->
+
+	<!-- s : 본문 영역 -->
+	<div id="container" class="gc_container"><!-- 20220519 gc 추가 : gc_container 클래스 추가(공통) -->
+		<div class="content">
+			<div class="gc_community_detail">
+				<div class="detail_herder">
+					<!-- s : 20220610 추가 -->
+					<div class="tooltip_layer" id="alarm">
+						<p class="tooltip_title">알림</p>
+						<div class="tooltip_content">
+							<p class="cont_text">댓글에 대한 업데이트 알림을 받습니다</p>
+						</div>
+					</div>
+					<!-- e : 20220610 추가 -->
+					<div class="gc_flex">
+						<div class="tit_box">
+							<span class="badge_icon type_01">일상</span>
+						</div>
+						<div class="util_box">
+							<button type="button" class="btn alarm btn-tgl">
+								<i class="icon i_alarm">알람</i>
+							</button>
+							<button type="button" class="btn bookmark btn-tgl">
+								<i class="icon i_bookmark">스크랩</i>
+							</button>
+							<button type="button" class="btn share">
+								<i class="icon i_share">공유</i>
+							</button>
+						</div>
+					</div>
+					<div class="title_box">
+						<h2>학교 게시판 글 제목 영역입니다</h2>
+					</div>
+					<div class="user_box">
+						<div class="user_profile_img">
+							<img src="../../_images/temps/avatar-fmale.svg" alt="프로필이미지">
+						</div>
+						<div class="user_info_state">
+							<div class="user_info">
+								<span class="user_name">Sko***</span>
+								<span class="star_grade lv3"><span>3성</span></span><!-- 레벨 클래스: lv1~lv3 (이미지 추가예정) -->
+							</div>
+							<div class="user_state">
+								<div class="state_box">
+									<span>2022.02.17</span>
+									<span>10:10</span>
+									<dl class="gc_list_info">
+										<dt><i class="gc_icon i_eye">조회수</i></dt>
+										<dd>120</dd>
+									</dl>
+									<dl class="gc_list_info">
+										<dt><i class="gc_icon i_reply">댓글</i></dt>
+										<dd>222</dd>
+									</dl>
+								</div>
+								<div class="btn_box">
+									<button type="button" class="gc_btn" onclick="lyr08('lyr08');">수정</button>
+									<button type="button" class="gc_btn" onclick="lyr01('lyr01');">삭제</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="detail_body">
+					<div class="img_box">
+						<img src="../../_images/temps/avatar-fmale.svg" alt="">
+					</div>
+					<div class="cont_text">
+						학교 게시판 글 내용 영역입니다. <br /> 
+						학교 게시판 글 내용 영역입니 다.  게시 글은 제목 / 작성자 / 내용 / 해시 태그가 검색 인자입니 다.  <br />
+						내용은 스크롤 됩니다. 더 긴 내용을 보려면 스크롤하세요.
+					</div>
+					<ul class="hashtag_box">
+						<li><a href="javascript:;">#해시태그</a></li>
+						<li><a href="javascript:;">#해시태그</a></li>
+						<li><a href="javascript:;">#해시태그</a></li>
+						<li><a href="javascript:;">#해시태그</a></li>
+					</ul>
+				</div>
+				
+				<div class="reply_box">
+					<div class="reply_sum">
+						<dl class="gc_list_info">
+							<dt><i class="gc_icon i_reply">댓글</i></dt>
+							<dd>댓글 222 개</dd>
+						</dl>
+					</div>
+					<!-- 댓글이 있는 경우 -->
+					<div class="reply_box_wrap">
+						<div class="blind">댓글목록</div>
+						<ul class="list_wrap">
+							<li>
+								<div class="contents_box">
+									<figure class="gc_profile">
+										<img src="../../_images/temps/avatar-fmale.svg" class="gc_profile_img" alt="프로필이미지">
+										<figcaption class="gc_profile_info">
+											<div class="text_box" id="text_box">
+												<div class="u_box">
+													<div class="inner">
+														<span class="u_name">갤캠스 스타</span>
+														<span class="u_lv lv2">2성</span>
+													</div>
+													<div class="btn_box">
+														<button type="button" class="gc_btn" onclick="getShow()">수정</button>
+														<button type="button" class="gc_btn" onclick="lyr01('lyr01');">삭제</button>
+													</div>
+												</div>
+												<div class="txt_item">
+													<span>2022.02.17</span>
+													<span>10:10</span>
+												</div>
+												<div class="text_info">
+													댓글 내용입니다. 댓글 내용입니다
+												</div>
+											</div>
+											<div class="reply_comment" style="display: none;" id="reply_comment">
+												<div class="textarea_box">
+													<div class="inner">
+<textarea id="newTweetContent" class="reply_textarea" placeholder="댓글을 남겨주세요." cols="50" rows="1" onkeydown="reply_textarea_resize(this)" onkeyup="reply_textarea_resize(this)" aria-valuetext="reply_textarea_resize(this)">동해물과
+백두산이
+동해물과 백두산이 백두산이 백두산이 백두산이 동해물과 백두산이 백두산이 백두산이 백두산이 동해물과 백두산이 백두산이 백두산이 백두산이
+백두산이
+동해물과
+백두산이
+</textarea>
+														<button type="button" class="btn-reply" id="ntc-btn-reply" onclick="getHide()"><span>게시</span></button>
+													</div>
+												</div>
+											</div>
+										</figcaption>
+									</figure>
+									<div class="bottom">
+										<div class="sum_box">답글<span class="sum_box">2</span> <button type="button" class="gc_btn" onclick="write_show()">답글작성</button></div>
+										<div class="btn_box">
+											<button class="gc_btn btn-tgl">
+												<i class="gc_icon i_hand_yes">좋아요</i>
+												<span class="txt_item">12</span>
+											</button>
+											<button class="gc_btn btn-tgl">
+												<i class="gc_icon i_hand_no">싫어요</i>
+												<span class="txt_item">36</span>
+											</button>
+										</div>
+									</div>
+									<ul class="sub_list_wrap" id="sub_list01"><!-- 20220607 : 추가 -->
+										<li>
+											<div class="contents_box">
+												<figure class="gc_profile">
+													<img src="../../_images/temps/avatar-fmale.svg" class="gc_profile_img" alt="프로필이미지">
+													<figcaption class="gc_profile_info">
+														<div class="text_box" id="text_box1">
+															<div class="u_box">
+																<div class="inner">
+																	<span class="u_name">갤캠스 스타</span>
+																	<span class="u_lv lv2">2성</span>
+																</div>
+																<div class="btn_box">
+																	<button type="button" class="gc_btn" onclick="getShow1()">수정</button>
+																	<button type="button" class="gc_btn" onclick="lyr01('lyr01');">삭제</button>
+																</div>
+															</div>
+															<div class="txt_item">
+																<span>2022.02.17</span>
+																<span>10:10</span>
+															</div>
+															<div class="text_info">
+																댓글 내용입니다. 댓글 내용입니다
+															</div>
+														</div>
+														<div class="reply_comment" style="display: none;" id="reply_comment1">
+															<div class="textarea_box">
+																<div class="inner">
+																	<textarea id="newTweetContent" class="reply_textarea" placeholder="댓글을 남겨주세요." cols="50" rows="1" onkeydown="reply_textarea_resize(this)" onkeyup="reply_textarea_resize(this)" aria-valuetext="reply_textarea_resize(this)">동해물과
+백두산이
+동해물과 백두산이 백두산이 백두산이 백두산이 동해물과 백두산이 백두산이 백두산이 백두산이 동해물과 백두산이 백두산이 백두산이 백두산이
+백두산이
+동해물과
+백두산이
+																	</textarea>
+																	<button type="button" class="btn-reply" id="ntc-btn-reply" onclick="getHide1()"><span>게시</span></button>
+																</div>
+															</div>
+														</div>
+													</figcaption>
+												</figure>
+												<div class="bottom">
+													<div class="btn_box">
+														<button class="gc_btn btn-tgl">
+															<i class="gc_icon i_hand_yes">좋아요</i>
+															<span class="txt_item">12</span>
+														</button>
+														<button class="gc_btn btn-tgl">
+															<i class="gc_icon i_hand_no">싫어요</i>
+															<span class="txt_item">36</span>
+														</button>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li id="new_write" style="display: none">
+											<div class="contents_box">
+												<figure class="gc_profile">
+													<img src="../../_images/temps/avatar-fmale.svg" class="gc_profile_img" alt="프로필이미지">
+													<figcaption class="gc_profile_info">
+														<div class="reply_comment" id="reply_comment1">
+															<div class="textarea_box">
+																<div class="inner">
+																	<textarea id="newTweetContent" class="reply_textarea" placeholder="댓글을 남겨주세요." cols="50" rows="1" onkeydown="reply_textarea_resize(this)" onkeyup="reply_textarea_resize(this)" aria-valuetext="reply_textarea_resize(this)"></textarea>
+																	<button type="button" class="btn-reply" id="ntc-btn-reply"><span>게시</span></button>
+																</div>
+															</div>
+														</div>
+													</figcaption>
+												</figure>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<p class="btn_view"><button id="sub_list_1" onclick="change1()" type="button" class="gc_btn"  data-button-state="report">답글 숨기기</button></p><!-- 20220607 : 추가 -->
+							</li>
+							<li>
+								<div class="contents_box">
+									<figure class="gc_profile">
+										<img src="../../_images/temps/avatar-fmale.svg" class="gc_profile_img" alt="프로필이미지">
+										<figcaption class="gc_profile_info">
+											<div class="u_box">
+												<div class="inner">
+													<span class="u_name">갤캠스 스타</span>
+													<span class="u_lv lv2">2성</span>
+												</div>
+												<div class="btn_box">
+													<button type="button" class="gc_btn" onclick="lyr03('lyr03');">신고</button>
+												</div>
+											</div>
+											<div class="txt_item">
+												<span>2022.02.17</span>
+												<span>10:10</span>
+											</div>
+											<div class="text_info">
+												댓글 내용입니다. 댓글 내용입니다
+											</div>
+										</figcaption>
+									</figure>
+									<div class="bottom">
+										<div class="sum_box">답글<span class="sum_box">2</span></div>
+										<div class="btn_box">
+											<button class="gc_btn btn-tgl">
+												<i class="gc_icon i_hand_yes">좋아요</i>
+												<span class="txt_item">12</span>
+											</button>
+											<button class="gc_btn btn-tgl">
+												<i class="gc_icon i_hand_no">싫어요</i>
+												<span class="txt_item">36</span>
+											</button>
+										</div>
+									</div>
+									<ul class="sub_list_wrap" id="sub_list02"><!-- 20220607 : 추가 -->
+										<li>
+											<div class="contents_box">
+												<figure class="gc_profile">
+													<img src="../../_images/temps/avatar-fmale.svg" class="gc_profile_img" alt="프로필이미지">
+													<figcaption class="gc_profile_info">
+														<div class="u_box">
+															<div class="inner">
+																<span class="u_name">갤캠스 스타</span>
+																<span class="u_lv lv2">2성</span>
+															</div>
+															<div class="btn_box">
+																<button type="button" class="gc_btn" onclick="lyr03('lyr03');">신고</button>
+															</div>
+														</div>
+														<div class="txt_item">
+															<span>2022.02.17</span>
+															<span>10:10</span>
+														</div>
+														<div class="text_info">
+															댓글 내용입니다. 댓글 내용입니다
+														</div>
+													</figcaption>
+												</figure>
+												<div class="bottom">
+													<div class="btn_box">
+														<button class="gc_btn btn-tgl">
+															<i class="gc_icon i_hand_yes">좋아요</i>
+															<span class="txt_item">12</span>
+														</button>
+														<button class="gc_btn btn-tgl">
+															<i class="gc_icon i_hand_no">싫어요</i>
+															<span class="txt_item">36</span>
+														</button>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<p class="btn_view"><button id="sub_list_2" onclick="change2()" type="button" class="gc_btn"  data-button-state="report">답글 숨기기</button></p><!-- 20220607 : 추가 -->
+								</div>
+							</li>
+							<li>
+								<div class="contents_box">
+									<figure class="gc_profile">
+										<img src="../../_images/temps/avatar-fmale.svg" class="gc_profile_img" alt="프로필이미지">
+										<figcaption class="gc_profile_info">
+											<div class="u_box">
+												<div class="inner">
+													<span class="u_name">갤캠스 스타</span>
+													<span class="u_lv lv2">2성</span>
+												</div>
+												<div class="btn_box">
+													<button type="button" class="gc_btn" onclick="lyr03('lyr03');">신고</button>
+												</div>
+											</div>
+											<div class="txt_item">
+												<span>2022.02.17</span>
+												<span>10:10</span>
+											</div>
+											<div class="text_info close">
+												이 댓글은 관리자에 의해 숨김 처리 되었습니다
+											</div>
+										</figcaption>
+									</figure>
+									<div class="bottom">
+										<div class="sum_box">답글<span class="sum_box">2</span></div>
+										<div class="btn_box">
+											<button class="gc_btn btn-tgl">
+												<i class="gc_icon i_hand_yes">좋아요</i>
+												<span class="txt_item">12</span>
+											</button>
+											<button class="gc_btn btn-tgl">
+												<i class="gc_icon i_hand_no">싫어요</i>
+												<span class="txt_item">36</span>
+											</button>
+										</div>
+									</div>
+									<ul class="sub_list_wrap" id="sub_list03"><!-- 20220607 : 추가 -->
+										<li>
+											<div class="contents_box">
+												<figure class="gc_profile">
+													<img src="../../_images/temps/avatar-fmale.svg" class="gc_profile_img" alt="프로필이미지">
+													<figcaption class="gc_profile_info">
+														<div class="u_box">
+															<div class="inner">
+																<span class="u_name">갤캠스 스타</span>
+																<span class="u_lv lv2">2성</span>
+															</div>
+															<div class="btn_box">
+																<button type="button" class="gc_btn" onclick="lyr03('lyr03');">신고</button>
+															</div>
+														</div>
+														<div class="txt_item">
+															<span>2022.02.17</span>
+															<span>10:10</span>
+														</div>
+														<div class="text_info close">
+															이 댓글은 관리자에 의해 숨김 처리 되었습니다
+														</div>
+													</figcaption>
+												</figure>
+												<div class="bottom">
+													<div class="btn_box">
+														<button class="gc_btn btn-tgl">
+															<i class="gc_icon i_hand_yes">좋아요</i>
+															<span class="txt_item">12</span>
+														</button>
+														<button class="gc_btn btn-tgl">
+															<i class="gc_icon i_hand_no">싫어요</i>
+															<span class="txt_item">36</span>
+														</button>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<p class="btn_view"><button id="sub_list_3" onclick="change3()" type="button" class="gc_btn" data-button-state="report">답글 숨기기</button></p><!-- 20220607 : 추가 -->
+								</div>
+							</li>
+						</ul>
+					</div>					
+					<!-- //댓글이 있는 경우 -->
+					<!-- 댓글이 없는 경우 -->					
+					<div class="result_null" style="display: none;">
+						<dl class="data_msg i_none">
+							<dt>등록된 댓글이 없습니다</dt>
+							<dd>첫 번째 댓글을 남겨 보세요</dd>
+						</dl>
+					</div>
+					<!-- //댓글이 없는 경우 -->
+				</div>
+				<div class="bot_sticky fixed">
+					<div class="emotion_wrap">
+						<div class="blind">공감 선택</div>
+						<ul class="emotion_list">
+							<li>
+								<button class="gc_btn btn-tgl" onclick="popupAlert02();">
+									<i class="gc_icon i_like">좋아요</i>
+									<span class="txt_item"><span>와우</span>226</span>
+								</button>
+							</li>
+							<li>
+								<button class="gc_btn btn-tgl" onclick="popupAlert02();">
+									<i class="gc_icon i_soso">그저그래요</i>
+									<span class="txt_item"><span>ㅋㅋ</span>226</span>
+								</button>
+							</li>
+							<li>
+								<button class="gc_btn btn-tgl" onclick="popupAlert02();">
+									<i class="gc_icon i_dislike">싫어요</i>
+									<span class="txt_item"><span>쏘쏘</span>226</span>
+								</button>
+							</li>
+						</ul>
+					</div>
+					<div class="reply_form_wrap "><!--fixed-->
+						<div class="reply_wrap">
+							<div class="con_box_reply">
+								<div class="user_profile_img">
+									<img src="../../_images/temps/avatar-fmale.svg" alt="">
+								</div>
+								<div class="reply_comment">
+									<div class="textarea_box">
+										<div class="inner">
+											<textarea id="newTweetContent" class="reply_textarea" placeholder="댓글을 남겨주세요." cols="50" rows="1" onkeydown="reply_textarea_resize(this)" onkeyup="reply_textarea_resize(this)"></textarea>
+											<button type="button" class="btn-reply" id="ntc-btn-reply" onclick="popupAlert01();"><span>게시</span></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- e : 본문 영역 -->
+
+	<!-- 플로팅 메뉴 -->
+	<div id="floatingSticky" class="floating-sticky">
+		<div class="menu-list">
+			<div class="inner">
+				<a href="#" class="btn-floating" onclick="floating_open();"><span>메뉴 보기</span></a>
+				<ul>
+					<!-- 모바일 앱에서 AR 기능 한시적 OFF-->
+					<!---->
+					<li class="menu01" aria-hidden=""><a href="javascript:chat_open();">빠르고 편리하게 도와드리는<br>삼성닷컴 챗봇입니다.</a></li>
+					<li class="menu02" aria-hidden=""><a href="javascript:chat_open2();">무엇을 도와드릴까요?<br> 온라인 구매 상담사 입니다.</a></li>
+					<li class="menu03" aria-hidden="true" style="display:none;"><a href="/customer/reservationstore/?ref=floating/ " onclick="chat_open3();">매장 방문 예약하고<br> 맞춤 상담을 받아보세요.</a></li>
+					<!-- s : 20220523 gc 추가 : 최근 본 상품 -->
+					<li class="menu04"><a href="#" id="btn-rcntgoods-floating" type="button" onclick="showLatestItem(self,'latestItemLayer'); getRecentGoods(); return false" data-st-path="/sec/" data-popup-target="latestItemLayer"><span> <img src="https://images.samsung.com/is/image/samsung/sec-galaxy-fit2-r220-sm-r220nzkakoo-frontblack-307445599?$128_128_PNG$" alt="갤럭시 핏2"> 최근 본 제품 (1)</span></a></li>
+					<!-- e : 20220523 gc 추가 : 최근 본 상품 -->
+				</ul>
+			</div>
+		</div>
+		<button type="button" class="btn-gotop">
+			<span>위로</span>
+		</button>
+	</div>
+	<script>
+		floatSticky();
+
+		function firstRecentGoods() {
+			$.ajax({
+				url: "/xhr/goods/getFirstRecentGoods",
+				type: "POST",
+				success: function(result) {
+					var recentGoodsData = JSON.parse(result);
+
+					if (recentGoodsData.recentYn === "Y") {
+						$("floatingSticky").find(".menu04").remove();
+						var html = "";
+						html += '<li class="menu04">'
+						html += '<a href="#" id = "btn-rcntgoods-floating" type="button" onclick="showLatestItem(self,\'latestItemLayer\'); getRecentGoods(); return false" data-st-path ="' + recentGoodsData.stContextPath + '"  data-popup-target="latestItemLayer" >'
+						html += '<span> <img src="' + recentGoodsData.recentImgPath + '?$128_128_PNG$" alt="' + recentGoodsData.recentGoodsNm + '"> 최근 본 제품 (' + recentGoodsData.recentGoodsLength + ')</span>'
+						html += '</a>'
+						html += '</li>'
+
+						$("#floatingSticky").find("ul").append(html);
+					}
+				}
+			});
+		}
+		if (!(new Date() >= new Date('2022/02/08 00:00:00') &&
+				new Date() < new Date('2022/02/15 18:00:00'))) {
+			firstRecentGoods();
+		}
+	</script>
+	<!-- //플로팅 메뉴 -->
+	<!-- s : 바닥글 영역 - b2c -->
+	<script type="text/javascript">
+		function showSafety() {
+			$(".dropDown-content .subDesc").hide();
+			$(".dropDown-content .dropButton").hide();
+
+			$(".dropDown-content .dropcontent").show();
+		}
+
+		// 약관 변경
+		$(document).on("click", "#dropClauseList01 .droplist-item", function(e) {
+			var id = $(this).attr("id");
+
+			if (id == "optServiceClause03") {
+				location.href = "/membership/terms/";
+			}
+		});
+
+		function openPrivacy() {
+			var agent = navigator.userAgent.toLowerCase();
+
+			if (((navigator.appName === 'Netscape' && agent.indexOf('trident') !== -1) || (agent.indexOf("msie") !== -1))) { // ie
+				window.open("https://www.eprivacy.or.kr/front/certifiedSiteMark/certifiedSiteMarkPopup.do?certCmd=E&certNum=2021-E-R033", "popup", "width=650, height=900, fullscreen=no, menubar=no, status=no, toolbar=no, titlebar=yes, location=no, scrollbar=no");
+			} else {
+				window.open("https://www.eprivacy.or.kr/front/certifiedSiteMark/certifiedSiteMarkPopup.do?certCmd=E&certNum=2021-E-R033", "popup", "width=550,height=750");
+			}
+		}
+
+		//협력회사 사이버 신문고(새창)
+		function openCyberVoc() {
+			var agent = navigator.userAgent.toLowerCase();
+			if (((navigator.appName === 'Netscape' && agent.indexOf('trident') !== -1) || (agent.indexOf("msie") !== -1))) { // ie
+				window.open("https://www.secbuy.com/irj/servlet/prt/portal/prtroot/com.sec.gsrm.com.cybervoc.BoardComponent?submissionId=introductionGuest&boardId=E0009&entrance=samsung.com", "popup", "width=830,height=600, fullscreen=no, menubar=no, status=no, toolbar=no, titlebar=yes, location=no, scrollbar=no");
+			} else {
+				window.open("https://www.secbuy.com/irj/servlet/prt/portal/prtroot/com.sec.gsrm.com.cybervoc.BoardComponent?submissionId=introductionGuest&boardId=E0009&entrance=samsung.com", "popup", "width=830,height=600");
+			}
+		}
+	</script>
+	<script type="text/javascript" src="https://wcs.naver.net/wcslog.js"></script>
+	<script type="text/javascript">
+		if (!wcs_add) var wcs_add = {};
+		wcs_add["wa"] = "13bc3440ce4191";
+		if (window.wcs) {
+			wcs_do();
+		}
+	</script>
+
+	<!-- s: 20220530 gc 추가 : footer -->
+	<footer id="footer" class="footer-b2c gc_main_footer">  <!-- 2022.05.27 gc 추가 .gc_main_footer추가로 풋터 디자인 수정 -->
+		<div class="footer-content">
+			<div class="footer-inner">
+				<div class="info-detail">
+					<div class="info_detail_a"><a href="#">로그아웃</a></div>|
+					<div class="info_detail_a"><a href="#">혜택/가이드</a></div>|
+					<div class="info_detail_a"><a href="#">매장상담예약</a></div>|
+					<div class="info_detail_a"><a href="#">서비스 센터</a></div>|
+					<div class="info_detail_a"><a href="#">서비스 이용약관</a></div>|
+					<div class="info_detail_a"><a href="#">커뮤니티 이용약관</a></div>|
+					<div class="info_detail_a"><a href="#">개인정보 처리방침</a></div>|
+					<div class="info_detail_a"><a href="#">이벤트 개인정보 처리 방침</a></div>|
+					<div class="info_detail_a"><a href="#">고객 서비스</a></div>|
+					<div class="info_detail_a"><a href="#">가입안내</a></div>
+				</div>
+
+				<button class="footer_com_btn">
+					<span>삼성전자 주식회사</span>
+				</button>
+			</div>
+		</div>
+		<div class="footer-content">
+			<div class="footer-inner">
+				<div class="info-detail">
+					<p>
+						<span>삼성전자 주식회사 대표이사 : 한종희</span>
+						<span class="mo-inline">사업자등록번호 : 124-81-00998</span>
+						<span class="comp-wrap"><a href="https://www.ftc.go.kr/www/bizCommView.do?key=232&apv_perm_no=2000374001130200515&pageUnit=10&searchCnd=wrkr_no&searchKrwd=1248100998&pageIndex=1" class="comp" title="새창 열림" target="_blank">사업자 정보확인</a></span>
+						<span>통신판매업 신고 : 2000-경기수원-0515</span>
+					</p>
+					<p class="gap">
+						<span>사업장주소 : 경기도 수원시 영통구 삼성로 129(매탄동)</span>
+						<span>호스팅서비스사업자 : 한국아이비엠(주)</span>
+						<span>대표번호 : 02-2255-0114</span>
+						<span>제품/서비스/멤버십: 1588-3366(통화요금 : 발신자부담)</span>
+						<span>구매문의 : 1588-6084</span>
+						<span>큐커 식품관 문의 : 1811-9228</span>
+					</p>
+					<p>본 사이트에서 판매되는 상품 중에는 등록된 개별 판매자가 판매하는 상품이 포함되어 있습니다. </p>
+					<p>개별 판매자 판매 상품의 경우 삼성전자(주)는 통신판매중개업자로서 통신판매의 당사자가 아니므로, 개별 판매자가 등록한 상품, 거래정보 및 거래 등에 대해 책임을 지지 않습니다.</p>
+					<p>본 사이트의 컨텐츠는 저작권법의 보호를 받는 바 무단 전재, 복사, 배포 등을 금합니다.</p>
+					<p class="copyright">Copyright &copy; 1995-2022 Samsung. All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- e: 20220530 gc 추가 : footer -->
+	
+	<!-- s : 이메일 무단 수집거부 -->
+	<div class="layer-pop layer-normal" id="popupGatherRefuse" tabindex="0" data-popup-layer="popupGatherRefuse" data-focus="popupGatherRefuse">
+		<div class="layer-header">
+			<h2>이메일 무단 수집거부</h2>
+		</div>
+		<div class="layer-content">
+			<div class="etc-divWrap">
+				<p>본 웹사이트는 게시된 이메일 주소가 전자우편 수집 프로그램이나 그 밖의 기술적 장치를 이용하여 무단 수집되는 것을 거부합니다.<br>
+					이를 위반 시 『정보통신망 이용 촉진 및 정보보호 등에 관한 법률』등에 의해 처벌받을 수 있습니다.</p>
+			</div>
+		</div>
+		<button type="button" class="pop-close" data-focus-next="popupGatherRefuse">팝업닫기</button>
+	</div>
+	<!-- e : 이메일 무단 수집거부 -->
+
+	<!-- s : 아이디어 정책 -->
+	<div class="layer-pop layer-normal" id="popupIdeaPolicy" tabindex="0" data-popup-layer="popupIdeaPolicy" data-focus="popupIdeaPolicy"">
+		<div class="layer-header">
+			<h2>아이디어 제안에 대한 정책</h2>
+		</div>
+		<div class="layer-content">
+			<div class="etc-divWrap">
+				<p>삼성전자 및 삼성전자 임직원은 당사가 공식적으로 요청하지 않았음에도 불구하고 여러분께서 일방적으로 당사에 제출하는 아이디어나 제안 등을 수령하거나 검토하지 않습니다.</p>
+
+				<p>이는 제출하신 내용이 당사 내부적으로 개발한 제품, 기술, 서비스와 유사할 경우 발생할 수 있는 오해와 분쟁을 방지하고 나아가 여러분의 창의적인 아이디어를 적극 보호하기 위함입니다.</p>
+
+				<p>이러한 취지를 이해하여 주시고 구체화되지 않은 아이디어나 콘셉트(Concept) 단계의 제안이 당사에 제출되지 않도록 하여 주시기 바랍니다.</p>
+			</div>
+		</div>
+		<button type="button" class="pop-close" data-focus-next="popupIdeaPolicy">팝업닫기</button>
+	</div>
+	<!-- e : 아이디어 정책 -->
+
+	<!-- s : 웹접근성 우수사이트 인증서  -->
+	<div class="layer-pop layer-default" id="popupWA" tabindex="0" data-popup-layer="popupWA" data-focus="popupWA">
+		<div class="layer-content">
+			<img src="../_images/common/WA-2021.jpg" alt="웹접근성 우수사이트 인증서">
+		</div>
+		<button type="button" class="pop-close" data-focus-next="popupWA">팝업닫기</button>
+	</div>
+	<!-- e : 웹접근성 우수사이트 인증서  -->
+
+	<!-- layer : 댓글 입력 경고 -->
+	<div class="layer-pop layer-default alert" id="popupAlert01" tabindex="0" data-popup-layer="popupAlert01" data-focus="popupAlert01">
+		<div class="layer-header blind">
+			<h2>댓글 입력 경고</h2>
+		</div>
+		<div class="layer-content">
+			<div class="layer-content">
+				<p>댓글을 1자 이상 입력해 주세요.</p>
+				<div class="btn-box">
+					<a href="javascript:void(0)" class="btn btn-d btn-type2" onClick="closePopup('popupAlert01')">확인</a>
+				</div>
+			</div>
+		</div>
+		<button type="button" class="pop-close" data-focus-next="popupAlert01">팝업닫기</button>
+	</div>
+	<!-- //layer : 댓글 입력 경고 -->
+	<!-- layer : 공감 중복 확인 -->
+	<div class="layer-pop layer-default alert" id="popupAlert02" tabindex="0" data-popup-layer="popupAlert02" data-focus="popupAlert02">
+		<div class="layer-header blind">
+			<h2>공감 중복 확인</h2>
+		</div>
+		<div class="layer-content">
+			<div class="layer-content">
+				<p>이미 공감한 글입니다.</p>
+				<div class="btn-box">
+					<a href="javascript:void(0)" class="btn btn-d btn-type2" onClick="closePopup('popupAlert02')">확인</a>
+				</div>
+			</div>
+		</div>
+		<button type="button" class="pop-close" data-focus-next="popupAlert02">팝업닫기</button>
+	</div>
+	<!-- //layer : 공감 중복 확인 -->
+
+	<!-- s : 수정 완료 -->
+	<div class="layer-pop" id="lyr08" tabindex="0" data-popup-layer="lyr08" data-focus="lyr08" aria-hidden="false" style="display: none;">
+		<div class="layer-header blind">
+			<h2>신고 입력 알림</h2>
+		</div>
+		<div class="layer-content">
+			<div class="dormant">
+				<p>게시글 수정이 완료되었습니다</p>
+			</div>
+			<div class="btn-box">        
+				<a href="javascript:void(0)" class="btn btn-d btn-type2">확인</a>
+			</div>
+		</div>
+		<button type="button" class="pop-close">팝업닫기</button>
+	</div>
+	<!-- e :  수정 완료 -->
+
+	<!-- s : 게시글삭제 -->
+	<div class="layer-pop" id="lyr01" tabindex="0" data-popup-layer="lyr01" data-focus="lyr01" aria-hidden="false" style="display: none;">
+		<div class="layer-header blind">
+			<h2>게시글을 삭제 알림</h2>
+		</div>
+		<div class="layer-content">
+			<div class="dormant">
+				<p>게시글을 삭제하시겠습니까?</p>
+			</div>
+			<div class="btn-box double">
+				<!-- 버튼 두개시 클래스 double 추가 -->
+				<a href="javascript:void(0)" class="btn btn-d btn-type1">취소</a>
+				<a href="javascript:noticeList.selfPopUpClose('lyr01');" class="btn btn-d btn-type2" data-focus-next="lyr01">확인</a>
+			</div>
+		</div>
+		<button type="button" class="pop-close" data-focus-next="popupsrhWord">팝업닫기</button>
+	</div>
+	<!-- e :  게시글삭제 -->
+
+	<!-- s :gc  신고하기 팝업 -->
+	<div class="layer-pop layer-normal gc_layer layer_kv active" id="lyr03" tabindex="0" data-popup-layer="lyr03" data-focus="lyr03" aria-hidden="false" style="display: none;">
+		<div class="layer-header">
+			<h2>신고하기</h2>
+		</div>
+		<div class="layer-content">
+			<div class="report_contents">
+				<div class="report_header">
+					<dl>
+						<dt>작성자</dt>
+						<dd><b>skott21</b></dd>
+					</dl>
+					<dl>
+						<dt>게시글</dt>
+						<dd>게시 글 제목입니다. 게시 글 제목입니다.</dd>
+					</dl>
+				</div>
+				<div class="report_detail">
+					<dl class="col">
+						<dt>사유선택</dt>
+						<dd>
+							<div class="box">
+								<div class="chk-form col">
+									<span><input type="checkbox" id="gdGbCd01" name="gdGbCd" value="gdGbCd01"><label for="gdGbCd01">욕설/비하발언</label></span>
+									<span><input type="checkbox" id="gdGbCd02" name="gdGbCd" value="gdGbCd02"><label for="gdGbCd02">특정인 비방</label></span>
+									<span><input type="checkbox" id="gdGbCd03" name="gdGbCd" value="gdGbCd03"><label for="gdGbCd03">게시 글/댓글 도배</label></span>
+									<span><input type="checkbox" id="gdGbCd04" name="gdGbCd" value="gdGbCd04"><label for="gdGbCd04">홍보성 컨텐츠</label></span>
+									<span><input type="checkbox" id="gdGbCd05" name="gdGbCd" value="gdGbCd05"><label for="gdGbCd05">음란성</label></span>
+									<span><input type="checkbox" id="gdGbCd06" name="gdGbCd" value="gdGbCd06" class=""><label for="gdGbCd06">기타</label></span>
+									
+								</div>
+								<div class="writeTxt-box">
+									<label for="inpTitle" class="blind">
+										기타
+										<!--<span class="ico-required">*<span>필수입력</span></span>-->
+										<!-- 필수값인 경우 위 주석 해제 -->
+									</label>
+									<textarea id="commentArea" name="commentArea" cols="200" wrap="hard" title="기타 사유" placeholder="기타 사유를 입력해 주세요(최소 10글자 이상)"></textarea>
+									<p class="txtCount" id="txtCount"><span><strong>0</strong>/5,000</span></p>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<div class="tip_note">※ 신고하신 내용은 관리자 검토 후 조치 됩니다.</div>
+				</div>
+				
+			</div>
+			<div class="btn-box box-type2">
+				<button type="button" class="btn btn-type2 btn-l">신고하기</button>
+			</div>
+
+		</div>
+		<button type="button" class="pop-close" data-focus-next="openKV">팝업닫기</button>
+	</div>
+	<!-- e :gc  신고하기 팝업 -->
+
+	<!-- e : 바닥글 영역 - b2c -->
+</div>
+
+</body>
+
+</html>
