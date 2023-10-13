@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>HCAU-PUBL</title>
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+  <div class="wrap">
+    <div class="HCAU-sidebar" include-html="/static/html/aside.html"></div>
+    <div class="HCAU-menubar" include-html="/static/html/nav7.html"></div>
+
+    <div class="HCAU-container">
+      <div class="HCAU-contents" id="contents" include-html="/static/html/main.html"></div>
+      <footer include-html="/static/html/footer.html"></footer>
+    </div>
+  </div>
+
+  <script src="/static/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/js/main.js"></script>
+  <script src="/static/js/includeHTML.js"></script>
+  <script src="/static/js/includeRouter.js"></script>
+  <script>
+    includeHTML( function () {
+      includeRouter( function () {
+
+      });
+    });
+
+    </script>
+</body>
+
+</html>

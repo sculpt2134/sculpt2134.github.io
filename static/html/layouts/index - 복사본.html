@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HCAU-PUBL</title>
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/css/styles.css" />
+</head>
+<body>
+  <div id="wrap">
+    <aside include-html="/static/html/aside.html"></aside>
+    <nav include-html="/static/html/nav.html"></nav>
+    
+    <article include-html="/static/html/article.html"></article>
+    <footer include-html="/static/html/footer.html"></footer>
+  </div>
+
+  <script src="/static/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/js/main.js"></script>
+  <script src="/static/js/includeHTML.js"></script>
+  <script src="/static/js/includeRouter.js"></script>
+  <script>
+    includeHTML( function () {
+      includeRouter( function () {
+        // do something in the future
+      });
+    });
+    </script>
+</body>
+
+</html>

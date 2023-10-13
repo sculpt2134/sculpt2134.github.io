@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="ko" >
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8">
+<title>삼성계정</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+
+<script>var PAGEPATH='/accounts/idntn/userVerifyKoreanRepresentative.js';</script>
+
+<link rel="stylesheet" href="https://account.samsung.com/accounts/v1/resources/js/common/angular-block-ui/angular-block-ui.min.css">
+<link rel="stylesheet" type="text/css" href="https://account.samsung.com/accounts/v1/resources/css/v2/angular-material.css">
+<link rel="stylesheet" type="text/css" href="https://account.samsung.com/accounts/v1/resources/one-ui/css/default.css">
+<link rel="stylesheet" type="text/css" href="../../../../_css/gc-common.css"><!-- 20220628 gc 추가 -->
+
+
+<link type="image/x-icon" rel="shortcut icon" href="https://account.samsung.com/favicon.ico" />
+<!--[if lt IE 9]>
+	<script src="https://account.samsung.com/accounts/v1/resources/js/common/json/json3.min.js"></script>
+	<script src="https://account.samsung.com/accounts/v1/resources/js/common/html5shiv/html5shiv.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+//<![CDATA[
+	var wipLogicalPath			= "../../../../_script/accounts";
+	var wipResourcesVerDt		= "20220517024951";
+	var wipCancelURI			= "https://www.samsung.com/sec//sec/?state=EbDqDQWwxiK41kj1kExw7VJkMC";
+	var wipGoBackURI			= "https://www.samsung.com/sec//sec/?state=EbDqDQWwxiK41kj1kExw7VJkMC";
+	var loLangCD				= "ko";
+	var loCntyCD				= "KR";
+	var isTextRightAlign		= false;
+	var isTextFirstFamilyName	= true;
+	var isTextFirstDateYear		= true;
+	var wipAcsChnlEnum			= "WEB";
+	var wipViewTypeEnum			= "v2";
+	var userGeoIPCnty3dgtCd		= "KOR";
+	var userAcsCnty3dgtCd		= "KOR";
+	var userCnty3dgtCd			= "";
+	var wipUriEnum				= "userVerifyKoreanRepresentative";
+	var APPNAME					= "SECKDPWEB";
+	var sJSESSIONID				= "7c26f504-1280-44bd-b396-14833ac6b370";
+	var wipCsrf 				= {'token' : '7b8ae6ea-3c2f-4b3b-b831-0a5c760b02f3', 'headerName' : 'X-CSRF-TOKEN'};
+	var wipResourcesUrl			= "https://account.samsung.com/accounts/v1/resources";
+	var isGAEnabled 			= true;
+	var googleRecaptchaApiUrl 	= "https://www.google.com";
+//]]>
+
+    if(isGAEnabled) {
+        var containerId;
+        if(wipResourcesUrl.indexOf("sad") !== -1) {
+          containerId = 'GTM-KCH2BM6';
+        }
+        else if(wipResourcesUrl.indexOf("stg") !== -1) {
+          containerId = 'GTM-W3S5ZM6';
+        }
+        else {
+          containerId = 'GTM-5C6SNNV';
+        }
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer', containerId);
+    }
+
+	var createPostMessage = function(){
+
+	    var sendPostMessage = function(){
+	        console.log("");
+	    }
+
+	    if(APPNAME.indexOf("samsung_com_us") !== -1) {
+	        if(document.getElementsByClassName('wrapper')[0]) {
+	            var pageType = "signin";
+	            if(document.querySelector('form[name="signUpForm"]')) {
+	                pageType = "signup";
+	            } else if (document.querySelector('form[name=findIdForm]')){
+	                pageType = "findid";
+	            } else if (document.querySelector('form[name=rstPwd]')){
+	                pageType = "resetpwd";
+	            } else {
+	                pageType = "others";
+	            }
+	            sendPostMessage = function(){
+	                window.parent.postMessage({
+	                    pageType: pageType
+	                }, '*');
+	            }
+	        }
+	    }
+	    sendPostMessage();
+	}
+
+</script>
+
+<!-- js loading -->
+<script src="https://account.samsung.com/accounts/v1/resources/js/common/wip.js"></script>
+
+<script src="https://account.samsung.com/accounts/v1/resources/js/v2/app.js"></script>
+<script src="https://account.samsung.com/accounts/v1/resources/js/v2/run.js"></script>
+
+<script src="https://account.samsung.com/accounts/v1/resources/js/common/qrcode-generator/qrcode.js"></script>
+<script src="https://account.samsung.com/accounts/v1/resources/js/common/qrcode-generator/qrcode_UTF8.js"></script>
+<script src="https://account.samsung.com/accounts/v1/resources/js/common/angular-qrcode/angular-qrcode.js"></script>
+
+</head>
+<script type="text/javascript">
+	window.document.title = '가입 연령 확인 | 삼성 계정';
+</script>
+
+<body data-ng-cloak class="gateway-kor">
+<!-- iam-wrapper -->
+<div class="wrapper" data-ng-controller="cmmController as cmm">
+	
+<div class="banner" ng-if="isIESupportMessageShow=='Y'">
+	<div class="banner-inner">
+		<div class="title">Internet Explorer 지원 종료 예정</div>
+		<div class="cnt">
+			2022-04-01 이후에는  삼성 계정에 접속할 때 Internet Explorer를 더 이상 사용할 수 없습니다.
+			<br>
+			 2022-04-01 이후에 삼성 계정에 접속할 때는  <a href="https://www.microsoft.com/edge" target="_blank">Microsoft Edge</a>, <a href="https://www.google.com/chrome/" target="_blank">Google Chrome</a>, <a href="https://www.mozilla.org/" target="_blank">Mozilla Firefox</a>를 사용하세요.
+ </div>
+		<div class="close"><button type="button" ng-click="isIESupportMessageShowToggle()">Banner Close</button></div>
+	</div>
+</div>
+<header class="one-header">
+	<div class="header-inner">
+		<div class="logo">
+			<h1><img src="https://account.samsung.com/accounts/v1/resources/one-ui/images/svg/txt_logo.svg" onerror="this.src='https://account.samsung.com/accounts/v1/resources/one-ui/images/layout/txt_logo.png';" alt="Samsung account"></h1>
+		</div>
+	</div>
+</header>
+
+	<main class="one-main" data-ng-controller="mainController as vm">
+		<div class="main-inner">
+			<!-- container -->
+			<div class="container" role="main">
+				<div class="title one-title">
+					<h1>삼성계정 하나면 충분합니다.</h1>
+				</div>
+				<!-- div class="subDesc">서브 설명 들어가는 곳</div -->
+				<div class="content">
+					<!-- content -->
+
+					<!-- 회원가입동의 게이트 -->
+					<div class="join-select">
+						<p>한번의 가입으로 언제 어디서나 삼성 서비스를 즐기실 수 있습니다.</p>
+						<div class="one-btn-container">
+							<button class="one-primary one-button" type="button" id="gateCheckName14Over" data-ng-click="goCheckName($event)">
+								만 14세 이상 회원 가입
+							</button>
+						</div>
+					</div>
+
+					<div class="join-select year14">
+						<p>만 14세 미만이라면?<br>만 14세 미만은 보호자(법적 대리인)와 함께 가입해 주십시오.</p>
+						<div class="one-btn-container">
+							<button class="one-primary one-button" type="button" id="gateCheckName14Under" data-ng-click="goCheckName($event)">
+								만 14세 미만 회원 가입
+							</button>
+						</div>
+					</div>
+					<!--// 회원가입동의 게이트 -->
+
+					<!-- //content -->
+				</div>
+			</div>
+			<!-- //container -->
+			<!-- under content -->
+			<div class="under-content">
+				<!-- div class="outDesc"><p>하단 설명 들어가는 곳</p></div -->
+			</div>
+			<!--//under content -->
+		</div>
+	</main>
+	<!-- //main -->
+	<!-- footer -->
+	
+	<!-- footer -->
+	<footer class="one-footer" role="contentinfo">
+		<div class="footer-inner">
+			<div class="footer-logo"><img src="https://account.samsung.com/accounts/v1/resources/one-ui/images/layout/txt_foo_logo.png" onerror="this.src='https://account.samsung.com/accounts/v1/resources/one-ui/images/layout/txt_foo_logo.png';" alt="Samsung account"></div>
+			<address class="footer-address">Copyright © 1995-2022 Samsung. All Rights Reserved.</address>
+			<div class="footer-links" role="link">
+				<a href="https://account.samsung.com/membership/terms/termscontents?paramLocale=ko_KR" title="Open links in a new window Terms and Conditions">이용약관</a>
+				<a href="https://account.samsung.com/membership/terms/privacypolicy?paramLocale=ko_KR" title="Open links in a new window Privacy Policy" class="active">개인정보 처리방침</a>
+				<a href="https://account.samsung.com/membership/notice/notice-list?paramLocale=ko_KR" title="Open links in a new window Notices">공지</a>
+				<a href="https://help.content.samsung.com/csweb/auth/gosupport.do?targetUrl=/main/main.do&serviceCd=saccount&_common_country=KR&_common_lang=ko" title="Open links in a new window Contact us">문의하기</a>
+			</div>
+		</div>
+	</footer>
+	<!-- //footer -->
+
+	<!-- //footer -->
+</div>
+<!--//pageWrap -->
+
+<!-- javascript -->
+<script src="https://account.samsung.com/accounts/v1/resources/one-ui/js/common/jquery/jquery.min.js"></script>
+
+<script>
+  window.onload = function(){
+
+    inputEvent();
+    if($('form').find(':input')[0]!==undefined){
+      $(':focus').blur();
+      $('form').find(':input')[0].focus();
+    }
+  };
+
+  var inputEvent = function() {
+    var $inputs = $('form').find(':input');
+    $inputs.each(function() {
+      var $input = $(this),
+          $label = $input.parent('div.one-input-container');
+      if ($input.val()) {
+        $label.addClass('active');
+        $label.siblings('div.flexbdy').addClass('off');
+      }
+      
+      $input.focusin(function() {
+        $label.addClass('focus');
+        $label.siblings('div.flexbdy').addClass('off');
+      });
+      $input.change(function() {
+        $label.addClass('active');
+      });
+      $input.focusout(function() {
+        $label.removeClass('focus');
+
+        if (!$input.val()) $label.removeClass('active').siblings('div.flexbdy').removeClass('off');
+      });
+    }
+    );
+  }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,386 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'SamsungOneKorean';
+    src: url("/sec/static/evt/etc/designs/samsung/sec/business/font/SamsungOneKorean-400.eot");
+    src: url("/sec/static/evt/etc/designs/samsung/sec/business/font/SamsungOneKorean-400.eot?#iefix") format("embedded-opentype"),
+    url("/sec/static/evt/etc/designs/samsung/sec/business/font/SamsungOneKorean-400.woff") format("woff"),
+    url("/sec/static/evt/etc/designs/samsung/sec/business/font/SamsungOneKorean-400.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SamsungOneKorean';
+    src: url("/sec/static/evt/etc/designs/samsung/sec/business/font/SamsungOneKorean-700.eot");
+    src: url("/sec/static/evt/etc/designs/samsung/sec/business/font/SamsungOneKorean-700.eot?#iefix") format("embedded-opentype"), 
+    url("/sec/static/evt/etc/designs/samsung/sec/business/font/SamsungOneKorean-700.woff") format("woff"), 
+    url("/sec/static/evt/etc/designs/samsung/sec/business/font/SamsungOneKorean-700.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}body, textarea, input, select, textarea, button { font-family: 'SamsungOneKorean', 'Dotum', '돋움', 'Apple SD Gothic Neo', arial !important; word-break: keep-all; }
+
+/* layout */
+./*gb-gnb__bar-inner { padding-right: 26px; padding-left: 30px; }
+.gb-gnb .s-login_new { display: inline-block; vertical-align: middle; font-size: 0; line-height: 1; margin-left: 33px; }
+.gb-gnb .gb-gnb__utility-navi { position: relative; overflow: visible; height: 40px; padding: 9px 29px 10px; }
+.gb-gnb .gb-gnb__utility-navi .utility-business { font-weight: normal; }
+.gb-gnb .gb-gnb__utility-navi .utility-right a { margin-left: 31px; padding-right: 19px; }
+.gb-gnb .gb-gnb__my-layer { z-index: 1001; top: 40px; right: 0; }
+.gb-gnb .gb-gnb__my-layer:before { position: absolute; width: 13px; height: 13px; right: 30px; top: -8px; z-index: 1001; border-right: 1px solid #dadada; border-top: 1px solid #dadada; background: #fff; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); content: '' }
+.gb-gnb .gb-gnb__utility-navi .gb-gnb__my-layer li:first-child { padding: 0; border: 0; }
+.gb-gnb .gb-gnb__utility-navi .gb-gnb__my-layer li+li { border-top: 1px solid #dadada; }
+.gb-gnb .gb-gnb__utility-navi .gb-gnb__my-layer a { margin: 0; padding: 15px 0; }
+.gb-gnb__logo { padding-top: 23px; }
+.gb-gnb__main { height: auto; margin-left: -5px; }
+.gb-gnb__main .s-depth1-wrap { padding: 0 14px; }
+.gb-gnb .gb-gnb__sub-nav .s-depth1-wrap { padding: 0 15px; }
+.gb-gnb .s-btn-toggler, .gb-gnb .s-btn-link { height: 64px; padding: 0; }
+.gb-gnb__main .s-depth1-wrap:first-child .s-btn-toggler { padding: 0 5px; }
+.gb-gnb .gb-gnb__drop-desktop .s-depth2-col { width: 19.56%; }
+.gb-gnb .gb-gnb__drop-desktop .gb-gnb__drop-inner { padding: 50px 0 39px 30px; }
+.gb-gnb .gb-gnb__drop-desktop .s-depth2-link { font-size: 16px; font-weight: bold; }
+.gb-gnb .gb-gnb__drop-desktop .s-depth3-link { margin-bottom: 12px; }
+.gb-gnb__sub .gb-gnb__drop-desktop { background: #fff; border: 1px solid #dadada; }
+.gb-gnb .gb-gnb__drop-desktop .s-ico-close { right: 32px; }
+.gb-gnb__sub .s-depth2-wrap>a { display: block; margin-bottom: 28px; font-weight: bold; font-size: 20px; color: #000; text-transform: uppercase; }
+.gb-gnb__search-input-wrap input[type="text"] { display: block; width: 90%; height: 40px; padding: 0 7px; border-width: 0; font-size: 14px; color: #a6a6a6; line-height: 39px; box-sizing: border-box; }
+.ready-to-buy__contents { display: block; text-align: center; }
+.ready-to-buy__contents .tech-support, .ready-to-buy__contents .find-our-partners { display: inline-block; box-sizing: border-box; }
+.ready-to-buy__contents .c-title { font-weight: bold; }
+.ready-to-buy__contents .c-dec { font-weight: bold; }
+.gb-footer__top .gb-footer__col-wrap strong a, .gb-footer__top .gb-footer__col-wrap .gb-footer__col4-wrap-sns .gb-footer__col4-wrap strong, .gb-footer__top .gb-footer__nav-link .gb-footer__about-us a { font-weight: bold; }
+.cm-breadcrumb__path { padding: 13px 30px 12px; text-transform: none; }
+.feature-three-column-standard .s-slick .slick-slide { text-align: center; }
+a#oo_tab.oo_tab_right { padding: 7px 14px 13px; }
+a#oo_tab.oo_tab_right img { vertical-align: 0; }
+.gb-footer__bottom-list .gb-footer__item:nth-child(2) a { color: #add8ff }
+*/
+@media (min-width:1440px) {
+/*	.ready-to-buy__contents { display: block; padding: 100px 0 98px; text-align: center; }
+	.ready-to-buy__contents.three-colum .in__content { width: 47%; }
+	.ready-to-buy__contents .tech-support, .ready-to-buy__contents .find-our-partners { padding: 0 140px; }
+	.ready-to-buy__contents .tech-support .c-title, .ready-to-buy__contents .find-our-partners .c-title { padding-top: 26px; }
+	.ready-to-buy__contents .c-img { width: 60px; height: 60px; }
+	.ready-to-buy__contents .btn-center { padding-top: 26px; }
+	.gb-footer__top { padding: 62px 0 22px; }
+	.gb-footer__top .gb-footer__nav-link .gb-footer__about-us a { font-size: 16px; }
+	.gb-footer__top .gb-footer__nav-link.gb-footer__col2 { padding-bottom: 45px; }
+	.gb-footer__top .gb-footer__col-wrap strong a, .gb-footer__top .gb-footer__col-wrap .gb-footer__col4-wrap-sns .gb-footer__col4-wrap strong { font-size: 18px; }
+	.gb-footer__top .gb-footer__nav-link .gb-footer__col4-wrap { width: 16.6%; padding: 0 0 0 30px; }
+	.gb-footer__top .gb-footer__nav-link .gb-footer__col4-wrap .gb-footer__col4-wrap { padding: 0; }
+	.gb-footer__top .gb-footer__col-wrap .gb-footer__col4-wrap-sns { width: 20%; }
+	.gb-footer__col4 .gb-footer__item { margin-top: 13px; }
+	.gb-footer__about-us .gb-footer__item { margin-top: 14px; }
+	.gb-footer__bottom { padding: 15px 0 25px; }
+	.gb-footer__bottom a { font-size: 12px; }
+	.gb-footer__bottom-list .gb-footer__item { margin-right: 31px; }
+	.gb-footer__browser { padding-top: 5px; }
+	.industry-icons__wrap ul li { margin: 50px 0 0; }
+	.rowset-dropdown-wrap__title, .combinations-standard .section__title strong, .feature-three-column-standard__title { padding-bottom: 45px; }
+	.feature-three-column-standard__text-category { font-weight: bold; }
+	.combinations-standard__content .combinations-standard__home__visual__wrap .combinations-standard__home__content { padding-top: 144px; }
+	.insight-grid__list-type-list li { padding: 30px 0; }
+	.insight-grid__list-type-list li .list__cont-img { width: 296px; margin: 0; }
+	.insight-grid__list-type-list li .list__cont-info, .insight-grid__list-type-list li .list__cont-link { margin-left: 326px; }
+	.insight-grid__list-type-list li .list__cont-info .list__cont-title { margin: 20px 0; }
+	.insight-grid__list-type-list li .list__cont-info .list__cont-copy { margin: 0 0 20px; }*/
+	.s-btn-play span { font-weight: bold; font-size: 14px; }
+
+	/* H1 size */
+	.h1_title, .bu-g-static-title h1, .solution-header__title h2, .hero-carousel__slide-title { font-size: 70px; line-height: 80px; }
+
+	/* H2 size */
+	.h2_title, .search__popular-products h3, .insight-header__title h2, .bu-g-static-title h2, .insight-header__title h2, .insight-grid__search-title, .carousel-solutions__title, .carousel-products__title, .carousel-insights__title, .feature-benefit__title, .shop-header__title, .feature-benefit.s-img-size-medium .feature-benefit__text-wrap .feature-benefit__title, .s-title-small.section-divider .section-divider__title, .combinations-standard__content .combinations-standard__home__visual__wrap .combinations-standard__home__content .content-title, .search__text h2 { font-size: 58px; line-height: 70px; }
+
+	/* H3 size */
+	.insight-header__title h2, .h3_title, .bu-g-static-title h3, .ma-g-c-two-column__title h1, .industry-icons__wrap>strong, .rowset-dropdown-wrap__title, .combinations-standard .section__title strong, .feature-three-column-standard__title { font-size: 36px; line-height: 48px; }
+
+	/* H4 size */
+	.h4_title, .ma-g-c-two-column__title h1, .combinations-standard__list-wrap li .list__cont-info .list__cont-title>span, .bu-g-static-title h4, .insight-grid__list-type-list li .list__cont-info .list__cont-title, .carousel-insights__slide-title, .carousel-products__slide-title { font-size: 28px; line-height: 38px; }
+
+	/* CP1 size */
+	.cp1_light, .cp1_bold, .feature-benefit__sub-title, .bu-g-static-text .s-text-box { font-size: 20px; line-height: 32px; }
+
+	/* CP2 size */
+	.cp2_light, .cp2_bold, .feature-benefit__desc, .hero-carousel__text-body { font-size: 18px; line-height: 32px; }
+
+	/* P1 size */
+	.p1_light, .p1_bold, .ma-g-c-two-column__text p, .carousel-insights__text-eybrow, .carousel-solutions__text-eybrow, .combinations-standard__content .combinations-standard__home__visual__wrap .combinations-standard-home-sub-title .sub-title, .combinations-standard__list-wrap li .list__cont-info .list__cont-copy { font-size: 16px; line-height: 28px; }
+
+	/* P2 size */
+	.p2_light, .p2_bold, .insight-grid__search-input-wrap input[type="text"], .combinations-standard__list-wrap li .list__cont-info>span { font-size: 14px; line-height: 24px; }
+
+	/* P3 size */
+	.p3_light, .p3_bold, .feature-benefit__disclaimer { font-size: 12px; }
+	.combinations-standard__content .combinations-standard__home__visual__wrap .combinations-standard__home__content p { max-height: 100%; }
+}
+/*
+@media (max-width:1024px) {
+	.gb-gnb__bar-inner { height: 64px; padding: 0 14px; }
+	.gb-gnb .s-login_new, .gb-gnb .gb-gnb__my-layer { display: none; }
+	.ready-to-buy__contents.three-colum .in__content { width: 50%; }
+	.gb-gnb__drop-mobile .s-depth2-link-nonSub { display: block; position: relative; padding: 14px 0; padding-left: 32px; padding-right: 35px; color: #000; font-weight: bold; font-size: 16px; line-height: 24px; text-transform: uppercase; }
+}
+@media screen and (max-width:768px) {
+	.ready-to-buy__contents.three-colum .in__content { width: 100%; }
+	.ready-to-buy__contents .tech-support { padding-top: 0; border-top: 0; }
+	.gb-footer__top .gb-footer__nav-link .gb-footer__col4-wrap, .gb-footer__top .gb-footer__col-wrap .gb-footer__col4-wrap-sns { width: 100%; padding: 0; }
+}*/
+
+/* font */
+
+/* H1, H2 font */
+
+.feature-image__header .feature-image__title, .halftext__title, .wow-drag__header .wow-drag__title, .wow__header-type1 .kv-more-title, .wow-feature-head__wrap strong, .feature-interactive__title, .wow-feature-spec__header .header-title, .wow-feature-background__cont .wow-feature-background__title, .addendum-drawer__top h2, .feature-tab-container__title, .product-specs-tit, .product-download__title-wrap .product-download__title, .search__popular-products h3, .h1_title, .h2_title, .ma-g-c-two-column__title h1, .section-divider__title, .feature-benefit__title, .shop-header__title, .bu-g-static-title h1, .bu-g-static-title h2, .solution-header__title h2, .industry-icons__wrap strong, .hero-carousel__slide-title, .rowset-dropdown-wrap__title, .combinations-standard__content .combinations-standard__home__visual__wrap .combinations-standard__home__content .content-title, .insight-grid__list-type-list li .list__cont-info .list__cont-title, .search__text h2, .carousel-products__title, .carousel-insights__title, .carousel-solutions__title, .insight-header__title h2, .primary-selection__title-tit { font-weight: bold; }
+
+/* H3, H4 font */
+.feature-tab-container__top, .feature-image__header .feature-image__eyebrow, .halftext__title-eyebro.wow-eyebrow, .wow-drag__header .wow-drag__eyebrow, .wow-feature-background__cont .wow-feature-background__eyebrow, .feature-interactive__top.s-text, .wow__header-type1 .kv-more-title.kv-h3, .h3_title, .h4_title, .carousel-products__slide-title, .ma-g-c-two-column__title h1, .bu-g-static-title h3, .bu-g-static-title h4, .insight-grid__search-title, .feature-three-column-standard__title, .feature-three-column-standard__slide-title, .combinations-standard__list-wrap li .list__cont-info .list__cont-title, .insight-grid__list-wrap li .list__cont-info .list__cont-title, .carousel-insights__slide-title, .combinations-standard .section__title strong, .carousel-solutions__slide-title { font-weight: bold; }
+
+/* bold */
+.cp1_bold, .cp2_bold, .p1_bold, .p2_bold, .p3_bold, .insight-grid__list-type-list li .list__cont-info span, .hero-carousel__text-eybrow, .hero-carousel__text-body, .combinations-standard__list-wrap li .list__cont-info>span { font-weight: bold; }
+
+/* 20171206 수정 */
+.wow-feature-head__wrap ul li span,/* //20171206 수정 */
+
+a#oo_tab.oo_tab_right, .feature-benefit.s-img-align-left .feature-benefit__text-wrap .feature-benefit__desc, .feature-benefit.s-img-align-right .feature-benefit__text-wrap .feature-benefit__desc { font-weight: normal; }
+@media screen and (max-width:767px) {
+	.feature-benefit__sub-title, .bu-g-static-text .s-text-box { font-size: 5vw; line-height: 7.63vw; }
+	.feature-benefit__desc { font-size: 4.16vw; line-height: 5.97vw; }
+	.bu-g-static-title h1, .h1_title { font-size: 10.27vw; line-height: 13.18vw; }
+	.feature-benefit__title, .shop-header__title, .feature-benefit.s-img-size-medium .feature-benefit__text-wrap .feature-benefit__title, .bu-g-static-title h2, .h2_title { font-size: 8.88vw; line-height: 15.11vw; }
+	.ma-g-c-two-column__title h1, .bu-g-static-title h3, .h3_title { font-size: 7.36vw; line-height: 9.44vw; }
+	.bu-g-static-title h4, .combinations-standard__list-wrap li .list__cont-info .list__cont-title, .h4_title { font-size: 6.25vw; line-height: 7.63vw; }
+	.cp1_light, .cp1_bold { font-size: 5vw; line-height: 7.63vw; }
+	.cp2_light, .cp2_bold { font-size: 4.16vw; line-height: 5.97vw; }
+	.ma-g-c-two-column__text p, .p1_light, .p1_bold { font-size: 4.44vw; line-height: 6.66vw; }
+	.p2_light, .p2_bold { font-size: 3.88vw; line-height: 5.97vw; }
+	.p3_light, .p3_bold { font-size: 3vw; line-height: 4.44vw; }
+	.contact-layer .sub-title h3 { font-size: 20px; }
+}
+
+/* button */
+.s-btn-encased, .s-btn-text { letter-spacing: .7px; }
+
+/* notice table */
+/*
+.notice_table { border-top: 1px solid #dadada; }
+.notice_table table { width: 100%; border-collapse: collapse; }
+.notice_table thead tr th { padding: 12px 0; background: #eee; border-bottom: 1px solid #dadada; border-left: 1px solid #dadada; font-size: 14px; color: #000; line-height: 20px; text-align: center; }
+.notice_table tbody tr th { padding: 12px 15px; background: #eee; border-bottom: 1px solid #dadada; border-left: 1px solid #dadada; font-size: 14px; color: #000; line-height: 20px; }
+.notice_table tbody tr td { padding: 12px 15px; background: #fff; border-bottom: 1px solid #dadada; border-left: 1px solid #dadada; font-size: 14px; color: #5a5a5a; line-height: 22px; text-align: left; }
+.notice_table thead tr th:first-child, .notice_table tbody tr td:first-child { border-left: 0; }
+.notice_table tbody tr .line { border-left: 1px solid #dadada !important; }
+@media screen and (max-width:767px) {
+	.notice_table tbody tr th, .notice_table tbody tr td { padding: 5px; font-size: 12px; line-height: 1.2; }
+}*/
+.posWrap { position: relative; }
+/*#mingles1 { position: absolute; right: 9.229%; top: 35%; width: 14.35%; z-index: 10; }
+#mingles2 { position: absolute; left: 20%; top: 15.5%; width: 20.229%; z-index: 10; }
+#twosome1 { position: absolute; left: 50%; top: 2%; width: 14.35%; z-index: 10; }
+#twosome2 { position: absolute; right: 4%; top: 9.5%; width: 20.229%; z-index: 10; }
+#jungsik1 { position: absolute; left: 25%; top: 19%; width: 14.35%; z-index: 10; }
+#jungsik { position: absolute; left: 17%; top: 0%; width: 20.229%; z-index: 10; }
+#shillastay1 { position: absolute; left: 42.229%; top: 13%; width: 14.35%; z-index: 10; }
+#shillastay2 { position: absolute; right: 6.229%; top: 39%; width: 20.229%; z-index: 10; }
+#shillastay3 { position: absolute; right: 32.229%; top: 45%; width: 20.229%; z-index: 10; }
+#kumon1 { position: absolute; left: 46%; top: 37%; width: 14.35%; z-index: 10; }
+#kumon2 { position: absolute; left: 49%; top: 26%; width: 20.229%; z-index: 10; }
+#mercedesbenz1 { position: absolute; right: 3%; top: 59%; width: 14.35%; z-index: 10; }
+#mercedesbenz2 { position: absolute; left: 3%; top: 22%; width: 20.229%; z-index: 10; }
+#seoulsky1 { position: absolute; top: 51%; right: 5%; width: 14.35%; z-index: 2; }
+#seoulsky2 { position: absolute; left: 5%; top: 22%; width: 20.229%; z-index: 2; }
+.estimate_pop { display: none; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 130; overflow: auto; }
+.estimate_pop .pop_wrapper { display: table; position: relative; left: 0; top: 0; margin: 0 auto; height: 100%; }
+.estimate_pop .pop_wrap { display: table-cell; vertical-align: middle; width: auto; }
+.estimate_pop .pop_container { position: relative; border: 0; background: #fff; }
+.estimate_pop .pop_header { padding: 16px 0 14px 20px; text-align: left; background: #1429a0; }
+.estimate_pop .pop_header h1 { font-size: 21px; color: #fff; line-height: 30px; letter-spacing: -1px; }
+.estimate_pop .pop_content { padding: 70px 40px 78px; font-size: 0; }
+.estimate_pop .btn_pop_clse2 { display: inline-block; position: absolute; right: 20px; top: 15px; z-index: 0; width: 35px; height: 35px; background: url("https://images.samsung.com/is/image/samsung/p5/sec/business/insights-event/pop_close.png?$ORIGIN_PNG$") no-repeat 0 0; background-size: 100% auto; font-size: 0; }
+*/
+.btn_area { margin-top: 42px; text-align: center; line-height: 0; }
+.btn_area>a { display: block }
+@media (max-width:767px) {
+/*	.estimate_pop .pop_wrapper { display: table; box-sizing: border-box; position: relative; left: 0; top: 0; width: 320px; height: 100%; margin: 0 auto; padding: 10px; }
+	.estimate_pop .pop_wrap { display: table-cell; vertical-align: middle; width: 320px; }
+	.estimate_pop .pop_container { position: relative; border: 0; background: #fff; }
+	.estimate_pop .pop_header { padding: 10px 30px 8px 15px; text-align: left; }
+	.estimate_pop .pop_header h1 { font-size: 13px; color: #fff; line-height: 17px; }
+	.estimate_pop .pop_content { padding: 35px 20px 39px; font-size: 0; }
+	.estimate_pop .pop_content img { width: 100%; }
+	.estimate_pop .pop_content>a { display: block }
+	.estimate_pop .pop_content .btn_area img { width: 70%; }
+	.estimate_pop .btn_pop_clse2 { display: inline-block; position: absolute; right: 15px; top: 15px; z-index: 0; width: 25px; height: 25px; background: url("https://images.samsung.com/is/image/samsung/p5/sec/business/insights-event/pop_close.png?$ORIGIN_PNG$") no-repeat 0 0; background-size: 20px 20px; font-size: 0; }
+	#seoulsky1 { top: 17%; }
+	#seoulsky2 { top: 8%; }
+	#mercedesbenz1 { top: 16%; }
+	#mercedesbenz2 { top: 6%; }
+	#kumon1 { top: 17%; }
+	#kumon2 { top: 8%; }
+	#shillastay1 { top: 8%; }
+	#shillastay2 { top: 18%; }
+	#shillastay3 { top: 24%; }
+*/
+	.pop_click { width: 34% !important; }
+	.key_click { width: 24% !important; }
+}
+@media (max-width:420px) {
+	.pop_click { width: 34% !important; }
+	.key_click { width: 24% !important; }
+}
+@media (max-width:413px) {
+	.pop_click { width: 34% !important; }
+	.key_click { width: 24% !important; }
+}
+@media (max-width:320px) {
+	.pop_click { width: 34% !important; }
+	.key_click { width: 24% !important; }
+}
+
+/* industry icons */
+.industry-icons__wrap strong, .industry-icons__wrap h2 { font-weight: bold; }
+
+/* combination-standard */
+.combinations-standard .section__title strong, .combinations-standard .section__title h2 { font-weight: bold; }
+.combinations-standard__content .combinations-standard__home__visual__wrap .combinations-standard__home__content .content-type { }
+.ma-g-c-two-column__title h1, .ma-g-c-two-column__title h2, .ma-g-c-two-column__title h3 { font-family: 'SamsungSharpSans', 'SamsungOneKorean', 'Dotum', '돋움', 'Apple SD Gothic Neo', arial !important; font-weight: bold; }
+/*@media screen and (max-width:767px) {
+	.gb-footer__col4-wrap-list-sns { background: #fff; }
+	.gb-footer__col4-wrap-list-sns .popWin { padding-left: 34.13333px; padding-left: 4.44444vw; }
+}
+*/
+
+.feature-three-column-standard__title,
+.rowset-dropdown-wrap__title,
+.combinations-standard .section__title strong,
+.combinations-standard .section__title h2,
+.combinations-standard__content .combinations-standard__home__visual__wrap .combinations-standard__home__content p,
+.combinations-standard__content .combinations-standard__home__visual__wrap .combinations-standard__home__content .content-title,
+.combination-article-contents .combination-article-title strong,
+.industry-icons__wrap strong,
+.industry-icons__wrap h2,
+.hero-carousel__slide-title,
+.hero__header-title,
+.contact-support-solution__title,
+.cr-energy-label-ecoinfo__page-title,
+.shop-header__title,
+.four-column-links__title,
+.feature-benefit__title,
+.feature-two-column-short__tit,
+.ma-g-c-two-column__title h1,
+.ma-g-c-two-column__title h2,
+.ma-g-c-two-column__title h3,
+.industry-icons__wrap strong,
+.industry-icons__wrap h2,
+.hero-carousel__slide-title,
+.hero__header-title,
+.product-details__title,
+.product-download__title-wrap .product-download__title,
+.product-download__header strong,
+.product-specs-tit,
+.ma-g-c-video__title,
+.feature-two-column-short-pim__tit,
+.ma-g-c-two-column__title h1,
+.ma-g-c-two-column__title h2,
+.ma-g-c-tab-feature__title,
+.ma-g-c-tab-feature__tab-title,
+.feature-benefit__title,
+.halftext-pim__title,
+.ma-g-c-feature-fullbleed__title,
+.feature-benefit-bundle__title,
+.ma-g-c-banner-full__title,
+.ma-g-c-banner-half__title,
+.four-column-links__title,
+.feature-three-column-standard__title,
+.rowset-statistics__title,
+.rowset-dropdown-wrap__title,
+.ma-g-c-video__title,
+.tab-feature__title,
+.tab-feature__tab-title,
+.feature-benefit__title,
+.halftext__title-eyebro.wow-eyebrow,
+.halftext__title,
+.ma-g-c-feature-fullbleed__title,
+.feature-benefit-bundle__eyebro-copy.wow-eyebrow,
+.feature-benefit-bundle__title,
+.ma-g-c-banner-full__title,
+.ma-g-c-banner-half__title,
+.feature-two-column-short__tit,
+.ma-g-c-two-column__title h1,
+.ma-g-c-two-column__title h2,
+.ma-g-c-two-column__title h3,
+.product-pairing__title,
+.addendum-drawer__top h2,
+.shop-header__title,
+.combinations-standard .section__title strong,
+.combinations-standard .section__title h2,
+.combinations-standard__content .combinations-standard__home__visual__wrap .combinations-standard__home__content p,
+.combinations-standard__content .combinations-standard__home__visual__wrap .combinations-standard__home__content .content-title,
+.combination-article-contents .combination-article-title strong,
+.hero-carousel__slide-title,
+.hero__header-title,
+.industry-icons__wrap strong,
+.industry-icons__wrap h2,
+.carousel-solutions__title,
+.carousel-products__title,
+.carousel-insights__title,
+.section-divider__title,
+.contact-support-solution__title,
+.insight-grid__search-title,
+.hero-carousel__slide-title,
+.hero__header-title,
+.industry-icons__wrap strong,
+.industry-icons__wrap h2,
+.shop-header__title,
+.wow-feature-head-flagship__wrap strong,
+.wow-feature-head-flagship__wrap ul li span,
+.feature-tab-container__top,
+.feature-tab-container__title,
+.wow-interactive-container__top,
+.wow-interactive-container__title,
+.feature-interactive__top.s-text,
+.feature-interactive__title,
+.wow-feature-spec__header .header-title,
+.wow-feature-spec__highlights-wrap .wow-feature-spec__highlights-list li .wow-feature-spec-download__header strong,
+.wow-feature-spec-tit,
+.wow-feature-spec__highlights-wrap .wow-feature-spec__highlights-list li .wow-feature-spec-download__header strong,
+.wow__header-type1 .kv-logo.logo-text,
+.wow__header-type1 .kv-more-title,
+.wow__header-type1 .kv-sub-title,
+.feature-image__header .feature-image__eyebrow,
+.feature-image__header .feature-image__title,
+.wow-feature-head__wrap strong,
+.wow-feature-head__wrap ul li span,
+.wow-feature-background__cont .wow-feature-background__eyebrow,
+.wow-feature-background__cont .wow-feature-background__title,
+.wow-drag-image__txt .wow-drag-image__eyebrow,
+.wow-drag-image .wow-drag-image__title,
+.wow-drag__header .wow-drag__eyebrow,
+.wow-drag__header .wow-drag__title,
+.hero-carousel__slide-title,
+.hero__header-title,
+.section-divider__title,
+.feature-three-column-standard__title,
+.rowset-statistics__title,
+.rowset-dropdown-wrap__title,
+.ma-g-c-video__title,
+.tab-feature__title,
+.tab-feature__tab-title,
+.feature-benefit__title,
+.halftext__title-eyebro.wow-eyebrow,
+.halftext__title,
+.ma-g-c-feature-fullbleed__title,
+.feature-benefit-bundle__eyebro-copy.wow-eyebrow,
+.feature-benefit-bundle__title,
+.ma-g-c-banner-full__title,
+.ma-g-c-banner-half__title,
+.feature-two-column-short__tit,
+.ma-g-c-two-column__title h1,
+.ma-g-c-two-column__title h2,
+.ma-g-c-two-column__title h3,
+.addendum-drawer__top h2,
+.compressor-product-spec-table__tbl__cnt-title .compressor-product-spec-table-title,
+.general-table__tbl__cnt-title .general-table-title {
+    font-family: "SamsungSharpSans", "SamsungOneKorean", "Dotum", "돋움", "Apple SD Gothic Neo", arial;
+    font-weight: bold;
+}

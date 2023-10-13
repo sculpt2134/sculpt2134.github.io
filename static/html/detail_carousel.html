@@ -1,0 +1,209 @@
+
+
+
+                <!-- HCAU-detail -->
+                <div class="HCAU-detail">
+                    
+
+  
+<style>
+    .carousel-inner > .carousel-item{}
+  .carousel-inner > .carousel-item > img{
+    width: 640px;
+    height: 220px;
+  }
+</style>
+<div class="container"><h2>Carousel practice</h2></div>
+<section>
+    <div class="HCAU-search-bar d-flex g20 align-items-center">
+        <div class="flex-grow-1 d-flex g20">
+            <div class="radio-group">
+                <div>
+                    <input type="radio" class="btn-check" name="options-base" id="option5" autocomplete="off" checked>
+                    <label class="HCAU-btn btn-smd" for="option5">1 month</label>
+                </div>
+                <div>
+                    <input type="radio" class="btn-check" name="options-base" id="option6" autocomplete="off">
+                    <label class="HCAU-btn btn-smd" for="option6">3 month</label>
+                </div>
+                <div>
+                    <input type="radio" class="btn-check" name="options-base" id="option7" autocomplete="off">
+                    <label class="HCAU-btn btn-smd" for="option7">6 month</label>
+                </div>
+                <div>
+                    <input type="radio" class="btn-check" name="options-base" id="option8" autocomplete="off">
+                    <label class="HCAU-btn btn-smd" for="option8">Enter manually</label>
+                </div>
+            </div>
+            <div class="d-flex g08 align-items-center flex-grow-1">
+                <div class="dropdown flex-fill">
+                    <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                        April 2023
+                    </button>
+                    <ul class="dropdown-menu flex-fill">
+                        <li><a class="dropdown-item HCAU-txt-sm" href="#none">label 1</a></li>
+                        <li><a class="dropdown-item HCAU-txt-sm" href="#none">label 2</a></li>
+                        <li><a class="dropdown-item HCAU-txt-sm" href="#none">label 3</a></li>
+                        <li><a class="dropdown-item HCAU-txt-sm" href="#none">label 4</a></li>
+                    </ul>
+                </div>
+                <div>~</div>
+                <div class="dropdown">
+                    <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                        April 2023
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="search-btn">
+            <button type="button" class="HCAU-btn btn-smd full">Search</button>
+        </div>
+    </div>
+</section>
+<style>
+    .carousel-indicators {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        z-index: 2;
+        display: flex;
+        justify-content: start;
+        padding: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0
+    }
+    
+    .carousel-indicators [data-bs-target] {
+        box-sizing: content-box;
+        height:40px;min-width: 180px;padding:20px;
+        color:#000;
+        margin-right: 3px;
+        margin-left: 3px;
+        text-indent: 0;
+        cursor: pointer;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        opacity: .5;
+        transition: opacity .6s ease
+    }
+    .carousel-indicators [data-bs-target]:after{content:"|"}
+    .carousel-indicators button.active{border-bottom:3px solid navy}
+
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%000000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e")
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
+}
+</style>
+
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div id="carouselExampleIndicators" class="carousel slide"  >
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">NewCar Loan_Standard 1CQT-223</button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">Loan_Standard 1CQT-223</button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">Loan_Standard 1CQT-223</button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!--item-->
+        <div class="border-box p20 mt-3">
+            <div class="bg-box d-flex justify-content-between px32 py16">
+                <div class="HCAU-lead-txt fw-bold">NewCar Loan_Standard</div>
+                <div class="d-flex align-items-center g20">
+                    <span class="HCAU-lead-txt fw-bold">1CQT-223</span>
+                    <!-- <a href="#" class="ico-loan-btn"></a> -->
+                </div>
+            </div>
+
+            <div class="d-flex flex-column px32 py24">
+                <div class="d-flex justify-content-between align-items-end">
+                    <div class="HCAU-txt-sm gray04">Payment Cycle / Payment Date</div>
+                    <div class="HCAU-txt-md fw-bold">Monthly / 11th of every month</div>
+                </div>
+                <div class="d-flex justify-content-between align-items-end pt16">
+                    <div class="HCAU-txt-sm gray04">Payment method / payment account</div>
+                    <div class="HCAU-txt-md fw-bold">Direct Debit / KB Bank 811**********1</div>
+                </div>
+            </div>
+        </div>
+        <!--//item-->
+      </div>
+      <div class="carousel-item">
+       <!--item-->
+       <div class="border-box p20 mt-3">
+        <div class="bg-box d-flex justify-content-between px32 py16">
+            <div class="HCAU-lead-txt fw-bold">NewCar Loan_Standard</div>
+            <div class="d-flex align-items-center g20">
+                <span class="HCAU-lead-txt fw-bold">1CQT-223</span>
+                <!-- <a href="#" class="ico-loan-btn"></a> -->
+            </div>
+        </div>
+
+        <div class="d-flex flex-column px32 py24">
+            <div class="d-flex justify-content-between align-items-end">
+                <div class="HCAU-txt-sm gray04">Payment Cycle / Payment Date</div>
+                <div class="HCAU-txt-md fw-bold">Monthly / 11th of every month</div>
+            </div>
+            <div class="d-flex justify-content-between align-items-end pt16">
+                <div class="HCAU-txt-sm gray04">Payment method / payment account</div>
+                <div class="HCAU-txt-md fw-bold">Direct Debit / KB Bank 811**********1</div>
+            </div>
+        </div>
+    </div>
+      </div>
+      <div class="carousel-item">
+       
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+                <script>
+                    var myCarousel = document.querySelector('#carouselExampleIndicators','#carouselExample')
+                    var carousel = new bootstrap.Carousel(myCarousel, {
+                      interval: 2,
+                      wrap: false
+                    })
+                  </script>
+                  

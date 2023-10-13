@@ -1,0 +1,190 @@
+<link
+  rel="stylesheet"
+  href="/static/css/monokai-sublime.min.css"
+/>
+<script src="/static/html/articles/highlight.min.js"></script>
+<script>
+  hljs.highlightAll();
+  
+
+// div 취득
+
+</script>
+<section>
+    <div class="title-area  align-items-baseline g16">
+        <div class="title">Form</div><br><br>
+        <!-- <div class="sub-title">Reference date : 2023.12.31</div>
+        <div class="ms-auto">
+            <button type="button" class="HCAU-btn btn-sm">default</button>
+        </div> 
+      
+      myDiv
+      
+      
+      -->
+        <div id="myDiv">
+            <pre><code class="lang-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal_pop static scrBarWrap"</span>&gt;</span> <span class="hljs-comment">&lt;!-- Big Popupo은 여기에 'scrBarWrap' 클래스를 넣어야 한다.  --&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal_wrap"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal_container"</span>&gt;</span>
+                       
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+        </div>
+    </div>
+
+    <button id="myButton">복사</button>
+
+    <br><br><div></div>
+    
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Navbar</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+    <br><br><div></div>
+    <div class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+          <div class="toast-body">
+            Hello, world! This is a toast message.
+          </div>
+          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+    <div include-html="/static/html/breadbrumb.html"></div>
+    <script src="/static/html/articles/step.js"></script>
+    <link rel="stylesheet" href="/static/html/articles/step.css">
+    <!--step-->
+    <div class="bs-stepper">
+        <div class="bs-stepper-header" role="tablist">
+          <!-- your steps here -->
+          <div class="step" data-target="#logins-part">
+            <button type="button" class="step-trigger" role="tab" aria-controls="logins-part" id="logins-part-trigger">
+              <span class="bs-stepper-circle">1</span>
+              <span class="bs-stepper-label">Logns</span>
+            </button>
+          </div>
+          <div class="line"></div>
+          <div class="step" data-target="#information-part">
+            <button type="button" class="step-trigger" role="tab" aria-controls="information-part" id="information-part-trigger">
+              <span class="bs-stepper-circle">2</span>
+              <span class="bs-stepper-label">Various information</span>
+            </button>
+          </div>
+        </div>
+        <div class="bs-stepper-content">
+          <!-- your steps content here -->
+          <div id="logins-part" class="content" role="tabpanel" aria-labelledby="logins-part-trigger"></div>
+          <div id="information-part" class="content" role="tabpanel" aria-labelledby="information-part-trigger"></div>
+        </div>
+      </div>
+    <!--step-->
+    
+<form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-4">
+                                <label for="validationCustom01" class="form-label">First name</label>
+                                <input type="text" class="form-control HCAU-form" id="validationCustom01" value="Mark" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationCustom02" class="form-label">Last name</label>
+                                <input type="text" class="form-control HCAU-form" id="validationCustom02" value="Otto" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationCustomUsername" class="form-label">Username</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                    <input type="text" class="form-control HCAU-form" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                    <div class="invalid-feedback">
+                                        Please choose a username.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustom03" class="form-label">City</label>
+                                <input type="text" class="form-control HCAU-form" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="validationCustom04" class="form-label">State</label>
+                                <select class="form-select l HCAU-form" id="validationCustom04" required>
+                                    <option selected disabled value="">Choose...</option>
+                                    <option>...</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="validationCustom05" class="form-label">Zip</label>
+                                <input type="text" class="form-control HCAU-form" id="validationCustom05" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid zip.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input HCAU-form" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                        Agree to terms and conditions
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        You must agree before submitting.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary" type="submit">Submit form</button>
+                            </div>
+
+                            <script>
+                                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                                (() => {
+                                'use strict'
+
+                                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                const forms = document.querySelectorAll('.needs-validation')
+
+                                // Loop over them and prevent submission
+                                Array.from(forms).forEach(form => {
+                                    form.addEventListener('submit', event => {
+                                    if (!form.checkValidity()) {
+                                        event.preventDefault()
+                                        event.stopPropagation()
+                                    }
+
+                                    form.classList.add('was-validated')
+                                    }, false)
+                                })
+                                })()
+                            </script>
+                        </form>
+                    
+
+                    </section>

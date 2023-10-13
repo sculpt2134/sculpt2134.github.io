@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <title>로그인&nbsp;|&nbsp;삼성 계정</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="referrer" content="no-referrer-when-downgrade">
+
+
+        <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+        <script
+            src="https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.ko.T5rP8k21g0c.O/m=client/rt=j/sv=1/d=1/ed=1/rs=AHpOoo_lzYPuJoqIi6_L98HdupPu1WzbLw/cb=gapi.loaded_0?le=scs"
+            async=""></script>
+        <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-5C6SNNV"></script>
+        <script>
+            var PAGEPATH = '/accounts/sign/signIn.js?v=20190709';
+        </script>
+
+        <!-- <link rel="stylesheet"
+            href="https://account.samsung.com/accounts/v1/resources/js/common/angular-block-ui/angular-block-ui.min.css">
+        <link rel="stylesheet" type="text/css"
+            href="https://account.samsung.com/accounts/v1/resources/css/v2/angular-material.css">
+        <link rel="stylesheet" type="text/css"
+            href="https://account.samsung.com/accounts/v1/resources/one-ui/css/default.css"> -->
+
+        <link rel="stylesheet" href="../../../../_css/angular-block-ui.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../_css/angular-material.css">
+        <link rel="stylesheet" type="text/css" href="../../../../_css/default.css">
+        <link rel="stylesheet" href="../../../../_css/gc-common.css"><!-- 20220509 gc 추가 -->
+
+        <link type="image/x-icon" rel="shortcut icon" href="https://account.samsung.com/favicon.ico">
+        <!--[if lt IE 9]>
+            <script src="https://account.samsung.com/accounts/v1/resources/js/common/json/json3.min.js"></script>
+            <script src="https://account.samsung.com/accounts/v1/resources/js/common/html5shiv/html5shiv.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript">
+            //<![CDATA[
+            var wipLogicalPath = "../../../../_script/accounts";
+            // var wipResourcesVerDt = "20220504123407";
+            var wipCancelURI =
+                "https://www.samsungebiz.com/event/galaxycampus//event/galaxycampus/member/introPage/?state=yrppcTPmt6gfhnkrLmdUMMwqHC";
+            var wipGoBackURI =
+                "https://www.samsungebiz.com/event/galaxycampus//event/galaxycampus/member/introPage/?state=yrppcTPmt6gfhnkrLmdUMMwqHC";
+            var loLangCD = "ko";
+            var loCntyCD = "KR";
+            var isTextRightAlign = false;
+            var isTextFirstFamilyName = true;
+            var isTextFirstDateYear = true;
+            var wipAcsChnlEnum = "WEB";
+            var wipViewTypeEnum = "v2";
+            var userGeoIPCnty3dgtCd = "KOR";
+            var userAcsCnty3dgtCd = "KOR";
+            var userCnty3dgtCd = "";
+            var wipUriEnum = "signIn";
+            var APPNAME = "SECKDPWEB";
+            var sJSESSIONID = "a540e19c-7569-488c-a874-87ffc6b6c843";
+            var wipCsrf = {
+                'token': 'd7c11b36-70c6-46fb-a884-805e5026bb9c',
+                'headerName': 'X-CSRF-TOKEN'
+            };
+            var wipResourcesUrl = "https://account.samsung.com/accounts/v1/resources";
+            var isGAEnabled = true;
+            var googleRecaptchaApiUrl = "https://www.google.com";
+            //]]>
+
+            if (isGAEnabled) {
+                var containerId;
+                if (wipResourcesUrl.indexOf("sad") !== -1) {
+                    containerId = 'GTM-KCH2BM6';
+                } else if (wipResourcesUrl.indexOf("stg") !== -1) {
+                    containerId = 'GTM-W3S5ZM6';
+                } else {
+                    containerId = 'GTM-5C6SNNV';
+                }
+                (function (w, d, s, l, i) {
+                    w[l] = w[l] || [];
+                    w[l].push({
+                        'gtm.start': new Date().getTime(),
+                        event: 'gtm.js'
+                    });
+                    var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s),
+                        dl = l != 'dataLayer' ? '&l=' + l : '';
+                    j.async = true;
+                    j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                    f.parentNode.insertBefore(j, f);
+                })(window, document, 'script', 'dataLayer', containerId);
+            }
+
+            var createPostMessage = function () {
+
+                var sendPostMessage = function () {
+                    console.log("");
+                }
+
+                if (APPNAME.indexOf("samsung_com_us") !== -1) {
+                    if (document.getElementsByClassName('wrapper')[0]) {
+                        var pageType = "signin";
+                        if (document.querySelector('form[name="signUpForm"]')) {
+                            pageType = "signup";
+                        } else if (document.querySelector('form[name=findIdForm]')) {
+                            pageType = "findid";
+                        } else if (document.querySelector('form[name=rstPwd]')) {
+                            pageType = "resetpwd";
+                        } else {
+                            pageType = "others";
+                        }
+                        sendPostMessage = function () {
+                            window.parent.postMessage({
+                                pageType: pageType
+                            }, '*');
+                        }
+                    }
+                }
+                sendPostMessage();
+            }
+        </script>
+
+        <!-- js loading -->
+        <script src="https://account.samsung.com/accounts/v1/resources/js/common/wip.js"></script>
+
+        <script src="https://account.samsung.com/accounts/v1/resources/js/v2/app.js"></script>
+        <script src="https://account.samsung.com/accounts/v1/resources/js/v2/run.js"></script>
+        <script src="../../../../_script/accounts/config.js"></script>
+        <script src="../../../../_script/accounts/controller.js"></script>
+        <script src="../../../../_script/accounts/directive.js"></script>
+        <script src="../../../../_script/accounts/filter.js"></script>
+        <script src="../../../../_script/accounts/loading.js"></script>
+        <script src="../../../../_script/accounts/provider.js"></script>
+        <script src="../../../../_script/accounts/service.js"></script>
+        <script src="../../../../_script/accounts/util.js"></script>
+        <script src="../../../../_script/accounts/signIn.js"></script>
+
+        <script src="https://account.samsung.com/accounts/v1/resources/js/common/qrcode-generator/qrcode.js"></script>
+        <script src="https://account.samsung.com/accounts/v1/resources/js/common/qrcode-generator/qrcode_UTF8.js">
+        </script>
+        <script src="https://account.samsung.com/accounts/v1/resources/js/common/angular-qrcode/angular-qrcode.js">
+        </script>
+
+        <script type="text/javascript">
+            window.document.title = '로그인 | 삼성 계정';
+            //<![CDATA[
+            //mainController global variable
+            var wipEnc = {
+                "pblcKyTxt": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCylnSE8ANPUNPmgYJGnApUrUPQiBmTY44Lw+fQbFOOslZZnuUasDFJuPU4287/LBQEpTtgPWLmjGftG/b2sj8eTH46mvhDtE8ijgZsMnGPMmhu/AljEvNOqU6nDZDtgGmL/pAdEBtsJ/VzClv8G9bV1kvczuZtg0gt3JTH+pagEwIDAQAB",
+                "lgnEncTp": "1",
+                "pbeKySpcIters": "200"
+            };
+            var goBackURL =
+                'https://www.samsungebiz.com/event/galaxycampus//event/galaxycampus/member/introPage/?state=yrppcTPmt6gfhnkrLmdUMMwqHC';
+            var iptLgnPlnID = '';
+            var continueWith3rdParty = 'GG';
+            var assertion = null;
+            var isAdmin = false;
+            //]]>
+        </script>
+        <style>
+            .error-msg {
+                display: block !important
+            }
+        </style>
+        <script src="https://apis.google.com/js/api:client.js" gapi_processed="true"></script>
+    </head>
+
+<body onload="createPostMessage();" class="one-card-ui ng-scope block-ui block-ui-anim-fade" block-ui="main" aria-busy="false">
+    <div class="wrapper ng-scope" data-ng-controller="cmmController as cmm">
+        <!-- ngIf: isIESupportMessageShow=='Y' -->
+        <header class="one-header">
+            <div class="header-inner">
+                <div class="logo">
+                    <h1><img src="https://account.samsung.com/accounts/v1/resources/one-ui/images/svg/txt_logo.svg" onerror="this.src='https://account.samsung.com/accounts/v1/resources/one-ui/images/layout/txt_logo.png';" alt="Samsung account"></h1>
+                </div>
+            </div>
+        </header>
+
+        <main class="one-main ng-scope" data-ng-controller="signInController as vm">
+            <!-- loading -->
+            <!-- ngIf: vm.isLoading -->
+            <!-- //loading -->
+
+            <div class="main-inner">
+                <!-- container -->
+                <div class="container loginForm gc_loginForm">
+                    <div class="title">
+                        <h1>삼성계정으로 로그인</h1>
+                    </div>
+                    <!-- div class="subDesc">서브 설명 들어가는 곳</div -->
+                    <div class="content" ng-init="">
+                        <div class="one-forms-login">
+                            <form novalidate="" autocomplete="off" class="ng-pristine ng-valid ng-valid-pattern ng-valid-maxlength ng-valid-email">
+                                <fieldset>
+                                    <legend>Account Samsung login</legend>
+                                    <!-- ngIf: true -->
+                                    <div id="ctnLgnPlnID" data-ng-if="true" class="one-input-container ng-scope">
+                                        <label id="lblLgnPlnID" for="iptLgnPlnID">이메일 주소 또는 전화번호</label>
+                                        <input data-ng-model="vm.iptLgnPlnID" id="iptLgnPlnID" type="email" spellcheck="false" ng-model-options="{ updateOn: 'keyup blur' }" aria-required="true" aria-invalid="false" aria-describedby="" maxlength="100" value="" class="ng-pristine ng-valid ng-empty ng-valid-email ng-valid-maxlength ng-touched" autocomplete="off">
+                                        <div class="error-msg">
+                                            <div data-ng-show="((err.iptLgnPlnPD || err.iptLgnPlnID) &amp;&amp; err.code == '01')" id="" class="ng-hide">ID를 입력하십시오.</div>
+                                        </div>
+                                    </div><!-- end ngIf: true -->
+
+                                    <!-- ngIf: false -->
+
+                                    <div class="one-input-container">
+                                        <label for="iptLgnPlnPD">비밀번호</label>
+                                        <input data-ng-model="vm.iptLgnPlnPD" id="iptLgnPlnPD" type="password" ng-model-options="{ updateOn: 'keyup blur' }" aria-required="true" aria-invalid="" aria-describedby="" ng-enter="$parent.submitForCaptcha()" data-ng-pattern="" data-ng-blur="vm.iptLgnPlnPDFocus = false;" data-ng-focus="vm.iptLgnPlnPDFocus = true" not-space="" maxlength="512" class="ng-pristine ng-untouched ng-valid ng-empty ng-valid-pattern ng-valid-maxlength" autocomplete="off">
+                                        <div class="error-msg">
+                                            <div data-ng-show="((err.iptLgnPlnPD || err.iptLgnPlnID) &amp;&amp; err.code == '02')" id="" class="ng-hide">비밀번호를 입력하십시오.</div>
+                                            <div data-ng-show="((err.iptLgnPlnPD || err.iptLgnPlnID) &amp;&amp; err.code == '03')" id="" class="ng-hide">ID와 비밀번호를 입력하십시오.</div>
+                                            <div data-ng-show="((err.iptLgnPlnPD || err.iptLgnPlnID) &amp;&amp; err.code == '05')" id="" class="ng-hide">브라우저 설정에서 쿠키 데이터 저장 및 읽기 권한 차단을 해제하세요.</div>
+                                            <div data-ng-show="((err.iptLgnPlnPD || err.iptLgnPlnID) &amp;&amp; err.code == 'AUT_1837')" id="" class="ng-hide">로그인할 수 없어요. 보안상의 이유로 계정 사용이 중지되었어요.</div>
+
+                                            <div data-ng-show="((err.iptLgnPlnPD || err.iptLgnPlnID) &amp;&amp; err.code == '99')" id="" class="ng-hide">
+                                                <div data-ng-bind="err.message | trusted" class="ng-binding"></div>
+                                            </div>
+                                            <div data-ng-show="(err.iptLgnPlnAdminPD &amp;&amp; !vm.iptLgnPlnPDFocus &amp;&amp; err.code == 'A02')" id="" class="ng-hide">문자, 숫자, 기호를 포함하여, 8자 이상으로 설정해 주세요.</div>
+                                            <div data-ng-show="(err.iptLgnPlnAdminPD &amp;&amp; !vm.iptLgnPlnPDFocus &amp;&amp; err.code == 'A03')" id="" class="ng-binding ng-hide">3회 이상 반복되는 동일한 글자나 연속되는 글자는 사용할 수 없어요.
+                                            </div>
+                                            <div data-ng-show="(err.iptLgnPlnAdminPD &amp;&amp; !vm.iptLgnPlnPDFocus &amp;&amp; err.code == 'A04')" id="" class="ng-hide">3회 이상 반복되는 동일한 글자나 연속되는 글자는 사용할 수 없어요.</div>
+                                            <div data-ng-show="(err.iptLgnPlnAdminPD &amp;&amp; !vm.iptLgnPlnPDFocus &amp;&amp; err.code == 'A06')" id="" class="ng-hide">비밀번호에는 이메일 주소 또는 전화번호를 사용할 수 없습니다.</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- remember id 관련 추가 -->
+                                    <div class="one-checkBox mbr_rememberid" id="rememberID">
+                                        <input type="checkbox" id="remIdChkYN" data-ng-model="vm.remIdChkYN" ng-enter="" class="ng-pristine ng-untouched ng-valid ng-empty" autocomplete="off">
+                                        <label for="remIdChkYN"><span></span>ID 기억하기</label>
+                                    </div>
+                                    <!-- // remember id 관련 추가 -->
+
+                                    <!-- ngIf: vm.bannerSrc -->
+
+                                    <!-- capcha -->
+
+                                    <script type="text/javascript">
+                                        //<![CDATA[
+                                        var RecaptchaOptions = {
+                                            theme: 'custom'
+                                        };
+                                        //]]>
+                                    </script>
+                                    <!-- ngIf: $parent.captchaTypeEnum == 'S' -->
+                                    <!-- ngIf: $parent.captchaTypeEnum == 'A' -->
+                                    <div id="audioCaptchaArea"
+                                        style="display:block; height:0; font-size:0; line-height:0;"></div>
+                                    <!-- ngIf: $parent.captchaTypeEnum == 'R' -->
+                                    <!-- ngIf: $parent.captchaTypeEnum == 'G' -->
+                                    <!-- ngIf: $parent.captchaTypeEnum == 'I' -->
+                                    <div class="one-input-container  ng-hide" data-ng-show="$parent.captchaTypeEnum != null &amp;&amp; $parent.captchaTypeEnum != 'G' &amp;&amp; $parent.captchaTypeEnum != 'I'">
+                                        <label for="responseCapthcha">보안 코드</label>
+                                        <input data-ng-model="vm.responseCapthcha" id="responseCapthcha" name="responseCapthcha" type="text" maxlength="50" ng-model-options="{ updateOn: 'keyup blur' }" aria-required="true" aria-invalid="false" aria-describedby="" not-enter="" class="ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength" autocomplete="off">
+                                        <div class="error-msg">
+                                            <div data-ng-show="err.responseCapthcha &amp;&amp; err.responseCapthchaCode == '01'" id="cap" class="ng-hide">보안 코드를 입력하십시오.</div>
+                                            <div data-ng-show="err.responseCapthcha &amp;&amp; err.responseCapthchaCode == '99'" id="cap" class="ng-hide">잘못된 ID, 비밀번호 또는 보안 코드가 입력되었습니다. <br>다시 시도해 주세요.
+                                            </div>
+                                            <div data-ng-show="err.responseCapthcha &amp;&amp; err.responseCapthchaCode == '02'" data-ng-bind="err.message" id="cap" class="ng-binding ng-hide"></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- //capcha -->
+                                    <div class="mbr_signin">
+                                        <div class="one-btn-container">
+                                            <button class="one-cancel one-button ng-hide"
+                                                data-ng-show="vm.continueWith3rdParty == 'NONE'" id="signInButton" data-ng-disabled="(vm.isAdmin &amp;&amp; (err.iptLgnPlnAdminPD || err.iptLgnPlnPD))" data-ng-click="$parent.submitForCaptcha()" type="button">로그인</button>
+                                            <button class="one-cancel one-button" data-ng-show="vm.continueWith3rdParty != 'NONE'" id="signInButton" data-ng-click="$parent.submitForCaptcha()" type="button">로그인</button>
+                                        </div>
+
+                                        <ul>
+                                            <li data-ng-show="vm.continueWith3rdParty != 'NONE'">
+                                                <a href="#" data-ng-click="findInfo()">ID 찾기
+                                                </a>
+                                                또는
+                                                <a href="#" data-ng-click="resetPassword()">비밀번호 재설정</a>
+                                            </li>
+                                            <li data-ng-show="vm.continueWith3rdParty != 'NONE' &amp;&amp; !vm.rmvCrtBtnYN">
+                                                <a href="#" data-ng-click="signUp()">계정 생성</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- 구글 로그인 -->
+                                    <div class="one-btn-container google" data-ng-show="vm.continueWith3rdParty == 'GG'">
+                                        <button class="one-primary one-button" id="googleSignInButton" data-ng-click="googleSignIn()" type="button">Google 계정으로 로그인</button>
+                                    </div>
+
+                                    <div class="one-btn-container wechat ng-hide" data-ng-show="vm.continueWith3rdParty == 'WC'">
+                                        <button class="one-primary one-button" id="wechatSignInButton" data-ng-click="wechatSignIn()" type="button">WeChat 계정으로 사용</button>
+                                    </div>
+                                    <!--// 구글 로그인 -->
+
+                                
+                                    <div class="mbr_signin">
+                                        <ul>
+                                            <li data-ng-show="vm.continueWith3rdParty == 'NONE'" class="ng-hide">
+                                                <a href="#" data-ng-click="findInfo()">ID 찾기
+                                                </a>
+                                                또는
+                                                <a href="#" data-ng-click="resetPassword()">비밀번호 재설정</a>
+                                            </li>
+                                            <li data-ng-show="vm.continueWith3rdParty == 'NONE' &amp;&amp; !vm.rmvCrtBtnYN" class="ng-hide">
+                                                <a href="#" data-ng-click="signUp()">계정 생성</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="signin-tooltip ng-hide" data-ng-show="vm.isAdmin">
+                                        <dl>
+                                            <dt>비밀번호 (어드민 전용)</dt>
+                                            <dd>문자, 숫자, 기호를 포함하여, 8자 이상으로 설정해 주세요.<br><br>기준 불만족 시 로그인 불가능합니다.</dd>
+                                        </dl>
+                                        <p></p>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    
+        <!-- footer -->
+        <footer class="one-footer" role="contentinfo">
+            <div class="footer-inner">
+                <div class="footer-logo"><img src="https://account.samsung.com/accounts/v1/resources/one-ui/images/layout/txt_foo_logo.png" onerror="this.src='https://account.samsung.com/accounts/v1/resources/one-ui/images/layout/txt_foo_logo.png';" alt="Samsung account"></div>
+                <address class="footer-address">Copyright © 1995-2022 Samsung. All Rights Reserved.</address>
+                <div class="footer-links" role="link">
+                    <a href="https://account.samsung.com/membership/terms/termscontents?paramLocale=ko_KR"
+                        title="Open links in a new window Terms and Conditions">이용약관</a>
+                    <a href="https://account.samsung.com/membership/terms/privacypolicy?paramLocale=ko_KR"
+                        title="Open links in a new window Privacy Policy" class="active">개인정보 처리방침</a>
+                    <a href="https://account.samsung.com/membership/notice/notice-list?paramLocale=ko_KR"
+                        title="Open links in a new window Notices">공지</a>
+                    <a href="https://help.content.samsung.com/csweb/auth/gosupport.do?targetUrl=/main/main.do&serviceCd=saccount&_common_country=KR&_common_lang=ko"
+                        title="Open links in a new window Contact us">문의하기</a>
+                </div>
+            </div>
+        </footer>
+        <!-- //footer -->
+        </div>
+
+    <!-- javascript -->
+    <script src="https://account.samsung.com/accounts/v1/resources/one-ui/js/common/jquery/jquery.min.js"></script>
+
+    <script>
+        window.onload = function () {
+
+            inputEvent();
+            if ($('form').find(':input')[0] !== undefined) {
+                $(':focus').blur();
+                $('form').find(':input')[0].focus();
+            }
+        };
+
+        var inputEvent = function () {
+            var $inputs = $('form').find(':input');
+            $inputs.each(function () {
+                var $input = $(this),
+                    $label = $input.parent('div.one-input-container');
+                if ($input.val()) {
+                    $label.addClass('active');
+                    $label.siblings('div.flexbdy').addClass('off');
+                }
+
+                $input.focusin(function () {
+                    $label.addClass('focus');
+                    $label.siblings('div.flexbdy').addClass('off');
+                });
+                $input.change(function () {
+                    $label.addClass('active');
+                });
+                $input.focusout(function () {
+                    $label.removeClass('focus');
+
+                    if (!$input.val()) $label.removeClass('active').siblings('div.flexbdy')
+                        .removeClass('off');
+                });
+            });
+        }
+    </script>
+
+    <div block-ui-container="" class="block-ui-container ng-scope">
+        <!-- loading -->
+        <div class="loadingWrap" style="display : none">
+            <div class="dimBg"></div><!-- 딤처리 -->
+            <div class="cssload-spin-box"></div>
+        </div>
+        <!-- //loading -->
+    </div>
+</body>
+</html>
+
