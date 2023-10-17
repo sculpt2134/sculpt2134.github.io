@@ -17,6 +17,15 @@
             overflow: hidden;
             text-overflow: ellipsis;        
             }
+            .swiper-slide{ text-align: center;
+                font-size: 18px;
+                background: #fff;
+                display: flex;
+                padding:20px;
+                width:70%;
+            }
+            
+            .swiper-slide-active {font-weight:bold;border-bottom:2px solid #000}
     </style>
 </head>
 
@@ -43,7 +52,6 @@
                     
                     <!--swiper-->
                     <div class="HCAU-tab swiper mySwiper">
-                        <div class="swiper-button-prev d-none" style="left:8px;top:30px"></div>
                         <div class="swiper-wrapper">
                             <div class="swiper-slide" aria-label="1">
                                 <span>Expected cost when buyout</span>
@@ -51,14 +59,7 @@
                             <div class="swiper-slide" aria-label="2">
                                 <span>NewCar Loan</span>
                             </div>
-                            <div class="swiper-slide"  aria-label="3">
-                                <span>NewCar Loan 1CQT-223</span>
-                            </div>
-                            <div class="swiper-slide"  aria-label="4">
-                                <span>NewCar INTEREST - 1CQT2230345FE</span>
-                            </div>
                         </div>
-                        <div class="swiper-button-next d-none" style="right:8px;top:30px"></div>
                     </div>
                     <!--//swiper-->
 
