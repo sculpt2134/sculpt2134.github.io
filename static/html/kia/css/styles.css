@@ -7,68 +7,28 @@
 }
 
 @font-face {
-  font-display: optional;
-  font-family: Kia Signature Bold;
+  font-display: swap;
+  font-family: Kia Signature Fix;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/static/html/kia/font/KiaSignatureFixRegular.ttf) format("truetype"),url(/static/html/kia/font/KiaSignatureFixRegular.woff) format("woff"),url(/static/html/kia/font/KiaSignatureFixRegular.woff2) format("woff2")
+  ,url(/static/html/kia/font/KiaSignatureFixRegular.eot#iefix) format('embedded-opentype');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Kia Signature Fix;
   font-style: normal;
   font-weight: 700;
-  src: local('※'), url(/static/html/kia/font/KiaSignatureBold.eot);
-  src: url(/static/html//kia/font/KiaSignatureBold.eot?#iefix) format("embedded-opentype"),url(/static/html//kia/font/KiaSignatureBold.woff) format("woff"),url(/static/html/font/KiaSignatureBold.woff2) format("woff2")
-}
+  src: url(/static/html/kia/font/KiaSignatureFixBold.ttf) format("truetype"),url(/static/html/kia/font/KiaSignatureFixBold.woff) format("woff")
+  ,url(/static/html/kia/font/KiaSignatureFixBold.otf) format("ttf");
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} 
 
-@font-face {
-  font-display: optional;
-  font-family: Kia Signature Regular;
-  font-style: normal;
-  font-weight: 400;
-  src: url(/static/html/kia/font/KiaSignatureRegular.eot);
-  src: url(/static/html/kia/font/KiaSignatureRegular.eot?#iefix) format("embedded-opentype"),url(/static/html/kia/font/KiaSignatureRegular.woff) format("woff"),url(/static/html/kia/font/KiaSignatureRegular.woff2) format("woff2")
-}
-
-@font-face {
-  font-display: swap;
-  font-family: Kia Signature Light;
-  font-style: normal;
-  font-weight: 400;
-  src: url(/static/html/kia/font/KiaSignatureLight.eot);
-  src: url(/static/html/kia/font/KiaSignatureLight.eot?#iefix) format("embedded-opentype"),url(/static/html/kia/font/KiaSignatureLight.woff) format("woff"),url(/static/html/kia/font/KiaSignatureLight.woff2) format("woff2")
-}
-
-@font-face {
-  font-display: swap;
-  font-family: Kia Signature Fix Bold;
-  font-style: normal;
-  font-weight: 400;
-  src: url(/static/html/kia/font/KiaSignatureFixBold.eot);
-  src: url(/static/html/kia/font/KiaSignatureFixBold.eot?#iefix) format("embedded-opentype"),url(/static/html/kia/font/KiaSignatureFixBold.woff) format("woff"),url(/static/html/kia/font/KiaSignatureFixBold.woff2) format("woff2")
-}
-
-@font-face {
-  font-display: swap;
-  font-family: Kia Signature Fix Regular;
-  font-style: normal;
-  font-weight: 400;
-  src: url(/static/html/kia/font/KiaSignatureFixRegular.eot);
-  src: url(/static/html/kia/font/KiaSignatureFixRegular.eot?#iefix) format("embedded-opentype"),url(/static/html/kia/font/KiaSignatureFixRegular.woff) format("woff"),url(/static/html/kia/font/KiaSignatureFixRegular.woff2) format("woff2")
-}
-
-@font-face {
-  font-display: swap;
-  font-family: Kia Signature Fix Light;
-  font-style: normal;
-  font-weight: 400;
-  src: url(/static/html/kia/font/KiaSignatureFixLight.eot);
-  src: url(/static/html/kia/font/KiaSignatureFixLight.eot?#iefix) format("embedded-opentype"),url(/static/html/kia/font/KiaSignatureFixLight.woff) format("woff"),url(/static/html/kia/font/KiaSignatureFixLight.woff2) format("woff2")
-}
-
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
 html {
   position: relative;
   overflow-y: scroll;
@@ -82,9 +42,8 @@ body {
   font-size: 0.96825rem; /* 15px */
 }
 body {
-  font-family: "Kia Signature Fix Regular","HyundaiTextOffice", "HyundaiTextRegular", "HyundaiKRRegular",
-    "Malgun Gothic", Dotum, "돋움", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo",
-    "굴림", arial, sans-serif;
+  font-family: "Kia Signature Fix", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo",
+    "Malgun Gothic", Dotum, "돋움","굴림", arial, sans-serif;
   color: #000;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
@@ -100,9 +59,10 @@ li,
 dt,
 dd,
 blockquote,
-p
+p,span
 {
-  font-family: "Kia Signature Fix Regular";
+  font-family:  "Kia Signature Fix", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo",
+  "Malgun Gothic", Dotum, "돋움","굴림", arial, sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -118,8 +78,6 @@ h6,
   line-height: 1;
   margin: 0;
   font-weight: 700;
-  font-family: "Kia Signature Bold";
-  font-smooth: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -173,7 +131,6 @@ img {
 
 strong,
 b {
-  font-family: "Kia Signature Bold";
   font-weight: 700;
 }
 pre {
@@ -315,7 +272,6 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
   font-size: 1em;
 }
 button,
@@ -928,7 +884,7 @@ a {
 }
 
 .link {
-  font-weight: 600;
+  font-weight: 700;
   color: #05141f;
   text-decoration: none;
   font-size: 13px;
@@ -974,7 +930,7 @@ a {
   vertical-align: middle;
   text-decoration: none;
   color: #05141f;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: 4px;
   background: #fff;
   border: 1px solid #05141f;
@@ -990,7 +946,7 @@ a {
 }
 .HCAU-btn.btn-smd {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   min-height: 44px;
   text-align: center;
   padding: 10px 16px;
@@ -1103,7 +1059,7 @@ a {
 }
 .HCAU-tab-small .nav-tabs li button.active {
   border-color: #05141f;
-  font-weight: 600;
+  font-weight: 700;
 }
 .HCAU-tab-small .nav-tabs li:first-child button {
   border-radius: 4px 0 0 4px;
@@ -1149,7 +1105,7 @@ a {
 }
 .HCAU-step .step-item .num {
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1;
 }
 .HCAU-step .step-item .txt {
@@ -1177,7 +1133,6 @@ a {
   font-weight: 700;
   color: #05141f;
   font-size: 13px;
-  font-weight: 600;
   color: #05141f;
 }
 .HCAU-step .step-item + .step-item:before {
