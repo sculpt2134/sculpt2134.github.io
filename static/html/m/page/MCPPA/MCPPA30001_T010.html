@@ -18,23 +18,17 @@
             text-overflow: ellipsis;        
             }
             .swiper-slide{ text-align: center;
-                font-size: 18px;
+                font-size: 15px;
+                font-weight: bold;
                 background: #fff;
                 display: flex;
                 padding:20px;
-                width:auto;
+                width:80%;
             }
             
-              .swiper-slide-active span{font-weight:bold;border:2px solid #000}
-            /*
-            .mySwiper {
-                box-sizing: border-box;
-                padding: 20px 0 0 0px;
-                background: #fff;
-              }
-              .mySwiper:before{display: block;content:"";position: absolute;left:0;top:0;width:30px;background:#fff;height:100%;z-index: 2;/*background: linear-gradient(90deg, rgba(255,255,255,1) 0%,rgba(255,0,0,1) 70%, rgba(255,255,255,1) 100%);*/}
-              /*.mySwiper:after{display: block;content:"";position: absolute;right:0;top:0;width:30px;background:#fff;height:100%;z-index: 2;/*background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 100%);*/}
-              
+            .swiper-slide-active {font-weight:bold;border-bottom:2px solid #000}
+            .pl20{padding-left:20px}
+            .pr20{padding-right:20px}
     </style>
 </head>
 
@@ -49,19 +43,18 @@
                     <div class="HCAU-h1">lease early termination</div>
                 </div>
                 <!-- //HCAU-title -->
-                 <!-- HCAU-detail -->
-                 <div class="HCAU-detail pe-0">
+                <!-- HCAU-detail -->
+                <div class="HCAU-detail pe-0">
 
                     <div class="HCAU-tab" id="pills-tab" role="tablist">
-                        <div class="position-relative d-inline-flex float-start">
-                            <button class="o_ellipsis"onclick="location.href='MCPPA3001_T03.html'" data-bs-target="#tab01" type="button" role="tab" aria-controls="pills-tab01" aria-selected="false">Expected cost when buyout</button>
+                        <div class="position-relative d-inline-flex justify-content-start">
+                            <button class="active o_ellipsis" data-bs-target="#tab01" type="button" role="tab" aria-controls="pills-tab01" aria-selected="true">Expected cost when buyout</button>
                             <button class="o_ellipsis" onclick="location.href='MCPPA30001_T02.html'" type="button" role="tab" aria-controls="pills-tab02" aria-selected="false">Expected cost when return</button>
-                            <button class="active o_ellipsis"  type="button" role="tab" aria-controls="pills-tab03" aria-selected="true">Expected cost when return</button>
                         </div>
                     </div>
                     
                     <!--swiper-->
-                    <div class="HCAU-tab swiper mySwiper">
+                    <div class="HCAU-tab swiper mySwiper d-none">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide" aria-label="1">
                                 <span>Expected cost when buyout</span>
@@ -69,21 +62,17 @@
                             <div class="swiper-slide" aria-label="2">
                                 <span>NewCar Loan</span>
                             </div>
-                            <div class="swiper-slide" aria-label="3">
-                                <span>Expected cost when buyout</span>
-                            </div>
-                            
                         </div>
                     </div>
                     <!--//swiper-->
 
-                    <div style="padding-right:20px">
+                    <div  class="pr20">
                         <div class="mt40">
                             <div class="title-area">
                                 <div class="HCAU-txt-lg">How to request</div>
                             </div>
                             <div>
-                                <ul class="HCAU-bullet-list">
+                                <ul class="HCAU-bullet-list black">
                                     <li class="HCAU-txt-sm">You can check whether the payment has been received by us in Payment Details.</li>
                                     <li class="HCAU-txt-sm">For products within 1 month of expiration, please apply through the customer center (0000-0000)</li>
                                     <li class="HCAU-txt-sm">You will be informed of the exact amount you need to pay as of the date of termination when you submit a request. (fees, etc.) </li>
@@ -170,10 +159,14 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: "auto",
-            spaceBetween: 10
-            
-          });
+          spaceBetween: 10,
+          slidesPerView: "auto",
+          watchSlidesProgress: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
     </script>
     <!-- <script type="module" src="js/main.js"></script> -->
 </body>

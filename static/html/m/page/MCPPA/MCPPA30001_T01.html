@@ -6,7 +6,6 @@
     <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
     <title>HCAU-PUBL</title>
     <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/static/html/kia/css/simple-scrollbar.css" />
     <link rel="stylesheet" href="/static/html/m/css/styles.css" />
     <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
     <style>
@@ -17,16 +16,8 @@
             overflow: hidden;
             text-overflow: ellipsis;        
             }
-            .swiper-slide{ text-align: center;
-                font-size: 15px;
-                font-weight: bold;
-                background: #fff;
-                display: flex;
-                padding:20px;
-                width:80%;
-            }
-            
-            .swiper-slide-active {font-weight:bold;border-bottom:2px solid #000}
+            .pl20{padding-left:20px}
+            .pr20{padding-right:20px}
     </style>
 </head>
 
@@ -42,102 +33,216 @@
                 </div>
                 <!-- //HCAU-title -->
                 <!-- HCAU-detail -->
-                <div class="HCAU-detail pe-0">
-
-                    <div class="HCAU-tab" id="pills-tab" role="tablist">
-                        <div class="position-relative d-inline-flex">
-                            <button class="active o_ellipsis" data-bs-target="#tab01" type="button" role="tab" aria-controls="pills-tab01" aria-selected="true">Expected cost when buyout</button>
-                            <button class="o_ellipsis" onclick="location.href='MCPPA30001_T02.html'" type="button" role="tab" aria-controls="pills-tab02" aria-selected="false">Expected cost when return</button>
-                        </div>
+                <div class="HCAU-tab" id="cppa30001-tab" role="tablist">
+                    <div class="d-inline-flex pl20">
+                        <button class="active o_ellipsis" data-bs-toggle="pill" data-bs-target="#tab-buyout" type="button" role="tab" aria-controls="tab-buyout" aria-selected="true">Expected cost when buyout</button>
+                        <button class="o_ellipsis" data-bs-toggle="pill" data-bs-target="#tab-return" type="button" role="tab" aria-controls="tab-return" aria-selected="false">Expected cost when return</button>
                     </div>
-                    
-                    <!--swiper-->
-                    <div class="HCAU-tab swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide" aria-label="1">
-                                <span>Expected cost when buyout</span>
-                            </div>
-                            <div class="swiper-slide" aria-label="2">
-                                <span>NewCar Loan</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--//swiper-->
-
-                    <div style="padding-right:20px">
-                        <div class="mt40">
-                            <div class="title-area">
-                                <div class="HCAU-txt-lg">How to request</div>
-                            </div>
-                            <div>
-                                <ul class="HCAU-bullet-list">
-                                    <li class="HCAU-txt-sm">You can check whether the payment has been received by us in Payment Details.</li>
-                                    <li class="HCAU-txt-sm">For products within 1 month of expiration, please apply through the customer center (0000-0000)</li>
-                                    <li class="HCAU-txt-sm">You will be informed of the exact amount you need to pay as of the date of termination when you submit a request. (fees, etc.) </li>
-                                    <li class="HCAU-txt-sm">Once your account is terminated, you are not allowed to cancel the termination. Please be reminded.</li>
-                                </ul>
-                            </div>
-                        </div>
-    
-                        <div class="mt40">
-                            <div class="title-area">
-                                <div class="HCAU-txt-lg">Account</div>
-                            </div>
-                            <div class="HCAU-nodata type01 flex-column border-top">
-                                <img src="/static/img/svg/ico_no_matches_hd01.svg" alt="">
-                                <div class="HCAU-txt-md">There is no usage history.</div>
-                            </div>
-                            <div class="item">
-                                <div class="border-top px-3 py20">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="HCAU-txt-sm">Contract number</div>
-                                        <div class="HCAU-txt-sm">384762098123</div>
-                                    </div>
-                                    <div class="d-flex justify-content-between mt12">
-                                        <div class="HCAU-txt-sm">Model</div>
-                                        <div class="HCAU-txt-sm">The all-new SANTAFE</div>
-                                    </div>
+                </div>
+                <div class="HCAU-tab-content tab-content" id="tabContent">
+                    <div class="tab-pane fade show active"  id="tab-buyout" role="tabpanel" tabindex="0">
+                        <!--tab01-content-->
+                        <div  class="pr20">
+                            <div class="mt40">
+                                <div class="title-area">
+                                    <div class="HCAU-txt-lg">How to request</div>
                                 </div>
-                                <div class="border-top border-bottom bg-box2 p-3 text-end">
-                                    <button type="button" class="HCAU-btn btn-sm">Check the amount</button>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="border-top px-3 py20">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="HCAU-txt-sm">Contract number</div>
-                                        <div class="HCAU-txt-sm">384762098123</div>
-                                    </div>
-                                    <div class="d-flex justify-content-between mt12">
-                                        <div class="HCAU-txt-sm">Model</div>
-                                        <div class="HCAU-txt-sm">The all-new SANTAFE</div>
-                                    </div>
-                                </div>
-                                <div class="border-top border-bottom bg-box2 p-3 text-end">
-                                    <button type="button" class="HCAU-btn btn-sm">Check the amount</button>
-                                </div>
-                            </div>
-    
-                            <div class="mt20">
-                                <button type="button" class="HCAU-btn btn-lg full">See more</button>
-                            </div>
-                        </div>
-    
-                        <div class="g-notice border-top-dashed">
-                            <dl>
-                                <dt>
-                                    <span class="ico-gnotice"><img src="/static/img/svg/ico_notice.svg" alt=""></span>
-                                    <span class="HCAU-txt-sm">Guidence Notice</span>
-                                </dt>
-                                <dd>
-                                    <ul class="HCAU-bullet-list">
-                                        <li class="HCAU-txt-sm">
-                                            Only one payment can be made at a time.
-                                        </li>
+                                <div>
+                                    <ul class="HCAU-bullet-list black">
+                                        <li class="HCAU-txt-sm">You can check whether the payment has been received by us in Payment Details.</li>
+                                        <li class="HCAU-txt-sm">For products within 1 month of expiration, please apply through the customer center (0000-0000)</li>
+                                        <li class="HCAU-txt-sm">You will be informed of the exact amount you need to pay as of the date of termination when you submit a request. (fees, etc.) </li>
+                                        <li class="HCAU-txt-sm">Once your account is terminated, you are not allowed to cancel the termination. Please be reminded.</li>
                                     </ul>
-                                </dd>
-                            </dl>
+                                </div>
+                            </div>
+        
+                            <div class="mt40">
+                                <div class="title-area">
+                                    <div class="HCAU-txt-lg">Account</div>
+                                </div>
+                                <div class="HCAU-nodata type01 flex-column border-top">
+                                    <img src="/static/img/svg/ico_no_matches_hd01.svg" alt="">
+                                    <div class="HCAU-txt-md">There is no usage history.</div>
+                                </div>
+                                <div class="item">
+                                    <div class="border-top px-3 py20">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="HCAU-txt-sm">Contract number</div>
+                                            <div class="HCAU-txt-sm">384762098123</div>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt12">
+                                            <div class="HCAU-txt-sm">Model</div>
+                                            <div class="HCAU-txt-sm">The all-new SANTAFE</div>
+                                        </div>
+                                    </div>
+                                    <div class="border-top border-bottom bg-box2 p-3 text-end">
+                                        <button type="button" class="HCAU-btn btn-sm">Check the amount</button>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="border-top px-3 py20">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="HCAU-txt-sm">Contract number</div>
+                                            <div class="HCAU-txt-sm">384762098123</div>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt12">
+                                            <div class="HCAU-txt-sm">Model</div>
+                                            <div class="HCAU-txt-sm">The all-new SANTAFE</div>
+                                        </div>
+                                    </div>
+                                    <div class="border-top border-bottom bg-box2 p-3 text-end">
+                                        <button type="button" class="HCAU-btn btn-sm">Check the amount</button>
+                                    </div>
+                                </div>
+        
+                                <div class="mt20">
+                                    <button type="button" class="HCAU-btn btn-lg full">See more</button>
+                                </div>
+                            </div>
+        
+                            <div class="g-notice border-top-dashed">
+                                <dl>
+                                    <dt>
+                                        <span class="ico-gnotice"><img src="/static/img/svg/ico_notice.svg" alt=""></span>
+                                        <span class="HCAU-txt-sm">Guidence Notice</span>
+                                    </dt>
+                                    <dd>
+                                        <ul class="HCAU-bullet-list">
+                                            <li class="HCAU-txt-sm">
+                                                Only one payment can be made at a time.
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
                         </div>
+                        <!--//tab01-content-->
+                    </div>
+                    <div class="tab-pane fade" id="tab-return" role="tabpanel" tabindex="1">
+                        <!--tab02-content-->
+                        <div class="pl20">
+                            <div class="mt40">
+                                <div class="title-area d-block mt40">
+                                    <div class="HCAU-txt-lg">How to request</div>
+                                </div>
+                                <div>
+                                    <ul class="HCAU-bullet-list black">
+                                        <li class="HCAU-txt-sm">You can check whether the payment has been received by us in Payment Details.</li>
+                                        <li class="HCAU-txt-sm">For products within 1 month of expiration, please apply through the customer center (0000-0000)</li>
+                                        <li class="HCAU-txt-sm">You will be informed of the exact amount you need to pay as of the date of termination when you submit a request. (fees, etc.) </li>
+                                        <li class="HCAU-txt-sm">Once your account is terminated, you are not allowed to cancel the termination. Please be reminded.</li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                            <div class="mt40">
+                                <div class="title-area">
+                                    <div class="HCAU-txt-lg">Account</div>
+                                </div>
+                                <div class="HCAU-search-bar">
+                                    <div>
+                                        <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">all</button>
+                                        <div class="HCAU-bottom-sheet offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                                            <div class="offcanvas-header">
+                                                <!-- <h5 class="offcanvas-title" id="offcanvasBottomLabel">bottom sheet title</h5> -->
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                                                    <img src="/static/img/svg/ico_modal_close.svg" alt="Close">
+                                                </button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <ul class="bottom-sheet-item">
+                                                    <li><a href="#none" class="HCAU-txt-sm">Select object 1</a></li>
+                                                    <li><a href="#none" class="HCAU-txt-sm">Select object 2</a></li>
+                                                    <li><a href="#none" class="HCAU-txt-sm">Select object 3</a></li>
+                                                    <li><a href="#none" class="HCAU-txt-sm">Select object 4</a></li>
+                                                    <li><a href="#none" class="HCAU-txt-sm">Select object 5</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <input type="text" class="form-control HCAU-form" id="form-txt01" aria-describedby="emailHelp" value="" placeholder="Enter contract number">
+                                    </div>
+                                    <div>
+                                        <button type="button" class="HCAU-btn btn-md full">Search</button>
+                                    </div>
+                                </div>
+    
+                                <div class="mt20">
+                                    <div class="HCAU-nodata type01 flex-column border-top">
+                                        <img src="/static/img/svg/ico_no_matches_hd01.svg" alt="">
+                                        <div class="HCAU-txt-md">There is no usage history.</div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="border-top px-3 py20">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="HCAU-txt-sm">Contract number</div>
+                                                <div class="HCAU-txt-sm">384762098123</div>
+                                            </div>
+                                            <div class="d-flex justify-content-between mt12">
+                                                <div class="HCAU-txt-sm">Model</div>
+                                                <div class="HCAU-txt-sm">The all-new SANTAFE</div>
+                                            </div>
+                                        </div>
+                                        <div class="border-top border-bottom bg-box2 p-3 text-end">
+                                            <button type="button" class="HCAU-btn btn-sm">Check the amount</button>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="border-top px-3 py20">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="HCAU-txt-sm">Contract number</div>
+                                                <div class="HCAU-txt-sm">384762098123</div>
+                                            </div>
+                                            <div class="d-flex justify-content-between mt12">
+                                                <div class="HCAU-txt-sm">Model</div>
+                                                <div class="HCAU-txt-sm">The all-new SANTAFE</div>
+                                            </div>
+                                        </div>
+                                        <div class="border-top border-bottom bg-box2 p-3 text-end">
+                                            <button type="button" class="HCAU-btn btn-sm">Check the amount</button>
+                                        </div>
+                                    </div>
+                                    <div class="HCAU-pagination">
+                                        <div class="inner">
+                                            <ul class="arrow">
+                                                <li class="arrow"><a href=""><img src="/static/img/svg/ico_pagination_01.svg" alt="First"></a></li>
+                                                <li class="arrow"><a href=""><img src="/static/img/svg/ico_pagination_02.svg" alt="Prev"></a></li>
+                                            </ul>
+                                            <ul class="pages">
+                                                <li class="page active"><a href="" class="HCAU-txt-md">1</a></li>
+                                                <li class="page"><a href="" class="HCAU-txt-md">2</a></li>
+                                                <li class="page"><a href="" class="HCAU-txt-md">3</a></li>
+                                                <li class="page"><a href="" class="HCAU-txt-md">4</a></li>
+                                                <li class="page"><a href="" class="HCAU-txt-md">5</a></li>
+                                            </ul>
+                                            <ul class="arrow">
+                                                <li class="arrow"><a href=""><img src="/static/img/svg/ico_pagination_03.svg" alt="Next"></a></li>
+                                                <li class="arrow"><a href=""><img src="/static/img/svg/ico_pagination_04.svg" alt="Last"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="g-notice border-top-dashed">
+                                <dl>
+                                    <dt>
+                                        <span class="ico-gnotice"><img src="/static/img/svg/ico_notice.svg" alt=""></span>
+                                        <span class="HCAU-txt-sm">Guidence Notice</span>
+                                    </dt>
+                                    <dd>
+                                        <ul class="HCAU-bullet-list">
+                                            <li class="HCAU-txt-sm">
+                                                Only one payment can be made at a time.
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <!--//tab02-content-->
                     </div>
                 </div>
                 <!-- //HCAU-detail -->
@@ -152,21 +257,7 @@
         <!-- //btn-cta-wrap -->
         <script type="text/javascript" src="/static/html/m/js/Footer.js"></script>
     </div>
-    <!-- <script src="/static/js/jquery-3.3.1.min.js"></script> -->
     <script src="/static/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-          spaceBetween: 10,
-          slidesPerView: "auto",
-          watchSlidesProgress: true,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-    </script>
-    <!-- <script type="module" src="js/main.js"></script> -->
 </body>
 
 </html>

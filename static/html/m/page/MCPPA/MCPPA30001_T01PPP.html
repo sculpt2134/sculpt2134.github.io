@@ -25,16 +25,7 @@
                 width:auto;
             }
             
-              .swiper-slide-active span{font-weight:bold;border:2px solid #000}
-            /*
-            .mySwiper {
-                box-sizing: border-box;
-                padding: 20px 0 0 0px;
-                background: #fff;
-              }
-              .mySwiper:before{display: block;content:"";position: absolute;left:0;top:0;width:30px;background:#fff;height:100%;z-index: 2;/*background: linear-gradient(90deg, rgba(255,255,255,1) 0%,rgba(255,0,0,1) 70%, rgba(255,255,255,1) 100%);*/}
-              /*.mySwiper:after{display: block;content:"";position: absolute;right:0;top:0;width:30px;background:#fff;height:100%;z-index: 2;/*background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 100%);*/}
-              
+            .swiper-slide-active {font-weight:bold;border-bottom:2px solid #000}
     </style>
 </head>
 
@@ -49,14 +40,14 @@
                     <div class="HCAU-h1">lease early termination</div>
                 </div>
                 <!-- //HCAU-title -->
-                 <!-- HCAU-detail -->
-                 <div class="HCAU-detail pe-0">
+                <!-- HCAU-detail -->
+                <div class="HCAU-detail pe-0">
 
                     <div class="HCAU-tab" id="pills-tab" role="tablist">
                         <div class="position-relative d-inline-flex float-start">
-                            <button class="o_ellipsis"onclick="location.href='MCPPA3001_T03.html'" data-bs-target="#tab01" type="button" role="tab" aria-controls="pills-tab01" aria-selected="false">Expected cost when buyout</button>
+                            <button class="active o_ellipsis" data-bs-target="#tab01" type="button" role="tab" aria-controls="pills-tab01" aria-selected="true">Expected cost when buyout</button>
                             <button class="o_ellipsis" onclick="location.href='MCPPA30001_T02.html'" type="button" role="tab" aria-controls="pills-tab02" aria-selected="false">Expected cost when return</button>
-                            <button class="active o_ellipsis"  type="button" role="tab" aria-controls="pills-tab03" aria-selected="true">Expected cost when return</button>
+                            <button class="o_ellipsis" onclick="location.href='MCPPA3001_T03.html'" type="button" role="tab" aria-controls="pills-tab03" aria-selected="false">Expected cost when return</button>
                         </div>
                     </div>
                     
@@ -170,10 +161,14 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: "auto",
-            spaceBetween: 10
-            
-          });
+          spaceBetween: 10,
+          slidesPerView: "auto",
+          watchSlidesProgress: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
     </script>
     <!-- <script type="module" src="js/main.js"></script> -->
 </body>

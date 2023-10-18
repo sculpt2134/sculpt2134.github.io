@@ -20,39 +20,21 @@
 <body>
     <div class="wrap">
         <script type="text/javascript" src="/static/html/m/js/Header.js"></script>
+
         <!-- HCAU-container -->
         <div class="HCAU-container">
             <div class="HCAU-contents" id="contents">
                 <!-- HCAU-title -->
                 <div class="HCAU-title">
-                    <div class="HCAU-h1">amount due</div>
+                    <div class="HCAU-h1">Billing Statement</div>
                 </div>
                 <!-- //HCAU-title -->
                 <!-- HCAU-detail -->
                 <div class="HCAU-detail">
 
-                    <div class="border-top">
-                        <div class="mt60 px30 text-center">
-                            <span class="HCAU-txt-md">You are not allowed to request to pay your bill early for some products (including lease products).<br>When you click the ‘Request to pay’ button, you can see the details.</span>
-                        </div>
-                        <div class="mt28">
-                            <div class="d-flex justify-content-between align-items-baseline p12">
-                                <div class="HCAU-txt-sm">Current payment due</div>
-                                <div class="HCAU-txt-sm fw-bold">1,332,345 $</div>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-baseline p12 border-top">
-                                <div class="HCAU-txt-sm">Amount past due</div>
-                                <div class="HCAU-txt-sm fw-bold">2,752,377 $</div>
-                            </div>
-                        </div>
-                        <div class="bg-box mt-2 p-2">
-                            <div class="border-box">
-                                <div class="d-flex justify-content-between px-3 py20">
-                                    <div class="HCAU-txt-sm">Total amount due</div>
-                                    <div class="HCAU-txt-md fw-bold point-red">4,084,722 $</div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="HCAU-nodata type01 flex-column border-top">
+                        <img src="/static/img/svg/ico_no_matches_hd01.svg" alt="">
+                        <div class="HCAU-txt-md">You have no account with us.</div>
                     </div>
 
                     <div class="g-notice border-top-dashed">
@@ -64,22 +46,35 @@
                             <dd>
                                 <ul class="HCAU-bullet-list">
                                     <li class="HCAU-txt-sm">
-                                        The estimated bill amount might be different from the amount you are actually billed.
+                                        Only usage statements from the last 5 years can be viewed.
                                     </li>
                                     <li class="HCAU-txt-sm">
-                                        The estimated payment amount might be different from the amount you actually pay.
+                                        You can get a No Objection Certificate issued to confirm that your account is closed.
                                     </li>
                                     <li class="HCAU-txt-sm">
-                                        You can check the details of the payments you have already made.
-                                        <a href="#none" class="link HCAU-txt-sm">Payment details</a>
+                                        When a statement is issued, the amount to be paid at the time of inquiry will be listed and sent via email.
                                     </li>
                                     <li class="HCAU-txt-sm">
-                                        You can view and print all payments schedules of the products either you have or had.
-                                        <a href="#none" class="link HCAU-txt-sm">Payment details</a>
+                                        You can check the detailed payment status of the billed amount in the statement of use through the product usage details.<br>
+                                        <a href="#none" class="link HCAU-txt-sm">Request No Objection Certificate</a>
                                     </li>
                                 </ul>
                             </dd>
                         </dl>
+                    </div>
+                    <div class="mb20">
+                        <div class="border-box edge p-4 py20">
+                            <div class="HCAU-txt-xs">To check billing details</div>
+                            <div class="mt12">
+                                <a href="" class="link HCAU-txt-xs">Product usage details</a>
+                            </div>
+                        </div>
+                        <div class="border-box edge p-4 py20 mt12">
+                            <div class="HCAU-txt-xs">To check repayment details</div>
+                            <div class="mt12">
+                                <a href="" class="link HCAU-txt-xs">Payment details</a>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -87,12 +82,14 @@
             </div>
         </div>
         <!-- //HCAU-container -->
+
         <!-- btn-cta-wrap -->
-        <div class="btn-cta-wrap">
-            <!-- <button type="button" class="HCAU-btn btn-cta gray03">Cancel</button> -->
-            <button type="button" class="HCAU-btn btn-cta primary">Request to pay</button>
-        </div>
+        <!-- <div class="btn-cta-wrap">
+            <button type="button" class="HCAU-btn btn-cta gray03">Cancel</button>
+            <button type="button" class="HCAU-btn btn-cta primary">Next</button>
+        </div> -->
         <!-- //btn-cta-wrap -->
+
         <script type="text/javascript" src="/static/html/m/js/Footer.js"></script>
     </div>
     <!-- <script src="/static/js/jquery-3.3.1.min.js"></script> -->

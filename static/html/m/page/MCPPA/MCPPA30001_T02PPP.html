@@ -23,17 +23,14 @@
             text-overflow: ellipsis;        
             }
             .swiper-slide{ text-align: center;
-                font-size: 15px;
-                font-weight: bold;
+                font-size: 18px;
                 background: #fff;
                 display: flex;
                 padding:20px;
-                width:80%;
+                width:auto;
             }
             
             .swiper-slide-active {font-weight:bold;border-bottom:2px solid #000}
-        .pl20{padding-left:20px}
-        .pr20{padding-right:20px}
     </style>
 </head>
 
@@ -49,22 +46,24 @@
                 </div>
                 <!-- //HCAU-title -->
                 <!-- HCAU-detail -->
-                
                 <div class="HCAU-detail ps-0">
 
-                    <div class="HCAU-tab">
-                        <div class="d-inline-flex">
-                            <button class="o_ellipsis" onclick="location.href='MCPPA30001_T01.html'" type="button">Expected cost when buyout</button>
-                            <button class="active o_ellipsis" type="button">Expected cost when return</button>
+                    <div class="HCAU-tab" id="pills-tab" role="tablist">
+                        <div class="position-relative d-inline-flex " style="justify-content:center">
+                            <!-- <button class="o_ellipsis" onclick="location.href='MCPPA30001_T01.html'" data-bs-target="#tab01" type="button" role="tab" aria-controls="pills-tab01" aria-selected="false">Expected cost when buyout</button>
+                            <button class="active o_ellipsis" data-bs-target="#tab02" type="button" role="tab" aria-controls="pills-tab02" aria-selected="true">Expected cost when return</button>
+                        </div> -->
+                            <button class="o_ellipsis" data-bs-target="#tab01" type="button" role="tab" aria-selected="false" aria-controls="pills-tab01">Expected cost when buyout</button>
+                            <button class="active o_ellipsis" onclick="location.href='MCPPA30001_T02.html'" type="button" role="tab" aria-controls="pills-tab02" aria-selected="true">Expected cost when return</button>
                         </div>
                     </div>
-                    <div class="pl20">
+                    <div style="padding-left:20px">
                         <div class="mt40">
                             <div class="title-area d-block mt40">
                                 <div class="HCAU-txt-lg">How to request</div>
                             </div>
                             <div>
-                                <ul class="HCAU-bullet-list black">
+                                <ul class="HCAU-bullet-list">
                                     <li class="HCAU-txt-sm">You can check whether the payment has been received by us in Payment Details.</li>
                                     <li class="HCAU-txt-sm">For products within 1 month of expiration, please apply through the customer center (0000-0000)</li>
                                     <li class="HCAU-txt-sm">You will be informed of the exact amount you need to pay as of the date of termination when you submit a request. (fees, etc.) </li>

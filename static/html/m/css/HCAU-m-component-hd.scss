@@ -5,11 +5,11 @@ $secondary02 : #F6F3F2;
 $point : #00aad2;
 $point-red : #E63312;
 $point-red-rgb : rgba(230, 51, 18, 0.05);
-$border-color : #e5e5e5;
+$border-color : #d5d5d5;
 $bg-color : #fafafa;
 $white : #fff;
 $gray01 : #f5f5f5;
-$gray02 : #e5e5e5;
+$gray02 : #d5d5d5;
 $gray03 : #999;
 $gray04 : #444;
 $black : #000;
@@ -67,6 +67,7 @@ $font-size-xs : 14px;
 .px36{padding-left: 32px;padding-right: 36px;}
 .px40{padding-left: 32px;padding-right: 36px;}
 
+.mx-16{margin-left: -16px;margin-right: -16px;}
 .mx20{margin-left: 20px;margin-right: 20px;}
 .mx32{margin-left: 32px;margin-right: 32px;}
 .my20{margin-top: 20px;margin-bottom: 20px;}
@@ -79,6 +80,7 @@ $font-size-xs : 14px;
 .mt32{margin-top: 32px;}
 .mt40{margin-top: 40px;}
 .mt50{margin-top: 50px;}
+.mt52{margin-top: 52px;}
 .mt60{margin-top: 60px;}
 .mt80{margin-top: 80px;}
 
@@ -173,6 +175,7 @@ a{text-decoration: none;}
         padding: 0 20px;
         line-height: 1;
         min-height: 60px;
+        min-width: 123px;
     }
     &:disabled{
         color: $gray03;
@@ -248,10 +251,9 @@ a{text-decoration: none;}
     }
 }
 
-//border-box
+//border-box, bg-box
 .border-box{
     border: 1px solid $gray02;
-    border-radius: 4px;
     background: $white;
     &.black{
         border-color: $black;
@@ -261,22 +263,24 @@ a{text-decoration: none;}
         background: $secondary02;
     }
 }
-
 .bg-box{
     background: $gray01;
-    border-radius: 4px;
 }
 .bg-box2{
     background: $bg-color;
-    border-radius: 4px;
 }
 .bg-box3{
     background: $gray02;
+}
+
+[class*='bg-box'],
+.border-box{
     border-radius: 4px;
 }
-.edge{
-    border-radius: 0;
-}
+
+*.round{border-radius:8px;}
+*.edge{border-radius: 0;}
+
 
 //form text, select
 .form-label{font-size: $font-size-sm;}
@@ -287,7 +291,7 @@ a{text-decoration: none;}
     padding: 12px 16px;
     height: 44px;
     color: $black;
-    border-color : $border-color;
+    border-color : $gray02;
     box-shadow: none;
     border-radius: 4px;
 }
@@ -429,7 +433,7 @@ textarea.HCAU-form.form-control{
 }
 .HCAU-info-msg{
     color: $gray03;
-    font-size: 13px;
+    font-size: 14px;
     &:before{
         background: $gray03;
     }
@@ -584,6 +588,7 @@ textarea.HCAU-form.form-control{
         background-color: $point-red;
     }
 }
+.HCAU-bullet-list.black li{color: $black;}
 
 //링크
 .link{
@@ -757,6 +762,18 @@ textarea.HCAU-form.form-control{
         text-align: center;
     }
 }
+.HCAU-nodata.type02{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 80px 0;
+    .HCAU-txt-sm{
+        font-weight: 700;
+        margin-top: 8px;
+        text-align: center;
+        line-height: 1.2;
+    }
+}
 
 // filter
 .HCAU-filter {
@@ -848,4 +865,12 @@ textarea.HCAU-form.form-control{
     font-size: 11px;
     line-height: 18px;
     font-weight: 700;
+}
+
+// card list
+.card-list.border-box{
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    .bg-box{border-radius: 8px;}
 }

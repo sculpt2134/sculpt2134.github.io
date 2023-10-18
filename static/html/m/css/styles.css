@@ -79,6 +79,7 @@ p
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-weight: 400;
 }
 h1,
 h2,
@@ -228,6 +229,7 @@ template {
 }
 a {
   background-color: rgba(0, 0, 0, 0);
+  color: #000;
 }
 a:active,
 a:hover {
@@ -379,6 +381,7 @@ th {
 .HCAU-container{
   flex: 1 1 auto;
 }
+
 .g08 {
   gap: 8px;
 }
@@ -562,6 +565,11 @@ th {
   padding-right: 36px;
 }
 
+.mx-16 {
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
 .mx20 {
   margin-left: 20px;
   margin-right: 20px;
@@ -607,6 +615,10 @@ th {
 
 .mt50 {
   margin-top: 50px;
+}
+
+.mt52 {
+  margin-top: 52px;
 }
 
 .mt60 {
@@ -674,11 +686,11 @@ a {
 }
 
 .border-bottom {
-  border-bottom: 1px solid #e5e5e5 !important;
+  border-bottom: 1px solid #d5d5d5 !important;
 }
 
 .border-top {
-  border-top: 1px solid #e5e5e5 !important;
+  border-top: 1px solid #d5d5d5 !important;
 }
 
 .border-top.black {
@@ -731,7 +743,7 @@ a {
 }
 
 .gray02 {
-  color: #e5e5e5;
+  color: #d5d5d5;
 }
 
 .gray03 {
@@ -802,6 +814,7 @@ a {
   padding: 0 20px;
   line-height: 1;
   min-height: 60px;
+  min-width: 123px;
 }
 .HCAU-btn:disabled {
   color: #999;
@@ -840,7 +853,7 @@ a {
   padding: 11px 54px 11px 16px;
   height: 44px;
   color: #000;
-  border-color: #e5e5e5;
+  border-color: #d5d5d5;
   box-shadow: none;
   width: 100%;
   text-align: left;
@@ -875,8 +888,7 @@ a {
 }
 
 .border-box {
-  border: 1px solid #e5e5e5;
-  border-radius: 4px;
+  border: 1px solid #d5d5d5;
   background: #fff;
 }
 .border-box.black {
@@ -889,20 +901,26 @@ a {
 
 .bg-box {
   background: #f5f5f5;
-  border-radius: 4px;
 }
 
 .bg-box2 {
   background: #fafafa;
-  border-radius: 4px;
 }
 
 .bg-box3 {
-  background: #e5e5e5;
+  background: #d5d5d5;
+}
+
+[class*=bg-box],
+.border-box {
   border-radius: 4px;
 }
 
-.edge {
+*.round {
+  border-radius: 8px;
+}
+
+*.edge {
   border-radius: 0;
 }
 
@@ -917,7 +935,7 @@ a {
   padding: 12px 16px;
   height: 44px;
   color: #000;
-  border-color: #e5e5e5;
+  border-color: #d5d5d5;
   box-shadow: none;
   border-radius: 4px;
 }
@@ -936,7 +954,7 @@ textarea.HCAU-form.form-control {
 .HCAU-form.form-control:read-only {
   background-color: #f5f5f5;
   color: #999;
-  border-color: #e5e5e5;
+  border-color: #d5d5d5;
 }
 .HCAU-form.form-control:disabled,
 .HCAU-form.form-select:disabled {
@@ -947,7 +965,7 @@ textarea.HCAU-form.form-control {
 .HCAU-form.form-check-input {
   width: 20px;
   height: 20px;
-  border-color: #e5e5e5;
+  border-color: #d5d5d5;
 }
 .HCAU-form.form-check-input + label {
   font-size: 15px;
@@ -956,7 +974,7 @@ textarea.HCAU-form.form-control {
 }
 
 .HCAU-form.form-check-input[type=checkbox] {
-  border-color: #e5e5e5;
+  border-color: #d5d5d5;
   background-image: url(/static/img/bg/bg_input_check.svg);
   background-size: 14px 14px;
 }
@@ -971,7 +989,7 @@ textarea.HCAU-form.form-control {
 }
 
 .HCAU-form.form-check-input[type=radio] {
-  border-color: #e5e5e5;
+  border-color: #d5d5d5;
 }
 .HCAU-form.form-check-input[type=radio]:disabled {
   opacity: 1;
@@ -999,7 +1017,7 @@ textarea.HCAU-form.form-control {
 .HCAU-valid .form-control.is-valid,
 .HCAU-valid.was-validated .form-control:valid {
   background: #fff;
-  border-color: #e5e5e5;
+  border-color: #d5d5d5;
 }
 
 .HCAU-valid .form-control.is-valid:read-only,
@@ -1068,7 +1086,7 @@ textarea.HCAU-form.form-control {
 
 .HCAU-info-msg {
   color: #999;
-  font-size: 13px;
+  font-size: 14px;
 }
 .HCAU-info-msg:before {
   background: #999;
@@ -1098,7 +1116,7 @@ textarea.HCAU-form.form-control {
   padding: 0;
 }
 .HCAU-bottom-sheet .offcanvas-body .bottom-sheet-item li {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #d5d5d5;
 }
 .HCAU-bottom-sheet .offcanvas-body .bottom-sheet-item li a {
   display: block;
@@ -1215,6 +1233,10 @@ textarea.HCAU-form.form-control {
   background-color: #E63312;
 }
 
+.HCAU-bullet-list.black li {
+  color: #000;
+}
+
 .link {
   font-weight: 700;
   color: #002C5F;
@@ -1309,7 +1331,7 @@ textarea.HCAU-form.form-control {
   display: inline-block;
   width: 50px;
   height: 2px;
-  background: #e5e5e5;
+  background: #d5d5d5;
   position: absolute;
   left: -50px;
   top: 15px;
@@ -1317,7 +1339,7 @@ textarea.HCAU-form.form-control {
 .HCAU-step .step-num .step-item .num {
   width: 32px;
   height: 32px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid #d5d5d5;
   border-radius: 100%;
   font-size: 16px;
   font-weight: 700;
@@ -1392,6 +1414,19 @@ textarea.HCAU-form.form-control {
   text-align: center;
 }
 
+.HCAU-nodata.type02 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+}
+.HCAU-nodata.type02 .HCAU-txt-sm {
+  font-weight: 700;
+  margin-top: 8px;
+  text-align: center;
+  line-height: 1.2;
+}
+
 .HCAU-filter {
   padding: 20px 16px;
   background: #fafafa;
@@ -1420,7 +1455,7 @@ textarea.HCAU-form.form-control {
   display: block;
   width: 100%;
   height: 1px;
-  background: #e5e5e5;
+  background: #d5d5d5;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1461,7 +1496,7 @@ textarea.HCAU-form.form-control {
 }
 
 .request-amount {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #d5d5d5;
   box-shadow: 0px -10px 6px 0px rgba(0, 0, 0, 0.04);
   margin-left: -20px;
   margin-right: -20px;
@@ -1482,4 +1517,13 @@ textarea.HCAU-form.form-control {
   font-size: 11px;
   line-height: 18px;
   font-weight: 700;
+}
+
+.card-list.border-box {
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+}
+.card-list.border-box .bg-box {
+  border-radius: 8px;
 }
