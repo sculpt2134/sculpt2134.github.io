@@ -253,6 +253,10 @@
   margin-bottom: 32px;
 }
 
+.mb40 {
+  margin-bottom: 40px;
+}
+
 .mb60 {
   margin-bottom: 60px;
 }
@@ -315,6 +319,10 @@ a {
 
 .border-top-dashed {
   border-top: 1px dashed #999 !important;
+}
+
+.border-top-dashed.gray02 {
+  color: #d5d5d5 !important;
 }
 
 .border-bottom-dashed {
@@ -474,6 +482,8 @@ a {
   width: 100%;
   text-align: left;
   position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .HCAU-btn.dropdown-toggle::after {
   position: absolute;
@@ -1052,7 +1062,10 @@ textarea.HCAU-form.form-control {
 .HCAU-filter .inner {
   padding: 12px 0;
   display: flex;
-  justify-content: space-between;
+  gap: 16px;
+}
+.HCAU-filter .inner > div {
+  flex-grow: 1;
 }
 
 .HCAU-form-wrap + .HCAU-form-wrap {

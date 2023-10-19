@@ -34,11 +34,210 @@
     <div class="HCAU-txt-md">lead text area</div>
 </div>
 <!-- //HCAU-title -->
-
     <!-- HCAU-detail -->
     <div class="HCAU-detail">
-
-    <section>
+        <section>
+        <!--salesforce lwc calendar-->
+        <link href="/static/css/lws.css" rel="stylesheet">
+        <div style="height:400px">
+            <div class="slds-form-element slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open">
+                <label class="slds-form-element__label" for="date-input-id-day_selected">Date</label>
+                <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_right">
+                  <input type="text" id="date-input-id-day_selected" placeholder=" " class="slds-input" value="06/24/2021" />
+                  <button class="slds-button slds-button_icon slds-input__icon slds-input__icon_right" title="Select a date">
+                    <svg class="slds-button__icon" aria-hidden="true">
+                      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#event"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Select a date</span>
+                  </button>
+                </div>
+                <div aria-hidden="false" aria-label="Date picker: June" class="slds-datepicker slds-dropdown slds-dropdown_left" role="dialog">
+                  <div class="slds-datepicker__filter slds-grid">
+                    <div class="slds-datepicker__filter_month slds-grid slds-grid_align-spread slds-grow">
+                      <div class="slds-align-middle">
+                        <button class="slds-button slds-button_icon slds-button_icon-container" title="Previous Month">
+                          <svg class="slds-button__icon" aria-hidden="true">
+                            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#left"></use>
+                          </svg>
+                          <span class="slds-assistive-text">Previous Month</span>
+                        </button>
+                      </div>
+                      <h2 aria-atomic="true" aria-live="assertive" class="slds-align-middle" id="pickerDaySelected-month">June</h2>
+                      <div class="slds-align-middle">
+                        <button class="slds-button slds-button_icon slds-button_icon-container" title="Next Month">
+                          <svg class="slds-button__icon" aria-hidden="true">
+                            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#right"></use>
+                          </svg>
+                          <span class="slds-assistive-text">Next Month</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="slds-shrink-none">
+                      <label class="slds-assistive-text" for="pickerDaySelected_select">Pick a Year</label>
+                      <div class="slds-select_container">
+                        <select class="slds-select" id="pickerDaySelected_select">
+                          <option>2021</option>
+                          <option>2022</option>
+                          <option>2023</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <table aria-labelledby="pickerDaySelected-month" aria-multiselectable="true" class="slds-datepicker__month" role="grid">
+                    <thead>
+                      <tr id="pickerDaySelected-weekdays">
+                        <th id="pickerDaySelected-Sunday" scope="col">
+                          <abbr title="Sunday">Sun</abbr>
+                        </th>
+                        <th id="pickerDaySelected-Monday" scope="col">
+                          <abbr title="Monday">Mon</abbr>
+                        </th>
+                        <th id="pickerDaySelected-Tuesday" scope="col">
+                          <abbr title="Tuesday">Tue</abbr>
+                        </th>
+                        <th id="pickerDaySelected-Wednesday" scope="col">
+                          <abbr title="Wednesday">Wed</abbr>
+                        </th>
+                        <th id="pickerDaySelected-Thursday" scope="col">
+                          <abbr title="Thursday">Thu</abbr>
+                        </th>
+                        <th id="pickerDaySelected-Friday" scope="col">
+                          <abbr title="Friday">Fri</abbr>
+                        </th>
+                        <th id="pickerDaySelected-Saturday" scope="col">
+                          <abbr title="Saturday">Sat</abbr>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td aria-selected="false" class="slds-day_adjacent-month" role="gridcell" aria-label="31 May 2020">
+                          <span class="slds-day">31</span>
+                        </td>
+                        <td aria-selected="false" class="" role="gridcell" tabindex="0" aria-label="1 June 2020">
+                          <span class="slds-day">1</span>
+                        </td>
+                        <td aria-selected="false" class="" role="gridcell" aria-label="2 June 2020">
+                          <span class="slds-day">2</span>
+                        </td>
+                        <td aria-selected="false" class="" role="gridcell" aria-label="3 June 2020">
+                          <span class="slds-day">3</span>
+                        </td>
+                        <td aria-selected="false" class="" role="gridcell" aria-label="4 June 2020">
+                          <span class="slds-day">4</span>
+                        </td>
+                        <td aria-selected="false" class="" role="gridcell" aria-label="5 June 2020">
+                          <span class="slds-day">5</span>
+                        </td>
+                        <td aria-selected="false" class="" role="gridcell" aria-label="6 June 2020">
+                          <span class="slds-day">6</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td aria-selected="false" class="" role="gridcell" aria-label="7 June 2020">
+                          <span class="slds-day">7</span>
+                        </td>
+                        <td aria-selected="false" class="" role="gridcell" aria-label="8 June 2020">
+                          <span class="slds-day">8</span>
+                        </td>
+                        <td aria-selected="false" class="" role="gridcell" aria-label="9 June 2020">
+                          <span class="slds-day">9</span>
+                        </td>
+                        <td aria-selected="false" class="" role="gridcell" aria-label="10 June 2020">
+                          <span class="slds-day">10</span>
+                        </td>
+                        <td aria-selected="false" class="" role="gridcell" aria-label="11 June 2020">
+                          <span class="slds-day">11</span>
+                        </td>
+                        <td aria-selected="false" class="" role="gridcell" aria-label="12 June 2020">
+                          <span class="slds-day">12</span>
+                        </td>
+                        <td aria-selected="false" class="" role="gridcell" aria-label="13 June 2020">
+                          <span class="slds-day">13</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td aria-selected="false" class="" role="gridcell" aria-label="14 June 2020">
+                          <span class="slds-day">14</span>
+                        </td>
+                        <td aria-selected="false" class="" role="gridcell" aria-label="15 June 2020">
+                          <span class="slds-day">15</span>
+                        </td>
+                        <td aria-selected="false" class="" role="gridcell" aria-label="16 June 2020">
+                          <span class="slds-day">16</span>
+                        </td>
+                        <td aria-selected="false" class="" role="gridcell" aria-label="17 June 2020">
+                          <span class="slds-day">17</span>
+                        </td>
+                        <td aria-selected="false" aria-current="date" class="slds-is-today" role="gridcell" aria-label="18 June 2020">
+                          <span class="slds-day">18</span>
+                        </td>
+                        <td aria-selected="false" class="" role="gridcell" aria-label="19 June 2020">
+                          <span class="slds-day">19</span>
+                        </td>
+                        <td aria-selected="false" class="" role="gridcell" aria-label="20 June 2020">
+                          <span class="slds-day">20</span>
+                        </td>
+                      </tr>
+                      <tr class="slds-has-multi-selection">
+                        <td aria-selected="false" class="" role="gridcell" aria-label="21 June 2020">
+                          <span class="slds-day">21</span>
+                        </td>
+                        <td aria-selected="false" class="" role="gridcell" aria-label="22 June 2020">
+                          <span class="slds-day">22</span>
+                        </td>
+                        <td aria-selected="false" class="" role="gridcell" aria-label="23 June 2020">
+                          <span class="slds-day">23</span>
+                        </td>
+                        <td aria-selected="true" class="slds-is-selected" role="gridcell" aria-label="24 June 2020">
+                          <span class="slds-day">24</span>
+                        </td>
+                        <td aria-selected="false" class="" role="gridcell" aria-label="25 June 2020">
+                          <span class="slds-day">25</span>
+                        </td>
+                        <td aria-selected="false" class="" role="gridcell" aria-label="26 June 2020">
+                          <span class="slds-day">26</span>
+                        </td>
+                        <td aria-selected="false" class="" role="gridcell" aria-label="27 June 2020">
+                          <span class="slds-day">27</span>
+                        </td>
+                      </tr>
+                      <tr class="">
+                        <td aria-selected="false" class="" role="gridcell" aria-label="28 June 2020">
+                          <span class="slds-day">28</span>
+                        </td>
+                        <td aria-selected="false" class="" role="gridcell" aria-label="29 June 2020">
+                          <span class="slds-day">29</span>
+                        </td>
+                        <td aria-selected="false" class="" role="gridcell" aria-label="30 June 2020">
+                          <span class="slds-day">30</span>
+                        </td>
+                        <td aria-selected="false" class="slds-day_adjacent-month" role="gridcell" aria-label="1 July 2020">
+                          <span class="slds-day">1</span>
+                        </td>
+                        <td aria-selected="false" class="slds-day_adjacent-month" role="gridcell" aria-label="2 July 2020">
+                          <span class="slds-day">2</span>
+                        </td>
+                        <td aria-selected="false" class="slds-day_adjacent-month" role="gridcell" aria-label="3 July 2020">
+                          <span class="slds-day">3</span>
+                        </td>
+                        <td aria-selected="false" class="slds-day_adjacent-month" role="gridcell" aria-label="4 July 2020">
+                          <span class="slds-day">4</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <button class="slds-button slds-align_absolute-center slds-text-link">Today</button>
+                </div>
+            </div>
+        </div>
+        <!--//salesforce lwc calendar-->
+        <!--bootstrap vanilascript calendar-->
+        <link rel="stylesheet" type="text/css" href="/static/css/datepicker-bs5.css">
+        <div class="vanilla">
+            <div class="datepicker datepicker-inline active"><div class="datepicker-picker"><div class="datepicker-header"><div class="datepicker-title" style=""></div><div class="datepicker-controls"><button type="button" class="btn prev-button prev-btn" tabindex="-1">«</button><button type="button" class="btn view-switch" tabindex="-1">October 2023</button><button type="button" class="btn next-button next-btn" tabindex="-1">»</button></div></div><div class="datepicker-main"><div class="datepicker-view"><div class="days"><div class="days-of-week"><span class="dow">Su</span><span class="dow">Mo</span><span class="dow">Tu</span><span class="dow">We</span><span class="dow">Th</span><span class="dow">Fr</span><span class="dow">Sa</span></div><div class="datepicker-grid"><span data-date="1696086000000" class="datepicker-cell day">1</span><span data-date="1696172400000" class="datepicker-cell day">2</span><span data-date="1696258800000" class="datepicker-cell day">3</span><span data-date="1696345200000" class="datepicker-cell day">4</span><span data-date="1696431600000" class="datepicker-cell day">5</span><span data-date="1696518000000" class="datepicker-cell day">6</span><span data-date="1696604400000" class="datepicker-cell day">7</span><span data-date="1696690800000" class="datepicker-cell day">8</span><span data-date="1696777200000" class="datepicker-cell day">9</span><span data-date="1696863600000" class="datepicker-cell day">10</span><span data-date="1696950000000" class="datepicker-cell day">11</span><span data-date="1697036400000" class="datepicker-cell day">12</span><span data-date="1697122800000" class="datepicker-cell day">13</span><span data-date="1697209200000" class="datepicker-cell day">14</span><span data-date="1697295600000" class="datepicker-cell day">15</span><span data-date="1697382000000" class="datepicker-cell day">16</span><span data-date="1697468400000" class="datepicker-cell day">17</span><span data-date="1697554800000" class="datepicker-cell day focused">18</span><span data-date="1697641200000" class="datepicker-cell day">19</span><span data-date="1697727600000" class="datepicker-cell day">20</span><span data-date="1697814000000" class="datepicker-cell day">21</span><span data-date="1697900400000" class="datepicker-cell day">22</span><span data-date="1697986800000" class="datepicker-cell day">23</span><span data-date="1698073200000" class="datepicker-cell day">24</span><span data-date="1698159600000" class="datepicker-cell day">25</span><span data-date="1698246000000" class="datepicker-cell day">26</span><span data-date="1698332400000" class="datepicker-cell day">27</span><span data-date="1698418800000" class="datepicker-cell day">28</span><span data-date="1698505200000" class="datepicker-cell day">29</span><span data-date="1698591600000" class="datepicker-cell day">30</span><span data-date="1698678000000" class="datepicker-cell day">31</span><span data-date="1698764400000" class="datepicker-cell day next">1</span><span data-date="1698850800000" class="datepicker-cell day next">2</span><span data-date="1698937200000" class="datepicker-cell day next">3</span><span data-date="1699023600000" class="datepicker-cell day next">4</span><span data-date="1699110000000" class="datepicker-cell day next">5</span><span data-date="1699196400000" class="datepicker-cell day next">6</span><span data-date="1699282800000" class="datepicker-cell day next">7</span><span data-date="1699369200000" class="datepicker-cell day next">8</span><span data-date="1699455600000" class="datepicker-cell day next">9</span><span data-date="1699542000000" class="datepicker-cell day next">10</span><span data-date="1699628400000" class="datepicker-cell day next">11</span></div></div></div></div><div class="datepicker-footer"><div class="datepicker-controls"><button type="button" class="btn today-button today-btn" tabindex="-1" style="display: none;">Today</button><button type="button" class="btn clear-button clear-btn" tabindex="-1" style="display: none;">Clear</button></div></div></div></div>
+        </div>
+        <!--//bootstrap vanillascript calendar-->
         <div class="title-area d-flex align-items-baseline g16">
             <div class="title">Tooltip</div>
         </div>
@@ -1316,7 +1515,7 @@
             <div class="d-flex py28 px32 g20 border-bottom align-items-center">
                 <div>
                     <div class="d-flex gap-2 align-items-center">
-                        <div class="HCAU-txt-md fw-bold">New Car Loan_Standard – 97356178021750</div>
+                        <div class="HCAU-txt-md fw-bold">New Car Loan_Standard – H2023NA000248</div>
                         <div class="d-flex">
                             <span class="HCAU-badge type01">Overdue</span>
                         </div>
@@ -1334,7 +1533,7 @@
             <div class="d-flex py28 px32 g20 border-bottom align-items-center">
                 <div>
                     <div class="d-flex gap-2">
-                        <span class="HCAU-txt-md fw-bold">New Car Loan_Standard – 97356178021750</span>
+                        <span class="HCAU-txt-md fw-bold">New Car Loan_Standard – H2023NA000248</span>
                         <div class="d-flex">
                             <span class="HCAU-badge type01">Overdue</span>
                         </div>
@@ -1810,7 +2009,7 @@
             <div class="bg-box d-flex justify-content-between align-items-center px32 py16 h60">
                 <div class="HCAU-lead-txt fw-bold">NewCar Loan_Standard</div>
                 <div class="d-flex g20">
-                    <span class="HCAU-lead-txt fw-bold align-items-center">97356178021750</span>
+                    <span class="HCAU-lead-txt fw-bold align-items-center">H2023NA000248</span>
                     <a href="#" class="ico-loan-btn"><img src="/static/img/svg/ico_loan_btn.svg" alt=""></a>
                 </div>
             </div>
@@ -1858,7 +2057,7 @@
                     </div>
                     <dl class="loan-text">
                         <dt class="HCAU-txt-sm fw-normal gray04">Contract number</dt>
-                        <dd class="HCAU-txt-sm fw-bold mt-1">97356178021750</dd>
+                        <dd class="HCAU-txt-sm fw-bold mt-1">H2023NA000248</dd>
                     </dl>
                 </div>
                 <div class="loan-items">
@@ -2623,28 +2822,3 @@
 
 
 
-
-
-
-<script src="/static/js/bootstrap.bundle.min.js"></script>
-<script>
-(function () {
-    'use strict'
-
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.querySelectorAll('.needs-validation')
-
-    // Loop over them and prevent submission
-    Array.prototype.slice.call(forms)
-        .forEach(function (form) {
-        form.addEventListener('submit', function (event) {
-            if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-            }
-
-            form.classList.add('was-validated')
-        }, false)
-        })
-    })()
-</script>
