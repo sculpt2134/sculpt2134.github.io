@@ -1,0 +1,1766 @@
+<!-- HCAU-breadcrumb -->
+                <div class="HCAU-breadcrumb">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+                        <symbol id="house-door-fill" viewBox="0 0 16 16">
+                            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+                        </symbol>
+                    </svg>
+                    <nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb">
+                        <ol class="breadcrumb breadcrumb-chevron">
+                            <li class="breadcrumb-item">
+                                <a class="link-body-emphasis" href="#none">
+                                    <svg class="bi" width="16" height="16"><use xlink:href="#house-door-fill"></use></svg>
+                                    <span class="visually-hidden">Home</span>
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item"><a class="link-body-emphasis fw-semibold text-decoration-none" href="#none">Library</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Data</li>
+                        </ol>
+                    </nav>
+                    <!-- bredcrumb 영역 -->
+                </div>
+                <!-- //HCAU-breadcrumb -->
+                <div class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="d-flex">
+                      <div class="toast-body">
+                        Hello, world! This is a toast message.
+                      </div>
+                      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                  </div>
+                <!-- HCAU-title -->
+                <div class="HCAU-title"><!-- class option : border-bottom -->
+                    <div class="HCAU-h1">Title text</div>
+                    <div class="HCAU-txt-md">lead text area</div>
+                </div>
+                <!-- //HCAU-title -->
+
+                 <!-- HCAU-detail -->
+                 <div class="HCAU-detail">
+
+                    <section>
+                        <div class="title-area d-flex align-items-baseline g16">
+                            <div class="title">Tooltip</div>
+                        </div>
+                        <span class="HCAU-tooltip">
+                            <a href=""><img src="/static/img/svg/ico_tooltip.svg" alt=""></a>
+                            <div class="HCAU-tooltip-inner">
+                                <div class="HCAU-tooltip-arrow"></div>
+                                <div class="HCAU-tooltip-cont HCAU-txt-sm">
+                                    <div class="d-flex justify-content-between">
+                                        <p>fines</p>
+                                        <p>120 $</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p>toll gate fee</p>
+                                        <p>290 $</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+
+                    </section>
+
+
+                    <section>
+                        <div class="title-area d-flex align-items-baseline g16">
+                            <div class="title">Layer popup</div>
+                        </div>
+                        <div>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="HCAU-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                modal sample 1
+                            </button>
+                            <button type="button" class="HCAU-btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                modal sample 2
+                            </button>
+                            <button type="button" class="HCAU-btn" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                modal sample 3
+                            </button>
+
+                            <button type="button" class="HCAU-btn primary" data-bs-toggle="modal" data-bs-target="#loginModal">login</button>
+
+                            <!-- modal sample 1 -->
+                            <div class="HCAU-modal modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg"><!-- modal-lg modal-md modal-sm -->
+                                    <div class="modal-content">
+
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/img/svg/ico_modal_close.svg" alt="Close" /></button>
+                                        <div class="modal-content-inner">
+                                            <div class="modal-header">
+                                                <div class="HCAU-h2" id="exampleModalLabel">Get a copy of your billing statement via email</div>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="border-box">
+                                                    <div class="bg-box2 p32">
+
+                                                        <ul class="HCAU-bullet-list">
+                                                            <li>
+                                                                We will send a copy of your billing statement to the email address associated with your account.
+                                                            </li>
+                                                            <li>
+                                                                If you want to change your email address, please update your personal information first.<br>
+                                                                <a href="#none" class="link">Change your personal info</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="pt32">
+                                                            <input type="email" class="form-control HCAU-form" id="exampleInputEmail1" aria-describedby="emailHelp" value="hyundai@hyundaicapital.com" disabled="">
+                                                        </div>
+
+                                                        <div class="d-flex g12 justify-content-center mt40">
+                                                            <button type="button" class="HCAU-btn btn-large primary">Request statements</button>
+                                                            <!-- <button type="button" class="HCAU-btn btn-large" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="HCAU-btn btn-large">Save changes</button>
+                                                            <button type="button" class="HCAU-btn btn-large">button</button>
+                                                            <a href="#none" class="HCAU-btn btn-large">a link</a>
+                                                            <a href="#none" class="HCAU-btn btn-large">a link</a> -->
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!-- <div class="modal-footer">
+
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- modal sample 2 -->
+                            <div class="HCAU-modal modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-md"><!-- modal-lg modal-md modal-sm -->
+                                    <div class="modal-content">
+
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/img/svg/ico_modal_close.svg" alt="Close" /></button>
+                                        <div class="modal-content-inner">
+                                            <!-- <div class="modal-header">
+                                                <div class="HCAU-h2" id="exampleModalLabel">title</div>
+                                            </div> -->
+                                            <div class="modal-body">
+                                                <div class="border-box">
+                                                    <div class="bg-box2 p32">
+
+                                                        <div class="text-center">
+                                                            <span class="HCAU-txt-md fw-bold">000 Customer is already a member of the<br>Hyundai finance customer portal site.</span>
+                                                        </div>
+                                                        <div class="bg-box3 text-center p-3 mt32">
+                                                            <span class="HCAU-txt-sm">E-mail ID :</span>
+                                                            <span class="HCAU-txt-sm fw-bold">hyundai@hcs.com</span>
+                                                        </div>
+                                                        <div class="text-center mt32">
+                                                            <p>You can use the customer portal service after logging in.</p>
+                                                            <p class="mt20">If you are not a 000 customer,<br>please check your loan number and DOB again.</p>
+                                                        </div>
+                                                        <div class="d-flex g12 justify-content-center mt40">
+                                                            <button type="button" class="HCAU-btn btn-large gray03">Cancel</button>
+                                                            <button type="button" class="HCAU-btn btn-large primary">Ok</button>
+                                                            <!-- <button type="button" class="HCAU-btn btn-large" data-bs-dismiss="modal">Close</button> -->
+                                                            <!-- <button type="button" class="HCAU-btn btn-large">button</button> -->
+                                                            <!-- <a href="#none" class="HCAU-btn btn-large">a link</a> -->
+                                                            <!-- <a href="#none" class="HCAU-btn btn-large">a link</a> -->
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!-- <div class="modal-footer">
+
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- modal sample 3 -->
+                            <div class="HCAU-modal modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg"><!-- modal-lg modal-md modal-sm -->
+                                    <div class="modal-content">
+
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/img/svg/ico_modal_close.svg" alt="Close" /></button>
+                                        <div class="modal-content-inner">
+                                            <div class="modal-header">
+                                                <div class="HCAU-h2" id="exampleModalLabel">Expected cost to buy out</div>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="border-box">
+                                                    <div class="bg-box2 p32">
+
+                                                        <div class="d-flex g54">
+                                                            <p>
+                                                                <span class="HCAU-txt-sm">Car registration number : </span>
+                                                                <span class="HCAU-txt-sm fw-bold">Quebec 31 XPM</span>
+                                                            </p>
+                                                            <p>
+                                                                <span class="HCAU-txt-sm">Model :</span>
+                                                                <span class="HCAU-txt-sm fw-bold">The all-new SANTA FE</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="border-top-dashed mt32 mb32"></div>
+                                                        <div class="HCAU-txt-md fw-bold">Date of settlement</div>
+                                                        <div class="pt-3">
+                                                            <input type="text" class="form-control HCAU-form" id="" aria-describedby="Date of settlement" readonly value="2023.05.17">
+                                                        </div>
+
+                                                        <div class="mt32 border-box black pb32">
+                                                            <div class="d-flex align-items-center justify-content-between border-bottom py-3 px32">
+                                                                <p class="HCAU-txt-sm">Payment due date</p>
+                                                                <p class="HCAU-txt-sm">Monthly 15</p>
+                                                            </div>
+                                                            <div class="d-flex align-items-center justify-content-between border-bottom py-3 px32">
+                                                                <p class="HCAU-txt-sm">Date of termination</p>
+                                                                <p class="HCAU-txt-sm">2020.04.19</p>
+                                                            </div>
+                                                            <div class="d-flex align-items-center justify-content-between border-bottom py-3 px32">
+                                                                <p class="HCAU-txt-sm">Date of maturity</p>
+                                                                <p class="HCAU-txt-sm">2020.04.19</p>
+                                                            </div>
+                                                            <div class="d-flex align-items-center justify-content-between border-bottom py-3 px32">
+                                                                <p class="HCAU-txt-sm">Car’s residual value</p>
+                                                                <p class="HCAU-txt-sm">8,000,000 $</p>
+                                                            </div>
+                                                            <div class="d-flex align-items-center justify-content-between pt32 px32">
+                                                                <p class="HCAU-txt-md fw-bold">Total settlement cost</p>
+                                                                <p class="HCAU-lead-txt fw-bold">8,100,000 $</p>
+                                                            </div>
+                                                            <div class="border-top mx32 my20"></div>
+                                                            <div class="d-flex align-items-center justify-content-between mx32">
+                                                                <p class="d-flex g08">
+                                                                    <span class="HCAU-txt-xs fw-bold num-circle">1</span>
+                                                                    <span class="HCAU-txt-sm fw-bold">Base lease payoff</span>
+                                                                </p>
+                                                                <p class="HCAU-txt-sm fw-bold">8,000,000 $</p>
+                                                            </div>
+                                                            <div class="d-flex align-items-center justify-content-between mx32 pt12">
+                                                                <p class="d-flex g08">
+                                                                    <span class="HCAU-txt-xs fw-bold num-circle">2</span>
+                                                                    <span class="HCAU-txt-sm fw-bold">Interests</span>
+                                                                </p>
+                                                                <p class="HCAU-txt-sm fw-bold">100,000 $</p>
+                                                            </div>
+                                                            <div class="d-flex align-items-center justify-content-between mx32 pt12">
+                                                                <p class="d-flex g08">
+                                                                    <span class="HCAU-txt-xs fw-bold num-circle">3</span>
+                                                                    <span class="HCAU-txt-sm fw-bold">Termination fee</span>
+                                                                </p>
+                                                                <p class="HCAU-txt-sm fw-bold">0 $</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="d-flex g12 justify-content-center mt40">
+                                                            <button type="button" class="HCAU-btn btn-large primary">Ok</button>
+                                                            <!-- <button type="button" class="HCAU-btn btn-large" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="HCAU-btn btn-large">Save changes</button>
+                                                            <button type="button" class="HCAU-btn btn-large">button</button>
+                                                            <a href="#none" class="HCAU-btn btn-large">a link</a>
+                                                            <a href="#none" class="HCAU-btn btn-large">a link</a> -->
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!-- <div class="modal-footer">
+
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- modal login -->
+                            <div class="HCAU-modal modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-sm"><!-- modal-lg modal-md modal-sm -->
+                                    <div class="modal-content">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/img/svg/ico_modal_close.svg" alt="Close" /></button>
+                                        <div class="modal-content-inner">
+                                            <div class="modal-header">
+                                                <div class="HCAU-h2" id="exampleModalLabel">Login</div>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/img/svg/ico_modal_close.svg" alt="Close" /></button>
+                                            </div>
+
+                                            <!-- modal-body -->
+                                            <div class="modal-body">
+
+                                                <!-- HCAU-tab -->
+                                                <div class="HCAU-tab mt20">
+                                                    <ul class="nav nav-tabs" id="" role="tablist">
+                                                        <button class="nav-link active" id="tab01" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Individual</button>
+                                                        <button class="nav-link" id="tab02" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Businessman</button>
+                                                    </ul>
+                                                </div>
+                                                <!-- //HCAU-tab -->
+                                                <!-- tab-content -->
+                                                <div class="tab-content" id="">
+                                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="tab01" tabindex="0">
+                                                        <div class="pt40">
+                                                            <div>
+                                                                <input type="email" class="form-control HCAU-form" id="" aria-describedby="" value="" placeholder="E-mail">
+                                                            </div>
+                                                            <div class="pt20">
+                                                                <input type="password" class="form-control HCAU-form" id="" placeholder="password">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="tab02" tabindex="0">
+                                                        222222222 <br>
+                                                        222222222 <br>
+                                                        222222222 <br>
+                                                    </div>
+                                                </div>
+                                                <!-- //tab-content -->
+
+
+                                                <div class="pt40 d-flex full">
+                                                    <button type="button" class="HCAU-btn btn-large primary">Log in</button>
+                                                </div>
+                                                <div class="d-flex align-items-baseline g20 pt20">
+                                                    <div><a href="#none" class="link">Find ID</a></div>
+                                                    <div><a href="#none" class="link">Find Password</a></div>
+                                                    <div class="ms-auto">
+                                                        <a href="#none" class="link">Sign up</a>
+                                                    </div>
+                                                </div>
+                                                <ul class="HCAU-bullet-list pt40">
+                                                    <li>
+                                                        To protect your information, you will be automatically logged out if you do not use the service for more than 10 minutes.
+                                                    </li>
+                                                    <li>
+                                                        If you enter an incorrect password 5 times in a row, you must change your password after verifying your identity.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- //modal-body -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+
+
+                    <section>
+                        <div class="title-area d-flex align-items-baseline g16">
+                            <div class="title">FONT GUIDE</div>
+                        </div>
+                        <div>
+                            <div class="HCAU-h1">hyundai sans head office h1 40 HCAU-h1</div>
+                            <hr>
+                            <div class="HCAU-h2">hyundai sans head office bold h2 24 HCAU-h2</div>
+                            <hr>
+                            <div class="HCAU-lead-txt">Hyundai Sans Text Office 20 HCAU-lead-txt<br>lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                            <hr>
+                            <div class="HCAU-txt-lg">Hyundai Sans Text Office 18 HCAU-txt-lg<br>lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                            <hr>
+                            <div class="HCAU-txt-md">Hyundai Sans Text Office 16 HCAU-txt-md<br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                            <hr>
+                            <div class="HCAU-txt-sm">Hyundai Sans Text Office 14 HCAU-txt-sm<br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                        </div>
+
+                    </section>
+
+                    <section>
+                        <div class="title-area d-flex align-items-baseline g16">
+                            <div class="title">버튼</div>
+                        </div>
+                        <div>ETC 버튼(sm)</div>
+                        <div class="">
+                            <button type="button" class="HCAU-btn btn-sm">default</button>
+                            <button type="button" class="HCAU-btn btn-sm primary">primary</button>
+                            <button type="button" class="HCAU-btn btn-sm gray03">button</button>
+                            <button type="button" class="HCAU-btn btn-sm gray01">Search</button>
+                            <button type="button" class="HCAU-btn btn-sm">
+                                statement
+                                <span class="ico-print"><img src="/static/img/svg/ico_print.svg" alt=""></span>
+                            </button>
+                            <a href="#none" class="HCAU-btn btn-sm">button(a)</a>
+                            <a href="#none" class="HCAU-btn btn-sm">button(a)</a>
+                            <button type="button" class="HCAU-btn btn-sm" disabled>disabled button</button>
+                        </div>
+                        <br>
+                        <div>콘텐츠 중간 버튼(smd)</div>
+                        <div class="d-flex g20">
+                            <button type="button" class="HCAU-btn btn-smd">button</button>
+                            <button type="button" class="HCAU-btn btn-smd">button</button>
+                            <a href="#none" class="HCAU-btn btn-smd">a link</a>
+                            <a href="#none" class="HCAU-btn btn-smd">a link</a>
+                        </div>
+                        <br>
+                        <div>콘텐츠 중간 버튼(md)</div>
+                        <div class="d-flex g20">
+                            <button type="button" class="HCAU-btn btn-md">button</button>
+                            <button type="button" class="HCAU-btn btn-md">button</button>
+                            <a href="#none" class="HCAU-btn btn-md">a link</a>
+                            <a href="#none" class="HCAU-btn btn-md">a link</a>
+                        </div>
+                        <br>
+                        <div class="d-flex g20 full">
+                            <button type="button" class="HCAU-btn btn-md">button</button>
+                            <button type="button" class="HCAU-btn btn-md">button</button>
+                            <a href="#none" class="HCAU-btn btn-md">a link</a>
+                            <a href="#none" class="HCAU-btn btn-md">a link</a>
+                        </div>
+                        <br>
+                        <div>프로세스 CTA 버튼(lg)</div>
+                        <div class="d-flex g12">
+                            <button type="button" class="HCAU-btn btn-large primary">Ok</button>
+                            <button type="button" class="HCAU-btn btn-large">List View</button>
+                            <button type="button" class="HCAU-btn btn-large gray03">Cancel</button>
+                            <a href="#none" class="HCAU-btn btn-large">a link</a>
+                            <a href="#none" class="HCAU-btn btn-large">a link</a>
+                        </div>
+                        <br>
+                        <div class="d-flex g12 justify-content-center">
+                            <button type="button" class="HCAU-btn btn-large">button</button>
+                            <button type="button" class="HCAU-btn btn-large">button</button>
+                            <a href="#none" class="HCAU-btn btn-large">a link</a>
+                            <a href="#none" class="HCAU-btn btn-large">a link</a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="title-area d-flex align-items-baseline g16">
+                            <div class="title">Badge</div>
+                        </div>
+                        <div>
+                            <span class="HCAU-badge type01">Overdue</span>
+                            <span class="HCAU-badge type02">Complete payment</span>
+                            <!-- <span class="HCAU-badge type03">Complete payment</span> -->
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="title-area d-flex align-items-baseline g16">
+                            <div class="title">탭메뉴</div>
+                        </div>
+
+                        <div>탭메뉴</div>
+                        <!-- HCAU-tab -->
+                        <div class="HCAU-tab">
+                            <ul class="nav nav-tabs" id="">
+                                <button class="nav-link active" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">111</button>
+                                <button class="nav-link" id="nav-contact-tab2" data-bs-toggle="tab" data-bs-target="#nav-contact2" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">222</button>
+                                <button class="nav-link" id="nav-contact-tab3" data-bs-toggle="tab" data-bs-target="#nav-contact3" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">333</button>
+                                <button class="nav-link" id="nav-contact-tab4" data-bs-toggle="tab" data-bs-target="#nav-contact4" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">4444</button>
+                            </ul>
+                        </div>
+                        <!-- //HCAU-tab -->
+                        <!-- tab-content -->
+                        <div class="tab-content" id="">
+                            <div class="tab-pane fade show active" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">111</div>
+                            <div class="tab-pane fade" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact-tab2" tabindex="0">222</div>
+                            <div class="tab-pane fade" id="nav-contact3" role="tabpanel" aria-labelledby="nav-contact-tab3" tabindex="0">333</div>
+                            <div class="tab-pane fade" id="nav-contact4" role="tabpanel" aria-labelledby="nav-contact-tab4" tabindex="0">444</div>
+                        </div>
+                        <!-- //tab-content -->
+
+                        <br>
+                        <div class="">스텝</div>
+                        <!-- HCAU-step -->
+                        <div class="HCAU-step">
+                            <div class="step-item">
+                                <div class="num">1</div>
+                                <div class="txt">Choose the amount you want to pay</div>
+                            </div>
+                            <div class="step-item">
+                                <div class="num">2</div>
+                                <div class="txt">Choose the amount you want to pay</div>
+                            </div>
+                            <div class="step-item  active">
+                                <div class="num">3</div>
+                                <div class="txt">Choose the amount you want to pay</div>
+                            </div>
+                        </div>
+                        <!-- //HCAU-step -->
+
+                    </section>
+
+                    <section>
+                        <div class="title-area d-flex align-items-baseline g16">
+                            <div class="title">title</div>
+                            <div class="sub-title">sub title</div>
+                            <div class="ms-auto">
+                                <button type="button" class="HCAU-btn btn-sm">default</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="title-area d-flex align-items-baseline g16">
+                            <div class="title">Search bar</div>
+                            <!-- <div class="sub-title">Reference date : 2023.12.31</div>
+                            <div class="ms-auto">
+                                <button type="button" class="HCAU-btn btn-sm">default</button>
+                            </div> -->
+                        </div>
+
+                        <div class="HCAU-search-bar">
+                            <div class="d-flex justify-content-between g20">
+                                <div class="dropdown flex-fix">
+                                    <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                                        Product name (all)
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown flex-fix">
+                                    <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                                        April 2023 (this month)
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-flex justify-content-between g20">
+                                <div class="dropdown flex-fix">
+                                    <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                                        Repayment frequency (all)
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="dropdown flex-fix">
+                                    <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                                        Payment status (all)
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="HCAU-search-bar d-flex g08">
+                            <div class="flex-grow-1 d-flex g08">
+                                <div class="dropdown">
+                                    <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                                        Vin
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <input type="text" class="form-control HCAU-form" placeholder="Last name" aria-label="Last name" value="KMHEM13BPBA000002">
+                                </div>
+                            </div>
+                            <div class="search-btn">
+                                <button type="button" class="HCAU-btn btn-smd full">Search</button>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="HCAU-search-bar d-flex g20">
+                            <div class="dropdown">
+                                <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                                    Product classification (all)
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                                    Product name (all)
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="flex-grow-1">
+                                <input type="text" class="form-control HCAU-form" placeholder="Last name" aria-label="Last name" value="Enter vehicle number">
+                            </div>
+                            <div class="search-btn">
+                                <button type="button" class="HCAU-btn btn-smd full">Search</button>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="HCAU-search-bar d-flex g20">
+                            <div class="flex-grow-1 d-flex g20">
+                                <div class="radio-group">
+                                    <div>
+                                        <input type="radio" class="btn-check" name="options-base" id="option5" autocomplete="off" checked>
+                                        <label class="HCAU-btn btn-smd" for="option5">1 month</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" class="btn-check" name="options-base" id="option6" autocomplete="off">
+                                        <label class="HCAU-btn btn-smd" for="option6">3 month</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" class="btn-check" name="options-base" id="option7" autocomplete="off">
+                                        <label class="HCAU-btn btn-smd" for="option7">6 month</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" class="btn-check" name="options-base" id="option8" autocomplete="off">
+                                        <label class="HCAU-btn btn-smd" for="option8">Enter manually</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex g08 align-items-center flex-grow-1">
+                                    <div class="dropdown flex-grow-1">
+                                        <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                                            April 2023
+                                        </button>
+                                        <ul class="dropdown-menu flex-fill">
+                                            <li><a class="dropdown-item HCAU-txt-sm" href="#none">label 1</a></li>
+                                            <li><a class="dropdown-item HCAU-txt-sm" href="#none">label 2</a></li>
+                                            <li><a class="dropdown-item HCAU-txt-sm" href="#none">label 3</a></li>
+                                            <li><a class="dropdown-item HCAU-txt-sm" href="#none">label 4</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>~</div>
+                                    <div class="dropdown flex-grow-1">
+                                        <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                                            April 2023
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                                            <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                                            <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                                            <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-btn">
+                                <button type="button" class="HCAU-btn btn-smd full">Search</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="title-area d-flex align-items-baseline g16">
+                            <div class="title">table</div>
+                            <div class="sub-title">Reference date : 2023.12.31</div>
+                            <div class="ms-auto">
+                                <button type="button" class="HCAU-btn btn-sm">default</button>
+                            </div>
+                        </div>
+
+                        <!-- HCAU-table -->
+                        <div class="HCAU-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="align-middle">Turn information<br>Turn information</th>
+                                        <th scope="col" class="align-middle">Payment information</th>
+                                        <th scope="col" class="align-middle text-end">Total billing amount</th>
+                                        <th scope="col" class="align-middle text-end">Unpaid billing amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-active">
+                                        <td class="align-middle">11/60Time</td>
+                                        <td class="align-middle">
+
+                                            <!-- tb-inner-flex -->
+                                            <div class="tb-inner-flex">
+                                                <div class="separator">
+                                                    <p>2023.04.17</p>
+                                                    <p>
+                                                        <span class="HCAU-badge type01">Overdue</span>
+                                                    </p>
+                                                </div>
+                                                <div class="separator">
+                                                    <span>Direct debit</span>
+                                                    <span>KB Bank 00000000000</span>
+                                                </div>
+                                                <div class="separator">
+                                                    <span>B pay</span>
+                                                    <span>B pay code</span>
+                                                </div>
+                                                <div class="separator">
+                                                    <p>Principal:$3,600.00</p>
+                                                    <p>interest:$3,600.00</p>
+                                                    <p>etc:$3,600.00</p>
+                                                </div>
+                                            </div>
+                                            <!-- //tb-inner-flex -->
+
+                                        </td>
+                                        <td class="align-middle text-end">$3,925.00</td>
+                                        <td class="align-middle text-end">$3,925.00</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="align-middle">11/60Time</td>
+                                        <td class="align-middle">
+
+                                            <!-- tb-inner-flex -->
+                                            <div class="tb-inner-flex">
+                                                <div class="separator">
+                                                    <p>2023.04.17</p>
+                                                    <p>
+                                                        <span class="HCAU-badge type02">Complete payment</span>
+                                                    </p>
+                                                </div>
+                                                <div class="separator">
+                                                    <span>Direct debit</span>
+                                                    <span>KB Bank 00000000000</span>
+                                                </div>
+                                                <div class="separator">
+                                                    <span>B pay</span>
+                                                    <span>B pay code</span>
+                                                </div>
+                                                <div class="separator">
+                                                    <p>Principal:$3,600.00</p>
+                                                    <p>interest:$3,600.00</p>
+                                                    <p>etc:$3,600.00</p>
+                                                </div>
+                                            </div>
+                                            <!-- //tb-inner-flex -->
+
+                                        </td>
+                                        <td class="align-middle text-end">$3,925.00</td>
+                                        <td class="align-middle text-end">$3,925.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //HCAU-table -->
+                        <br>
+                        <!-- HCAU-table -->
+                        <div class="HCAU-table">
+                            <table class="table fixed">
+                                <colgroup>
+                                    <col style="width:18%">
+                                    <col>
+                                    <col style="width:18%">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th class="align-middle">Turn information</th>
+                                        <td class="align-middle" colspan="3">
+                                            asdf
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="align-middle">Turn information</th>
+                                        <td class="align-middle">
+                                            asdf
+                                        </td>
+                                        <th class="align-middle">Turn information</th>
+                                        <td class="align-middle text-end">$3,925.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //HCAU-table -->
+                        <br>
+
+                        <div class="HCAU-txt-md gray04">A total of <span class="black fw500">2 claims</span> amounted to <span class="black fw500">$2,034.00</span></div>
+                        <!-- HCAU-table -->
+                        <div class="HCAU-table pt-3">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td class="align-middle">12/60</td>
+                                        <td class="align-middle">
+                                            <button type="button" class="HCAU-btn btn-sm">
+                                                statement
+                                                <span class="ico-print"><img src="/static/img/svg/ico_print.svg" alt=""></span>
+                                            </button>
+                                        </td>
+                                        <td class="align-middle">
+                                            <!-- tb-inner-flex -->
+                                            <div class="tb-inner-flex">
+                                                <div class="separator">
+                                                    <p>payment date : 2023.04.10</p>
+                                                    <p>
+                                                        <span class="HCAU-badge type01">Overdue</span>
+                                                    </p>
+                                                </div>
+                                                <div class="separator">
+                                                    <p>Principal:$3,600.00</p>
+                                                    <p>interest:$3,600.00</p>
+                                                    <p>etc:$3,600.00</p>
+                                                </div>
+                                            </div>
+                                            <!-- //tb-inner-flex -->
+                                        </td>
+                                        <td class="align-middle text-end">$8,797.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //HCAU-table -->
+
+                        <br>
+
+                        <div class="d-flex justify-content-between align-items-end">
+                            <div class="HCAU-txt-sm fw-bold">22.11.10 ~ 23.05.09</div>
+                            <button type="button" class="HCAU-btn btn-sm">Download</button>
+                        </div>
+                        <!-- HCAU-table -->
+                        <div class="HCAU-table type02 pt-3">
+                            <table class="table">
+                                <colgroup>
+                                    <col style="width:100px;">
+                                    <col style="width:220px">
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td class="align-middle">2022.11.11</td>
+                                        <td class="align-middle">automatic transfer deposit</td>
+                                        <td class="align-middle">Shinhan Bank 100***********9</td>
+                                        <td class="align-middle text-end">$8,797.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">2022.11.11</td>
+                                        <td class="align-middle">automatic transfer deposit</td>
+                                        <td class="align-middle">Shinhan Bank 100***********9</td>
+                                        <td class="align-middle text-end">$8,797.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //HCAU-table -->
+
+                        <!-- HACU-pagination -->
+                        <nav class="HACU-pagination">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item">
+                                    <a class="page-link" href="#none" aria-label="First">
+                                        <span aria-hidden="true">
+                                            <img src="/static/img/svg/ico_pagination_01.svg" alt="First">
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#none" aria-label="Previous">
+                                        <span aria-hidden="true">
+                                            <img src="/static/img/svg/ico_pagination_02.svg" alt="Previous">
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="page-item active" aria-current="page"><a class="page-link" href="#none">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#none">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#none">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#none">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#none">5</a></li>
+                                <li class="page-item"><a class="page-link" href="#none">6</a></li>
+                                <li class="page-item"><a class="page-link" href="#none">7</a></li>
+                                <li class="page-item"><a class="page-link" href="#none">8</a></li>
+                                <li class="page-item"><a class="page-link" href="#none">9</a></li>
+                                <li class="page-item"><a class="page-link" href="#none">10</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#none" aria-label="Next">
+                                        <span aria-hidden="true">
+                                            <img src="/static/img/svg/ico_pagination_03.svg" alt="Next">
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#none" aria-label="Last">
+                                        <span aria-hidden="true">
+                                            <img src="/static/img/svg/ico_pagination_04.svg" alt="Last">
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- //HACU-pagination -->
+                    </section>
+
+                    <section>
+                        <div class="title-area d-flex align-items-baseline g16">
+                            <div class="title">Form</div>
+                            <!-- <div class="sub-title">Reference date : 2023.12.31</div>
+                            <div class="ms-auto">
+                                <button type="button" class="HCAU-btn btn-sm">default</button>
+                            </div> -->
+                        </div>
+
+
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">text</label>
+                                <input type="email" class="form-control HCAU-form" id="exampleInputEmail1" aria-describedby="emailHelp" value="" placeholder="입력할 내용이 있습니다. 정보를 입력해 주세요.(placeholder)">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">text</label>
+                                <input type="email" class="form-control HCAU-form text-end" id="exampleInputEmail1" aria-describedby="emailHelp"  value="text text right">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">disabled</label>
+                                <input type="email" class="form-control HCAU-form" id="exampleInputEmail1" aria-describedby="emailHelp" disabled value="asdff asdff">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">readonly</label>
+                                <input type="email" class="form-control HCAU-form" id="exampleInputEmail1" aria-describedby="emailHelp" readonly value="readonly text">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control HCAU-form" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">textarea</label>
+                                <textarea class="form-control HCAU-form" id="exampleFormControlTextarea1" rows="6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">textarea disabled</label>
+                                <textarea class="form-control HCAU-form" id="exampleFormControlTextarea1" rows="6" disabled>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Select</label>
+                                <select class="form-select HCAU-form" aria-label="Default select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <!-- <label for="exampleInputPassword1" class="form-label">Select</label> -->
+                                <select class="form-select HCAU-form" aria-label="Default select example" disabled>
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Default checkbox
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck2" disabled>
+                                <label class="form-check-label" for="defaultCheck2">
+                                    Disabled checkbox
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Default radio
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    Second default radio
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                                <label class="form-check-label" for="exampleRadios3">
+                                    Disabled radio
+                                </label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input HCAU-form" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input HCAU-form" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input HCAU-form" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                                <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input HCAU-form" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input HCAU-form" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input HCAU-form" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                                <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+                            </div>
+
+                        </form>
+                        <br>
+                        <br>
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-4">
+                                <label for="validationCustom01" class="form-label">First name</label>
+                                <input type="text" class="form-control HCAU-form" id="validationCustom01" value="Mark" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationCustom02" class="form-label">Last name</label>
+                                <input type="text" class="form-control HCAU-form" id="validationCustom02" value="Otto" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationCustomUsername" class="form-label">Username</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                    <input type="text" class="form-control HCAU-form" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                    <div class="invalid-feedback">
+                                        Please choose a username.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustom03" class="form-label">City</label>
+                                <input type="text" class="form-control HCAU-form" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="validationCustom04" class="form-label">State</label>
+                                <select class="form-select l HCAU-form" id="validationCustom04" required>
+                                    <option selected disabled value="">Choose...</option>
+                                    <option>...</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="validationCustom05" class="form-label">Zip</label>
+                                <input type="text" class="form-control HCAU-form" id="validationCustom05" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid zip.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input HCAU-form" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                        Agree to terms and conditions
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        You must agree before submitting.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary" type="submit">Submit form</button>
+                            </div>
+
+                            <script>
+                                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                                (() => {
+                                'use strict'
+
+                                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                const forms = document.querySelectorAll('.needs-validation')
+
+                                // Loop over them and prevent submission
+                                Array.from(forms).forEach(form => {
+                                    form.addEventListener('submit', event => {
+                                    if (!form.checkValidity()) {
+                                        event.preventDefault()
+                                        event.stopPropagation()
+                                    }
+
+                                    form.classList.add('was-validated')
+                                    }, false)
+                                })
+                                })()
+                            </script>
+                        </form>
+
+
+
+
+
+                    </section>
+
+                    <section>
+                        <div class="title-area d-flex align-items-baseline g16">
+                            <div class="title">Guidence notice</div>
+                            <!-- <div class="sub-title">Reference date : 2023.12.31</div>
+                            <div class="ms-auto">
+                                <button type="button" class="HCAU-btn btn-sm">default</button>
+                            </div> -->
+                        </div>
+
+                        <!-- g-notice -->
+                        <div class="g-notice">
+                            <dl>
+                                <dt>
+                                    <span class="ico-gnotice"><img src="/static/img/svg/ico_notice.svg" alt=""></span>
+                                    <span>Guidence Notice</span>
+                                </dt>
+                                <dd>
+                                    <ul class="HCAU-bullet-list">
+                                        <li>
+                                            The estimated billing amount may differ from the actual billing amount.
+                                        </li>
+                                        <li>
+                                            The expected payment amount may differ from the actual payment amount.
+                                        </li>
+                                        <li>
+                                            Details of the payment amount are available through the payment history.
+                                            <a href="#none" class="link">Payment details</a>
+                                        </li>
+                                        <li>
+                                            You can view and print the entire redemption schedule for products that are in use or terminated.
+                                            <a href="#none" class="link">Repayment schedule</a>
+                                        </li>
+                                        <li class="point-red">
+                                            For GFV products and Lease products, prepayment is possible through 0000-0000.
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                        <!-- //g-notice -->
+
+                        <div class="d-flex gap-3">
+                            <div class="border-box flex-fill p-4">
+                                <p class="HCAU-txt-sm">Do you want to make a payment before your due date?</p>
+                                <p class="pt12"><a href="#none" class="link">Make a payment</a></p>
+                            </div>
+                            <div class="border-box flex-fill p-4">
+                                <p class="HCAU-txt-sm">Do you want to pay off all or part of your loan early?</p>
+                                <p class="pt12"><a href="#none" class="link">pay off early</a></p>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section>
+                        <div class="title-area d-flex align-items-baseline g16">
+                            <div class="title">box</div>
+                            <!-- <div class="sub-title">Reference date : 2023.12.31</div>
+                            <div class="ms-auto">
+                                <button type="button" class="HCAU-btn btn-sm">default</button>
+                            </div> -->
+                        </div>
+
+
+                        <div class="border-box p-1">
+                            border-box p-1 == 4px
+                        </div>
+                        <div class="border-box p-2">
+                            border-box p-2 == 8px
+                        </div>
+                        <div class="border-box p-3">
+                            border-box p-3 == 16px
+                        </div>
+                        <div class="border-box p-4">
+                            border-box p-4 == 24px
+                        </div>
+                        <div class="border-box p-5">
+                            border-box p-5 == 48px
+                        </div>
+                        <div class="border-box p10">
+                            border-box p10 == 10px
+                        </div>
+                        <div class="border-box p20">
+                            border-box p20 == 20px
+                        </div>
+                        <div class="border-box p32">
+                            border-box p32 == 32px
+                        </div>
+
+                        <div class="bg-box">
+                            bg-box
+                        </div>
+
+                    </section>
+
+                    <section>
+                        <div class="title-area d-flex align-items-baseline g16">
+                            <div class="title">Payment information</div>
+                            <!-- <div class="sub-title">Reference date : 2023.12.31</div>
+                            <div class="ms-auto">
+                                <button type="button" class="HCAU-btn btn-sm">default</button>
+                            </div> -->
+                        </div>
+
+                        <div class="border-box p32 d-flex g96">
+                            <dl>
+                                <dt class="HCAU-txt-sm gray04 fw-normal">Payment Cycle / Payment Date</dt>
+                                <dd class="HCAU-txt-md fw-bold">Monthly / 11th of every month</dd>
+                            </dl>
+                            <dl>
+                                <dt class="HCAU-txt-sm gray04 fw-normal">Payment method / payment account</dt>
+                                <dd class="HCAU-txt-md fw-bold">Direct Debit / KB Bank 811**********1</dd>
+                            </dl>
+                            <dl>
+                                <dt class="HCAU-txt-sm gray04 fw-normal">How to receive statement</dt>
+                                <dd class="HCAU-txt-md fw-bold">No Send</dd>
+                            </dl>
+                        </div>
+
+                        <div class="d-flex full g20 pt20">
+                            <button type="button" class="HCAU-btn btn-md">Pay the bill</button>
+                            <button type="button" class="HCAU-btn btn-md">Prepayment</button>
+                            <button type="button" class="HCAU-btn btn-md">Payment information inquiry</button>
+                        </div>
+
+                    </section>
+
+                    <section>
+                        <div class="title-area d-flex align-items-baseline g16">
+                            <div class="title">Payment information</div>
+                            <!-- <div class="sub-title">Reference date : 2023.12.31</div>
+                            <div class="ms-auto">
+                                <button type="button" class="HCAU-btn btn-sm">default</button>
+                            </div> -->
+                        </div>
+
+                        <div class="d-flex align-items-baseline g40">
+                            <div class="dropdown me-auto">
+                                <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                                    April 2023
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+                                </ul>
+                            </div>
+                            <div class="HCAU-txt-md">Total amount billed</div>
+                            <div class="HCAU-h2">$ 2,034.00</div>
+                        </div>
+
+                        <div class="border-box p20 mt-3">
+                            <div class="bg-box d-flex justify-content-between px32 py16">
+                                <div class="HCAU-lead-txt fw-bold">NewCar Loan_Standard</div>
+                                <div class="d-flex align-items-center g20">
+                                    <span class="HCAU-lead-txt fw-bold">H2023NA000248</span>
+                                    <a href="#" class="ico-loan-btn"><img src="/static/img/svg/ico_loan_btn.svg" alt=""></a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-column px32 py24 border-bottom">
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div class="HCAU-txt-sm gray04">Payment Cycle / Payment Date</div>
+                                    <div class="HCAU-txt-md fw-bold">Monthly / 11th of every month</div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end pt16">
+                                    <div class="HCAU-txt-sm gray04">Payment method / payment account</div>
+                                    <div class="HCAU-txt-md fw-bold">Direct Debit / KB Bank 811**********1</div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center justify-content-between px32 py35 border-bottom">
+                                <div class="HCAU-txt-md">15th payment</div>
+                                <div class="HCAU-h2">$ 2,034.00</div>
+                            </div>
+
+                            <div class="d-flex flex-wrap justify-content-between px32 py35 gap-3 border-bottom">
+                                <dl class="loan-items d-flex justify-content-between align-items-end">
+                                    <dt class="fw-normal HCAU-txt-sm gray04">Overdue</dt>
+                                    <dd class="fw-bold">
+                                        <span class="point-red">Y</span>
+                                    </dd>
+                                </dl>
+                                <dl class="loan-items d-flex justify-content-between align-items-end">
+                                    <dt class="fw-normal HCAU-txt-sm gray04">Next repayment date</dt>
+                                    <dd class="fw-bold">2023.05.10</dd>
+                                </dl>
+                                <dl class="loan-items d-flex justify-content-between align-items-end">
+                                    <dt class="fw-normal HCAU-txt-sm gray04">Loan Principal Balance</dt>
+                                    <dd class="fw-bold">23,300.00 $</dd>
+                                </dl>
+                                <dl class="loan-items d-flex justify-content-between align-items-end">
+                                    <dt class="fw-normal HCAU-txt-sm gray04">Current repayment principal</dt>
+                                    <dd class="fw-bold">4,175.00 $</dd>
+                                </dl>
+                            </div>
+                            <div class="loan-items-wrap d-flex flex-wrap px32 py20">
+                                <div class="loan-items">
+                                    <div class="loan-items-ico">
+                                        <img src="/static/img/svg/ico_loan01.svg" alt="">
+                                    </div>
+                                    <dl class="loan-text">
+                                        <dt class="HCAU-txt-sm fw-normal gray04">Contract number</dt>
+                                        <dd class="HCAU-txt-sm fw-bold">H2023NA000248</dd>
+                                    </dl>
+                                </div>
+                                <div class="loan-items">
+                                    <div class="loan-items-ico">
+                                        <img src="/static/img/svg/ico_loan02.svg" alt="">
+                                    </div>
+                                    <dl class="loan-text">
+                                        <dt class="HCAU-txt-sm fw-normal gray04">Loan amount</dt>
+                                        <dd class="HCAU-txt-sm fw-bold">$ 2,034.00</dd>
+                                    </dl>
+                                </div>
+                                <div class="loan-items">
+                                    <div class="loan-items-ico">
+                                        <img src="/static/img/svg/ico_loan03.svg" alt="">
+                                    </div>
+                                    <dl class="loan-text">
+                                        <dt class="HCAU-txt-sm fw-normal gray04">Interest rate / repayment method</dt>
+                                        <dd class="HCAU-txt-sm fw-bold">2.6% / principle equal repayment</dd>
+                                    </dl>
+                                </div>
+                                <div class="loan-items">
+                                    <div class="loan-items-ico">
+                                        <img src="/static/img/svg/ico_loan04.svg" alt="">
+                                    </div>
+                                    <dl class="loan-text">
+                                        <dt class="HCAU-txt-sm fw-normal gray04">Term</dt>
+                                        <dd class="HCAU-txt-sm fw-bold">22.02.11~27.02.11(60months)</dd>
+                                    </dl>
+                                </div>
+                                <div class="loan-items">
+                                    <div class="loan-items-ico">
+                                        <img src="/static/img/svg/ico_loan05.svg" alt="">
+                                    </div>
+                                    <dl class="loan-text">
+                                        <dt class="HCAU-txt-sm fw-normal gray04">Amortization period</dt>
+                                        <dd class="HCAU-txt-sm fw-bold">23.02.11~27.02.11(48months)</dd>
+                                    </dl>
+                                </div>
+                                <div class="loan-items">
+                                    <div class="loan-items-ico">
+                                        <img src="/static/img/svg/ico_loan06.svg" alt="">
+                                    </div>
+                                    <dl class="loan-text">
+                                        <dt class="HCAU-txt-sm fw-normal gray04">GFV % / GFV amount</dt>
+                                        <dd class="HCAU-txt-sm fw-bold">45% / $ 1,022.00</dd>
+                                    </dl>
+                                </div>
+                                <div class="loan-items">
+                                    <div class="loan-items-ico">
+                                        <img src="/static/img/svg/ico_loan07.svg" alt="">
+                                    </div>
+                                    <dl class="loan-text">
+                                        <dt class="HCAU-txt-sm fw-normal gray04">Balloon % / Balloon amount</dt>
+                                        <dd class="HCAU-txt-sm fw-bold">45% / $ 1,022.00</dd>
+                                    </dl>
+                                </div>
+                                <div class="loan-items">
+                                    <div class="loan-items-ico">
+                                        <img src="/static/img/svg/ico_loan08.svg" alt="">
+                                    </div>
+                                    <dl class="loan-text">
+                                        <dt class="HCAU-txt-sm fw-normal gray04">Agreed mileage</dt>
+                                        <dd class="HCAU-txt-sm fw-bold">10,000km</dd>
+                                    </dl>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <section>
+                        <div class="title-area d-flex align-items-baseline g16">
+                            <div class="title">No matches data</div>
+                            <!-- <div class="sub-title">Reference date : 2023.12.31</div>
+                            <div class="ms-auto">
+                                <button type="button" class="HCAU-btn btn-sm">default</button>
+                            </div> -->
+                        </div>
+
+                        <div class="HCAU-nodata type01 flex-column border-top">
+                            <img src="/static/img/svg/ico_no_matches_hd01.svg" alt="">
+                            <div class="HCAU-lead-txt">No matches found.</div>
+                        </div>
+
+                        <div class="HCAU-nodata type02 flex-column border-top border-bottom">
+                            <img src="/static/img/svg/ico_no_matches_hd02.svg" alt="">
+                            <div class="HCAU-txt-sm">No matches found.</div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="title-area d-flex align-items-baseline g16">
+                            <div class="title">Payment Request</div>
+                            <!-- <div class="sub-title">Reference date : 2023.12.31</div> -->
+                            <!-- <div class="ms-auto">
+                                <button type="button" class="HCAU-btn btn-sm">default</button>
+                            </div> -->
+                        </div>
+
+                        <!-- HCAU-payment-request -->
+                        <div class="HCAU-payment-request bg-box p10">
+                            <div class="border-box">
+                                <div class="d-flex px32 justify-content-between align-items-center">
+                                    <div class="loan-items d-flex justify-content-between align-items-center">
+                                        <div class="HCAU-txt-sm gray04">Product name</div>
+                                        <div class="HCAU-txt-md fw-bold">New Car Loan_Standard</div>
+                                    </div>
+                                    <div class="loan-items d-flex justify-content-between align-items-center">
+                                        <div class="HCAU-txt-sm gray04">Car registration number</div>
+                                        <div class="HCAU-txt-md fw-bold">Quebec 31 XPM</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex px32 justify-content-between align-items-center border-top">
+                                    <div class="loan-items d-flex justify-content-between align-items-center">
+                                        <div class="HCAU-txt-sm gray04">Account no</div>
+                                        <div class="HCAU-txt-md fw-bold">234859601823</div>
+                                    </div>
+                                    <div class="loan-items d-flex justify-content-between align-items-center">
+                                        <div class="HCAU-txt-sm gray04">Interest rate</div>
+                                        <div class="HCAU-txt-md fw-bold">2%</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex px32 justify-content-between align-items-center border-top">
+                                    <div class="HCAU-txt-sm gray04">Amount past due</div>
+                                    <div class="text-end">
+                                        <p class="point-red fw-bold">1,795,547 $</p>
+                                        <div class="d-flex gap-3">
+                                            <div class="HCAU-txt-sm point-red">Principal : 360,713 $</div>
+                                            <div class="HCAU-txt-sm point-red">Interest : 36,013 $</div>
+                                            <div class="HCAU-txt-sm point-red">Late fee : 20,00 $</div>
+                                            <div class="HCAU-txt-sm point-red">Others : 360,713 $</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex px32 justify-content-between align-items-center border-top">
+                                    <div class="HCAU-txt-sm gray04">Current payment due</div>
+                                    <div class="text-end">
+                                        <p class="fw-bold">1,795,547 $</p>
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div class="HCAU-txt-sm">Principal : 360,713 $</div>
+                                            <div class="HCAU-txt-sm">Interest : 36,013 $</div>
+                                            <div class="HCAU-txt-sm">
+                                                Others : 360,713 $
+                                                <div class="HCAU-tooltip">
+                                                    <a href=""><img src="/static/img/svg/ico_tooltip.svg" alt=""></a>
+                                                    <div class="HCAU-tooltip-inner">
+                                                        <div class="HCAU-tooltip-arrow"></div>
+                                                        <div class="HCAU-tooltip-cont HCAU-txt-sm">
+                                                            <div class="d-flex justify-content-between">
+                                                                <p>fines</p>
+                                                                <p>120 $</p>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between">
+                                                                <p>toll gate fee</p>
+                                                                <p>290 $</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex px32 justify-content-between align-items-center border-top">
+                                    <div class="HCAU-txt-sm gray04">Payment received</div>
+                                    <div class="text-end">
+                                        <p class="fw-bold">1,000,000 $</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex px32 justify-content-between align-items-center border-top ">
+                                    <div class="HCAU-txt-sm gray04">Balance due</div>
+                                    <div class="text-end">
+                                        <p class="fw-bold">1,795,547 $</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //HCAU-payment-request -->
+
+                        <div class="d-flex align-items-baseline g16 mt28">
+                            <div class="HCAU-txt-md fw-bold">Amount you request to pay</div>
+                            <div class="ms-auto">
+                                <input class="form-check-input HCAU-form" type="checkbox" value="" id="payall">
+                                <label class="form-check-label gray04" for="payall">
+                                    Pay all
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="pt-3">
+                            <input type="text" class="form-control HCAU-form text-end fw-bold" id="exampleInputEmail1" aria-describedby="emailHelp" value="456.98 $">
+                        </div>
+
+
+                    </section>
+
+                    <section>
+                        <div class="title-area d-flex align-items-baseline g16">
+                            <div class="title">Flex table</div>
+                            <!-- <div class="sub-title">Reference date : 2023.12.31</div> -->
+                            <!-- <div class="ms-auto">
+                                <button type="button" class="HCAU-btn btn-sm">default</button>
+                            </div> -->
+                        </div>
+
+                        <!-- HCAU-flex-table -->
+                        <div class="HCAU-flex-table border-top">
+
+                            <div class="d-flex py28 px32 g20 border-bottom align-items-center">
+                                <div>
+                                    <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="radio01">
+                                </div>
+                                <label for="radio01">
+                                    <div class="HCAU-txt-md fw-bold">New Car Loan_Standard – Quebec 13 XPM</div>
+                                    <div class="d-flex gap-3 pt-2">
+                                        <span class="HCAU-txt-sm">Loan date : 2021.04.10</span>
+                                        <span class="HCAU-txt-sm">interest rate : 2%</span>
+                                        <span class="HCAU-txt-sm">Payment date : 20.00 $</span>
+                                    </div>
+                                </label>
+                                <div class="ms-auto text-end">
+                                    <div class="HCAU-txt-sm">Amount past due : <span class="HCAU-txt-md point-red fw-bold">1,398,797 $</span></div>
+                                    <div class="HCAU-txt-sm pt-2">Current payment due : <span class="HCAU-txt-md fw-bold">1,398,797 $</span></div>
+                                </div>
+                            </div>
+                            <div class="d-flex py28 px32 g20 border-bottom">
+                                <div>
+                                    <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="radio02">
+                                </div>
+                                <label for="radio02">
+                                    <div class="HCAU-txt-md fw-bold">New Car Loan_Standard – Quebec 13 XPM</div>
+                                    <div class="d-flex gap-3 pt-2">
+                                        <span class="HCAU-txt-sm">Loan date : 2021.04.10</span>
+                                        <span class="HCAU-txt-sm">interest rate : 2%</span>
+                                        <span class="HCAU-txt-sm">Payment date : 20.00 $</span>
+                                    </div>
+                                </label>
+                                <div class="ms-auto text-end">
+                                    <div class="HCAU-txt-sm">Amount past due : <span class="HCAU-txt-md point-red fw-bold">1,398,797 $</span></div>
+                                    <div class="HCAU-txt-sm pt-2">Current payment due : <span class="HCAU-txt-md fw-bold">1,398,797 $</span></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- //HCAU-flex-table -->
+                        <br>
+                        <div class="HCAU-flex-table border-top">
+
+                            <div class="d-flex py28 px32 g20 border-bottom align-items-center">
+                                <!-- <div>
+                                    <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="radio01" checked="">
+                                </div> -->
+                                <label for="radio01">
+                                    <div class="HCAU-txt-md fw-bold">New Car Loan_Standard – Quebec 13 XPM</div>
+                                    <div class="d-flex gap-3 pt-2">
+                                        <span class="HCAU-txt-sm">Contract date : 202 1.04.10</span>
+                                        <span class="HCAU-txt-sm">interest rate : 2.6%</span>
+                                    </div>
+                                </label>
+                                <div class="ms-auto text-end">
+                                    <div class="HCAU-txt-sm">Principal balance : <span class="HCAU-txt-md fw-bold">1,398,797 $</span></div>
+                                </div>
+                            </div>
+
+                            <div class="bg-box2 edge p32">
+
+                                <div>
+                                    <div class="d-flex align-items-baseline g16">
+                                        <div class="HCAU-txt-md fw-bold">Principal amount you request to pay off early</div>
+                                        <div class="ms-auto">
+                                            <input class="form-check-input HCAU-form" type="checkbox" value="" id="payall">
+                                            <label class="form-check-label gray04" for="payall">
+                                                Pay all
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="pt-3">
+                                        <input type="text" class="form-control HCAU-form text-end fw-bold" id="input-text-sample" aria-describedby="" value="456.98 $">
+                                        <div class="HCAU-invalid-feedback">
+                                            Please provide a valid city.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt28">
+                                    <div class="d-flex align-items-baseline g16">
+                                        <div class="HCAU-txt-md fw-bold">Date to make a payment</div>
+                                        <!-- <div class="ms-auto">
+                                            <input class="form-check-input HCAU-form" type="checkbox" value="" id="payall">
+                                            <label class="form-check-label gray04" for="payall">
+                                                Pay all
+                                            </label>
+                                        </div> -->
+                                    </div>
+                                    <div class="pt-3 d-flex g12">
+                                        <div class="flex-grow-1">
+                                            <input type="text" class="form-control HCAU-form" id="" aria-describedby="" value="2023.05.17" readonly="">
+                                        </div>
+                                        <div>
+                                            <button type="button" class="HCAU-btn btn-smd full">Select date</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-top-dashed mt32 mb32"></div>
+                                <div class="border-box black">
+                                    <div class="px32 py16">
+                                        <div class="HCAU-txt-sm">
+                                            <span class="fw-bold">Principal balance with early payoff applied to your account 2,000,000 $</span>
+                                        </div>
+                                        <div class="HCAU-txt-sm mt-1">
+                                            <span class="fw-bold gray04">Interest and fees 63,327 $</span>
+                                        </div>
+                                        <div class="d-flex gap-3 mt-1">
+                                            <p class="HCAU-txt-sm gray04">Interest : 21,717 $</p>
+                                            <p class="HCAU-txt-sm gray04">Early payoff fee : 35,559 $</p>
+                                            <p class="HCAU-txt-sm gray04">Late fee : 4,051 $</p>
+                                        </div>
+                                    </div>
+                                    <div class="px32 py16 border-top">
+                                        <dl class="d-flex justify-content-between HCAU-txt-sm">
+                                            <dt class="fw-normal">The amount you request to pay off early is</dt>
+                                            <dd class="fw-bold">3,063,327 $</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <p class="HCAU-info-msg">
+                                    Once you make a payment, you can check your updated repayment amounts on the payment schedule<br>
+                                    with early payoff applied to your account.
+                                </p>
+                            </div>
+
+                        </div>
+                    </section>
+
+
+                    <section>
+                        <div class="title-area d-flex align-items-baseline g16">
+                            <div class="title">How to request</div>
+                            <!-- <div class="sub-title">Reference date : 2023.12.31</div> -->
+                            <!-- <div class="ms-auto">
+                                <button type="button" class="HCAU-btn btn-sm">default</button>
+                            </div> -->
+                        </div>
+
+                        <!-- request step -->
+                        <div class="request-step d-flex g20">
+                            <div class="border-box flex-fix p-4">
+                                <div class="HCAU-txt-md fw-bold">STEP1</div>
+                                <p class="HCAU-txt-sm mt-3">Search the product you have chosen</p>
+                                <img src="/static/img/svg/ico_step_arrow.svg" alt="">
+                            </div>
+                            <div class="border-box flex-fix p-4">
+                                <div class="HCAU-txt-md fw-bold">STEP2</div>
+                                <p class="HCAU-txt-sm mt-3">
+                                    Select the account to pay
+                                    off and how much you
+                                    want to pay off
+                                </p>
+                                <img src="/static/img/svg/ico_step_arrow.svg" alt="">
+                            </div>
+                            <div class="border-box flex-fix p-4">
+                                <div class="HCAU-txt-md fw-bold">STEP3</div>
+                                <p class="HCAU-txt-sm mt-3">
+                                    Choose a payment
+                                    method and get
+                                    authenticated via OTP
+                                </p>
+                                <img src="/static/img/svg/ico_step_arrow.svg" alt="">
+                            </div>
+                            <div class="border-box flex-fix p-4">
+                                <div class="HCAU-txt-md fw-bold">STEP4</div>
+                                <p class="HCAU-txt-sm mt-3">Search the product you have chosen</p>
+                            </div>
+                        </div>
+                        <!-- //request-step -->
+                        <br>
+                        <div class="border-box black pb32">
+                            <div class="d-flex align-items-center justify-content-between border-bottom py-3 px32">
+                                <p class="HCAU-txt-sm">Payment due date</p>
+                                <p class="HCAU-txt-sm">Monthly 15</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between border-bottom py-3 px32">
+                                <p class="HCAU-txt-sm">Date of termination</p>
+                                <p class="HCAU-txt-sm">2020.04.19</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between border-bottom py-3 px32">
+                                <p class="HCAU-txt-sm">Date of maturity</p>
+                                <p class="HCAU-txt-sm">2020.04.19</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between border-bottom py-3 px32">
+                                <p class="HCAU-txt-sm">Car’s residual value</p>
+                                <p class="HCAU-txt-sm">8,000,000 $</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between pt32 px32">
+                                <p class="HCAU-txt-md fw-bold">Total settlement cost</p>
+                                <p class="HCAU-lead-txt fw-bold">8,100,000 $</p>
+                            </div>
+                            <div class="border-top mx32 my20"></div>
+                            <div class="d-flex align-items-center justify-content-between mx32">
+                                <p class="d-flex g08">
+                                    <span class="HCAU-txt-xs fw-bold num-circle">1</span>
+                                    <span class="HCAU-txt-sm fw-bold">Base lease payoff</span>
+                                </p>
+                                <p class="HCAU-txt-sm fw-bold">8,000,000 $</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mx32 pt12">
+                                <p class="d-flex g08">
+                                    <span class="HCAU-txt-xs fw-bold num-circle">2</span>
+                                    <span class="HCAU-txt-sm fw-bold">Interests</span>
+                                </p>
+                                <p class="HCAU-txt-sm fw-bold">100,000 $</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mx32 pt12">
+                                <p class="d-flex g08">
+                                    <span class="HCAU-txt-xs fw-bold num-circle">3</span>
+                                    <span class="HCAU-txt-sm fw-bold">Termination fee</span>
+                                </p>
+                                <p class="HCAU-txt-sm fw-bold">0 $</p>
+                            </div>
+                        </div>
+                    </section>
+
+
+
+
+
+
+
+                </div>
+                <!-- //HCAU-detail -->

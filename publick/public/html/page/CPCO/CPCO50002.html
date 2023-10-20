@@ -1,0 +1,219 @@
+<!-- HCAU-breadcrumb -->
+<div class="HCAU-breadcrumb">
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="house-door-fill" viewBox="0 0 16 16">
+            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
+        </symbol>
+    </svg>
+    <nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-chevron">
+            <li class="breadcrumb-item">
+                <a class="link-body-emphasis" href="#none">
+                    <svg class="bi" width="16" height="16">
+                        <use xlink:href="#house-door-fill"></use>
+                    </svg>
+                    <span class="visually-hidden">Home</span>
+                </a>
+            </li>
+            <li class="breadcrumb-item"><a class="link-body-emphasis text-decoration-none" href="#none">Usage Details</a></li>
+            <li class="breadcrumb-item" aria-current="page">Product Usage Details</li>
+            <li class="breadcrumb-item active" aria-current="page"><a class="link-body-emphasis text-decoration-none  fw-semibold " href="#none">Product Details</a></li>
+        </ol>
+    </nav>
+    <!-- bredcrumb 영역 -->
+</div>
+<!-- //HCAU-breadcrumb -->
+
+<!-- HCAU-title -->
+<div class="HCAU-title">
+    <!-- class option : border-bottom -->
+    <div class="HCAU-h1">Login</div>
+    <div class="HCAU-txt-md d-none">In order to find the ID used in the customer portal, authentication is required.</div>
+</div>
+<!-- //HCAU-title -->
+
+<!-- HCAU-detail -->
+<div class="HCAU-detail">
+    
+
+        <!--temp-->
+            <button type="button" class="HCAU-btn primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                login
+            </button>
+            <!-- modal login -->
+            <div class="HCAU-modal modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-sm"><!-- modal-lg modal-md modal-sm -->
+                    <div class="modal-content">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/img/svg/ico_modal_close.svg" alt="Close" /></button>
+                        <div class="modal-content-inner">
+                            <div class="modal-header">
+                                <div class="HCAU-h2" id="exampleModalLabel">Login</div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/img/svg/ico_modal_close.svg" alt="Close" /></button>
+                            </div>
+
+                            <!-- modal-body -->
+                            <div class="modal-body">
+
+                                <!-- HCAU-tab -->
+                                <div class="HCAU-tab mt20">
+                                    <ul class="nav nav-tabs" id="" role="tablist">
+                                        <li class="nav-item"><button class="nav-link active" id="tab01" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Individual</button></li>
+                                        <li class="nav-item"><button class="nav-link" id="tab02" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Businessman</button></li>
+                                    </ul>
+                                </div>
+                                <!-- //HCAU-tab -->
+                                <!-- tab-content -->
+                                <div class="tab-content" id="">
+                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="tab01" tabindex="0">
+                                        <div class="pt40">
+                                            <div>
+                                                <input type="email" class="form-control HCAU-form" id="" aria-describedby="" value="" placeholder="Enter E-mail">
+                                                <!-- <div class="HCAU-invalid-feedback">
+                                                    Please enter your E-mail
+                                                </div> -->
+                                            </div>
+                                            <div class="pt20">
+                                                <input type="password" class="form-control HCAU-form HCAU-form-invalid" id="" placeholder="Enter Password">
+                                                <div class="HCAU-invalid-feedback">
+                                                    Please enter a password
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="pt40 d-flex full">
+                                            <button type="button" class="HCAU-btn btn-large primary">Log in</button>
+                                        </div>
+                                        <div class="d-flex align-items-baseline g20 pt20">
+                                            <div><a href="#none" class="link">Find ID</a></div>
+                                            <div><a href="#none" class="link">Find Password</a></div>
+                                            <div class="ms-auto">
+                                                <a href="#none" class="link">Sign up</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="tab02" tabindex="0">
+                                        <div class="pt40">
+                                            <div>
+                                                <input type="email" class="form-control HCAU-form" id="" aria-describedby="" value="" placeholder="Enter ABN">
+                                            </div>
+                                            <div class="pt20">
+                                                <input type="password" class="form-control HCAU-form" id="" placeholder="Enter Password">
+                                            </div>
+                                        </div>
+
+                                        <div class="pt40 d-flex full">
+                                            <button type="button" class="HCAU-btn btn-large primary">Log in</button>
+                                        </div>
+                                        <div class="d-flex align-items-baseline g20 pt20">
+                                            <div class="d-none"><a href="#none" class="link">Find ID</a></div>
+                                            <div><a href="#none" class="link">Find Password</a></div>
+                                            <div class="ms-auto">
+                                                <a href="#none" class="link">Sign up</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //tab-content -->
+
+
+
+                                <ul class="HCAU-bullet-list pt40">
+                                    <li>
+                                        To protect your information, you will be automatically logged out if you do not use the service for more than 10 minutes.
+                                    </li>
+                                    <li>
+                                        If you enter an incorrect password 5 times in a row, you must change your password after verifying your identity.
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //modal-body -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--CPCO50002-->
+        <div class="HCAU-login">
+            
+            <!-- HCAU-tab -->
+            <div class="HCAU-tab mt20">
+                <ul class="nav nav-tabs" id="" role="tablist">
+                    <li class="nav-item" role="presentation"><button class="nav-link active" id="tab01" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Individual</button></li>
+                    <li class="nav-item" role="presentation"><button class="nav-link" id="tab02" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" tabindex="-1">Businessman</button></li>
+                </ul>
+            </div>
+            <!-- //HCAU-tab -->
+            <!-- tab-content -->
+            <div class="tab-content justify-content-center" id="">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="tab01" tabindex="0">
+                    <div class="border-box d-flex px133 justify-content-between" style="">
+                        <div class="pt40">
+                            <div class="pt0 ">
+                                <input type="email" class="form-control HCAU-form" id="" aria-describedby="" value="" placeholder="E-mail">
+                            </div>
+                            <div class="pt20">
+                                <input type="password" class="form-control HCAU-form" id="" placeholder="password">
+                            </div>
+                        </div>
+                        <div class="pt40 d-flex">
+                            <button type="button" class="HCAU-btn btn-large primary">Log in</button>
+                        </div>
+                    </div>
+                    <div class="HCAU-valid-feedback">E-mail ID that can be used.</div>
+                    <div class="d-flex align-items-baseline g20 pt20">
+                        <div><a href="#none" class="link">Find ID</a></div>
+                        <div><a href="#none" class="link">Find Password</a></div>
+                        <div class="ms-auto">
+                            <a href="#none" class="link">Sign up</a>
+                        </div>
+                    </div>
+                    <ul class="HCAU-bullet-list pt40">
+                        <li>
+                            To protect your information, you will be automatically logged out if you do not use the service for more than 10 minutes.
+                        </li>
+                        <li>
+                            If you enter an incorrect password 5 times in a row, you must change your password after verifying your identity.
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="tab02" tabindex="1">
+                    <div class="border-box d-flex">
+                        <div class="pt40 justify-content-between">
+                            <div>
+                                <input type="email" class="form-control HCAU-form" id="" aria-describedby="" value="" placeholder="E-mail">
+                            </div>
+                            <div class="pt20">
+                                <input type="password" class="form-control HCAU-form" id="" placeholder="password">
+                            </div>
+                            <div class="pt40 d-flex full">
+                                <button type="button" class="HCAU-btn btn-large primary">Log in</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="HCAU-valid-feedback">E-mail ID that can be used.</div>
+                    <div class="d-flex align-items-baseline g20 pt20">
+                        <div><a href="#none" class="link">Find ID</a></div>
+                        <div><a href="#none" class="link">Find Password</a></div>
+                        <div class="ms-auto">
+                            <a href="#none" class="link">Sign up</a>
+                        </div>
+                    </div>
+                    <ul class="HCAU-bullet-list pt40">
+                        <li>
+                            To protect your information, you will be automatically logged out if you do not use the service for more than 10 minutes.
+                        </li>
+                        <li>
+                            If you enter an incorrect password 5 times in a row, you must change your password after verifying your identity.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //tab-content -->
+
+
+            
+        </div>
+      
+    </div>
+<!-- HCAU-detail -->
