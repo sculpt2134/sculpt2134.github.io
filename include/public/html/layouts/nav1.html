@@ -1,0 +1,44 @@
+<style>
+  .menu .logo{padding-top:36px;padding-bottom:80px}
+  .menu ul li{font-weight:700;padding:16px 0;font-size: 18px;}
+  .collapse.show > ul >li {font-size:14px;font-weight: 500;;padding:8px 0}
+  .menu li a.active{color:#00AAD2;text-decoration: none;}
+</style>
+<!-- HHCAU-menubar -->
+  <div class="menu">
+    <a href="/static/html/main.html">메인</a><br>
+    <a href="#layout"    route-link="/static/html/articles/layout.html">레이아웃</a><br>
+    <a href="#tab" route-link="/static/html/articles/tab.html">tab</a><br>
+    <a href="#form" route-link="/static/html/articles/form.html">form</a><br>
+    <a href="#CPLI70000" route-link="/static/html/page/CPLI70000.html">CPLI70000</a><br>
+      <ul>
+        <li>PRODUCT</li>        
+        <li>
+          <a class="active" >PERSONAL INFORMATION</a>
+          <div class="collapse show p-1" id="page-nav">
+            <ul>
+              <li><a href="#CPLI40001" route-link="/static/html/page/CPLI40001.html">CPLI40001</a></li>
+              <li><a href="#CPLI40002" route-link="/static/html/page/CPLI40002.html">CPLI40002</a></li>
+              <li><a href="#CPLI40003" route-link="/static/html/page/CPLI40003.html">CPLI40003</a></li>
+              <li><a href="#CPLI40004" route-link="/static/html/page/CPLI40004.html">CPLI40004</a></li>
+              <li><a href="#CPLI50001" route-link="/static/html/page/CPLI50001.html">CPLI50001</a></li>
+              <li><a href="#CPLI50002" route-link="/static/html/page/CPLI50002.html">CPLI50002</a></li>
+              <li><a href="#CPLI50003" route-link="/static/html/page/CPLI50003.html">CPLI50003</a></li>
+              <li><a href="#CPLI50004" route-link="/static/html/page/CPLI50004.html">CPLI50004</a></li>
+              <li><a href="#CPLI50005" route-link="/static/html/page/CPLI50005.html">CPLI50005</a></li>
+              <li><a href="#CPLI60001" route-link="/static/html/page/CPLI60001.html">CPLI60001</a></li>
+              <li><a href="#CPLI50006_p01" route-link="/static/html/page/CPLI50006_p01.html"  >CPLI50006_p01</a></li>
+              <li><a href="#CPLI60002" route-link="/static/html/page/CPLI60002.html">CPLI60002</a></li>
+              <li><a href="#CPLI70001" route-link="/static/html/page/CPLI70001.html">CPLI70001</a></li>
+              <li><a href="#CPLI70002" route-link="/static/html/page/CPLI70002.html">CPLI70002</a></li>
+            </ul>       
+          </div>
+        </li>
+      </ul>
+     </div>
+      
+
+<!-- //HHCAU-menubar -->
+<script>
+  $('.collapse').collapse()
+</script>
