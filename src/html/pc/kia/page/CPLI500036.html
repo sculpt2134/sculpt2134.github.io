@@ -1,0 +1,1064 @@
+
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>KIA-HCAU</title>
+  <link rel="stylesheet" href="/static/html/kia/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/kia/css/styles.css" />
+    <style>
+        .HCAU-container.main .HCAU-contents{ width:100%; background:url(/static/html/kia/img/bg.png) right top no-repeat;background-size: cover;}
+        .HCAU-container.main .HCAU-contents p{padding:140px 0 0 65px;font-size:5vw;font-weight: bold;color:#fff;text-transform:uppercase}
+        .HCAU-menubar .menu .logo{padding-top:36px;padding-bottom:80px}
+        .HCAU-menubar .menu ul li{font-weight:700;padding:16px 0;font-size: 18px;}
+        .collapse.show > ul >li {font-size:14px;font-weight: 500;;padding:8px 0}
+        .menu li a.active{color:#5d7d2b;text-decoration: none;}
+        .HCAU-sidebar div{height:60px;display: block;width:60px;}
+        .user a:hover,.user a.active,.HCAU-sidebar div a:hover,.HCAU-sidebar div a.acitve{position:absolute;width:148px;background-color:#5d7d2b ;height:56px}
+        .login{/*position: relative;width:100%;display:flex;justify-content: center;padding-top:40px;*/position: relative;}
+        .user {display: flex;justify-content: center;justify-items: center;}
+        .user a img{position: relative;}
+        .user a.active img{position:absolute;right:15px;top:15px}
+        
+    </style>
+    <link rel="stylesheet" href="/static/html/kia/css/simple-scrollbar.css" />
+<style>
+    .HCAU-tab {margin-top: 20px;
+     padding: 10px 10px 0 10px;
+     border-radius: 4px 4px 0 0;
+     border: 1px solid #e5e5e5;
+     }
+     .HCAU-tab .nav-tabs{border:0;justify-content: space-around;position: relative;}
+     .HCAU-tab .nav-tabs li,.HCAU-tab .nav-tabs .nav-link{border:0;background:#fff;position: relative;border:0;color:#444; border-bottom: 1px solid #e5e5e5;
+        margin-bottom: -1px;padding:0}
+     .HCAU-tab .nav-tabs li:before{display: block;content:"";height:20px;width:1px;background:#e5e5e5;position:absolute;left:-40px;top:10px;z-index: 2;}
+     .HCAU-tab .nav-tabs .nav-link.active {
+        border-bottom: 2px solid #000;
+        background: #fff;
+        color: #000;
+    }
+
+     .HCAU-tab .nav-tabs .nav-link.active:before,
+     .HCAU-tab .nav-tabs li:first-child:before{clear:both;display: none;}
+     .HCAU-tab .nav-tabs .nav-link:last-child{}
+     .ellipsis {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+     .tab-content{position: relative;}
+     .tab-content>.tab-pane:before{display: block;content:"";border-left:1px solid #e5e5e5;height:100px;position:absolute;}
+     .tab-content>.tab-pane:after{display: block;
+         content: "";
+         border-right:1px solid #e5e5e5;
+         height: 100px;
+         position: absolute;
+         right: 0;
+         top: 0;
+         width: 100%;}
+         .d-flex.flex-column.px3.py24.border-bottom.pb-20{border-radius:4px;border:1px solid #e5e5e5}
+
+
+         .responsive {
+            width: 100%;
+            overflow-x: auto;
+          }
+          
+          .tabs {
+            display: table;
+            border-collapse: separate;
+            table-layout: auto;
+          }
+          .tabs.tabs-center {
+            margin: auto;
+          }
+          .tabs.tabs-justify {
+            width: 100%;
+            table-layout: fixed;
+          }
+          .tabs a.tab {
+            position: relative;
+            display: table-cell;
+            transition: all ease 0.3s;
+            padding: 1em 1.6em;
+            transform: translate3d(0, 0, 0);
+            color: #636d84;
+            white-space: nowrap;
+            cursor: pointer;
+          }
+          .tabs a.tab:hover {
+            color: #000;
+          }
+          .tabs a.tab:after {
+            transition: all 0.3s cubic-bezier(1, 0, 0, 1);
+            will-change: transform, box-shadow, opacity;
+            position: absolute;
+            content: "";
+            height: 3px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            border-radius: 3px 3px 0px 0px;
+            background: #000;
+            opacity: 0;
+            transform: scale(0, 1);
+          }
+          .tabs a.tab.active {
+            color: #000;
+            border-bottom:2px solid #000
+          }
+          .tabs a.tab.active:after {
+            opacity: 1;
+            transform: scale(1, 1);
+          }
+
+                  .HCAU-container.main .HCAU-contents{ width:100%; background:url(/static/html/kia/img/bg.png) right top no-repeat;background-size: cover;}
+                  .HCAU-container.main .HCAU-contents p{padding:140px 0 0 65px;font-size:5vw;font-weight: bold;color:#fff;text-transform:uppercase}
+                  .HCAU-menubar .menu .logo{padding-top:36px;padding-bottom:80px}
+                  .HCAU-menubar .menu ul li{font-weight:700;padding:16px 0;font-size: 18px;}
+                  .collapse.show > ul >li {font-size:14px;font-weight: 500;;padding:8px 0}
+                  .menu li a.active{color:#5d7d2b;text-decoration: none;}
+                  .HCAU-sidebar div{height:60px;display: block;width:60px;}
+                  .user a:hover,.user a.active,.HCAU-sidebar div a:hover,.HCAU-sidebar div a.acitve{position:absolute;width:148px;background-color:#5d7d2b ;height:56px}
+                  .login{/*position: relative;width:100%;display:flex;justify-content: center;padding-top:40px;*/position: relative;}
+                  .user {display: flex;justify-content: center;justify-items: center;}
+                  .user a img{position: relative;}
+                  .user a.active img{position:absolute;right:15px;top:15px}
+                  
+              </style>
+              <link rel="stylesheet" href="/static/html/kia/css/simple-scrollbar.css" />
+                          <style>
+                              .swiper {
+                                  width: 100%;
+                                  height: 100%;
+                                }
+                              
+                                .swiper-slide {
+                                  text-align: center;
+                                  font-size: 18px;
+                                  background: #fff;
+                                  height: calc((100% - 30px) / 2) !important;
+                              
+                                  /* Center slide text vertically */
+                                  display: flex;
+                                  justify-content: center;
+                                  align-items: center;
+                                }
+                              
+                                .swiper-slide img {
+                                  display: block;
+                                  width: 100%;
+                                  height: 100%;
+                                  object-fit: cover;
+                                }
+                                .mySwiper2 {
+                                    height: 80%;
+                                    width: 100%;
+                                  }
+                            
+                                  .mySwiper {
+                                    height: 20%;
+                                    box-sizing: border-box;
+                                    padding: 10px 0 0 10px;
+                                  }
+                            
+                                  .mySwiper .swiper-slide {
+                                    width: 25%;
+                                    height: 100%;
+                                    opacity: 0.4;
+                                  }
+                            
+                                  .mySwiper .swiper-slide-thumb-active {
+                                    opacity: 1;
+                                  }
+                                  .mySwiper .swiper-slide{padding:0 1em;}
+                                  .mySwiper .swiper-slide span{font-size: 15px;font-weight: 700;padding-bottom:10px}
+                                  
+                                  .mySwiper .swiper-slide-thumb-active{opacity: 1;}
+                                  .mySwiper .swiper-slide-thumb-active span{border-bottom:2px solid #000}
+                                  .mySwiper .swiper-slide .swiper-slide-thumb-active span:after{display:block;content:"";height:2px;background: #000;width:100%;position:absolute}
+                                  .mySwiper .swiper-button-next,.mySwiper .swiper-button-prev{transform: scale(.5);}
+                                  .mySwiper .swiper-button-arrow{background:#fff;width:35px;height:20px}
+</style></head>
+<body>
+  <div class="wrap">
+        <div class="HCAU-sidebar">
+            <!-- <div class="login"><a href="#"><img width="19px" height="20px" src="/static/html/kia/img/login.svg"></a></div>
+            <div class="user"><a href="#" class="acdtive"><img width="24px" height="24px" src="/static/html/kia/img/user.svg"></a></div> -->
+        </div>
+        <div class="HCAU-menubar">
+            <div class="menu">
+                <div class="logo"><img src="/static/html/kia/img/logo.svg" width="220px" height="24px"></div>
+                <a href="#" onclick="history.back(-1);return false" >뒤로가기</a> <br>
+                <div class="menu">
+                    <ul>
+                      <li>PRODUCT</li>
+                      <li>PAYMENT REQUEST</li>
+                      <li>USAGE DETAILS</li>
+                      <li><a class="active">PERSONAL INFORMATION</a>
+                        <div class="collapse p-1 show" id="menu-nav2">
+                           <ul>
+                             <li>Product usage details</li>
+                             <li>Statement of use</li>
+                             <li>Deposit details</li>
+                             <li><span>Fundamental Mortgage Setting Inquiry</span></li>
+                           </ul>
+                         </div>
+                      </li>
+                      <li>
+                        <a class="" data-bs-toggle="collapse" href="#menu-nav" role="button" aria-expanded="false" aria-controls="menu-nav">PRODUCT</a>
+                        <div class="collapse p-1" id="menu-nav">
+                           <ul>
+                             <li>Product usage details</li>
+                             <li>Statement of use</li>
+                             <li>Deposit details</li>
+                             <li><span>Fundamental Mortgage Setting Inquiry</span></li>
+                           </ul>
+                         </div>
+                      </li>
+                      <li>
+                        <a class="" data-bs-toggle="collapse" href="#page-nav" role="button" aria-expanded="false" aria-controls="page-nav">PAGES</a>
+                        <div class="collapse p-1" id="page-nav">
+                           <ul>
+                              <h5>이용내역</h5>
+                             <li><a href="#CPLI40001"     route-link="/static/html/page/CPLI40001.html"  >CPLI40001</a></li>
+                             <li><a href="#CPLI40002"     route-link="/static/html/page/CPLI40002.html"  >CPLI40002</a></li>
+                             <li><a href="#CPLI40003"     route-link="/static/html/page/CPLI40003.html"  >CPLI40003</a></li>
+                             <li><a href="#CPLI40004"     route-link="/static/html/page/CPLI40004.html"  >CPLI40004</a></li>
+                             <li><a href="#CPLI50001"     route-link="/static/html/page/CPLI50001.html"  >CPLI50001</a></li>
+                             <li><a href="#CPLI50002"     route-link="/static/html/page/CPLI50002.html"  >CPLI50002</a></li>
+                             <li><a href="#CPLI50003"     route-link="/static/html/page/CPLI50003.html"  >CPLI50003</a></li>
+                             <li><a href="#CPLI50004"     route-link="/static/html/page/CPLI50004.html"  >CPLI50004</a></li>
+                             <li><a href="#CPLI50005"     route-link="/static/html/page/CPLI50005.html"  >CPLI50005</a></li>
+                             <li><a href="#CPLI60001"     route-link="/static/html/page/CPLI60001.html"  >CPLI60001</a></li>
+                             <li><a href="#CPLI60002"     route-link="/static/html/page/CPLI60002.html"  >CPLI60002</a></li>
+                             <li><a href="#CPLI70001"     route-link="/static/html/page/CPLI70001.html"  >CPLI70001</a></li>
+                             <li><a href="#CPLI70002"     route-link="/static/html/page/CPLI70002.html"  >CPLI70002</a></li>
+                           </ul>
+                         </div>
+                      </li>
+                    </ul>
+                   </div>
+            </div>
+        </div>
+        <div class="HCAU-container">
+            <div class="HCAU-contents">
+                <!--::::::::::::::::::CONTENT START::::::::::::::::::-->
+<!-- HCAU-breadcrumb -->
+<div class="HCAU-breadcrumb">
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="house-door-fill" viewBox="0 0 16 16">
+            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
+        </symbol>
+    </svg>
+    <nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-chevron">
+            <li class="breadcrumb-item">
+                <a class="link-body-emphasis" href="#none">
+                    <svg class="bi" width="16" height="16">
+                        <use xlink:href="#house-door-fill"></use>
+                    </svg>
+                    <span class="visually-hidden">Home</span>
+                </a>
+            </li>
+            <li class="breadcrumb-item"><a class="link-body-emphasis text-decoration-none" href="#none">Usage Details</a></li>
+            <li class="breadcrumb-item" aria-current="page">Product Usage Details</li>
+            <li class="breadcrumb-item active" aria-current="page"><a class="link-body-emphasis text-decoration-none  fw-semibold " href="#none">Product Details</a></li>
+        </ol>
+    </nav>
+    <!-- bredcrumb 영역 -->
+</div>
+<!-- //HCAU-breadcrumb -->
+
+<!-- HCAU-title -->
+<div class="HCAU-title">
+    <!-- class option : border-bottom -->
+    <div class="HCAU-h1">Billing Statement</div>
+</div>
+<!--//HCAU-title-->
+
+<!-- HCAU-detail -->
+    <section>
+        <div class="d-flex align-items-baseline g40">
+            <div class="dropdown me-auto">
+                <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                    April 2023
+                </button>
+                <ul class="dropdown-menu" style="max-height:180px;overflow:auto">
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">April 2023</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">March 2023</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">July 2023</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">April 2023</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">March 2023</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">July 2023</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+                </ul>
+                
+            </div>
+            <div class="HCAU-txt-md fw700">Total amount billed</div>
+            <div class="HCAU-h2">2,034.00 $</div>
+        </div>
+        <div class="detail-contents">
+
+           <!-- HCAU-tab -->
+           <div class="HCAU-tab d-none">
+            <div class="responsive bg-white ss-wrapper">
+                <div class="tabs nav nav-tabs ss-content">
+                    <a class="tab active" data-bs-toggle="tab" data-bs-target="#tab01" aria-controls="tab01" aria-selected="true">NewCar Standard 1CQT-223NewCar Standard 1CQT-223</a>
+                    <a class="tab" data-bs-toggle="tab" data-bs-target="#tab02" aria-controls="tab02" aria-selected="false">NewCar Standard 1CQT-223</a>
+                    <a class="tab" data-bs-toggle="tab" data-bs-target="#tab03" aria-controls="tab03" aria-selected="false">NewCar Standard 1CQT-223NewCar Standard 1CQT-223</a>
+                    
+                </div>
+            </div>
+            </div>
+            <div class="HCAU-tab d-none">
+                <ul class="nav nav-tabs " id="" role="tablist">
+                    <li><button class="nav-link active" id="state01" data-bs-toggle="tab" data-bs-target="#tab01" type="button" role="tab" aria-controls="state01" aria-selected="true">NewCar Standard 1CQT-ndard 1CQT-223</button></li>
+                    <li><button class="nav-link" id="state02" data-bs-toggle="tab" data-bs-target="#tab02" type="button" role="tab" aria-controls="state02" aria-selected="false">loarn1CQT-223</button></li>
+                    <li><button class="nav-link" id="state03" data-bs-toggle="tab" data-bs-target="#tab03" type="button" role="tab" aria-controls="state03" aria-selected="false">lease 1CQT-223</button></li>
+                    <li><button class="nav-link ellipsis" id="state04" data-bs-toggle="tab" data-bs-target="#tab04" type="button" role="tab" aria-controls="state04" aria-selected="false">NewCar Loan</button></li>
+                </ul>
+            </div>
+           
+                <div thumbsSlider="" style="--swiper-navigation-color: #000; --swiper-pagination-color: #000" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="width:300px;" aria-label="1">
+                        <span>NewCar Standard 1CQT-223</span>
+                    </div>
+                    <div class="swiper-slide" aria-label="2">
+                        <span>NewCar Loan</span>
+                    </div>
+                    <div class="swiper-slide" style="width:300px;" aria-label="3">
+                        <span>NewCar Standard 1CQT-223</span>
+                    </div>
+                    <div class="swiper-slide" aria-label="4">
+                        <span>NewCar Loan</span>
+                    </div>
+                    </div>
+                    <div class="swiper-button-next"style="right:0"></div>
+                    <div class="swiper-button-prev"  style="left:0"></div>
+                    
+                </div>
+                
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="tab-pane tab-cnt" aria-labelledby="1">
+                            <div class="d-flex flex-column px32 py24 border-bottom pb-20">
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div class="HCAU-txt-sm gray04">Payment Cycle / Payment Date</div>
+                                    <div class="HCAU-txt-md fw-bold">Monthly / 02th of every month</div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end pt16">
+                                    <div class="HCAU-txt-sm gray04">Payment method / payment account</div>
+                                    <div class="HCAU-txt-md fw-bold">Direct Debit / TOSS Bank 811**********1</div>
+                                </div>
+                            </div>
+                            <section class="pt40">
+                                <div class="HCAU-txt-md gray04 pb-2">A total of <span class="black fw500">0 claim</span> amounted to <span class="black fw500">$0</span></div>
+                                <div class="HCAU-nodata type02 flex-column border-top border-bottom pb-20 pt-20">
+                                    <img src="/static/html/kia/img/svg/ico_no_matches_hd02.svg" alt="">
+                                    <div class="HCAU-txt-sm">No matches found.</div>
+                                </div>
+        
+                            </section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tab-pane tab-cnt" aria-labelledby="2">
+                            <div class="d-flex flex-column px32 py24 border-bottom pb-20">
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div class="HCAU-txt-sm gray04">Payment Cycle / Payment Date</div>
+                                    <div class="HCAU-txt-md fw-bold">Monthly / 11th of every month</div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end pt16">
+                                    <div class="HCAU-txt-sm gray04">Payment method / payment account</div>
+                                    <div class="HCAU-txt-md fw-bold">Direct Debit / KB Bank 811**********1</div>
+                                </div>
+                            </div>
+                            <section class="pt40">
+                                <div class="HCAU-txt-md gray04 pb-2">A total of <span class="black fw500">4 claims</span> amounted to <span class="black fw500">4,034.00 $</span></div>
+        
+                                <div class="HCAU-flex-table border-top">
+        
+                                    <div class="d-flex py28 px32 g40 align-items-center border-bottom">
+                                        <div>
+                                            <p class="HCAU-txt-sm">12/60</p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="HCAU-btn btn-sm">
+                                                statement
+                                                <span class="ico-print"><img src="/static/html/kia/img/svg/ico_print.svg" alt=""></span>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex g16 align-items-center">
+                                                <p class="HCAU-txt-sm">payment date : 10/04/2023</p>
+                                                <p>
+                                                    <span class="HCAU-badge type01">Overdue</span>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex gap-3 pt12">
+                                                <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
+                                                <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                                <span class="HCAU-txt-sm">etc : 20.00 $</span>
+                                            </div>
+                                        </div>
+                                        <div class="ms-auto text-end">
+                                            <div class="HCAU-txt-sm">8,797.00 $</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex py28 px32 g40 align-items-center border-bottom">
+                                        <div>
+                                            <p class="HCAU-txt-sm">12/60</p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="HCAU-btn btn-sm">
+                                                statement
+                                                <span class="ico-print"><img src="/static/html/kia/img/svg/ico_print.svg" alt=""></span>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex g16 align-items-center">
+                                                <p class="HCAU-txt-sm">payment date : 10/04/2023</p>
+                                                <!-- <p>
+                                                    <span class="HCAU-badge type01">Overdue</span>
+                                                </p> -->
+                                            </div>
+                                            <div class="d-flex gap-3 pt12">
+                                                <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
+                                                <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                                <span class="HCAU-txt-sm">etc : 20.00 $</span>
+                                            </div>
+                                        </div>
+                                        <div class="ms-auto text-end">
+                                            <div class="HCAU-txt-sm">8,797.00 $</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex py28 px32 g40 align-items-center border-bottom">
+                                        <div>
+                                            <p class="HCAU-txt-sm">12/60</p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="HCAU-btn btn-sm">
+                                                statement
+                                                <span class="ico-print"><img src="/static/html/kia/img/svg/ico_print.svg" alt=""></span>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex g16 align-items-center">
+                                                <p class="HCAU-txt-sm">payment date : 10/04/2023</p>
+                                                <p>
+                                                    <span class="HCAU-badge type01">Overdue</span>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex gap-3 pt12">
+                                                <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
+                                                <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                                <span class="HCAU-txt-sm">etc : 20.00 $</span>
+                                            </div>
+                                        </div>
+                                        <div class="ms-auto text-end">
+                                            <div class="HCAU-txt-sm">8,797.00 $</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex py28 px32 g40 align-items-center border-bottom">
+                                        <div>
+                                            <p class="HCAU-txt-sm">12/60</p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="HCAU-btn btn-sm">
+                                                statement
+                                                <span class="ico-print"><img src="/static/html/kia/img/svg/ico_print.svg" alt=""></span>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex g16 align-items-center">
+                                                <p class="HCAU-txt-sm">payment date : 10/04/2023</p>
+                                                <p>
+                                                    <span class="HCAU-badge type01">Overdue</span>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex gap-3 pt12">
+                                                <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
+                                                <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                                <span class="HCAU-txt-sm">etc : 20.00 $</span>
+                                            </div>
+                                        </div>
+                                        <div class="ms-auto text-end">
+                                            <div class="HCAU-txt-sm">8,797.00 $</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" aria-labelledby="3">
+                        <div class="tab-pane tab-cnt">
+                            <div class="d-flex flex-column px32 py24 border-bottom pb-20">
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div class="HCAU-txt-sm gray04">Payment Cycle / Payment Date</div>
+                                    <div class="HCAU-txt-md fw-bold">Monthly / 11th of every month</div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end pt16">
+                                    <div class="HCAU-txt-sm gray04">Payment method / payment account</div>
+                                    <div class="HCAU-txt-md fw-bold">Direct Debit / KB Bank 811**********1</div>
+                                </div>
+                            </div>
+                            <section class="pt40">
+                                <div class="HCAU-txt-md gray04 pb-2">A total of <span class="black fw500">4 claims</span> amounted to <span class="black fw500">4,034.00 $</span></div>
+        
+                                <div class="HCAU-flex-table border-top">
+        
+                                    <div class="d-flex py28 px32 g40 align-items-center border-bottom">
+                                        <div>
+                                            <p class="HCAU-txt-sm">12/60</p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="HCAU-btn btn-sm">
+                                                statement
+                                                <span class="ico-print"><img src="/static/html/kia/img/svg/ico_print.svg" alt=""></span>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex g16 align-items-center">
+                                                <p class="HCAU-txt-sm">payment date : 10/04/2023</p>
+                                                <p>
+                                                    <span class="HCAU-badge type01">Overdue</span>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex gap-3 pt12">
+                                                <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
+                                                <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                                <span class="HCAU-txt-sm">etc : 20.00 $</span>
+                                            </div>
+                                        </div>
+                                        <div class="ms-auto text-end">
+                                            <div class="HCAU-txt-sm">8,797.00 $</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex py28 px32 g40 align-items-center border-bottom">
+                                        <div>
+                                            <p class="HCAU-txt-sm">12/60</p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="HCAU-btn btn-sm">
+                                                statement
+                                                <span class="ico-print"><img src="/static/html/kia/img/svg/ico_print.svg" alt=""></span>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex g16 align-items-center">
+                                                <p class="HCAU-txt-sm">payment date : 10/04/2023</p>
+                                                <!-- <p>
+                                                    <span class="HCAU-badge type01">Overdue</span>
+                                                </p> -->
+                                            </div>
+                                            <div class="d-flex gap-3 pt12">
+                                                <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
+                                                <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                                <span class="HCAU-txt-sm">etc : 20.00 $</span>
+                                            </div>
+                                        </div>
+                                        <div class="ms-auto text-end">
+                                            <div class="HCAU-txt-sm">8,797.00 $</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex py28 px32 g40 align-items-center border-bottom">
+                                        <div>
+                                            <p class="HCAU-txt-sm">12/60</p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="HCAU-btn btn-sm">
+                                                statement
+                                                <span class="ico-print"><img src="/static/html/kia/img/svg/ico_print.svg" alt=""></span>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex g16 align-items-center">
+                                                <p class="HCAU-txt-sm">payment date : 10/04/2023</p>
+                                                <p>
+                                                    <span class="HCAU-badge type01">Overdue</span>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex gap-3 pt12">
+                                                <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
+                                                <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                                <span class="HCAU-txt-sm">etc : 20.00 $</span>
+                                            </div>
+                                        </div>
+                                        <div class="ms-auto text-end">
+                                            <div class="HCAU-txt-sm">8,797.00 $</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex py28 px32 g40 align-items-center border-bottom">
+                                        <div>
+                                            <p class="HCAU-txt-sm">12/60</p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="HCAU-btn btn-sm">
+                                                statement
+                                                <span class="ico-print"><img src="/static/html/kia/img/svg/ico_print.svg" alt=""></span>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex g16 align-items-center">
+                                                <p class="HCAU-txt-sm">payment date : 10/04/2023</p>
+                                                <p>
+                                                    <span class="HCAU-badge type01">Overdue</span>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex gap-3 pt12">
+                                                <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
+                                                <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                                <span class="HCAU-txt-sm">etc : 20.00 $</span>
+                                            </div>
+                                        </div>
+                                        <div class="ms-auto text-end">
+                                            <div class="HCAU-txt-sm">8,797.00 $</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" aria-labelledby="4">
+                        <div class="tab-pane tab-cnt">
+                            <div class="d-flex flex-column px32 py24 border-bottom pb-20">
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div class="HCAU-txt-sm gray04">Payment Cycle / Payment Date</div>
+                                    <div class="HCAU-txt-md fw-bold">Weekly / Friday of every week</div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end pt16">
+                                    <div class="HCAU-txt-sm gray04">Payment method / payment account</div>
+                                    <div class="HCAU-txt-md fw-bold">Direct Debit / Woori Bank 811**********1</div>
+                                </div>
+                            </div>
+                            <section class="pt40">
+                                <div class="HCAU-txt-md gray04 pb-2">A total of <span class="black fw500">2 claims</span> amounted to <span class="black fw500">$2,034.00</span></div>
+        
+                                <div class="HCAU-flex-table border-top">
+        
+                                    <div class="d-flex py28 px32 g40 align-items-center border-bottom">
+                                        <div>
+                                            <p class="HCAU-txt-sm">12/60</p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="HCAU-btn btn-sm">
+                                                statement
+                                                <span class="ico-print"><img src="/static/html/kia/img/svg/ico_print.svg" alt=""></span>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex g16 align-items-center">
+                                                <p class="HCAU-txt-sm">payment date : 10/04/2023</p>
+                                                <p>
+                                                    <span class="HCAU-badge type01">Overdue</span>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex gap-3 pt12">
+                                                <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
+                                                <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                                <span class="HCAU-txt-sm">etc : 20.00 $</span>
+                                            </div>
+                                        </div>
+                                        <div class="ms-auto text-end">
+                                            <div class="HCAU-txt-sm">8,797.00 $</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex py28 px32 g40 align-items-center border-bottom">
+                                        <div>
+                                            <p class="HCAU-txt-sm">12/60</p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="HCAU-btn btn-sm">
+                                                statement
+                                                <span class="ico-print"><img src="/static/html/kia/img/svg/ico_print.svg" alt=""></span>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex g16 align-items-center">
+                                                <p class="HCAU-txt-sm">payment date : 10/04/2023</p>
+                                                <!-- <p>
+                                                    <span class="HCAU-badge type01">Overdue</span>
+                                                </p> -->
+                                            </div>
+                                            <div class="d-flex gap-3 pt12">
+                                                <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
+                                                <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                                <span class="HCAU-txt-sm">etc : 20.00 $</span>
+                                            </div>
+                                        </div>
+                                        <div class="ms-auto text-end">
+                                            <div class="HCAU-txt-sm">8,797.00 $</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    
+                    </div>
+                    
+                </div>
+            
+            
+            <div class="tab-content d-none" id="tab">
+                <!--tab content02-->
+                <div class="tab-pane show active" id="tab01" role="tabpanel" aria-labelledby="tab01" tabindex="0">
+                    <div class="d-flex flex-column px32 py24 border-bottom pb-20">
+                        <div class="d-flex justify-content-between align-items-end">
+                            <div class="HCAU-txt-sm gray04">Payment Cycle / Payment Date</div>
+                            <div class="HCAU-txt-md fw-bold">Monthly / 02th of every month</div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-end pt16">
+                            <div class="HCAU-txt-sm gray04">Payment method / payment account</div>
+                            <div class="HCAU-txt-md fw-bold">Direct Debit / TOSS Bank 811**********1</div>
+                        </div>
+                    </div>
+                    <section class="pt40">
+                        <div class="HCAU-txt-md gray04 pb-2">A total of <span class="black fw500">0 claim</span> amounted to <span class="black fw500">$0</span></div>
+                        <div class="HCAU-nodata type02 flex-column border-top border-bottom pb-20 pt-20">
+                            <img src="/static/html/kia/img/svg/ico_no_matches_hd02.svg" alt="">
+                            <div class="HCAU-txt-sm">No matches found.</div>
+                        </div>
+
+                    </section>
+                </div>
+                <div class="tab-pane" id="tab02" role="tabpanel" aria-labelledby="tab02" tabindex="1">
+                    <div class="d-flex flex-column px32 py24 border-bottom pb-20">
+                        <div class="d-flex justify-content-between align-items-end">
+                            <div class="HCAU-txt-sm gray04">Payment Cycle / Payment Date</div>
+                            <div class="HCAU-txt-md fw-bold">Monthly / 11th of every month</div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-end pt16">
+                            <div class="HCAU-txt-sm gray04">Payment method / payment account</div>
+                            <div class="HCAU-txt-md fw-bold">Direct Debit / KB Bank 811**********1</div>
+                        </div>
+                    </div>
+                    <section class="pt40">
+                        <div class="HCAU-txt-md gray04 pb-2">A total of <span class="black fw500">4 claims</span> amounted to <span class="black fw500">4,034.00 $</span></div>
+
+                        <div class="HCAU-flex-table border-top">
+
+                            <div class="d-flex py28 px32 g40 align-items-center border-bottom">
+                                <div>
+                                    <p class="HCAU-txt-sm">12/60</p>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-sm">
+                                        statement
+                                        <span class="ico-print"><img src="/static/html/kia/img/svg/ico_print.svg" alt=""></span>
+                                    </button>
+                                </div>
+                                <div>
+                                    <div class="d-flex g16 align-items-center">
+                                        <p class="HCAU-txt-sm">payment date : 10/04/2023</p>
+                                        <p>
+                                            <span class="HCAU-badge type01">Overdue</span>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex gap-3 pt12">
+                                        <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
+                                        <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                        <span class="HCAU-txt-sm">etc : 20.00 $</span>
+                                    </div>
+                                </div>
+                                <div class="ms-auto text-end">
+                                    <div class="HCAU-txt-sm">8,797.00 $</div>
+                                </div>
+                            </div>
+                            <div class="d-flex py28 px32 g40 align-items-center border-bottom">
+                                <div>
+                                    <p class="HCAU-txt-sm">12/60</p>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-sm">
+                                        statement
+                                        <span class="ico-print"><img src="/static/html/kia/img/svg/ico_print.svg" alt=""></span>
+                                    </button>
+                                </div>
+                                <div>
+                                    <div class="d-flex g16 align-items-center">
+                                        <p class="HCAU-txt-sm">payment date : 10/04/2023</p>
+                                        <!-- <p>
+                                            <span class="HCAU-badge type01">Overdue</span>
+                                        </p> -->
+                                    </div>
+                                    <div class="d-flex gap-3 pt12">
+                                        <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
+                                        <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                        <span class="HCAU-txt-sm">etc : 20.00 $</span>
+                                    </div>
+                                </div>
+                                <div class="ms-auto text-end">
+                                    <div class="HCAU-txt-sm">8,797.00 $</div>
+                                </div>
+                            </div>
+                            <div class="d-flex py28 px32 g40 align-items-center border-bottom">
+                                <div>
+                                    <p class="HCAU-txt-sm">12/60</p>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-sm">
+                                        statement
+                                        <span class="ico-print"><img src="/static/html/kia/img/svg/ico_print.svg" alt=""></span>
+                                    </button>
+                                </div>
+                                <div>
+                                    <div class="d-flex g16 align-items-center">
+                                        <p class="HCAU-txt-sm">payment date : 10/04/2023</p>
+                                        <p>
+                                            <span class="HCAU-badge type01">Overdue</span>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex gap-3 pt12">
+                                        <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
+                                        <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                        <span class="HCAU-txt-sm">etc : 20.00 $</span>
+                                    </div>
+                                </div>
+                                <div class="ms-auto text-end">
+                                    <div class="HCAU-txt-sm">8,797.00 $</div>
+                                </div>
+                            </div>
+                            <div class="d-flex py28 px32 g40 align-items-center border-bottom">
+                                <div>
+                                    <p class="HCAU-txt-sm">12/60</p>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-sm">
+                                        statement
+                                        <span class="ico-print"><img src="/static/html/kia/img/svg/ico_print.svg" alt=""></span>
+                                    </button>
+                                </div>
+                                <div>
+                                    <div class="d-flex g16 align-items-center">
+                                        <p class="HCAU-txt-sm">payment date : 10/04/2023</p>
+                                        <p>
+                                            <span class="HCAU-badge type01">Overdue</span>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex gap-3 pt12">
+                                        <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
+                                        <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                        <span class="HCAU-txt-sm">etc : 20.00 $</span>
+                                    </div>
+                                </div>
+                                <div class="ms-auto text-end">
+                                    <div class="HCAU-txt-sm">8,797.00 $</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="tab-pane" id="tab03" role="tabpanel" aria-labelledby="tab03" tabindex="2">
+                    <div class="d-flex flex-column px32 py24 border-bottom pb-20">
+                        <div class="d-flex justify-content-between align-items-end">
+                            <div class="HCAU-txt-sm gray04">Payment Cycle / Payment Date</div>
+                            <div class="HCAU-txt-md fw-bold">Weekly / Friday of every week</div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-end pt16">
+                            <div class="HCAU-txt-sm gray04">Payment method / payment account</div>
+                            <div class="HCAU-txt-md fw-bold">Direct Debit / Woori Bank 811**********1</div>
+                        </div>
+                    </div>
+                    <section class="pt40">
+                        <div class="HCAU-txt-md gray04 pb-2">A total of <span class="black fw500">2 claims</span> amounted to <span class="black fw500">$2,034.00</span></div>
+
+                        <div class="HCAU-flex-table border-top">
+
+                            <div class="d-flex py28 px32 g40 align-items-center border-bottom">
+                                <div>
+                                    <p class="HCAU-txt-sm">12/60</p>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-sm">
+                                        statement
+                                        <span class="ico-print"><img src="/static/html/kia/img/svg/ico_print.svg" alt=""></span>
+                                    </button>
+                                </div>
+                                <div>
+                                    <div class="d-flex g16 align-items-center">
+                                        <p class="HCAU-txt-sm">payment date : 10/04/2023</p>
+                                        <p>
+                                            <span class="HCAU-badge type01">Overdue</span>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex gap-3 pt12">
+                                        <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
+                                        <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                        <span class="HCAU-txt-sm">etc : 20.00 $</span>
+                                    </div>
+                                </div>
+                                <div class="ms-auto text-end">
+                                    <div class="HCAU-txt-sm">8,797.00 $</div>
+                                </div>
+                            </div>
+                            <div class="d-flex py28 px32 g40 align-items-center border-bottom">
+                                <div>
+                                    <p class="HCAU-txt-sm">12/60</p>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-sm">
+                                        statement
+                                        <span class="ico-print"><img src="/static/html/kia/img/svg/ico_print.svg" alt=""></span>
+                                    </button>
+                                </div>
+                                <div>
+                                    <div class="d-flex g16 align-items-center">
+                                        <p class="HCAU-txt-sm">payment date : 10/04/2023</p>
+                                        <!-- <p>
+                                            <span class="HCAU-badge type01">Overdue</span>
+                                        </p> -->
+                                    </div>
+                                    <div class="d-flex gap-3 pt12">
+                                        <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
+                                        <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                        <span class="HCAU-txt-sm">etc : 20.00 $</span>
+                                    </div>
+                                </div>
+                                <div class="ms-auto text-end">
+                                    <div class="HCAU-txt-sm">8,797.00 $</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+           
+            <!-- //tab-content -->
+        </div>
+
+
+
+    </section>
+    <div class="g-notice">
+        <dl>
+            <dt>
+                <span class="ico-gnotice"><img src="/static/html/kia/img/svg/ico_notice.svg" alt=""></span>
+                <span>Guidence Notice</span>
+            </dt>
+            <dd>
+                <ul class="HCAU-bullet-list">
+                    <li>
+                        Billing statements over the last three years are available only.
+                    </li>
+                    <li>
+                        If your repayment frequency is monthly, your billing statement gets issued a week before your payment due date.
+                    </li>
+                    <li>
+                        If your repayment frequency is either weekly or fortnightly, your billing statement gets issued three days before your payment due date.
+                    </li>
+                    <li>
+                        To check payment status of the amounts billed on the statement, please go to
+                        <a href="#none" class="link">Product details</a>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+    <div class="d-flex gap-3 mt20">
+        <div class="border-box edge flex-fix p-4">
+            <p class="HCAU-txt-sm">Do you want to make a payment before your due date?</p>
+            <p class="pt12"><a href="#none" class="link">Make a payment </a></p>
+        </div>
+        <div class="border-box edge flex-fix p-4">
+            <p class="HCAU-txt-sm">Do you want to pay off all or part of your loan early?</p>
+            <p class="pt12"><a href="#none" class="link">pay off early</a></p>
+        </div>
+    </div>
+
+<!-- //HCAU-detail -->
+
+ <!--::::::::::::::::::CONTENT END::::::::::::::::::-->
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+   var swiper = new Swiper(".mySwiper", {
+     spaceBetween: 10,
+     slidesPerView: "auto",
+    
+     watchSlidesProgress: true,
+     navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+   });
+   var swiper2 = new Swiper(".mySwiper2", {
+     spaceBetween: 10,
+    /* navigation: {
+       nextEl: ".swiper-button-next",
+       prevEl: ".swiper-button-prev",
+     },*/
+     thumbs: {
+       swiper: swiper,
+     },
+   });
+ </script>
+            </div>
+            <!-- HCAU-footer -->
+            <footer class="HCAU-footer">
+                <div class="footer-inner">
+                    <div class="copyright">
+                        Hyundai Capital Australia © 2023 Hyundai Capital Austrailia. All Rights Reserved.<br>
+                        Privacy Policy | Do Not Sell or Share My Personal Information | California Privacy Rights
+                    </div>
+                    <div class="sns">
+                        <span>
+                            <a href="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.1475 10.6666V16.6666H10.9459V10.75H12.8389L13.3327 8.24998H10.9459C10.9459 8.24998 10.9459 7.08331 10.9459 6.41665C10.9459 6.16665 11.0282 5.83331 11.4397 5.83331C12.0158 5.83331 12.7566 5.83331 12.7566 5.83331V3.33331C12.7566 3.33331 11.522 3.33331 10.2051 3.33331C9.38207 3.33331 8.1475 4.41665 8.1475 5.66665C8.1475 6.91665 8.1475 8.24998 8.1475 8.24998H6.66602V10.75L8.1475 10.6666Z" fill="#999999"/>
+                                </svg>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_91_5592)">
+                                    <path d="M5.85325 7.49908H2.72461V17.4999H5.85325V7.49908Z" fill="#999999"/>
+                                    <path d="M17.1255 12.138V17.5H13.9968V12.5008C13.9968 11.1862 13.839 10.1213 12.3077 10.1213C10.7763 10.1213 10.6208 11.1885 10.6208 12.5008V17.5H7.49219V7.49919H10.6208V8.92922C11.092 7.89027 11.9825 7.23297 13.6293 7.23297C13.7565 7.23297 13.879 7.23768 13.9968 7.24475C16.8216 7.41202 17.1255 9.53705 17.1255 12.138Z" fill="#999999"/>
+                                    <path d="M6.08333 4.29049C6.08333 3.30101 5.27997 2.5 4.29049 2.5C3.30101 2.5 2.5 3.30101 2.5 4.29049C2.5 5.27997 3.30101 6.08098 4.29049 6.08098C5.27997 6.08098 6.08098 5.27997 6.08098 4.29049H6.08333Z" fill="#999999"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_91_5592">
+                                    <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.0002 7.36127C8.57379 7.36127 7.36133 8.57373 7.36133 10.0002C7.36133 11.4266 8.57379 12.639 10.0002 12.639C11.4266 12.639 12.6391 11.4266 12.6391 10.0002C12.6391 8.57373 11.4266 7.36127 10.0002 7.36127Z" fill="#999999"/>
+                                    <path d="M13.3832 2.08331H6.69004C4.09914 2.08331 2.08398 4.09846 2.08398 6.6174V13.3106C2.08398 15.9015 4.09914 17.9166 6.69004 17.9166H13.3832C15.9022 17.9166 17.9173 15.9015 17.9173 13.3106V6.6174C17.9173 4.09846 15.9022 2.08331 13.3832 2.08331ZM10.0007 14.1742C7.69762 14.1742 5.89838 12.303 5.89838 10.0719C5.89838 7.84089 7.69762 5.89771 10.0007 5.89771C12.3037 5.89771 14.1029 7.76892 14.1029 9.99998C14.1029 12.231 12.3037 14.1742 10.0007 14.1742ZM14.2469 6.76134C13.7431 6.76134 13.3113 6.32952 13.3113 5.82574C13.3113 5.32195 13.7431 4.89013 14.2469 4.89013C14.7507 4.89013 15.1825 5.32195 15.1825 5.82574C15.1825 6.32952 14.7507 6.76134 14.2469 6.76134Z" fill="#999999"/>
+                                </svg>
+            
+                            </a>
+                        </span>
+                        <span>
+                            <a href="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1655 3.92976C17.9546 4.13997 18.5755 4.76412 18.7857 5.55968C19.1673 6.99879 19.1641 9.99991 19.1641 9.99991C19.1641 9.99991 19.1641 13.001 18.7825 14.4401C18.5723 15.2325 17.9513 15.8566 17.1623 16.0701C15.7329 16.4549 9.99903 16.4549 9.99903 16.4549C9.99903 16.4549 4.26522 16.4549 2.83581 16.0701C2.04672 15.8598 1.4258 15.2357 1.21559 14.4401C0.833984 13.001 0.833984 9.99991 0.833984 9.99991C0.833984 9.99991 0.833984 6.99879 1.21883 5.55645C1.42903 4.76412 2.04995 4.13997 2.83904 3.92653C4.26845 3.54169 10.0023 3.54169 10.0023 3.54169C10.0023 3.54169 15.7329 3.54169 17.1655 3.92976ZM8.12657 7.27371V12.7262L12.9193 9.99994L8.12657 7.27371Z" fill="#999999"/>
+                                </svg>
+            
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </footer>
+            <!-- //HCAU-footer -->
+        </div>
+    </div>
+
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+    <!-- <script type="module" src="js/main.js"></script> -->
+  </body>
+</html>
