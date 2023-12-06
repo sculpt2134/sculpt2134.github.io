@@ -1824,8 +1824,8 @@ textarea.HCAU-form.form-control {
 .postcode.select .inner {
   border-top: 1px solid #d5d5d5;
   border-bottom: 1px solid #d5d5d5;
-  margin-left: -16px;
-  margin-right: -16px;
+  margin-left: -20px;
+  margin-right: -20px;
   padding: 12px 16px;
 }
 
@@ -1865,47 +1865,50 @@ textarea.HCAU-form.form-control {
 .sticky-wrap div.sum {
   font-size: 20px;
 }
-
 .sticky-wrap button {
   position: absolute;
   width: calc(100vw - 40px);
 }
-.sticky-wrap button[aria-expanded=true] {
-  top: -23px;
-}
 .sticky-wrap button[aria-expanded=false] {
   bottom: -23px;
-  transform: rotate(180deg);
 }
-
-.collapse.show + .sticky-wrap > .not {
-  opacity: 0;
-  display: none !important;
-}
-
-.collapse.show + .sticky-wrap > .show {
+.sticky-wrap button[aria-expanded=false] + .show {
   opacity: 1;
   display: block;
+  transform: translateY(0%);
+  transition: all 0.35s ease;
 }
-
-.collapse:not(.show) + .sticky-wrap > .not {
-  opacity: 1;
-  display: block;
-}
-.collapse:not(.show) + .sticky-wrap > .not .car {
+.sticky-wrap button[aria-expanded=false] + .show .car {
   width: 50%;
 }
-.collapse:not(.show) + .sticky-wrap > .not .car img {
+.sticky-wrap button[aria-expanded=false] + .show .car img {
   max-width: 100%;
 }
-
-.collapse:not(.show) + .sticky-wrap > .show {
+.sticky-wrap button[aria-expanded=false] + .show + .not {
+  opacity: 0;
+  display: none;
+  transform: translateY(-50%);
+  transition: all 0.35s ease;
+}
+.sticky-wrap button[aria-expanded=true] {
+  top: -23px;
+  transform: rotate(180deg);
+}
+.sticky-wrap button[aria-expanded=true] + .show {
   opacity: 0;
   display: none !important;
+  transform: translateY(-50%);
+  transition: all 0.35s ease;
 }
-.collapse:not(.show) + .sticky-wrap > .show .car {
-  width: 50%;
+.sticky-wrap button[aria-expanded=true] + .show .car {
+  width: 0;
 }
-.collapse:not(.show) + .sticky-wrap > .show .car img {
+.sticky-wrap button[aria-expanded=true] + .show .car img {
   max-width: 0%;
+}
+.sticky-wrap button[aria-expanded=true] + .show + .not {
+  opacity: 1;
+  display: block;
+  transform: translateY(0%);
+  transition: all 0.35s ease;
 }/*# sourceMappingURL=HCAU-m-component-hd.css.map */
