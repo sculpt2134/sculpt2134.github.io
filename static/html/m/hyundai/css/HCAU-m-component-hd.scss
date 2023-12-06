@@ -1539,17 +1539,22 @@ textarea.HCAU-form.form-control{
     background: #002C5F;   
     margin:0 -20px;
         div {
-            color:#fff;font-weight: 700;font-size:15px;line-height:30px;
+            color:#fff;font-weight: 700;font-size:15px;line-height:30px;align-items:center;
             &.sum{font-size:20px}
         }
     }
     .sticky-wrap button{position:absolute;width:calc(100vw - 40px);
-    &[aria-expanded="true"]{top:-23px;}
-    &[aria-expanded="false"]{top:96px;transform: rotate(180deg);}
+    
+    &[aria-expanded="true"]{top:-23px;};
+    &[aria-expanded="false"]{bottom:-23px;transform: rotate(180deg);}
     }
-    .collapse.show+.sticky-wrap>.not{opacity:0;display:none !important;transition: all .6s ease;}
-    .collapse.show+.sticky-wrap>.show{opacity:1;display:block;transition: all .6s ease;}
-    .collapse:not(.show)+.sticky-wrap>.not{opacity:1;display: block;transition: all .6s ease;
+    .collapse.show+.sticky-wrap>.not{opacity:0;display:none !important;}
+    .collapse.show+.sticky-wrap>.show{opacity:1;display:block;}
+    .collapse:not(.show)+.sticky-wrap>.not{opacity:1;display: block;
+       // .car{width:50%}
         .car{width:50%;img{max-width: 100%;}    }
     }
-    .collapse:not(.show)+.sticky-wrap>.show{opacity:0;display: none !important;transition: all .6s ease;}
+    .collapse:not(.show)+.sticky-wrap>.show{opacity:0;display: none !important;
+       // .car{width:0%}
+        .car{width:50%;img{max-width: 0%;}    }
+    }

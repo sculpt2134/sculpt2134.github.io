@@ -1860,6 +1860,7 @@ textarea.HCAU-form.form-control {
   font-weight: 700;
   font-size: 15px;
   line-height: 30px;
+  align-items: center;
 }
 .sticky-wrap div.sum {
   font-size: 20px;
@@ -1873,26 +1874,23 @@ textarea.HCAU-form.form-control {
   top: -23px;
 }
 .sticky-wrap button[aria-expanded=false] {
-  top: 96px;
+  bottom: -23px;
   transform: rotate(180deg);
 }
 
 .collapse.show + .sticky-wrap > .not {
   opacity: 0;
   display: none !important;
-  transition: all 0.6s ease;
 }
 
 .collapse.show + .sticky-wrap > .show {
   opacity: 1;
   display: block;
-  transition: all 0.6s ease;
 }
 
 .collapse:not(.show) + .sticky-wrap > .not {
   opacity: 1;
   display: block;
-  transition: all 0.6s ease;
 }
 .collapse:not(.show) + .sticky-wrap > .not .car {
   width: 50%;
@@ -1904,5 +1902,10 @@ textarea.HCAU-form.form-control {
 .collapse:not(.show) + .sticky-wrap > .show {
   opacity: 0;
   display: none !important;
-  transition: all 0.6s ease;
+}
+.collapse:not(.show) + .sticky-wrap > .show .car {
+  width: 50%;
+}
+.collapse:not(.show) + .sticky-wrap > .show .car img {
+  max-width: 0%;
 }/*# sourceMappingURL=HCAU-m-component-hd.css.map */
