@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>HCAU-PUBL</title>
+  <link rel="stylesheet" href="/static/html/pc/hyundai/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/pc/hyundai/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+  <div class="wrap">
+    <div class="HCAU-sidebar" include-html="/static/html/pc/hyundai/aside.html"></div>
+    <div class="HCAU-menubar" include-html="/static/html/pc/hyundai/menu.html"></div>
+
+    <div class="HCAU-container">
+            <div class="HCAU-contents" id="contents">
+                <!-- HCAU-breadcrumb -->
+                <div class="HCAU-breadcrumb" include-html="/static/html/pc/hyundai/breadcrumb.html"></div>
+            <!-- //HCAU-breadcrumb -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////START PAGE CONTENTS/////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- HCAU-title -->
+<div class="HCAU-title">
+    <!-- class option : border-bottom -->
+    <div class="HCAU-h1">HARDSHIP</div>
+</div>
+<!-- //HCAU-title -->
+
+<!-- HCAU-detail -->
+<div class="HCAU-detail">
+
+    <section>
+        
+        <div class="HCAU-step">
+            <div class="step-item">
+                <div class="num">1</div>
+                <div class="txt">Information confirmation </div>
+            </div> 
+            <div class="step-item">
+                <div class="num">2</div>
+                <div class="txt">Enter application item reason</div>
+            </div>
+            <div class="step-item active">
+                <div class="num">3</div>
+                <div class="txt">Income/expenditure details</div>
+            </div>
+        </div>
+        <div class="title-area d-flex align-items-baseline g16">
+            <div class="title">Income</div>
+        </div>
+        <div class="HCAU-table">
+            <table class="table">
+                <colgroup>
+                    <col style="width:175px">
+                    <col style="width:200px">
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col" class="align-middle text-center">Income Type</th>
+                        <th scope="col" class="align-middle text-center">Monthly amount $</th>
+                        <th scope="col" class="align-middle text-center">Supporting evidence required</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm">
+                                Salary / Income for business
+                            </p>
+                        </td>
+                        <td class="align-middle">
+                            <input type="text" class="form-control HCAU-form fw-bolder text-end" id="validationCustom03" value="0.00 $">
+                        </td>
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm">
+                                Payslips(Year-to-date summary of Pervious 3M),Last completed Tax return, Most recent Bank statement(Previous 3M)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm">
+                                Rental Income
+                            </p>
+                        </td>
+                        <td class="align-middle">
+                            <input type="text" class="form-control HCAU-form fw-bolder text-end" id="validationCustom03" value="0.00 $">
+                        </td>
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm">
+                                Estate agent statement, Lease documentation, bank statement or other record of transactions(previous 3M)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm">
+                                Government benefits
+                            </p>
+                        </td>
+                        <td class="align-middle">
+                            <input type="text" class="form-control HCAU-form fw-bolder text-end" id="validationCustom03" value="0.00 $" >
+                        </td>
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm">
+                                Centerlink statement, bank statement or other record of transactions (previous 3M)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm">
+                                Superannuation
+                            </p>
+                        </td>
+                        <td class="align-middle">
+                            <input type="text" class="form-control HCAU-form fw-bolder text-end" id="validationCustom03" value="0.00 $">
+                        </td>
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm">
+                                Superannuation Fund Statement, bank statement or other record of transactions (previous 3M)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm">
+                                Investment Income
+                            </p>
+                        </td>
+                        <td class="align-middle">
+                            <input type="text" class="form-control HCAU-form fw-bolder text-end" id="validationCustom03" value="0.00 $">
+                        </td>
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm">
+                                Bank statement, transaction summarise, letters or statements from investment fund (previous 3M)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm">
+                                Other
+                            </p>
+                        </td>
+                        <td class="align-middle">
+                            <input type="text" class="form-control HCAU-form fw-bolder text-end" id="validationCustom03" value="0.00 $">
+                        </td>
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm">
+                                Relavent Statement, bank statement or other record of transactions (previous 3M)
+                            </p>
+                        </td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="col" class="align-middle">Total</th>
+                        <th scope="col" class="align-middle"> <input type="text" class="form-control HCAU-form fw-bolder text-end" id="validationCustom03" value="0.00 $"  disabled></th>
+                        <th scope="col" class="align-middle"> </th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="title-area d-flex align-items-baseline mt40">
+            <div class="title">Expense</div>
+        </div>
+        <div class="HCAU-table HCAU-valid">
+            <table class="table">
+                <colgroup>
+                    <col style="width:95px">
+                    <col style="width:175px">
+                    <col style="width:200px">
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col" class="align-middle text-center">Expense Type</th>
+                        <th scope="col" class="align-middle text-center">Monthly amount $</th>
+                        <th scope="col" class="align-middle text-center">Supporting evidence required</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="align-middle" rowspan="5">Fixed</th>
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm">
+                                Cedit card
+                            </p>
+                        </td>
+                        <td class="align-middle">
+                            <input type="text" class="form-control HCAU-form fw-bolder text-end" id="validationCustom03" value="0.00 $">
+                        </td>
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm">
+                                Payslips(Year-to-date summary of Pervious 3M),Last completed Tax return, Most recent Bank statement(Previous 3M)
+                            </p>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm">
+                                Loan Repayment
+                            </p>
+                        </td>
+                        <td class="align-middle">
+                            <input type="text" class="form-control HCAU-form fw-bolder text-end" id="validationCustom03" value="0.00 $">
+                        </td>
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm">
+                                Centerlink statement, bank statement or other record of transactions (previous 3M)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm">
+                                Rent
+                            </p>
+                        </td>
+                        <td class="align-middle">
+                            <input type="text" class="form-control HCAU-form fw-bolder text-end" id="validationCustom03" value="0.00 $">
+                        </td>
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm">
+                                Superannuation Fund Statement, bank statement or other record of transactions (previous 3M)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm">
+                                Other
+                            </p>
+                        </td>
+                        <td class="align-middle">
+                            <input type="text" class="form-control HCAU-form fw-bolder text-end" id="validationCustom03" value="0.00 $">
+                        </td>
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm">
+                                Bank statement, transaction summarise, letters or statements from investment fund (previous 3M)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="sum">
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm fw-bold">
+                                SUM
+                            </p>
+                        </td>
+                        <td class="align-middle">
+                            <input type="text" class="form-control HCAU-form fw-bolder text-end" id="validationCustom03" value="0.00 $" disabled>
+                        </td>
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm">
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="align-middle" rowspan="6">Variable</th>
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm">
+                                Food/Groceries
+                            </p>
+                        </td>
+                        <td class="align-middle">
+                            <input type="text" class="form-control HCAU-form fw-bolder text-end" id="validationCustom03" value="0.00 $">
+                        </td>
+                        <td class="align-middle"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm">
+                                Insurance
+                            </p>
+                        </td>
+                        <td class="align-middle">
+                            <input type="text" class="form-control HCAU-form fw-bolder text-end" id="validationCustom03" value="0.00 $">
+                        </td>
+                        <td class="align-middle"></td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm">
+                                Utilities
+                            </p>
+                        </td>
+                        <td class="align-middle">
+                            <input type="text" class="form-control HCAU-form fw-bolder text-end" id="validationCustom03" value="0.00 $">
+                        </td>
+                        <td class="align-middle"></td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm">
+                                Child Care & School Fee
+                            </p>
+                        </td>
+                        <td class="align-middle">
+                            <input type="text" class="form-control HCAU-form fw-bolder text-end" id="validationCustom03" value="0.00 $">
+                        </td>
+                        <td class="align-middle"></td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm">
+                                Transp
+                            </p>
+                        </td>
+                        <td class="align-middle">
+                            <input type="text" class="form-control HCAU-form fw-bolder text-end" id="validationCustom03" value="0.00 $">
+                        </td>
+                        <td class="align-middle"></td>
+                    </tr>
+                    <tr class="sum">
+                        <td class="align-middle">
+                            <p class="HCAU-txt-sm fw-bold">
+                                SUM
+                            </p>
+                        </td>
+                        <td class="align-middle">
+                            <input type="text" class="form-control HCAU-form fw-bolder text-end" id="validationCustom03" value="0.00 $"  disabled>
+                        </td>
+                        <td class="align-middle"></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="sum">
+                        <th scope="col" class="align-middle">Total</th>
+                        <th scope="col" class="align-middle"></th>
+                        <th scope="col" class="align-middle"> <input type="text" class="form-control HCAU-form fw-bolder text-end" id="validationCustom03" value="0.00 $" disabled></th>
+                        <th scope="col" class="align-middle"> </th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        
+        <div class="title-area d-flex align-items-baseline g16 mt40">
+            <div class="title">Family Types</div>
+        </div>
+
+        <div class="title-area d-flex full align-items-baseline g16">
+            <div class="dropdown">
+                <button class="HCAU-btn dropdown-toggle  HCAU-form" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                    Select Family Type
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="title-area d-flex align-items-baseline g16 mt40">
+            <div class="title">How to reply</div>
+        </div>
+
+        <div class="title-area d-flex justify-content-start align-items-baseline g16">
+                <div class="form-check">
+                    <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"  checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        E-mail
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                        Mobile phone
+                    </label>
+                </div>
+                
+        </div>
+        
+        <div class="title-area d-flex justify-content-start align-items-baseline g16">
+            <input type="text" class="form-control HCAU-form" id="validationCustom03" value="hyundai@hcs.com" readonly="">
+        </div>
+
+
+        <div class="cta-btn-wrap">
+            <div class="d-flex g12 justify-content-center">
+                <button type="button" class="HCAU-btn btn-large gray03">Previous </button>
+                <button type="button" class="HCAU-btn btn-large primary">Next</button>
+            </div>
+        </div>
+    </section>
+
+   
+    
+</div>
+<!-- HCAU-detail -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+</div>
+<footer include-html="/static/html/pc/hyundai/footer.html"></footer>
+</div>
+</div>
+
+<script src="/static/html/pc/hyundai/js/bootstrap.bundle.min.js"></script>
+<script src="/static/html/pc/hyundai/js/main.js"></script>
+<script src="/static/html/pc/hyundai/js/includeHTML.js"></script>
+<script src="/static/html/pc/hyundai/js/includeRouter.js"></script>
+<script>
+includeHTML( function () {
+includeRouter( function () {
+});
+});
+
+</script>
+</body>
+
+</html>

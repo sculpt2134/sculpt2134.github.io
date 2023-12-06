@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>HCAU-PUBL</title>
+  <link rel="stylesheet" href="/static/html/pc/hyundai/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/pc/hyundai/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+  <style>
+    iframe {
+        padding: 0;
+        margin: 0;
+        border: 0;
+  
+    }
+
+    .HCAU-container .HCAU-contents.main {
+        width: 100%;
+        background: url(/static/html/pc/hyundai/img/bg-cover.png) right bottom no-repeat;
+        background-size: cover;
+    }
+
+    .HCAU-container .HCAU-contents.main p {
+        padding: 140px 0 0 65px;
+        font-size: 5vw;
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase
+    }
+
+    .HCAU-menubar .menu .logo {
+        padding-top: 36px;
+        padding-bottom: 80px
+    }
+
+    .HCAU-menubar .menu > ul > li {
+        font-weight: 700;
+        padding: 16px 0;
+        font-size: 18px;
+    }
+
+    .collapse.show>ul>li {
+        font-size: 14px;
+        font-weight: 500;
+        position:relative;
+        padding: 8px 0 8px 10px;
+    }
+
+    .menu li a.active {
+        color: #00AAD2;
+        text-decoration: none;
+    }
+    .collapse > ul >li:before { content: "";
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border-radius: 3px;
+    background: #444;
+    position: absolute;
+    left: 0;
+    top: 16px;}
+</style>
+<!-- HHCAU-menubar -->
+<div class="HCAU-menubar" >
+    <div class="menu">
+        <div class="logo"><img src="/static/html/pc/hyundai/img/svg/logo.svg" width="220px" height="24px"></div>
+        <ul>
+            <li>PRODUCT</li>
+            <li>PAYMENT</li>
+            <li>ACCOUNT</li>
+            <li>PERSONAL INFORMATION</li>
+            <li>PAYMENT INFORMATION</li>
+            <li><a class="active">CUSTOMER SERVICE</a>
+                <div class="collapse p-1 show" id="menu-nav2">
+                    <ul>
+                        <li>Document</li>
+                        <li>HardShip</li>
+                        <li>eComplaint</li>
+                        <li><span>Request via email</span></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <div class="HCAU-cs">
+            <a href="#" class="chat-bot">
+                <img src="/static/html/pc/hyundai/img/svg/ico_chat.svg" alt="">
+                <span>CHAT</span>
+            </a>
+            <div class="contact-us">
+                <div class="call">
+                    <img src="/static/html/pc/hyundai/img/svg/ico_call.svg" alt="">
+                    <a href="tel:" class="HCAU-txt-sm">949 468 4000</a>
+                </div>
+                <div class="email mt-2">
+                    <img src="/static/html/pc/hyundai/img/svg/ico_email.svg" alt="">
+                    <a href="mailto:" class="HCAU-txt-sm">hyundai_master@hyundai.com</a>
+                </div>
+            </div>
+            <div class="family-site">
+                <div class="dropdown flex-fix">
+                    <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                        Family Site
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- //HHCAU-menubar -->
+<script src="/static/html/pc/hyundai/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

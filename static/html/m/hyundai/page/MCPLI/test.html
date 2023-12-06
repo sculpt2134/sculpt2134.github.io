@@ -1,0 +1,250 @@
+<html lang="en">
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
+    <title>HCAU-PUBL</title>
+    <link rel="stylesheet" href="/static/html/m/hyundai/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/html/m/hyundai/css/styles.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
+    <title>HCAU-PUBL</title>
+    <link rel="stylesheet" href="/static/html/m/hyundai/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/html/m/hyundai/css/styles.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+
+</head>
+
+<body>
+    <div class="wrap">
+        <script type="text/javascript" src="/static/html/m/hyundai/js/Header.js"></script>
+
+        <!-- HCAU-container -->
+        <div class="HCAU-container">
+            <div class="HCAU-contents" id="contents">
+                <!-- HCAU-title -->
+                <div class="HCAU-title">
+                    <div class="HCAU-h1">Account Information</div>
+                </div>
+                <!-- //HCAU-title -->
+                <!-- HCAU-detail -->
+                <div class="HCAU-detail">
+
+                    <div>
+                        <style>
+                            .HCAU-tab-wrap {
+                            margin: 0 -20px;
+                            }
+                            .HCAU-tab-wrap .HCAU-tab-inner .HCAU-tab {
+                            white-space: nowrap;
+                            display: inline-flex;
+                            }
+                            .HCAU-tab-wrap .HCAU-tab-inner .HCAU-tab:after {
+                            display: none;
+                            }
+                            .HCAU-tab-wrap .HCAU-tab-inner .HCAU-tab li {
+                            flex: 0 0 auto;
+                            }
+                            .HCAU-tab-wrap .HCAU-tab-inner .HCAU-tab li:first-child a {
+                            margin-left: 20px;
+                            }
+                            .HCAU-tab-wrap .HCAU-tab-inner .HCAU-tab li a {
+                            display: inline-block;
+                            position: relative;
+                            z-index: 1;
+                            font-size: 16px;
+                            color: #999;
+                            font-weight: 700;
+                            padding: 12px 36px;
+                            }
+                            .HCAU-tab-wrap .HCAU-tab-inner .HCAU-tab li a:after {
+                            content: "";
+                            display: block;
+                            width: 100%;
+                            height: 1px;
+                            background: #999;
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            }
+                            .HCAU-tab-wrap .HCAU-tab-inner .HCAU-tab li.active a:after {
+                            height: 2px;
+                            background: #000;
+                            }
+                            .HCAU-tab-wrap .HCAU-tab-inner .HCAU-tab li.active a {
+                            color: #000;
+                            }
+
+                            .HCAU-tab-cont .HCAU-tab-cont-inner {
+                            display: none;
+                            }
+                            .HCAU-tab-cont .HCAU-tab-cont-inner.current {
+                            display: block;
+                            }
+                        </style>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/Sly/1.6.1/sly.min.js"></script>
+                        <div class="HCAU-tab-wrap">
+                            <div class="HCAU-tab-inner">
+                                <ul class="HCAU-tab">
+                                    <li class="active"><a href="#tab-cont01">메뉴1</a></li>
+                                    <li><a href="#tab-cont02">메뉴2</a></li>
+                                    <li><a href="#tab-cont03">메1344뉴3</a></li>
+                                    <li><a href="#tab-cont04">메124124뉴4</a></li>
+                                    <li><a href="#tab-cont05">메뉴5</a></li>
+                                    <li><a href="#tab-cont06">메뉴1242143136</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="HCAU-tab-cont">
+                            <div id="tab-cont01" class="HCAU-tab-cont-inner current">tab1</div>
+                            <div id="tab-cont02" class="HCAU-tab-cont-inner">tab2</div>
+                            <div id="tab-cont03" class="HCAU-tab-cont-inner">tab3</div>
+                            <div id="tab-cont04" class="HCAU-tab-cont-inner">tab4</div>
+                            <div id="tab-cont05" class="HCAU-tab-cont-inner">tab5</div>
+                            <div id="tab-cont06" class="HCAU-tab-cont-inner">tab6</div>
+                        </div>
+                        <script>
+                            // var on = $('.HCAU-tab').find('.active').index();
+                            // console.log(on);
+                            var options = {
+                                horizontal: 1,
+                                itemNav: 'centered', //basic , centered,
+                                speed: 300,
+                                smart: 1,
+                                activateOn: 'click',
+                                mouseDragging: 1,
+                                touchDragging: 1,
+                                activateMiddle: 1,
+                                releaseSwing: 1,
+                                activeClass: 'active',
+                                // startAt: on
+                                // itemSelector:1
+                            };
+                            var frame = new Sly('.HCAU-tab-inner', options).init();
+
+                            $(document).ready(function(){
+
+                                $('.HCAU-tab li a').click(function(){
+                                    var tab_id = $(this).attr('href');
+                                    // console.log(tab_id);
+                                    // $('.HCAU-tab-cont');
+                                    $('.HCAU-tab-cont').children(tab_id).addClass('current').siblings().removeClass('current');
+                                    // $(tab_id).addClass('current');
+                                })
+
+                            })
+                        </script>
+                    </div>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <div>
+
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+                        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                        <style>
+                            .swiper {
+                                width: 100%;
+                                height: 100%;
+                            }
+                            .swiper-wrapper{
+                                background: pink;
+                            }
+                            .swiper-slide {
+                                background: red;
+                                flex-shrink: 1;
+                            }
+                        </style>
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">Slide 1</div>
+                                <div class="swiper-slide">Slide 2</div>
+                                <div class="swiper-slide">Slide 3</div>
+                                <div class="swiper-slide">Slide 4</div>
+                                <div class="swiper-slide">Slide 5</div>
+                                <div class="swiper-slide">Slide 6</div>
+                                <div class="swiper-slide">Slide 7</div>
+                                <div class="swiper-slide">Slide 8</div>
+                                <div class="swiper-slide">Slide 9</div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                          <script>
+                            // var mySwiper = new Swiper('.swiper-container', {
+                            //     // slidesPerView: auto,
+                            //     spaceBetween: 20,
+                            //     updateOnWindowResize: true,
+                            //     // loop: true,
+                            //     grabCursor: true,
+                            //     centeredSlides: true,
+                            //     centeredSlidesBounds: true,
+                            //     initialSlide: 0,
+                            //     on: {
+                            //         click(event) {
+                            //             console.log('event.target',this.clickedIndex);
+                            //             mySwiper.slideTo(this.clickedIndex);
+                            //         },
+                            //     },
+                            // });
+                            var swiper = new Swiper(".mySwiper", {
+                                slidesPerView: 'auto',
+                                spaceBetween: 30,
+                                // updateOnWindowResize: true,
+                                // centeredSlides: true,
+                                slideToClickedSlide : true,
+                                on: {
+                                    click(event) {
+                                        console.log('event.target',this.clickedIndex + 1);
+                                        // swiper.slideTo(this.clickedIndex + 1);
+                                    }
+                                }
+                            });
+                          </script>
+                    </div>
+
+                    <div class="g-notice border-top-dashed">
+                        <dl>
+                            <dt>
+                                <span class="ico-gnotice"><img src="/static/html/m/hyundai/img/ico_notice.svg" alt=""></span>
+                                <span class="HCAU-txt-sm">Guidence Notice</span>
+                            </dt>
+                            <dd>
+                                <ul class="HCAU-bullet-list">
+                                    <li class="HCAU-txt-sm">
+                                        Only products currently in use can be viewed.
+                                    </li>
+                                    <li class="HCAU-txt-sm">
+                                        You can get a No Objection Certificate issued to confirm that your account is closed.<br><a href="#none" class="link HCAU-txt-sm ms-0">Request No Objection Certificate</a>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+
+                </div>
+                <!-- //HCAU-detail -->
+            </div>
+        </div>
+        <!-- //HCAU-container -->
+
+        <!-- btn-cta-wrap -->
+        <!-- <div class="btn-cta-wrap">
+            <button type="button" class="HCAU-btn btn-cta gray03">Cancel</button>
+            <button type="button" class="HCAU-btn btn-cta primary">Next</button>
+        </div> -->
+        <!-- //btn-cta-wrap -->
+
+        <script type="text/javascript" src="/static/html/m/hyundai/js/Footer.js"></script>
+    </div>
+    <!-- <script src="/static/html/m/hyundai/js/jquery-3.3.1.min.js"></script> -->
+    <script src="/static/html/m/hyundai/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/static/html/m/hyundai/js/main.js"></script>
+</body>
+
+</html>

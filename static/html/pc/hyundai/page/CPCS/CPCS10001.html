@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>HCAU-PUBL</title>
+  <link rel="stylesheet" href="/static/html/pc/hyundai/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/pc/hyundai/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+  <div class="wrap">
+    <div class="HCAU-sidebar" include-html="/static/html/pc/hyundai/aside.html"></div>
+    <div class="HCAU-menubar" include-html="/static/html/pc/hyundai/menu.html"></div>
+
+    <div class="HCAU-container">
+            <div class="HCAU-contents" id="contents">
+                <!-- HCAU-breadcrumb -->
+                <div class="HCAU-breadcrumb" include-html="/static/html/pc/hyundai/breadcrumb.html"></div>
+            <!-- //HCAU-breadcrumb -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////START PAGE CONTENTS/////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- HCAU-title -->
+<div class="HCAU-title">
+    <!-- class option : border-bottom -->
+    <div class="HCAU-h1">repayment schedule</div>
+</div>
+<!-- //HCAU-title -->
+
+<!-- HCAU-detail -->
+<div class="HCAU-detail">
+    <section>
+        
+        <div class="title-area d-flex align-items-baseline g16">
+            <div class="title">Repayment schedule information</div>
+        </div>
+
+        <ul class="HCAU-bullet-list mb20">
+            <li>
+                금융상품의 회차별 청구/입금내역을 확인할 수 있습니다.
+            </li>
+            <li>
+                5년 전 1월부터 현재까지 이용중이거나, 이용이 종료된 상품에 대해서만 조회 가능합니다.
+            </li>
+            
+        </ul>
+
+
+        <!-- OTP certification -->
+        <div class="HCAU-valid bg-box2 p10 mt60">
+            <div class="border-box px32 py28">
+                <!-- title-area -->
+                <div class="title-area d-flex align-items-baseline g16">
+                    <div class="HCAU-txt-md fw-bold">OTP certification</div>
+                    <div class="ms-auto">
+                        <!-- HCAU-tab-small -->
+                        <div class="HCAU-tab-small">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="">
+                                    <button class="active" id="" data-bs-toggle="tab" data-bs-target="#tabCont_01" type="button" role="tab" aria-selected="true">Cell phone</button>
+                                </li>
+                                <li class="">
+                                    <button class="" id="" data-bs-toggle="tab" data-bs-target="#tabCont_02" type="button" role="tab" aria-selected="false">E-mail</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //HCAU-tab-small -->
+                    </div>
+                </div>
+                <!-- //title-area -->
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="tabCont_01" role="tabpanel">
+
+                        <div class="d-flex justify-content-between g20">
+                            <div class="d-flex g12 w-50">
+                                <div class="flex-grow-1">
+                                    <input type="text" class="form-control HCAU-form" placeholder="Enter phone number" value="01099999999" readonly>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-smd">Send</button>
+                                </div>
+                            </div>
+                            <div class="d-flex g12 w-50">
+                                <div class="flex-grow-1 position-relative">
+                                    <input type="text" class="form-control HCAU-form time-limit" placeholder="Enter OTP verification code" value="">
+                                    <span class="time-limit-num">2:59</span>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-smd">OK</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="tabCont_02" role="tabpanel">
+
+                        <div class="d-flex justify-content-between g20">
+                            <div class="d-flex g12 w-50">
+                                <div class="flex-grow-1">
+                                    <input type="text" class="form-control HCAU-form" placeholder="Enter phone number" value="01099999999" readonly>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-smd">Send</button>
+                                </div>
+                            </div>
+                            <div class="d-flex g12 w-50">
+                                <div class="flex-grow-1 position-relative">
+                                    <input type="text" class="form-control HCAU-form time-limit" placeholder="Enter OTP verification code" value="">
+                                    <!-- <span class="time-limit-num">2:59</span> -->
+                                </div>
+                                <!-- <div>
+                                    <button type="button" class="HCAU-btn btn-smd">OK</button>
+                                </div> -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //OTP certification -->
+
+
+        <ul class="HCAU-bullet-list mt12">
+            <li class=" gray03">
+                You can view and download after OTP authentication.
+            </li>
+            
+        </ul>
+
+        
+    </section>
+
+    <div class="cta-btn-wrap">
+        <div class="d-flex g12 justify-content-center">
+            <button type="button" class="HCAU-btn btn-large primary">Ok</button>
+        </div>
+    </div>
+
+    <div class="d-flex gap-3 border-top-dashed mt-5 pt32">
+        <div class="border-box flex-fix p-4 edge">
+            <p class="HCAU-txt-sm">To check the products currently in use</p>
+            <p class="pt12"><a href="#none" class="link">Product usage details</a></p>
+        </div>
+        <div class="border-box flex-fix p-4 edge">
+            <p class="HCAU-txt-sm">To check your deposit details</p>
+            <p class="pt12"><a href="#none" class="link">Deposit details   </a></p>
+        </div>
+    </div>
+
+    
+</div>
+<!-- HCAU-detail -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+</div>
+<footer include-html="/static/html/pc/hyundai/footer.html"></footer>
+</div>
+</div>
+
+<script src="/static/html/pc/hyundai/js/bootstrap.bundle.min.js"></script>
+<script src="/static/html/pc/hyundai/js/main.js"></script>
+<script src="/static/html/pc/hyundai/js/includeHTML.js"></script>
+<script src="/static/html/pc/hyundai/js/includeRouter.js"></script>
+<script>
+includeHTML( function () {
+includeRouter( function () {
+});
+});
+
+</script>
+</body>
+
+</html>
