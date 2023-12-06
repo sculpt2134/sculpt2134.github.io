@@ -1867,8 +1867,14 @@ textarea.HCAU-form.form-control {
 
 .sticky-wrap button {
   position: absolute;
-  top: -23px;
   width: calc(100vw - 40px);
+}
+.sticky-wrap button[aria-expanded=true] {
+  top: -23px;
+}
+.sticky-wrap button[aria-expanded=false] {
+  top: 96px;
+  transform: rotate(180deg);
 }
 
 .collapse.show + .sticky-wrap > .not {
