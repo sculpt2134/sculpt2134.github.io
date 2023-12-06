@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .g08 {
   gap: 8px;
 }
@@ -98,6 +99,10 @@
   padding-top: 80px;
 }
 
+.pe16 {
+  padding-right: 16px;
+}
+
 .pb20 {
   padding-bottom: 20px;
 }
@@ -177,8 +182,8 @@
 }
 
 .px40 {
-  padding-left: 32px;
-  padding-right: 36px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .mx-16 {
@@ -199,6 +204,15 @@
 .my20 {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.my80 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.mt-40 {
+  margin-top: -40px;
 }
 
 .mt0 {
@@ -222,7 +236,7 @@
 }
 
 .mt32 {
-  margin-top: 32px;
+  margin-top: 32px !important;
 }
 
 .mt36 {
@@ -271,6 +285,14 @@ a {
 
 .fw500 {
   font-weight: 500;
+}
+
+.w60 {
+  width: 60px;
+}
+
+.w80 {
+  width: 80px;
 }
 
 .w92 {
@@ -333,6 +355,13 @@ a {
   border-bottom: 1px dashed #999 !important;
 }
 
+.HCAU-txt-xl {
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+}
+
 .HCAU-h1 {
   color: #000;
   font-size: 24px;
@@ -383,11 +412,19 @@ a {
 }
 
 .black {
-  color: #000;
+  color: #000 !important;
 }
 
 .point-red {
   color: #E63312;
+}
+
+.point-color {
+  color: #00aad2;
+}
+
+.primary-color {
+  color: #002C5F;
 }
 
 header {
@@ -408,7 +445,8 @@ footer .copyright + .copyright {
 }
 
 .HCAU-detail {
-  padding: 12px 20px 20px;
+  padding: 12px 20px 60px;
+  position: relative;
 }
 
 .HCAU-title {
@@ -442,6 +480,10 @@ footer .copyright + .copyright {
   padding: 0 16px;
   line-height: 1;
   height: 33px;
+}
+.HCAU-btn.btn-sm .ico-btn {
+  display: inline-block;
+  vertical-align: middle;
 }
 .HCAU-btn.btn-smd {
   font-size: 15px;
@@ -487,10 +529,15 @@ footer .copyright + .copyright {
   background: #999;
   color: #fff;
 }
+.HCAU-btn.btn-cta.default {
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
 .HCAU-btn.btn-cta:disabled {
   color: #999;
-  border-top: 1px solid #999;
-  border-bottom: 1px solid #999;
+  border-top: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
   background-color: #f5f5f5;
 }
 .HCAU-btn.full {
@@ -510,6 +557,9 @@ footer .copyright + .copyright {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.HCAU-btn.dropdown-toggle.HCAU-form-invalid {
+  border-color: #E63312;
+}
 .HCAU-btn.dropdown-toggle::after {
   position: absolute;
   right: 16px;
@@ -520,6 +570,26 @@ footer .copyright + .copyright {
   width: 24px;
   height: 24px;
   background: url(/static/html/m/hyundai/img/ico_dropdown.svg) no-repeat 0 0;
+}
+.HCAU-btn.dropdown-toggle:disabled {
+  color: #999;
+}
+.HCAU-btn.btn-keyvi {
+  color: #fff;
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.HCAU-toggle-check label.HCAU-btn.btn-sm {
+  height: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  height: 33px;
+}
+.HCAU-toggle-check input:checked + label {
+  background: #000;
+  color: #fff;
 }
 
 .btn-md-wrap {
@@ -535,11 +605,22 @@ footer .copyright + .copyright {
   bottom: 0;
   display: flex;
   gap: 1px;
+  background: #fff;
 }
 .btn-cta-wrap > button {
   flex-shrink: 1;
   flex-grow: 1;
   flex-basis: 50%;
+}
+.btn-cta-wrap.g0 {
+  gap: 0;
+}
+.btn-cta-wrap.g0 .default {
+  border-left: 0;
+  border-right: 0;
+}
+.btn-cta-wrap.g0 .primary {
+  text-wrap: nowrap;
 }
 
 .border-box {
@@ -593,6 +674,13 @@ footer .copyright + .copyright {
   border-color: #d5d5d5;
   box-shadow: none;
   border-radius: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.HCAU-form:placeholder-shown {
+  text-overflow: ellipsis;
 }
 
 textarea.HCAU-form.form-control {
@@ -622,13 +710,25 @@ textarea.HCAU-form.form-control {
   color: #000;
 }
 
+.HCAU-form.time-limit + .time-limit-num {
+  position: absolute;
+  right: 16px;
+  top: 12px;
+  font-size: 14px;
+  color: #E63312;
+}
+
 .calendar {
   position: relative;
 }
 .calendar .HCAU-form.form-control {
   padding-right: 50px;
 }
-.calendar button {
+.calendar .HCAU-form.form-control:read-only + span > img {
+  opacity: 0.4;
+}
+.calendar span {
+  display: inline-block;
   position: absolute;
   right: 16px;
   top: 50%;
@@ -648,13 +748,13 @@ textarea.HCAU-form.form-control {
 
 .HCAU-form.form-check-input[type=checkbox] {
   border-color: #d5d5d5;
-  background-image: url(/static/img/bg/bg_input_check.svg);
+  background-image: url(/static/html/m/hyundai/img/bg_input_check.svg);
   background-size: 14px 14px;
 }
 .HCAU-form.form-check-input[type=checkbox]:checked {
   background-color: #002C5F;
   border-color: #002C5F;
-  background-image: url(/static/img/bg/bg_input_check_on.svg);
+  background-image: url(/static/html/m/hyundai/img/bg_input_check_on.svg);
   background-size: 14px 14px;
 }
 .HCAU-form.form-check-input[type=checkbox]:disabled {
@@ -672,7 +772,7 @@ textarea.HCAU-form.form-control {
 .HCAU-form.form-check-input:checked[type=radio] {
   background-color: #fff;
   border-color: #002C5F;
-  background-image: url(/static/img/bg/bg_input_radio_on.svg);
+  background-image: url(/static/html/m/hyundai/img/bg_input_radio_on.svg);
   background-size: 14px 14px;
 }
 
@@ -722,7 +822,7 @@ textarea.HCAU-form.form-control {
   position: relative;
   font-size: 14px;
   padding-left: 10px;
-  margin-top: 4px;
+  margin-top: 8px;
 }
 .invalid-feedback:before,
 .valid-feedback:before,
@@ -797,6 +897,46 @@ textarea.HCAU-form.form-control {
   padding: 20px;
 }
 
+.HCAU-modal .modal-dialog.modal-mid {
+  margin: 20px;
+}
+.HCAU-modal .modal-dialog.modal-mid .modal-content {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.HCAU-modal .modal-dialog.modal-mid .modal-body {
+  padding: 40px 20px;
+}
+.HCAU-modal .modal-dialog.modal-mid .btn-cta-wrap {
+  gap: 0;
+}
+.HCAU-modal .modal-dialog.modal-sm {
+  max-width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.HCAU-modal .modal-dialog.modal-sm .modal-content {
+  border: none;
+  border-radius: 0;
+}
+.HCAU-modal .modal-dialog.modal-sm .modal-body {
+  padding: 28px 20px;
+}
+.HCAU-modal .modal-dialog.modal-sm .btn-cta-wrap {
+  gap: 0;
+}
+.HCAU-modal .modal-dialog.modal-sm .btn-cta-wrap .btn-cta {
+  padding: 0 10px;
+  min-height: 40px;
+  font-size: 15px;
+}
+@media (min-width: 576px) {
+  .HCAU-modal .modal-dialog.modal-mid {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 .HCAU-modal .modal-top {
   padding: 12px 20px;
   text-align: right;
@@ -817,7 +957,7 @@ textarea.HCAU-form.form-control {
   text-transform: none;
 }
 .HCAU-modal .modal-body {
-  padding: 12px 20px 20px;
+  padding: 12px 20px 60px;
 }
 .HCAU-modal .modal-footer {
   display: block;
@@ -848,7 +988,7 @@ textarea.HCAU-form.form-control {
   border: 1px solid #fff;
 }
 .HCAU-pagination .inner .pages li a {
-  font-weight: 500;
+  font-weight: 700;
   display: inline-block;
   height: 24px;
   line-height: 24px;
@@ -859,7 +999,7 @@ textarea.HCAU-form.form-control {
 }
 
 .g-notice {
-  padding: 40px 0;
+  padding: 40px 0 0;
   margin-top: 60px;
 }
 .g-notice dl dt {
@@ -935,7 +1075,7 @@ textarea.HCAU-form.form-control {
 }
 .link.HCAU-txt-xs {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .HCAU-table {
@@ -949,8 +1089,68 @@ textarea.HCAU-form.form-control {
   background: #F6F3F2;
   font-weight: 700;
 }
+.HCAU-table td {
+  background: #fff;
+}
 .HCAU-table tr.table-active td {
   background: rgba(230, 51, 18, 0.05);
+}
+
+.prd-keyvi {
+  padding-top: 0;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.prd-keyvi .HCAU-flex-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prd-keyvi .HCAU-flex-table.flex-column img {
+  width: auto;
+}
+.prd-keyvi .HCAU-flex-table img {
+  width: 100%;
+}
+.prd-keyvi .HCAU-flex-table .HCAU-bullet-list.black li {
+  padding-left: 10px;
+}
+.prd-keyvi .HCAU-flex-table .HCAU-txt-sm {
+  position: absolute;
+  text-align: center;
+  font-size: 16px;
+}
+.prd-keyvi .HCAU-table.dot {
+  position: absolute;
+  padding: 0 40px;
+  margin-top: -60px;
+  z-index: 2;
+}
+.prd-keyvi .HCAU-table.dot .table tr td {
+  padding-left: 2rem;
+}
+.prd-keyvi .chart-wrap {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.prd-keyvi .chart-wrap img {
+  padding: 180px 20px 40px 20px;
+  border: 1px solid #d5d5d5;
+}
+.prd-keyvi .chart-wrap .HCAU-txt-lg {
+  position: absolute;
+  top: 50px;
+}
+.prd-keyvi .chart-wrap .HCAU-txt-md {
+  position: absolute;
+  top: 96px;
+  font-size: 15px;
+}
+.prd-keyvi .chart-wrap.prd3 {
+  margin-top: 280px;
 }
 
 .HCAU-tooltip {
@@ -994,13 +1194,12 @@ textarea.HCAU-form.form-control {
 }
 
 .HCAU-step {
-  width: 280px;
   margin: 0 auto;
   position: relative;
 }
 .HCAU-step .step-num {
   display: flex;
-  gap: 50px;
+  gap: 20px;
   justify-content: center;
 }
 .HCAU-step .step-num .step-item {
@@ -1009,11 +1208,11 @@ textarea.HCAU-form.form-control {
 .HCAU-step .step-num .step-item + .step-item:before {
   content: "";
   display: inline-block;
-  width: 50px;
+  width: 20px;
   height: 2px;
   background: #d5d5d5;
   position: absolute;
-  left: -50px;
+  left: -20px;
   top: 15px;
 }
 .HCAU-step .step-num .step-item .num {
@@ -1038,25 +1237,14 @@ textarea.HCAU-form.form-control {
   border-color: #002C5F;
   color: #fff;
 }
-.HCAU-step .step-num .step-item.active img {
-  display: block;
-}
-.HCAU-step .step-txt .HCAU-txt-sm {
+.HCAU-step .step-txt .HCAU-txt-md {
   font-weight: 700;
   color: #002C5F;
+  text-align: center;
   display: none;
 }
-.HCAU-step .step-txt .HCAU-txt-sm.active {
+.HCAU-step .step-txt .HCAU-txt-md.active {
   display: block;
-}
-.HCAU-step .step-txt .HCAU-txt-sm:nth-child(1) {
-  text-align: left;
-}
-.HCAU-step .step-txt .HCAU-txt-sm:nth-child(2) {
-  text-align: center;
-}
-.HCAU-step .step-txt .HCAU-txt-sm:nth-child(3) {
-  text-align: right;
 }
 
 .HCAU-badge {
@@ -1080,6 +1268,30 @@ textarea.HCAU-form.form-control {
   color: #00aad2;
   background: #EBF5F9;
   border: 1px solid #00aad2;
+}
+.HCAU-badge.type04 {
+  color: #002C5F;
+  background: #EBEFF3;
+  border: 1px solid #EBEFF3;
+  min-width: 83px;
+  text-align: center;
+  font-weight: 700;
+}
+.HCAU-badge.type05 {
+  color: #00aad2;
+  background: #EBF5F9;
+  border: 1px solid #EBF5F9;
+  min-width: 83px;
+  text-align: center;
+  font-weight: 700;
+}
+.HCAU-badge.type06 {
+  color: #999;
+  background: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  min-width: 83px;
+  text-align: center;
+  font-weight: 700;
 }
 
 .HCAU-nodata.type01 {
@@ -1160,6 +1372,27 @@ textarea.HCAU-form.form-control {
   color: #000;
 }
 
+.HCAU-tab-small {
+  display: flex;
+}
+.HCAU-tab-small li {
+  flex: 1 1 50%;
+}
+.HCAU-tab-small li button {
+  width: 100%;
+  padding: 7px;
+  border: 1px solid #d5d5d5;
+}
+.HCAU-tab-small li button.active {
+  border-color: #000;
+}
+.HCAU-tab-small li:first-child button {
+  border-radius: 4px 0px 0px 4px;
+}
+.HCAU-tab-small li:last-child button {
+  border-radius: 0px 4px 4px 0px;
+}
+
 .request-step > div {
   position: relative;
 }
@@ -1171,8 +1404,9 @@ textarea.HCAU-form.form-control {
   position: absolute;
   left: 50%;
   margin-left: -12px;
-  bottom: -8px;
+  bottom: -18px;
   transform: rotate(90deg);
+  z-index: 1;
 }
 .request-step > div + div {
   margin-top: 12px;
@@ -1188,6 +1422,10 @@ textarea.HCAU-form.form-control {
   margin-left: -20px;
   margin-right: -20px;
   margin-bottom: -20px;
+  position: sticky;
+  left: 0;
+  bottom: 60px;
+  background: #fff;
 }
 
 .HCAU-search-bar > div + div {
@@ -1243,3 +1481,354 @@ textarea.HCAU-form.form-control {
 .card-list.border-box .bg-box {
   border-radius: 8px;
 }
+
+.HCAU-result-msg {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.HCAU-result-msg + .g-notice {
+  margin-top: 0;
+}
+
+.HCAU-tab-btn {
+  display: flex;
+}
+.HCAU-tab-btn > div {
+  flex: 1;
+}
+.HCAU-tab-btn > div:first-child label {
+  border-radius: 4px 0 0 4px;
+}
+.HCAU-tab-btn > div:last-child label {
+  border-radius: 0 4px 4px 0;
+}
+.HCAU-tab-btn > div label {
+  border-radius: 0;
+  border-color: #d5d5d5;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.HCAU-tab-btn > div input:checked + label {
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+}
+
+.HCAU-tab-radio2 {
+  display: flex;
+}
+.HCAU-tab-radio2 > div {
+  flex: 1;
+}
+.HCAU-tab-radio2 > div:first-child label {
+  border-radius: 4px 0 0 4px;
+}
+.HCAU-tab-radio2 > div:last-child label {
+  border-radius: 0 4px 4px 0;
+}
+.HCAU-tab-radio2 > div label {
+  border-radius: 0;
+  border-color: #d5d5d5;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.HCAU-tab-radio2 > div input:checked + label {
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+}
+
+.filebox input[type=file] {
+  position: absolute;
+  width: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+}
+.filebox .btn-clear {
+  position: absolute;
+  right: 16px;
+  top: 10px;
+}
+
+.HCAU-terms + .HCAU-terms {
+  margin-top: 40px;
+}
+.HCAU-terms .HCAU-terms-title {
+  padding-bottom: 12px;
+}
+.HCAU-terms .HCAU-terms-detail {
+  padding-top: 12px;
+}
+
+.HCAU-accordion .accordion {
+  border-top: 1px solid #d5d5d5;
+}
+.HCAU-accordion .accordion .accordion-item {
+  border: none;
+}
+.HCAU-accordion .accordion .accordion-item + .accordion-item {
+  border-bottom: 1px solid #d5d5d5;
+}
+.HCAU-accordion .accordion .accordion-item .accordion-header .accordion-button {
+  gap: 16px;
+  border-radius: 0;
+  padding: 24px 16px;
+}
+.HCAU-accordion .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  background: none;
+}
+.HCAU-accordion .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) .HCAU-txt-sm.mt-1 {
+  font-weight: 700;
+}
+.HCAU-accordion .accordion .accordion-item .accordion-header .accordion-button:focus {
+  box-shadow: 0 0 0 2px rgb(0, 170, 210);
+}
+.HCAU-accordion .accordion .accordion-item .accordion-collapse .accordion-body {
+  padding: 24px 16px;
+  background: #f5f5f5;
+}
+
+.HCAU-modal.HCAU-gnb .modal-top {
+  text-align: left;
+}
+.HCAU-modal.HCAU-gnb .modal-header {
+  padding: 24px 20px;
+}
+.HCAU-modal.HCAU-gnb .modal-body {
+  padding: 0;
+}
+
+.HCAU-gnb-search {
+  position: relative;
+  /* IE의 경우 */
+  /* 크롬의 경우 */
+}
+.HCAU-gnb-search input {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  padding: 20px;
+  padding-right: 60px;
+  font-size: 15px;
+  background: #F6F3F2;
+}
+.HCAU-gnb-search .btn-search {
+  display: none;
+}
+.HCAU-gnb-search.empty .btn-search {
+  position: absolute;
+  right: 13px;
+  top: 8px;
+  padding: 10px;
+  display: block;
+}
+.HCAU-gnb-search input::-ms-clear, .HCAU-gnb-search input::-ms-reveal {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background: url(/static/html/m/hyundai/img/ico_search_clear.svg) 0 0 no-repeat;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+}
+.HCAU-gnb-search input::-webkit-search-decoration,
+.HCAU-gnb-search input::-webkit-search-cancel-button,
+.HCAU-gnb-search input::-webkit-search-results-button,
+.HCAU-gnb-search input::-webkit-search-results-decoration {
+  /* opacity: 0; */
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  background: url(/static/html/m/hyundai/img/ico_search_clear.svg) 0 0 no-repeat;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+}
+
+.HCAU-gnb-menu > .accordion > .accordion-item {
+  border: none;
+  border-radius: 0;
+  --bs-accordion-inner-border-radius: 0;
+}
+.HCAU-gnb-menu > .accordion > .accordion-item > .accordion-header button {
+  color: #000;
+  padding: 20px 32px;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+.HCAU-gnb-menu > .accordion > .accordion-item > .accordion-header button:after {
+  background: url(/static/html/m/hyundai/img/ico_gnb_close.svg);
+}
+.HCAU-gnb-menu > .accordion > .accordion-item > .accordion-header button.collapsed {
+  border: none;
+}
+.HCAU-gnb-menu > .accordion > .accordion-item > .accordion-header button.collapsed:after {
+  background: url(/static/html/m/hyundai/img/ico_gnb_open.svg);
+}
+.HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse {
+  padding: 0 32px 20px;
+}
+.HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse .accordion-body {
+  padding: 0;
+}
+.HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse .accordion-body .accordion .accordion-item {
+  border: none;
+  border-radius: 0;
+  --bs-accordion-inner-border-radius: 0;
+}
+.HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse .accordion-body .accordion .accordion-item .accordion-header {
+  border-bottom: 1px solid #d5d5d5;
+}
+.HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse .accordion-body .accordion .accordion-item .accordion-header button {
+  padding: 16px 0;
+  background: none;
+  box-shadow: none;
+}
+.HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse .accordion-body .accordion .accordion-item .accordion-header button:after {
+  background: url(/static/html/m/hyundai/img/ico_gnb_close.svg);
+}
+.HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse .accordion-body .accordion .accordion-item .accordion-header button.collapsed {
+  border: none;
+}
+.HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse .accordion-body .accordion .accordion-item .accordion-header button.collapsed:after {
+  background: url(/static/html/m/hyundai/img/ico_gnb_open.svg);
+}
+.HCAU-gnb-menu > .accordion .HCAU-gnb-depth3 li {
+  border-bottom: 1px solid #d5d5d5;
+}
+.HCAU-gnb-menu > .accordion .HCAU-gnb-depth3 li .HCAU-txt-sm {
+  display: block;
+  background: #f5f5f5;
+  border: none;
+  padding: 16px;
+}
+
+.modal-search button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: #F6F3F2;
+}
+
+.terms-paging {
+  border: 2px solid #d5d5d5;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 6px 20px;
+  border-radius: 30px;
+}
+
+.btn-back-to-top {
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  position: sticky;
+  left: 100%;
+  margin-right: 20px;
+  bottom: 80px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.select-membership a.border-box {
+  padding: 59px 0;
+  text-decoration: none;
+  border-radius: 4px;
+  flex: 1 1 100%;
+}
+.select-membership a.border-box img.hover {
+  display: none;
+}
+.select-membership a.border-box span {
+  display: block;
+}
+.select-membership a.border-box:hover {
+  border-color: #00aad2;
+}
+.select-membership a.border-box:hover img {
+  display: none;
+}
+.select-membership a.border-box:hover img.hover {
+  display: inline-block;
+}
+.select-membership a.border-box:hover span {
+  color: #00aad2;
+}
+
+.HCAU-prd {
+  display: flex;
+  margin: 0 auto;
+}
+.HCAU-prd ul {
+  gap: 25px;
+}
+.HCAU-prd ul li {
+  width: 50%;
+  float: left;
+}
+.HCAU-prd ul li:nth-child(odd) .card {
+  margin-right: 12.5px;
+}
+.HCAU-prd ul li:nth-child(even) .card {
+  margin-left: 12.5px;
+}
+.HCAU-prd ul li .card {
+  border: 2px solid transparent;
+}
+.HCAU-prd ul li .card.active, .HCAU-prd ul li .card:hover {
+  border: 2px solid #00aad2;
+}
+.HCAU-prd ul li .card .card-body {
+  padding: 0;
+}
+.HCAU-prd ul li .card .card-body span {
+  display: flex;
+  padding: 21px 0 19px;
+}
+.HCAU-prd ul li .card .card-body span img {
+  max-width: 100%;
+}
+.HCAU-prd ul li .card .card-body .HCAU-txt-md {
+  font-weight: 700;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+.HCAU-prd ul li .card .card-body .HCAU-txt-sm {
+  text-align: center;
+  padding-bottom: 20px;
+  line-height: 18px;
+}
+
+.border-bottom.black {
+  border-color: #000 !important;
+}
+
+.postcode.select .inner {
+  border-top: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5;
+  margin-left: -16px;
+  margin-right: -16px;
+  padding: 12px 16px;
+  gap: 12px;
+}/*# sourceMappingURL=HCAU-m-component-hd.css.map */

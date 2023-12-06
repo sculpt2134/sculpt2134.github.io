@@ -1,0 +1,281 @@
+<html>
+  <head>
+    <title>HCAU Publ</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/html/pc/hyundai/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/html/pc/hyundai/css/styles.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      #container {
+        display: flex;
+        flex-direction: row;
+      }
+
+      #menu {
+        background-color: #00AAD2;
+        color: #fff;
+        width: 20%;
+        padding: 20px;
+      }
+
+      #content {
+        width: 80%;
+        padding: 20px;
+        margin-left : 10%;
+        margin-right : 10%;
+      }
+
+      #menu ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      #menu ul li {
+        margin-bottom: 10px;
+        font-size: 10;
+      }
+
+      #menu ul li a {
+        text-decoration: none;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="menu">
+        <h2>Menu</h2>
+        <ul>
+          <li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO10001')">메인 | [CASE1]로그인전 | CPCO10001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO10002')">메인 | [CASE2]로그인후 | CPCO10002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO20001')">공통 | 로딩프로그래스 | CPCO20001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO20002')">공통 | 에러페이지 | CPCO20002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO20003')">공통 | 시스템점검안내 | CPCO20003</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO20004')">공통 | 세션만료 | CPCO20004</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO20009_P01')">공통 | [lp] 세션종료안내 | CPCO20009_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO20005_P01')"> | [lp]주소검색 | CPCO20005_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO20006_P01')"> | [lp]캘린더_일자선택 | CPCO20006_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO20006_P02')">공통 | [lp]캘린더_월선택 | CPCO20006_P02</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO20007')">공통 | [lp]OTP인증 | CPCO20007</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO20008_P01')">공통 | [lp]약관동의상세보기 | CPCO20008_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO30001')">공통 | 메뉴검색 | CPCO30001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO40001')">공통 |  | CPCO40001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO50001')">검색 | [CASE1] 개인 | CPCO50001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO50002')">Footer | [CASE2] 사업자 | CPCO50002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO50003_P01')">로그인 | [lp] 비밀번호 변경안내 | CPCO50003_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO60001')">로그인 | 회원유형선택 | CPCO60001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO60002')">로그인 | [CASE1] 개인 | CPCO60002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO60003')"> | [CASE2] 사업자 | CPCO60003</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO60004_P01')">회원가입 | [lp]기가입고객_개인 | CPCO60004_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO60004_P02')">회원가입 | [lp]기가입고객_사업자 | CPCO60004_P02</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO60005')">회원가입 | [CASE1] 개인 | CPCO60005</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO60006')">회원가입 | [CASE2] 사업자 | CPCO60006</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO60007_P01')">회원가입 | [lp]약관동의상세보기 | CPCO60007_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO60008')">회원가입 | [CASE1] 개인 | CPCO60008</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO60009')">회원가입 | [CASE2] 사업자 | CPCO60009</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO60010_E01')">회원가입 | [이메일]등록완료 안내 메일/SMS발송 | CPCO60010_E01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO90001')">회원가입 |  | CPCO90001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO90002')">회원가입 | 성공 | CPCO90002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO90003')">회원가입 | 실패 | CPCO90003</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO70001')">아이디찾기 | [CASE1] 개인 | CPCO70001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO70002')">아이디찾기 | [CASE2] 사업자 | CPCO70002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO70003')">아이디찾기 | 비밀번호 변경신청 | CPCO70003</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO70004_E01')">비밀번호찾기 | 비밀번호 재설정 – 수신이메일  | CPCO70004_E01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO70004_P01')">비밀번호찾기 | [LP] 유효기간 종료 | CPCO70004_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO70004_P02')">비밀번호찾기 | [LP] URL 만료 | CPCO70004_P02</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO70005_N01')">비밀번호찾기 | 비밀번호 재설정 | CPCO70005_N01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCO/CPCO80002')">비밀번호찾기 | 로그아웃 안내 | CPCO80002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD10001')">비밀번호찾기 | 상품소개 | CPPD10001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD10002')">비밀번호찾기 | standard | CPPD10002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD10003')">기타 | GFV | CPPD10003</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD10004')">기타 | Balloon | CPPD10004</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD10005')">상품소개 | Only interest | CPPD10005</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD10006')">상품소개 | Finance lease | CPPD10006</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD10007')">상품소개 | Used car_Standard | CPPD10007</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD20001')">상품소개 |  | CPPD20001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD20002_P01')">상품소개 | [lp] 차량조회  | CPPD20002_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD20003')">상품소개 |  | CPPD20003</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD20004')">상품소개 |  | CPPD20004</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD20018')">견적 |  | CPPD20018</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD20005')">견적 |  | CPPD20005</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD20006_P01')">견적 | [lp] 차량 견적서출력 | CPPD20006_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD20007_T01')">견적 | [tab]standard | CPPD20007_T01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD20008_P01')">견적 | [lp] S_상품설명서 | CPPD20008_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD20009_T01')">견적 | [tab]GFV | CPPD20009_T01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD20010_P01')">견적 | [lp] G_상품설명서 | CPPD20010_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD20011_T01')">견적 | [tab]Ballon | CPPD20011_T01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD20012_P01')">견적 | [lp] B_상품설명서 | CPPD20012_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD20013_T01')">견적 | [tab]Only interest | CPPD20013_T01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD20014_P01')">견적 | [lp] D_상품설명서 | CPPD20014_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD20015_P01')">견적 | [lp] 상품정보차트 | CPPD20015_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD20019_P01')">견적 | [lp] 회원유형선택 | CPPD20019_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD20016_P01')">견적 | [lp] 비교견적 | CPPD20016_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD20017_P01')">견적 | [lp] 금융상품견적서 | CPPD20017_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPD/CPPD30001_P01')">견적 | [lp]딜러점찾기 | CPPD30001_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPA/CPPA10001')">견적 | 청구금액 없을 때 | CPPA10001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPA/CPPA10002')">견적 | 청구금액 있을 때 | CPPA10002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPA/CPPA10003')">견적 | 목록(개인) | CPPA10003</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPA/CPPA10009')">딜러점찾기 | 목록(사업자) | CPPA10009</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPA/CPPA10004')">청구금액 | 상세 | CPPA10004</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPA/CPPA10004_P01')">청구금액 | [lp] 청구금액결제 사전동의 | CPPA10004_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPA/CPPA10005_T01')">청구금액 | [tab]B-pay 입금예약 | CPPA10005_T01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPA/CPPA10006_T01')"> | [tab]입금전용(가상)계좌 | CPPA10006_T01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPA/CPPA10007_T01')">청구금액 | [tab] B-pay | CPPA10007_T01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPA/CPPA10008_T01')">청구금액 | [tab]입금전용(가상)계좌 | CPPA10008_T01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPA/CPPA20001')">청구금액 | 안내 | CPPA20001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPA/CPPA20002')">청구금액 | 목록(개인) | CPPA20002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPA/CPPA20009')">청구금액 | 목록(사업자) | CPPA20009</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPA/CPPA20003')">청구금액 | 상세 | CPPA20003</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPA/CPPA20004_P01')">중도상환 | [lp]중도상환결제 사전동의 | CPPA20004_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPA/CPPA20005_T01')">중도상환 | [tab]B-pay 입금예약 | CPPA20005_T01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPA/CPPA20006_T01')">중도상환 | [tab]입금전용(가상)계좌 | CPPA20006_T01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPA/CPPA20007_T01')">중도상환 | [tab] B-pay | CPPA20007_T01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPA/CPPA20008_T01')">중도상환 | [tab]입금전용(가상)계좌 | CPPA20008_T01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPA/CPPA30001_T01')">중도상환 | [tab]매입 시 예상비용(개인) | CPPA30001_T01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPA/CPPA30001_T02')">중도상환 | [tab]매입 시 예상비용(사업자) | CPPA30001_T02</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPA/CPPA30002_P01')">중도상환 | [lp]상세 | CPPA30002_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPA/CPPA30003_T01')">중도상환 | [tab]반납 시 예상비용(개인) | CPPA30003_T01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPA/CPPA30003_T02')">리스 중도해지 안내 | [tab]반납 시 예상비용(사업자) | CPPA30003_T02</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPA/CPPA30004_P01')">리스 중도해지 안내 | [lp]상세 | CPPA30004_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPA/CPPA30005_P01')">리스 중도해지 안내 | [lp]상담신청완료 | CPPA30005_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPLI/CPLI40001')">리스 중도해지 안내 | [CASE1] 상품이 없을 때 | CPLI40001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPLI/CPLI40002')">리스 중도해지 안내 | [CASE2] 상품이 있을 때-목록(개인) | CPLI40002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPLI/CPLI40004')">리스 중도해지 안내 | [CASE2] 상품이 있을 때-목록(사업자) | CPLI40004</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPLI/CPLI40003')">리스 중도해지 안내 | [CASE2] 상품이 있을 때-상세 | CPLI40003</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPLI/CPLI50001')">상품이용내역 | [CASE1] 대출 상품이 없을때 | CPLI50001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPLI/CPLI50002')">상품이용내역 | [CASE2] (개인) 대출 상품이 1건일때 | CPLI50002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPLI/CPLI50003')">상품이용내역 | [CASE3] (개인) 대출 상품이 2건이상일때 | CPLI50003</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPLI/CPLI50004')">상품이용내역 | [CASE4] 사업자-목록 | CPLI50004</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPLI/CPLI50005')">이용명세서 | [CASE4] 사업자-상세 | CPLI50005</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPLI/CPLI50006_P01')">이용명세서 | [lp]이용명세서 이메일발급 | CPLI50006_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPLI/CPLI60001')">이용명세서 | [CASE1] 결제내역 없을 때 | CPLI60001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPLI/CPLI60002')">이용명세서 | [CASE2] 결제내역 있을 때 | CPLI60002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPLI/CPLI60003_P01')">이용명세서 | [lp]인쇄 | CPLI60003_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPLI/CPLI60004_P01')">이용명세서 | [lp]이메일발송 | CPLI60004_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPLI/CPLI70001')">입금내역 | [CASE1] 상품이 없을 때 | CPLI70001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPLI/CPLI70002')">입금내역 | [CASE2] 검색결과 있을때  | CPLI70002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE10001')">입금내역 | [CASE1] 개인 | CPPE10001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE10002')">입금내역 | [CASE2] 사업자 | CPPE10002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE20001')">PPSR조회 | [CASE1] 개인 | CPPE20001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE20002')">PPSR조회 | [CASE2] 사업자 | CPPE20002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE20003')">회원정보 조회 | 성공 | CPPE20003</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE20004')">회원정보 조회 | 실패 | CPPE20004</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE70001')">회원정보 변경 | [STEP1] 정보등록 | CPPE70001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE70002')">회원정보 변경 | [STEP2] 이메일 발송 | CPPE70002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE70003_E01')">회원정보 변경 | [STEP3] 수신이메일/SMS | CPPE70003_E01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE70004_P01')">회원정보 변경 | [LP] 유효기간 종료 | CPPE70004_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE70004_P02')">차량담당자 등록 | [LP] URL 만료 | CPPE70004_P02</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE70005_N01')">차량담당자 등록 | [STEP4] 본인확인약관동의 | CPPE70005_N01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE70006_P01')">차량담당자 등록 | [LP] 5회오입력 진행불가 | CPPE70006_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE70007_N01')">차량담당자 등록 | [STEP5] 등록완료 | CPPE70007_N01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE70008_E01')">차량담당자 등록 | [STEP6] 등록완료 안내 메일/SMS발송 | CPPE70008_E01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE30001')">차량담당자 등록 | 신청 | CPPE30001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE30002')">차량담당자 등록 | 성공 | CPPE30002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE30003')">차량담당자 등록 | 실패 | CPPE30003</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE80001')">차량담당자 등록 | 고객정보 제공내역조회 | CPPE80001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE40001')">비밀번호 변경 | 개인정보이용제공조회 | CPPE40001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE40002')">비밀번호 변경 | 신청 | CPPE40002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE40003')">비밀번호 변경 | 성공 | CPPE40003</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE40004')">고객정보 제공내역조회 | 실패 | CPPE40004</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE50001')">개인정보열람/이용제공조회 | 신청 | CPPE50001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE50002')">개인정보열람/이용제공조회 | 성공 | CPPE50002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE50003')">개인정보열람/이용제공조회 | 실패 | CPPE50003</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE60001')">개인정보열람/이용제공조회 | [CASE1] 개인 | CPPE60001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE60002')">마케팅수신동의현황 | [CASE2] 사업자 | CPPE60002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE60003')">마케팅수신동의현황 | 성공 | CPPE60003</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPE/CPPE60004')">마케팅수신동의현황 | 실패 | CPPE60004</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPI/CPPI10001')">고객포털 탈퇴 | [CASE1] 개인 | CPPI10001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPI/CPPI10002')">고객포털 탈퇴 | [CASE2] 사업자 | CPPI10002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPI/CPPI10003')">고객포털 탈퇴 | [CASE3] 상품이없을때  | CPPI10003</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPI/CPPI20001')">고객포털 탈퇴 | [CASE1] 개인 | CPPI20001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPI/CPPI20002')">회원정보 변경이력 | [CASE2] 사업자 | CPPI20002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPI/CPPI20003_P01')">결제정보 조회 | [lp]자동이체안내 | CPPI20003_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPI/CPPI20004')">결제정보 조회 | 성공 | CPPI20004</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPI/CPPI20005')">결제정보 조회 | 실패 | CPPI20005</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPI/CPPI20006')">결제방법/결제계좌변경 | [CASE3] 상품이없을때  | CPPI20006</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPI/CPPI30001')">결제방법/결제계좌변경 | [CASE1] 개인 | CPPI30001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPI/CPPI30002')">결제방법/결제계좌변경 | [CASE2] 사업자 | CPPI30002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPI/CPPI30003')"> | 성공 | CPPI30003</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPI/CPPI30004')">결제방법/결제계좌변경 | 실패 | CPPI30004</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPI/CPPI30005')">결제방법/결제계좌변경 | [CASE3] 상품이없을때  | CPPI30005</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPI/CPPI40001')">결제방법/결제계좌변경 | [CASE1] 개인 | CPPI40001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPI/CPPI40002')">결제일 변경 | [CASE2] 사업자 | CPPI40002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPI/CPPI40003')">결제일 변경 | [CASE3] 상품이없을때  | CPPI40003</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPI/CPPI40004')"> | 성공 | CPPI40004</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPPI/CPPI40005')">결제일 변경 | 실패 | CPPI40005</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS10001')">결제일 변경 | 안내 | CPCS10001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS10002_T01')">결제일 변경 | 조회-[tab]종료된상품 | CPCS10002_T01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS10003_T01')">청구주기 변경 | 조회-[tab]이용중인상품 | CPCS10003_T01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS10004')"> | 이용중인상품 상세 | CPCS10004</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS10005')"> | 안내 - 본인인증포함 | CPCS10005</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS10006')"> | 조회 | CPCS10006</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS10007')">청구서 수령방법 변경 | 안내 - 본인인증포함 | CPCS10007</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS10008')">청구서 수령방법 변경 | 조회 | CPCS10008</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS10009')">청구서 수령방법 변경 | 안내 - 본인인증포함 | CPCS10009</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS10010')">청구서 수령방법 변경 | 조회 | CPCS10010</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS10015')">청구서 수령방법 변경 | 안내 | CPCS10015</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS10016')">결제일 알람 SMS서비스 변경 | 조회 | CPCS10016</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS10019')"> | 안내 - 본인인증포함 | CPCS10019</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS10020')"> | 조회 | CPCS10020</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS10021')"> | 안내 | CPCS10021</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS10022_T01')">결제정보 변경이력 | [tab]이용중인상품 | CPCS10022_T01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS10023_T01')">Document | [tab]종료된상품 | CPCS10023_T01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS20001')">Document | 안내  | CPCS20001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS20002')">Document | 정보확인(개인) | CPCS20002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS20003')">Document | 정보확인(법인) | CPCS20003</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS20007_P01')">Document | [lp]하드십 신청중 안내 | CPCS20007_P01</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS20004')">Document | 신청항목입력 및 사유입력 | CPCS20004</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS20005')">Document | 수입/지출내역 | CPCS20005</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS20006')">Document | 신청완료 | CPCS20006</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS30001')">Document | 안내 | CPCS30001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS30002')">Document | 신청 | CPCS30002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS30003')"> | 확인 | CPCS30003</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS30004')"> | 목록 | CPCS30004</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS40001')"> | 안내 | CPCS40001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS40002')"> | 신청 | CPCS40002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS40003')">Document | 확인 | CPCS40003</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS50001')">Document | FAQ | CPCS50001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS60001')"> |  | CPCS60001</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS60002')"> |  | CPCS60002</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS60003')">Document |  | CPCS60003</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS60004')">Document | 신청 | CPCS60004</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS60005')">Document | 성공 | CPCS60005</a></li>
+            <li><a href="#" onclick="loadContent('/static/html/pc/hyundai/page/CPCS/CPCS60006')">Document | 실패 | CPCS60006</a></li>
+            
+        </ul>
+      </div>
+      <div id="content">
+        <h1>Plase click the menu</h1>
+        <p>
+          This is the main content area of your web page. You can add your
+          content here.
+        </p>
+      </div>
+    </div>
+    <script src="/static/html/pc/hyundai/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function loadContent(page) {
+        var contentDiv = document.getElementById("content");
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            contentDiv.innerHTML = this.responseText;
+          } else { 
+          contentDiv.innerHTML = "<h1>Plase click the menu</h1>";
+            }
+        };
+        contentDiv.focus();
+        xhttp.open("GET", page + ".html", true);
+        xhttp.send();
+      }
+    </script>
+  </body>
+</html>

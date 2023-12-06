@@ -13,6 +13,7 @@ $gray02 : #d5d5d5;
 $gray03 : #999;
 $gray04 : #444;
 $black : #000;
+$font-size-xl : 32px;
 $font-size-h1 : 24px;
 $font-size-lg : 20px;
 $font-size-md : 17px;
@@ -46,7 +47,7 @@ $font-size-xs : 14px;
 .pt40{padding-top: 40px;}
 .pt60{padding-top: 60px;}
 .pt80{padding-top: 80px;}
-
+.pe16{padding-right:16px;}
 .pb20{padding-bottom: 20px;}
 .pb32{padding-bottom: 32px;}
 
@@ -65,19 +66,21 @@ $font-size-xs : 14px;
 .px30{padding-left: 30px;padding-right: 30px;}
 .px32{padding-left: 32px;padding-right: 32px;}
 .px36{padding-left: 32px;padding-right: 36px;}
-.px40{padding-left: 32px;padding-right: 36px;}
+.px40{padding-left: 40px;padding-right: 40px;}
 
 .mx-16{margin-left: -16px;margin-right: -16px;}
 .mx20{margin-left: 20px;margin-right: 20px;}
 .mx32{margin-left: 32px;margin-right: 32px;}
 .my20{margin-top: 20px;margin-bottom: 20px;}
+.my80{margin-top: 80px;margin-bottom: 80px;}
 
+.mt-40{margin-top: -40px;}
 .mt0{margin-top: 0px;}
 .mt10{margin-top: 10px;}
 .mt12{margin-top: 12px;}
 .mt20{margin-top: 20px;}
 .mt28{margin-top: 28px;}
-.mt32{margin-top: 32px;}
+.mt32{margin-top: 32px !important;}
 .mt36{margin-top: 36px;}
 .mt40{margin-top: 40px;}
 .mt50{margin-top: 50px;}
@@ -93,6 +96,8 @@ $font-size-xs : 14px;
 a{text-decoration: none;}
 .fw500{font-weight: 500;}
 
+.w60{width: 60px;}
+.w80{width: 80px;}
 .w92{width: 92px;}
 .w120{width: 120px;}
 .w200{width: 200px;}
@@ -112,6 +117,7 @@ a{text-decoration: none;}
 
 
 //폰트 사이즈
+.HCAU-txt-xl{color: $black;font-size: $font-size-xl;font-weight: 700;line-height: 1;}
 .HCAU-h1{color: $black;font-size: $font-size-h1;text-transform: uppercase;font-weight: 700;line-height: 1;}
 .HCAU-txt-lg{color: $black;font-size: $font-size-lg;font-weight: 700;}
 .HCAU-txt-md{color: $black;font-size: $font-size-md;}
@@ -124,8 +130,10 @@ a{text-decoration: none;}
 .gray02{color : $gray02}
 .gray03{color : $gray03}
 .gray04{color : $gray04}
-.black{color: $black}
+.black{color: $black !important}
 .point-red{color: $point-red}
+.point-color{color: $point}
+.primary-color{color: $primary}
 
 //header
 header{
@@ -143,9 +151,8 @@ footer{
 }
 
 //HCAU-title
-.HCAU-detail{padding: 12px 20px 20px;}
+.HCAU-detail{padding: 12px 20px 60px;position: relative;}
 .HCAU-title{padding: 12px 20px;}
-.HCAU-title .HCAU-h1{}
 .HCAU-title .HCAU-h1 + div{margin-top: 8px;}
 
 //title-area
@@ -173,6 +180,7 @@ footer{
         padding: 0 16px;
         line-height: 1;
         height: 33px;
+        .ico-btn{display: inline-block;vertical-align: middle;}
     }
     &.btn-smd{
         font-size: $font-size-sm;
@@ -217,10 +225,15 @@ footer{
             background: $gray03;
             color: $white;
         }
+        &.default{
+            background: $white;
+            color: $black;
+            border:1px solid $black;
+        }
         &:disabled{
             color: $gray03;
-            border-top:1px solid $gray03;
-            border-bottom:1px solid $gray03;
+            border-top:1px solid $gray01;
+            border-bottom:1px solid $gray01;
             background-color: $gray01;
         }
     }
@@ -238,6 +251,9 @@ footer{
         position: relative;
         overflow: hidden;
         text-overflow: ellipsis;
+        &.HCAU-form-invalid{
+            border-color: $point-red;
+        }
         &::after{
             // border-top-width: 5px;
             // border-right-width: 5px;
@@ -253,6 +269,25 @@ footer{
             height: 24px;
             background: url(/static/html/m/hyundai/img/ico_dropdown.svg) no-repeat 0 0;
         }
+        &:disabled{color: $gray03;}
+    }
+    &.btn-keyvi{
+        color: $white;
+        border-color: $white;
+        background: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(10px);
+    }
+}
+.HCAU-toggle-check{
+    label.HCAU-btn.btn-sm{
+        height: auto;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        height: 33px;
+    }
+    input:checked + label{
+        background: $black;
+        color: $white;
     }
 }
 .btn-md-wrap{
@@ -267,12 +302,24 @@ footer{
     bottom: 0;
     display: flex;
     gap: 1px;
+    background: $white;
     // margin-left: -20px;
     // margin-right: -20px;
     > button{
         flex-shrink: 1;
         flex-grow: 1;
         flex-basis: 50%;
+    }
+    &.g0{
+        gap:0;
+        .default{
+            border-left:0;
+            border-right:0;
+        }
+        .primary{
+            text-wrap: nowrap;
+        }
+    
     }
 }
 
@@ -319,6 +366,12 @@ footer{
     border-color : $gray02;
     box-shadow: none;
     border-radius: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.HCAU-form:placeholder-shown {
+    text-overflow: ellipsis;
 }
 textarea.HCAU-form.form-control{
     height: auto;
@@ -343,14 +396,23 @@ textarea.HCAU-form.form-control{
     background-color: $gray01;
     color: $black;
 }
+.HCAU-form.time-limit + .time-limit-num{
+    position: absolute;
+    right: 16px;
+    top: 12px;
+    font-size: 14px;
+    color: $point-red;
+}
 
 //calendar
 .calendar{
     position: relative;
     .HCAU-form.form-control{
         padding-right: 50px;
+        &:read-only + span > img{opacity:0.4}
     }
-    button{
+    span{
+        display: inline-block;
         position: absolute;
         right: 16px;
         top: 50%;
@@ -374,12 +436,12 @@ textarea.HCAU-form.form-control{
 }
 .HCAU-form.form-check-input[type=checkbox]{
     border-color: $gray02;
-    background-image: url(/static/img/bg/bg_input_check.svg);
+    background-image: url(/static/html/m/hyundai/img/bg_input_check.svg);
     background-size: 14px 14px;
     &:checked{
         background-color: $primary;
         border-color: $primary;
-        background-image: url(/static/img/bg/bg_input_check_on.svg);
+        background-image: url(/static/html/m/hyundai/img/bg_input_check_on.svg);
         background-size: 14px 14px;
     }
     &:disabled{
@@ -397,7 +459,7 @@ textarea.HCAU-form.form-control{
 .HCAU-form.form-check-input:checked[type=radio]{
     background-color: $white;
     border-color: $primary;
-    background-image: url(/static/img/bg/bg_input_radio_on.svg);
+    background-image: url(/static/html/m/hyundai/img/bg_input_radio_on.svg);
     background-size: 14px 14px;
 }
 .HCAU-form.time-limit{
@@ -444,7 +506,7 @@ textarea.HCAU-form.form-control{
     position: relative;
     font-size: $font-size-xs;
     padding-left: 10px;
-    margin-top: 4px;
+    margin-top: 8px;
     &:before{
         content:'';
         display: block;
@@ -513,6 +575,50 @@ textarea.HCAU-form.form-control{
 
 //modal
 .HCAU-modal{
+    .modal-dialog{
+        &.modal-mid{
+            margin: 20px;
+            .modal-content{
+                border: none;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            .modal-body{
+                padding: 40px 20px;
+            }
+            .btn-cta-wrap{
+                gap: 0;
+            }
+        }
+        &.modal-sm{
+            max-width: 240px;
+            margin-left: auto;
+            margin-right: auto;
+            .modal-content{
+                border: none;
+                border-radius: 0;
+            }
+            .modal-body{
+                padding: 28px 20px;
+            }
+            .btn-cta-wrap{
+                gap: 0;
+                .btn-cta{
+                    padding: 0 10px;
+                    min-height: 40px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    @media (min-width: 576px){
+        .modal-dialog{
+            &.modal-mid{
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }
     .modal-top{
         padding: 12px 20px;
         text-align: right;
@@ -531,7 +637,7 @@ textarea.HCAU-form.form-control{
         .HCAU-h1{text-transform: none;}
     }
     .modal-body{
-        padding: 12px 20px 20px;
+        padding: 12px 20px 60px;
     }
     .modal-footer{
         display: block;
@@ -558,7 +664,7 @@ textarea.HCAU-form.form-control{
             align-items: center;
             li{border:1px solid $white;}
             li a{
-                font-weight: 500;
+                font-weight: 700;
                 display: inline-block;
                 height: 24px;
                 line-height: 24px;
@@ -577,7 +683,7 @@ textarea.HCAU-form.form-control{
 //안내
 .g-notice{
     // border-top: 1px dashed $gray03;
-    padding: 40px 0;
+    padding: 40px 0 0;
     margin-top: 60px;
     dl{
         dt{
@@ -652,7 +758,7 @@ textarea.HCAU-form.form-control{
         position: relative;
         top: -1px;
     }
-    &.HCAU-txt-xs{font-size: $font-size-xs;font-weight: 500;}
+    &.HCAU-txt-xs{font-size: $font-size-xs;font-weight: 700;}
 }
 
 //table
@@ -666,7 +772,53 @@ textarea.HCAU-form.form-control{
         background: $secondary02;
         font-weight: 700;
     }
+    td{background: $white;}
     tr.table-active td{background:$point-red-rgb;}
+
+}
+
+//prd-keyvi
+.prd-keyvi{
+    // padding:0 20px 60px;
+    padding-top: 0;
+    position: relative;
+    overflow: hidden;
+    margin:0 auto;
+
+    .HCAU-flex-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.flex-column{
+        img{width:auto;}
+    }
+    img{width:100%}
+    .HCAU-bullet-list.black li{padding-left:10px}
+    .HCAU-txt-sm{
+            position:absolute;
+            text-align: center;
+            font-size:16px;
+        }
+
+    }
+    .HCAU-table.dot{
+        position: absolute;
+        padding:0 40px;
+        margin-top:-60px;
+        z-index: 2;
+        .table tr td{ padding-left:2rem}
+    }
+    .chart-wrap{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        img{padding:180px 20px 40px 20px;border: 1px solid $border-color;}
+        .HCAU-txt-lg{position:absolute;top:50px;}
+        .HCAU-txt-md{position:absolute;top:96px;font-size:15px;}
+        &.prd3{margin-top:280px}
+    }
 }
 
 // tooltip
@@ -710,23 +862,23 @@ textarea.HCAU-form.form-control{
 
 // step
 .HCAU-step{
-    width: 280px;
+    // width: 280px;
     margin: 0 auto;
     position: relative;
     .step-num{
         display: flex;
-        gap: 50px;
+        gap: 20px;
         justify-content: center;
         .step-item{
             position: relative;
             & + .step-item:before{
                 content: '';
                 display: inline-block;
-                width: 50px;
+                width: 20px;
                 height: 2px;
                 background: $gray02;
                 position: absolute;
-                left: -50px;
+                left: -20px;
                 top: 15px;
             }
             .num{
@@ -759,9 +911,9 @@ textarea.HCAU-form.form-control{
                     border-color: $primary;
                     color: $white;
                 }
-                img{
-                    display: block;
-                }
+                // img{
+                //     display: block;
+                // }
                 // .txt{
                 //     display: block;
                 // }
@@ -769,15 +921,16 @@ textarea.HCAU-form.form-control{
         }
     }
     .step-txt{
-        .HCAU-txt-sm{
+        .HCAU-txt-md{
             font-weight: 700;
             color: $primary;
+            text-align: center;
             display: none;
             &.active{display: block;}
         }
-        .HCAU-txt-sm:nth-child(1){text-align: left;}
-        .HCAU-txt-sm:nth-child(2){text-align: center;}
-        .HCAU-txt-sm:nth-child(3){text-align: right;}
+        // .HCAU-txt-sm:nth-child(1){text-align: left;}
+        // .HCAU-txt-sm:nth-child(2){text-align: center;}
+        // .HCAU-txt-sm:nth-child(3){text-align: right;}
     }
 
 }
@@ -792,6 +945,9 @@ textarea.HCAU-form.form-control{
     &.type01{color: $point-red;background: #FEEBEE;border: 1px solid $point-red}
     &.type02{color: $primary;background: #EBEFF3;border: 1px solid #3F6FA6;}
     &.type03{color: $point;background: #EBF5F9;border: 1px solid $point;}
+    &.type04{color: $primary;background: #EBEFF3;border: 1px solid #EBEFF3;min-width: 83px;text-align: center;font-weight: 700;}
+    &.type05{color: $point;background: #EBF5F9;border: 1px solid #EBF5F9;min-width: 83px;text-align: center;font-weight: 700;}
+    &.type06{color: $gray03;background: $gray01;border: 1px solid $gray01;min-width: 83px;text-align: center;font-weight: 700;}
 }
 
 // nodata
@@ -865,7 +1021,81 @@ textarea.HCAU-form.form-control{
         }
     }
 }
-.HCAU-tab-content{}
+.HCAU-tab-small{
+    display: flex;
+    li{
+        flex: 1 1 50%;
+        button{
+            width: 100%;
+            padding: 7px;
+            border:1px solid $gray02;
+            &.active{
+                border-color: $black;
+            }
+        }
+        &:first-child button{
+            border-radius: 4px 0px 0px 4px;
+        }
+        &:last-child button{
+            border-radius: 0px 4px 4px 0px;
+        }
+    }
+}
+
+// .HCAU-tab-wrap {
+// 	margin: 0 -20px;
+//     .HCAU-tab-inner {
+//         .HCAU-tab {
+//             white-space: nowrap;
+//             display: inline-flex;
+//             &:after {
+//                 display: none;
+//             }
+//             li {
+//                 flex: 0 0 auto;
+//                 &:first-child a {
+//                     margin-left: 20px;
+//                 }
+//                 a {
+//                     display: inline-block;
+//                     position: relative;
+//                     z-index: 1;
+//                     font-size: 16px;
+//                     color: #999;
+//                     font-weight: 700;
+//                     padding: 12px 36px;
+//                     &:after {
+//                         content: '';
+//                         display: block;
+//                         width: 100%;
+//                         height: 1px;
+//                         background: #999;
+//                         position: absolute;
+//                         left: 0;
+//                         bottom: 0;
+//                     }
+//                 }
+//                 &.active a:after {
+//                     height: 2px;
+//                     background: #000;
+//                 }
+//                 &.active a {
+//                     color: #000;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// .HCAU-tab-cont {
+// 	.HCAU-tab-cont-inner {
+// 		display: none;
+// 		&.current {
+// 			display: block;
+// 		}
+// 	}
+// }
+
 
 // request-step
 .request-step{
@@ -879,8 +1109,9 @@ textarea.HCAU-form.form-control{
             position: absolute;
             left: 50%;
             margin-left: -12px;
-            bottom: -8px;
+            bottom: -18px;
             transform: rotate(90deg);
+            z-index: 1;
         }
     }
     > div + div{margin-top: 12px;}
@@ -896,6 +1127,10 @@ textarea.HCAU-form.form-control{
     margin-left:-20px;
     margin-right: -20px;
     margin-bottom: -20px;
+    position: sticky;
+    left: 0;
+    bottom: 60px;
+    background: $white;
 }
 
 //search bar
@@ -952,4 +1187,338 @@ textarea.HCAU-form.form-control{
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.07);
     overflow: hidden;
     .bg-box{border-radius: 8px;}
+}
+
+// result msg
+.HCAU-result-msg{
+    padding: 80px 40px;
+    text-align: center;
+}
+.HCAU-result-msg + .g-notice{margin-top: 0;}
+
+// HCAU-tab-radio
+.HCAU-tab-btn{
+    display: flex;
+    > div{
+        flex: 1;
+        &:first-child label{border-radius:4px 0 0 4px}
+        &:last-child label{border-radius:0 4px 4px 0;}
+        label{
+            border-radius:0;
+            border-color: $border-color;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        input:checked + label{
+            background-color: $black;
+            border-color: $black;
+            color: $white;
+        }
+    }
+}
+.HCAU-tab-radio2{
+    display: flex;
+    > div{
+        flex: 1;
+        &:first-child label{border-radius:4px 0 0 4px}
+        &:last-child label{border-radius:0 4px 4px 0;}
+        label{
+            border-radius:0;
+            border-color: $border-color;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        input:checked + label{
+            background-color: $black;
+            border-color: $black;
+            color: $white;
+        }
+    }
+}
+//input-type file
+.filebox{
+    input[type="file"] {
+        position: absolute;
+        width: 0;
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 0;
+    }
+    .btn-clear{
+        position:absolute;
+        right:16px;
+        top:10px
+    }
+}
+//HCAU-terms
+.HCAU-terms{
+    & + .HCAU-terms{margin-top: 40px;}
+    .HCAU-terms-title{
+        padding-bottom: 12px;
+    }
+    .HCAU-terms-detail{
+        padding-top: 12px;
+    }
+}
+//HCAU-accordion
+.HCAU-accordion{
+    .accordion{
+        border-top: 1px solid $border-color;
+        .accordion-item{
+            border: none;
+            & + .accordion-item{
+                border-bottom: 1px solid $border-color;
+            }
+            .accordion-header{
+                .accordion-button{
+                    gap: 16px;
+                    border-radius: 0;
+                    padding: 24px 16px;
+                }
+                .accordion-button:not(.collapsed){
+                    background: none;
+                    .HCAU-txt-sm.mt-1{font-weight: 700;}
+                }
+                .accordion-button:focus{
+                    box-shadow: 0 0 0 2px rgba(0, 170, 210, 1);
+                }
+            }
+            .accordion-collapse{
+                .accordion-body{
+                    padding: 24px 16px;
+                    background: $gray01;
+                }
+            }
+        }
+    }
+}
+
+//HCAU-gnb
+.HCAU-modal.HCAU-gnb{
+    .modal-top{
+        text-align: left;
+    }
+    .modal-header{
+        padding: 24px 20px;
+    }
+    .modal-body{padding: 0;}
+}
+.HCAU-gnb-search{
+    position: relative;
+    input{
+        width: 100%;
+        box-sizing:border-box;
+        border: none;
+        padding: 20px;
+        padding-right: 60px;
+
+        font-size: $font-size-sm;
+        background: $secondary02;
+    }
+    .btn-search{
+        display: none;
+    }
+    &.empty{
+        .btn-search{
+            position: absolute;
+            right: 13px;
+            top: 8px;
+            padding: 10px;
+            display: block;
+        }
+    }
+    /* IE의 경우 */
+    input::-ms-clear, input::-ms-reveal {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 24px;
+        height: 24px;
+        background: url(/static/html/m/hyundai/img/ico_search_clear.svg) 0 0 no-repeat;
+        cursor:pointer;
+        position: absolute;
+        right: 20px;
+    } /* 크롬의 경우 */
+    input::-webkit-search-decoration,
+    input::-webkit-search-cancel-button,
+    input::-webkit-search-results-button,
+    input::-webkit-search-results-decoration {
+        /* opacity: 0; */
+        -webkit-appearance: none;
+        width: 24px;
+        height: 24px;
+        background: url(/static/html/m/hyundai/img/ico_search_clear.svg) 0 0 no-repeat;
+        cursor:pointer;
+        position: absolute;
+        right: 20px;
+    }
+}
+.HCAU-gnb-menu{
+    > .accordion{
+        > .accordion-item{
+            border: none;
+            border-radius: 0;
+            --bs-accordion-inner-border-radius: 0;
+            > .accordion-header{
+                button{
+                    color: $black;
+                    padding: 20px 32px;
+                    background: none;
+                    border: none;
+                    box-shadow:none;
+                    &:after{
+                        background: url(/static/html/m/hyundai/img/ico_gnb_close.svg);
+                    }
+                    &.collapsed{
+                        border: none;
+                        &:after{
+                            background: url(/static/html/m/hyundai/img/ico_gnb_open.svg);
+                        }
+                    }
+                }
+            }
+            > .accordion-collapse{
+                // background: red;
+                // border: 1px solid #000;
+                padding: 0 32px 20px;
+                .accordion-body{
+                    padding: 0;
+                    .accordion{
+                        .accordion-item{
+                            border: none;
+                            border-radius: 0;
+                            --bs-accordion-inner-border-radius: 0;
+                            .accordion-header{
+                                border-bottom:1px solid $gray02;
+                                button{
+                                    padding: 16px 0;
+                                    background: none;
+                                    box-shadow:none;
+                                    &:after{
+                                        background: url(/static/html/m/hyundai/img/ico_gnb_close.svg);
+                                    }
+                                    &.collapsed{
+                                        border: none;
+                                        &:after{
+                                            background: url(/static/html/m/hyundai/img/ico_gnb_open.svg);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .HCAU-gnb-depth3{
+            li{
+                border-bottom:1px solid $gray02;
+                .HCAU-txt-sm{
+                    display: block;
+                    background: $gray01;
+                    border: none;
+                    padding: 16px;
+                }
+            }
+        }
+    }
+}
+.modal-search{
+    button{
+        display: block;
+        width: 100%;
+        text-align: left;
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        padding: 20px;
+        background: $secondary02;
+
+    }
+}
+.terms-paging{
+    border: 2px solid $gray02;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 6px 20px;
+    border-radius: 30px
+}
+.btn-back-to-top {
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    border-radius:100%;
+    background: $black;
+    color: $white;
+    font-size: 14px;
+    font-weight: bold;
+    position: sticky;
+    left: 100%;
+    margin-right: 20px;
+    bottom: 80px;
+    margin-bottom: 20px;
+    display: none;
+}
+.select-membership{
+    a.border-box{
+        padding: 59px 0;
+        text-decoration: none;
+        border-radius: 4px;
+        flex: 1 1 100%;
+        // img{width: 60px;}
+        img.hover{display: none;}
+        span{
+            display: block;
+        }
+        &:hover{
+            border-color: $point;
+            img{
+                display: none;
+                &.hover{display: inline-block;}
+            }
+            span{color: $point;}
+        }
+    }
+}
+.HCAU-prd{
+    display:flex;margin:0 auto;
+    ul{
+        gap:25px;
+        li{
+            width:50%;float:left;
+            &:nth-child(odd)  .card{margin-right:12.5px}
+            &:nth-child(even) .card{margin-left:12.5px}
+            .card{
+            border:2px solid transparent;
+            &.active,&:hover{border:2px solid #00aad2;}
+                .card-body{padding:0;
+                    span{
+                        display:flex;padding:21px 0 19px;
+                        img{max-width:100%}
+                    }
+                    .HCAU-txt-md{font-weight: 700;text-align: center;margin-top:15px;margin-bottom:8px}
+                    .HCAU-txt-sm{text-align:center;padding-bottom:20px;line-height:18px}
+                }
+            }
+        }
+    }
+}
+
+.border-bottom.black{border-color:#000 !important;}
+.postcode.select{
+    .inner{
+        border-top:1px solid $border-color;
+        border-bottom:1px solid $border-color;
+        margin-left:-16px;
+        margin-right:-16px;
+        padding:12px 16px;
+        gap:12px
+
+    }
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width" />
     <title>HCAU-PUBL</title>
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/html/m/kia/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/static/html/m/kia/css/styles.css" />
     <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico" />
 </head>
@@ -25,10 +25,10 @@
                 <!-- HCAU-detail -->
                 <div class="HCAU-detail">
                     <div class="calendar">
-                        <input type="text" class="form-control HCAU-form" id="form-txt02" aria-describedby="" value="17/05/2023" />
-                        <button type="button">
-                            <img src="/static/html/m/kia/img/ico_calendar.svg" alt="" />
-                        </button>
+                        <input type="text" class="form-control HCAU-form" id="form-txt02" aria-describedby="" value="April 2023" />
+                        <span>
+                            <img src="/static/html/m/kia/img/ico_calendar.svg" alt="">
+                        </span>
                     </div>
                     <div class="mt20">
                         <div class="item card-list border-box px-3 pt-3 pb20">
@@ -67,19 +67,19 @@
                             </div>
                             <div class="mt20">
                                 <div class="d-flex justify-content-between">
-                                    <span class="HCAU-txt-sm">Payment Cycle</span>
+                                    <span class="HCAU-txt-sm">Frequency</span>
                                     <span class="HCAU-txt-sm text-end fw-bold">Monthly</span>
                                 </div>
                                 <div class="d-flex justify-content-between mt-3">
-                                    <span class="HCAU-txt-sm">Payment Date</span>
+                                    <span class="HCAU-txt-sm">Due date</span>
                                     <span class="HCAU-txt-sm text-end fw-bold">11th of every month</span>
                                 </div>
                                 <div class="d-flex justify-content-between mt-3">
-                                    <span class="HCAU-txt-sm">Payment bank</span>
+                                    <span class="HCAU-txt-sm">Bank</span>
                                     <span class="HCAU-txt-sm text-end fw-bold">ANZ</span>
                                 </div>
                                 <div class="d-flex justify-content-between mt-3">
-                                    <span class="HCAU-txt-sm">Payment number</span>
+                                    <span class="HCAU-txt-sm">Account number</span>
                                     <span class="HCAU-txt-sm text-end fw-bold">2635****9</span>
                                 </div>
                             </div>
@@ -210,55 +210,30 @@
                     <div class="g-notice border-top-dashed">
                         <dl>
                             <dt>
-                                <span class="ico-gnotice"><img src="/static/html/m/kia/img/ico_notice.svg" alt="" /></span>
+                                <span class="ico-gnotice"><img src="/static/html/m/kia/img/ico_notice.svg" alt=""></span>
                                 <span class="HCAU-txt-sm">Guidence Notice</span>
                             </dt>
                             <dd>
                                 <ul class="HCAU-bullet-list">
-                                    <li class="HCAU-txt-sm">
-                                        Only usage statements from the last
-                                        5 years can be viewed.
-                                    </li>
-                                    <li class="HCAU-txt-sm">
-                                        The billing amount will be confirmed
-                                        3 days prior to the payment date and
-                                        a usage statement will be prepared.
-                                    </li>
-                                    <li class="HCAU-txt-sm">
-                                        When a statement is issued, the
-                                        amount to be paid at the time of
-                                        inquiry will be listed and sent via
-                                        email.
-                                    </li>
-                                    <li class="HCAU-txt-sm">
-                                        You can check the detailed payment
-                                        status of the billed amount in the
-                                        statement of use through the product
-                                        usage details.
-                                        <a href="#none" class="link HCAU-txt-sm">Product usage details</a>
-                                    </li>
+                                    <li class="HCAU-txt-sm">Billing statements over the last five years are available only.</li>
+                                    <li class="HCAU-txt-sm">Your amount due will be determined three days before your payment due date and a billing statement will be created.</li>
+                                    <li class="HCAU-txt-sm">When you request a statement, the amount due at the time of your request will appear on the statement and the statement will be sent to you via email.</li>
+                                    <li class="HCAU-txt-sm">To check payment status of the amounts billed on the statement, please go to Product details.<br><a href="" class="link ms-0">Account Information</a></li>
                                 </ul>
                             </dd>
                         </dl>
                     </div>
-                    <div class="mb40">
-                        <div class="border-box edge p-4 py20">
-                            <div class="HCAU-txt-sm">
-                                To pay the bill in advance
-                            </div>
+                    <div>
+                        <div class="border-box edge px-4 py20">
+                            <div class="HCAU-txt-sm">Do you want to make a payment before your due date?</div>
                             <div class="mt12">
-                                <a href="" class="link HCAU-txt-sm">Make a payment
-                                </a>
+                                <a href="" class="link HCAU-txt-sm">Make a payment </a>
                             </div>
                         </div>
-                        <div class="border-box edge p-4 py20 mt12">
-                            <div class="HCAU-txt-sm">
-                                To repay in full or in part for each product
-                                you are using
-                            </div>
+                        <div class="border-box edge px-4 py20 mt12">
+                            <div class="HCAU-txt-sm">Do you want to pay off all or part of your loan early?</div>
                             <div class="mt12">
-                                <a href="" class="link HCAU-txt-sm">Pay off early
-                                </a>
+                                <a href="" class="link HCAU-txt-sm">Pay off early </a>
                             </div>
                         </div>
                     </div>
@@ -277,8 +252,8 @@
 
         <script type="text/javascript" src="/static/html/m/kia/js/Footer.js"></script>
     </div>
-    <!-- <script src="/static/js/jquery-3.3.1.min.js"></script> -->
-    <script src="/static/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="/static/html/m/kia/js/jquery-3.3.1.min.js"></script> -->
+    <script src="/static/html/m/kia/js/bootstrap.bundle.min.js"></script>
     <!-- <script type="module" src="js/main.js"></script> -->
 </body>
 

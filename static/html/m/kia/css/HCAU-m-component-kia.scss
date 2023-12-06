@@ -13,6 +13,7 @@ $gray02: #d5d5d5;
 $gray03: #697279;
 $gray04: #37434c;
 $black: #05141f;
+$font-size-xl: 30px;
 $font-size-h1: 22px;
 $font-size-lg: 19px;
 $font-size-md: 16px;
@@ -162,8 +163,8 @@ $font-size-xs: 13px;
     padding-right: 36px;
 }
 .px40 {
-    padding-left: 32px;
-    padding-right: 36px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .mx-16 {
@@ -182,7 +183,9 @@ $font-size-xs: 13px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.my80{margin-top: 80px;margin-bottom: 80px;}
 
+.mt-40{margin-top: -40px;}
 .mt0 {
     margin-top: 0px;
 }
@@ -199,7 +202,7 @@ $font-size-xs: 13px;
     margin-top: 28px;
 }
 .mt32 {
-    margin-top: 32px;
+    margin-top: 32px !important;
 }
 .mt36 {
     margin-top: 36px;
@@ -240,6 +243,8 @@ a {
     font-weight: 500;
 }
 
+.w60{width: 60px;}
+.w80{width: 80px;}
 .w92 {
     width: 92px;
 }
@@ -288,53 +293,23 @@ a {
 }
 
 //폰트 사이즈
-.HCAU-h1 {
-    color: $black;
-    font-size: $font-size-h1;
-    text-transform: uppercase;
-    font-weight: 700;
-    line-height: 1;
-}
-.HCAU-txt-lg {
-    color: $black;
-    font-size: $font-size-lg;
-    font-weight: 700;
-}
-.HCAU-txt-md {
-    color: $black;
-    font-size: $font-size-md;
-}
-.HCAU-txt-sm {
-    color: $black;
-    font-size: $font-size-sm;
-}
-.HCAU-txt-xs {
-    color: $black;
-    font-size: $font-size-xs;
-}
+.HCAU-txt-xl{color: $black;font-size: $font-size-xl;font-weight: 700;line-height: 1;}
+.HCAU-h1{color: $black;font-size: $font-size-h1;text-transform: uppercase;font-weight: 700;line-height: 1;}
+.HCAU-txt-lg{color: $black;font-size: $font-size-lg;font-weight: 700;}
+.HCAU-txt-md{color: $black;font-size: $font-size-md;}
+.HCAU-txt-sm{color: $black;font-size: $font-size-sm;}
+.HCAU-txt-xs{color: $black;font-size: $font-size-xs;}
 
 //폰트 컬러
-.white {
-    color: $white;
-}
-.gray01 {
-    color: $gray01;
-}
-.gray02 {
-    color: $gray02;
-}
-.gray03 {
-    color: $gray03;
-}
-.gray04 {
-    color: $gray04;
-}
-.black {
-    color: $black;
-}
-.point-red {
-    color: $point-red;
-}
+.white{color: $white}
+.gray01{color : $gray01}
+.gray02{color : $gray02}
+.gray03{color : $gray03}
+.gray04{color : $gray04}
+.black{color: $black !important}
+.point-red{color: $point-red}
+.point-color{color: $point}
+.primary-color{color: $primary}
 
 //header
 header {
@@ -356,12 +331,11 @@ footer {
 
 //HCAU-title
 .HCAU-detail {
-    padding: 12px 20px 20px;
+    padding: 12px 20px 60px;
+    position: relative;
 }
 .HCAU-title {
     padding: 12px 20px;
-}
-.HCAU-title .HCAU-h1 {
 }
 .HCAU-title .HCAU-h1 + div {
     margin-top: 8px;
@@ -391,6 +365,7 @@ footer {
         padding: 0 16px;
         line-height: 1;
         height: 33px;
+        .ico-btn{display: inline-block;vertical-align: middle;}
     }
     &.btn-smd {
         font-size: $font-size-sm;
@@ -435,10 +410,15 @@ footer {
             background: $gray03;
             color: $white;
         }
+        &.default{
+            background: $white;
+            color: $black;
+            border:1px solid $black;
+        }
         &:disabled {
             color: $gray03;
-            border-top: 1px solid $gray03;
-            border-bottom: 1px solid $gray03;
+            border-top: 1px solid $gray01;
+            border-bottom: 1px solid $gray01;
             background-color: $gray01;
         }
     }
@@ -458,6 +438,9 @@ footer {
         position: relative;
         overflow: hidden;
         text-overflow: ellipsis;
+        &.HCAU-form-invalid{
+            border-color: $point-red;
+        }
         &::after {
             // border-top-width: 5px;
             // border-right-width: 5px;
@@ -475,6 +458,24 @@ footer {
                 0;
         }
     }
+    &.btn-keyvi{
+        color: $white;
+        border-color: $white;
+        background: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(10px);
+    }
+}
+.HCAU-toggle-check{
+    label.HCAU-btn.btn-sm{
+        height: auto;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        height: 33px;
+    }
+    input:checked + label{
+        background: $black;
+        color: $white;
+    }
 }
 .btn-md-wrap {
     display: flex;
@@ -488,6 +489,7 @@ footer {
     bottom: 0;
     display: flex;
     gap: 1px;
+    background: $white;
     // margin-left: -20px;
     // margin-right: -20px;
     > button{
@@ -545,6 +547,12 @@ footer {
     border-color: $gray02;
     box-shadow: none;
     border-radius: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.HCAU-form:placeholder-shown {
+    text-overflow: ellipsis;
 }
 textarea.HCAU-form.form-control {
     height: auto;
@@ -569,14 +577,23 @@ textarea.HCAU-form.form-control {
     background-color: $gray01;
     color: $black;
 }
+.HCAU-form.time-limit + .time-limit-num{
+    position: absolute;
+    right: 16px;
+    top: 12px;
+    font-size: 14px;
+    color: $point-red;
+}
 
 //calendar
 .calendar {
     position: relative;
     .HCAU-form.form-control {
         padding-right: 50px;
+        &:read-only + span > img{opacity:0.4}
     }
-    button {
+    span {
+        display: inline-block;
         position: absolute;
         right: 16px;
         top: 50%;
@@ -590,7 +607,7 @@ textarea.HCAU-form.form-control {
     height: 20px;
     // box-shadow: none;
     border-color: $border-color;
-    // margin-top: 0;
+    margin-top: 2px;
     & + label {
         // vertical-align: bottom;
         font-size: $font-size-sm;
@@ -600,12 +617,12 @@ textarea.HCAU-form.form-control {
 }
 .HCAU-form.form-check-input[type="checkbox"] {
     border-color: $gray02;
-    background-image: url(/static/html/kia/img/bg/bg_input_check.svg);
+    background-image: url(/static/html/m/kia/img/bg_input_check.svg);
     background-size: 14px 14px;
     &:checked {
         background-color: $primary;
         border-color: $primary;
-        background-image: url(/static/html/kia/img/bg/bg_input_check_on.svg);
+        background-image: url(/static/html/m/kia/img/bg_input_check_on.svg);
         background-size: 14px 14px;
     }
     &:disabled {
@@ -623,7 +640,7 @@ textarea.HCAU-form.form-control {
 .HCAU-form.form-check-input:checked[type="radio"] {
     background-color: $white;
     border-color: $primary;
-    background-image: url(/static/html/kia/img/bg/bg_input_radio_on.svg);
+    background-image: url(/static/html/m/kia/img/bg_input_radio_on.svg);
     background-size: 14px 14px;
 }
 .HCAU-form.time-limit {
@@ -670,7 +687,7 @@ textarea.HCAU-form.form-control {
     position: relative;
     font-size: $font-size-xs;
     padding-left: 10px;
-    margin-top: 4px;
+    margin-top: 8px;
     &:before {
         content: "";
         display: block;
@@ -679,7 +696,7 @@ textarea.HCAU-form.form-control {
         border-radius: 2px;
         position: absolute;
         left: 0;
-        top: 9px;
+        top: 7px;
     }
 }
 .valid-feedback,
@@ -739,6 +756,50 @@ textarea.HCAU-form.form-control {
 
 //modal
 .HCAU-modal {
+    .modal-dialog{
+        &.modal-mid{
+            margin: 20px;
+            .modal-content{
+                border: none;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            .modal-body{
+                padding: 40px 20px;
+            }
+            .btn-cta-wrap{
+                gap: 0;
+            }
+        }
+        &.modal-sm{
+            max-width: 240px;
+            margin-left: auto;
+            margin-right: auto;
+            .modal-content{
+                border: none;
+                border-radius: 0;
+            }
+            .modal-body{
+                padding: 28px 20px;
+            }
+            .btn-cta-wrap{
+                gap: 0;
+                .btn-cta{
+                    padding: 0 10px;
+                    min-height: 40px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    @media (min-width: 576px){
+        .modal-dialog{
+            &.modal-mid{
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }
     .modal-top {
         padding: 12px 20px;
         text-align: right;
@@ -759,7 +820,7 @@ textarea.HCAU-form.form-control {
         }
     }
     .modal-body {
-        padding: 12px 20px 20px;
+        padding: 12px 20px 60px;
     }
     .modal-footer {
         display: block;
@@ -790,7 +851,7 @@ textarea.HCAU-form.form-control {
                 border: 1px solid $white;
             }
             li a {
-                font-weight: 500;
+                font-weight: 700;
                 display: inline-block;
                 height: 24px;
                 line-height: 24px;
@@ -808,7 +869,7 @@ textarea.HCAU-form.form-control {
 //안내
 .g-notice {
     // border-top: 1px dashed $gray03;
-    padding: 40px 0;
+    padding: 40px 0 0;
     margin-top: 60px;
     dl {
         dt {
@@ -852,7 +913,7 @@ textarea.HCAU-form.form-control {
             background: $gray03;
             position: absolute;
             left: 0;
-            top: 9px;
+            top: 7px;
         }
         .link {
             margin-left: 4px;
@@ -901,7 +962,7 @@ textarea.HCAU-form.form-control {
     }
     &.HCAU-txt-xs {
         font-size: $font-size-xs;
-        font-weight: 500;
+        font-weight: 700;
     }
 }
 
@@ -917,11 +978,54 @@ textarea.HCAU-form.form-control {
         background: $secondary02;
         font-weight: 700;
     }
+    td{background: $white;}
     tr.table-active td {
         background: $point-red-rgb;
     }
 }
+//prd-keyvi
+.prd-keyvi{
+    // padding:0 20px 60px;
+    padding-top: 0;
+    position: relative;
+    overflow: hidden;
+    margin:0 auto;
 
+    .HCAU-flex-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.flex-column{
+        img{width:auto;}
+    }
+    img{width:100%}
+    .HCAU-bullet-list.black li{padding-left:10px}
+    .HCAU-txt-sm{
+            position:absolute;
+            text-align: center;
+            font-size:16px;
+        }
+
+    }
+    .HCAU-table.dot{
+        position: absolute;
+        padding:0 40px;
+        margin-top:-60px;
+        z-index: 2;
+        .table tr td{ padding-left:2rem}
+    }
+    .chart-wrap{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        img{padding:180px 20px 40px 20px;border: 1px solid $border-color;}
+        .HCAU-txt-lg{position:absolute;top:50px;}
+        .HCAU-txt-md{position:absolute;top:96px;font-size:15px;}
+        &.prd3{margin-top:280px}
+    }
+}
 // tooltip
 .HCAU-tooltip {
     display: inline-block;
@@ -963,27 +1067,27 @@ textarea.HCAU-form.form-control {
 }
 
 // step
-.HCAU-step {
-    width: 280px;
+.HCAU-step{
+    // width: 280px;
     margin: 0 auto;
     position: relative;
-    .step-num {
+    .step-num{
         display: flex;
-        gap: 50px;
+        gap: 20px;
         justify-content: center;
-        .step-item {
+        .step-item{
             position: relative;
-            & + .step-item:before {
-                content: "";
+            & + .step-item:before{
+                content: '';
                 display: inline-block;
-                width: 50px;
+                width: 20px;
                 height: 2px;
                 background: $gray02;
                 position: absolute;
-                left: -50px;
+                left: -20px;
                 top: 15px;
             }
-            .num {
+            .num{
                 width: 32px;
                 height: 32px;
                 border: 2px solid $gray02;
@@ -994,7 +1098,7 @@ textarea.HCAU-form.form-control {
                 align-items: center;
                 justify-content: center;
             }
-            img {
+            img{
                 display: none;
                 margin-top: 4px;
                 margin-left: auto;
@@ -1007,40 +1111,34 @@ textarea.HCAU-form.form-control {
             //     white-space: nowrap;
             //     display: none;
             // }
-            &.active {
-                .num {
+            &.active{
+                .num{
                     background: $primary;
                     border-color: $primary;
                     color: $white;
                 }
-                img {
-                    display: block;
-                }
+                // img{
+                //     display: block;
+                // }
                 // .txt{
                 //     display: block;
                 // }
             }
         }
     }
-    .step-txt {
-        .HCAU-txt-sm {
+    .step-txt{
+        .HCAU-txt-md{
             font-weight: 700;
             color: $primary;
-            display: none;
-            &.active {
-                display: block;
-            }
-        }
-        .HCAU-txt-sm:nth-child(1) {
-            text-align: left;
-        }
-        .HCAU-txt-sm:nth-child(2) {
             text-align: center;
+            display: none;
+            &.active{display: block;}
         }
-        .HCAU-txt-sm:nth-child(3) {
-            text-align: right;
-        }
+        // .HCAU-txt-sm:nth-child(1){text-align: left;}
+        // .HCAU-txt-sm:nth-child(2){text-align: center;}
+        // .HCAU-txt-sm:nth-child(3){text-align: right;}
     }
+
 }
 
 //badge
@@ -1065,6 +1163,9 @@ textarea.HCAU-form.form-control {
         background: #EAF6E3;
         border: 1px solid #43B100;
     }
+    &.type04{color: $primary;background: #EBEFF3;border: 1px solid #EBEFF3;min-width: 83px;text-align: center;font-weight: 700;}
+    &.type05{color: $point;background: #EBF5F9;border: 1px solid #EBF5F9;min-width: 83px;text-align: center;font-weight: 700;}
+    &.type06{color: $gray03;background: $gray01;border: 1px solid $gray01;min-width: 83px;text-align: center;font-weight: 700;}
 }
 
 // nodata
@@ -1144,7 +1245,25 @@ textarea.HCAU-form.form-control {
         }
     }
 }
-.HCAU-tab-content {
+.HCAU-tab-small{
+    display: flex;
+    li{
+        flex: 1 1 50%;
+        button{
+            width: 100%;
+            padding: 7px;
+            border:1px solid $gray02;
+            &.active{
+                border-color: $black;
+            }
+        }
+        &:first-child button{
+            border-radius: 4px 0px 0px 4px;
+        }
+        &:last-child button{
+            border-radius: 0px 4px 4px 0px;
+        }
+    }
 }
 
 // request-step
@@ -1155,12 +1274,13 @@ textarea.HCAU-form.form-control {
             display: inline-block;
             border-bottom: 1px solid $black;
         }
-        img {
+        img{
             position: absolute;
             left: 50%;
             margin-left: -12px;
-            bottom: -8px;
+            bottom: -18px;
             transform: rotate(90deg);
+            z-index: 1;
         }
     }
     > div + div {
@@ -1180,6 +1300,10 @@ textarea.HCAU-form.form-control {
     margin-left: -20px;
     margin-right: -20px;
     margin-bottom: -20px;
+    position: sticky;
+    left: 0;
+    bottom: 60px;
+    background: $white;
 }
 
 //search bar
@@ -1239,5 +1363,298 @@ textarea.HCAU-form.form-control {
     overflow: hidden;
     .bg-box {
         border-radius: 8px;
+    }
+}
+
+// result msg
+.HCAU-result-msg{
+    padding: 80px 40px;
+    text-align: center;
+}
+.HCAU-result-msg + .g-notice{margin-top: 0;}
+
+// HCAU-tab-radio
+.HCAU-tab-radio{
+    .d-flex{
+        border-radius:4px;
+        overflow: hidden;
+        li:first-child label{border-radius:4px 0 0 4px}
+        li:last-child label{border-radius:0 4px 4px 0;}
+    }
+    .flex-fill{flex:1 !important;}
+    .HCAU-btn.btn-sm{
+        height: auto;
+        padding:8px 16px;
+        border-color: $border-color;
+        width: 100%;
+    }
+    input:checked + .HCAU-btn.btn-sm{
+        border-color: $black;
+    }
+}
+.HCAU-tab-radio2{
+    display: flex;
+    > div{
+        flex: 1;
+        &:first-child label{border-radius:4px 0 0 4px}
+        &:last-child label{border-radius:0 4px 4px 0;}
+        label{
+            border-radius:0;
+            border-color: $border-color;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        input:checked + label{
+            background-color: $black;
+            border-color: $black;
+            color: $white;
+        }
+    }
+}
+//input-type file
+.filebox{
+    input[type="file"] {
+        position: absolute;
+        width: 0;
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 0;
+    }
+    .btn-clear{
+        position:absolute;
+        right:16px;
+        top:10px
+    }
+}
+//HCAU-terms
+.HCAU-terms{
+    & + .HCAU-terms{margin-top: 40px;}
+    .HCAU-terms-title{
+        padding-bottom: 12px;
+    }
+    .HCAU-terms-detail{
+        padding-top: 12px;
+    }
+}
+//HCAU-accordion
+.HCAU-accordion{
+    .accordion{
+        border-top: 1px solid $border-color;
+        .accordion-item{
+            border: none;
+            & + .accordion-item{
+                border-bottom: 1px solid $border-color;
+            }
+            .accordion-header{
+                .accordion-button{
+                    gap: 16px;
+                    border-radius: 0;
+                    padding: 24px 16px;
+                }
+                .accordion-button:not(.collapsed){
+                    background: none;
+                    .HCAU-txt-sm.mt-1{font-weight: 700;}
+                }
+                .accordion-button:focus{
+                    box-shadow: 0 0 0 2px rgba(93, 125, 43, 1);
+                }
+            }
+            .accordion-collapse{
+                .accordion-body{
+                    padding: 24px 16px;
+                    background: $gray01;
+                }
+            }
+        }
+    }
+}
+//HCAU-gnb
+.HCAU-modal.HCAU-gnb{
+    .modal-top{
+        text-align: left;
+    }
+    .modal-header{
+        padding: 24px 20px;
+    }
+    .modal-body{padding: 0;}
+}
+.HCAU-gnb-search{
+    position: relative;
+    input{
+        width: 100%;
+        box-sizing:border-box;
+        border: none;
+        padding: 20px;
+        padding-right: 60px;
+
+        font-size: $font-size-sm;
+        background: $secondary02;
+    }
+    .btn-search{
+        display: none;
+    }
+    &.empty{
+        .btn-search{
+            position: absolute;
+            right: 13px;
+            top: 8px;
+            padding: 10px;
+            display: block;
+        }
+    }
+    /* IE의 경우 */
+    input::-ms-clear, input::-ms-reveal {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 24px;
+        height: 24px;
+        background: url(/static/html/m/hyundai/img/ico_search_clear.svg) 0 0 no-repeat;
+        cursor:pointer;
+        position: absolute;
+        right: 20px;
+    } /* 크롬의 경우 */
+    input::-webkit-search-decoration,
+    input::-webkit-search-cancel-button,
+    input::-webkit-search-results-button,
+    input::-webkit-search-results-decoration {
+        /* opacity: 0; */
+        -webkit-appearance: none;
+        width: 24px;
+        height: 24px;
+        background: url(/static/html/m/hyundai/img/ico_search_clear.svg) 0 0 no-repeat;
+        cursor:pointer;
+        position: absolute;
+        right: 20px;
+    }
+}
+.HCAU-gnb-menu{
+    > .accordion{
+        > .accordion-item{
+            border: none;
+            border-radius: 0;
+            --bs-accordion-inner-border-radius: 0;
+            > .accordion-header{
+                button{
+                    color: $black;
+                    padding: 20px 32px;
+                    background: none;
+                    border: none;
+                    box-shadow:none;
+                    &:after{
+                        background: url(/static/html/m/hyundai/img/ico_gnb_close.svg);
+                    }
+                    &.collapsed{
+                        border: none;
+                        &:after{
+                            background: url(/static/html/m/hyundai/img/ico_gnb_open.svg);
+                        }
+                    }
+                }
+            }
+            > .accordion-collapse{
+                // background: red;
+                // border: 1px solid #000;
+                padding: 0 32px 20px;
+                .accordion-body{
+                    padding: 0;
+                    .accordion{
+                        .accordion-item{
+                            border: none;
+                            border-radius: 0;
+                            --bs-accordion-inner-border-radius: 0;
+                            .accordion-header{
+                                border-bottom:1px solid $gray02;
+                                button{
+                                    padding: 16px 0;
+                                    background: none;
+                                    box-shadow:none;
+                                    &:after{
+                                        background: url(/static/html/m/hyundai/img/ico_gnb_close.svg);
+                                    }
+                                    &.collapsed{
+                                        border: none;
+                                        &:after{
+                                            background: url(/static/html/m/hyundai/img/ico_gnb_open.svg);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .HCAU-gnb-depth3{
+            li{
+                border-bottom:1px solid $gray02;
+                .HCAU-txt-sm{
+                    display: block;
+                    background: $gray01;
+                    border: none;
+                    padding: 16px;
+                }
+            }
+        }
+    }
+}
+.modal-search{
+    button{
+        display: block;
+        width: 100%;
+        text-align: left;
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        padding: 20px;
+        background: $secondary02;
+
+    }
+}
+.terms-paging{
+    border: 2px solid $gray02;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 6px 20px;
+    border-radius: 30px
+}
+.btn-back-to-top {
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    border-radius:100%;
+    background: $black;
+    color: $white;
+    font-size: 14px;
+    font-weight: bold;
+    position: sticky;
+    left: 100%;
+    margin-right: 20px;
+    bottom: 80px;
+    margin-bottom: 20px;
+    display: none;
+}
+.select-membership{
+    a.border-box{
+        padding: 54px 0;
+        text-decoration: none;
+        border-radius: 4px;
+        flex: 1 1 100%;
+        // img{width: 60px;}
+        img.hover{display: none;}
+        span{
+            display: block;
+        }
+        &:hover{
+            border-color: $point;
+            img{
+                display: none;
+                &.hover{display: inline-block;}
+            }
+            span{color: $point;}
+        }
     }
 }

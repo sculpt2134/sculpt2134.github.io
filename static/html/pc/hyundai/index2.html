@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>HCAU-PUBL</title>
+  <link rel="stylesheet" href="/static/html/pc/hyundai/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/pc/hyundai/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+  <div class="wrap">
+    <div class="HCAU-sidebar" include-html="/static/html/aside.html"></div>
+    <div class="HCAU-menubar" include-html="/static/html/nav2.html"></div>
+    <div class="HCAU-container">
+      <div class="HCAU-contents" id="contents" include-html="/static/html/layout.html"></div>
+      <footer include-html="/static/html/footer.html"></footer>
+    </div>
+  </div>
+
+  <script src="/static/html/pc/hyundai/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/html/pc/hyundai/js/main.js"></script>
+  <script src="/static/html/pc/hyundai/js/includeHTML.js"></script>
+  <script src="/static/html/pc/hyundai/js/includeRouter.js"></script>
+  <script>
+    includeHTML( function () {
+      includeRouter( function () {
+        // do something in the future
+
+      });
+    });
+
+    </script>
+    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;">Top</button> -->
+</body>
+
+</html>

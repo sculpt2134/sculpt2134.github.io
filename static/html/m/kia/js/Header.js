@@ -3,7 +3,7 @@
 // document.write('  <meta charset="UTF-8">');
 // document.write('  <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">');
 // document.write('  <title>HCAU-PUBL</title>');
-// document.write('  <link rel="stylesheet" href="/static/css/bootstrap.min.css" />');
+// document.write('  <link rel="stylesheet" href="/static/html/m/kia/css/bootstrap.min.css" />');
 // document.write('  <link rel="stylesheet" href="/static/html/m/kia/css/styles.css" />');
 // document.write('  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">');
 // document.write('</head>');

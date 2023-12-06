@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>HCAU-PUBL</title>
+  <link rel="stylesheet" href="/static/html/pc/kia/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/pc/kia/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+  <div class="wrap">
+    <div class="HCAU-sidebar" include-html="/static/html/pc/kia/aside.html"></div>
+    <div class="HCAU-menubar" include-html="/static/html/pc/kia/menu.html"></div>
+
+    <div class="HCAU-container">
+            <div class="HCAU-contents" id="contents">
+                <!-- HCAU-breadcrumb -->
+                <div class="HCAU-breadcrumb" include-html="/static/html/pc/kia/breadcrumb.html"></div>
+            <!-- //HCAU-breadcrumb -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////START PAGE CONTENTS/////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!-- HCAU-title -->
+<div class="HCAU-title">
+    <!-- class option : border-bottom -->
+    <div class="HCAU-h1">Submit e-complaint</div>
+</div>
+<!-- //HCAU-title -->
+
+<!-- HCAU-detail -->
+<div class="HCAU-detail">
+
+    <section>
+
+        <div class="title-area d-flex align-items-baseline g16">
+            <div class="title">전자민원접수 안내</div>
+        </div>
+        <div class="HCAU-table dot">
+            <table class="table">
+                <colgroup>
+                    <col style="width:33%">
+                    <col style="width:33%">
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col" class="align-middle text-center">민원 처리 원칙</th>
+                        <th scope="col" class="align-middle text-center">처리 결과 안내</th>
+                        <th scope="col" class="align-middle text-center">처리 지연 및 불가사유</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p class="HCAU-txt-sm">
+                                민원 처리는 접수일로부터 14일(영업일 기준) 이내에 처리하는 것을 원칙으로 함
+                            </p>
+                            <p class="HCAU-txt-sm">
+                                대외기관(금융감독원 등)으로부터 이관된 민원 제외
+                            </p>
+                        </td>
+                        <td>
+                            <p class="HCAU-txt-sm">
+                                민원접수자에게 이메일, 전화 등을 통해 민원 처리 결과 안내
+                            </p>
+                            <p class="HCAU-txt-sm">
+                                대외기관(금융감독원 등)으로부터 이관된 민원은 해당 기관으로 민원 처리 결과 회신
+                            </p>
+                        </td>
+                        <td>
+                            <p class="HCAU-txt-sm">
+                                민원 처리를 위해 추가 서류 등의 보완이 필요한 경우
+                            </p>
+                            <p class="HCAU-txt-sm">
+                                민원 접수자가 고객 본인이 아니거나 성별,연락처 등이 분명하지 않은 경우
+                            </p>
+                            <p class="HCAU-txt-sm">
+                                접수 민원이 재판 또는 유관기관과 분쟁 조정중인 경우
+                            </p>
+                            <p class="HCAU-txt-sm">
+                                민원 처리 과정 중 문제 발생 시 민원접수자에게 이메일, 전화 등을 통해 안내
+                            </p>
+                        </td>
+                    </tr>
+
+                </tbody>                
+            </table>
+        </div>
+        
+        
+        <div class="cta-btn-wrap">
+            <div class="d-flex g12 justify-content-center">
+                <button type="button" class="HCAU-btn btn-large primary">Apply for electronic civil service filing</button>
+            </div>
+        </div>
+
+
+    </section>
+    <section>
+        <div class="title-area d-flex align-items-baseline g16">
+            <div class="title">방문 및 우편, 이메일 접수 안내</div>
+        </div>
+        <div class="HCAU-table">
+            <table class="table fixed">
+                <colgroup>
+                    <col style="width:150px">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th class="align-middle">방문 및 우편 </th>
+                        <td>
+                            <div class="no-txt-input">
+                                <span class="HCAU-txt-sm">600 Parramatta Road, Croydon, NSW 2132</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="align-middle">E-mail</th>
+                        <td>
+                            <div class="no-txt-input">
+                                <span class="HCAU-txt-sm">hyundai@hcs.com</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="">
+                        <th class="align-middle">FAX</th>
+                        <td>
+                            <div class="no-txt-input">
+                                <span class="HCAU-txt-sm">041 223 4466</span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+   
+    
+</div>
+<!-- HCAU-detail -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+</div>
+<footer include-html="/static/html/pc/kia/footer.html"></footer>
+</div>
+</div>
+
+<script src="/static/html/pc/kia/js/bootstrap.bundle.min.js"></script>
+<script src="/static/html/pc/kia/js/main.js"></script>
+<script src="/static/html/pc/kia/js/includeHTML.js"></script>
+<script src="/static/html/pc/kia/js/includeRouter.js"></script>
+<script>
+includeHTML( function () {
+includeRouter( function () {
+});
+});
+
+</script>
+</body>
+
+</html>
