@@ -24,28 +24,29 @@
                 <!-- HCAU-detail -->
                 <div class="HCAU-detail">
 
-                     <!-- Button trigger modal -->
-                     <p><button type="button" class="HCAU-btn btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">MCPPD30001_P01</button></p>
+                    <!-- Button trigger modal -->
+                    <p><button type="button" class="HCAU-btn btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal1">MCPPD30001_P01-search</button></p>
+                    <p><button type="button" class="HCAU-btn btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal2">MCPPD30001_P01-no-data</button></p>
+                    <p><button type="button" class="HCAU-btn btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal3">MCPPD30001_P01-result-data</button></p>
 
-                     <!-- Modal -->
-                     <div class="HCAU-modal modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                         <div class="modal-dialog modal-fullscreen">
-                             <div class="modal-content">
-                                 <div class="modal-top">
-                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                         <img src="/static/html/m/hyundai/img/ico_modal_close.svg" alt="Close">
-                                     </button>
-                                 </div>
-                                 <div class="modal-header">
-                                     <div class="HCAU-h1" id="exampleModalLabel">
-                                        <span>Find a dealer</span>
-                                        <div class="HCAU-txt-md mt12">We will guide customers who need in-person consultation to the nearest branch.</div>
+                    <!-- Modal -->
+                    <div class="HCAU-modal modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-top">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                        <img src="/static/html/m/hyundai/img/ico_modal_close.svg" alt="Close">
+                                    </button>
+                                </div>                                
+                                <div class="modal-body overflow-hidden">
+                                    <div class="modal-header ps-0 pt-1">
+                                        <div class="HCAU-h1" id="exampleModalLabel">
+                                            <span>Find a dealer</span>
+                                            <div class="HCAU-txt-md mt12 lh-base">We will guide customers who need in-person consultation to the nearest branch.</div>
+                                        </div>
                                     </div>
-                                 </div>
-                                 <div class="modal-body">
-
                                     <div class="HCAU-form-wrap">
-                                        <div class="form-title HCAU-txt-md fw-bold">Region</div>
+                                        <div class="form-title HCAU-txt-md fw-bold pt-1">Region</div>
                                         <div>
                                             <div>
                                                 <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">Select State</button>
@@ -93,93 +94,214 @@
                                         </div>
                                     </div>
 
-
                                     <div class="HCAU-nodata type01 flex-column border-top mt20">
                                         <img src="/static/html/m/hyundai/img/ico_no_matches_hd01.svg" alt="">
                                         <div class="HCAU-txt-md">Please select a region</div>
                                     </div>
+                                </div>
 
-                                    <div class="mt52">
-                                        <div class="title-area">
-                                            <div class="HCAU-txt-lg">Dealer search results</div>
-                                        </div>
-                                        <div class="HCAU-nodata type01 flex-column border-top">
-                                            <img src="/static/html/m/hyundai/img/ico_no_matches_hd01.svg" alt="">
-                                            <div class="HCAU-txt-md">There are no dealers in the area.</div>
-                                        </div>
-                                        <div class="border-top">
-                                            <div class="border-bottom p-3">
-                                                <div class="HCAU-txt-sm">
-                                                    <span class="fw-bold">Westpoint Hillcrest Hyundai</span>
-                                                </div>
-                                                <div class="d-flex mt12">
-                                                    <div class="HCAU-txt-sm w80 flex-shrink-0">Address</div>
-                                                    <div class="HCAU-txt-sm">1 Corporate place, Hillcrest QLD 4118</div>
-                                                </div>
-                                                <div class="d-flex mt-2">
-                                                    <div class="HCAU-txt-sm w80 flex-shrink-0">Phone</div>
-                                                    <div class="HCAU-txt-sm">07 3483 0919</div>
-                                                </div>
-                                            </div>
-                                            <div class="border-bottom p-3">
-                                                <div class="HCAU-txt-sm">
-                                                    <span class="fw-bold">Westpoint Hillcrest Hyundai</span>
-                                                </div>
-                                                <div class="d-flex mt12">
-                                                    <div class="HCAU-txt-sm w80 flex-shrink-0">Address</div>
-                                                    <div class="HCAU-txt-sm">1 Corporate place, Hillcrest QLD 4118</div>
-                                                </div>
-                                                <div class="d-flex mt-2">
-                                                    <div class="HCAU-txt-sm w80 flex-shrink-0">Phone</div>
-                                                    <div class="HCAU-txt-sm">07 3483 0919</div>
-                                                </div>
-                                            </div>
-                                            <div class="border-bottom p-3">
-                                                <div class="HCAU-txt-sm">
-                                                    <span class="fw-bold">Westpoint Hillcrest Hyundai</span>
-                                                </div>
-                                                <div class="d-flex mt12">
-                                                    <div class="HCAU-txt-sm w80 flex-shrink-0">Address</div>
-                                                    <div class="HCAU-txt-sm">1 Corporate place, Hillcrest QLD 4118</div>
-                                                </div>
-                                                <div class="d-flex mt-2">
-                                                    <div class="HCAU-txt-sm w80 flex-shrink-0">Phone</div>
-                                                    <div class="HCAU-txt-sm">07 3483 0919</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="HCAU-pagination">
-                                            <div class="inner">
-                                                <ul class="arrow">
-                                                    <li class="arrow"><a href=""><img src="/static/html/m/hyundai/img/ico_pagination_01.svg" alt="First"></a></li>
-                                                    <li class="arrow"><a href=""><img src="/static/html/m/hyundai/img/ico_pagination_02.svg" alt="Prev"></a></li>
-                                                </ul>
-                                                <ul class="pages">
-                                                    <li class="page active"><a href="" class="HCAU-txt-md">1</a></li>
-                                                    <li class="page"><a href="" class="HCAU-txt-md">2</a></li>
-                                                    <li class="page"><a href="" class="HCAU-txt-md">3</a></li>
-                                                    <li class="page"><a href="" class="HCAU-txt-md">4</a></li>
-                                                    <li class="page"><a href="" class="HCAU-txt-md">5</a></li>
-                                                </ul>
-                                                <ul class="arrow">
-                                                    <li class="arrow"><a href=""><img src="/static/html/m/hyundai/img/ico_pagination_03.svg" alt="Next"></a></li>
-                                                    <li class="arrow"><a href=""><img src="/static/html/m/hyundai/img/ico_pagination_04.svg" alt="Last"></a></li>
-                                                </ul>
-                                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                     <!--nodata-->
+                    <div class="HCAU-modal modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-top">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                        <img src="/static/html/m/hyundai/img/ico_modal_close.svg" alt="Close">
+                                    </button>
+                                </div>
+                                <div class="modal-body overflow-hidden">
+                                    <div class="modal-header ps-0 pt-1">
+                                        <div class="HCAU-h1" id="exampleModalLabel">
+                                            <span>Find a dealer</span>
+                                            <div class="HCAU-txt-md mt12 lh-base">We will guide customers who need in-person consultation to the nearest branch.</div>
                                         </div>
                                     </div>
+                                   <div class="HCAU-form-wrap">
+                                       <div class="form-title HCAU-txt-md fw-bold pt-1">Region</div>
+                                       <div>
+                                           <div>
+                                               <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">Northern Territory</button>
+                                           </div>
+                                           <div class="mt12">
+                                               <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom2">Jabiru</button>
+                                           </div>
+                                           <div class="mt20">
+                                               <button type="button" class="HCAU-btn btn-md full">Search</button>
+                                           </div>
+                                       </div>
+                                   </div>
 
-                                 </div>
-                                 <!-- <div class="modal-footer">
-                                     <div class="btn-cta-wrap">
-                                         <button type="button" class="HCAU-btn btn-cta gray03" data-bs-dismiss="modal">Cancel</button>
-                                         <button type="button" class="HCAU-btn btn-cta primary">Request statements</button>
-                                     </div>
-                                 </div> -->
-                             </div>
-                         </div>
-                     </div>
+                                   <div class="mt40">
+                                    <div class="title-area">
+                                        <div class="HCAU-txt-lg">Dealer search results</div>
+                                    </div>
+                                    <div class="HCAU-nodata type01 flex-column border-top">
+                                        <img src="/static/html/m/hyundai/img/ico_no_matches_hd01.svg" alt="">
+                                        <div class="HCAU-txt-md">There are no dealers in the area.</div>
+                                    </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+
+                    <!--resultdata-->
+                    <div class="HCAU-modal modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-top">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                        <img src="/static/html/m/hyundai/img/ico_modal_close.svg" alt="Close">
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="modal-header ps-0 pt-1">
+                                        <div class="HCAU-h1" id="exampleModalLabel">
+                                            <span>Find a dealer</span>
+                                            <div class="HCAU-txt-md mt12 lh-base">We will guide customers who need in-person consultation to the nearest branch.</div>
+                                        </div>
+                                    </div>
+                                   <div class="HCAU-form-wrap">
+                                       <div class="form-title HCAU-txt-md fw-bold pt-1">Region</div>
+                                       <div>
+                                           <div>
+                                               <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">Northern Territory</button>
+                                           </div>
+                                           <div class="mt12">
+                                               <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom2">Jabiru</button>
+                                           </div>
+                                           <div class="mt20">
+                                               <button type="button" class="HCAU-btn btn-md full">Search</button>
+                                           </div>
+                                       </div>
+                                   </div>
+
+
+
+
+                                   <div class="mt52">
+                                    <div class="title-area">
+                                        <div class="HCAU-txt-lg">Dealer search results</div>
+                                    </div>
+                                    
+                                    <div class="border-top">
+                                        <ul>
+                                            <li>
+                                                <div class="border-bottom p-3">
+                                                    <div class="HCAU-txt-sm">
+                                                        <span class="fw-bold">Westpoint Hillcrest Hyundai</span>
+                                                    </div>
+                                                    <div class="d-flex mt12">
+                                                        <div class="HCAU-txt-sm w80 flex-shrink-0">Address</div>
+                                                        <div class="HCAU-txt-sm">1 Corporate place, Hillcrest QLD 4118</div>
+                                                    </div>
+                                                    <div class="d-flex mt-2">
+                                                        <div class="HCAU-txt-sm w80 flex-shrink-0">Phone</div>
+                                                        <div class="HCAU-txt-sm">07 3483 0919</div>
+                                                    </div>
+                                                </div>                                                
+                                            </li>
+                                            <li>
+                                                <div class="border-bottom p-3">
+                                                    <div class="HCAU-txt-sm">
+                                                        <span class="fw-bold">Westpoint Hillcrest Hyundai</span>
+                                                    </div>
+                                                    <div class="d-flex mt12">
+                                                        <div class="HCAU-txt-sm w80 flex-shrink-0">Address</div>
+                                                        <div class="HCAU-txt-sm">1 Corporate place, Hillcrest QLD 4118</div>
+                                                    </div>
+                                                    <div class="d-flex mt-2">
+                                                        <div class="HCAU-txt-sm w80 flex-shrink-0">Phone</div>
+                                                        <div class="HCAU-txt-sm">07 3483 0919</div>
+                                                    </div>
+                                                </div>                                                
+                                            </li>
+                                            <li>
+                                                <div class="border-bottom p-3">
+                                                    <div class="HCAU-txt-sm">
+                                                        <span class="fw-bold">Westpoint Hillcrest Hyundai</span>
+                                                    </div>
+                                                    <div class="d-flex mt12">
+                                                        <div class="HCAU-txt-sm w80 flex-shrink-0">Address</div>
+                                                        <div class="HCAU-txt-sm">1 Corporate place, Hillcrest QLD 4118</div>
+                                                    </div>
+                                                    <div class="d-flex mt-2">
+                                                        <div class="HCAU-txt-sm w80 flex-shrink-0">Phone</div>
+                                                        <div class="HCAU-txt-sm">07 3483 0919</div>
+                                                    </div>
+                                                </div>                                                
+                                            </li>
+                                            <li>
+                                                <div class="border-bottom p-3">
+                                                    <div class="HCAU-txt-sm">
+                                                        <span class="fw-bold">Westpoint Hillcrest Hyundai</span>
+                                                    </div>
+                                                    <div class="d-flex mt12">
+                                                        <div class="HCAU-txt-sm w80 flex-shrink-0">Address</div>
+                                                        <div class="HCAU-txt-sm">1 Corporate place, Hillcrest QLD 4118</div>
+                                                    </div>
+                                                    <div class="d-flex mt-2">
+                                                        <div class="HCAU-txt-sm w80 flex-shrink-0">Phone</div>
+                                                        <div class="HCAU-txt-sm">07 3483 0919</div>
+                                                    </div>
+                                                </div>                                                
+                                            </li>
+                                            <li>
+                                                <div class="border-bottom p-3">
+                                                    <div class="HCAU-txt-sm">
+                                                        <span class="fw-bold">Westpoint Hillcrest Hyundai</span>
+                                                    </div>
+                                                    <div class="d-flex mt12">
+                                                        <div class="HCAU-txt-sm w80 flex-shrink-0">Address</div>
+                                                        <div class="HCAU-txt-sm">1 Corporate place, Hillcrest QLD 4118</div>
+                                                    </div>
+                                                    <div class="d-flex mt-2">
+                                                        <div class="HCAU-txt-sm w80 flex-shrink-0">Phone</div>
+                                                        <div class="HCAU-txt-sm">07 3483 0919</div>
+                                                    </div>
+                                                </div>                                                
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="HCAU-pagination">
+                                        <div class="inner">
+                                            <ul class="arrow">
+                                                <li class="arrow"><a href=""><img src="/static/html/m/hyundai/img/ico_pagination_01.svg" alt="First"></a></li>
+                                                <li class="arrow"><a href=""><img src="/static/html/m/hyundai/img/ico_pagination_02.svg" alt="Prev"></a></li>
+                                            </ul>
+                                            <ul class="pages">
+                                                <li class="page active"><a href="" class="HCAU-txt-md">1</a></li>
+                                                <li class="page"><a href="" class="HCAU-txt-md">2</a></li>
+                                                <li class="page"><a href="" class="HCAU-txt-md">3</a></li>
+                                                <li class="page"><a href="" class="HCAU-txt-md">4</a></li>
+                                                <li class="page"><a href="" class="HCAU-txt-md">5</a></li>
+                                            </ul>
+                                            <ul class="arrow">
+                                                <li class="arrow"><a href=""><img src="/static/html/m/hyundai/img/ico_pagination_03.svg" alt="Next"></a></li>
+                                                <li class="arrow"><a href=""><img src="/static/html/m/hyundai/img/ico_pagination_04.svg" alt="Last"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                </div>
+                                <!-- <div class="modal-footer">
+                                    <div class="btn-cta-wrap">
+                                        <button type="button" class="HCAU-btn btn-cta gray03" data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button" class="HCAU-btn btn-cta primary">Request statements</button>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- //HCAU-detail -->
             </div>

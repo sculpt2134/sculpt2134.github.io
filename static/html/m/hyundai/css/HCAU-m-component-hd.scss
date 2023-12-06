@@ -1525,17 +1525,19 @@ textarea.HCAU-form.form-control{
         display:flex;
         .card-body{padding:12px 18px;display:flex;flex-direction: column;}
         span img{max-width:100%}
+        .HCAU-txt-md{font-size:20px}
     }
 }
 
 .sticky-wrap {
-    padding: 20px 20px;
+    padding: 32px;
+
     width: 100vw;
     position: sticky;
     left: 0;
     top: 0;
     right:0;
-    gap: 1px;
+    gap: 0;
     background: #002C5F;   
     margin:0 -20px;
     div {
@@ -1545,17 +1547,18 @@ textarea.HCAU-form.form-control{
     button{
         position:absolute;width:calc(100vw - 40px);
         &[aria-expanded="false"]{
-            bottom:-23px;
+            bottom:-32px;
              //닫힘            
-            &+.show{opacity:1;display:block ;transform:translateY(0%);transition:all .35s ease;.car{width:50%;img{max-width:100%}}}
-            &+.show+.not{opacity:0;display:none ;transform:translateY(-50%);transition:all .35s ease;}
+            &+.show{opacity:1;display:block ;transform:translateY(0%);transition:all .35s ease;.car{width:50%;img{max-width:80%}}}
+            &+.show+.not{opacity:0;display:none !important;transform:translateY(-50%);transition:all .35s ease;}
         };
         &[aria-expanded="true"]{
-            top:-23px;transform: rotate(180deg);
+            top:-32px;transform: rotate(180deg);
             &+.show{opacity:0;display:none !important ;transform:translateY(-50%);transition:all .35s ease;.car{width:0;img{max-width:0%}}}
             &+.show+.not{opacity:1;display:block ;transform:translateY(0%);transition:all .35s ease;}
         }
     }
+    &+.HCAU-table .HCAU-form.form-check-input + label{display: inline;}
 }
    
     

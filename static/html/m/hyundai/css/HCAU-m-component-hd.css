@@ -1843,15 +1843,18 @@ textarea.HCAU-form.form-control {
 .product.select .card.full span img {
   max-width: 100%;
 }
+.product.select .card.full .HCAU-txt-md {
+  font-size: 20px;
+}
 
 .sticky-wrap {
-  padding: 20px 20px;
+  padding: 32px;
   width: 100vw;
   position: sticky;
   left: 0;
   top: 0;
   right: 0;
-  gap: 1px;
+  gap: 0;
   background: #002C5F;
   margin: 0 -20px;
 }
@@ -1870,7 +1873,7 @@ textarea.HCAU-form.form-control {
   width: calc(100vw - 40px);
 }
 .sticky-wrap button[aria-expanded=false] {
-  bottom: -23px;
+  bottom: -32px;
 }
 .sticky-wrap button[aria-expanded=false] + .show {
   opacity: 1;
@@ -1882,16 +1885,16 @@ textarea.HCAU-form.form-control {
   width: 50%;
 }
 .sticky-wrap button[aria-expanded=false] + .show .car img {
-  max-width: 100%;
+  max-width: 80%;
 }
 .sticky-wrap button[aria-expanded=false] + .show + .not {
   opacity: 0;
-  display: none;
+  display: none !important;
   transform: translateY(-50%);
   transition: all 0.35s ease;
 }
 .sticky-wrap button[aria-expanded=true] {
-  top: -23px;
+  top: -32px;
   transform: rotate(180deg);
 }
 .sticky-wrap button[aria-expanded=true] + .show {
@@ -1911,4 +1914,7 @@ textarea.HCAU-form.form-control {
   display: block;
   transform: translateY(0%);
   transition: all 0.35s ease;
+}
+.sticky-wrap + .HCAU-table .HCAU-form.form-check-input + label {
+  display: inline;
 }/*# sourceMappingURL=HCAU-m-component-hd.css.map */
