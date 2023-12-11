@@ -1561,4 +1561,8 @@ textarea.HCAU-form.form-control{
     &+.HCAU-table .HCAU-form.form-check-input + label{display: inline;}
 }
    
-    
+.HCAU-table td.prd-option{
+    padding:0;
+    .accordion-item:first-of-type .accordion-button{background:#f5f5f5}
+}
+

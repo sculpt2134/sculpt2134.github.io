@@ -74,15 +74,15 @@
 
     <div class="mt40 mb20 d-flex justify-content-between align-items-center">
         <p class="HCAU-h2 mb-3">Select Vehicle</p>
-        <div class="d-flex g10">
-            <span class="HCAU-lead-txt fw-bold align-items-center">Your postcode 4546</span>
+        <div class="d-flex g10 align-items-center">
+            <span class="HCAU-txt-md fw-bold">Your postcode 4546</span>
             <p class="ico-postcode"><img src="/static/html/pc/hyundai/img/svg/ico_postcode.svg" alt=""></p>
         </div>
     </div>
-    
+
     <!--select filter button-->
     <div class="select-wrap">
-        <p class="HCAU-h3">Selected Filters</p>
+        <p class="HCAU-h3 text-nowrap">Selected Filters</p>
 
         <ul class="d-none">
             <li class="select-btn">
@@ -103,7 +103,7 @@
                     <img src="/static/html/pc/hyundai/img/svg/ico_filter_close.svg" alt="Close">
                 </button>
             </li>
-            
+
             <li class="select-btn">
                 <button type="button" class="HCAU-btn">
                     Automatic
@@ -122,7 +122,7 @@
                     <img src="/static/html/pc/hyundai/img/svg/ico_filter_close.svg" alt="Close">
                 </button>
             </li>
-            
+
             <li class="select-btn">
                 <button type="button" class="HCAU-btn">
                     Automatic
@@ -135,7 +135,7 @@
                     <img src="/static/html/pc/hyundai/img/svg/ico_filter_close.svg" alt="Close">
                 </button>
             </li>
-        </ul> 
+        </ul>
         <button type="button" class="HCAU-btn select" data-bs-toggle="modal" data-bs-target="#SelectFilter"><img src="/static/html/pc/hyundai/img/svg/ico_filter.svg" alt=""></button>
     </div>
     <!--//select filter button-->
@@ -143,7 +143,7 @@
 
     <!--selectcar-->
     <section>
-        
+
         <div class="row mb20">
             <div class="col-sm-3">
                 <div class="card">
@@ -219,7 +219,7 @@
                 </div>
                 </div>
             </div>
-        </div> 
+        </div>
         <div class="row mb20">
             <div class="col-sm-3">
                 <div class="card">
@@ -261,7 +261,7 @@
 
 
     </section>
-    
+
     <!-- modal select vehicle -->
     <div class="HCAU-modal product modal fade show d-block" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
         <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -272,8 +272,8 @@
                     <div class="modal-body">
                         <!-- buttons-->
                         <div class="wrap-btn d-flex justify-content-start">
-                            <div class="HCAU-h2" id="exampleModalLabel">Selected Filters</div>
-                            
+                            <div class="HCAU-h2  text-nowrap" id="exampleModalLabel">Selected Filters</div>
+
                             <div class="row full">
                                 <ul class="">
                                     <li class="select-btn">
@@ -318,9 +318,9 @@
                                             <img src="/static/html/pc/hyundai/img/svg/ico_filter_close.svg" alt="Close">
                                         </button>
                                     </li>
-                                </ul>  
+                                </ul>
                             </div>
-                        </div>    
+                        </div>
                         <div class="wrap-checkbox">
                             <div class="row">
                                 <div class="col-sm-4">
@@ -405,7 +405,7 @@
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="result-wrap  g12">
                                 <span class="HCAU-txt-sm">Filter search results</span>
                                 <h6 class="result">32 Models</h6>
@@ -421,7 +421,7 @@
             </div>
         </div>
     </div>
-</div> 
+</div>
 <!-- HCAU-detail -->
 <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 <!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
@@ -443,8 +443,8 @@ includeRouter( function () {
 
 </script>
 <script type="module">
-    
-                               
+
+
             //import Popper from "https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/esm/popper.min.js"
             import {createPopper} from "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.0/dist/esm/popper.min.js"
             import {ModuleFactory as dashboardCodeFactory, BsMultiSelect /*derpicated*/} from "https://cdn.jsdelivr.net/npm/@dashboardcode/bsmultiselect@1.1.18/dist/js/BsMultiSelect.esm.min.js"
@@ -455,7 +455,7 @@ includeRouter( function () {
                 if (!bsMultiSelect){
                     var environment = {window, createPopper};
                     let dashboardCode = dashboardCodeFactory(environment);
-                    bsMultiSelect = dashboardCode.BsMultiSelect(languagesElement,  {placeholder: "placeholder"}); 
+                    bsMultiSelect = dashboardCode.BsMultiSelect(languagesElement,  {placeholder: "placeholder"});
                     //bsMultiSelect = BsMultiSelect(languagesElement, environment, {placeholder: "placeholder"}); // depricated
                 }
             };
@@ -465,9 +465,9 @@ includeRouter( function () {
                     if (bsMultiSelect){
                         bsMultiSelect.dispose();
                         bsMultiSelect= null;
-                    }  
+                    }
                 };
-        
+
 </script>
 </body>
 

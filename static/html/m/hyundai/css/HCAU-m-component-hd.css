@@ -1917,4 +1917,11 @@ textarea.HCAU-form.form-control {
 }
 .sticky-wrap + .HCAU-table .HCAU-form.form-check-input + label {
   display: inline;
+}
+
+.HCAU-table td.prd-option {
+  padding: 0;
+}
+.HCAU-table td.prd-option .accordion-item:first-of-type .accordion-button {
+  background: #f5f5f5;
 }/*# sourceMappingURL=HCAU-m-component-hd.css.map */

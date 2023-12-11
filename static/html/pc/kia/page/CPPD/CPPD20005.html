@@ -60,71 +60,66 @@
 
     <div class="select-title w975">
         <p class="HCAU-h2">Summary</p>
-        <div class="d-flex g10">
-            <span class="HCAU-lead-txt fw-bold align-items-center">Your postcode 4546</span>
-            <a class="ico-postcode" href="#"  data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="/static/html/pc/kia/img/svg/ico_postcode.svg" alt=""></a>
+        <div class="d-flex g10 align-items-center">
+            <span class="HCAU-txt-md fw-bold">Your postcode 4546</span>
+            <p class="ico-postcode">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#postcode">
+                    <img src="/static/html/pc/hyundai/img/svg/ico_postcode.svg" alt="">
+                </a>
+            </p>
         </div>
     </div>
-    
-    <!--find dealer modal CPPD30001_P01.html-->
-    
-    <div class="HCAU-modal modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
+
+    <!-- modal sample 1 -->
+    <div class="HCAU-modal modal fade" id="postcode" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md">
             <div class="modal-content">
 
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/html/pc/kia/img/svg/ico_modal_close.svg" alt="Close" /></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/html/pc/hyundai/img/svg/ico_modal_close.svg" alt="Close" /></button>
                 <div class="modal-content-inner">
                     <div class="modal-header">
                         <div class="HCAU-h2" id="exampleModalLabel">
-                            <span>Find a dealer</span>
-                            <div class="HCAU-txt-sm mt-2 fw-normal">We will guide customers who need in-person consultation to the nearest branch.</div>
+                            <span>Select membership type/Select postcode</span>
+                            <div class="HCAU-txt-sm mt-2 fw-normal">Select your membership information and enter your postcode to view appropriate pricing for your area.</div>
                         </div>
                     </div>
                     <div class="modal-body">
                         <div class="border-box">
                             <div class="bg-box2 p32">
 
-                                <div class="col-md-12">
-                                    <div class="HCAU-txt-md fw-bold mb-3">Region</div>
-                                    <div class="d-flex g12">
-                                        <div class="d-flex flex-fill g20">
-                                            <div class="dropdown flex-fix">
-                                                <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
-                                                    select state
-                                                </button>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
-                                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
-                                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
-                                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
-                                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="dropdown flex-fix">
-                                                <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
-                                                    select city
-                                                </button>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
-                                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
-                                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
-                                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
-                                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="search-btn">
-                                            <button type="button" class="HCAU-btn btn-smd full">Search</button>
-                                        </div>
-                                    </div>
-                                </div>
+                                <form class="HCAU-valid needs-validation row gx-20 gy-28 mt-0" novalidate="">
 
-                                <div class="mt32">
-                                    <div class="HCAU-nodata type01 flex-column border-top border-bottom">
-                                        <img src="/static/html/pc/kia/img/svg/ico_result_find_dealer.svg" alt="">
-                                        <div class="HCAU-txt-sm mt40 fw-bold">Please select a region</div>
+                                    <div class="col-md-12 mt-0">
+                                        <label for="validationCustom06" class="HCAU-txt-md fw-bold mb-3">Select membership type</label>
+                                        <div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input HCAU-form" type="radio" name="inlineRadioOptions" id="inlineRadio1" checked>
+                                                <label class="form-check-label" for="inlineRadio1">Individual</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input HCAU-form" type="radio" name="inlineRadioOptions" id="inlineRadio2">
+                                                <label class="form-check-label" for="inlineRadio2">Businessman</label>
+                                            </div>
+                                            <!-- <div class="invalid-feedback d-block">invalid message</div> -->
+                                        </div>
                                     </div>
-                                </div>
+                                    <div class="col-md-12">
+                                        <label for="validationCustom07" class="HCAU-txt-md fw-bold mb-3">Postcode</label>
+                                        <input type="text" class="form-control HCAU-form" id="validationCustom07" value="" placeholder="Enter your postcode" required="">
+                                        <div class="invalid-feedback d-block">invalid message</div>
+                                    </div>
+
+
+                                    <div class="cta-btn-wrap">
+                                        <div class="d-flex g12 justify-content-center">
+                                            <!-- <button type="button" class="HCAU-btn btn-large">List</button> -->
+                                            <!-- <button type="button" class="HCAU-btn btn-large gray03">Cancel</button> -->
+                                            <button type="submit" class="HCAU-btn btn-large primary">Ok</button>
+                                        </div>
+                                    </div>
+
+                                </form>
+
 
                             </div>
                         </div>
@@ -134,8 +129,8 @@
             </div>
         </div>
     </div>
-    <!--//find dealer modal CPPD30001_P01.html-->
-    
+    <!-- //modal sample 1 -->
+
 
     <div class="HCAU-flex-table w975">
         <div class="row mb20 border-top d-flex justify-centent-center  align-items-center">
@@ -144,7 +139,7 @@
                     <div class="card-body">
                         <img src="/static/html/pc/kia/img/@/car_img02.png" alt="" class="error">
                         <div class="HCAU-txt-md">IONIQ5</div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -166,7 +161,7 @@
                     </div>
                     <div class="card-option d-flex  justify-content-between mb20">
                         <div class="select-acc">
-                            <div class="HCAU-txt-md fw-bold accesary">Accesary</div>
+                            <div class="HCAU-txt-md fw-bold accesary">Accessory</div>
                             <div class="HCAU-txt-sm point">Carbon Exterior/Black Box/Carbon Exterior/Black Box/Carbon Exterior/</div>
                         </div>
                         <div class="HCAU-txt-md fw-bold text-end">1,3000.00 $</div>
@@ -181,17 +176,17 @@
                 </div>
             </div>
         </div>
-        
+
     </div>
         <!--  -->
-    
+
         <div class="sticky-wrap">
             <div class="d-flex justify-content-between">
                 <div class="price">Out The Door Price</div>
-                <div class="sum text-end">33,299,00 $</div>
+                <div class="sum text-end">33,299.00 $</div>
             </div>
         </div>
-    
+
 
 
     <!--selectcar-->
@@ -214,7 +209,7 @@
                         <td class="HCAU-txt-sm text-end fw-bold">
                                 31,564.00 $
                         </td>
-                    </tr> 
+                    </tr>
                     <tr>
                         <th class="HCAU-txt-sm">
                             2. Colour
@@ -251,7 +246,7 @@
                     <tr class="sum">
                         <th><p  class="HCAU-txt-md">Out the door price</p></th>
                         <td colspan="2" class="text-end"><p  class="HCAU-lead-txt fw-bold">31,564,00 $</p></td>
-                    </tr>   
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -264,10 +259,10 @@
 
 
         </div>
-        
+
     </section>
-    
-</div> 
+
+</div>
 <!-- HCAU-detail -->
 <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 <!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->

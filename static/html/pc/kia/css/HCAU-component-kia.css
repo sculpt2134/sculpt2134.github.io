@@ -234,6 +234,14 @@
   margin-bottom: 32px;
 }
 
+.mb40 {
+  margin-bottom: 40px;
+}
+
+.ml40 {
+  margin-left: 40px !important;
+}
+
 a {
   text-decoration: none;
 }
@@ -342,6 +350,10 @@ a {
 .HCAU-txt-xs {
   color: #05141f;
   font-size: 11px;
+}
+
+.lh20 {
+  line-height: 20px;
 }
 
 .white {
@@ -543,7 +555,7 @@ a {
   margin-left: 4px;
 }
 .HCAU-bullet-list li + li {
-  margin-top: 9px;
+  margin-top: 8px;
 }
 .HCAU-bullet-list .point-red {
   color: #EA0029;
@@ -1033,6 +1045,7 @@ a {
   border-radius: 4px;
   background: #fff;
   line-height: 1.5;
+  height: 44px;
 }
 .filebox label {
   display: inline-flex;
@@ -1068,12 +1081,18 @@ a {
   border-color: #e5e5e5;
 }
 .HCAU-table .table th {
-  padding: 1.25rem;
+  padding: 22px;
   background: #f5f5f5;
-  font-size: 0.875rem;
+  font-size: 13px;
 }
 .HCAU-table .table td {
-  padding: 1rem 1.25rem;
+  padding: 16px 22px;
+}
+.HCAU-table .table td .HCAU-bullet-list li {
+  color: #05141f;
+}
+.HCAU-table .table td .HCAU-bullet-list li:before {
+  background: #697279;
 }
 .HCAU-table .table .table-active td {
   background: rgba(230, 51, 18, 0.05);
@@ -1190,14 +1209,34 @@ a {
   top: 35%;
   text-align: center;
 }
-.prd-keyvi .HCAU-table.dot {
-  position: relative;
+.prd-keyvi .HCAU-table {
   padding: 0 40px;
-  margin-top: -60px;
-  z-index: 2;
+  position: relative;
 }
-.prd-keyvi .HCAU-table.dot .table tr td {
-  padding-left: 2rem;
+.prd-keyvi .HCAU-table .table.fixed {
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+.prd-keyvi .HCAU-table .table.fixed th, .prd-keyvi .HCAU-table .table.fixed td {
+  padding: 16px 20px;
+}
+.prd-keyvi .HCAU-table.pd-02 {
+  margin-top: -97px;
+}
+.prd-keyvi .HCAU-table.pd-03 {
+  margin-top: -106px;
+}
+.prd-keyvi .HCAU-table.pd-04 {
+  margin-top: -130px;
+}
+.prd-keyvi .HCAU-table.pd-05 {
+  margin-top: -106px;
+}
+.prd-keyvi .HCAU-table.pd-06 {
+  margin-top: -97px;
+}
+.prd-keyvi .HCAU-table.pd-07 {
+  margin-top: -97px;
 }
 .prd-keyvi .chart-wrap {
   position: relative;
@@ -1284,6 +1323,12 @@ a {
 }
 .HCAU-search-bar .search-btn {
   flex-basis: 84px;
+}
+.HCAU-search-bar .dropdown > button {
+  min-height: 44px;
+}
+.HCAU-search-bar .HCAU-form.form-control[type=text] {
+  min-height: 44px;
 }
 
 .HCAU-search-bar + div {
@@ -1400,6 +1445,10 @@ a {
 
 .flex-fix {
   flex: 1 1 0;
+}
+
+.flex-half {
+  flex: 1 1 50%;
 }
 
 .request-step .border-box {
@@ -1707,6 +1756,7 @@ form + .g-notice {
 .HCAU-modal.product .modal-dialog .modal-content .btn-close {
   right: 36px;
   top: 16px;
+  z-index: 99;
 }
 .HCAU-modal.product .modal-dialog .modal-content .modal-body {
   position: relative;
@@ -1734,6 +1784,7 @@ form + .g-notice {
 .HCAU-modal.product .modal-dialog .modal-content .modal-body .wrap-btn .row.full {
   padding-right: 36px;
   padding-bottom: 8px;
+  margin-right: 30px;
 }
 .HCAU-modal.product .modal-dialog .modal-content .modal-body .wrap-checkbox {
   padding: 20px 36px;
@@ -1791,6 +1842,9 @@ form + .g-notice {
   right: 36px;
   top: 12px;
   border: 0;
+}
+.select-wrap ul {
+  margin-right: 30px;
 }
 
 .wrap .HCAU-container .HCAU-contents.full {
@@ -1983,4 +2037,26 @@ form + .g-notice {
   background: none;
   margin: -12px 0 0 0;
   padding: 0;
+}
+
+.HCAU-accordion.faq .accordion .accordion-item:first-child {
+  border-bottom: 1px solid #e5e5e5;
+}
+.HCAU-accordion.faq .accordion .accordion-item .accordion-header .accordion-button {
+  font-weight: 400;
+}
+.HCAU-accordion.faq .accordion .accordion-item .accordion-header .accordion-button dt {
+  font-weight: 400;
+}
+.HCAU-accordion.faq .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) dd {
+  font-weight: 700;
+}
+.HCAU-accordion.faq .accordion .accordion-item .accordion-header .accordion-button:focus {
+  box-shadow: none;
+}
+.HCAU-accordion.faq .accordion .accordion-item .accordion-header .accordion-button::after, .HCAU-accordion.faq .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='23' height='23' rx='3.5' stroke='black'/%3E%3Cpath d='M7 14.381L11.5847 9.79632C11.6383 9.74026 11.7028 9.69566 11.7742 9.66518C11.8456 9.63471 11.9224 9.619 12 9.619C12.0776 9.619 12.1544 9.63471 12.2258 9.66518C12.2972 9.69566 12.3617 9.74026 12.4153 9.79632L17 14.381' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+.HCAU-accordion.faq .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='24' y='24' width='24' height='24' rx='4' transform='rotate(180 24 24)' fill='black'/%3E%3Cpath d='M7 14.381L11.5847 9.79632C11.6383 9.74026 11.7028 9.69566 11.7742 9.66518C11.8456 9.63471 11.9224 9.619 12 9.619C12.0776 9.619 12.1544 9.63471 12.2258 9.66518C12.2972 9.69566 12.3617 9.74026 12.4153 9.79632L17 14.381' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }/*# sourceMappingURL=HCAU-component-kia.css.map */

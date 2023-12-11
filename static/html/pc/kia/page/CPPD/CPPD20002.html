@@ -61,15 +61,80 @@
 
     <div class="mt40 mb20 d-flex justify-content-between align-items-center">
         <p class="HCAU-h2">Select Vehicle</p>
-        <div class="d-flex g10">
-            <span class="HCAU-lead-txt fw-bold align-items-center">Your postcode 4546</span>
-            <p class="ico-postcode"><img src="/static/html/pc/kia/img/svg/ico_postcode.svg" alt=""></p>
+        <div class="d-flex g10 align-items-center">
+            <span class="HCAU-txt-md fw-bold">Your postcode 4546</span>
+            <p class="ico-postcode">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#postcode">
+                    <img src="/static/html/pc/hyundai/img/svg/ico_postcode.svg" alt="">
+                </a>
+            </p>
         </div>
     </div>
 
+    <!-- modal sample 1 -->
+    <div class="HCAU-modal modal fade" id="postcode" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/html/pc/hyundai/img/svg/ico_modal_close.svg" alt="Close" /></button>
+                <div class="modal-content-inner">
+                    <div class="modal-header">
+                        <div class="HCAU-h2" id="exampleModalLabel">
+                            <span>Select membership type/Select postcode</span>
+                            <div class="HCAU-txt-sm mt-2 fw-normal">Select your membership information and enter your postcode to view appropriate pricing for your area.</div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="border-box">
+                            <div class="bg-box2 p32">
+
+                                <form class="HCAU-valid needs-validation row gx-20 gy-28 mt-0" novalidate="">
+
+                                    <div class="col-md-12 mt-0">
+                                        <label for="validationCustom06" class="HCAU-txt-md fw-bold mb-3">Select membership type</label>
+                                        <div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input HCAU-form" type="radio" name="inlineRadioOptions" id="inlineRadio1" checked>
+                                                <label class="form-check-label" for="inlineRadio1">Individual</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input HCAU-form" type="radio" name="inlineRadioOptions" id="inlineRadio2">
+                                                <label class="form-check-label" for="inlineRadio2">Businessman</label>
+                                            </div>
+                                            <!-- <div class="invalid-feedback d-block">invalid message</div> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="validationCustom07" class="HCAU-txt-md fw-bold mb-3">Postcode</label>
+                                        <input type="text" class="form-control HCAU-form" id="validationCustom07" value="" placeholder="Enter your postcode" required="">
+                                        <div class="invalid-feedback d-block">invalid message</div>
+                                    </div>
+
+
+                                    <div class="cta-btn-wrap">
+                                        <div class="d-flex g12 justify-content-center">
+                                            <!-- <button type="button" class="HCAU-btn btn-large">List</button> -->
+                                            <!-- <button type="button" class="HCAU-btn btn-large gray03">Cancel</button> -->
+                                            <button type="submit" class="HCAU-btn btn-large primary">Ok</button>
+                                        </div>
+                                    </div>
+
+                                </form>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //modal sample 1 -->
+
     <!--select filter button-->
     <div class="select-wrap">
-        <p class="HCAU-h3">Selected Filters</p>
+        <p class="HCAU-h3 text-nowrap">Selected Filters</p>
 
         <ul class="">
             <li class="select-btn">
@@ -90,7 +155,7 @@
                     <img src="/static/html/pc/kia/img/svg/ico_filter_close.svg" alt="Close">
                 </button>
             </li>
-            
+
             <li class="select-btn">
                 <button type="button" class="HCAU-btn">
                     Automatic
@@ -109,7 +174,7 @@
                     <img src="/static/html/pc/kia/img/svg/ico_filter_close.svg" alt="Close">
                 </button>
             </li>
-            
+
             <li class="select-btn">
                 <button type="button" class="HCAU-btn">
                     Automatic
@@ -122,7 +187,7 @@
                     <img src="/static/html/pc/kia/img/svg/ico_filter_close.svg" alt="Close">
                 </button>
             </li>
-        </ul> 
+        </ul>
         <button type="button" class="HCAU-btn select" data-bs-toggle="modal" data-bs-target="#SelectFilter"><img src="/static/html/pc/kia/img/svg/ico_filter.svg" alt=""></button>
     </div>
     <!--//select filter button-->
@@ -132,7 +197,7 @@
 
     <!--selectcar-->
     <section>
-        
+
         <div class="row mb20">
             <div class="col-sm-3">
                 <div class="card">
@@ -208,7 +273,7 @@
                 </div>
                 </div>
             </div>
-        </div> 
+        </div>
         <div class="row mb20">
             <div class="col-sm-3">
                 <div class="card">
@@ -219,12 +284,12 @@
                 </div>
                 </div>
             </div>
-           
+
         </div>
 
 
     </section>
-    
+
     <!-- modal select vehicle -->
     <div class="HCAU-modal product modal fade" id="SelectFilter" tabindex="-1" aria-labelledby="SelectFilterModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -235,8 +300,8 @@
                     <div class="modal-body">
                         <!-- buttons-->
                         <div class="wrap-btn d-flex justify-content-start">
-                            <div class="HCAU-h2" id="exampleModalLabel">Selected Filters</div>
-                            
+                            <div class="HCAU-h2 text-nowrap" id="exampleModalLabel">Selected Filters</div>
+
                             <div class="row full">
                                 <ul class="">
                                     <li class="select-btn">
@@ -281,9 +346,9 @@
                                             <img src="/static/html/pc/kia/img/svg/ico_filter_close.svg" alt="Close">
                                         </button>
                                     </li>
-                                </ul>  
+                                </ul>
                             </div>
-                        </div>    
+                        </div>
                         <div class="wrap-checkbox">
                             <div class="row">
                                 <div class="col-sm-4">
@@ -368,7 +433,7 @@
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="result-wrap  g12">
                                 <span class="HCAU-txt-sm">Filter search results</span>
                                 <h6 class="result">32 Models</h6>
@@ -385,7 +450,7 @@
         </div>
     </div>
 
-    
+
 </div>
 <!-- HCAU-detail -->
 <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->

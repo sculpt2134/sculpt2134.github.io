@@ -22,7 +22,7 @@
 <!-- HCAU-title -->
 <div class="HCAU-title">
     <!-- class option : border-bottom -->
-    <div class="HCAU-h1">Submit e-complaint</div>
+    <div class="HCAU-h1">Request via email</div>
 </div>
 <!-- //HCAU-title -->
 
@@ -33,58 +33,50 @@
         <div class="title-area d-flex align-items-baseline g16">
             <div class="title">Customer Name</div>
         </div>
-        <div class="title-area align-items-baseline g16">
-            <div class="no-txt-input">
-                <input type="text" class="form-control HCAU-form HCAU-form-invalid" placeholder="Enter a  name" value="">
-            </div>
-            <div class="invalid-feedback lh" style="display: block;">Please enter your name.</div>
+        <div>
+            <input type="text" class="form-control HCAU-form HCAU-form-invalid" id="" value="" placeholder="Enter a name">
+            <div class="invalid-feedback d-block">invalid message.</div>
         </div>
-
-
-
-        <div class="title-area d-flex align-items-baseline g16 mt60">
+    </section>
+    <section>
+        <div class="title-area d-flex align-items-baseline g16">
             <div class="title">Contract Number</div>
         </div>
-        <div class="title-area align-items-baseline g16">
-            <div class="no-txt-input">
-                <input type="text" class="form-control HCAU-form HCAU-form-invalid" placeholder="Enter a Contract Number" value="">
-            </div>
-            <div class="invalid-feedback lh" style="display: block;">Please enter Contract Number.</div>
+        <div>
+            <input type="text" class="form-control HCAU-form HCAU-form-invalid" id="" value="" placeholder="Enter a Contract Number">
+            <div class="invalid-feedback d-block">invalid message1.</div>
+            <div class="invalid-feedback d-block">invalid message2.</div>
         </div>
+    </section>
 
-
-
-
-        <div class="title-area d-flex align-items-baseline g16 mt60">
-            <div class="title">How to Contract first</div>
+    <section>
+        <div class="title-area d-flex align-items-baseline g16">
+            <div class="title">How to contact first</div>
         </div>
-
         <div class="title-area d-flex justify-content-start align-items-baseline g16">
-                <div class="form-check">
-                    <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"  checked>
-                    <label class="form-check-label" for="exampleRadios1">
-                        E-mail
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                    <label class="form-check-label" for="exampleRadios2">
-                        Mobile phone
-                    </label>
-                </div>
-
+            <div class="form-check">
+                <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"  checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    E-mail
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    Mobile phone
+                </label>
+            </div>
         </div>
-        <div class="title-area d-flex justify-content-start align-items-baseline g16 pb20">
-            <input type="text" class="form-control HCAU-form" id="validationCustom03" value="hyundai@hcs.com">
+        <div class="">
+            <input type="text" class="form-control HCAU-form" id="validationCustom03" value="hyundai@hcs.com" readonly="">
+            <div class="invalid-feedback d-block">invalid message1.</div>
+            <div class="invalid-feedback d-block">invalid message2.</div>
         </div>
-
-
-
-
+    </section>
+    <section>
         <div class="title-area d-flex align-items-baseline g16 mt40">
             <div class="title">Type of complaint</div>
         </div>
-
         <div class="title-area align-items-baseline g16">
             <div class="dropdown">
                 <button class="HCAU-btn dropdown-toggle  HCAU-form is-invalid" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
@@ -115,9 +107,9 @@
                 </ul>
             </div>
         </div>
+    </section>
 
-
-
+    <section>
         <div class="title-area d-flex align-items-baseline g16 mt40">
             <div class="title">Details</div>
         </div>
@@ -131,29 +123,29 @@
                 Please enter Reason for Request.
             </div>
         </div>
-
-
-
+    </section>
+    <section>
         <div class="title-area d-flex align-items-baseline g16 mt40">
             <div class="title">Supporting Document (Optional)</div>
         </div>
 
         <div class="mb-3 HCAU-valid">
+
             <div class="filebox mb-3">
-                <input class="form-control HCAU-form upload-name" value="text.pdf" placeholder="">
-                <label for="file" class="HCAU-btn">Search</label>
+                <input type="text" class="form-control HCAU-form upload-name" value="text.pdf" placeholder="">
+                <label for="file" class="HCAU-btn btn-smd fw-bold">Search</label>
                 <input type="file" id="file">
                 <a href="" class="btn-clear"><img src="/static/html/pc/hyundai/img/svg/ico_clear.svg" alt="Close"></a>
             </div>
             <div class="filebox mb-3">
                 <input class="form-control HCAU-form upload-name" value="text.pdf" placeholder="">
-                <label for="file" class="HCAU-btn">Search</label>
+                <label for="file" class="HCAU-btn btn-smd fw-bold">Search</label>
                 <input type="file" id="file">
                 <a href="" class="btn-clear"><img src="/static/html/pc/hyundai/img/svg/ico_clear.svg" alt="Close"></a>
             </div>
             <div class="filebox mb-3">
                 <input class="form-control HCAU-form upload-name" value="text.pdf" placeholder="">
-                <label for="file" class="HCAU-btn">Search</label>
+                <label for="file" class="HCAU-btn btn-smd fw-bold">Search</label>
                 <input type="file" id="file" class="form-control HCAU-form">
                 <a href="" class="btn-clear"><img src="/static/html/pc/hyundai/img/svg/ico_clear.svg" alt="Close"></a>
             </div>
@@ -164,17 +156,14 @@
             </div>
 
         </div>
-
-
-
-        <div class="cta-btn-wrap">
-            <div class="d-flex g12 justify-content-center">
-                <button type="button" class="HCAU-btn btn-large gray03">Cancle </button>
-                <button type="button" class="HCAU-btn btn-large primary">Receipt</button>
-            </div>
-        </div>
     </section>
 
+    <div class="cta-btn-wrap">
+        <div class="d-flex g12 justify-content-center">
+            <button type="button" class="HCAU-btn btn-large gray03">Cancel</button>
+            <button type="button" class="HCAU-btn btn-large primary">Application</button>
+        </div>
+    </div>
 
     <div class="g-notice">
         <dl>
@@ -197,6 +186,9 @@
             </dd>
         </dl>
     </div>
+
+
+
 </div>
 <!-- HCAU-detail -->
 <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->

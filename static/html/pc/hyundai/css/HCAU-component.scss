@@ -84,6 +84,8 @@ $font-size-xs : 11px;
 
 .mb20{margin-bottom: 20px;}
 .mb32{margin-bottom: 32px;}
+.mb40{margin-bottom: 40px;}
+.ml40{margin-left: 40px !important;}
 
 a{text-decoration: none;}
 .fw500{font-weight: 700;}
@@ -299,10 +301,10 @@ a{text-decoration: none;}
             background: $gray04;
             position: absolute;
             left:0;
-            top: 9px;
+            top: 7px;
         }
         .link{margin-left: 4px;}
-        & + li{margin-top: 9px;}
+        & + li{margin-top: 8px;}
     }
     .point-red{color: $point-red;}
     .point-red:before{
@@ -714,7 +716,7 @@ top:15px;}
 .HCAU-form.form-control:disabled,
 .HCAU-form.form-select:disabled{
     background-color: $gray01;
-    color: $gray03;
+    color: $black;
 }
 //form check, radio
 .HCAU-form.form-check-input{
@@ -788,6 +790,7 @@ top:15px;}
         border-radius: 4px;
         background: #fff;
         line-height: 1.5;
+        height: 44px;
     }
     & label {
         display: inline-flex;
@@ -825,13 +828,19 @@ top:15px;}
             border-color: $secondary01;
         }
         th{
-            padding: 1.25rem;
+            padding: 22px;
             background: $secondary02;
             // line-height: 1.1;
-            font-size: 0.875rem;
+            font-size: 14px;
         }
         td{
-            padding: 1rem 1.25rem;
+            padding: 16px 22px;
+            .HCAU-bullet-list{
+                li{
+                    color: $black;
+                    &:before{background: $gray03;}
+                }
+            }
         }
         .table-active td{
             background:$point-red-rgb;
@@ -933,15 +942,22 @@ top:15px;}
             // font-size:16px;
         }
     }
-    .HCAU-table.dot{
+    .HCAU-table{
+        padding: 0 40px;
         position: relative;
-        padding:0 40px;
-        margin-top:-60px;
-        z-index: 2;
-        .table tr td{ padding-left:2rem}
-        .last th,.last td{padding-top:23px;padding-bottom:23px}
-    &.t02{margin-top:-103px}
-    &.t03{margin-top:-108px}
+        .table.fixed{
+            border-left: 1px solid $secondary01;
+            border-right: 1px solid $secondary01;
+            th,td{
+                padding: 16px 20px;
+            }
+        }
+        &.pd-02{margin-top: -102px;}
+        &.pd-03{margin-top: -111px;}
+        &.pd-04{margin-top: -137px;}
+        &.pd-05{margin-top: -111px;}
+        &.pd-06{margin-top: -102px;}
+        &.pd-07{margin-top: -102px;}
     }
     .chart-wrap{
         position: relative;
@@ -1163,7 +1179,8 @@ top:15px;}
     .border-box > .d-flex{height: 70px;}
 }
 //flex-fix
-.flex-fix{flex:1 1 0}
+.flex-fix{flex:1 1 0;}
+.flex-half{flex: 1 1 50%;}
 
 //request step
 .request-step{
@@ -1441,7 +1458,7 @@ form + .g-notice {
     padding:0;
     .modal-content{
         padding:0;
-        .btn-close{right:36px;top:16px}
+        .btn-close{right:36px;top:16px;z-index:99}       
         .modal-body{
             position: relative;
             padding:0;
@@ -1454,7 +1471,7 @@ form + .g-notice {
                 .row.full{
                     padding-right:36px;
                     padding-bottom:8px;
-
+                    margin-right:30px;
                 }
 
             }
@@ -1495,6 +1512,7 @@ form + .g-notice {
         top:12px;
         border:0;
     }
+    ul{margin-right:30px}
 }
 .wrap .HCAU-container .HCAU-contents.full{
     width: 100% ;
@@ -1663,3 +1681,24 @@ form + .g-notice {
     margin: -12px 0 0 0;
     padding: 0;
 }
+
+
+
+.HCAU-accordion.faq .accordion .accordion-item{
+    &:first-child{border-bottom:1px solid #e5e5e5}
+    .accordion-header .accordion-button{
+        font-weight:400;
+        dt{font-weight:400}
+        &:not(.collapsed) dd{font-weight: 700;}
+        &:focus{box-shadow: none;}
+        &::after,
+        &:not(.collapsed)::after{background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='23' height='23' rx='3.5' stroke='black'/%3E%3Cpath d='M7 14.381L11.5847 9.79632C11.6383 9.74026 11.7028 9.69566 11.7742 9.66518C11.8456 9.63471 11.9224 9.619 12 9.619C12.0776 9.619 12.1544 9.63471 12.2258 9.66518C12.2972 9.69566 12.3617 9.74026 12.4153 9.79632L17 14.381' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");            }
+        &:not(.collapsed)::after{background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='24' y='24' width='24' height='24' rx='4' transform='rotate(180 24 24)' fill='black'/%3E%3Cpath d='M7 14.381L11.5847 9.79632C11.6383 9.74026 11.7028 9.69566 11.7742 9.66518C11.8456 9.63471 11.9224 9.619 12 9.619C12.0776 9.619 12.1544 9.63471 12.2258 9.66518C12.2972 9.69566 12.3617 9.74026 12.4153 9.79632L17 14.381' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");}
+    }
+}
+
+// .HCAU-accordion.faq .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after,
+// .HCAU-accordion.faq .accordion .accordion-item .accordion-header .accordion-button::after{background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='23' height='23' rx='3.5' stroke='black'/%3E%3Cpath d='M7 14.381L11.5847 9.79632C11.6383 9.74026 11.7028 9.69566 11.7742 9.66518C11.8456 9.63471 11.9224 9.619 12 9.619C12.0776 9.619 12.1544 9.63471 12.2258 9.66518C12.2972 9.69566 12.3617 9.74026 12.4153 9.79632L17 14.381' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");}
+// .HCAU-accordion.faq .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after{background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='24' y='24' width='24' height='24' rx='4' transform='rotate(180 24 24)' fill='black'/%3E%3Cpath d='M7 14.381L11.5847 9.79632C11.6383 9.74026 11.7028 9.69566 11.7742 9.66518C11.8456 9.63471 11.9224 9.619 12 9.619C12.0776 9.619 12.1544 9.63471 12.2258 9.66518C12.2972 9.69566 12.3617 9.74026 12.4153 9.79632L17 14.381' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");}
+
+

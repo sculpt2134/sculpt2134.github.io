@@ -22,7 +22,7 @@
 <!-- HCAU-title -->
 <div class="HCAU-title">
     <!-- class option : border-bottom -->
-    <div class="HCAU-h1">FAQS</div>
+    <div class="HCAU-h1 text-capitalize">FAQs</div>
 </div>
 <!-- //HCAU-title -->
 
@@ -32,9 +32,9 @@
     <div class="HCAU-tab">
         <ul class="nav nav-tabs" id="">
             <li class="nav-item"><button class="nav-link active" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">전체</button></li>
-            <li class="nav-item"><button class="nav-link" id="nav-contact-tab2" data-bs-toggle="tab" data-bs-target="#nav-contact2" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">카테고리1</button></li>
-            <li class="nav-item"><button class="nav-link" id="nav-contact-tab3" data-bs-toggle="tab" data-bs-target="#nav-contact3" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">카테고리2</button></li>
-            <li class="nav-item"><button class="nav-link" id="nav-contact-tab4" data-bs-toggle="tab" data-bs-target="#nav-contact4" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">카테고리3</button></li>
+            <li class="nav-item"><button class="nav-link" id="nav-contact-tab2" data-bs-toggle="tab" data-bs-target="#nav-contact2" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">카테고리2</button></li>
+            <li class="nav-item"><button class="nav-link" id="nav-contact-tab3" data-bs-toggle="tab" data-bs-target="#nav-contact3" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">카테고리3</button></li>
+            <li class="nav-item"><button class="nav-link" id="nav-contact-tab4" data-bs-toggle="tab" data-bs-target="#nav-contact4" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">카테고리4</button></li>
         </ul>
     </div>
     <!-- //HCAU-tab -->
@@ -42,7 +42,6 @@
     <div class="tab-content" id="">
         <div class="tab-pane fade show active" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
             <!--content-->
-           
             <div class="border-box2 bg-box2 py24 px32 g20 mt40">
                 <div class="HCAU-search-bar d-flex g12">
                     <input type="text" class="form-control HCAU-form" placeholder="Please enter what you are looking for.">
@@ -52,49 +51,51 @@
                 </div>
             </div>
 
-             <!--accodion-->
-             <div class="HCAU-accordion">
-                <div class="accordion" id="accordionExample">
+            <!--accodion-->
+            <div class="HCAU-accordion faq mt40">
+                <div class="accordion" id="accordionFAQ">
+                    
+                    
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <div>
-                                    <div class="HCAU-txt-sm">카테고리1</div>
-                                    <div class="HCAU-txt-sm mt-1">How can I change my mailing address, phone number or login password?</div>
-                                </div>
+                        <h2 class="accordion-header" id="faqTlt01">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCnt01" aria-expanded="false" aria-controls="faqCnt01">
+                                <dl class="d-flex justify-content-start g10">
+                                    <dt class="HCAU-txt-sm">카테고리1-1</dt>
+                                    <dd class="HCAU-txt-sm">How can I change my mailing address, phone number or login password?</dd>
+                                </dl>
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="faqCnt01" class="accordion-collapse collapse" aria-labelledby="faqTlt01" data-bs-parent="#accordionFAQ">
                             <div class="accordion-body HCAU-txt-sm">
                                 lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <div>
-                                    <div class="HCAU-txt-sm">카테고리1</div>
-                                    <div class="HCAU-txt-sm mt-1">How can I change my mailing address, phone number or login password?</div>
-                                </div>
+                        <h2 class="accordion-header" id="faqTlt02">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCnt02" aria-expanded="false" aria-controls="faqCnt02">
+                                <dl class="d-flex justify-content-start g10">
+                                    <dt class="HCAU-txt-sm">카테고리2-2</dt>
+                                    <dd class="HCAU-txt-sm">How can I change my mailing address, phone number or login password?</dd>
+                                </dl>
                             </button>
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div id="faqCnt02" class="accordion-collapse collapse" aria-labelledby="faqTlt02" data-bs-parent="#accordionFAQ">
                             <div class="accordion-body HCAU-txt-sm">
                                 lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <div>
-                                    <div class="HCAU-txt-sm">카테고리1</div>
-                                    <div class="HCAU-txt-sm mt-1">How can I change my mailing address, phone number or login password?</div>
-                                </div>
+                        <h2 class="accordion-header" id="faqTlt03">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCnt03" aria-expanded="false" aria-controls="faqCnt03">
+                                <dl class="d-flex justify-content-start g10">
+                                    <dt class="HCAU-txt-sm">카테고리3-3</dt>
+                                    <dd class="HCAU-txt-sm">How can I change my mailing address, phone number or login password?</dd>
+                                </dl>
                             </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div id="faqCnt03" class="accordion-collapse collapse" aria-labelledby="faqTlt03" data-bs-parent="#accordionFAQ">
                             <div class="accordion-body HCAU-txt-sm">
                                 lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                             </div>
@@ -103,46 +104,7 @@
                 </div>
             </div>
             <!--data-->
-            <UL class="HCAU-faq flex-column border-top border-bottom mt40">
-                <li>
-                    <a data-bs-toggle="collapse" href="#faq01" role="button" aria-expanded="true" aria-controls="faq01">
-                        <div class="d-flex g20 align-items-center px32 py28 border-bottom">
-                            <span class="HCAU-txt-sm">카테고리1</span>
-                            <span class="HCAU-txt-sm fw500">How can I change my mailing address, phone number or login password?</span>
-                        </div>
-                    </a>
-                    <div class="collapse p-1 show" id="faq01">
-                        <div class="">
-                            Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer AnswerAnswer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer AnswerAnswer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer
-                        </div>
-                    </div>
-                </li>                
-                <li>
-                    <a data-bs-toggle="collapse" href="#faq02" role="button" aria-expanded="false" aria-controls="faq02">
-                        
-                            
-                            <dl class="d-flex align-items-center g16">
-                                <dt class="HCAU-txt-sm">카테고리1</dt>
-                                <dd class="HCAU-txt-sm">How can I change my mailing address, phone number or login password?</dd>
-                            </dl>
-                        
-                    </a>
-                    <div class="collapse p-1" id="faq02">
-                        Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer AnswerAnswer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer AnswerAnswer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer
-                    </div>
-                </li>
-                <li >
-                    <a data-bs-toggle="collapse" href="#faq03" role="button" aria-expanded="false" aria-controls="faq03">
-                        <dl class="d-flex">
-                            <dt>카테고리1</dt>
-                            <dd class="ms-3">How can I change my mailing address, phone number or login password?</dd>
-                        </dl>
-                    </a>
-                    <div class="collapse p-1" id="faq03">
-                        Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer AnswerAnswer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer AnswerAnswer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer Answer
-                    </div>
-                </li>
-            </UL>
+
             <div class="HCAU-pagination">
                 <div class="inner">
                     <ul class="arrow">
@@ -177,17 +139,177 @@
             <!--//CONTENT-->
         </div>
         <div class="tab-pane fade" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact-tab2" tabindex="0">
-           
+           <!--accodion-->
+           <div class="HCAU-accordion faq mt40">
+            <div class="accordion" id="accordionFAQ">
+                
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqTlt01">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCnt01" aria-expanded="false" aria-controls="faqCnt01">
+                            <dl class="d-flex justify-content-start g10">
+                                <dt class="HCAU-txt-sm">카테고리2-1</dt>
+                                <dd class="HCAU-txt-sm">How can I change my mailing address, phone number or login password?</dd>
+                            </dl>
+                        </button>
+                    </h2>
+                    <div id="faqCnt01" class="accordion-collapse collapse" aria-labelledby="faqTlt01" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body HCAU-txt-sm">
+                            lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqTlt02">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCnt02" aria-expanded="false" aria-controls="faqCnt02">
+                            <dl class="d-flex justify-content-start g10">
+                                <dt class="HCAU-txt-sm">카테고리2-2</dt>
+                                <dd class="HCAU-txt-sm">How can I change my mailing address, phone number or login password?</dd>
+                            </dl>
+                        </button>
+                    </h2>
+                    <div id="faqCnt02" class="accordion-collapse collapse" aria-labelledby="faqTlt02" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body HCAU-txt-sm">
+                            lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqTlt03">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCnt03" aria-expanded="false" aria-controls="faqCnt03">
+                            <dl class="d-flex justify-content-start g10">
+                                <dt class="HCAU-txt-sm">카테고리2-3</dt>
+                                <dd class="HCAU-txt-sm">How can I change my mailing address, phone number or login password?</dd>
+                            </dl>
+                        </button>
+                    </h2>
+                    <div id="faqCnt03" class="accordion-collapse collapse" aria-labelledby="faqTlt03" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body HCAU-txt-sm">
+                            lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="tab-pane fade" id="nav-contact3" role="tabpanel" aria-labelledby="nav-contact-tab3" tabindex="0">333</div>
-        <div class="tab-pane fade" id="nav-contact4" role="tabpanel" aria-labelledby="nav-contact-tab4" tabindex="0">444</div>
+        <!--data-->
+        </div>
+        <div class="tab-pane fade" id="nav-contact3" role="tabpanel" aria-labelledby="nav-contact-tab3" tabindex="0">
+            <!--accodion-->
+            <div class="HCAU-accordion faq mt40">
+                <div class="accordion" id="accordionFAQ">
+                    
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqTlt01">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCnt01" aria-expanded="false" aria-controls="faqCnt01">
+                                <dl class="d-flex justify-content-start g10">
+                                    <dt class="HCAU-txt-sm">카테고리3-1</dt>
+                                    <dd class="HCAU-txt-sm">How can I change my mailing address, phone number or login password?</dd>
+                                </dl>
+                            </button>
+                        </h2>
+                        <div id="faqCnt01" class="accordion-collapse collapse" aria-labelledby="faqTlt01" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body HCAU-txt-sm">
+                                lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqTlt02">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCnt02" aria-expanded="false" aria-controls="faqCnt02">
+                                <dl class="d-flex justify-content-start g10">
+                                    <dt class="HCAU-txt-sm">카테고리3-2</dt>
+                                    <dd class="HCAU-txt-sm">How can I change my mailing address, phone number or login password?</dd>
+                                </dl>
+                            </button>
+                        </h2>
+                        <div id="faqCnt02" class="accordion-collapse collapse" aria-labelledby="faqTlt02" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body HCAU-txt-sm">
+                                lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqTlt03">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCnt03" aria-expanded="false" aria-controls="faqCnt03">
+                                <dl class="d-flex justify-content-start g10">
+                                    <dt class="HCAU-txt-sm">카테고리3-3</dt>
+                                    <dd class="HCAU-txt-sm">How can I change my mailing address, phone number or login password?</dd>
+                                </dl>
+                            </button>
+                        </h2>
+                        <div id="faqCnt03" class="accordion-collapse collapse" aria-labelledby="faqTlt03" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body HCAU-txt-sm">
+                                lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--data-->
+        </div>
+        <div class="tab-pane fade" id="nav-contact4" role="tabpanel" aria-labelledby="nav-contact-tab4" tabindex="0">
+            <!--accodion-->
+            <div class="HCAU-accordion faq mt40">
+                <div class="accordion" id="accordionFAQ">
+                    
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqTlt01">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCnt01" aria-expanded="false" aria-controls="faqCnt01">
+                                <dl class="d-flex justify-content-start g10">
+                                    <dt class="HCAU-txt-sm">카테고리4-1</dt>
+                                    <dd class="HCAU-txt-sm">How can I change my mailing address, phone number or login password?</dd>
+                                </dl>
+                            </button>
+                        </h2>
+                        <div id="faqCnt01" class="accordion-collapse collapse" aria-labelledby="faqTlt01" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body HCAU-txt-sm">
+                                lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqTlt02">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCnt02" aria-expanded="false" aria-controls="faqCnt02">
+                                <dl class="d-flex justify-content-start g10">
+                                    <dt class="HCAU-txt-sm">카테고리4-2</dt>
+                                    <dd class="HCAU-txt-sm">How can I change my mailing address, phone number or login password?</dd>
+                                </dl>
+                            </button>
+                        </h2>
+                        <div id="faqCnt02" class="accordion-collapse collapse" aria-labelledby="faqTlt02" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body HCAU-txt-sm">
+                                lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqTlt03">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCnt03" aria-expanded="false" aria-controls="faqCnt03">
+                                <dl class="d-flex justify-content-start g10">
+                                    <dt class="HCAU-txt-sm">카테고리4-3</dt>
+                                    <dd class="HCAU-txt-sm">How can I change my mailing address, phone number or login password?</dd>
+                                </dl>
+                            </button>
+                        </h2>
+                        <div id="faqCnt03" class="accordion-collapse collapse" aria-labelledby="faqTlt03" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body HCAU-txt-sm">
+                                lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--data-->
+        </div>
     </div>
     
-    <div class="cta-btn-wrap">
+    <!-- <div class="cta-btn-wrap">
         <div class="d-flex g12 justify-content-center">
             <button type="button" class="HCAU-btn btn-large primary">Ok</button>
         </div>
-    </div>
+    </div> -->
 </div>
 <!-- HCAU-detail -->
 <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
