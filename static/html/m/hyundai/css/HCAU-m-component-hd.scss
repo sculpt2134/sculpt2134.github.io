@@ -1541,8 +1541,12 @@ textarea.HCAU-form.form-control{
     gap: 0;
     background: #002C5F;   
     margin:0 -20px;
-    &.position-relative button{display: none;}
-    &.final{padding:27px 20px}
+    &.position-relative {
+        z-index:0;
+        padding:27px 20px;
+        button{display: none;}
+        }
+    &.final{padding:27px 20px;margin-top:20px}
     div {
         color:#fff;font-weight: 700;font-size:15px;line-height:30px;align-items:center;
         &.sum{font-size:20px}
