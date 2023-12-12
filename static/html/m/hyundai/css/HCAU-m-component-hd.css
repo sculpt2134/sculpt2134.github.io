@@ -2005,4 +2005,9 @@ textarea.HCAU-form.form-control {
   background-color: #000;
   border-color: #000;
   color: #fff;
+}
+
+.prd-tab .btn-cta .primary {
+  background: #002C5F;
+  color: white;
 }/*# sourceMappingURL=HCAU-m-component-hd.css.map */
