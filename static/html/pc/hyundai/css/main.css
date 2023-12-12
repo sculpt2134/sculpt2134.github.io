@@ -106,9 +106,9 @@ html,body{overflow:auto;}
          .faq-inner ul li dl dd{font-size:14px;color:#fff;padding-left:12px}
 
          .wrap .HCAU-container h1.HCAU-h1{font-size:64px;color:#fff;padding-top:102px;line-height: 70px;}
-         .detail .usage-detail{margin-top:36px;margin-bottom:24px;}
+         .detail .usage-detail{margin-top:36px;margin-bottom:24px;margin-right:3px}
          h2.HCAU-h2.title{text-transform: uppercase;color:#fff}
-         .HCAU-btn.btn-more{width:90px;height:20px;background:transparent;color:#fff;position: relative;display: flex;border:0}
+         .HCAU-btn.btn-more{width:90px;height:20px;background:transparent;color:#fff;position: relative;display: flex;border:0;padding-right:10px}
           .HCAU-btn.btn-more span{position: absolute;right:0;top:0}
          h2.font-size-lg.title{font-size:18px;margin-top:24px;margin-bottom:18px;color:#fff}
 
