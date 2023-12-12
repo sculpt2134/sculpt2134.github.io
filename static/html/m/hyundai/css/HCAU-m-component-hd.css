@@ -884,9 +884,14 @@ textarea.HCAU-form.form-control {
 }
 .HCAU-bottom-sheet .offcanvas-body {
   padding: 0;
+  max-height: 295px;
+  border-top: 1px solid #d5d5d5;
+}
+.HCAU-bottom-sheet .offcanvas-body .bottom-sheet-item {
+  overflow: hidden;
 }
 .HCAU-bottom-sheet .offcanvas-body .bottom-sheet-item li {
-  border-top: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5;
 }
 .HCAU-bottom-sheet .offcanvas-body .bottom-sheet-item li a {
   display: block;
@@ -1956,6 +1961,7 @@ textarea.HCAU-form.form-control {
 .HCAU-tab-btn .nav-tabs {
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 .HCAU-tab-btn .nav-tabs .nav-item {
   flex: 1 0 50%;
@@ -2007,7 +2013,19 @@ textarea.HCAU-form.form-control {
   color: #fff;
 }
 
+.btn-cta .HCAU-btn.btn-lg {
+  min-height: 48px;
+}
+
 .btn-cta .primary {
   background: #002C5F;
   color: white;
+}
+
+.prd-tab .HCAU-h2.mb10 {
+  font-size: 20px;
+}
+
+[id*=sub-collapse] {
+  display: none;
 }/*# sourceMappingURL=HCAU-m-component-hd.css.map */

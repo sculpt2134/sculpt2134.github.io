@@ -556,9 +556,12 @@ textarea.HCAU-form.form-control{
     }
     .offcanvas-body{
         padding: 0;
+        max-height:295px;
+        border-top:1px solid $gray02;
         .bottom-sheet-item{
+            overflow: hidden;
             li{
-                border-top:1px solid $gray02;
+                border-bottom:1px solid $gray02;
                 a{
                     display: block;
                     font-weight: 700;
@@ -1590,6 +1593,7 @@ textarea.HCAU-form.form-control{
     .nav-tabs{
         display: flex;
         justify-content: space-around;
+        width:100%;
         .nav-item{flex:1 0 50%;
         .nav-link{
             width: 100%;
@@ -1634,5 +1638,7 @@ textarea.HCAU-form.form-control{
         }
     }
 }
-
+.btn-cta .HCAU-btn.btn-lg{min-height:48px}
 .btn-cta .primary{background:$primary;color:white}
+.prd-tab .HCAU-h2.mb10{font-size:$font-size-lg}
+[id*="sub-collapse"]{display:none}
