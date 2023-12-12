@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>HCAU-PUBL</title>
+  <link rel="stylesheet" href="/static/html/pc/kia/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/pc/kia/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+  <div class="wrap">
+    <div class="HCAU-sidebar" include-html="/static/html/pc/kia/aside.html"></div>
+    <div class="HCAU-menubar" include-html="/static/html/pc/kia/menu.html"></div>
+
+    <div class="HCAU-container">
+            <div class="HCAU-contents" id="contents">
+                <!-- HCAU-breadcrumb -->
+                <div class="HCAU-breadcrumb" include-html="/static/html/pc/kia/breadcrumb.html"></div>
+            <!-- //HCAU-breadcrumb -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////START PAGE CONTENTS/////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!-- HCAU-title -->
+<div class="HCAU-title">
+    <!-- class option : border-bottom -->
+    <div class="HCAU-h1">Submit e-complaint</div>
+</div>
+<!-- //HCAU-title -->
+
+<!-- HCAU-detail -->
+<div class="HCAU-detail">
+
+    <section>
+        <div class="title-area d-flex align-items-baseline g16">
+            <div class="title">Customer Name</div>
+        </div>
+        <div class="title-area align-items-baseline g16">
+            <div class="no-txt-input">
+                <input type="text" class="form-control HCAU-form HCAU-form-invalid" placeholder="Enter a  name" value="">
+            </div>
+            <div class="invalid-feedback lh" style="display: block;">Please enter your name.</div>
+        </div>
+
+
+
+        <div class="title-area d-flex align-items-baseline g16 mt60">
+            <div class="title">Contract Number</div>
+        </div>
+        <div class="title-area align-items-baseline g16">
+            <div class="no-txt-input">
+                <input type="text" class="form-control HCAU-form HCAU-form-invalid" placeholder="Enter a Contract Number" value="">
+            </div>
+            <div class="invalid-feedback lh" style="display: block;">Please enter Contract Number.</div>
+        </div>
+
+
+
+
+        <div class="title-area d-flex align-items-baseline g16 mt60">
+            <div class="title">How to Contract first</div>
+        </div>
+
+        <div class="title-area d-flex justify-content-start align-items-baseline g16">
+                <div class="form-check">
+                    <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"  checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        E-mail
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                        Mobile phone
+                    </label>
+                </div>
+
+        </div>
+        <div class="title-area d-flex justify-content-start align-items-baseline g16 pb20">
+            <input type="text" class="form-control HCAU-form" id="validationCustom03" value="hyundai@hcs.com">
+        </div>
+
+
+
+
+        <div class="title-area d-flex align-items-baseline g16 mt40">
+            <div class="title">Type of complaint</div>
+        </div>
+
+        <div class="title-area align-items-baseline g16">
+            <div class="dropdown">
+                <button class="HCAU-btn dropdown-toggle  HCAU-form is-invalid" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                    Select Complaint type
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+                </ul>
+            </div>
+            <div class="invalid-feedback" style="display: block;">Please select Complaint type</div>
+
+        </div>
+        <div class="title-area align-items-baseline g16">
+            <div class="dropdown ">
+                <button class="HCAU-btn dropdown-toggle  HCAU-form disabled" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0" disabled="">
+                    Select detail type
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="title-area d-flex align-items-baseline g16 mt40">
+            <div class="title">Details</div>
+        </div>
+
+        <div class="mb-3 HCAU-valid">
+            <div class="position-relative">
+                <textarea class="form-control HCAU-form is-invalid" id="exampleFormControlTextarea1" rows="6" placeholder="Enter details" required></textarea>
+                <p class="position-absolute end-0 bottom-0 HCAU-txt-sm gray03 mx-2 my-2 xs-font"><span class="black">0</span>/5000byte</p>
+            </div>
+            <div class="invalid-feedback" style="display:block">
+                Please enter Reason for Request.
+            </div>
+        </div>
+
+
+
+        <div class="title-area d-flex align-items-baseline g16 mt40">
+            <div class="title">Supporting Document (Optional)</div>
+        </div>
+
+        <div class="mb-3 HCAU-valid">
+            <div class="filebox mb-3">
+                <input class="form-control HCAU-form upload-name" value="text.pdf" placeholder="">
+                <label for="file" class="HCAU-btn">Search</label>
+                <input type="file" id="file">
+                <a href="" class="btn-clear"><img src="/static/html/pc/kia/img/svg/ico_clear.svg" alt="Close"></a>
+            </div>
+            <div class="filebox mb-3">
+                <input class="form-control HCAU-form upload-name" value="text.pdf" placeholder="">
+                <label for="file" class="HCAU-btn">Search</label>
+                <input type="file" id="file">
+                <a href="" class="btn-clear"><img src="/static/html/pc/kia/img/svg/ico_clear.svg" alt="Close"></a>
+            </div>
+            <div class="filebox mb-3">
+                <input class="form-control HCAU-form upload-name" value="text.pdf" placeholder="">
+                <label for="file" class="HCAU-btn">Search</label>
+                <input type="file" id="file" class="form-control HCAU-form">
+                <a href="" class="btn-clear"><img src="/static/html/pc/kia/img/svg/ico_clear.svg" alt="Close"></a>
+            </div>
+
+
+            <div class="HCAU-info-msg" style="display:block">
+                Only document and image files of 3Mbyte or less can be registered.
+            </div>
+
+        </div>
+
+
+
+        <div class="cta-btn-wrap">
+            <div class="d-flex g12 justify-content-center">
+                <button type="button" class="HCAU-btn btn-large gray03">Cancle </button>
+                <button type="button" class="HCAU-btn btn-large primary">Receipt</button>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="g-notice">
+        <dl>
+            <dt>
+                <span class="ico-gnotice"><img src="/static/html/pc/kia/img/svg/ico_notice.svg" alt=""></span>
+                <span>Guidence Notice</span>
+            </dt>
+            <dd>
+                <ul class="HCAU-bullet-list">
+                    <li>
+                        개인 정보 보호를 위해 로그인 후 15분 이상 경과하면 자동 로그아웃 됩니다.
+                    </li>
+                    <li>
+                        민원내용 작성 중에 자동 로그아웃 될 수 있으니, 메모장 등의 보조 프로그램 사용을 권장합니다.
+                    </li>
+                    <li>
+                        회원님께서 기재하신 연락처 및 이메일 주소(신규 정보 포함)는 고객포털 회원 가입시 동의한 “개인정보의 수집 이용에 대한 동의＂에 따라 처리됩니다.
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+</div>
+<!-- HCAU-detail -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+</div>
+<footer include-html="/static/html/pc/kia/footer.html"></footer>
+</div>
+</div>
+
+<script src="/static/html/pc/kia/js/bootstrap.bundle.min.js"></script>
+<script src="/static/html/pc/kia/js/main.js"></script>
+<script src="/static/html/pc/kia/js/includeHTML.js"></script>
+<script src="/static/html/pc/kia/js/includeRouter.js"></script>
+<script>
+includeHTML( function () {
+includeRouter( function () {
+});
+});
+
+</script>
+</body>
+
+</html>

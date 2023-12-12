@@ -1800,7 +1800,7 @@ textarea.HCAU-form.form-control {
 }
 .HCAU-prd .card-body span {
   display: flex;
-  padding: 21px 0 19px;
+  padding: 32px 0 20px;
 }
 .HCAU-prd .card-body span img {
   max-width: 100%;
@@ -1849,6 +1849,7 @@ textarea.HCAU-form.form-control {
 
 .sticky-wrap {
   padding: 32px;
+  z-index: 999;
   width: 100vw;
   position: sticky;
   left: 0;
@@ -1857,6 +1858,12 @@ textarea.HCAU-form.form-control {
   gap: 0;
   background: #002C5F;
   margin: 0 -20px;
+}
+.sticky-wrap.position-relative button {
+  display: none;
+}
+.sticky-wrap.final {
+  padding: 27px 20px;
 }
 .sticky-wrap div {
   color: #fff;
@@ -1919,9 +1926,78 @@ textarea.HCAU-form.form-control {
   display: inline;
 }
 
-.HCAU-table td.prd-option {
+.prd-option {
   padding: 0;
 }
-.HCAU-table td.prd-option .accordion-item:first-of-type .accordion-button {
+.prd-option .accordion {
+  --bs-accordion-btn-focus-border-color: transparent;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+.prd-option .accordion .accordion-item {
   background: #f5f5f5;
+  border: 0;
+}
+.prd-option .accordion .accordion-item .accordion-button {
+  background: #f5f5f5;
+}
+
+.card-option {
+  border-bottom: 1px solid #e5e5e5;
+}
+.card-option.b-none {
+  border: 0;
+}
+
+.HCAU-tab-btn .nav-tabs {
+  display: flex;
+  justify-content: space-around;
+}
+.HCAU-tab-btn .nav-tabs .nav-item {
+  flex: 1 0 50%;
+}
+.HCAU-tab-btn .nav-tabs .nav-item .nav-link {
+  width: 100%;
+  border-color: #ddd;
+  color: #999;
+  background: #f5f5f5;
+  font-weight: 700;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  height: 44px;
+}
+.HCAU-tab-btn .nav-tabs .nav-item .nav-link.active {
+  border-color: #000;
+  background: #fff;
+  color: #000;
+  margin-bottom: 0;
+}
+
+.HCAU-tab-radio2 {
+  display: flex;
+}
+.HCAU-tab-radio2 > div {
+  flex: 1;
+}
+.HCAU-tab-radio2 > div .HCAU-btn.btn-smd {
+  padding: 0 10px;
+}
+.HCAU-tab-radio2 > div:first-child label {
+  border-radius: 4px 0 0 4px;
+}
+.HCAU-tab-radio2 > div:last-child label {
+  border-radius: 0 4px 4px 0;
+}
+.HCAU-tab-radio2 > div label {
+  border-radius: 0;
+  border-color: #d5d5d5;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.HCAU-tab-radio2 > div input:checked + label {
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
 }/*# sourceMappingURL=HCAU-m-component-hd.css.map */

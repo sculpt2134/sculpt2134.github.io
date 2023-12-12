@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>HCAU-PUBL</title>
+  <link rel="stylesheet" href="/static/html/pc/kia/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/pc/kia/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+<style>
+    @page {
+        size:210mm 297mm; /*A4*/
+        margin:0;
+       }
+      
+      @media print {
+        * {
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+          }
+        
+      }
+      html, body {
+       /* margin:0;
+        padding:0;*/
+        page-break-after: avoid;
+        page-break-before: avoid
+      }
+      .body, .page {margin-top:-1px} /*서브픽셀 해결1*/
+      
+      .page:first-child {
+        page-break-before: auto;
+        page-break-inside: avoid
+      }
+      .page {
+        overflow:hidden;
+        position:relative;
+        width:210mm;
+        height:297mm; /*서브픽셀 해결1 사용시*/
+        height:calc(297mm - 1px); /*서브픽셀 해결2 - IE는 미지원*/
+        page-break-before: always
+      }
+      .page > .content { /*img를 .page안에 꽉차게 */
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        width:100%;
+        height:100%
+      } 
+      .page > .watermark { 
+        position:absolute;
+        top:45%;
+        left:25%;
+        width:50%;
+        height:10%;
+        z-index:50
+      }
+      
+</style>
+</head>
+<body>
+
+    <!-- modal select vehicle -->
+    <div class="HCAU-modal product modal fade show d-block" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <!-- modal-lg modal-md modal-sm -->
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/html/pc/kia/img/svg/ico_modal_close.svg" alt="Close" /></button>
+                <div class="modal-content-inner">
+                    <div class="modal-body">
+                        <!-- buttons-->
+                        <div class="wrap-btn d-flex justify-content-start">
+                            <div class="HCAU-h2 text-nowrap" id="exampleModalLabel">Selected Filters</div>
+                            
+                            <div class="row full">
+                                <ul class="">
+                                    <li class="select-btn">
+                                        <button type="button" class="HCAU-btn">
+                                            SUVs
+                                            <img src="/static/html/pc/kia/img/svg/ico_filter_close.svg" alt="Close">
+                                        </button>
+                                    </li>
+                                    <li class="select-btn">
+                                        <button type="button" class="HCAU-btn">
+                                            Sedans
+                                            <img src="/static/html/pc/kia/img/svg/ico_filter_close.svg" alt="Close">
+                                        </button>
+                                    </li>
+                                    <li class="select-btn">
+                                        <button type="button" class="HCAU-btn">
+                                            People Movers
+                                            <img src="/static/html/pc/kia/img/svg/ico_filter_close.svg" alt="Close">
+                                        </button>
+                                    </li>
+                                    <li class="select-btn">
+                                        <button type="button" class="HCAU-btn">
+                                            Plug-in Hybrid
+                                            <img src="/static/html/pc/kia/img/svg/ico_filter_close.svg" alt="Close">
+                                        </button>
+                                    </li>
+                                    <li class="select-btn">
+                                        <button type="button" class="HCAU-btn">
+                                            Electric
+                                            <img src="/static/html/pc/kia/img/svg/ico_filter_close.svg" alt="Close">
+                                        </button>
+                                    </li>
+                                    <li class="select-btn">
+                                        <button type="button" class="HCAU-btn">
+                                            Gasoline
+                                            <img src="/static/html/pc/kia/img/svg/ico_filter_close.svg" alt="Close">
+                                        </button>
+                                    </li>
+                                    <li class="select-btn">
+                                        <button type="button" class="HCAU-btn">
+                                            Automatic
+                                            <img src="/static/html/pc/kia/img/svg/ico_filter_close.svg" alt="Close">
+                                        </button>
+                                    </li>
+                                </ul>  
+                            </div>
+                        </div>    
+                        <div class="wrap-checkbox">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="HCAU-h3">Vehicle Type</div>
+                                    <div class="pt20">
+                                        <div class="form-check">
+                                            <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck1" checked>
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                All
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck10" checked>
+                                            <label class="form-check-label" for="defaultCheck10">
+                                                SUVs
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck11" checked>
+                                            <label class="form-check-label" for="defaultCheck11">
+                                                Sedans
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck12" checked>
+                                            <label class="form-check-label" for="defaultCheck12">
+                                                People Movers
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="HCAU-h3">Power Train</div>
+                                    <div class="pt20">
+                                        <div class="form-check">
+                                            <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck2" checked>
+                                            <label class="form-check-label" for="defaultCheck2">
+                                                All
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck20" checked>
+                                            <label class="form-check-label" for="defaultCheck20">
+                                                Electric
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck21" checked>
+                                            <label class="form-check-label" for="defaultCheck21">
+                                                Plug-in Hybrid
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck22" checked>
+                                            <label class="form-check-label" for="defaultCheck22">
+                                                Gasoline
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="HCAU-h3">Transmission</div>
+                                    <div class="pt20">
+                                        <div class="form-check">
+                                            <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck3">
+                                            <label class="form-check-label" for="defaultCheck3">
+                                                All
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck30" checked>
+                                            <label class="form-check-label" for="defaultCheck30">
+                                                Automatic
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck31">
+                                            <label class="form-check-label" for="defaultCheck31">
+                                                Manual
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="result-wrap  g12">
+                                <span class="HCAU-txt-sm">Filter search results</span>
+                                <h6 class="result">32 Models</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="d-flex g12 justify-content-center">
+                            <button type="button" class="HCAU-btn btn-large primary">Ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- HCAU-detail -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<div class="modal-backdrop fade show"></div>
+<script src="/static/html/pc/kia/js/bootstrap.bundle.min.js"></script>
+<script src="/static/html/pc/kia/js/main.js"></script>
+<script src="/static/html/pc/kia/js/includeHTML.js"></script>
+<script src="/static/html/pc/kia/js/includeRouter.js"></script>
+<script>
+includeHTML( function () {
+includeRouter( function () {
+});
+});
+
+</script>
+<script type="module">
+    
+                               
+            //import Popper from "https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/esm/popper.min.js"
+            import {createPopper} from "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.0/dist/esm/popper.min.js"
+            import {ModuleFactory as dashboardCodeFactory, BsMultiSelect /*derpicated*/} from "https://cdn.jsdelivr.net/npm/@dashboardcode/bsmultiselect@1.1.18/dist/js/BsMultiSelect.esm.min.js"
+            //import {ModuleFactory as dashboardCodeFactory, BsMultiSelect} from "http://127.0.0.1:5500/dist/js/BsMultiSelect.esm.js"
+            var languagesElement = document.querySelector('#languages-id');
+            var bsMultiSelect = null;
+            document.querySelector('#btnAttach').onclick = function(){
+                if (!bsMultiSelect){
+                    var environment = {window, createPopper};
+                    let dashboardCode = dashboardCodeFactory(environment);
+                    bsMultiSelect = dashboardCode.BsMultiSelect(languagesElement,  {placeholder: "placeholder"}); 
+                    //bsMultiSelect = BsMultiSelect(languagesElement, environment, {placeholder: "placeholder"}); // depricated
+                }
+            };
+
+            document.querySelector('#btnDispose').onclick =
+                function() {
+                    if (bsMultiSelect){
+                        bsMultiSelect.dispose();
+                        bsMultiSelect= null;
+                    }  
+                };
+        
+</script>
+</body>
+
+</html>

@@ -1,0 +1,1706 @@
+//kia
+$primary : #05141f;
+$secondary01 : #e5e5e5;
+$secondary02 : #f5f5f5;
+$point : #5d7d2b;
+$point-red : #EA0029;
+$point-red-rgb : rgba(230, 51, 18, 0.05);
+$border-color : #e5e5e5;
+$bg-color : #f5f5f5;
+$white : #fff;
+$gray01 : #f5f5f5;
+$gray02 : #e5e5e5;
+$gray03 : #697279;
+$gray04 : #37434C;
+$black : #05141f;
+$font-size-h1 : 38px;
+$font-size-h2 : 22px;
+$font-size-lt : 18px;
+$font-size-lg : 16px;
+$font-size-md : 15px;
+$font-size-sm : 13px;
+$font-size-xs : 11px;
+
+.g08{gap: 8px;}
+.g10{gap: 10px;}
+.g12{gap: 12px;}
+.g16{gap: 16px;}
+.g20{gap: 20px;}
+.g30{gap: 30px;}
+.g40{gap: 40px;}
+.g54{gap: 54px;}
+.g96{gap: 96px;}
+.gx-20{--bs-gutter-x: 20px;}
+.gy-28{--bs-gutter-y: 28px;}
+
+.rg0{row-gap: 0;}
+
+.p10{padding: 10px;}
+.p20{padding: 20px;}
+.p32{padding: 32px;}
+.p45{padding: 45px;}
+.p50{padding: 50px;}
+.pt12{padding-top: 12px;}
+.pt16{padding-top: 16px;}
+.pt20{padding-top: 20px;}
+.pt32{padding-top: 32px;}
+.pt40{padding-top: 40px;}
+.pt80{padding-top: 80px;}
+
+.pb20{padding-bottom: 20px;}
+.pb32{padding-bottom: 32px;}
+
+.py15{padding-top: 15px;padding-bottom: 15px;}
+.py16{padding-top: 16px;padding-bottom: 16px;}
+.py20{padding-top: 20px;padding-bottom: 20px;}
+.py24{padding-top: 24px;padding-bottom: 24px;}
+.py28{padding-top: 28px;padding-bottom: 28px;}
+.py32{padding-top: 32px;padding-bottom: 32px;}
+.py35{padding-top: 35px;padding-bottom: 35px;}
+.py40{padding-top: 40px;padding-bottom: 40px;}
+.py60{padding-top: 60px;padding-bottom: 60px;}
+
+.px20{padding-left: 20px;padding-right: 20px;}
+.px32{padding-left: 32px;padding-right: 32px;}
+.px36{padding-left: 32px;padding-right: 36px;}
+.px40{padding-left: 40px;padding-right: 40px;}
+
+.mx20{margin-left: 20px;margin-right: 20px;}
+.mx32{margin-left: 32px;margin-right: 32px;}
+.my20{margin-top: 20px;margin-bottom: 20px;}
+
+.mt0{margin-top: 0px;}
+.mt10{margin-top: 10px;}
+.mt12{margin-top: 12px;}
+.mt20{margin-top: 20px;}
+.mt28{margin-top: 28px;}
+.mt32{margin-top: 32px;}
+.mt36{margin-top: 36px;}
+.mt40{margin-top: 40px;}
+.mt48{margin-top: 48px;}
+.mt50{margin-top: 50px;}
+.mt60{margin-top: 60px;}
+.mt80{margin-top: 80px;}
+
+.mb20{margin-bottom: 20px;}
+.mb32{margin-bottom: 32px;}
+.mb40{margin-bottom: 40px;}
+.ml40{margin-left: 40px !important;}
+
+a{text-decoration: none;}
+.fw500{font-weight: 700;}
+
+.w50{width: 50px;}
+.w92{width: 92px;}
+.w180{width: 180px;}
+.w200{width: 200px;}
+.w320{width: 320px;}
+.w350{width: 350px;}
+.w540{width: 540px;}
+.h44{height: 44px;}
+.h52{height: 52px;}
+.h60{height: 60px;}
+
+.border-bottom{border-bottom:1px solid $border-color;}
+.border-bottom.black{border-color: $black !important;}
+.border-top{
+    border-top:1px solid $border-color;
+    &.black{border-color : $black !important;}
+}
+.border-top-dashed{border-top:1px dashed $gray03;}
+.border-bottom-dashed{border-bottom:1px dashed $gray03;}
+
+//폰트 사이즈
+.HCAU-h1{color: $black;font-size: $font-size-h1;text-transform: uppercase;font-weight: 700;line-height: 1.2;}
+.HCAU-h2{color: $black;font-size: $font-size-h2;font-weight: 700;}
+.HCAU-lead-txt{color: $black;font-size: $font-size-lt;}
+.HCAU-txt-lg{color: $black;font-size: $font-size-lg;}
+.HCAU-txt-md{color: $black;font-size: $font-size-md;}
+.HCAU-txt-sm{color: $black;font-size: $font-size-sm;}
+.HCAU-txt-xs{color: $black;font-size: $font-size-xs;}
+.lh20{line-height:20px;}
+//폰트 컬러
+.white{color: $white}
+.gray01{color : $gray01}
+.gray02{color : $gray02}
+.gray03{color : $gray03}
+.gray04{color : $gray04}
+.black{color: $black}
+.point{color: $point}
+.point-red{color: $point-red}
+
+
+//사이드바
+.HCAU-sidebar{
+    .sidebar-menu{
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        > div{
+            height: 56px;
+            position: relative;
+            a{
+                color: $black;
+                display: flex;
+                align-items:center;
+                padding: 16px 20px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                white-space: nowrap;
+                > span{
+                    overflow: hidden;
+                    width: 0;
+                    /* padding-right: 16px; */
+                }
+                img{
+                    width: 24px;height: 24px;
+                    &.hover{display: none;}
+                }
+                // svg{
+                //     width: 24px;height: 24px;
+                // }
+                &:hover{
+                    background: $point;
+                    > span{
+                        animation: hoverShow 0.2s linear;
+                        width: 100%;
+                        padding-right: 16px;
+                        // box-shadow: 20px 30px 50px 0px rgba(0, 0, 0, 0.15);
+                    }
+                    img{
+                        display: none;
+                        &.hover{display: block;}
+                    }
+                    // svg{
+                    //     fill: $black;
+                    // }
+                }
+            }
+        }
+    }
+}
+@keyframes hoverShow {
+    0% {
+        display: block;
+        width:0;
+    }
+    100% {
+        width:100%;
+        /* padding-right: 16px; */
+    }
+}
+
+
+
+
+//브레드크럼
+.HCAU-breadcrumb {
+    margin-bottom: 80px;
+    .breadcrumb{
+        align-items: center;
+        > li{
+            a.d-block{position: relative;top: -1px;}
+            & + li:before{
+                content:'';
+                display: inline-block;
+                position: relative;
+                top: 1px;
+                width: 1px;
+                height: 14px;
+                background: $gray03;
+                margin:0 8px;
+            }
+        }
+        svg{vertical-align: top;}
+        .dropdown-toggle{
+            img{margin-left: 4px;vertical-align: middle;}
+            &:after{display: none;}
+        }
+        .dropdown-menu{
+            top:6px !important;
+            --bs-dropdown-link-active-color: none;
+            --bs-dropdown-link-active-bg: none;
+            width: max-content;
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07);
+            border-color: $border-color;
+            li:nth-child(2n-1){
+                background: $white;
+            }
+            li + li{border-top: 1px solid $border-color;}
+            .dropdown-item{
+                padding: 10px 20px;
+            }
+        }
+    }
+}
+
+//타이틀
+.HCAU-title{
+    padding-bottom:40px;
+    .HCAU-txt-md{
+        color: $gray04;
+        margin-top: 12px;
+    }
+
+}
+
+//상세
+.HCAU-detail{
+    > section{
+        // border: 1px solid #000;
+        & + section{margin-top: 60px;}
+        .title-area{
+            margin-bottom: 20px;
+            .title{font-size: 24px;font-weight: 700;line-height: 1.1;}
+            .sub-title{font-size: 14px;color: $gray04;}
+        }
+    }
+}
+
+//안내
+.g-notice{
+    border-top: 1px dashed $gray03;
+    padding: 32px 0;
+    dl{
+        dt{
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            // &::before{
+            //     content:'';
+            //     display: inline-block;
+            //     width: 18px;
+            //     height: 18px;
+            //     background: url(/static/html/kia/img/ico/ico_notice.png) no-repeat 0 0;
+            //     vertical-align: text-top;
+            //     margin-right: 2px;
+            // }
+            .ico-gnotice img{vertical-align: text-bottom;}
+        }
+    }
+}
+
+//bullet list
+.HCAU-bullet-list{
+    li{
+        position: relative;
+        font-size: 13px;
+        color: $gray04;
+        padding-left: 11px;
+        &::before{
+            content:'';
+            display: inline-block;
+            width: 3px;
+            height: 3px;
+            border-radius: 3px;
+            background: $gray04;
+            position: absolute;
+            left:0;
+            top: 6px;
+        }
+        .link{margin-left: 4px;}
+        & + li{margin-top: 8px;}
+    }
+    .point-red{color: $point-red;}
+    .point-red:before{
+        background-color: $point-red;
+    }
+    .gray03{color: $gray03;}
+    .gray03:before{
+        background-color: $gray03;
+    }
+}
+
+
+//링크
+.link{
+    font-weight: 700;
+    color: $primary;
+    // margin-left: 4px;
+    text-decoration: none;
+    font-size: 13px;
+    &::after{
+        content:'';
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        border-right: 1px solid $primary;
+        border-bottom: 1px solid $primary;
+        transform: rotate(-45deg);
+        margin-left: 5px;
+    }
+}
+
+//pagination
+.HCAU-pagination {
+	margin-top: 40px;
+	.inner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+		.arrow {
+			display: flex;
+		}
+		.page {
+			display: flex;
+			gap: 20px;
+			border-top: 2px solid $white;
+			border-bottom: 2px solid $white;
+			a {
+			}
+			&.active {
+				border-bottom-color: $point;
+				a {
+					color: $point;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+//버튼
+.HCAU-btn{
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    color: $black;
+    font-weight: 700;
+    border-radius: 4px;
+    background: $white;
+    border: 1px solid $black;
+    line-height: 1.5;
+    //버튼 사이즈
+    &.btn-sm{
+        font-size: 13px;
+        min-height: 30px;
+        padding: 3px 16px;
+        font-weight: 700;
+        & + .btn-sm{
+            margin-left: 4px;
+        }
+    }
+    &.btn-smd{
+        font-size: 14px;
+        font-weight: 500;
+        min-height: 44px;
+        // min-width: 120px;
+        text-align: center;
+        padding: 10px 16px;
+    }
+    &.btn-md{
+        font-size: 15px;
+        font-weight: 700;
+        min-height: 48px;
+        min-width: 120px;
+        text-align: center;
+        padding: 11px 16px;
+    }
+    &.btn-large{
+        font-size: 15px;
+        font-weight: 700;
+        min-height: 52px;
+        min-width: 123px;
+        text-align: center;
+        // padding: 13px 16px;
+        padding: 13px 36px;
+    }
+    &.full{width: 100%;}
+    &.dropdown-toggle{
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.429;
+        padding: 11px 54px 11px 16px;
+        color: $black;
+        border-color : $border-color;
+        box-shadow: none;
+        width: 100%;
+        text-align: left;
+        position: relative;
+        &::after{
+            border-top-width: 5px;
+            border-right-width: 5px;
+            border-left-width: 5px;
+            position: absolute;
+            right: 23px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &.is-invalid{
+            border-color: $point-red;
+        }
+    }
+    //버튼컬러
+    &.primary{
+        background: $primary;
+        border: 1px solid $primary;
+        color: $white;
+    }
+    &.gray01{
+        background: $gray01;
+        border: 1px solid $gray02;
+        color: $black;
+    }
+    &.disable{
+        background: $gray01;
+        border: 1px solid $gray03;
+        color: $gray03;
+        cursor: default;
+        min-width:84px;
+        font-weight: 400;
+    }
+    &.gray03{
+        background: $gray03;
+        border: 1px solid $gray03;
+        color: $white;
+    }
+    &:disabled{
+        border: 1px solid $gray02;
+        background: $gray01;
+        color: $gray03;
+    }
+    &.btn-keyvi{
+        border: 1px solid $white;
+        color: $white;
+        background: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(10px);
+    }
+    //아이콘
+    .ico-print{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        // background: url(/static/html/kia/img/ico/ico_print.png) no-repeat 0 0;
+        vertical-align: bottom;
+        // text-indent: -9999px;
+        // margin-left: 4px;
+    }
+}
+.btn-clear{
+    position:relative;
+    img{
+        position:absolute;
+        right:106px;
+        top:10px
+    }
+}
+
+
+
+.d-flex.full{
+    a,
+    button,
+    div{
+        flex: 1 1 0;
+    }
+}
+
+//탭메뉴
+.HCAU-tab{
+    .nav-tabs{
+        border-bottom: 1px solid $black;
+        .nav-link{
+            border-color: #ddd;
+            border-bottom-color: $black;
+            color: $gray03;
+            background: #f5f5f5;
+            font-weight: 700;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            padding-left: 40px;
+            padding-right: 40px;
+            height: 44px;
+        }
+        .nav-link.active{
+            border-color: $black;
+            border-bottom-color: $white;
+            background: $white;
+            color: $black;
+        }
+    }
+}
+.HCAU-tab-small {
+	.nav-tabs {
+		border: none;
+		li {
+			button {
+				background: none;
+				border: 1px solid;
+				font-size: 13px;
+                color: $black;
+                border-color: $border-color;
+                padding: 4px 16px;
+                &.active{
+                    border-color : $black;
+                    font-weight: 700;
+                }
+			}
+			&:first-child button {
+				border-radius: 4px 0 0 4px;
+			}
+			&:last-child button {
+				border-radius: 0 4px 4px 0;
+			}
+		}
+	}
+}
+
+//badge
+.HCAU-badge{
+    display: inline-block;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 15px;
+    vertical-align: middle;
+    &.type01{color: #ea0029;background: #FEEBEE;}
+    &.type02{color: $primary;background: #EBEFF3;}
+    &.type03 {color: $point;background: #EBF5F9;}
+    &.type04 {color: #999; background: #f5f5f5;}
+    &.small{width:85px;text-align:center;font-weight:700;}
+}
+
+//스텝
+.HCAU-step{
+    display: flex;
+    gap: 20px;
+    & + div{margin-top: 28px;}
+    .step-item{
+        position: relative;
+        border: 2px solid $gray02;
+        border-radius: 36px;
+        flex-grow:0;
+        flex-shrink:0;
+        flex-basis: 36px;
+        height: 36px;
+        align-items:center;
+        justify-content: center;
+        display: flex;
+        .num{font-size: 15px;font-weight: 600;line-height: 1;}
+        .txt{
+            display: none;
+        }
+    }
+    .step-item.active{
+        flex-basis:auto;
+        padding-left: 3px;
+        padding-right: 3px;
+        border-color: $primary;
+        .num{
+            background: $primary;
+            color: $white;
+            width: 26px;
+            height: 26px;
+            border-radius: 100%;
+            line-height: 26px;
+            text-align: center;
+        }
+        .txt{
+            display: block;
+            padding: 0 12px;
+            font-size: 14px;
+            font-weight: 700;
+            color: $primary;
+            font-size: 13px;
+            font-weight: 600;
+            color: $primary;
+        }
+        // flex-grow: 1;
+    }
+    .step-item + .step-item:before{
+        content:'';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: $gray02;
+        position: absolute;
+        left: -22px;top: 50%;
+    }
+}
+
+//border-box
+.border-box{
+    border: 1px solid $gray02;
+    border-radius: 4px;
+    background: $white;
+    &.black{
+        border-color: $black;
+    }
+    &.secondary{
+        border-color : $secondary01;
+        background: $secondary02;
+    }
+}
+
+.bg-box{
+    background: $gray01;
+    border-radius: 4px;
+}
+.bg-box2{
+    background: $bg-color;
+    border-radius: 4px;
+    //pagination
+    .HCAU-pagination {
+        .inner {
+            .page {
+                border-top: 2px solid $bg-color;
+                border-bottom: 2px solid $bg-color;
+                &.active {
+                    border-bottom-color: $point;
+                    a {
+                        color: $point;
+                    }
+                }
+            }
+        }
+    }
+}
+.bg-box3{
+    background: $gray02;
+    border-radius: 4px;
+}
+.edge{
+    border-radius: 0;
+}
+
+//form text, select
+.HCAU-form.form-control,
+.HCAU-form.form-select{
+    font-size: 13px;
+    line-height: 1.429;
+    padding: 11px 16px;
+    color: $black;
+    border-color : $border-color;
+    box-shadow: none;
+    border-radius: 4px;
+}
+.HCAU-form.form-control:focus,
+.HCAU-form.form-select:focus,
+.HCAU-btn.dropdown-toggle:focus{
+    border-color: $point;
+    outline: 1px solid $point;
+}
+.HCAU-form.form-control:read-only{
+    background-color: $gray01;
+    color: $gray03;
+    &:focus{
+        outline:none;
+        border-color: $border-color;
+    }
+}
+.input-num{
+    position:relative;
+    span{position:absolute;
+    left:10px;z-index: 99;font-weight: 700;
+top:15px;}
+}
+
+.HCAU-form.form-control.input-num:after,
+.HCAU-form.form-control.input-num:before{ content: "$";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background:red;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    top: 9px;}
+.HCAU-form.form-control:disabled,
+.HCAU-form.form-select:disabled{
+    background-color: $gray01;
+    color: $black;
+}
+//form check, radio
+.HCAU-form.form-check-input{
+    width: 20px;
+    height: 20px;
+    // box-shadow: none;
+    border-color: $border-color;
+    // margin-top: 0;
+    & + label{
+        // vertical-align: bottom;
+        font-size: 13px;
+        margin-left: 2px;
+        line-height: 2;
+    }
+}
+.HCAU-form.form-check-input[type=checkbox]{
+    border-color: $gray02;
+    background-image: url(/static/html/pc/kia/img/bg/bg_input_check.svg);
+    background-size: 14px 14px;
+    &:checked{
+        background-color: $primary;
+        border-color: $primary;
+        background-image: url(/static/html/pc/kia/img/bg/bg_input_check_on.svg);
+        background-size: 14px 14px;
+    }
+    &:disabled{
+        background-image: none;
+        // background-color: red;
+    }
+}
+.HCAU-form.form-check-input[type=radio]{
+    border-color: $gray02;
+    &:disabled{
+        opacity: 1;
+        background: $gray01;
+    }
+}
+.HCAU-form.form-check-input:checked[type=radio]{
+    background-color: $white;
+    border-color: $primary;
+    background-image: url(/static/html/pc/kia/img/bg/bg_input_radio_on.svg);
+    background-size: 14px 14px;
+}
+.HCAU-form.time-limit{
+    padding-right: 54px;
+    & + .time-limit-num{
+        position: absolute;
+        right: 16px;
+        top: 12px;
+        font-size: 14px;
+        color: $point-red;
+    }
+}
+//input-type file
+.filebox{
+    display: flex;
+    input[type="file"] {
+        position: absolute;
+        width: 0;
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 0;
+    }
+    .upload-name {
+        display: inline-block;
+        vertical-align: middle;
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+        border-radius: 4px;
+        background: #fff;
+        line-height: 1.5;
+        height: 44px;
+    }
+    & label {
+        display: inline-flex;
+        padding: 10px 20px;
+        vertical-align: middle;
+        border: 1px solid #000;
+        cursor: pointer;
+        height: 40px;
+        margin-left: 12px;
+        font-size:14px;font-weight: 700;
+    }
+}
+
+
+//테이블
+.HCAU-table{
+    .table{
+        &.fixed{
+            table-layout: fixed;
+            th,
+            td{
+                padding: 0.625rem 1.25rem;
+                // line-height: 1.1;
+                color: $black;
+                .no-txt-input{
+                    min-height: 44px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+        border-top: 1px solid $secondary01;
+        margin-bottom: 0;
+        th,td{
+            border-color: $secondary01;
+        }
+        th{
+            padding: 22px;
+            background: $secondary02;
+            // line-height: 1.1;
+            font-size: 13px;
+        }
+        td{
+            padding: 16px 22px;
+            .HCAU-bullet-list{
+                li{
+                    color: $black;
+                    &:before{background: $gray03;}
+                }
+            }
+        }
+        .table-active td{
+            background:$point-red-rgb;
+            box-shadow: none;
+        }
+        .tb-inner-flex{
+            > div{
+                display: flex;
+                gap: 16px;
+                & + div{
+                    // margin-top: 4px;
+                }
+            }
+        }
+        tfoot .HCAU-form.form-control,
+        tr.sum .HCAU-form.form-control{background: #f5f5f5;color:#000;
+        }
+        &.select{
+            th{
+                font-weight: 700;
+                padding:1rem 0;
+                background: none;
+            }
+            th:first-child{padding-left:32px}
+            td{
+                padding:1rem .25rem;
+            }
+            .btn-check+.btn{background:#fff;border-color:#000;color:#000;font-size:14px;height:32px}
+            .btn-check:checked+.btn{background: #000;border:none;color:#fff;font-weight: bold;}
+            .radio-group {
+                .radio-group-inner{
+                    padding:2px;
+                    border-radius: 4px;
+                    .HCAU-btn{padding:7px 16px;height: 28px;min-height: 28px;}
+                    > div + div{border:none}
+                    input[type=radio]:checked + .HCAU-btn{background:#f5f5f5;color:#000;font-weight: bold;}
+                }
+            }
+
+        }
+    }
+    &.dot{
+        .table{
+            tr td{vertical-align: top;padding:1rem;
+                p{position: relative;padding-bottom:8px;
+                &:before{content: "";
+                    display: inline-block;
+                    width: 3px;
+                    height: 3px;
+                    border-radius: 3px;
+                    background: #999;
+                    vertical-align: middle;
+                    position:absolute;
+                    top:7px;left:-10px;
+                    }
+                }
+            }
+        }
+    }
+}
+.HCAU-table.type02{
+    th,
+    td{padding-top: 28px;padding-bottom: 28px;}
+}
+.separator{
+    span + span::before{
+        content:'';
+        display: inline-block;
+        width: 1px;
+        height: 14px;
+        background: $secondary01;
+        position: relative;
+        left: -8px;
+        top: 3px;
+    }
+    &.type02{
+        width:95%;
+        span + span{
+            flex-basis:125px;
+            &::before{
+                left:-16px;
+                }
+        }
+    }
+}
+//PRODUCT
+.prd-keyvi{
+    position: relative;
+    // padding-bottom:200px;
+    .HCAU-flex-table{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        > .HCAU-txt-md{
+            position:absolute;
+            top: 35%;
+            text-align: center;
+            // font-size:16px;
+        }
+    }
+    .HCAU-table{
+        padding: 0 40px;
+        position: relative;
+        .table.fixed{
+            border-left: 1px solid $secondary01;
+            border-right: 1px solid $secondary01;
+            th,td{
+                padding: 16px 20px;
+            }
+        }
+        &.pd-02{margin-top: -97px;}
+        &.pd-03{margin-top: -106px;}
+        &.pd-04{margin-top: -130px;}
+        &.pd-05{margin-top: -106px;}
+        &.pd-06{margin-top: -97px;}
+        &.pd-07{margin-top: -97px;}
+    }
+    .chart-wrap{
+        position: relative;
+        margin-top:40px;
+        img{padding:160px 110px 50px;border: 1px solid $gray02;}
+        .HCAU-h2{position:absolute;top:50px;}
+        .HCAU-txt-md{position:absolute;top:96px;}
+
+    }
+}
+// modal 공통
+.HCAU-modal{
+    .modal-dialog{
+        &.modal-xs{max-width: 320px;
+            .modal-content{
+                border-radius: 0;
+                .btn-smd{
+                    min-height: 40px;
+                    padding: 8px 16px;
+                }
+            }
+        }
+        &.modal-sm{max-width: 480px;}
+        &.modal-md{max-width: 640px;}
+        &.modal-lg{max-width: 800px;max-height: 800px;}
+        .modal-content{
+            position: relative;
+            padding: 40px;
+            border: none;
+            border-radius: 4px;
+            display: block;
+            // line-height: 1;
+            .modal-content-inner{
+                display: flex;
+                flex-direction: column;
+            }
+            .btn-close{
+                // position: absolute;
+                // right: 40px;
+                // top: 40px;
+                padding: 0;
+                margin:0;
+                opacity: 1;
+                width: 24px;
+                height: 24px;
+                background-image: none;
+                // background-size: contain;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+            }
+            .modal-header{
+                // display: block;
+                padding: 0;
+                border: none;
+            }
+            .modal-body{
+                padding: 0;
+                margin-top: 20px;
+                .cta-btn-wrap{
+                    margin-top: 40px;
+                }
+            }
+            .modal-footer{
+                display: block;
+                padding: 0;
+                border: none;
+                margin-top: 40px;
+                * {margin: 0;}
+            }
+        }
+    }
+}
+
+.HCAU-search-bar{
+    .HCAU-btn.dropdown-toggle{min-width: 153px;}
+    .search-btn{flex-basis:84px}
+    .dropdown > button{min-height: 44px;}
+    .HCAU-form.form-control[type="text"]{min-height: 44px;}
+}
+.HCAU-search-bar + div{margin-top: 20px;}
+.radio-group{
+    white-space: nowrap;
+    .radio-group-inner{
+        display: inline-flex;
+        border: 1px solid $border-color;
+        border-radius: 4px;
+        overflow: hidden;
+        max-height: 44px;
+        > div + div{
+            border-left: 1px solid $border-color;
+        }
+        .HCAU-btn{
+            border: none;
+            border-radius: 0;
+            min-height: 42px;
+
+        }
+        input[type="radio"]:checked + .HCAU-btn{
+            background: $black;
+            color: $white;
+        }
+    }
+}
+
+.dropdown-menu{
+    width: 100%;
+    padding:0;
+    overflow: hidden;
+    li{font-size: 14px;}
+    li:hover a{background: none;}
+    li:nth-child(2n-1){
+        background:$gray01;
+    }
+    .dropdown-item{
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+}
+
+// nodata
+.HCAU-nodata.type01{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 120px 0;
+    background: $white;
+    .HCAU-lead-txt{
+        font-weight: 700;
+        margin-top: 16px;
+        text-align: center;
+        line-height: 1.2;
+    }
+    // .HCAU-lead-txt:before{
+    //     content:'';
+    //     display: block;
+    //     width: 100%;
+    //     height: 100px;
+    //     background: url(/static/html/kia/img/ico/ico_no_matches_hd01.png) no-repeat 50% 0;
+    // }
+}
+.HCAU-nodata.type02{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 84px 0;
+    .HCAU-txt-sm{
+        font-weight: 700;
+        margin-top: 8px;
+        text-align: center;
+        line-height: 1.2;
+    }
+    // .HCAU-txt-sm:before{
+    //     content:'';
+    //     display: block;
+    //     width: 100%;
+    //     height: 48px;
+    //     background: url(/static/html/kia/img/ico/ico_no_matches_hd02.png) no-repeat 50% 0;
+    // }
+}
+
+.ico-loan-btn{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    // background: url(/static/html/kia/img/ico/ico_loan_btn.png) no-repeat 0 0;
+}
+.ico-postcode{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    img{max-width: 100%;}
+}
+// loan-items
+.loan-items-wrap{
+    row-gap: 20px;
+    column-gap: 85px;
+}
+.loan-items{
+    width: 350px;
+    .loan-items-ico{
+        float:left;
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        // &.ico01{
+        //     background-image: url(/static/html/kia/img/ico/ico_loan01.png);
+        // }
+        // &.ico02{
+        //     background-image: url(/static/html/kia/img/ico/ico_loan02.png);
+        // }
+        // &.ico03{
+        //     background-image: url(/static/html/kia/img/ico/ico_loan03.png);
+        // }
+        // &.ico04{
+        //     background-image: url(/static/html/kia/img/ico/ico_loan04.png);
+        // }
+        // &.ico05{
+        //     background-image: url(/static/html/kia/img/ico/ico_loan05.png);
+        // }
+        // &.ico06{
+        //     background-image: url(/static/html/kia/img/ico/ico_loan06.png);
+        // }
+        // &.ico07{
+        //     background-image: url(/static/html/kia/img/ico/ico_loan07.png);
+        // }
+        // &.ico08{
+        //     background-image: url(/static/html/kia/img/ico/ico_loan08.png);
+        // }
+
+    }
+    .loan-text{
+        float:left;
+        margin-left: 16px;
+    }
+}
+
+//payment request
+.HCAU-payment-request{
+    .border-box > .d-flex{height: 70px;}
+}
+//flex-fix
+.flex-fix{flex:1 1 0}
+.flex-half{flex: 1 1 50%;}
+
+//request step
+.request-step{
+    .border-box{
+        position: relative;
+        .HCAU-txt-md{
+            display: inline-block;
+            border-bottom: 1px solid $black;
+        }
+        img{
+            position: absolute;
+            right: -12px;
+            top: 50%;
+            margin-top: -12px;
+        }
+    }
+}
+
+// tooltip
+.HCAU-tooltip {
+	display: inline-block;
+	position: relative;
+    vertical-align: text-bottom;
+	a {
+		display: flex;
+        &:hover + .HCAU-tooltip-inner{
+            display: block;
+        }
+	}
+	.HCAU-tooltip-inner {
+        display: none;
+		padding: 12px 20px;
+		box-sizing: border-box;
+		min-width: 180px;
+		max-width: 180px;
+		background: $gray04;
+		position: absolute;
+		left: -20px;
+		bottom: 25px;
+		border-radius: 8px;
+		.HCAU-tooltip-arrow {
+			width: 10px;
+			height: 10px;
+			background: $gray04;
+			position: absolute;
+			left: 23px;
+			bottom: -4px;
+			transform: rotate(45deg);
+		}
+		.HCAU-tooltip-cont {
+            color: $white;
+            > div + div{margin-top: 4px;}
+		}
+	}
+}
+
+// 간격
+section + .g-notice,
+section + .d-flex.gap-3.border-top-dashed {
+    margin-top: 60px;
+}
+.cta-btn-wrap {
+    margin-top: 60px;
+}
+.cta-btn-wrap + .g-notice,
+form + .g-notice {
+  margin-top: 48px;
+}
+
+// num-circle
+.num-circle{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align:center;
+    border: 1px solid #000;
+    border-radius: 100%;
+}
+
+// validation, HCAU-info-msg
+.HCAU-valid .form-control.is-valid,
+.HCAU-valid.was-validated .form-control:valid{
+  background: $white;
+  border-color: $border-color;
+}
+.HCAU-valid .form-control.is-valid:read-only,
+.HCAU-valid.was-validated .form-control:valid:read-only{
+    background-color: $gray01;
+    color: $gray03;
+}
+.HCAU-valid .form-control.is-invalid,
+.HCAU-valid.was-validated .form-control:invalid{
+    background: $white;
+    border-color: $point-red;
+}
+
+.HCAU-form.form-control.is-invalid,
+.HCAU-form.form-control.HCAU-form-invalid{
+    border-color: $point-red;
+    &::placeholder{
+        color: $point-red;
+    }
+}
+
+.invalid-feedback,
+.valid-feedback,
+.HCAU-info-msg,
+.HCAU-valid-feedback,
+.HCAU-invalid-feedback{
+    position: relative;
+    font-size: 12px;
+    padding-left: 10px;
+    margin-top: 8px;
+    &:before{
+        content:'';
+        display: block;
+        width: 2px;
+        height: 2px;
+        border-radius: 2px;
+        position: absolute;
+        left: 0;
+        top: 7px;
+
+    }
+    &.lh:before{
+        top:6px;
+    }
+}
+.valid-feedback,
+.HCAU-valid-feedback{
+    color: $point;
+    &:before{
+        background: $point;
+    }
+}
+.invalid-feedback,
+.HCAU-invalid-feedback{
+    color: $point-red;
+    &:before{
+        background: $point-red;
+    }
+}
+.HCAU-info-msg{
+    color: $gray03;
+    &:before{
+        background: $gray03;
+    }
+}
+
+
+//select membership
+.select-membership{
+    a.border-box{
+        padding: 70px 0;
+        text-decoration: none;
+        img.hover{display: none;}
+        span{
+            display: block;
+        }
+        &:hover{
+            border-color: $point;
+            img{
+                display: none;
+                &.hover{display: inline-block;}
+            }
+            span{color: $point;}
+        }
+    }
+}
+
+.ico-reload{
+    display: inline-flex;
+    border: 1px solid $black;
+    border-radius: 4px;
+    padding: 4px;
+}
+.checked-bold-table input:checked + label{
+    font-weight: 700;
+    // line-height: 1;
+}
+
+//HCAU-cs
+.HCAU-cs {
+	width: 260px;
+	position: absolute;
+	right: 24px;
+	bottom: 80px;
+	.chat-bot {
+		background: $point;
+        box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.10);
+		width: 70px;
+		height: 70px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		border-radius: 100%;
+		gap: 7px;
+		line-height: 1;
+        color: $white;
+        &:hover{color: $white;}
+		img {
+			width: 28px;
+			height: 28px;
+		}
+		span {
+			font-size: 12px;
+			font-weight: 700;
+		}
+	}
+	.contact-us {
+		margin-top: 40px;
+		line-height: 1;
+		> div {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			img {
+				a {
+					color: #666;
+				}
+			}
+		}
+	}
+	.family-site {
+		margin-top: 20px;
+		.dropdown-toggle::after {
+			transform: rotate(180deg);
+		}
+	}
+}
+// Login
+.HCAU-login-wrap {
+	width: 644px;
+	margin: 0 auto;
+	margin-top: 68px;
+    .HCAU-login {
+        padding: 10px;
+        .border-box {
+            padding: 25px 32px;
+        }
+        &-input {
+            width: 400px;
+        }
+    }
+	.invalid-feedback {
+		padding-left: 0;
+		margin-top: 12px;
+		&:before {
+			display: none;
+		}
+	}
+}
+.card {
+    border:2px solid transparent;
+    img {width:180px}
+
+    .card-body {
+        padding:24px 15px;
+        border:2px solid transparent;
+        div {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        &.HCAU-txt-md{margin-top:40px;font-weight: 700;margin-bottom:8px}
+        }
+
+    }
+    &:hover{border:2px solid $point;border-radius: 4px;}
+    &.active{border:2px solid $point}
+}
+.HCAU-modal.product .modal-dialog {
+    max-width: 910px;
+    padding:0;
+    .modal-content{
+        padding:0;
+        .btn-close{right:36px;top:16px;z-index:99}
+        .modal-body{
+            position: relative;
+            padding:0;
+
+            .HCAU-h3{ font-size:20px;font-weight: 700;border-bottom:1px solid $border-color;padding-bottom:16px}
+            .form-check{margin-bottom:12px}
+            .wrap-btn{
+                border-bottom:1px solid $border-color;
+                .HCAU-h2{font-size:16px;font-weight: 700;line-height: 1.5;padding-left:36px;padding-right:12px}
+                .row.full{
+                    padding-right:36px;
+                    padding-bottom:8px;
+                    margin-right:30px;
+                }
+
+            }
+            .wrap-checkbox{
+                padding:20px 36px;
+                .col-sm-4{padding:16px 20px}
+            }
+            .result-wrap{
+                display: flex;
+                justify-content: flex-end;
+                padding:15px 0;
+                border-top:1px solid $black;
+                border-bottom:1px solid $black;
+            }
+        }
+        .modal-footer{margin-top:2px;margin-bottom:36px}
+    }
+}
+.select-btn{margin-right:8px;float:left;margin-bottom:8px;
+    button{font-size:14px;font-weight:700;border-radius: 15px;border-color:$gray03;padding:2px 12px;
+    img{padding-top:2px}
+    }
+}
+.select-wrap{
+    position: relative;
+    display:flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    margin-top:20px;
+    margin-bottom:20px;
+    border:1px solid $black;
+    border-radius: 4px;
+    padding:18px 36px 10px 36px;
+    p.HCAU-h3{padding-right:12px;font-weight: 700;text-wrap:nowrap;padding-bottom:4px}
+    .HCAU-btn.select{
+        position:absolute;
+        right:36px;
+        top:12px;
+        border:0;
+    }
+    ul{margin-right:30px}
+}
+.wrap .HCAU-container .HCAU-contents.full{
+    width: 100% ;
+    padding-left:0;
+    .select-title{
+        margin-top:40px;
+        margin-bottom:20px;
+        display: flex;
+        justify-content: space-between ;
+        align-items: center;
+    }
+    >.HCAU-breadcrumb{padding-left:65px}
+    .w975{
+        width:975px;
+        padding-left:65px;
+        .card{
+            border:0;
+            .card-body{
+            padding:45px 15px;
+            border:0;
+                .HCAU-txt-md{margin-top:27px;margin-bottom:0}
+                .HCAU-btn.btn-dealer{
+                    margin-top:20px;
+                    padding:4px 16px;
+                    font-size:14px;
+                    font-weight:700
+                }
+            img{max-width:180px}
+            }
+        }
+        .card-detail{padding-left:50px;
+        .card-option [class*="select-"] .HCAU-txt-md {margin-bottom:3px}
+        }
+        .HCAU-table.type04{padding-top:23px;padding-bottom:23px;}
+    }
+}
+    //product table
+    .HCAU-table.type03{
+        table{
+            th,td{padding:21px 20px;vertical-align: middle;}
+            .bd-none{
+                th,td{border:0}
+            }
+            .sum{
+                th, td{
+                background:#fff;border-top:1px solid #000;border-bottom:1px solid #000;line-height:30px;padding:16px 20px;
+                }
+            }
+
+        }
+    }
+
+    .sticky-wrap {
+        margin-left:0;
+        padding:15px 0 15px 65px;
+        width: 100%;
+        position: sticky;
+        left: 0;
+        top: 0;
+        display: flex;
+        gap: 1px;
+        background: $primary;
+        z-index: 99;
+        div {
+            font-weight:700;
+            width:975px;
+            color:$white;
+            .price{color:$white;font-size:20px;line-height: 30px;}
+            .sum{color:$white;text-align:right;font-size:24px;padding-right:65px;line-height: 30px}
+        }
+    }
+
+.HCAU-tab-btn{
+    .nav-tabs{
+        display: flex;
+        justify-content: space-around;
+        .nav-item{flex:1;
+        .nav-link{
+            width: 100%;
+            border-color: #ddd;
+            color: $gray03;
+            background: #f5f5f5;
+            font-weight: 700;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+
+            height: 44px;
+        }
+        .nav-link.active{
+            border-color: $black;
+            background: $white;
+            color: $black;
+        }
+    }
+    }
+}
+.HCAU-tab-radio2{
+    display: flex;
+    > div{
+        flex: 1;
+        &:first-child label{border-radius:4px 0 0 4px}
+        &:last-child label{border-radius:0 4px 4px 0;}
+        label{
+            border-radius:0;
+            border-color: $border-color;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        input:checked + label{
+            background-color: $black;
+            border-color: $black;
+            color: $white;
+        }
+    }
+}
+//HCAU-accordion
+.HCAU-accordion{
+    .accordion{
+        border-top: 1px solid $border-color;
+        .accordion-item{
+            border: none;
+            & + .accordion-item{
+                border-bottom: 1px solid $border-color;
+            }
+            .accordion-header{
+                .accordion-button{
+                    gap: 16px;
+                    border-radius: 0;
+                    padding: 24px 16px;
+                }
+                .accordion-button:not(.collapsed){
+                    background: none;
+                    .HCAU-txt-sm.mt-1{font-weight: 700;}
+                }
+                .accordion-button:focus{
+                    box-shadow: 0 0 0 2px rgba(0, 170, 210, 1);
+                }
+            }
+            .accordion-collapse{
+                .accordion-body{
+                    padding: 24px 16px;
+                    background: $gray01;
+                }
+            }
+        }
+    }
+}
+// calendar
+.calendar {
+    position: relative;
+}
+.calendar .HCAU-form.form-control {
+    padding-right: 50px;
+}
+.calendar span button,
+.calendar span img {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    outline: none;
+    border: none;
+    background: none;
+    margin: -12px 0 0 0;
+    padding: 0;
+}
+
+
+
+.HCAU-accordion.faq .accordion .accordion-item{
+    &:first-child{border-bottom:1px solid #e5e5e5}
+    .accordion-header .accordion-button{
+        font-weight:400;
+        dt{font-weight:400}
+        &:not(.collapsed) dd{font-weight: 700;}
+        &:focus{box-shadow: none;}
+        &::after,
+        &:not(.collapsed)::after{background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='23' height='23' rx='3.5' stroke='black'/%3E%3Cpath d='M7 14.381L11.5847 9.79632C11.6383 9.74026 11.7028 9.69566 11.7742 9.66518C11.8456 9.63471 11.9224 9.619 12 9.619C12.0776 9.619 12.1544 9.63471 12.2258 9.66518C12.2972 9.69566 12.3617 9.74026 12.4153 9.79632L17 14.381' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");            }
+        &:not(.collapsed)::after{background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='24' y='24' width='24' height='24' rx='4' transform='rotate(180 24 24)' fill='black'/%3E%3Cpath d='M7 14.381L11.5847 9.79632C11.6383 9.74026 11.7028 9.69566 11.7742 9.66518C11.8456 9.63471 11.9224 9.619 12 9.619C12.0776 9.619 12.1544 9.63471 12.2258 9.66518C12.2972 9.69566 12.3617 9.74026 12.4153 9.79632L17 14.381' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");}
+    }
+}
+
+// .HCAU-accordion.faq .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after,
+// .HCAU-accordion.faq .accordion .accordion-item .accordion-header .accordion-button::after{background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='23' height='23' rx='3.5' stroke='black'/%3E%3Cpath d='M7 14.381L11.5847 9.79632C11.6383 9.74026 11.7028 9.69566 11.7742 9.66518C11.8456 9.63471 11.9224 9.619 12 9.619C12.0776 9.619 12.1544 9.63471 12.2258 9.66518C12.2972 9.69566 12.3617 9.74026 12.4153 9.79632L17 14.381' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");}
+// .HCAU-accordion.faq .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after{background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='24' y='24' width='24' height='24' rx='4' transform='rotate(180 24 24)' fill='black'/%3E%3Cpath d='M7 14.381L11.5847 9.79632C11.6383 9.74026 11.7028 9.69566 11.7742 9.66518C11.8456 9.63471 11.9224 9.619 12 9.619C12.0776 9.619 12.1544 9.63471 12.2258 9.66518C12.2972 9.69566 12.3617 9.74026 12.4153 9.79632L17 14.381' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");}
+
+

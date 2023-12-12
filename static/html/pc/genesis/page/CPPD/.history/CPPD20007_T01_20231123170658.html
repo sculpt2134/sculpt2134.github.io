@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>HCAU-PUBL</title>
+  <link rel="stylesheet" href="/static/html/pc/hyundai/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/pc/hyundai/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+  <style>
+    img{max-width:180px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="HCAU-sidebar" include-html="/static/html/pc/hyundai/aside.html"></div>
+    <div class="HCAU-menubar" include-html="/static/html/pc/hyundai/menu.html"></div>
+
+    <div class="HCAU-container">
+            <div class="HCAU-contents full" id="contents">
+                <!-- HCAU-breadcrumb -->
+                <div class="HCAU-breadcrumb" include-html="/static/html/pc/hyundai/breadcrumb.html"></div>
+            <!-- //HCAU-breadcrumb -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////START PAGE CONTENTS/////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- HCAU-title -->
+<div class="HCAU-title w975">
+    <!-- class option : border-bottom -->
+    <div class="HCAU-h1">Calculate quotation</div>
+</div>
+<!-- //HCAU-title -->
+
+<!-- HCAU-detail -->
+<div class="HCAU-detail">
+    <div class="mt10 w975">
+        <div class="HCAU-step">
+            <div class="step-item ">
+                <div class="num">1</div>
+                <div class="txt">Vehicle selection </div>
+            </div>
+            <div class="step-item">
+                <div class="num">2</div>
+                <div class="txt">Select trim/option</div>
+            </div>
+            <div class="step-item">
+                <div class="num">3</div>
+                <div class="txt">Select Colour</div>
+            </div>
+            <div class="step-item">
+                <div class="num">4</div>
+                <div class="txt">Step 4 </div>
+            </div>
+            <div class="step-item">
+                <div class="num">5</div>
+                <div class="txt">Vehicle quote results</div>
+            </div>
+            <div class="step-item active">
+                <div class="num">6</div>
+                <div class="txt">financial quote</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="HCAU-flex-table w975 mt20">
+        <div class="row border-top d-flex justify-centent-center  align-items-center">
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/static/html/pc/hyundai/img/@/car_img02.png" alt="" class="error">
+                        <div class="HCAU-txt-md">IONIQ5</div>
+                        <div><button type="button" class="HCAU-btn btn-dealer" data-bs-toggle="modal" data-bs-target="#exampleModal">Find a dealer</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div class="card-detail mt28">
+                    <div class="card-option d-flex  justify-content-between mb20">
+                        <div class="select-model">
+                            <div class="HCAU-txt-md fw-bold model">Vehicle</div>
+                            <div class="HCAU-txt-sm point">SATA FE (디젤)17" alloy wheel, 2 X ISOFIX Ponits, 8" multimedia touchscreen</div>
+                        </div>
+                        <div class="HCAU-txt-md fw-bold text-end">67,943.30 $</div>
+                    </div>
+                    <div class="card-option d-flex  justify-content-between mb20">
+                        <div class="select-color">
+                            <div class="HCAU-txt-md fw-bold color">Colour</div>
+                            <div class="HCAU-txt-sm point">ClearWhite/Black one-tone</div>
+                        </div>
+                        <div class="HCAU-txt-md fw-bold text-end">735.00 $</div>
+                    </div>
+                    <div class="card-option d-flex  justify-content-between mb20">
+                        <div class="select-acc">
+                            <div class="HCAU-txt-md fw-bold accesary">Accessory</div>
+                            <div class="HCAU-txt-sm point">Carbon Exterior/Black Box</div>
+                        </div>
+                        <div class="HCAU-txt-md fw-bold text-end">1,3000.00 $</div>
+                    </div>
+                    <div class="card-option d-flex  justify-content-between mb20">
+                        <div class="select-cost">
+                            <div class="HCAU-txt-md fw-bold addition">Additional Costs</div>
+                            <div class="HCAU-txt-sm point">Estimated Registration Fee / Estimated Insurance Premium</div>
+                        </div>
+                        <div class="HCAU-txt-md fw-bold text-end">1,000.00 $</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--find dealer modal CPPD30001_P01.html-->
+    <div class="HCAU-modal modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/html/pc/hyundai/img/svg/ico_modal_close.svg" alt="Close" /></button>
+                <div class="modal-content-inner">
+                    <div class="modal-header">
+                        <div class="HCAU-h2" id="exampleModalLabel">
+                            <span>Find a dealer</span>
+                            <div class="HCAU-txt-sm mt-2 fw-normal">We will guide customers who need in-person consultation to the nearest branch.</div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="border-box">
+                            <div class="bg-box2 p32">
+
+                                <div class="col-md-12">
+                                    <div class="HCAU-txt-md fw-bold mb-3">Region</div>
+                                    <div class="d-flex g12">
+                                        <div class="d-flex flex-fill g20">
+                                            <div class="dropdown flex-fix">
+                                                <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                                                    select state
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown flex-fix">
+                                                <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                                                    select city
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="search-btn">
+                                            <button type="button" class="HCAU-btn btn-smd full">Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mt32">
+                                    <div class="HCAU-nodata type01 flex-column border-top border-bottom">
+                                        <img src="/static/html/pc/hyundai/img/svg/ico_result_find_dealer.svg" alt="">
+                                        <div class="HCAU-txt-sm mt40 fw-bold">Please select a region</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//find dealer modal CPPD30001_P01.html-->
+
+
+        <div class="sticky-wrap">
+            <div class="d-flex justify-content-between">
+                <div class="price">Out The Door Price</div>
+                <div class="sum text-end">33,299.00 $</div>
+            </div>
+        </div>
+
+
+
+    <!--selectcar-->
+    <section class="w975">
+
+        <div>
+            <!-- HCAU-tab -->
+        <div class="HCAU-tab-btn mt20">
+            <ul class="nav nav-tabs" id="">
+                <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab_01" id="tab01" type="button" role="tab" aria-selected="true">Standard</button></li>
+                <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab_02" id="tab02" type="button" role="tab" aria-selected="false">GFV</button></li>
+                <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab_03">Ballon</button></li>
+                <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab_04">Only Interest</button></li>
+            </ul>
+        </div>
+        <!-- //HCAU-tab -->
+
+        <div class="tab-content mt20" id="myTabContent">
+            <div class="tab-pane fade show active" id="tab_01" role="tabpanel" aria-labelledby="tabmenu01">
+                <!--tab01 content Standard-->
+                <section>
+                    <div class="HCAU-flex-table border-bottom mt40">
+                        <div class="HCAU-h2 mb20">Financing Application Information</div>
+                    </div>
+                    <div class="d-flex full align-items-center justify-content-start mt20">
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">1</span>
+                                <span class="HCAU-txt-md fw-bold">Trade in or advance payment</span>
+                            </p>
+                            <div class="d-flex w-100">
+                                <input type="text" class="form-control HCAU-form me-3 text-end fw-bold" id="form-txt01" aria-describedby="" value="11.90 $" >
+                            </div>
+                        </div>
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">2</span>
+                                <span class="HCAU-txt-md fw-bold">Application amount</span>
+                            </p>
+                            <div class="d-flex w-100">
+                                <input type="text" class="form-control HCAU-form me-3 text-end fw-bold" id="form-txt01" aria-describedby="" value="30,000.00 $">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex full align-items-center justify-content-start mt12">
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">3</span>
+                                <span class="HCAU-txt-md fw-bold">Player rate (automatic calculation)</span>
+                            </p>
+                            <div class="d-flex w-100">
+                                <input type="text" class="form-control HCAU-form me-3" id="form-txt0    1" aria-describedby="" value="31%" disabled="">
+                            </div>
+                        </div>
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">4</span>
+                                <span class="HCAU-txt-md fw-bold">Application period</span>
+                            </p>
+                            <div class="d-flex g08 w-100">
+                                <div class="dropdown flex-fix me-3">
+                                    <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                                       24M
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex full align-items-center justify-content-start mt12">
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">5</span>
+                                <span class="HCAU-txt-md fw-bold">Payment cycle</span>
+                            </p>
+                            <div class="HCAU-tab-radio2 me-3">
+                                <div>
+                                    <input type="radio" class="btn-check" name="tab-radio" id="tab-radio01" checked>
+                                    <label for="tab-radio01" class="HCAU-btn btn-smd">
+                                        <span>Monthly</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="radio" class="btn-check" name="tab-radio" id="tab-radio02">
+                                    <label for="tab-radio02" class="HCAU-btn btn-smd">
+                                        <span>Fortnightly</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="radio" class="btn-check" name="tab-radio" id="tab-radio03">
+                                    <label for="tab-radio03" class="HCAU-btn btn-smd">
+                                        <span>Weekly</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="cta-btn-wrap">
+                        <div class="d-flex g12 justify-content-center">
+                            <!-- <button type="button" class="HCAU-btn btn-large gray03">Previous</button> -->
+                            <button type="button" class="HCAU-btn btn-large primary">Request A Quote</button>
+                        </div>
+                    </div>
+
+
+                    <!--result table-->
+                    <div class="HCAU-table mt40 type02">
+                        <table class="table">
+                            <colgroup>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="align-middle text-center">Expected interest rate </th>
+                                    <th scope="col" class="align-middle text-center">Monthly payment  </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="HCAU-txt-sm text-end fw-bold">
+                                        9.4%
+                                    </td>
+                                    <td class="HCAU-txt-sm text-end fw-bold">
+                                            540.00 $
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="cta-btn-wrap">
+                        <div class="d-flex g12 justify-content-center">
+                            <button type="button" class="HCAU-btn btn-large gray03">Previous</button>
+                            <button type="button" class="HCAU-btn btn-large primary">Comparison Quote</button>
+                            <button type="button" class="HCAU-btn btn-large">PRINT this quote</button>
+                        </div>
+
+
+                    </div>
+
+                </section>
+                <!--//tab01 content Standard -->
+            </div>
+            <div class="tab-pane fade" id="tab_02" role="tabpanel" aria-labelledby="tabmenu02">
+                <!--tab02 content GFV-->
+                <section>
+                    <div class="HCAU-flex-table border-bottom mt40">
+                        <div class="HCAU-h2 mb20">Financing Application Information</div>
+                    </div>
+                    <div class="d-flex full align-items-center justify-content-star mt20">
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">1</span>
+                                <span class="HCAU-txt-md fw-bold">Trade in or advance payment</span>
+                            </p>
+                            <div class="d-flex w-100">
+                                <input type="text" class="form-control HCAU-form me-3 text-end fw-bold" id="form-txt01" aria-describedby="" value="11.90 $" >
+                            </div>
+                        </div>
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">2</span>
+                                <span class="HCAU-txt-md fw-bold">Application amount</span>
+                            </p>
+                            <div class="d-flex w-100">
+                                <input type="text" class="form-control HCAU-form me-3 text-end fw-bold" id="form-txt01" aria-describedby="" value="30,000.00 $">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex full align-items-center justify-content-start mt12">
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">3</span>
+                                <span class="HCAU-txt-md fw-bold">Application period</span>
+                            </p>
+                            <div class="d-flex g08 w-100">
+                                <div class="dropdown flex-fix me-3">
+                                    <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                                       24M
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">4</span>
+                                <span class="HCAU-txt-md fw-bold">Annual mileage</span>
+                            </p>
+                            <div class="d-flex g08 w-100">
+                                <input type="text" class="form-control HCAU-form me-3 text-end fw-bold" id="form-txt01" aria-describedby="" value="25,000/year" disabled="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex full align-items-center justify-content-start mt12">
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">5</span>
+                                <span class="HCAU-txt-md fw-bold">Remaining price guaranteed amount</span>
+                            </p>
+                            <div class="d-flex g08 w-100">
+                                <input type="text" class="form-control HCAU-form me-3 text-end fw-bold" id="form-txt01" aria-describedby="" value="135.00 $" disabled="">
+                            </div>
+                        </div>
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">6</span>
+                                <span class="HCAU-txt-md fw-bold">Remaining price guarantee rate</span>
+                            </p>
+                            <div class="d-flex g08 w-100">
+                                <input type="text" class="form-control HCAU-form me-3 text-end fw-bold" id="form-txt01" aria-describedby="" value="45%" disabled="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex full align-items-center justify-content-start mt12">
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">7</span>
+                                <span class="HCAU-txt-md fw-bold">General application amount</span>
+                            </p>
+                            <div class="d-flex g08 w-100">
+                                <input type="text" class="form-control HCAU-form me-3 text-end fw-bold" id="form-txt01" aria-describedby="" value="165.00 $" disabled="">
+                            </div>
+                        </div>
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">8</span>
+                                <span class="HCAU-txt-md fw-bold">Payment cycle</span>
+                            </p>
+                            <div class="HCAU-tab-radio2 me-3">
+                                <div>
+                                    <input type="radio" class="btn-check" name="tab-radio2" id="tab-radio201" checked>
+                                    <label for="tab-radio201" class="HCAU-btn btn-smd">
+                                        <span>Monthly</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="radio" class="btn-check" name="tab-radio2" id="tab-radio202">
+                                    <label for="tab-radio202" class="HCAU-btn btn-smd">
+                                        <span>Fortnightly</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="radio" class="btn-check" name="tab-radio2" id="tab-radio203">
+                                    <label for="tab-radio203" class="HCAU-btn btn-smd">
+                                        <span>Weekly</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cta-btn-wrap">
+                        <div class="d-flex g12 justify-content-center">
+                            <!-- <button type="button" class="HCAU-btn btn-large gray03">Previous</button> -->
+                            <button type="button" class="HCAU-btn btn-large primary">Calculate</button>
+                        </div>
+                    </div>
+
+
+                    <!--result table-->
+                    <div class="HCAU-table mt40 type02">
+                        <table class="table">
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="align-middle text-center">Expected interest rate</th>
+                                    <th scope="col" class="align-middle text-center">Monthly payment</th>
+                                    <th scope="col" class="align-middle text-center">Deferred deposit interest</th>
+                                    <th scope="col" class="align-middle text-center">Principal and interest</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="HCAU-txt-sm text-end fw-bold">
+                                        9.4%
+                                    </td>
+                                    <td class="HCAU-txt-sm text-end fw-bold">
+                                            540.00 $
+                                    </td>
+                                    <td class="HCAU-txt-sm text-end fw-bold">
+                                        62.00 $
+                                    </td>
+                                    <td class="HCAU-txt-sm text-end fw-bold">
+                                        5 10.00 $
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="cta-btn-wrap">
+                        <div class="d-flex g12 justify-content-center">
+                            <button type="button" class="HCAU-btn btn-large gray03">Previous</button>
+                            <button type="button" class="HCAU-btn btn-large primary">Comparison Quote</button>
+                            <button type="button" class="HCAU-btn btn-large">PRINT this quote</button>
+                        </div>
+
+
+                    </div>
+
+                </section>
+                <!--//tab02 content GFV-->
+            </div>
+            <div class="tab-pane fade" id="tab_03" role="tabpanel" aria-labelledby="tabmenu03">
+                <!--tab03 content Ballon-->
+                <section>
+                    <div class="HCAU-flex-table border-bottom mt40">
+                        <div class="HCAU-h2 mb20">Financing Application Information</div>
+                    </div>
+                    <div class="d-flex full align-items-center justify-content-star mt20">
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">1</span>
+                                <span class="HCAU-txt-md fw-bold">Trade in or advance payment</span>
+                            </p>
+                            <div class="d-flex w-100">
+                                <input type="text" class="form-control HCAU-form me-3 text-end fw-bold" id="form-txt01" aria-describedby="" value="11.90 $" >
+                            </div>
+                        </div>
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">2</span>
+                                <span class="HCAU-txt-md fw-bold">Application amount</span>
+                            </p>
+                            <div class="d-flex w-100">
+                                <input type="text" class="form-control HCAU-form me-3 text-end fw-bold" id="form-txt01" aria-describedby="" value="30,000.00 $">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex full align-items-center justify-content-start mt12">
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">3</span>
+                                <span class="HCAU-txt-md fw-bold">Application period</span>
+                            </p>
+                            <div class="d-flex g08 w-100">
+                                <div class="dropdown flex-fix me-3">
+                                    <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                                       24M
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">4</span>
+                                <span class="HCAU-txt-md fw-bold">Remaining price guaranteed amount</span>
+                            </p>
+                            <div class="d-flex g08 w-100">
+                                <input type="text" class="form-control HCAU-form me-3 text-end fw-bold" id="form-txt01" aria-describedby="" value="135.00 $" disabled="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex full align-items-center justify-content-start mt12">
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">5</span>
+                                <span class="HCAU-txt-md fw-bold">Remaining price guarantee rate</span>
+                            </p>
+                            <div class="d-flex g08 w-100">
+                                <input type="text" class="form-control HCAU-form me-3 text-end fw-bold" id="form-txt01" aria-describedby="" value="45%" disabled="">
+                            </div>
+                        </div>
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">6</span>
+                                <span class="HCAU-txt-md fw-bold">General application amount</span>
+                            </p>
+                            <div class="d-flex g08 w-100">
+                                <input type="text" class="form-control HCAU-form me-3 text-end fw-bold" id="form-txt01" aria-describedby="" value="135.00 $" disabled="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex full align-items-center justify-content-start mt12">
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">7</span>
+                                <span class="HCAU-txt-md fw-bold">General application amount</span>
+                            </p>
+                            <div class="d-flex g08 w-100">
+                                <input type="text" class="form-control HCAU-form me-3 text-end fw-bold" id="form-txt01" aria-describedby="" value="165.00 $" disabled="">
+                            </div>
+                        </div>
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">8</span>
+                                <span class="HCAU-txt-md fw-bold">Payment cycle</span>
+                            </p>
+                            <div class="HCAU-tab-radio2 me-3">
+                                <div>
+                                    <input type="radio" class="btn-check" name="tab-radio3" id="tab-radio301" checked>
+                                    <label for="tab-radio301" class="HCAU-btn btn-smd">
+                                        <span>Monthly</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="radio" class="btn-check" name="tab-radio3" id="tab-radio302">
+                                    <label for="tab-radio302" class="HCAU-btn btn-smd">
+                                        <span>Fortnightly</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="radio" class="btn-check" name="tab-radio3" id="tab-radio303">
+                                    <label for="tab-radio303" class="HCAU-btn btn-smd">
+                                        <span>Weekly</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cta-btn-wrap">
+                        <div class="d-flex g12 justify-content-center">
+                            <!-- <button type="button" class="HCAU-btn btn-large gray03">Previous</button> -->
+                            <button type="button" class="HCAU-btn btn-large primary">Calculate</button>
+                        </div>
+                    </div>
+
+
+                    <!--result table-->
+                    <div class="HCAU-table mt40 type02">
+                        <table class="table">
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="align-middle text-center">Expected interest rate</th>
+                                    <th scope="col" class="align-middle text-center">Monthly payment</th>
+                                    <th scope="col" class="align-middle text-center">Deferred deposit interest</th>
+                                    <th scope="col" class="align-middle text-center">Principal and interest</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="HCAU-txt-sm text-end fw-bold">
+                                        9.4%
+                                    </td>
+                                    <td class="HCAU-txt-sm text-end fw-bold">
+                                            540.00 $
+                                    </td>
+                                    <td class="HCAU-txt-sm text-end fw-bold">
+                                        62.00 $
+                                    </td>
+                                    <td class="HCAU-txt-sm text-end fw-bold">
+                                        510.00 $
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="cta-btn-wrap">
+                        <div class="d-flex g12 justify-content-center">
+                            <button type="button" class="HCAU-btn btn-large gray03">Previous</button>
+                            <button type="button" class="HCAU-btn btn-large primary">Comparison Quote</button>
+                            <button type="button" class="HCAU-btn btn-large">PRINT this quote</button>
+                        </div>
+
+
+                    </div>
+
+                </section>
+                <!--//tab03 content Ballon-->
+            </div>
+            <div class="tab-pane fade" id="tab_04" role="tabpanel" aria-labelledby="tabmenu04">
+                <!--tab03 content Only interest-->
+                <section>
+                    <div class="HCAU-flex-table border-bottom mt40">
+                        <div class="HCAU-h2 mb20">Financing Application Information</div>
+                    </div>
+                    <div class="d-flex full align-items-center justify-content-star mt20">
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">1</span>
+                                <span class="HCAU-txt-md fw-bold">Trade in or advance payment</span>
+                            </p>
+                            <div class="d-flex w-100">
+                                <input type="text" class="form-control HCAU-form me-3 text-end fw-bold" id="form-txt01" aria-describedby="" value="11.90 $" >
+                            </div>
+                        </div>
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">2</span>
+                                <span class="HCAU-txt-md fw-bold">Application amount</span>
+                            </p>
+                            <div class="d-flex w-100">
+                                <input type="text" class="form-control HCAU-form me-3 text-end fw-bold" id="form-txt01" aria-describedby="" value="30,000.00 $">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex full align-items-center justify-content-start mt12">
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">3</span>
+                                <span class="HCAU-txt-md fw-bold">deposit</span>
+                            </p>
+                            <div class="d-flex g08 w-100">
+                                <input type="text" class="form-control HCAU-form me-3 text-end fw-bold" id="form-txt01" aria-describedby="" value="135.00 $" disabled="">
+                            </div>
+                        </div>
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">4</span>
+                                <span class="HCAU-txt-md fw-bold">Application period</span>
+                            </p>
+                            <div class="d-flex g08 w-100">
+                                <div class="dropdown flex-fix me-3">
+                                    <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                                       24M
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex full align-items-center justify-content-start mt12">
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">5</span>
+                                <span class="HCAU-txt-md fw-bold">grace period</span>
+                            </p>
+                            <div class="d-flex g08 w-100">
+                                <input type="text" class="form-control HCAU-form me-3 text-end fw-bold" id="form-txt01" aria-describedby="" value="12M" disabled="">
+                            </div>
+                        </div>
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">6</span>
+                                <span class="HCAU-txt-md fw-bold">Principal and interest payment period</span>
+                            </p>
+                            <div class="d-flex g08 w-100">
+                                <input type="text" class="form-control HCAU-form me-3 text-end fw-bold" id="form-txt01" aria-describedby="" value="48M" disabled="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex full align-items-center justify-content-start mt12">
+                        <div>
+                            <p class="d-flex g08 py16">
+                                <span class="HCAU-txt-xs fw-bold num-circle">7</span>
+                                <span class="HCAU-txt-md fw-bold">Payment cycle</span>
+                            </p>
+                            <div class="HCAU-tab-radio2 me-3">
+                                <div>
+                                    <input type="radio" class="btn-check" name="tab-radio4" id="tab-radio401" checked>
+                                    <label for="tab-radio401" class="HCAU-btn btn-smd">
+                                        <span>Monthly</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="radio" class="btn-check" name="tab-radio4" id="tab-radio402">
+                                    <label for="tab-radio402" class="HCAU-btn btn-smd">
+                                        <span>Fortnightly</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="radio" class="btn-check" name="tab-radio4" id="tab-radio403">
+                                    <label for="tab-radio403" class="HCAU-btn btn-smd">
+                                        <span>Weekly</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="cta-btn-wrap">
+                        <div class="d-flex g12 justify-content-center">
+                            <!-- <button type="button" class="HCAU-btn btn-large gray03">Previous</button> -->
+                            <button type="button" class="HCAU-btn btn-large primary">Calculate</button>
+                        </div>
+                    </div>
+
+
+                    <!--result table-->
+                    <div class="HCAU-table mt40 type02">
+                        <table class="table">
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="align-middle text-center">Expected interest rate</th>
+                                    <th scope="col" class="align-middle text-center">Grace period monthly payment<br/>(1M~12M)</th>
+                                    <th scope="col" class="align-middle text-center">Repayment period Monthly payment<br/>(13M~69M)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="HCAU-txt-sm text-end fw-bold">
+                                        9.4%
+                                    </td>
+                                    <td class="HCAU-txt-sm text-end fw-bold">
+                                            54.00 $
+                                    </td>
+                                    <td class="HCAU-txt-sm text-end fw-bold">
+                                        510.00 $
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="cta-btn-wrap">
+                        <div class="d-flex g12 justify-content-center">
+                            <button type="button" class="HCAU-btn btn-large gray03">Previous</button>
+                            <button type="button" class="HCAU-btn btn-large primary">Comparison Quote</button>
+                            <button type="button" class="HCAU-btn btn-large">PRINT this quote</button>
+                        </div>
+
+
+                    </div>
+
+                </section>
+                <!--//tab03 content Only interest-->
+            </div>
+        </div>
+        </div>
+
+
+
+
+
+
+    </section>
+
+
+
+</div>
+<!-- HCAU-detail -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+</div>
+<footer include-html="/static/html/pc/hyundai/footer.html"></footer>
+</div>
+</div>
+
+<script src="/static/html/pc/hyundai/js/bootstrap.bundle.min.js"></script>
+<script src="/static/html/pc/hyundai/js/main.js"></script>
+<script src="/static/html/pc/hyundai/js/includeHTML.js"></script>
+<script src="/static/html/pc/hyundai/js/includeRouter.js"></script>
+<script>
+includeHTML( function () {
+includeRouter( function () {
+});
+});
+
+</script>
+
+</body>
+
+</html>
