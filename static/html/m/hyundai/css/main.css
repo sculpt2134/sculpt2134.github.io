@@ -36,7 +36,8 @@ body.main {
   body.main button.box.btn02 {    background: rgba(0, 44, 95, 0.2);  }
   body.main button.box.btn03 {    background: rgba(0, 170, 210, 0.2);  }
   body.main button.box.btn04 {    background: rgba(228, 220, 211, 0.2);  }
-  body.main .btn-cta-wrap {background-color:transparent;bottom:-260px}
+  body.main .btn-cta-wrap {background-color:transparent;bottom:-260px;position:fixed;margin:0}
+
   body.main .btn-cta-wrap .tip{width:100%;background:white;border-radius: 20px 20px 0 0 ;padding-top:40px}
   body.main .btn-cta-wrap .tip span{position:absolute;top:20px;width:80px;left:50%;transform:translateX(-50%)}
   body.main .btn-cta-wrap .promo{background:white;padding:20px}
@@ -77,3 +78,20 @@ body.main {
           .carousel-control-prev{left:-20px;}
           .carousel-control-next{right:-22px;}
           .HCAU-badge{height:22px}
+
+          .vertical.carousel .carousel-item {
+            overflow: hidden;
+        }
+        
+        .vertical.carousel .carousel-item-next:not(.carousel-item-start),
+        .vertical.carousel .active.carousel-item-end {
+            transform: translateY(100%);
+        }
+        
+        .vertical.carousel .carousel-item-prev:not(.carousel-item-end),
+        .vertical.carousel .active.carousel-item-start {
+            transform: translateY(-100%);
+        }
+          .carousel.slide.vertical{background: rgba(28,27,27,.24);overflow: hidden;border-radius: 8px;color:#fff;font-weight: bold;}
+          .carousel.slide.vertical .carousel-inner{}
+         
