@@ -13,7 +13,7 @@ body.main {
     color: #fff;
     text-transform: uppercase;
   }
-
+  
   body.main button.box {
     position: relative;
     background: rgba(28, 27, 27, 0.2);
@@ -66,3 +66,12 @@ body.main {
   body.main .btn-wrap .HCAU-btn{background:#e4dcd3;border-radius: 25px;border:0;}
   body.main footer{background: rgba(0,0,0,.85);}
   body.main footer .copyright{color:#444}
+  .carousel-control-next-icon,.carousel-control-prev-icon{background: none;}
+
+  .carousel-control-prev:disabled, .carousel-control-next:disabled{display:none}
+          .carousel-control-next-icon, .carousel-control-prev-icon{width:32px;height:32px;border-radius: 16px;background-color: rgba(0,0,0,.32);background-image:none;opacity:1; 
+            transition: all .15s ease;display:flex;justify-content: center;align-items: center;}
+          .carousel-control-next-icon:focus,.carousel-control-next-icon:hover,.carousel-control-prev-icon:focus,.carousel-control-prev-icon:hover{background-color:#002c5f}
+          .carousel-control-prev{left:-20px;}
+          .carousel-control-next{right:-22px;}
+          .HCAU-badge{height:22px}
