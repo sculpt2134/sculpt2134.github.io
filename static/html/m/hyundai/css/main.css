@@ -44,6 +44,19 @@ body.main {
   body.main button.box.btn04 {
     background: rgba(228, 220, 211, 0.2);
   }
-  body.main .btn-cta-wrap {background-color:transparent;}
-  body.main .btn-cta-wrap .tip{width:100%;background:blue;border-radius: 20px 20px 0 0 ;padding-top:40px}
-  body.main .btn-cta-wrap .promo{background:red;padding:20px}
+  body.main .btn-cta-wrap {background-color:transparent;bottom:-60px}
+  body.main .btn-cta-wrap .tip{width:100%;background:white;border-radius: 20px 20px 0 0 ;padding-top:40px}
+  body.main .btn-cta-wrap .tip span{position:absolute;top:20px;width:80px;left:50%;transform:translateX(-50%)}
+  body.main .btn-cta-wrap .promo{background:white;padding:20px}
+  body.main .promo .HCAU-h2{font-size:18px;text-transform: uppercase;margin-bottom:12px;}
+  body.main .carousel-indicators{margin-left:auto;margin-right:auto;justify-content: flex-end;margin-top:-24px;top:0;bottom:auto;height:6px}
+  body.main .carousel-indicators [data-bs-target]{width:5px;border-radius: 5px;background:black;height:5px;border:0}
+
+  body.main  .faq {padding-bottom:60px}
+  body.main  .faq .title{color:#fff;padding-left:20px;padding-top:40px;font-size:18px}
+  body.main  .faq-inner {padding:0 20px}
+  body.main  .faq-inner ul li{background:rgba(255,255,255,.1);padding:6px 8px;border-radius: 8px;margin-bottom:4px;position: relative;}
+  body.main  .faq-inner ul li dl{display:flex;justify-content:flex-start}
+  body.main  .faq-inner ul li dl dt,.faq-inner ul li dl dd{display:flex}
+  body.main  .faq-inner ul li dl dt{font-size:12px;padding:5px 12px;border-radius: 4px;background:rgba(0,0,0,.2);color:#fff;min-width: 75px;height:25px;justify-content: center;}
+  body.main  .faq-inner ul li dl dd{font-size:14px;color:#fff;padding-left:12px}
