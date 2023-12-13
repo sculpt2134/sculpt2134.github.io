@@ -1,0 +1,157 @@
+
+
+        body.main {
+            width: 100%;
+            background: url(/static/html/pc/hyundai/img/bg.png) right bottom no-repeat;
+            background-size: cover;
+            header{background: transparent;}
+            .HCAU-container .HCAU-contents .HCAU-h1 {
+            padding: 40px 20px;
+            font-size: 48px;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase
+            }
+            ul li button.box{position:relative;background: rgba(28,27,27,.24);border-radius: 8px;border:0;color:#fff;text-transform: uppercase;font-size:24px;font-weight: bold;display: flex;padding:36px}
+            button.box span{position:absolute;right:36px;bottom:36px}
+            button.box.btn01{background:  rgba(228,220,211,.4);}
+            button.box.btn02{background:  rgba(0,44,95,.28);}
+            button.box.btn03{background:  rgba(0,170,210,.32);}
+            button.box.btn04{background:  rgba(228,220,211,.32);}
+        }
+        // .wrap .HCAU-container .HCAU-contents{padding-left:57px}
+        // .HCAU-container .HCAU-contents .main p {
+        //     padding: 140px 0 0 65px;
+        //     font-size: 5vw;
+        //     font-weight: bold;
+        //     color: #fff;
+        //     text-transform: uppercase
+        // }
+
+        // .HCAU-menubar .menu .logo {
+        //     padding-top: 36px;
+        //     padding-bottom: 80px
+        // }
+
+        
+        // .HCAU-menubar .menu > ul > li {
+        //     font-weight: 700;
+        //     padding: 16px 0;
+        //     font-size: 18px;
+        // }
+        // .HCAU-menubar .menu > ul > li:first-child{padding-top:0}
+        // .collapse.show>ul>li {
+        //     font-size: 14px;
+        //     font-weight: 500;
+        //     position:relative;
+        //     padding: 7px 0 7px 10px;
+        // }
+
+        // .menu li a.active {
+        //     color: #00AAD2;
+        //     text-decoration: none;
+        // }
+        // .collapse > ul >li:before { content: "";
+        // display: inline-block;
+        // width: 3px;
+        // height: 3px;
+        // border-radius: 3px;
+        // background: #444;
+        // position: absolute;
+        // left: 0;
+        // top: 16px;}
+        
+        // .wrap .HCAU-container .HCAU-footer{background:rgba(0,0,0,.6);border-left:1px solid #e5e5e5;color:#b7b7b7}
+        // .carousel-item {
+            
+        //     float: none;
+            
+        //     margin-right: 0;
+            
+        // }
+        
+        // .vertical.carousel .carousel-item {
+        //     overflow: hidden;
+        // }
+        
+        // .vertical.carousel .carousel-item-next:not(.carousel-item-start),
+        // .vertical.carousel .active.carousel-item-end {
+        //     transform: translateY(100%);
+        // }
+        
+        // .vertical.carousel .carousel-item-prev:not(.carousel-item-end),
+        // .vertical.carousel .active.carousel-item-start {
+        //     transform: translateY(-100%);
+        // }
+        //  .carousel-indicators{flex-direction: column;left:auto;margin:auto;right:18px;color:transparent;height:80px;justify-content: center;}
+        //  .carousel-indicators [data-bs-target]{width:4px ;height:4px;border-radius: 8px;border:0;margin-top:6px;margin-bottom:6px;transition: all .6s ease;background:#fff;opacity: 1;}
+        //  .carousel.slide.vertical{padding:22px;background: rgba(28,27,27,.24);width:450px;height:80px;overflow: hidden;border-radius: 8px;color:#fff;font-weight: bold;}
+        //  .carousel.slide.vertical .carousel-inner{height:40px;line-height: 40px;}
+        //  .promo .HCAU-h2{color:#fff;font-size:24px;margin-bottom:12px;text-transform: uppercase;}
+        //  .carousel-indicators .active{background-color: #000;}
+        //  .d-flex.col12.justify-content-between ul li{float:left;padding:6px}
+        //  .d-flex.col12.justify-content-between ul li:nth-child(odd){padding-left:0}
+        //  .d-flex.col12.justify-content-between ul li:nth-child(even){padding-right:0}
+        //  button.box{position:relative;background: rgba(28,27,27,.24);width:450px;border-radius: 8px;border:0;height:180px;color:#fff;text-transform: uppercase;font-size:24px;font-weight: bold;display: flex;padding:36px}
+        //  button.box span{position:absolute;right:36px;bottom:36px}
+        //  button.box.btn01{background:  rgba(228,220,211,.4);}
+        //  button.box.btn02{background:  rgba(0,44,95,.28);}
+        //  button.box.btn03{background:  rgba(0,170,210,.32);}
+        //  button.box.btn04{background:  rgba(228,220,211,.32);}
+
+        //  .carousel.slide.product{background: rgba(0,0,0,.32);width:910px;height:320px;overflow: hidden;border-radius: 8px;color:#fff;font-weight: bold;}
+        //  .carousel.slide.product .HCAU-nodata{justify-content: center;align-items: center;display: flex;height:320px}
+        //  .carousel.slide.product .HCAU-nodata section{font-size:24px}
+        //  .carousel.slide.product .carousel-inner .border-box{background:transparent}
+        //  .carousel.slide.product .carousel-inner .HCAU-btn.btn-md{border:0;border-radius: 30px;background:#e4dcd3;}
+        //  .carousel.slide.product .title{font-size:20px}
+        //  .carousel.slide.product .p-detail{margin-top:75px}
+        //  .carousel.slide.product .carousel-item.one + button[data-bs-slide="prev"]{display:none}
+        //  .faq-inner{}
+        //  .faq-inner ul li{background:rgba(255,255,255,.1);padding:6px 8px;border-radius: 8px;margin-bottom:4px;position: relative;}
+        //  .faq-inner ul li dl{display:flex;justify-content:flex-start}
+        //  .faq-inner ul li dl dt,.faq-inner ul li dl dd{display:flex}
+        //  .faq-inner ul li dl dt{font-size:12px;padding:5px 12px;border-radius: 4px;background:rgba(0,0,0,.2);color:#fff;min-width: 95px;justify-content: center;}
+        //  .faq-inner ul li dl dd{font-size:14px;color:#fff;padding-left:12px}
+
+        //  .wrap .HCAU-container h1.HCAU-h1{font-size:64px;color:#fff;padding-top:102px;line-height: 70px;}
+        //  .detail .usage-detail{margin-top:36px;margin-bottom:24px;margin-right:3px}
+        //  h2.HCAU-h2.title{text-transform: uppercase;color:#fff}
+        //  .HCAU-btn.btn-more{width:90px;height:20px;background:transparent;color:#fff;position: relative;display: flex;border:0;padding-right:10px}
+        //   .HCAU-btn.btn-more span{position: absolute;right:0;top:0}
+        //  h2.font-size-lg.title{font-size:18px;margin-top:24px;margin-bottom:18px;color:#fff}
+
+        //  .HCAU-breadcrumb .breadcrumb .dropdown-menu {
+        //     top: 6px !important;
+        //     --bs-dropdown-link-active-color: none;
+        //     --bs-dropdown-link-active-bg: none;
+        //     width: max-content;
+        //     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07);
+        //     border-color: #e5e5e5;
+        //   }
+        //   .HCAU-breadcrumb .breadcrumb .dropdown-menu li:nth-child(2n-1) {
+        //     background: #fff;
+        //   }
+        //   .HCAU-breadcrumb .breadcrumb .dropdown-menu li + li {
+        //     border-top: 1px solid #e5e5e5;
+        //   }
+        //   .HCAU-breadcrumb .breadcrumb .dropdown-menu .dropdown-item {
+        //     padding: 10px 20px;
+        //   }
+        //   .carousel-control-prev:disabled, .carousel-control-next:disabled{display:none}
+        //   .carousel-control-next-icon, .carousel-control-prev-icon{width:32px;height:32px;border-radius: 16px;background-color: rgba(0,0,0,.32);background-image:none;opacity:1; 
+        //     transition: all .15s ease;display:flex;justify-content: center;align-items: center;}
+        //   .carousel-control-next-icon:focus,.carousel-control-next-icon:hover,.carousel-control-prev-icon:focus,.carousel-control-prev-icon:hover{background-color:#002c5f}
+        //   .carousel-control-prev{left:-70px;}
+        //   .carousel-control-next{right:-62px;}
+        //   .title-area .bg-box{background-color: rgba(255,255,255,.1);padding:6px 20px}
+        //   .title-area {border-bottom:1px solid rgba(0,0,0,.1);padding:28px 40px;}
+        //   .title-area .title p{line-height: 32px;display: inline-block;}
+        //   .title-area .title span{line-height:14px}
+        //   .title-area + .p20{padding:13px 40px!important}
+        //   /* .carousel-item.active + .carousel-control-next-icon{display: none} */
+
+        //   div:has(.carousel-item:first-child.active) + button,
+        //   div:has(.carousel-item:last-child.active) + button + button,
+        //   .disabled{display:none !important}
+          

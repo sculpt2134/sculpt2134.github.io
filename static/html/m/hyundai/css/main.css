@@ -1,0 +1,49 @@
+body.main {
+    width: 100%;
+    background: url(/static/html/m/hyundai/img/bg.png) right bottom no-repeat;
+    background-size: cover;
+  }
+  body.main header {
+    background: transparent;
+  }
+  body.main .HCAU-container .HCAU-contents .HCAU-h1 {
+    padding: 40px 20px;
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  body.main button.box {
+    position: relative;
+    background: rgba(28, 27, 27, 0.2);
+    border-radius: 8px;
+    border: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    padding: 24px 28px 22px;
+    width:100%;
+  }
+  body.main button.box span {
+    position: absolute;
+    right: 28px;    
+    top: 25px;
+  }
+  body.main button.box.btn01 {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  body.main button.box.btn02 {
+    background: rgba(0, 44, 95, 0.2);
+  }
+  body.main button.box.btn03 {
+    background: rgba(0, 170, 210, 0.2);
+  }
+  body.main button.box.btn04 {
+    background: rgba(228, 220, 211, 0.2);
+  }
+  body.main .btn-cta-wrap {background-color:transparent;}
+  body.main .btn-cta-wrap .tip{width:100%;background:blue;border-radius: 20px 20px 0 0 ;padding-top:40px}
+  body.main .btn-cta-wrap .promo{background:red;padding:20px}

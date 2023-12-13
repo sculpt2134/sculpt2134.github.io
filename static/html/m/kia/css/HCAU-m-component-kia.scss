@@ -1558,9 +1558,10 @@ textarea.HCAU-form.form-control {
             > .accordion-collapse{
                 // background: red;
                 // border: 1px solid #000;
-                padding: 0 32px 20px;
+                // padding: 0 32px 20px;
                 .accordion-body{
-                    padding: 0;
+                    // padding: 0;
+                    padding: 0 32px 20px;
                     .accordion{
                         .accordion-item{
                             border: none;
@@ -1573,12 +1574,14 @@ textarea.HCAU-form.form-control {
                                     background: none;
                                     box-shadow:none;
                                     &:after{
-                                        background: url(/static/html/m/hyundai/img/ico_gnb_close.svg);
+                                        // background: url(/static/html/m/hyundai/img/ico_gnb_close.svg);
+                                        display: none;
                                     }
                                     &.collapsed{
                                         border: none;
                                         &:after{
-                                            background: url(/static/html/m/hyundai/img/ico_gnb_open.svg);
+                                            // background: url(/static/html/m/hyundai/img/ico_gnb_open.svg);
+                                            display: none;
                                         }
                                     }
                                 }

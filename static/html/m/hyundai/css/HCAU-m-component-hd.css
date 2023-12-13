@@ -606,6 +606,7 @@ footer .copyright + .copyright {
   display: flex;
   gap: 1px;
   background: #fff;
+  z-index: 2;
 }
 .btn-cta-wrap > button {
   flex-shrink: 1;
@@ -1678,11 +1679,8 @@ textarea.HCAU-form.form-control {
 .HCAU-gnb-menu > .accordion > .accordion-item > .accordion-header button.collapsed:after {
   background: url(/static/html/m/hyundai/img/ico_gnb_open.svg);
 }
-.HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse {
-  padding: 0 32px 20px;
-}
 .HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse .accordion-body {
-  padding: 0;
+  padding: 0 32px 20px;
 }
 .HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse .accordion-body .accordion .accordion-item {
   border: none;
@@ -1698,13 +1696,13 @@ textarea.HCAU-form.form-control {
   box-shadow: none;
 }
 .HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse .accordion-body .accordion .accordion-item .accordion-header button:after {
-  background: url(/static/html/m/hyundai/img/ico_gnb_close.svg);
+  display: none;
 }
 .HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse .accordion-body .accordion .accordion-item .accordion-header button.collapsed {
   border: none;
 }
 .HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse .accordion-body .accordion .accordion-item .accordion-header button.collapsed:after {
-  background: url(/static/html/m/hyundai/img/ico_gnb_open.svg);
+  display: none;
 }
 .HCAU-gnb-menu > .accordion .HCAU-gnb-depth3 li {
   border-bottom: 1px solid #d5d5d5;
@@ -2024,4 +2022,30 @@ textarea.HCAU-form.form-control {
 
 .prd-tab .HCAU-h2.mb10 {
   font-size: 20px;
+}
+
+.HCAU-table.type03 table tbody tr {
+  display: flex;
+  flex-wrap: wrap;
+}
+.HCAU-table.type03 table tbody tr th {
+  flex: 0 1 100%;
+}
+.HCAU-table.type03 table tbody tr td {
+  display: flex;
+  flex-grow: 1;
+}
+.HCAU-table.type03 table tbody tr td.text-end {
+  justify-content: flex-end;
+  flex-basis: 70px;
+}
+.HCAU-table.type03 table .bd-none th, .HCAU-table.type03 table .bd-none td {
+  border: 0;
+}
+.HCAU-table.type03 table .sum th, .HCAU-table.type03 table .sum td {
+  background: #fff;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  line-height: 30px;
+  padding: 16px 20px;
 }/*# sourceMappingURL=HCAU-m-component-hd.css.map */

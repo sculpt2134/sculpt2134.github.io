@@ -1656,11 +1656,8 @@ textarea.HCAU-form.form-control {
 .HCAU-gnb-menu > .accordion > .accordion-item > .accordion-header button.collapsed:after {
   background: url(/static/html/m/hyundai/img/ico_gnb_open.svg);
 }
-.HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse {
-  padding: 0 32px 20px;
-}
 .HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse .accordion-body {
-  padding: 0;
+  padding: 0 32px 20px;
 }
 .HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse .accordion-body .accordion .accordion-item {
   border: none;
@@ -1676,13 +1673,13 @@ textarea.HCAU-form.form-control {
   box-shadow: none;
 }
 .HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse .accordion-body .accordion .accordion-item .accordion-header button:after {
-  background: url(/static/html/m/hyundai/img/ico_gnb_close.svg);
+  display: none;
 }
 .HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse .accordion-body .accordion .accordion-item .accordion-header button.collapsed {
   border: none;
 }
 .HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse .accordion-body .accordion .accordion-item .accordion-header button.collapsed:after {
-  background: url(/static/html/m/hyundai/img/ico_gnb_open.svg);
+  display: none;
 }
 .HCAU-gnb-menu > .accordion .HCAU-gnb-depth3 li {
   border-bottom: 1px solid #d5d5d5;
