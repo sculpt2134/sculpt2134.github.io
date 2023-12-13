@@ -32,18 +32,10 @@ body.main {
     right: 28px;    
     top: 25px;
   }
-  body.main button.box.btn01 {
-    background: rgba(0, 0, 0, 0.2);
-  }
-  body.main button.box.btn02 {
-    background: rgba(0, 44, 95, 0.2);
-  }
-  body.main button.box.btn03 {
-    background: rgba(0, 170, 210, 0.2);
-  }
-  body.main button.box.btn04 {
-    background: rgba(228, 220, 211, 0.2);
-  }
+  body.main button.box.btn01 {    background: rgba(0, 0, 0, 0.2);  }
+  body.main button.box.btn02 {    background: rgba(0, 44, 95, 0.2);  }
+  body.main button.box.btn03 {    background: rgba(0, 170, 210, 0.2);  }
+  body.main button.box.btn04 {    background: rgba(228, 220, 211, 0.2);  }
   body.main .btn-cta-wrap {background-color:transparent;bottom:-60px}
   body.main .btn-cta-wrap .tip{width:100%;background:white;border-radius: 20px 20px 0 0 ;padding-top:40px}
   body.main .btn-cta-wrap .tip span{position:absolute;top:20px;width:80px;left:50%;transform:translateX(-50%)}
@@ -63,11 +55,14 @@ body.main {
 
   body.main .usage-detail{padding:20px}
   body.main .usage-detail .title-area{}
-  body.main .usage-detail .title{color:#fff;text-transform: uppercase;font-size:18px}
+  body.main .usage-detail .title{color:#fff;text-transform: uppercase;font-size:18px;font-weight: 700;}
+  
   body.main .usage-detail .carousel-box{margin-top:20px;background:rgba(0,0,0,.2);padding:28px;border-radius: 8px;margin-bottom:4px;position: relative;}
   body.main .usage-detail .carousel-box .title{font-size:16px;}
-  body.main .usage-detail .carousel-box dl{display: flex;}
-  body.main .usage-detail .carousel-box dl dt,body.main .usage-detail .carousel-box dl dd{display: flex;font-size:14px;width:50%}
+  body.main .usage-detail .carousel-box dl{display: flex;padding-top:6px;padding-bottom:6px}
+  body.main .usage-detail .carousel-box dl+dl{}
+  body.main .usage-detail .carousel-box dl dt,body.main .usage-detail .carousel-box dl dd{display: flex;font-size:14px;width:50%;color:#fff}
   body.main .usage-detail .carousel-box dl dd{justify-content: end;font-weight:normal}
   body.main .btn-wrap .HCAU-btn{background:#e4dcd3;border-radius: 25px;border:0;}
-  
+  body.main footer{background: rgba(0,0,0,.85);}
+  body.main footer .copyright{color:#444}
