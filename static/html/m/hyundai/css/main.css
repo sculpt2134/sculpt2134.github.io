@@ -56,7 +56,18 @@ body.main {
   body.main  .faq .title{color:#fff;padding-left:20px;padding-top:40px;font-size:18px}
   body.main  .faq-inner {padding:0 20px}
   body.main  .faq-inner ul li{background:rgba(255,255,255,.1);padding:6px 8px;border-radius: 8px;margin-bottom:4px;position: relative;}
-  body.main  .faq-inner ul li dl{display:flex;justify-content:flex-start}
+  body.main  .faq-inner ul li dl{display:flex;justify-content:flex-start}             
   body.main  .faq-inner ul li dl dt,.faq-inner ul li dl dd{display:flex}
   body.main  .faq-inner ul li dl dt{font-size:12px;padding:5px 12px;border-radius: 4px;background:rgba(0,0,0,.2);color:#fff;min-width: 75px;height:25px;justify-content: center;}
   body.main  .faq-inner ul li dl dd{font-size:14px;color:#fff;padding-left:12px}
+
+  body.main .usage-detail{padding:20px}
+  body.main .usage-detail .title-area{}
+  body.main .usage-detail .title{color:#fff;text-transform: uppercase;font-size:18px}
+  body.main .usage-detail .carousel-box{margin-top:20px;background:rgba(0,0,0,.2);padding:28px;border-radius: 8px;margin-bottom:4px;position: relative;}
+  body.main .usage-detail .carousel-box .title{font-size:16px;}
+  body.main .usage-detail .carousel-box dl{display: flex;}
+  body.main .usage-detail .carousel-box dl dt,body.main .usage-detail .carousel-box dl dd{display: flex;font-size:14px;width:50%}
+  body.main .usage-detail .carousel-box dl dd{justify-content: end;font-weight:normal}
+  body.main .btn-wrap .HCAU-btn{background:#e4dcd3;border-radius: 25px;border:0;}
+  
