@@ -1374,9 +1374,9 @@ textarea.HCAU-form.form-control {
 }
 .HCAU-tab button {
   flex: 1;
-  overflow: hidden;
+  /* overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: nowrap; */
   position: relative;
   z-index: 1;
   font-size: 16px;

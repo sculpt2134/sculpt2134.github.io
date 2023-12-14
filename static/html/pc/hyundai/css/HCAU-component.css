@@ -699,7 +699,7 @@ a {
 }
 .HCAU-btn:disabled {
   background: #f5f5f5;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #999;
   color: #999;
   cursor: default;
   min-width: 84px;
