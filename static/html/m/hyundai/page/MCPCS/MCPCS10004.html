@@ -19,26 +19,33 @@
             <div class="HCAU-contents" id="contents">
                 <!-- HCAU-title -->
                 <div class="HCAU-title">
-                    <div class="HCAU-h1">Loan termination confirmation</div>
+                    <div class="HCAU-h1">Document</div>
                 </div>
                 <!-- //HCAU-title -->
                 <!-- HCAU-detail -->
                 <div class="HCAU-detail">
 
-                    <div class="title-area">
-                        <div class="HCAU-txt-lg">Loan termination confirmation information</div>
+                    <div class="HCAU-tab" id="pills-tab" role="tablist">
+                        <button class="" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="false">Repayment schedule</button>
+                        <button class="active" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="true">Loan termination confirmation</button>
+                        <button class="" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contract verification office</button>
                     </div>
-                    <ul class="HCAU-bullet-list">
-                        <li class="HCAU-txt-sm gray04">리스의 경우 해지 이전에 발생한 법칙금이나 자동차세 등은 종료 이후에도 추가로 발생될 수 있습니다.</li>
-                        <li class="HCAU-txt-sm gray04">본 대출종료확인서는 대출종료일 이후 변동사항 발생 시, 본 대출종료확인서의 영수증 효력이 상실됩니다.</li>
-                        <li class="HCAU-txt-sm gray04">종료확인서 출력은 개별상품으로만 가능합니다.</li>
-                    </ul>
+
+                    <div class="mt40">
+                        <div class="title-area">
+                            <div class="HCAU-txt-lg">Loan termination confirmation information</div>
+                        </div>
+                        <ul class="HCAU-bullet-list">
+                            <li class="HCAU-txt-sm gray04">리스의 경우 해지 이전에 발생한 법칙금이나 자동차세 등은 종료 이후에도 추가로 발생될 수 있습니다.</li>
+                            <li class="HCAU-txt-sm gray04">본 대출종료확인서는 대출종료일 이후 변동사항 발생 시, 본 대출종료확인서의 영수증 효력이 상실됩니다.</li>
+                            <li class="HCAU-txt-sm gray04">종료확인서 출력은 개별상품으로만 가능합니다.</li>
+                        </ul>
+                    </div>
                     <div class="mt40">
                         <div class="HCAU-otp bg-box2 p-2">
                             <div class="border-box px-3 py20">
                                 <div class="HCAU-form-wrap">
                                     <div class="form-title HCAU-txt-md fw-bold">OTP certification</div>
-
                                     <ul class="HCAU-tab-small" id="" role="tablist">
                                         <li class="" role="presentation">
                                             <button class="active" id="tabmenu01" data-bs-toggle="tab" data-bs-target="#tab01" type="button" role="tab" aria-controls="tab01" aria-selected="true">
@@ -46,7 +53,7 @@
                                             </button>
                                         </li>
                                         <li class="" role="presentation">
-                                            <button class="" id="tabmenu02" data-bs-toggle="tab" data-bs-target="#tab02" type="button" role="tab" aria-controls="tab02" aria-selected="false" tabindex="-1">
+                                            <button class="" id="tabmenu02" data-bs-toggle="tab" data-bs-target="#tab02" type="button" role="tab" aria-controls="tab02" aria-selected="false">
                                                 <span class="HCAU-txt-sm fw-bold">E-mail</span>
                                             </button>
                                         </li>
@@ -55,7 +62,9 @@
                                         <div class="tab-pane fade show active" id="tab01" role="tabpanel" aria-labelledby="tabmenu01">
                                             <div class="d-flex g12">
                                                 <div class="flex-grow-1">
-                                                    <input type="text" class="form-control HCAU-form" id="form-txt01" aria-describedby="" value="01099999999" placeholder="Enter phone number">
+                                                    <input type="text" class="form-control HCAU-form" id="form-txt01" aria-describedby="" value="01099999999" placeholder="Enter phone number" readonly>
+                                                    <!-- <div class="invalid-feedback" style="display: block;">invalid message1</div> -->
+                                                    <!-- <div class="invalid-feedback" style="display: block;">invalid message2</div> -->
                                                 </div>
                                                 <div>
                                                     <button type="button" class="HCAU-btn btn-smd" style="width: 77px">Send</button>
@@ -65,7 +74,10 @@
                                                 <div class="flex-grow-1 position-relative">
                                                     <input type="text" class="form-control HCAU-form time-limit" id="form-txt01" aria-describedby="" value="" placeholder="Enter OTP verification code">
                                                     <span class="time-limit-num HCAU-txt-sm">2:59</span>
-                                                    <div class="invalid-feedback" style="display: block;">invalid message</div>
+                                                    <div class="invalid-feedback" style="display: block;">invalid message1</div>
+                                                    <div class="invalid-feedback" style="display: block;">invalid message2</div>
+                                                    <div class="invalid-feedback" style="display: block;">invalid message3</div>
+                                                    <div class="invalid-feedback" style="display: block;">invalid message4</div>
                                                     <div class="valid-feedback" style="display: block;">valid message</div>
                                                 </div>
                                                 <div>
@@ -76,7 +88,9 @@
                                         <div class="tab-pane fade" id="tab02" role="tabpanel" aria-labelledby="tabmenu02">
                                             <div class="d-flex g12">
                                                 <div class="flex-grow-1">
-                                                    <input type="text" class="form-control HCAU-form" id="form-txt01" aria-describedby="" value="hyundai@hcs.com" placeholder="Enter email address">
+                                                    <input type="text" class="form-control HCAU-form" id="form-txt01" aria-describedby="" value="hyundai@hcs.com" placeholder="Enter email address" readonly>
+                                                    <!-- <div class="invalid-feedback" style="display: block;">invalid message1</div> -->
+                                                    <!-- <div class="invalid-feedback" style="display: block;">invalid message2</div> -->
                                                 </div>
                                                 <div>
                                                     <button type="button" class="HCAU-btn btn-smd" style="width: 77px">Send</button>
@@ -84,15 +98,20 @@
                                             </div>
                                             <div class="d-flex g12 mt12">
                                                 <div class="flex-grow-1 position-relative">
-                                                    <input type="text" class="form-control HCAU-form" id="form-txt01" aria-describedby="" value="" placeholder="Enter OTP verification code">
+                                                    <input type="text" class="form-control HCAU-form time-limit" id="form-txt01" aria-describedby="" value="" placeholder="Enter OTP verification code">
+                                                    <span class="time-limit-num HCAU-txt-sm">2:59</span>
+                                                    <div class="invalid-feedback" style="display: block;">invalid message1</div>
+                                                    <div class="invalid-feedback" style="display: block;">invalid message2</div>
+                                                    <div class="invalid-feedback" style="display: block;">invalid message3</div>
+                                                    <div class="invalid-feedback" style="display: block;">invalid message4</div>
+                                                    <div class="valid-feedback" style="display: block;">valid message</div>
                                                 </div>
-                                                <!-- <div>
+                                                <div>
                                                     <button type="button" class="HCAU-btn btn-smd" style="width: 77px">OK</button>
-                                                </div> -->
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>

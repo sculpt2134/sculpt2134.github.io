@@ -254,6 +254,10 @@ a {
   width: 50px;
 }
 
+.w80 {
+  width: 80px;
+}
+
 .w92 {
   width: 92px;
 }
@@ -692,23 +696,17 @@ a {
   border: 1px solid #e5e5e5;
   color: #05141f;
 }
-.HCAU-btn.disable {
-  background: #f5f5f5;
-  border: 1px solid #697279;
-  color: #697279;
-  cursor: default;
-  min-width: 84px;
-  font-weight: 400;
-}
 .HCAU-btn.gray03 {
   background: #697279;
   border: 1px solid #697279;
   color: #fff;
 }
 .HCAU-btn:disabled {
-  border: 1px solid #e5e5e5;
   background: #f5f5f5;
+  border: 1px solid #e5e5e5;
   color: #697279;
+  cursor: default;
+  min-width: 84px;
 }
 .HCAU-btn.btn-keyvi {
   border: 1px solid #fff;
@@ -941,6 +939,9 @@ a {
 .HCAU-form.form-control:read-only:focus {
   outline: none;
   border-color: #e5e5e5;
+}
+.HCAU-form.form-control:read-only.black {
+  color: #05141f;
 }
 
 .input-num {

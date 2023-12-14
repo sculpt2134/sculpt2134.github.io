@@ -1,9 +1,9 @@
 body.main {
     width: 100%;
-    background: url(/static/html/m/hyundai/img/bg.png) right bottom no-repeat;
+    background: url(/static/html/m/hyundai/img/bg.png) no-repeat;
     background-size: auto;
   }
-  @media (min-width:760px){body.main {background-size:cover}}
+  @media (min-width:376px){body.main {background-size:cover}}
   body.main header {
     background: transparent;
   }
@@ -38,6 +38,7 @@ body.main {
   body.main button.box.btn03 {    background: rgba(0, 170, 210, 0.2);  }
   body.main button.box.btn04 {    background: rgba(228, 220, 211, 0.2);  }
   body.main .btn-cta-wrap {background-color:transparent;bottom:-260px;}
+  body.main .btn-cta-wrap.main{bottom:-190px;margin-top:70px}
   /* .d-flex.full.g12.pt20{gap:12px} */
   body.main .btn-cta-wrap .tip{width:100%;background:white;border-radius: 20px 20px 0 0 ;padding-top:40px}
   body.main .btn-cta-wrap .tip span{position:absolute;top:20px;width:80px;left:50%;transform:translateX(-50%)}
@@ -83,5 +84,5 @@ body.main {
 
           div:has(.carousel-item:first-child.active) + button,
           div:has(.carousel-item:last-child.active) + button + button,
-          .disabled{display:none !important}
+          .disabled,.blind{display:none !important}
           

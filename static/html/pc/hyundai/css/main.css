@@ -132,7 +132,7 @@ html,body{overflow:auto;}
           .carousel-control-prev:disabled, .carousel-control-next:disabled{display:none}
           .carousel-control-next-icon, .carousel-control-prev-icon{width:32px;height:32px;border-radius: 16px;background-color: rgba(0,0,0,.32);background-image:none;opacity:1; 
             transition: all .15s ease;display:flex;justify-content: center;align-items: center;}
-          .carousel-control-next-icon:focus,.carousel-control-next-icon:hover,.carousel-control-prev-icon:focus,.carousel-control-prev-icon:hover{background-color:#002c5f}
+          .carousel-control-next-icon,.carousel-control-next-icon:hover,.carousel-control-prev-icon:focus,.carousel-control-prev-icon:hover{background-color:#002c5f;opacity: 1;}
           .carousel-control-prev{left:-70px;}
           .carousel-control-next{right:-62px;}
           .title-area .bg-box{background-color: rgba(255,255,255,.1);padding:6px 20px}

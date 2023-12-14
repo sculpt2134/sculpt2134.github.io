@@ -107,6 +107,11 @@
   padding-bottom: 32px;
 }
 
+.py12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
 .py15 {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -511,7 +516,7 @@ footer .copyright + .copyright {
 .HCAU-btn.btn-cta {
   font-size: 16px;
   font-weight: 700;
-  padding: 20px;
+  padding: 20px 10px;
   line-height: 1.177;
   border: none;
   border-radius: 0;
@@ -685,6 +690,9 @@ textarea.HCAU-form.form-control {
 .HCAU-form.form-control:read-only:focus {
   outline: none;
   border-color: #d5d5d5;
+}
+.HCAU-form.form-control:read-only.black {
+  color: #05141f;
 }
 
 .HCAU-form.form-control:disabled,
@@ -902,7 +910,8 @@ textarea.HCAU-form.form-control {
 }
 .HCAU-modal .modal-dialog.modal-sm .modal-content {
   border: none;
-  border-radius: 0;
+  border-radius: 4px;
+  overflow: hidden;
 }
 .HCAU-modal .modal-dialog.modal-sm .modal-body {
   padding: 28px 20px;
@@ -1332,6 +1341,7 @@ textarea.HCAU-form.form-control {
 
 .HCAU-tab {
   position: relative;
+  display: flex;
 }
 .HCAU-tab:after {
   content: "";
@@ -1344,6 +1354,10 @@ textarea.HCAU-form.form-control {
   bottom: 0;
 }
 .HCAU-tab button {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   position: relative;
   z-index: 1;
   font-size: 16px;

@@ -39,68 +39,44 @@
     <!-- HCAU-tab -->
     <div class="HCAU-tab mt20">
         <ul class="nav nav-tabs" id="" role="tablist">
-            <li class="nav-item"><button class="nav-link active" id="tab01" data-bs-toggle="tab" data-bs-target="#tabCont01" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Individual</button></li>
-            <li class="nav-item"><button class="nav-link" id="tab02" data-bs-toggle="tab" data-bs-target="#tabCont02" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Businessman</button></li>
+            <li class="nav-item"><button class="nav-link active" id="tab01"  data-bs-target="#tabCont01" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Individual</button></li>
+            <li class="nav-item"><button class="nav-link" id="tab02" data-bs-target="#tabCont02" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Businessman</button></li>
         </ul>
     </div>
     <!-- //HCAU-tab -->
-    <!-- tab-content -->
-    <div class="tab-content" id="">
-        <div class="tab-pane fade show active" id="tabCont01" role="tabpanel" aria-labelledby="tab01" tabindex="0">
 
-            <div class="pt12">
-                <form class="HCAU-valid needs-validation row gx-20 gy-28 mt12" novalidate="">
-                    <div class="col-md-6">
-                        <label for="validationCustom02" class="HCAU-txt-md fw-bold mb-3">E-mail ID</label>
-                        <input type="text" class="form-control HCAU-form" id="validationCustom02" placeholder="Enter E-mail ID" value="" required="">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="validationCustom01" class="HCAU-txt-md fw-bold mb-3">Date of Birth</label>
-                        <input type="text" class="form-control HCAU-form" id="validationCustom01" placeholder="8-digit input (DD/MM/YYYY)" value="" required="">
-                        <div class="invalid-feedback">Please enter your loan number</div>
-                        <div class="invalid-feedback">Please enter a 16-digit combination of English and numbers.</div>
-                    </div>
-                </form>
+    <section>
+
+        <form class="HCAU-valid needs-validation row gx-20 gy-28 mt12" novalidate="">
+            <div class="col-md-6">
+                <label for="validationCustom02" class="HCAU-txt-md fw-bold mb-3">E-mail ID</label>
+                <input type="text" class="form-control HCAU-form" id="validationCustom02" placeholder="Enter E-mail ID" value="" required="">
+                <div class="invalid-feedback d-block">invalid message1.</div>
+                <div class="invalid-feedback d-block">invalid message2.</div>
             </div>
-
-        </div>
-        <div class="tab-pane fade" id="tabCont02" role="tabpanel" aria-labelledby="tab02" tabindex="0">
-
-            <div class="pt12">
-                <form class="HCAU-valid needs-validation row gx-20 gy-28 mt12" novalidate="">
-                    <div class="col-md-6">
-                        <label for="validationCustom02" class="HCAU-txt-md fw-bold mb-3">Loan number</label>
-                        <input type="text" class="form-control HCAU-form" id="validationCustom02" placeholder="Enter Loan number" value="" required="">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="validationCustom01" class="HCAU-txt-md fw-bold mb-3">ABN</label>
-                        <input type="text" class="form-control HCAU-form" id="validationCustom01" placeholder="Enter 11 digit number" value="" required="">
-                        <div class="invalid-feedback">Please enter your loan number</div>
-                        <div class="invalid-feedback">Please enter a 16-digit combination of English and numbers.</div>
-                    </div>
-                </form>
+            <div class="col-md-6">
+                <label for="validationCustom01" class="HCAU-txt-md fw-bold mb-3">Date of Birth</label>
+                <input type="text" class="form-control HCAU-form" id="validationCustom01" placeholder="8-digit input (DD/MM/YYYY)" value="" required="">
+                <div class="invalid-feedback d-block">invalid message1.</div>
+                <div class="invalid-feedback d-block">invalid message2.</div>
             </div>
+        </form>
 
+        <div class="cta-btn-wrap">
+            <div class="d-flex g12 justify-content-center">
+                <!-- <button type="button" class="HCAU-btn btn-large">List</button> -->
+                <!-- <button type="button" class="HCAU-btn btn-large gray03">Home</button> -->
+                <button type="submit" class="HCAU-btn btn-large primary" disabled>Identification</button>
+            </div>
         </div>
-    </div>
-    <!-- //tab-content -->
+    </section>
 
 
 
-    <div class="cta-btn-wrap">
-        <div class="d-flex g12 justify-content-center">
-            <!-- <button type="button" class="HCAU-btn btn-large">List</button> -->
-            <!-- <button type="button" class="HCAU-btn btn-large gray03">Home</button> -->
-            <button type="submit" class="HCAU-btn btn-large primary" disabled>Identification</button>
-        </div>
-    </div>
-
-
-
-    <div class="g-notice">
+    <!-- <div class="g-notice">
         <dl>
             <dt>
-                <span class="ico-gnotice"><img src="/static/html/pc/kia/img/svg/ico_notice.svg" alt=""></span>
+                <span class="ico-gnotice"><img src="/static/html/pc/hyundai/img/svg/ico_notice.svg" alt=""></span>
                 <span>Guidance Notice</span>
             </dt>
             <dd>
@@ -109,7 +85,7 @@
                 </ul>
             </dd>
         </dl>
-    </div>
+    </div> -->
 
     <!-- <div class="d-flex gap-3">
         <div class="border-box flex-fix p-4">

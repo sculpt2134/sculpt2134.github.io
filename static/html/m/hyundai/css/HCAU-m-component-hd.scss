@@ -52,6 +52,7 @@ $font-size-xs : 14px;
 .pb20{padding-bottom: 20px;}
 .pb32{padding-bottom: 32px;}
 
+.py12{padding-top: 12px;padding-bottom: 12px;}
 .py15{padding-top: 15px;padding-bottom: 15px;}
 .py16{padding-top: 16px;padding-bottom: 16px;}
 .py20{padding-top: 20px;padding-bottom: 20px;}
@@ -213,7 +214,7 @@ footer{
     &.btn-cta{
         font-size: $font-size-md;
         font-weight: 700;
-        padding: 20px;
+        padding: 20px 10px;
         line-height: 1.177;
         border: none;
         border-radius: 0;
@@ -388,6 +389,7 @@ textarea.HCAU-form.form-control{
         outline:none;
         border-color: $border-color;
     }
+    &.black{color: $black;}
 }
 .HCAU-form.form-control:disabled,
 .HCAU-form.form-select:disabled{
@@ -597,7 +599,8 @@ textarea.HCAU-form.form-control{
             margin-right: auto;
             .modal-content{
                 border: none;
-                border-radius: 0;
+                border-radius: 4px;
+                overflow: hidden;
             }
             .modal-body{
                 padding: 28px 20px;
@@ -999,6 +1002,7 @@ textarea.HCAU-form.form-control{
 // tabmenu
 .HCAU-tab{
     position: relative;
+    display: flex;
     &:after{
         content:'';
         display: block;
@@ -1010,6 +1014,10 @@ textarea.HCAU-form.form-control{
         bottom: 0;
     }
     button{
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         position: relative;
         z-index: 1;
         font-size: 16px;
@@ -1659,7 +1667,7 @@ textarea.HCAU-form.form-control{
         tbody tr td {display:flex;flex-grow:1;
             &.text-end{justify-content:flex-end;flex-basis: 70px;}
         }
-        
+
         .bd-none{
             th,td{border:0}
         }
