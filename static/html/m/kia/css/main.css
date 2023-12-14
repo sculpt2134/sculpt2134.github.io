@@ -1,9 +1,9 @@
 body.main {
     width: 100%;
-    background: url(/static/html/m/hyundai/img/bg.png) right bottom no-repeat;
+    background: url(/static/html/m/kia/img/bg.png) no-repeat;
     background-size: auto;
   }
-  @media (min-width:760px){body.main {background-size:cover}}
+  @media (min-width:376px){body.main {background-size:cover}}
   body.main header {
     background: transparent;
   }
