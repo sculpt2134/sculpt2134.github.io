@@ -1,0 +1,811 @@
+<html lang="en">
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width" />
+    <title>HCAU-PUBL</title>
+    <link rel="stylesheet" href="/static/html/m/kia/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/html/m/kia/css/styles.css" />
+    <link rel="stylesheet" href="/static/html/m/kia/css/main.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico" />
+    <style>
+        @charset "UTF-8";
+  
+        
+            .id_comp_todo_fore.is_fixed .ctf_title_wrap {
+                padding: 0 -webkit-calc((100% - 1080px)/ 2);
+                padding: 0 calc((100% - 1080px)/ 2)
+            }
+        
+            .id_comp_todo_filter.is_fixed .ctf_scroll_wrap .ctf_filter_list {
+                padding-right: -webkit-calc((100% - 1080px)/ 2);
+                padding-right: calc((100% - 1080px)/ 2);
+                padding-left: -webkit-calc((100% - 1080px)/ 2);
+                padding-left: calc((100% - 1080px)/ 2)
+            }
+        
+            .id_comp_todo_map.is_fixed .ctm_title_info {
+                padding-right: -webkit-calc((100% - 1080px)/ 2);
+                padding-right: calc((100% - 1080px)/ 2);
+                padding-left: -webkit-calc((100% - 1080px)/ 2);
+                padding-left: calc((100% - 1080px)/ 2)
+            }
+        
+            .id_comp_lecture.cl_filter_fixed .cl_filter_wrap .cl_stab {
+                padding-right: -webkit-calc((100% - 1080px)/ 2);
+                padding-right: calc((100% - 1080px)/ 2);
+                padding-left: -webkit-calc((100% - 1080px)/ 2);
+                padding-left: calc((100% - 1080px)/ 2)
+            }
+        }
+        
+        @media (min-width: 600px) and (max-width:767px) {
+            .comp_mycar .cm_icons {
+                display:none
+            }
+        }
+        */
+        /* a3710071223, N Tech Service */
+     
+        
+        
+
+  .nav .nav_link.nav_arrival_guarantee::before,.nav .nav_link.nav_arrival_guarantee[aria-selected=true]::before,.nav .nav_link.nav_bboom::before,.nav .nav_link.nav_bboom[aria-selected=true]::before,.nav .nav_link.nav_beauty::before,.nav .nav_link.nav_beauty[aria-selected=true]::before,.nav .nav_link.nav_boom::before,.nav .nav_link.nav_boom[aria-selected=true]::before,.nav .nav_link.nav_cargame::before,.nav .nav_link.nav_cargame[aria-selected=true]::before,.nav .nav_link.nav_culture::before,.nav .nav_link.nav_culture[aria-selected=true]::before,.nav .nav_link.nav_data::before,.nav .nav_link.nav_data[aria-selected=true]::before,.nav .nav_link.nav_ent::before,.nav .nav_link.nav_ent[aria-selected=true]::before,.nav .nav_link.nav_food_market::before,.nav .nav_link.nav_food_market[aria-selected=true]::before,.nav .nav_link.nav_gameapp::before,.nav .nav_link.nav_gameapp[aria-selected=true]::before,.nav .nav_link.nav_gift_shop::before,.nav .nav_link.nav_gift_shop[aria-selected=true]::before,.nav .nav_link.nav_health::before,.nav .nav_link.nav_health[aria-selected=true]::before,.nav .nav_link.nav_lecture::before,.nav .nav_link.nav_lecture[aria-selected=true]::before,.nav .nav_link.nav_living::before,.nav .nav_link.nav_living[aria-selected=true]::before,.nav .nav_link.nav_livinghome::before,.nav .nav_link.nav_livinghome[aria-selected=true]::before,.nav .nav_link.nav_myfeed::before,.nav .nav_link.nav_myfeed[aria-selected=true]::before,.nav .nav_link.nav_news::before,.nav .nav_link.nav_news[aria-selected=true]::before,.nav .nav_link.nav_place::before,.nav .nav_link.nav_place[aria-selected=true]::before,.nav .nav_link.nav_plus_deal::before,.nav .nav_link.nav_plus_deal[aria-selected=true]::before,.nav .nav_link.nav_search::before,.nav .nav_link.nav_search[aria-selected=true]::before,.nav .nav_link.nav_shop_live::before,.nav .nav_link.nav_shop_live[aria-selected=true]::before,.nav .nav_link.nav_shop_todo::before,.nav .nav_link.nav_shop_todo[aria-selected=true]::before,.nav .nav_link.nav_shop_vogue::before,.nav .nav_link.nav_shop_vogue[aria-selected=true]::before,.nav .nav_link.nav_shopping::before,.nav .nav_link.nav_shopping[aria-selected=true]::before,.nav .nav_link.nav_shorts::before,.nav .nav_link.nav_shorts[aria-selected=true]::before,.nav .nav_link.nav_sports::before,.nav .nav_link.nav_sports[aria-selected=true]::before {
+            background-image: url(https://s.pstatic.net/static/www/m-new/uit/img/sp_nav_3x_4431cecc.png);
+            -webkit-background-size: 252px 227px;
+            background-size: 252px 227px;
+            background-repeat: no-repeat
+        }
+
+        .native_scroll {
+            overflow: hidden;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch
+        }
+        
+        .native_scroll::-webkit-scrollbar {
+            display: none
+        }
+        
+        .native_scroll .native_scroll_list {
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: inline-flex;
+            vertical-align: top
+            
+        }
+
+
+.nav {
+  position: relative;
+  height: 54px;
+  background-image: -webkit-gradient(linear,left top,right top,from(#04ce6d),to(#03cb87));
+  background-image: -webkit-linear-gradient(left,#04ce6d,#03cb87);
+  background-image: linear-gradient(to right,#04ce6d,#03cb87)
+}
+
+.nav.nav_contents .nav_scroll_wrap {
+  background-image: -webkit-gradient(linear,left top,right top,from(#04ce6d),color-stop(33.33%,#03cb87),color-stop(66.66%,#03c89e),to(#02c5b6));
+  background-image: -webkit-linear-gradient(left,#04ce6d 0,#03cb87 33.33%,#03c89e 66.66%,#02c5b6 100%);
+  background-image: linear-gradient(to right,#04ce6d 0,#03cb87 33.33%,#03c89e 66.66%,#02c5b6 100%)
+}
+
+.nav.nav_contents .nav_mask_prev {
+  background-image: -webkit-gradient(linear,left top,right top,from(#04ce6d),to(rgba(4,206,109,0)));
+  background-image: -webkit-linear-gradient(left,#04ce6d 0,rgba(4,206,109,0) 100%);
+  background-image: linear-gradient(to right,#04ce6d 0,rgba(4,206,109,0) 100%)
+}
+
+.nav.nav_contents .nav_mask_next {
+  display: none
+}
+
+.nav.nav_contents .nav_list {
+  padding-right: 55px
+}
+
+.nav.nav_contents .nav_more_link {
+  right: 0;
+  display: block;
+  padding: 19px 15px 19px 20px;
+  background-image: -webkit-linear-gradient(right,#02c5b6 0,#02c5b6 34px,rgba(2,197,182,0) 100%);
+  background-image: linear-gradient(to left,#02c5b6 0,#02c5b6 34px,rgba(2,197,182,0) 100%)
+}
+
+.nav.nav_commerce {
+  padding-left: 34px;
+  background-image: -webkit-gradient(linear,left top,right top,from(#7a4ef8),color-stop(50%,#7f51f6),to(#8f5aee));
+  background-image: -webkit-linear-gradient(left,#7a4ef8 0,#7f51f6 50%,#8f5aee 100%);
+  background-image: linear-gradient(to right,#7a4ef8 0,#7f51f6 50%,#8f5aee 100%)
+}
+
+.nav.nav_commerce .nav_mask_prev {
+  display: none
+}
+
+.nav.nav_commerce .nav_mask_next {
+  background-image: -webkit-gradient(linear,right top,left top,from(#8f5aee),to(rgba(143,90,238,0)));
+  background-image: -webkit-linear-gradient(right,#8f5aee 0,rgba(143,90,238,0) 100%);
+  background-image: linear-gradient(to left,#8f5aee 0,rgba(143,90,238,0) 100%)
+}
+
+.nav.nav_commerce .nav_more_link {
+  left: 0;
+  display: block;
+  padding: 19px 20px 19px 15px;
+  background-image: -webkit-linear-gradient(left,#7a4ef8 0,#7a4ef8 34px,rgba(122,78,248,0) 100%);
+  background-image: linear-gradient(to right,#7a4ef8 0,#7a4ef8 34px,rgba(122,78,248,0) 100%)
+}
+
+.nav .nav_mask_next,.nav .nav_mask_prev {
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  z-index: 2;
+  width: 20px
+}
+
+.nav .nav_mask_prev {
+  left: 0;
+  background-image: -webkit-gradient(linear,left top,right top,from(#04ce6d),to(rgba(4,206,109,0)));
+  background-image: -webkit-linear-gradient(left,#04ce6d 0,rgba(4,206,109,0) 100%);
+  background-image: linear-gradient(to right,#04ce6d 0,rgba(4,206,109,0) 100%)
+}
+
+.nav .nav_mask_next {
+  right: 0;
+  background-image: -webkit-gradient(linear,right top,left top,from(#03cb87),to(rgba(3,203,135,0)));
+  background-image: -webkit-linear-gradient(right,#03cb87 0,rgba(3,203,135,0) 100%);
+  background-image: linear-gradient(to left,#03cb87 0,rgba(3,203,135,0) 100%)
+}
+
+.nav .nav_scroll_wrap {
+  overflow: hidden
+}
+
+.nav .nav_scroll_wrap::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-top: 1px solid rgba(0,0,0,.05)
+}
+
+.nav .nav_scroll_wrap::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid rgba(0,0,0,.1)
+}
+
+.nav .nav_list_wrap {
+  position: relative;
+  z-index: 1;
+  font-size: 0;
+  line-height: 0;
+  white-space: nowrap
+}
+
+.nav .nav_list_wrap::after {
+  content: "";
+  display: table;
+  table-layout: fixed;
+  clear: both
+}
+
+.nav .nav_list {
+  min-width: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+.nav .nav_item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top
+}
+
+.nav .nav_link {
+  display: block;
+  height: 54px;
+  padding: 18px 10px 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+.nav .nav_link::before {
+  content: "";
+  display: block
+}
+
+.nav .nav_link.nav_search::before {
+  width: 15px;
+  height: 20px;
+  background-position: -192px -161px
+}
+
+.nav .nav_link.nav_news::before {
+  width: 30px;
+  height: 20px;
+  background-position: -165px -207px
+}
+
+.nav .nav_link.nav_ent::before {
+  width: 30px;
+  height: 20px;
+  background-position: -221px -46px
+}
+
+.nav .nav_link.nav_myfeed::before {
+  width: 67px;
+  height: 20px;
+  background-position: -81px -46px
+}
+
+.nav .nav_link.nav_sports::before {
+  width: 45px;
+  height: 20px;
+  background-position: -144px -138px
+}
+
+.nav .nav_link.nav_place::before {
+  width: 60px;
+  height: 20px;
+  background-position: -63px -92px
+}
+
+.nav .nav_link.nav_bboom::before {
+  width: 30px;
+  height: 20px;
+  background-position: -99px -207px
+}
+
+.nav .nav_link.nav_livinghome::before {
+  width: 30px;
+  height: 20px;
+  background-position: -126px -115px
+}
+
+.nav .nav_link.nav_living::before {
+  width: 45px;
+  height: 20px;
+  background-position: -159px -92px
+}
+
+.nav .nav_link.nav_beauty::before {
+  width: 60px;
+  height: 20px;
+  background-position: 0 -92px
+}
+
+.nav .nav_link.nav_cargame::before {
+  width: 46px;
+  height: 20px;
+  background-position: -159px -69px
+}
+
+.nav .nav_link.nav_data::before {
+  width: 30px;
+  height: 20px;
+  background-position: -221px -138px
+}
+
+.nav .nav_link.nav_cargame::before {
+  width: 46px;
+  height: 20px;
+  background-position: -159px -69px
+}
+
+.nav .nav_link.nav_boom::before {
+  width: 15px;
+  height: 20px;
+  background-position: -192px -138px
+}
+
+.nav .nav_link.nav_shopping::before {
+  width: 78px;
+  height: 20px;
+  background-position: 0 0
+}
+
+.nav .nav_link.nav_shop_vogue::before {
+  width: 30px;
+  height: 20px;
+  background-position: -33px -207px
+}
+
+.nav .nav_link.nav_shop_live::before {
+  width: 75px;
+  height: 20px;
+  background-position: 0 -46px
+}
+
+.nav .nav_link.nav_gift_shop::before {
+  width: 45px;
+  height: 20px;
+  background-position: 0 -138px
+}
+
+.nav .nav_link.nav_beauty::before {
+  width: 60px;
+  height: 20px;
+  background-position: 0 -92px
+}
+
+.nav .nav_link.nav_food_market::before {
+  width: 45px;
+  height: 20px;
+  background-position: -96px -161px
+}
+
+.nav .nav_link.nav_living::before {
+  width: 45px;
+  height: 20px;
+  background-position: -159px -92px
+}
+
+.nav .nav_link.nav_livinghome::before {
+  width: 30px;
+  height: 20px;
+  background-position: -126px -115px
+}
+
+.nav .nav_link.nav_plus_deal::before {
+  width: 45px;
+  height: 20px;
+  background-position: 0 -161px
+}
+
+.nav .nav_link.nav_culture::before {
+  width: 30px;
+  height: 20px;
+  background-position: -132px -207px
+}
+
+.nav .nav_link.nav_shop_todo::before {
+  width: 62px;
+  height: 20px;
+  background-position: -65px -69px
+}
+
+.nav .nav_link.nav_lecture::before {
+  width: 41px;
+  height: 20px;
+  background-position: 0 -184px
+}
+
+.nav .nav_link.nav_arrival_guarantee::before {
+  width: 59px;
+  height: 20px;
+  background-position: -159px -23px
+}
+
+.nav .nav_link.nav_shorts::before {
+  width: 31px;
+  height: 20px;
+  background-position: -156px -184px
+}
+
+.nav .nav_link.nav_health::before {
+  width: 31px;
+  height: 20px;
+  background-position: -88px -184px
+}
+
+.nav .nav_link.nav_gameapp::before {
+  width: 30px;
+  height: 20px;
+  background-position: -221px -115px
+}
+
+.nav .nav_link[aria-selected=true] {
+  position: relative
+}
+
+.nav .nav_link[aria-selected=true]::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 8px;
+  bottom: 0;
+  left: 8px;
+  height: 4px;
+  -webkit-border-radius: 2px 2px 0 0;
+  border-radius: 2px 2px 0 0;
+  background-color: rgba(255,255,255,.75)
+}
+
+.nav .nav_link[aria-selected=true]~.nav_pagination {
+  display: block
+}
+
+.nav .nav_link[aria-selected=true].nav_search::before {
+  width: 15px;
+  height: 20px;
+  background-position: -190px -184px
+}
+
+.nav .nav_link[aria-selected=true].nav_news::before {
+  width: 30px;
+  height: 20px;
+  background-position: -221px -23px
+}
+
+.nav .nav_link[aria-selected=true].nav_ent::before {
+  width: 30px;
+  height: 20px;
+  background-position: -221px -184px
+}
+
+.nav .nav_link[aria-selected=true].nav_myfeed::before {
+  width: 67px;
+  height: 20px;
+  background-position: -81px -23px
+}
+
+.nav .nav_link[aria-selected=true].nav_sports::before {
+  width: 45px;
+  height: 20px;
+  background-position: -48px -138px
+}
+
+.nav .nav_link[aria-selected=true].nav_place::before {
+  width: 60px;
+  height: 20px;
+  background-position: 0 -115px
+}
+
+.nav .nav_link[aria-selected=true].nav_bboom::before {
+  width: 30px;
+  height: 20px;
+  background-position: -221px -161px
+}
+
+.nav .nav_link[aria-selected=true].nav_livinghome::before {
+  width: 30px;
+  height: 20px;
+  background-position: -126px -92px
+}
+
+.nav .nav_link[aria-selected=true].nav_living::before {
+  width: 45px;
+  height: 20px;
+  background-position: -96px -138px
+}
+
+.nav .nav_link[aria-selected=true].nav_beauty::before {
+  width: 60px;
+  height: 20px;
+  background-position: -63px -115px
+}
+
+.nav .nav_link[aria-selected=true].nav_cargame::before {
+  width: 46px;
+  height: 20px;
+  background-position: -159px -46px
+}
+
+.nav .nav_link[aria-selected=true].nav_data::before {
+  width: 30px;
+  height: 20px;
+  background-position: -66px -207px
+}
+
+.nav .nav_link[aria-selected=true].nav_cargame::before {
+  width: 46px;
+  height: 20px;
+  background-position: -159px -46px
+}
+
+.nav .nav_link[aria-selected=true].nav_boom::before {
+  width: 15px;
+  height: 20px;
+  background-position: -130px -69px
+}
+
+.nav .nav_link[aria-selected=true].nav_shopping::before {
+  width: 78px;
+  height: 20px;
+  background-position: 0 -23px
+}
+
+.nav .nav_link[aria-selected=true].nav_shop_vogue::before {
+  width: 30px;
+  height: 20px;
+  background-position: 0 -207px
+}
+
+.nav .nav_link[aria-selected=true].nav_shop_live::before {
+  width: 75px;
+  height: 20px;
+  background-position: -81px 0
+}
+
+.nav .nav_link[aria-selected=true].nav_gift_shop::before {
+  width: 45px;
+  height: 20px;
+  background-position: -159px -115px
+}
+
+.nav .nav_link[aria-selected=true].nav_beauty::before {
+  width: 60px;
+  height: 20px;
+  background-position: -63px -115px
+}
+
+.nav .nav_link[aria-selected=true].nav_food_market::before {
+  width: 45px;
+  height: 20px;
+  background-position: -48px -161px
+}
+
+.nav .nav_link[aria-selected=true].nav_living::before {
+  width: 45px;
+  height: 20px;
+  background-position: -96px -138px
+}
+
+.nav .nav_link[aria-selected=true].nav_livinghome::before {
+  width: 30px;
+  height: 20px;
+  background-position: -126px -92px
+}
+
+.nav .nav_link[aria-selected=true].nav_plus_deal::before {
+  width: 45px;
+  height: 20px;
+  background-position: -144px -161px
+}
+
+.nav .nav_link[aria-selected=true].nav_culture::before {
+  width: 30px;
+  height: 20px;
+  background-position: -221px -69px
+}
+
+.nav .nav_link[aria-selected=true].nav_shop_todo::before {
+  width: 62px;
+  height: 20px;
+  background-position: 0 -69px
+}
+
+.nav .nav_link[aria-selected=true].nav_lecture::before {
+  width: 41px;
+  height: 20px;
+  background-position: -44px -184px
+}
+
+.nav .nav_link[aria-selected=true].nav_arrival_guarantee::before {
+  width: 59px;
+  height: 20px;
+  background-position: -159px 0
+}
+
+.nav .nav_link[aria-selected=true].nav_shorts::before {
+  width: 31px;
+  height: 20px;
+  background-position: -221px 0
+}
+
+.nav .nav_link[aria-selected=true].nav_health::before {
+  width: 31px;
+  height: 20px;
+  background-position: -122px -184px
+}
+
+.nav .nav_link[aria-selected=true].nav_gameapp::before {
+  width: 30px;
+  height: 20px;
+  background-position: -221px -92px
+}
+
+.nav .nav_ico_new {
+  position: absolute;
+  top: 18px;
+  right: 4px;
+  width: 4px;
+  height: 4px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #ffe570
+}
+
+.nav .nav_pagination {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  display: none;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%)
+}
+
+.nav .nav_pagination .nav_page {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,.5)
+}
+
+.nav .nav_pagination .nav_page[aria-current=true] {
+  background-color: #fff
+}
+
+.nav .nav_pagination .nav_page+.nav_page {
+  margin-left: 4px
+}
+
+.nav .nav_tooltip {
+  position: absolute;
+  top: 2px;
+  right: -6px;
+  max-width: 59px;
+  background-color: #0098ff;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+  z-index: 1
+}
+
+.nav .nav_tooltip .nav_tooltip_text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  padding: 0 5px 1px;
+  font-size: 10px;
+  line-height: 15px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: -.56px
+}
+
+.nav .nav_tooltip::after {
+  position: absolute;
+  right: 4px;
+  bottom: -10px;
+  width: 11px;
+  height: 10px;
+  background-position: -310px -91px;
+  content: ''
+}
+
+.nav .nav_more_link {
+  position: absolute;
+  top: 1px;
+  display: none;
+  z-index: 1
+}
+
+.nav .nav_more_link::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-position: -142px -80px;
+  margin: -1px
+}
+.nav .nav_list_wrap{font-size:16px;line-height:1.5;white-space:nowrap}
+.nav .nav_link::before{display:none}
+.nav .nav_link[aria-selected=true]::before{}
+.nav .nav_link span{padding:10px 10px;display:block}
+.nav .nav_link[aria-selected=true]::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 8px;
+    bottom: 0;
+    left: 8px;
+    height: 4px;
+    -webkit-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
+    background-color: rgba(255,255,255,.75);}
+    </style>
+</head>
+
+<body class="main">
+    <div class="wrap">
+        <header class="d-none">
+            <div class="d-flex align-items-center justify-content-between">
+                <img src="/static/html/m/kia/img/ico_headerlogo.svg" alt=""></button>
+                <button type="button"><img src="/static/html/m/kia/img/ico_header_menu-w.svg" alt=""></button>
+            </div>
+        </header>
+        <header>
+            <div class="nav_wrap">   
+                <nav class="nav nav_contents" id="NAV"> 
+                    <span class="nav_mask_prev"></span> <span class="nav_mask_next"></span> 
+                    <div class="nav_scroll_wrap"> 
+                        <div class="nav_list_wrap native_scroll" id="NAV_LIST" style=""> 
+                            <ul role="tablist" class="nav_list native_scroll_list">     
+                                <li role="presentation" class="nav_item" data-code="CULTURE"><a href="#CULTURE" role="tab" class="nav_link nav_culture" aria-selected="true"><span class="blind">책방책방책방책방</span></a></li>
+                                <li role="presentation" class="nav_item" data-code="CULTURE"><a href="#CULTURE" role="tab" class="nav_link nav_culture" aria-selected="false"><span class="blind">원쁠딜원쁠딜원쁠딜원쁠딜</span></a></li>
+                            </ul> </div></div> </nav> </div>
+        </header>
+        <!-- HCAU-container -->
+        
+        <div class="HCAU-container">
+            <div class="HCAU-contents">
+                <h1 class="HCAU-h1">kia<br>FINANCial services</h1>
+                
+                <div class="d-flex col12 full p20">
+                    <ul class="d-flex row g08">
+                        <li><button class="box btn01 text-start">Finance Quote<span><svg width="22" height="9" viewBox="0 0 22 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 8H21" stroke="white" stroke-linecap="round"/><path d="M14 1L21.0711 8.07107" stroke="white" stroke-linecap="round"/></svg></span></button></li>
+                        <li><button class="box btn02 text-start">find a dealership<span><svg width="22" height="9" viewBox="0 0 22 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 8H21" stroke="white" stroke-linecap="round"/><path d="M14 1L21.0711 8.07107" stroke="white" stroke-linecap="round"/></svg></span></button></li>
+                        <li><button class="box btn03 text-start">Statement<span><svg width="22" height="9" viewBox="0 0 22 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 8H21" stroke="white" stroke-linecap="round"/><path d="M14 1L21.0711 8.07107" stroke="white" stroke-linecap="round"/></svg></span></button></li>
+                        <li><button class="box btn04 text-start">Amount Due<span><svg width="22" height="9" viewBox="0 0 22 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 8H21" stroke="white" stroke-linecap="round"/><path d="M14 1L21.0711 8.07107" stroke="white" stroke-linecap="round"/></svg></span></button></li>
+                    </ul>                    
+                </div> 
+
+
+            </div>
+        </div>
+        <!-- //HCAU-container -->
+        <!-- btn-cta-wrap -->
+        <div class="btn-cta-wrap row">
+            <div class="tip">
+                <span><svg width="79" height="4" viewBox="0 0 79 4" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="79" height="4" rx="2" fill="#E5E5E5"/></svg></span>
+                <!--carousel-->
+                <div class="promo row">
+                    <div class="HCAU-h2">Kia Motors</div>
+                    <div id="MortorsPromo" class="carousel slide vertical" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#MortorsPromo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#MortorsPromo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#MortorsPromo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                         <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="">Special event to celebrate the release of EV 6</div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">Special event to celebrate the release of EV 6</div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">Special event to celebrate the release of EV 6</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="promo row border-top mb40">
+                    <div class="HCAU-h2">Kia Finance</div> 
+                    <div id="FinancePromo" class="carousel slide vertical" data-bs-ride="carousel">                      
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#CapitalPromo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#CapitalPromo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="">Special Interest Rate Benefits for New Car Purchase</div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">Special Interest Rate Benefits for New Car Purchase</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--//carousel-->
+            </div>
+        </div>
+        <!-- //btn-cta-wrap -->
+        <script type="text/javascript" src="/static/html/m/kia/js/Footer.js"></script>
+    </div>
+    <!-- <script src="/static/html/m/kia/js/jquery-3.3.1.min.js"></script> -->
+    <script src="/static/html/m/kia/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/static/html/m/kia/js/main.js"></script>
+</body>
+
+</html>
