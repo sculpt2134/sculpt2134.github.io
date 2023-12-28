@@ -85,3 +85,49 @@ body.main {
           div:has(.carousel-item:last-child.active) + button + button,
           .disabled{display:none !important}
           
+
+
+          .flicking-camera {
+            width: 100%;
+            height: 100%;
+            display: inline-flex;
+            position: relative;
+            flex-direction: column;
+            will-change: transform;
+            z-index: 1;
+            align-items:center;
+        }
+        .flicking-viewport {
+          margin-left: auto;
+    margin-right: auto;
+    transition: height .5s;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+          margin-bottom: 10px;
+        }
+        .flicking-panel {
+           background-color: #f2a65e;
+           white-space: nowrap;
+            display: flex;
+            border-radius: 5px;
+            margin-right: 10px;
+            align-items: flex-end;
+            justify-content: start;
+            padding: 20px 40px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        
+        .is-justify-content-center {
+            justify-content: center!important;
+        }
+        .is-flex {
+            display: flex!important;
+        }
+       
+        .mr-2{
+            margin-right: 5px;
+        }
+        
+   

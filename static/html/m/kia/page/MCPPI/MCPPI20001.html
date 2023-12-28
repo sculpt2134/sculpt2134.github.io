@@ -51,47 +51,138 @@
                             </div>
                         </div>
                         <div class="mt20">
-                            <div class="d-flex justify-content-between">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="HCAU-txt-sm">Existing method</span>
+                                <span class="HCAU-txt-sm text-end fw-bold">Direct debit</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
                                 <span class="HCAU-txt-sm">Existing bank</span>
                                 <span class="HCAU-txt-sm text-end fw-bold">KB Bank</span>
                             </div>
-                            <div class="d-flex justify-content-between mt-3">
-                                <span class="HCAU-txt-sm">Existing account number</span>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="HCAU-txt-sm">Existing<br>account number</span>
                                 <span class="HCAU-txt-sm text-end fw-bold">12341**********1</span>
                             </div>
-                            <div class="d-flex justify-content-between mt-3">
-                                <span class="HCAU-txt-sm">Existing depositor</span>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="HCAU-txt-sm">Existing dspositor</span>
                                 <span class="HCAU-txt-sm text-end fw-bold">Juan Sebastian Veron</span>
                             </div>
                         </div>
                     </div>
 
+                    <div class="item card-list border-box px-3 pt-3 pb20">
+                        <div>
+                            <!-- <button class="HCAU-btn btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">open bottom sheet</button> -->
+                            <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">
+                                New Car Loan_Standard - Contract number
+                            </button>
+                            <div class="HCAU-bottom-sheet offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                                <div class="offcanvas-header">
+                                    <!-- <h5 class="offcanvas-title" id="offcanvasBottomLabel">bottom sheet title</h5> -->
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                                        <img src="/static/html/m/kia/img/ico_modal_close.svg" alt="Close">
+                                    </button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul class="bottom-sheet-item">
+                                        <li><a href="#none" class="HCAU-txt-sm">Select object 1</a></li>
+                                        <li><a href="#none" class="HCAU-txt-sm">Select object 2</a></li>
+                                        <li><a href="#none" class="HCAU-txt-sm">Select object 3</a></li>
+                                        <li><a href="#none" class="HCAU-txt-sm">Select object 4</a></li>
+                                        <li><a href="#none" class="HCAU-txt-sm">Select object 5</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt20">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="HCAU-txt-sm">Existing method</span>
+                                <span class="HCAU-txt-sm text-end fw-bold">BPAY</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="HCAU-txt-sm">Biller code</span>
+                                <span class="HCAU-txt-sm text-end fw-bold">B-pay Biller code</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="HCAU-txt-sm">Reference number</span>
+                                <span class="HCAU-txt-sm text-end fw-bold">Reference number</span>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="mt52">
+
                         <div class="HCAU-form-wrap">
-                            <div class="form-title HCAU-txt-md fw-bold">Change bank selection</div>
-                            <div class="d-flex g12">
-                                <div class="flex-grow-1">
-                                    <input type="text" class="form-control HCAU-form HCAU-form-invalid" id="form-txt01" aria-describedby="" value="" placeholder="Enter BSB number">
-                                    <div class="invalid-feedback" style="display: block;">invalid message1</div>
-                                    <div class="invalid-feedback" style="display: block;">invalid message2</div>
+                            <div class="form-title HCAU-txt-md fw-bold">Change payment method</div>
+                            <div class="HCAU-tab-radio2">
+                                <div>
+                                    <input type="radio" class="btn-check radioTab" name="tab-radio" id="tab-radio01" value="tab-debit" checked="">
+                                    <label for="tab-radio01" class="HCAU-btn btn-smd">
+                                        <span>Direct debit</span>
+                                    </label>
                                 </div>
                                 <div>
-                                    <button type="button" class="HCAU-btn btn-smd" disabled>Search</button>
+                                    <input type="radio" class="btn-check radioTab" name="tab-radio" id="tab-radio02" value="tab-bpay">
+                                    <label for="tab-radio02" class="HCAU-btn btn-smd">
+                                        <span>BPAY</span>
+                                    </label>
                                 </div>
                             </div>
-                        </div>
-                        <div class="HCAU-form-wrap">
-                            <div class="form-title HCAU-txt-md fw-bold">Change account number</div>
-                            <div>
-                                <input type="text" class="form-control HCAU-form HCAU-form-invalid" id="" value="" placeholder="Enter change account number">
-                                <div class="HCAU-invalid-feedback">invalid message</div>
-                            </div>
-                        </div>
-                        <div class="HCAU-form-wrap">
-                            <div class="form-title HCAU-txt-md fw-bold">Change account holder</div>
-                            <div>
-                                <input type="text" class="form-control HCAU-form HCAU-form-invalid" id="" value="" placeholder="Enter change account holder name">
-                                <div class="HCAU-invalid-feedback">invalid message</div>
+                            <div class="mt20">
+                                <div class="tab-radio-cont">
+                                    <!-- tab-debit -->
+                                    <div class="tab-debit">
+                                        <div class="HCAU-form-wrap">
+                                            <div class="form-title HCAU-txt-md fw-bold">Change bank selection</div>
+                                            <div class="d-flex g12">
+                                                <div class="flex-grow-1">
+                                                    <input type="text" class="form-control HCAU-form HCAU-form-invalid" id="form-txt01" aria-describedby="" value="" placeholder="Enter BSB number">
+                                                    <div class="invalid-feedback" style="display: block;">invalid message1</div>
+                                                    <div class="invalid-feedback" style="display: block;">invalid message2</div>
+                                                </div>
+                                                <div>
+                                                    <button type="button" class="HCAU-btn btn-smd" disabled>Search</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="HCAU-form-wrap">
+                                            <div class="form-title HCAU-txt-md fw-bold">Change account number</div>
+                                            <div>
+                                                <input type="text" class="form-control HCAU-form HCAU-form-invalid" id="" value="" placeholder="Enter change account number">
+                                                <div class="HCAU-invalid-feedback">invalid message</div>
+                                            </div>
+                                        </div>
+                                        <div class="HCAU-form-wrap">
+                                            <div class="form-title HCAU-txt-md fw-bold">Change account holder</div>
+                                            <div>
+                                                <input type="text" class="form-control HCAU-form HCAU-form-invalid" id="" value="" placeholder="Enter change account holder name">
+                                                <div class="HCAU-invalid-feedback">invalid message</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- tab-bpay -->
+                                    <div class="tab-bpay" style="display: none;">
+                                        <div class="border-box black">
+                                            <div class="d-flex justify-content-between align-items-center p-3">
+                                                <div class="w-50">
+                                                    <span class="HCAU-txt-sm">Biller code</span>
+                                                </div>
+                                                <div class="text-end">
+                                                    <span class="HCAU-txt-sm fw-bold">B-pay Biller code</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center p-3 border-top">
+                                                <div class="w-50">
+                                                    <span class="HCAU-txt-sm">Reference number</span>
+                                                </div>
+                                                <div class="text-end">
+                                                    <span class="HCAU-txt-sm fw-bold">Reference number</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -196,7 +287,7 @@
         <!-- btn-cta-wrap -->
         <div class="btn-cta-wrap">
             <button type="button" class="HCAU-btn btn-cta gray03">Cancel</button>
-            <button type="button" class="HCAU-btn btn-cta primary">Next</button>
+            <button type="button" class="HCAU-btn btn-cta primary">Change</button>
         </div>
         <!-- //btn-cta-wrap -->
 
@@ -204,7 +295,7 @@
     </div>
     <!-- <script src="/static/html/m/kia/js/jquery-3.3.1.min.js"></script> -->
     <script src="/static/html/m/kia/js/bootstrap.bundle.min.js"></script>
-    <!-- <script type="module" src="js/main.js"></script> -->
+    <script type="module" src="/static/html/m/kia/js/main.js"></script>
 </body>
 
 </html>

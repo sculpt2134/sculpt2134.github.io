@@ -242,6 +242,10 @@
   margin-left: 40px !important;
 }
 
+.mr40 {
+  margin-right: 40px !important;
+}
+
 a {
   text-decoration: none;
 }
@@ -702,7 +706,6 @@ a {
   border: 1px solid #999;
   color: #999;
   cursor: default;
-  min-width: 84px;
 }
 .HCAU-btn.btn-keyvi {
   border: 1px solid #fff;
@@ -775,6 +778,90 @@ a {
 }
 .HCAU-tab-small .nav-tabs li:last-child button {
   border-radius: 0 4px 4px 0;
+}
+
+.HCAU-tab {
+  margin-top: 20px;
+  padding: 10px 10px 0 10px;
+  border-radius: 4px 4px 0 0;
+  border: 1px solid #e5e5e5;
+}
+.HCAU-tab .nav-tabs {
+  border: 0;
+  justify-content: space-around;
+  position: relative;
+}
+.HCAU-tab .nav-tabs li, .HCAU-tab .nav-tabs .nav-link {
+  border: 0;
+  background: #fff;
+  position: relative;
+  border: 0;
+  color: #444;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: -1px;
+  padding: 0;
+}
+.HCAU-tab .nav-tabs li.active, .HCAU-tab .nav-tabs .nav-link.active {
+  border-bottom: 2px solid #000;
+  background: #fff;
+  color: #000;
+}
+.HCAU-tab .nav-tabs li:before {
+  display: block;
+  content: "";
+  height: 20px;
+  width: 1px;
+  background: #e5e5e5;
+  position: absolute;
+  left: -40px;
+  top: 10px;
+  z-index: 2;
+}
+
+.HCAU-tab .nav-tabs .nav-link.active {
+  border-bottom: 2px solid #000;
+  background: #fff;
+  color: #000;
+}
+
+.HCAU-tab .nav-tabs .nav-link.active:before,
+.HCAU-tab .nav-tabs li:first-child:before {
+  clear: both;
+  display: none;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tab-content {
+  position: relative;
+}
+
+.tab-content > .tab-pane:before {
+  display: block;
+  content: "";
+  border-left: 1px solid #e5e5e5;
+  height: 100px;
+  position: absolute;
+}
+
+.tab-content > .tab-pane:after {
+  display: block;
+  content: "";
+  border-right: 1px solid #e5e5e5;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.d-flex.flex-column.px3.py24.border-bottom.pb-20 {
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
 }
 
 .HCAU-badge {
@@ -978,7 +1065,7 @@ a {
 }
 .HCAU-form.form-check-input + label {
   font-size: 14px;
-  margin-left: 2px;
+  margin-left: 4px;
   line-height: 2;
 }
 
@@ -1204,7 +1291,7 @@ a {
 }
 .prd-keyvi .HCAU-flex-table > .HCAU-txt-md {
   position: absolute;
-  top: 35%;
+  top: 25%;
   text-align: center;
 }
 .prd-keyvi .HCAU-table {

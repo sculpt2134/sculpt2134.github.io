@@ -60,6 +60,7 @@ body {
   font-family: "HyundaiTextOffice",
     "Malgun Gothic", Dotum, "돋움", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo",
     "굴림", arial, sans-serif;
+  font-weight: 400;
   color: #000;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
@@ -77,9 +78,9 @@ dd,
 blockquote,
 p,span
  {
-  font-family: "HyundaiTextOffice",
+  /* font-family: "HyundaiTextOffice",
   "Malgun Gothic", Dotum, "돋움", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo",
-  "굴림", arial, sans-serif;
+  "굴림", arial, sans-serif; */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -97,6 +98,7 @@ h6,
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'HyundaiHeadOffice';
 }
 li {
   list-style: none;

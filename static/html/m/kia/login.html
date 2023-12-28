@@ -9,12 +9,6 @@
     <link rel="stylesheet" href="/static/html/m/kia/css/styles.css" />
     <link rel="stylesheet" href="/static/html/m/kia/css/main.css" />
     <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico" />
-    <style>
-        header{background-image: -webkit-gradient(linear,left top,right top,from(#04ce6d),color-stop(33.33%,#03cb87),color-stop(66.66%,#03c89e),to(#02c5b6));
-            background-image: -webkit-linear-gradient(left,#04ce6d 0,#03cb87 33.33%,#03c89e 66.66%,#02c5b6 100%);
-            background-image: linear-gradient(to right,#04ce6d 0,#03cb87 33.33%,#03c89e 66.66%,#02c5b6 100%);
-        }
-    </style>
 </head>
 
 <body class="main">
@@ -167,57 +161,68 @@
         </div>
         <!-- //HCAU-container -->
         <!-- btn-cta-wrap -->
-        <div class="btn-cta-wrap row">
-            <div class="tip">
-                <span><svg width="79" height="4" viewBox="0 0 79 4" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="79" height="4" rx="2" fill="#E5E5E5"/></svg></span>
-                <!--carousel-->
-                <div class="promo row border-bottom pb20">
-                    <div class="HCAU-h2">Kia Motors</div>
-                    <div id="MortorsPromo" class="carousel slide vertical" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#MortorsPromo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#MortorsPromo" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#MortorsPromo" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="">Special event to celebrate the release of IONIC 6</div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="">Special event to celebrate the release of IONIC 6</div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="">Special event to celebrate the release of IONIC 6</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="promo row">
-                    <div class="HCAU-h2">Kia Finance</div> 
-                    <div id="FinancePromo" class="carousel slide vertical" data-bs-ride="carousel">                      
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#CapitalPromo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#CapitalPromo" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        </div>
-                
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="">Special Interest Rate Benefits for New Car Purchase</div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="">Special Interest Rate Benefits for New Car Purchase</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--//carousel-->
+        <div id="flick" class="flicking-viewport vertical" style="height:60px">
+            <div class="flicking-camera g20">
+              <div class="flicking-panel">Expected cost when buyout</div>
+              <div class="flicking-panel">Expected cost when return</div>
+              <div class="flicking-panel">Expected cost when buyout</div>
+              <div class="flicking-panel">Expected cost when return</div>
             </div>
+          </div>
+        <div class="btn-cta-wrap row" >
+           
+                <div class="tip">
+                    <span><svg width="79" height="4" viewBox="0 0 79 4" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="79" height="4" rx="2" fill="#E5E5E5"/></svg></span>
+                    <!--carousel-->
+                    <div class="promo row border-bottom pb20">
+                        <div class="HCAU-h2">Kia Motors</div>
+                        <div id="MortorsPromo" class="carousel slide vertical" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#MortorsPromo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#MortorsPromo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#MortorsPromo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="">Special event to celebrate the release of IONIC 6</div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="">Special event to celebrate the release of IONIC 6</div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="">Special event to celebrate the release of IONIC 6</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promo row">
+                        <div class="HCAU-h2">Kia Finance</div> 
+                        <div id="FinancePromo" class="carousel slide vertical" data-bs-ride="carousel">                      
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#CapitalPromo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#CapitalPromo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            </div>
+                    
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="">Special Interest Rate Benefits for New Car Purchase</div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="">Special Interest Rate Benefits for New Car Purchase</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//carousel-->
+                </div>
+           
         </div>
         <!-- //btn-cta-wrap -->
         <script type="text/javascript" src="/static/html/m/kia/js/Footer.js"></script>
     </div>
     <!-- <script src="/static/html/m/kia/js/jquery-3.3.1.min.js"></script> -->
     <script src="/static/html/m/kia/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/egjs-flicking/4.4.0/flicking.pkgd.min.js" crossorigin="anonymous"></script>
     <script type="module" src="/static/html/m/kia/js/main.js"></script>
     <script>        
         // const carousel = new bootstrap.Carousel('#ProductDetail');
@@ -226,6 +231,15 @@
             wrap: false,
             
         })
+        const flicking = new Flicking("#flick", {
+            renderOnlyVisible: true,
+            circular: true,
+            horizontal: false,
+          }).on({
+             moveEnd : function(e){
+               console.log('aaa')
+             }
+          });
     </script>
 </body>
 

@@ -242,6 +242,10 @@
   margin-left: 40px !important;
 }
 
+.mr40 {
+  margin-right: 40px !important;
+}
+
 a {
   text-decoration: none;
 }
@@ -706,7 +710,6 @@ a {
   border: 1px solid #697279;
   color: #697279;
   cursor: default;
-  min-width: 84px;
 }
 .HCAU-btn.btn-keyvi {
   border: 1px solid #fff;
@@ -981,7 +984,7 @@ a {
 }
 .HCAU-form.form-check-input + label {
   font-size: 13px;
-  margin-left: 2px;
+  margin-left: 4px;
   line-height: 2;
 }
 
@@ -1207,7 +1210,7 @@ a {
 }
 .prd-keyvi .HCAU-flex-table > .HCAU-txt-md {
   position: absolute;
-  top: 35%;
+  top: 25%;
   text-align: center;
 }
 .prd-keyvi .HCAU-table {

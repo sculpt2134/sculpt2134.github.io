@@ -86,6 +86,7 @@ $font-size-xs : 11px;
 .mb32{margin-bottom: 32px;}
 .mb40{margin-bottom: 40px;}
 .ml40{margin-left: 40px !important;}
+.mr40{margin-right: 40px !important;}
 
 a{text-decoration: none;}
 .fw500{font-weight: 700;}
@@ -460,7 +461,7 @@ a{text-decoration: none;}
         border: 1px solid $gray03;
         color: $gray03;
         cursor: default;
-        min-width:84px;
+        //min-width:84px; /*1226 개발요청*/
         // font-weight: 400;
     }
     &.btn-keyvi{
@@ -549,7 +550,53 @@ a{text-decoration: none;}
 		}
 	}
 }
+//scrolling tab
+.HCAU-tab {margin-top: 20px;
+    padding: 10px 10px 0 10px;
+    border-radius: 4px 4px 0 0;
+    border: 1px solid #e5e5e5;
+    .nav-tabs{border:0;justify-content: space-around;position: relative;
+        li,.nav-link{border:0;background:#fff;position: relative;border:0;color:#444; border-bottom: 1px solid #e5e5e5;
+            margin-bottom: -1px;padding:0;
+        &.active{
+            border-bottom: 2px solid #000;
+            background: #fff;
+            color: #000;
+        }
+        }
+        li:before{display: block;content:"";height:20px;width:1px;background:#e5e5e5;position:absolute;left:-40px;top:10px;z-index: 2;}
+    }
+    }
 
+  
+    .HCAU-tab .nav-tabs .nav-link.active {
+       border-bottom: 2px solid #000;
+       background: #fff;
+       color: #000;
+   }
+
+    .HCAU-tab .nav-tabs .nav-link.active:before,
+    .HCAU-tab .nav-tabs li:first-child:before{clear:both;display: none;}
+    .ellipsis {
+       overflow: hidden;
+       text-overflow: ellipsis;
+       white-space: nowrap;
+     }
+
+    .tab-content{position: relative;}
+    .tab-content>.tab-pane:before{display: block;content:"";border-left:1px solid #e5e5e5;height:100px;position:absolute;}
+    .tab-content>.tab-pane:after{display: block;
+        content: "";
+        border-right:1px solid #e5e5e5;
+        height: 100px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;}
+        .d-flex.flex-column.px3.py24.border-bottom.pb-20{border-radius:4px;border:1px solid #e5e5e5}
+
+
+       
 //badge
 .HCAU-badge{
     display: inline-block;
@@ -725,7 +772,7 @@ top:15px;}
     & + label{
         // vertical-align: bottom;
         font-size: 14px;
-        margin-left: 2px;
+        margin-left: 4px;
         line-height: 2;
     }
 }
@@ -934,7 +981,7 @@ top:15px;}
         position: relative;
         > .HCAU-txt-md{
             position:absolute;
-            top: 35%;
+            top: 25%;
             text-align: center;
             // font-size:16px;
         }

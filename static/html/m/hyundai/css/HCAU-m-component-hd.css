@@ -435,6 +435,11 @@ a {
 header {
   background: #fff;
   padding: 12px 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 footer {
@@ -541,8 +546,8 @@ footer .copyright + .copyright {
 }
 .HCAU-btn.btn-cta:disabled {
   color: #999;
-  border-top: 1px solid #f5f5f5;
-  border-bottom: 1px solid #f5f5f5;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
   background-color: #f5f5f5;
 }
 .HCAU-btn.full {
@@ -1128,7 +1133,7 @@ textarea.HCAU-form.form-control {
 .prd-keyvi .HCAU-flex-table .HCAU-bullet-list.black li {
   padding-left: 10px;
 }
-.prd-keyvi .HCAU-flex-table .HCAU-txt-sm {
+.prd-keyvi .HCAU-flex-table > .HCAU-txt-sm {
   position: absolute;
   text-align: center;
   font-size: 16px;
@@ -1147,22 +1152,20 @@ textarea.HCAU-form.form-control {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-.prd-keyvi .chart-wrap img {
-  padding: 180px 20px 40px 20px;
   border: 1px solid #d5d5d5;
+  padding: 40px 20px;
 }
-.prd-keyvi .chart-wrap .HCAU-txt-lg {
-  position: absolute;
-  top: 50px;
-}
-.prd-keyvi .chart-wrap .HCAU-txt-md {
-  position: absolute;
-  top: 96px;
+.prd-keyvi .chart-wrap .HCAU-txt-sm {
+  position: initial;
+  left: initial;
+  top: initial;
+  margin-top: 16px;
   font-size: 15px;
 }
-.prd-keyvi .chart-wrap.prd3 {
-  margin-top: 280px;
+.prd-keyvi .chart-wrap img {
+  margin-top: 50px;
+  width: 100% !important;
+  max-width: 295px;
 }
 
 .HCAU-tooltip {
@@ -1361,32 +1364,75 @@ textarea.HCAU-form.form-control {
 .HCAU-tab {
   position: relative;
   display: flex;
+  overflow: auto;
 }
-.HCAU-tab:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background: #d5d5d5;
-  position: absolute;
-  left: 0;
-  bottom: 0;
+.HCAU-tab.native-scroll {
+  overflow: hidden;
+  overflow-x: auto;
+  margin-right: -20px;
+  padding-left: 0px;
+  margin-left: -20px;
+  padding-right: 0;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.HCAU-tab.native-scroll .btn-2 {
+  display: inline-flex;
+  position: relative;
+}
+.HCAU-tab.native-scroll .btn-2 button.one {
+  margin-left: 20px;
+}
+.HCAU-tab.native-scroll .btn-2 button.two {
+  margin-right: 20px;
+}
+.HCAU-tab.native-scroll .btn-3 {
+  display: inline-flex;
+  position: relative;
+}
+.HCAU-tab.native-scroll .btn-3 button.one {
+  margin-left: 20px;
+}
+.HCAU-tab.native-scroll .btn-3 button.three {
+  margin-right: 20px;
+}
+.HCAU-tab.native-scroll::-webkit-scrollbar {
+  display: none;
 }
 .HCAU-tab button {
+  display: inline-flex;
   flex: 1;
-  /* overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap; */
   position: relative;
+  justify-content: center;
   z-index: 1;
   font-size: 16px;
   color: #999;
   font-weight: 700;
   padding: 12px 36px;
+  white-space: nowrap;
+  border-bottom: 1px solid #d5d5d5;
 }
 .HCAU-tab button.active {
   border-bottom: 2px solid #000;
   color: #000;
+}
+.HCAU-tab button.one {
+  margin-left: 20px;
+}
+.HCAU-tab button.two {
+  margin-right: 20px;
+}
+.HCAU-tab.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.HCAU-tab.me-20 {
+  margin-right: -20px;
 }
 
 .HCAU-tab-small {
@@ -1436,13 +1482,13 @@ textarea.HCAU-form.form-control {
 .request-amount {
   border-top: 1px solid #d5d5d5;
   box-shadow: 0px -10px 6px 0px rgba(0, 0, 0, 0.04);
-  margin-left: -20px;
-  margin-right: -20px;
-  margin-bottom: -20px;
   position: sticky;
   left: 0;
   bottom: 60px;
   background: #fff;
+}
+.request-amount .HCAU-h1 {
+  font-size: 22px;
 }
 
 .HCAU-search-bar > div + div {
@@ -1560,6 +1606,11 @@ textarea.HCAU-form.form-control {
   background-color: #000;
   border-color: #000;
   color: #fff;
+}
+.HCAU-tab-radio2 > div input:disabled + label {
+  background-color: #f5f5f5;
+  border-color: #d5d5d5;
+  color: #999;
 }
 
 .filebox input[type=file] {
@@ -1696,16 +1747,22 @@ textarea.HCAU-form.form-control {
 .HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse .accordion-body {
   padding: 0 32px 20px;
 }
+.HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse .accordion-body .accordion {
+  border: 1px solid #d5d5d5;
+  border-radius: 7px;
+  overflow: hidden;
+}
 .HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse .accordion-body .accordion .accordion-item {
   border: none;
   border-radius: 0;
   --bs-accordion-inner-border-radius: 0;
+  background: #f5f5f5;
 }
-.HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse .accordion-body .accordion .accordion-item .accordion-header {
-  border-bottom: 1px solid #d5d5d5;
+.HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse .accordion-body .accordion .accordion-item + .accordion-item {
+  border-top: 1px solid #d5d5d5;
 }
 .HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse .accordion-body .accordion .accordion-item .accordion-header button {
-  padding: 16px 0;
+  padding: 16px;
   background: none;
   box-shadow: none;
 }
@@ -1818,6 +1875,7 @@ textarea.HCAU-form.form-control {
 .HCAU-prd .card-body span {
   display: flex;
   padding: 32px 0 20px;
+  justify-content: center;
 }
 .HCAU-prd .card-body span img {
   max-width: 100%;
@@ -1923,7 +1981,7 @@ textarea.HCAU-form.form-control {
   transition: all 0.35s ease;
 }
 .sticky-wrap button[aria-expanded=true] {
-  top: -32px;
+  bottom: -25px;
   transform: rotate(180deg);
 }
 .sticky-wrap button[aria-expanded=true] + .show {
@@ -2062,4 +2120,25 @@ textarea.HCAU-form.form-control {
   border-bottom: 1px solid #000;
   line-height: 30px;
   padding: 16px 20px;
+}
+
+.accordion-toggle-area {
+  background: #fff;
+  position: sticky;
+  top: -12px;
+  z-index: 1;
+}
+.accordion-toggle-area button {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid #002C5F;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  bottom: -20px;
+}
+.accordion-toggle-area button.collapsed {
+  transform: rotate(180deg);
 }/*# sourceMappingURL=HCAU-m-component-hd.css.map */

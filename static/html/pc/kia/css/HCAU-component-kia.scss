@@ -86,6 +86,7 @@ $font-size-xs : 11px;
 .mb32{margin-bottom: 32px;}
 .mb40{margin-bottom: 40px;}
 .ml40{margin-left: 40px !important;}
+.mr40{margin-right: 40px !important;}
 
 a{text-decoration: none;}
 .fw500{font-weight: 700;}
@@ -461,7 +462,7 @@ a{text-decoration: none;}
         border: 1px solid $gray03;
         color: $gray03;
         cursor: default;
-        min-width:84px;
+        //min-width:84px; /*1226 개발요청*/
         // font-weight: 400;
     }
     &.btn-keyvi{
@@ -725,7 +726,7 @@ top:15px;}
     & + label{
         // vertical-align: bottom;
         font-size: 13px;
-        margin-left: 2px;
+        margin-left: 4px;
         line-height: 2;
     }
 }
@@ -934,7 +935,7 @@ top:15px;}
         position: relative;
         > .HCAU-txt-md{
             position:absolute;
-            top: 35%;
+            top: 25%;
             text-align: center;
             // font-size:16px;
         }
