@@ -1,7 +1,7 @@
 html,body{overflow:auto;}
         .HCAU-container {
             width: 100%;
-            background: url(/static/html/pc/kia/img/bg.png) right bottom no-repeat;
+            background: url(/static/html/pc/genesis/img/bg.png) right bottom no-repeat;
             background-size: cover;
             min-height:1080px;
             flex:1 1 720px;
@@ -24,7 +24,7 @@ html,body{overflow:auto;}
             padding-bottom: 80px
         }
 
-        
+
         .HCAU-menubar .menu > ul > li {
             font-weight: 700;
             padding: 16px 0;
@@ -51,25 +51,25 @@ html,body{overflow:auto;}
         position: absolute;
         left: 0;
         top: 16px;}
-        
+
         .wrap .HCAU-container .HCAU-footer{background:rgba(0,0,0,.6);border-left:1px solid #e5e5e5;color:#b7b7b7}
         .carousel-item {
-            
+
             float: none;
-            
+
             margin-right: 0;
-            
+
         }
-        
+
         .vertical.carousel .carousel-item {
             overflow: hidden;
         }
-        
+
         .vertical.carousel .carousel-item-next:not(.carousel-item-start),
         .vertical.carousel .active.carousel-item-end {
             transform: translateY(100%);
         }
-        
+
         .vertical.carousel .carousel-item-prev:not(.carousel-item-end),
         .vertical.carousel .active.carousel-item-start {
             transform: translateY(-100%);
@@ -95,22 +95,32 @@ html,body{overflow:auto;}
          .carousel.slide.product .HCAU-nodata section{font-size:24px}
          .carousel.slide.product .carousel-inner .border-box{background:transparent}
          .carousel.slide.product .carousel-inner .HCAU-btn.btn-md{border:0;border-radius: 30px;background:#05141f;color:#fff}
-         .carousel.slide.product .title{font-size:20px}
+         .carousel.slide.product .title{font-size:24px}
          .carousel.slide.product .p-detail{margin-top:75px}
          .carousel.slide.product .carousel-item.one + button[data-bs-slide="prev"]{display:none}
          .faq-inner{}
          .faq-inner ul li{background:rgba(255,255,255,.1);padding:6px 8px;border-radius: 8px;margin-bottom:4px;position: relative;}
-         .faq-inner ul li dl{display:flex;justify-content:flex-start}
+         .faq-inner ul li dl{display:flex;justify-content:flex-start;align-items:center;}
          .faq-inner ul li dl dt,.faq-inner ul li dl dd{display:flex}
          .faq-inner ul li dl dt{font-size:12px;padding:5px 12px;border-radius: 4px;background:rgba(0,0,0,.2);color:#fff;min-width: 95px;justify-content: center;}
          .faq-inner ul li dl dd{font-size:14px;color:#fff;padding-left:12px}
 
          .wrap .HCAU-container h1.HCAU-h1{font-size:64px;color:#fff;padding-top:102px;line-height: 70px;}
-         .detail .usage-detail{margin-top:36px;margin-bottom:24px;}
+         .detail .usage-detail{margin-top:36px;margin-bottom:24px;margin-right:3px}
          h2.HCAU-h2.title{text-transform: uppercase;color:#fff}
-         .HCAU-btn.btn-more{width:90px;height:20px;background:transparent;color:#fff;position: relative;display: flex;border:0}
-          .HCAU-btn.btn-more span{position: absolute;right:0;top:0}
-         h2.font-size-lg.title{font-size:18px;margin-top:24px;margin-bottom:18px;color:#fff}
+         .HCAU-btn.btn-more{
+            /* width:90px; */
+            /* height:20px; */
+            background:transparent;
+            color:#fff;
+            position: relative;
+            /* display: flex; */
+            border:0;
+            /* padding-right:10px; */
+            /* margin-right:8px */
+        }
+        .HCAU-btn.btn-more span{margin-left: 8px;}
+         h2.font-size-lg.title{font-size:18px;color:#fff}
 
          .HCAU-breadcrumb .breadcrumb .dropdown-menu {
             top: 6px !important;
@@ -130,19 +140,25 @@ html,body{overflow:auto;}
             padding: 10px 20px;
           }
           .carousel-control-prev:disabled, .carousel-control-next:disabled{display:none}
-          .carousel-control-next-icon, .carousel-control-prev-icon{width:32px;height:32px;border-radius: 16px;background-color: rgba(0,0,0,.32);background-image:none;opacity:1; 
+          .carousel-control-next-icon, .carousel-control-prev-icon{width:32px;height:32px;border-radius: 16px;background-color: rgba(0,0,0,.32);background-image:none;opacity:1;
             transition: all .15s ease;display:flex;justify-content: center;align-items: center;}
           .carousel-control-next-icon:focus,.carousel-control-next-icon:hover,.carousel-control-prev-icon:focus,.carousel-control-prev-icon:hover{background-color:#05141f}
           .carousel-control-prev{left:-70px;}
           .carousel-control-next{right:-62px;}
           .title-area .bg-box{background-color: rgba(255,255,255,.1);padding:6px 20px}
+          .title-area .bg-box .line:before{display:inline-block;content:'';width: 1px;height: 14px;background: #E5E5E5;vertical-align: middle;}
           .title-area {border-bottom:1px solid rgba(0,0,0,.1);padding:28px 40px;}
           .title-area .title p{line-height: 32px;display: inline-block;}
           .title-area .title span{line-height:14px}
-          .title-area + .p20{padding:13px 40px!important}
+          .title-area + .p20{padding:40px!important}
           /* .carousel-item.active + .carousel-control-next-icon{display: none} */
 
           div:has(.carousel-item:first-child.active) + button,
           div:has(.carousel-item:last-child.active) + button + button,
           .disabled{display:none !important}
+          /* .carousel-item dl{min-width:200px} */
+          .g40{gap:40px}
+          .mt24{margin-top: 24px;}
+          .mb12{margin-bottom: 12px;}
+          .w250{width: 250px;}
           

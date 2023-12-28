@@ -1,0 +1,91 @@
+<html lang="en">
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width" />
+    <title>HCAU-PUBL</title>
+    <link rel="stylesheet" ,="" href="https://cdn.rawgit.com/phi-jp/meltline/v0.1.5/meltline.css">
+    <link rel="stylesheet" href="/static/html/m/genesis/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/html/m/genesis/css/styles.css" />
+    <!-- <link rel="stylesheet" href="/static/html/m/genesis/css/main.css" /> -->
+    <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src='./flick.js'></script>
+    <style>
+      .box {
+        background-color: red !important;
+        width:100px;height:10px;border-radius: 10px;
+      }
+    </style>
+</head>
+
+<body class="main">
+    <div class="wrap">
+        <header>
+            <div class="d-flex align-items-center justify-content-between">
+                <img src="/static/html/m/genesis/img/ico_headerlogo.svg" alt=""></button>
+                <button type="button"><img src="/static/html/m/genesis/img/ico_header_menu-w.svg" alt=""></button>
+            </div>
+        </header>
+        <!-- HCAU-container -->
+        
+        <div class="HCAU-container">
+            <div class="HCAU-contents">
+                <h1 class="HCAU-h1">genesis<br>FINANCial services</h1>
+
+
+
+
+
+                <!--//account detail-->
+                
+            </div>
+        </div>
+        <!-- //HCAU-container -->
+        <!-- btn-cta-wrap -->
+        <div class="btn-cta-wrap row">
+            <div class="tip">
+                <!--carousel-->
+                <div class='border'>
+                    
+                  <div class='axis-y s-full border overflow-hidden'>
+                    <div class=" box"></div>
+                    <div class='flex-fixed f fh s-full fs32 white bg-red'>0</div>
+                    <div class='flex-fixed f fh s-full fs32 white bg-green v50vh'>1</div>
+                    <div class='flex-fixed f fh s-full fs32 white bg-blue'>2</div>
+                  </div>
+                </div>
+                <!--//carousel-->
+            </div>
+        </div>
+        <!-- //btn-cta-wrap -->
+        <script type="text/javascript" src="/static/html/m/genesis/js/Footer.js"></script>
+    </div>
+    <!-- <script src="/static/html/m/genesis/js/jquery-3.3.1.min.js"></script> -->
+    <script src="/static/html/m/genesis/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/static/html/m/genesis/js/main.js"></script>
+    <script>        
+      window.onload = function() {
+
+        flickable(document.querySelector('.axis-y'), {
+          axis: 'y',
+        }).on('start', function(e) {
+        }).on('move', function(e) {
+          this.element.scrollTop -= e.dy;
+        }).on('end', function(e) {
+          console.log('end');
+        }).on('page', function(e) {
+          var targetY = this.element.clientHeight * this.page;
+          $(this.element).stop().animate({
+            scrollTop: targetY,
+          }, 256);
+        });
+      };
+    </script>
+    
+    <script src="./main.js" crossorigin="anonymous"></script>
+    <script src="./compo.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

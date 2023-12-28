@@ -1,0 +1,97 @@
+<html lang="en">
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width" />
+    <title>HCAU-PUBL</title>
+    <link rel="stylesheet" href="/static/html/m/genesis/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/html/m/genesis/css/styles.css" />
+    <!-- <link rel="stylesheet" href="/static/html/m/genesis/css/main.css" /> -->
+    <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src='./flick.js'></script>
+</head>
+
+<body class="main">
+    <div class="wrap">
+        <header>
+            <div class="d-flex align-items-center justify-content-between">
+                <img src="/static/html/m/genesis/img/ico_headerlogo.svg" alt=""></button>
+                <button type="button"><img src="/static/html/m/genesis/img/ico_header_menu-w.svg" alt=""></button>
+            </div>
+        </header>
+        <!-- HCAU-container -->
+        
+        <div class="HCAU-container">
+            <div class="HCAU-contents">
+                <h1 class="HCAU-h1">genesis<br>FINANCial services</h1>
+                <!-- css -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/egjs-flicking/4.4.0/flicking.css" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/egjs-flicking/4.4.0/flicking-inline.css" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://naver.github.io/egjs-flicking-plugins/release/latest/dist/flicking-plugins.css"> -->
+<style>
+    .f {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: flex;
+      }
+      .box {
+        background-color: red !important;
+        width:100px;height:10px;border-radius: 10px;
+      }
+    
+    
+</style>
+
+
+<div class='h100vh f flex-column'>
+    <div class='box'></div>
+  </div>
+
+                <!--//account detail-->
+                
+            </div>
+        </div>
+        <!-- //HCAU-container -->
+        <!-- btn-cta-wrap -->
+        <div class="btn-cta-wrap row">
+            <div class="tip box">
+                <!--carousel-->
+               
+                <!--//carousel-->
+            </div>
+        </div>
+        <!-- //btn-cta-wrap -->
+        <script type="text/javascript" src="/static/html/m/genesis/js/Footer.js"></script>
+    </div>
+    <!-- <script src="/static/html/m/genesis/js/jquery-3.3.1.min.js"></script> -->
+    <script src="/static/html/m/genesis/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/static/html/m/genesis/js/main.js"></script>
+    <script>        
+      
+    </script>
+    
+    
+<script>
+    window.onload = function() {
+      var x = 0;
+      var y = 0;
+      var f = flickable(document.querySelector('.box'), {
+      }).on('move', function(e) {
+        x += e.dx;
+        y += e.dy;
+  
+        var mx = x - x%25;
+        var my = y - y%25;
+        this.element.style.transform = 'translate(' + mx + 'px, ' + my + 'px)';
+      }).on('end', function(e) {
+        console.log('end');
+      });
+    };
+  </script>
+    <script src="./main.js" crossorigin="anonymous"></script>
+    <script src="./compo.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

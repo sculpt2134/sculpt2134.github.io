@@ -1,44 +1,15 @@
 @charset "UTF-8";
 @import url("HCAU-common.css");
-@import url("HCAU-component-kia.css");
+@import url("HCAU-component-genesis.css");
 
-.wrap {
-  display: flex;
-  min-height: 100vh;
-}
-.wrap .HCAU-sidebar {
-  background: #05141f;
-  flex: 0 0 64px;
-}
-.wrap .HCAU-menubar {
-  flex: 1 1 0;
-  position: relative;
-}
-.wrap .HCAU-menubar .menu {
-  float: right;
-  width: 305px;
-  min-height: 100vh;
-  padding-left: 20px;
-}
-.wrap .HCAU-container {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 700px;
-}
-.wrap .HCAU-container .HCAU-contents {
-  width: 975px;
-  border-left: 1px solid #e5e5e5;
-  flex: 1 0 auto;
-  padding-left: 65px;
-  padding-top: 38px;
-  padding-bottom: 100px;
-}
-.wrap .HCAU-container .HCAU-footer {
+
+
+/* .wrap  .HCAU-footer {
   background: #05141f;
   color: #697279;
 }
-.wrap .HCAU-container .HCAU-footer .footer-inner {
-  width: 975px;
+.wrap .HCAU-footer .footer-inner {
+  width: 1440px;
   height: 80px;
   padding-left: 65px;
   display: flex;
@@ -51,7 +22,7 @@
 .wrap .HCAU-container .HCAU-footer .footer-inner .sns {
   display: flex;
   gap: 16px;
-}
+} */
 
 
 

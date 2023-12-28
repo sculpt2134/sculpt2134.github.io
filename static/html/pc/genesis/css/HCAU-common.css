@@ -1,31 +1,43 @@
+@media print {
+  * {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+  }
+}
 @font-face {
-  font-display: swap;
-  font-family: Kia Signature Fix;
-  font-style: normal;
-  font-weight: 400;
-  src:
-    url(/static/html/pc/kia/font/KiaSignatureFixRegular.ttf) format("truetype"),
-    url(/static/html/pc/kia/font/KiaSignatureFixRegular.woff) format("woff"),
-    url(/static/html/pc/kia/font/KiaSignatureFixRegular.woff2) format("woff2"),
-    url(/static/html/pc/kia/font/KiaSignatureFixRegular.eot#iefix) format('embedded-opentype');
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+font-display: swap;
+font-family: GenesisHeadOffice;
+font-style: normal;
+font-weight: 700;
+src: 
+url(/static/html/m/genesis/font/GenesisSansHeadOffice-Regular.woff2) format("woff2");
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 
 }
 
 @font-face {
-  font-display: swap;
-  font-family: Kia Signature Fix;
-  font-style: normal;
-  font-weight: 700;
-  src:
-    url(/static/html/pc/kia/font/KiaSignatureFixBold.ttf) format("truetype"),
-    url(/static/html/pc/kia/font/KiaSignatureFixBold.woff) format("woff"),
-    url(/static/html/pc/kia/font/KiaSignatureFixBold.otf) format("ttf");
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+font-display: swap;
+font-family: GenesisTextOffice;
+font-style: normal;
+font-weight: 400;
+src: 
+url(/static/html/m/genesis/font/GenesisSansTextOffice-Regular.woff2) format("woff2");
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 
+}
+@font-face {
+font-display: swap;
+font-family: GenesisTextOffice;
+font-style: normal;
+font-weight: 700;
+src: 
+url(/static/html/m/genesis/font/GenesisSansTextOffice-Bold.woff2) format("woff2");
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+}
 html {
   position: relative;
   /* overflow-y: scroll; */
@@ -39,9 +51,10 @@ body {
   font-size: 0.96825rem; /* 15px */
 }
 body {
-  font-family: "Kia Signature Fix", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo",
-    "Malgun Gothic", Dotum, "돋움","굴림", arial, sans-serif;
-  color: #000;
+  font-family: "GenesisTextOffice",
+    "Malgun Gothic", Dotum, "돋움", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo",
+    "굴림", arial, sans-serif;
+  color: #000000;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
   -webkit-font-smoothing: antialiased;
@@ -58,7 +71,7 @@ dd,
 blockquote,
 p,span
 {
-  font-family:  "Kia Signature Fix", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo",
+  font-family:   "GenesisTextOffice", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo",
   "Malgun Gothic", Dotum, "돋움","굴림", arial, sans-serif;
   padding: 0;
   margin: 0;

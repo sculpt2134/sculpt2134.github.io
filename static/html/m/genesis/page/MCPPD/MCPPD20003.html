@@ -1,0 +1,363 @@
+<html lang="en">
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width" />
+    <title>HCAU-PUBL</title>
+    <link rel="stylesheet" href="/static/html/m/genesis/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/html/m/genesis/css/styles.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico" />
+</head>
+
+<body>
+    <div class="wrap">
+        <script type="text/javascript" src="/static/html/m/genesis/js/Header.js"></script>
+        <!-- HCAU-container -->
+        <div class="HCAU-container">
+            <div class="HCAU-contents" id="contents">
+                <!-- HCAU-title -->
+                <div class="HCAU-title">
+                    <div class="HCAU-h1">CALCULATE QUOTATION</div>
+                </div>
+                <!-- //HCAU-title -->
+                <!-- HCAU-detail -->
+
+                <div class="HCAU-detail product">
+
+                    <div>
+                        <div class="HCAU-step">
+                            <div class="step-num">
+                                <div class="step-item">
+                                    <div class="num">1</div>
+                                </div>
+                                <div class="step-item active">
+                                    <div class="num">2</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="num">3</div>
+                                </div>
+                                <div class="step-item ">
+                                    <div class="num">4</div>
+                                </div>
+                                <div class="step-item ">
+                                    <div class="num">5</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="num">6</div>
+                                </div>
+                            </div>
+                            <div class="step-txt mt12">
+                                <div class="HCAU-txt-md">Select Vehicle</div>
+                                <div class="HCAU-txt-md active">Select Model/Option</div>
+                                <div class="HCAU-txt-md">Select Colour</div>
+                                <div class="HCAU-txt-md">Select Accessory</div>
+                                <div class="HCAU-txt-md">Vehicle quote results</div>
+                                <div class="HCAU-txt-md">Financial quote</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- postcode-->
+                    <div class="postcode select">
+                        <div class="mt32">
+                            <div class="inner d-flex justify-content-end align-items-center g12">
+                                <div class="HCAU-txt-md fw-bold text-end">Your postcode 4546</div>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#postcode">
+                                    <img src="/static/html/pc/genesis/img/svg/ico_postcode.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Modal postcode-->
+                        <div class="HCAU-modal modal fade" id="postcode" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-fullscreen">
+                                <div class="modal-content">
+                                    <div class="modal-top">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                            <img src="/static/html/m/genesis/img/ico_modal_close.svg" alt="Close">
+                                        </button>
+                                    </div>
+                                    <div class="modal-header">
+                                        <div class="HCAU-h1" id="exampleModalLabel">
+                                            <span>Select membership type/<br/>Select postcode</span>
+                                            <div class="HCAU-txt-md mt12">After selecting the membership type<br/>
+                                            Please select a financial product</div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-body postcode">
+
+                                        <div class="pt12">
+                                            <div class="HCAU-form-wrap">
+                                                <div class="form-title HCAU-txt-md fw-bold">Select membership type</div>
+                                                <form>
+                                                    <div class="HCAU-tab-radio2">
+                                                        <div>
+                                                            <input type="radio" class="btn-check radioTab" name="tab-radio" id="tab-radio01" value="tab-email" checked="">
+                                                            <label for="tab-radio01" class="HCAU-btn btn-smd">
+                                                                <span>Individual</span>
+                                                            </label>
+                                                        </div>
+                                                        <div>
+                                                            <input type="radio" class="btn-check radioTab" name="tab-radio" id="tab-radio02" value="tab-mobile">
+                                                            <label for="tab-radio02" class="HCAU-btn btn-smd">
+                                                                <span>Businessman</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="HCAU-form-wrap">
+                                                <div class="form-title HCAU-txt-md fw-bold">Postcode</div>
+                                                <div>
+                                                    <input type="text" class="form-control HCAU-form HCAU-form-invalid" id="form-txt05" aria-describedby="" placeholder="Enter your postcode">
+                                                    <div class="HCAU-invalid-feedback">
+                                                        Please enter postcode
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="btn-cta-wrap">
+                                            <!-- <button type="button" class="HCAU-btn btn-cta gray03" data-bs-dismiss="modal">Cancel</button> -->
+                                            <button type="button" class="HCAU-btn btn-cta primary">Ok</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product select">
+                        <div id="prdDetail" class="accordion-collapse collapse" aria-labelledby="prdDetail" data-bs-parent="#selectProduct">
+                            <div class="accordion-body">
+                                <!--body-->
+                                <div class="HCAU-prd d-flex justify-content-center">
+                                    <div class="card full">
+                                        <div class="card-body">
+                                            <span class="select-img"><img src="/static/html/pc/genesis/img/@/car_img02.png" alt=""></span>
+                                            <!-- <span><img src="/static/html/pc/genesis/img/@/no-image.png" alt="" class="error"></span> -->
+                                            <div class="HCAU-txt-md ">2023 SANTA FE</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="card-detail mt28">
+                                        <div class="card-option d-flex justify-content-between mb20 py20">
+                                            <div class="select-model">
+                                                <div class="HCAU-txt-md fw-bold model">Vehicle</div>
+                                                <div class="HCAU-txt-sm point-color mt-2">SX+ Diesel Automatic AWD</div>
+                                            </div>
+                                            <div class="HCAU-txt-md fw-bold text-end">67,943.30 $</div>
+                                        </div>
+                                        <div class="card-option d-flex justify-content-between mb20 py20">
+                                            <div class="select-color">
+                                                <div class="HCAU-txt-md fw-bold color">Colour</div>
+                                                <!-- <div class="HCAU-txt-sm  point-color">SATA FE (디젤)17" alloy wheel, 2 X ISOFIX Ponits, 8" multimedia touchscreen</div> -->
+                                            </div>
+                                            <div class="HCAU-txt-md fw-bold text-end">00.00 $</div>
+                                        </div>
+                                        <div class="card-option d-flex justify-content-between mb20 py20">
+                                            <div class="select-acc">
+                                                <div class="HCAU-txt-md fw-bold accesary">Accessory</div>
+                                                <!-- <div class="HCAU-txt-sm  point-color">SATA FE (디젤)17" alloy wheel, 2 X ISOFIX Ponits, 8" multimedia touchscreen</div> -->
+                                            </div>
+                                            <div class="HCAU-txt-md fw-bold text-end">00.00 $</div>
+                                        </div>
+                                        <div class="card-option d-flex justify-content-between mb20 py20 b-none">
+                                            <div class="select-color">
+                                                <div class="HCAU-txt-md fw-bold addition">Additional Costs</div>
+                                                <div class="HCAU-txt-sm point-color mt-2">Estimated Registration Fee / Estimated<br/> Insurance Premium</div>
+                                            </div>
+                                            <div class="HCAU-txt-md fw-bold text-end">00.00 $</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//body-->
+                            </div>
+                        </div>
+                        <div class="sticky-wrap"  id="selectProduct">
+                            <button type="button"  data-bs-toggle="collapse" data-bs-target="#prdDetail" aria-expanded="false" aria-controls="prdDetail">
+                                <img src="/static/html/m/genesis/img/btn_arrow.png" alt="">
+                            </button>
+                            <div class="d-flex justify-content-between show fade">
+                                <div class="car"><span><img src="/static/html/pc/genesis/img/@/car_img02.png" alt=""></span></div>
+                                <div class="sum align-items-center d-flex flex-column">
+                                    <div class="HCAU-txt-md ">2023 SANTA FE</div>
+                                    <div class="HCAU-txt-md sum">31,565.00 $</div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between not fade">
+                                <div class="price">Out The Door Price</div>
+                                <div class="sum ">33,299.00 $</div>
+                            </div>
+                        </div>
+
+                        <!--//accordion-->
+
+
+                        <div class="mt40">
+                            <ul>
+                                <li>
+                                    <!--CAR SELECT 01-->
+                                    <div class="border-top border-bottom mt20">
+                                        <div class="d-flex gap-3 align-items-center px-3 py20">
+                                            <div>
+                                                <input class="form-check-input mt0 HCAU-form" type="radio" name="selectCar" id="selectCar01" checked="">
+                                            </div>
+                                            <div>
+                                                <label class="form-check-label" for="selectCar01">
+                                                    <div class="HCAU-txt-md fw-bold">SANTA FE(Diesel)</div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="border-top mb20">
+                                            <div class="d-flex justify-content-between p20">
+                                                <div>
+                                                    <span class="HCAU-txt-sm">Option</span>
+                                                </div>
+                                                <div>
+                                                    <span class="HCAU-txt-sm fw-bold">SX+ Diesel Automatic AWD</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between p20 pt-0">
+                                                <div>
+                                                    <span class="HCAU-txt-sm">Vehicle Price</span>
+                                                </div>
+                                                <div>
+                                                    <span class="HCAU-txt-sm fw-bold">21,000.00 $</span>
+                                                </div>
+                                            </div>
+                                            <div id="OptionDetailOne" class="accordion-collapse collapse show pb20 prd-option" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body p-0">
+                                                    <div class="accordion" id="sub-accordionExample">
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="sub-headingOne">
+                                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#sub-collapseOne" aria-expanded="true" aria-controls="OptionDetailOne">
+                                                                    <span class="HCAU-txt-sm fw-bold">Option View</span>
+                                                                </button>
+                                                            </h2>
+                                                            <div id="sub-collapseOne" class="accordion-collapse collapse show" aria-labelledby="sub-headingOne" data-bs-parent="#sub-accordionExample">
+                                                                <div class="accordion-body">
+                                                                    <ul class="HCAU-bullet-list">
+                                                                        <li class="HCAU-txt-sm">
+                                                                            19" machined alloy wheels
+                                                                        </li>
+                                                                        <li class="HCAU-txt-sm">
+                                                                            Curved 12.3" digital instrument cluster with 12.3" touch screen
+                                                                        </li>
+                                                                        <li class="HCAU-txt-sm">
+                                                                            Leather appointed seats with artificial suede upper
+                                                                        </li>
+                                                                        <li class="HCAU-txt-sm">
+                                                                            Driver memory seat (2 positions)
+                                                                        </li>
+                                                                        <li class="HCAU-txt-sm">
+                                                                            Heated &amp; ventilated seats (front)
+                                                                        </li>
+
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--//CAR SELECT 01-->
+                                </li>
+                                <li>
+                                    <!--CAR SELECT 02-->
+                                    <div class="border-top border-bottom mt20">
+                                        <div class="d-flex gap-3 align-items-center px-3 py20">
+                                            <div>
+                                                <input class="form-check-input mt0 HCAU-form" type="radio" name="selectCar" id="selectCar02">
+                                            </div>
+                                            <div>
+                                                <label class="form-check-label" for="selectCar02">
+                                                    <div class="HCAU-txt-md fw-bold">IONIC 6(Diesel)</div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="border-top mb20">
+                                            <div class="d-flex justify-content-between p20">
+                                                <div>
+                                                    <span class="HCAU-txt-sm">Option</span>
+                                                </div>
+                                                <div>
+                                                    <span class="HCAU-txt-sm fw-bold">SX+ Diesel Automatic AWD</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between p20 pt-0">
+                                                <div>
+                                                    <span class="HCAU-txt-sm">Vehicle Price</span>
+                                                </div>
+                                                <div>
+                                                    <span class="HCAU-txt-sm fw-bold">21,000.00 $</span>
+                                                </div>
+                                            </div>
+                                            <div id="OptionDetailTwo" class="accordion-collapse collapse show pb20 prd-option" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body p-0">
+                                                    <div class="accordion" id="sub-accordionExample">
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="sub-headingTwo">
+                                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#sub-collapseTwo" aria-expanded="true" aria-controls="OptionDetailTwo">
+                                                                    <span class="HCAU-txt-sm fw-bold">Option View</span>
+                                                                </button>
+                                                            </h2>
+                                                            <div id="sub-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="sub-headingTwo" data-bs-parent="#sub-accordionExample">
+                                                                <div class="accordion-body">
+                                                                    <ul class="HCAU-bullet-list">
+                                                                        <li class="HCAU-txt-sm">
+                                                                            19" machined alloy wheels
+                                                                        </li>
+                                                                        <li class="HCAU-txt-sm">
+                                                                            Curved 12.3" digital instrument cluster with 12.3" touch screen
+                                                                        </li>
+                                                                        <li class="HCAU-txt-sm">
+                                                                            Leather appointed seats with artificial suede upper
+                                                                        </li>
+                                                                        <li class="HCAU-txt-sm">
+                                                                            Driver memory seat (2 positions)
+                                                                        </li>
+                                                                        <li class="HCAU-txt-sm">
+                                                                            Heated &amp; ventilated seats (front)
+                                                                        </li>
+
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--//CAR SELECT 02-->
+                                </li>
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //HCAU-detail -->
+            </div>
+        </div>
+        <!-- //HCAU-container -->
+        <!-- btn-cta-wrap -->
+        <div class="btn-cta-wrap">
+            <button type="button" class="HCAU-btn btn-cta gray03" onclick="location.href='/static/html/m/genesis/page/MCPPD/MCPPD20001.html'">Previous</button>
+            <button type="button" class="HCAU-btn btn-cta primary" onclick="location.href='/static/html/m/genesis/page/MCPPD/MCPPD20004.html'">Next</button>
+        </div>
+        <!-- //btn-cta-wrap -->
+        <script type="text/javascript" src="/static/html/m/genesis/js/Footer.js"></script>
+    </div>
+    <!-- <script src="/static/html/m/genesis/js/jquery-3.3.1.min.js"></script> -->
+    <script src="/static/html/m/genesis/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/static/html/m/genesis/js/main.js"></script>
+</body>
+
+</html>

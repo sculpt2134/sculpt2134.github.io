@@ -242,6 +242,10 @@
   margin-left: 40px !important;
 }
 
+.mr40 {
+  margin-right: 40px !important;
+}
+
 a {
   text-decoration: none;
 }
@@ -252,6 +256,10 @@ a {
 
 .w50 {
   width: 50px;
+}
+
+.w80 {
+  width: 80px;
 }
 
 .w92 {
@@ -692,23 +700,16 @@ a {
   border: 1px solid #e5e5e5;
   color: #05141f;
 }
-.HCAU-btn.disable {
-  background: #f5f5f5;
-  border: 1px solid #697279;
-  color: #697279;
-  cursor: default;
-  min-width: 84px;
-  font-weight: 400;
-}
 .HCAU-btn.gray03 {
   background: #697279;
   border: 1px solid #697279;
   color: #fff;
 }
 .HCAU-btn:disabled {
-  border: 1px solid #e5e5e5;
   background: #f5f5f5;
+  border: 1px solid #697279;
   color: #697279;
+  cursor: default;
 }
 .HCAU-btn.btn-keyvi {
   border: 1px solid #fff;
@@ -942,6 +943,9 @@ a {
   outline: none;
   border-color: #e5e5e5;
 }
+.HCAU-form.form-control:read-only.black {
+  color: #05141f;
+}
 
 .input-num {
   position: relative;
@@ -980,19 +984,19 @@ a {
 }
 .HCAU-form.form-check-input + label {
   font-size: 13px;
-  margin-left: 2px;
+  margin-left: 4px;
   line-height: 2;
 }
 
 .HCAU-form.form-check-input[type=checkbox] {
   border-color: #e5e5e5;
-  background-image: url(/static/html/pc/kia/img/bg/bg_input_check.svg);
+  background-image: url(/static/html/pc/genesis/img/bg/bg_input_check.svg);
   background-size: 14px 14px;
 }
 .HCAU-form.form-check-input[type=checkbox]:checked {
   background-color: #05141f;
   border-color: #05141f;
-  background-image: url(/static/html/pc/kia/img/bg/bg_input_check_on.svg);
+  background-image: url(/static/html/pc/genesis/img/bg/bg_input_check_on.svg);
   background-size: 14px 14px;
 }
 .HCAU-form.form-check-input[type=checkbox]:disabled {
@@ -1010,7 +1014,7 @@ a {
 .HCAU-form.form-check-input:checked[type=radio] {
   background-color: #fff;
   border-color: #05141f;
-  background-image: url(/static/html/pc/kia/img/bg/bg_input_radio_on.svg);
+  background-image: url(/static/html/pc/genesis/img/bg/bg_input_radio_on.svg);
   background-size: 14px 14px;
 }
 
@@ -1206,7 +1210,7 @@ a {
 }
 .prd-keyvi .HCAU-flex-table > .HCAU-txt-md {
   position: absolute;
-  top: 35%;
+  top: 25%;
   text-align: center;
 }
 .prd-keyvi .HCAU-table {
@@ -2059,4 +2063,4 @@ form + .g-notice {
 }
 .HCAU-accordion.faq .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='24' y='24' width='24' height='24' rx='4' transform='rotate(180 24 24)' fill='black'/%3E%3Cpath d='M7 14.381L11.5847 9.79632C11.6383 9.74026 11.7028 9.69566 11.7742 9.66518C11.8456 9.63471 11.9224 9.619 12 9.619C12.0776 9.619 12.1544 9.63471 12.2258 9.66518C12.2972 9.69566 12.3617 9.74026 12.4153 9.79632L17 14.381' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-}/*# sourceMappingURL=HCAU-component-kia.css.map */
+}/*# sourceMappingURL=HCAU-component-genesis.css.map */
