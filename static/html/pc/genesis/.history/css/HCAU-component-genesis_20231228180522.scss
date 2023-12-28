@@ -141,43 +141,69 @@ a{text-decoration: none;}
 .point{color: $point}
 .point-red{color: $point-red}
 
+// .wrap {
+//     display: flex;    
+    
+//       .HCAU-container {
+//         max-width: 1440px;
+//         .HCAU-menubar {
+//             height:80px;
+//             position: relative;
+//             .menu {
+//             }
+//         }
+//         .HCAU-contents {
+//             width: 1440px;
+//             border-left: 1px solid #e5e5e5;
+//             flex: 1 0 auto;
+//             padding-left: 65px;
+//             padding-top: 38px;
+//             padding-bottom: 100px;
+//             }
+//         }
+//     }
 
 .wrap{
-    width:100%;    
-    background: url(/static/html/pc/genesis/img/img_sub.png) no-repeat 0 0;
-    .HCAU-container{
-        --bs-gutter-x: 1.5rem;
-        --bs-gutter-y: 0;        
+    width:100%;
+    --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        
         padding-right: calc(var(--bs-gutter-x) * .5);
         padding-left: calc(var(--bs-gutter-x) * .5);
         margin-right: auto;
         margin-left: auto;
+    background: url(/static/html/pc/genesis/img/img_sub.png) no-repeat 0 0;
+    .HCAU-container{
+        
         max-width: 1440px;
         width:100%;
-        height:calc(100% - 80px);
+       
+        height:calc(100% -80px);
         justify-content: center;
         display: flex;
         flex-direction: column;
+        border:2px solid red;
         .HCAU-contents{
-            padding: 40px;         
-            width: 100%;
-            max-width:1280px;
+            padding: 40px;
+         
+        width: 100%;
+        max-width:1280px;
         }
+         .HCAU-footer { 
+            background: #05141f;
+            color: #697279;
+            .footer-inner {
+                width: 1440px;
+                height: 80px;
+                padding-left: 65px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+  }
+}
 
     }
-    .HCAU-footer { 
-        background: #05141f;
-        color: #697279;
-        .footer-inner {
-            width: 1440px;
-            height: 80px;
-            padding-left: 65px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            }
-        }   
-    }
+  }
 
 //브레드크럼
 .HCAU-breadcrumb {

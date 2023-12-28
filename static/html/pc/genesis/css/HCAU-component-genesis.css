@@ -398,29 +398,38 @@ a {
 
 .wrap {
   width: 100%;
-  justify-content: center;
-  display: flex;
-  height: 100%;
   background: url(/static/html/pc/genesis/img/img_sub.png) no-repeat 0 0;
 }
 .wrap .HCAU-container {
-  max-width: 1440px;
-  width: 100%;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  border: 2px solid red;
-}
-.wrap .HCAU-container .HCAU-contents {
-  padding: 40px;
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
-  width: 100%;
-  max-width: 1280px;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
+  max-width: 1440px;
+  width: 100%;
+  height: calc(100% - 80px);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.wrap .HCAU-container .HCAU-contents {
+  padding: 40px;
+  width: 100%;
+  max-width: 1280px;
+}
+.wrap .HCAU-footer {
+  background: #05141f;
+  color: #697279;
+}
+.wrap .HCAU-footer .footer-inner {
+  width: 1440px;
+  height: 80px;
+  padding-left: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .HCAU-breadcrumb {

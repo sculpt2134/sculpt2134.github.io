@@ -316,7 +316,7 @@ a {
 
 //header
 header {
-    background: $white;
+    background: transparent;
     padding: 12px 20px;
     position: fixed;
     left: 0;
@@ -339,11 +339,12 @@ footer {
 
 //HCAU-title
 .HCAU-detail {
-    padding: 12px 20px 60px;
+    padding: 0px 20px 60px;
     position: relative;
 }
 .HCAU-title {
-    padding: 12px 20px;
+    padding: 22px 20px 24px;
+    margin-top:52px;
 }
 .HCAU-title .HCAU-h1 + div {
     margin-top: 8px;
