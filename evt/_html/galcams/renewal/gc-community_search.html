@@ -1,0 +1,4636 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+
+	<title>검색 | Samsung 대한민국</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="canonical" href="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="date" content="">
+	<meta name="sitecode" content="sec">
+
+	<meta name="twitter:card" content="">
+	<meta name="twitter:site" content="">
+	<meta name="twitter:creator" content="">
+	<meta name="twitter:url" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+
+	<!-- s: 2022.03.15 VAC 광고 세팅 중 웹사이트 확인을 위한 tag -->
+	<meta name="google-site-verification" content="Y5FXtKRkwrMXPsNBUlQe-3vZp4mtp_PZRy1jmEyp6wM" />
+	<!-- e: 2022.03.15 VAC 광고 세팅 중 웹사이트 확인을 위한 tag -->
+
+	<meta property="og:url" content="">
+	<meta property="og:image" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Samsung sec">
+	<meta property="og:locale" content="ko">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:country-name" content="sec">
+
+	<meta itemprop="name" content="Samsung sec">
+	<meta itemprop="image" content="">
+	<meta itemprop="url" content="">
+	<meta itemprop="description" content="">
+	<meta itemprop="keywords" content="">
+
+	<link rel="dns-prefetch" href="https://images.samsung.com">
+	<link rel="preconnect" href="https://images.samsung.com"><link rel="shortcut icon" href="../../../../_images/favicon.ico">
+	<link rel="apple-touch-icon" href="" sizes="">
+
+	<link rel="stylesheet" href="../../../../_css/reset.css">
+	<link rel="stylesheet" href="../../../../_css/style.css">
+	<link rel="stylesheet" href="../../../_css/component.css"><!-- 컴포넌트 스타일 -->
+	<link rel="stylesheet" href="../../../_css/app.css">
+	<link rel="stylesheet" href="../../../_css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../_css/swiper.min.css">
+	<link rel="stylesheet" href="../../../_css/homefitness.css">
+	<link rel="stylesheet" href="../../../_css/gc-common.css"><!-- 20220523 gc 추가 -->
+
+	<script src="../../../_script/jquery-3.3.1.min.js"></script>
+	<script src="../../../_script/jquery-ui.min.js"></script>
+	<script src="../../../_script/slick.js"></script>
+	<script src="../../../_script/slick-init.js"></script>
+	<script src="../../../_script/swiper.min.js"></script>
+	<script src="../../../_script/masonry.min.js"></script><!-- masonry js -->
+<!--	<script src="../../../_script/jquery.blockUI.js"></script>-->
+	<script src="../../../_script/base.js"></script>
+	<script src="../../../_script/layerPop.js"></script>
+	<script type="text/javascript" src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js" charset="utf-8"></script>
+	<script src="../../../_script/netfunnel.js" charset="UTF-8"></script>
+	<script src="../../../_script/netfunnel_skin.js" charset="UTF-8"></script>
+	<script src="../../../_script/common.js"></script>
+	<script src="../../../_script/custom.js"></script>
+	<script src="../../../_script/default.js"></script><!-- 20220523 gc 추가 -->
+	<script src="../../../_script/sly.min.js"></script><!-- 20220523 gc 추가 -->
+	<script src="../../../_script/sticky.min.js"></script>
+	<script src="../../../_script/jquery.cookie.js"></script>
+	<script src="../../../_script/search.js"></script>
+	<script src="../../../_script/component.js"></script>
+	<script src="../../../_script/jquery.ui.touch-punch.min.js"></script>
+	<script src="../../../_script/event/event.js"></script>
+	<script src="../../../_script/clipboard.min.js"></script>
+	<script src="../../../_script/buynow.js"></script>
+	<script type="text/javascript" src="../_script/picturePolyfill.min.js"></script>
+	<script type="text/javascript">
+		var checkActionTimeOut;
+		$(document).ready(function () {
+			/*
+		$.ajax({
+			 url : "/sec/xhr/member/getSession"
+			,type : "POST"
+			,success : function(data) {
+				var session = JSON.parse(data);
+				if(session.mbrNo != 0){
+					resetLoginTimeOut();
+					$(document).on('click keypress' , 'body' , function(){
+						resetLoginTimeOut();
+					});
+				}
+			}
+		});
+		*/
+			if('200600145' != 0){
+				resetLoginTimeOut();
+				$(document).on('click keypress' , 'body' , function(){
+					resetLoginTimeOut();
+				});
+			}
+		});
+
+		function resetLoginTimeOut() {
+			window.clearTimeout(checkActionTimeOut);
+			checkActionTimeOut = setTimeout(function() { // 30분 후 로그아웃
+				location.href="/sec/member/logout/";
+			}, 24*60*60*1000);
+		}
+	</script>
+	<!-- s : AA 태깅 -->
+	<script type="text/javascript">
+		var pageURL = window.location.href;
+		var siteCode = "sec";
+
+		var digitalData = {
+			"page" : {
+				"pageInfo" : {
+					"siteCode" : siteCode
+					, "siteSection" : ""
+					, "pageName" : ""
+					, "pageURL" : pageURL
+					, "pageTrack" : "product search"
+					, "version" : "KDP"
+				}
+				, "pathIndicator" : {
+					"depth_2" : ""
+					, "depth_3" : ""
+					, "depth_4" : ""
+					, "depth_5" : ""
+				}
+			}
+			, "user" : {
+				"loginStatus" : ""
+			}
+			, "product" : {
+				"category" : ""
+				, "model_code" : ""
+				, "model_name" : ""
+				, "displayName" : ""
+				, "pvi_type_code" : ""
+				, "pvi_type_name" : ""
+				, "pvi_subtype_code" : ""
+				, "pvi_subtype_name" : ""
+
+			}
+		}
+
+		// depth Info.
+		var depth = window.location.href.split("/").length;
+		var depth_last = window.location.href.split("/")[depth-1];
+		if(depth_last =="" || depth_last.charAt(0)=="?"){
+			depth -= 1;
+		}
+
+		// set site section value
+		if((digitalData.page.pathIndicator.depth_2 != "")||(digitalData.page.pageInfo.pageTrack == "flagship pdp")){
+			if(digitalData.page.pathIndicator.depth_2 == "shop" || digitalData.page.pathIndicator.depth_2 == "my account"){
+				digitalData.page.pageInfo.siteSection = siteCode + ":" + digitalData.page.pathIndicator.depth_2;
+			}else{
+				digitalData.page.pageInfo.siteSection = siteCode + ":consumer"; //product page
+			}
+		}else if(depth == 4){
+			digitalData.page.pageInfo.siteSection = siteCode + ":home"; //home
+		}else{
+			digitalData.page.pageInfo.siteSection = siteCode + ":" + window.location.href.split("/")[4];
+		}
+
+		// set product category value
+		/* 	if(digitalData.page.pathIndicator.depth_3 != ""){
+	    digitalData.product.category = digitalData.page.pathIndicator.depth_3;
+	} */
+
+		// set pathIndicator(not product page)
+		if(digitalData.page.pathIndicator.depth_2 == ""){
+			if(depth >= 5) digitalData.page.pathIndicator.depth_2 = window.location.href.split("/")[4].toLowerCase();
+			if(depth >= 6) digitalData.page.pathIndicator.depth_3 = window.location.href.split("/")[5].toLowerCase();
+			if(depth >= 7) digitalData.page.pathIndicator.depth_4 = window.location.href.split("/")[6].toLowerCase();
+			if(depth >= 8) digitalData.page.pathIndicator.depth_5 = window.location.href.split("/")[7].toLowerCase();
+		}
+
+		// set pageName
+		var pageName = siteCode;
+		if(digitalData.page.pathIndicator.depth_2 != "")
+			pageName += ":" + digitalData.page.pathIndicator.depth_2;
+		if(digitalData.page.pathIndicator.depth_3 != "")
+			pageName += ":" + digitalData.page.pathIndicator.depth_3;
+		if(digitalData.page.pathIndicator.depth_4 != "")
+			pageName += ":" + digitalData.page.pathIndicator.depth_4;
+		if(digitalData.page.pathIndicator.depth_5 != "")
+			pageName += ":" + digitalData.page.pathIndicator.depth_5.replace(/^\s+|\s+$/gm,'');
+
+		// check PD, GPD
+		var pageTrackName = digitalData.page.pageInfo.pageTrack;
+		if(pageTrackName == "product detail" || pageTrackName == "generic product details"){
+			pageName += ":" + digitalData.product.model_code;
+			var displayName = "".replace(/(<([^>]+)>)/gi, "");
+			digitalData.product.displayName = displayName;
+		}
+		digitalData.page.pageInfo.pageName = pageName;
+
+	</script>
+	<script async src="https://assets.adobedtm.com/c8a575b84bb9/0d8938615268/launch-160c25cdcd93.min.js"></script>
+	<!-- e : AA 태깅 -->
+
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-NVX3V74');</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- s : Global site tag (gtag.js) - Google Ads: 10864240863 -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10864240863"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'AW-10864240863');
+	</script>
+	<!-- e : Global site tag (gtag.js) - Google Ads: 10864240863 -->
+
+	<script>
+		var stGbCd = '10';
+
+		function chat_open() {
+			fcTrack('click','floating chat:chat bot');
+			var popupX = (window.screen.width / 2) - (356 / 2);
+			var popupY = (window.screen.height / 2) - (750 / 2);
+			window.open('/sec/chatbot/', 'chatbot', 'status=no, height=750, width=356, left=' + popupX + ', top=' + popupY + ', screenX=' + popupX + ', screenY= ' + popupY);
+		}
+
+		function chat_open2() {
+			fcTrack('click','floating chat:chat online');
+
+			var gType = Math.round(Math.random() * 1) ? 'm' : 'f';
+
+			var popupX = (window.screen.width / 2) - (356 / 2);
+			var popupY = (window.screen.height / 2) - (750 / 2);
+			window.open('/sec/chatbot/?type=ep&c='+ gType, '_chatbot2', 'status=no, height=750, width=356, left=' + popupX + ', top=' + popupY + ', screenX=' + popupX + ', screenY= ' + popupY);
+		}
+
+		function chat_open3() {
+			fcTrack('click','floating chat:offline store');
+		}
+
+		function floating_open() {
+			fcTrack('click','floating chat');
+		}
+		logger("prd");
+
+		$(document).ready(function(){
+			var userAgent=navigator.userAgent.toUpperCase();
+			if(userAgent.indexOf("SECAPP")>-1){
+				$("#header").hide();
+			}
+		});
+
+	</script>
+
+	<script type="text/javascript" src="../_script/search/searchresult.js"></script>
+	<script type="text/javascript">
+		var pager = new Pager();
+
+		var searchConstants = {
+			sort: {
+				RELEVANCE : 'relevance',
+				PRICE_DESC: 'price_desc',
+				PRICE_ASC : 'price_asc',
+				TITLE_DESC: 'title_desc',
+				TITLE_ASC : 'title_asc',
+				LATEST    : 'latest',
+				OLDEST    : 'oldest',
+				POPULARITY: 'popularity'
+			},
+			filter: {
+				product: {
+					FILTER_SFILTER: 'SFILTER_CODE',
+					CATEGORY_L    : 'CATEGORY_L',
+					CATEGORY_M    : 'CATEGORY_M'
+				},
+				FILTER_CATEGORY: 'CATEGORY_CODE'
+			},
+			product: {
+				COLLECTION_NAME: 'product',
+				ALL: {
+					PAGESIZE       : '10',
+					appendingTarget: '#tabContentAll ul.list-type-prd'
+				},
+				TAB: {
+					PAGESIZE       : '40',
+					appendingTarget: '#tabContentProduct ul.list-type-prd',
+					paginationHtml : '#tabContentProduct div.paging'
+				},
+				TOTAL_COUNT: '113'
+			},
+			review: {
+				COLLECTION_NAME: 'review',
+				ALL: {
+					PAGESIZE       : '5',
+					appendingTarget: '#tabContentAll ul.review-list'
+				},
+				TAB: {
+					PAGESIZE       : '10',
+					appendingTarget: '#tabContentReview ul.review-list',
+					paginationHtml : '#tabContentReview div.paging'
+				},
+				TOTAL_COUNT: '1419'
+			},
+			event: {
+				COLLECTION_NAME: 'event',
+				ALL: {
+					PAGESIZE       : '8',
+					MOBILE_PAGESIZE: '6', // 20200921 추가
+					appendingTarget: '#tabContentAll ul.list-type-exhibition.event'
+				},
+				TAB: {
+					PAGESIZE       : '32',
+					MOBILE_PAGESIZE: '6', // 20200921 추가
+					appendingTarget: '#tabContentExhibition ul.list-type-exhibition.event',
+					paginationHtml : '#tabContentExhibition div.paging'
+				},
+				TOTAL_COUNT: '0'
+			},
+			service: {
+				COLLECTION_NAME: 'service',
+				appendingTarget: '#tabContentAll ul.list-type-exhibition'
+			},
+			serviceManual: {
+				TAB_NAME: 'service',
+				COLLECTION_NAME: 'manual_download',
+				TAB: {
+					PAGESIZE       : '24',
+					appendingTarget: '#tabContentService #tabContent-fillbox-service1 ul.list-type-download',
+					paginationHtml : '#tabContent-fillbox-service1 div.paging'
+				},
+				TOTAL_COUNT: '14584',
+			},
+			serviceNotice: {
+				TAB_NAME: 'service',
+				COLLECTION_NAME: 'news_notice',
+				TAB: {
+					PAGESIZE       : '10',
+					appendingTarget: '#tabContentService #tabContent-fillbox-service2 div.list-type-notice',
+					paginationHtml : '#tabContent-fillbox-service2 div.paging'
+				},
+				TOTAL_COUNT: ''
+			},
+			serviceAppService: {
+				TAB_NAME: 'service',
+				COLLECTION_NAME: 'app_service',
+				TAB: {
+					PAGESIZE       : '10',
+					appendingTarget: '#tabContentService #tabContent-fillbox-service3 ul.list-type-txt',
+					paginationHtml : '#tabContent-fillbox-service3 div.paging'
+				},
+				TOTAL_COUNT: '1'
+			},
+			story: {
+				TAB_NAME: 'service',
+				COLLECTION_NAME: 'story',
+				ALL: {
+					PAGESIZE       : '8',
+					appendingTarget: '#tabContentAll ul.list-type-story'
+				},
+				TAB: {
+					PAGESIZE       : '32',
+					appendingTarget: '#tabContentStory ul.list-type-story',
+					paginationHtml : '#tabContentStory div.paging'
+				},
+				TOTAL_COUNT: '0'
+			},
+			digitalPlaza: {
+				COLLECTION_NAME: 'digitalPlaza',
+				appendingTarget: '#tabContentAll'
+			},
+			digitalEvent: {
+				TAB_NAME       : 'digitalPlaza',
+				COLLECTION_NAME: 'plaza_event',
+				TAB: {
+					PAGESIZE       : '24',
+					appendingTarget: '#tabContentDigital ul.list-type-exhibition.plaza-event',
+					paginationHtml : '#tabContent-fillbox-digital1 div.paging'
+				},
+				TOTAL_COUNT: '3'
+			},
+			digitalBase: {
+				TAB_NAME       : 'digitalPlaza',
+				COLLECTION_NAME: 'plaza_base',
+				TAB: {
+					PAGESIZE       : '24',
+					appendingTarget: '#tabContentDigital ul.list-type-store',
+					paginationHtml : '#tabContent-fillbox-digital2 div.paging'
+				},
+				TOTAL_COUNT: ''
+			},
+			company_info: {
+				COLLECTION_NAME: 'company_info',
+				ALL: {
+					PAGESIZE       : '5',
+					appendingTarget: '#tabContentAll ul.list-type-txt'
+				},
+				TAB: {
+					PAGESIZE       : '10',
+					appendingTarget: '#tabContentCompany ul.list-type-txt',
+					paginationHtml : '#tabContentCompany div.paging'
+				},
+				TOTAL_COUNT: '0'
+			}
+		}
+
+		var searchResultManager = {
+			isJsonString: function(str) {
+				try {
+					var json = JSON.parse(str);
+					return (typeof json === 'object');
+				} catch (e) {
+					return false;
+				}
+			},
+			callAjax: function(options) {
+				waiting.start();
+				jQuery.ajaxSettings.traditional = true;
+
+				options.contentType = options.contentType == undefined ? "application/x-www-form-urlencoded;charset=UTF-8" : options.contentType;
+				options.type        = setDefaultIfNull(options.type, "POST");
+				options.dataType    = setDefaultIfNull(options.dataType, "json");
+				options.async       = (options.async == null || options.async) ? true : false;
+				options.beforeSend  == undefined ? undefined : options.beforeSend;
+				options.processData = options.processData == undefined ? true: options.processData;
+
+				$.ajax({
+					url         : options.url,
+					type        : options.type,
+					dataType    : options.dataType,
+					contentType : options.contentType,
+					data        : options.data,
+					async       : options.async,
+					beforeSend  : options.beforeSend,
+					processData : options.processData
+
+				}).done(function(data, textStatus, jqXHR) {
+					if ( searchResultManager.isJsonString(data) ) {
+						data = JSON.parse(data);
+					}
+
+					if (data.exCode != null && data.exCode !== "") {
+						if (options.fail !== undefined) {
+							options.fail();
+						}
+						let alertData = {
+							title: "alert",
+							content: data.exMsg
+						};
+						commonAlert(alertData);
+						openLayer('commonAlert');
+					} else {
+						options.done(data);
+						waiting.stop();
+					}
+				}).fail(function(jqXHR, textStatus, errorThrown) {
+					waiting.stop();
+
+					if (options.fail !== undefined) {
+						options.fail();
+					}
+					if (jqXHR.status !== 0) {
+						ajax.error(jqXHR.status, jqXHR.responseText);
+					}
+				}).always(function(data) {
+					waiting.stop();
+				}).then(function(data, textStatus, jqXHR) {
+				});
+			},
+			callAjaxWithoutDim: function(options) {
+				$.ajax({
+					url : options.url,
+					type: options.type,
+					data: options.data
+
+				}).done(function(data, textStatus, jqXHR) {
+					if (data.exCode != null && data.exCode !== "") {
+						if (options.fail !== undefined) {
+							options.fail();
+						}
+						let alertData = {
+							title: "alert",
+							content: data.exMsg
+						};
+						commonAlert(alertData);
+						openLayer('commonAlert');
+					} else {
+						options.done(data);
+					}
+				}).fail(function(jqXHR, textStatus, errorThrown) {
+					if (options.fail !== undefined) {
+						options.fail();
+					}
+					if (jqXHR.status !== 0) {
+						ajax.error(jqXHR.status, jqXHR.responseText);
+					}
+				}).always(function() {
+				}).then(function(data, textStatus, jqXHR) {
+				});
+			},
+			/* 모바일 여부 확인 */
+			isMobileDevice: function() {
+				var that = this,
+						winW = $(window).width();
+				if ( winW > 800 ) {
+					return 'N';
+				} else {
+					return 'Y';
+				}
+			},
+
+			/* s: Url query parameter 확인 */
+			getQueryParam: function(){
+				var url = document.location.href;
+				var qs  = url.substring(url.indexOf('?') + 1).split('&');
+
+				for(var i = 0, result = {}; i < qs.length; i++){
+					qs[i] = qs[i].split('=');
+					result[qs[i][0]] = decodeURIComponent(qs[i][1]);
+				}
+				return result;
+			},
+			/* e: Url query parameter 확인 */
+
+			/* s: Tab 초기화 */
+
+			// 모든 조건 초기화
+			initCondition: function() {
+				var that = searchResultManager;
+
+				that.currentCollection       = undefined; // 현재 collection
+				that.minPrice                = '';
+				that.maxPrice                = '';
+				that.isSliderClicked         = false;
+				that.isSliderClickedForEvent = false;
+				that.isNeededInitializing    = true;
+				that.isFilterSet             = undefined;
+				that.filterQueryList         = undefined;
+				that.isFilterSet             = undefined;
+			},
+			/* e: Tab 초기화 */
+
+			/* s: Tab 클릭 */
+			// Tab 클릭(고객서비스, 디지털프라자 제외)
+			initTab: function(collectionName) {
+				var that       = searchResultManager
+						, currentUrl = location.href;
+
+				// URL로 값이 들어오지 않은 경우
+				if ( !that.isTabTriggered ) {
+					currentUrl = (location.href).replace(/(.*?keyword=.*?)|(\&)(.*)/gi, '$1').replace(/(.*searchresult\/)(.*?)(\?.*)/gi, '$1' + collectionName + '/$3')
+					history.pushState(null, null, currentUrl);
+				}
+
+				that.initCondition();
+				that.initFilter(collectionName);
+
+				that.$filterAppendingTarget = $('.result-filter-wrap[collection-name="' + collectionName + '"] .filter-cont');
+
+				// URL로 값이 들어온 경우
+				if ( that.isTabTriggered ) {
+					that.initResultWhenTabTriggered(collectionName);
+
+				} else {
+					$('.mo-contents-more a[collection-name="' + collectionName + '"]').attr('page', '0');
+					$($('ul.droplist[collection-name="' + collectionName + '"][search-type="TAB"] li')[0]).trigger('click');
+				}
+
+				$('html').scrollTop(0);
+				that.isTabTriggered = undefined;
+			},
+
+			// Tab 클릭(고객서비스, 디지털프라자)
+			initFixedSubTabContents: function(elementId, that) {
+				var $triggerTarget    = $(elementId + ' div[role=tablist] div.tab-list a')
+						, tabType           = $(that).attr('tab-type')
+						, queryParam        = searchResultManager.getQueryParam()
+						, currentCollection = queryParam.currentCollection;
+
+				if ( $triggerTarget.length > 0 ) {
+					if ( searchResultManager.isTabTriggered ) {
+						if ( currentCollection == undefined ) {
+							$($triggerTarget[0]).trigger('click');
+							searchResultManager.isTabTriggered = undefined;
+							return;
+
+						} else {
+							$.each($triggerTarget, function(idx, element) {
+								if ( $(element).attr('collection-name') == currentCollection ) {
+									$(element).trigger('click');
+									searchResultManager.isTabTriggered = undefined;
+									return;
+								}
+							});
+						}
+						if ( searchResultManager.isTabTriggered ) {
+							$($triggerTarget[0]).trigger('click');
+						}
+
+						return;
+					}
+					$($triggerTarget[0]).trigger('click');
+				}
+			},
+
+			// Tab 클릭(고객서비스, 디지털프라자의 하위 category)
+			initTabSub: function(collectionName) {
+				var that              = searchResultManager
+						, topCollectionName = searchConstants[collectionName].TAB_NAME;
+
+				that.initCondition();
+				that.initFilter(collectionName);
+				that.currentCollection = collectionName;
+
+				// URL로 값이 들어온 경우
+				if ( that.isTabTriggered ) {
+					that.initResultWhenTabTriggered(collectionName);
+
+				} else {
+					$('.mo-contents-more a[collection-name="' + collectionName + '"]').attr('page', '0');
+					currentUrl = (location.href).replace(/(.*?keyword=.*?)|(\&)(.*)/gi, '$1').replace(/(.*searchresult\/)(.*?)(\?.*)/gi, '$1' + topCollectionName + '/$3')
+					history.pushState(null, null, currentUrl);
+
+					$($('ul.droplist[collection-name="' + topCollectionName + '"][search-type="TAB"] li')[0]).trigger('click');
+				}
+
+				$('html').scrollTop(0);
+				that.isTabTriggered    = undefined;
+				that.topCollectionName = undefined;
+			},
+			/* s: Tab 클릭 */
+
+			/* s: URL에 값이 설정되어 들어온 경우 */
+			initResultWhenTabTriggered: function(collectionName) {
+				var that                   = searchResultManager
+						, $btnMobileContentsMore = $('.mo-contents-more a[collection-name="' + collectionName + '"]')
+						, isSliderClicked        = that.isSliderClicked
+						, queryParam             = that.getQueryParam()
+						, currentPage            = queryParam.currentPage
+						, sort                   = queryParam.sort
+						, exQuery                = queryParam.exQuery
+						, minPrice               = queryParam.minPrice
+						, maxPrice               = queryParam.maxPrice
+						, isMobileYN             = that.isMobileDevice()
+						, isBestMatchYn          = queryParam.isBestMatchYn
+						, suggestion             = queryParam.suggestion
+						, incl                   = queryParam.incl
+						, excl                   = queryParam.excl
+						, pageSize               = queryParam.pageSize
+						, isFilterSet            = 'N'
+						, isFilter1stSet         = 'Y'
+						, data                   = ''
+						, searchConstant         = searchConstants[collectionName]
+						, constant               = searchConstant['TAB']
+						, paginationHtml         = constant.paginationHtml
+						, searchParamPageSize	   = constant.PAGESIZE; // 20200921 추가
+
+				if ( isMobileYN == 'Y') {
+					that.isNeededInitializing = undefined;
+					that.isFilterSelected     = undefined;
+					that.callback             = that.mobileCallback;
+
+				} else {
+					that.callback = that.pcCallback;
+				}
+
+				that.pageNum                 = currentPage;
+				that.searchConstant          = searchConstant;
+				that.isFilterSet             = undefined;
+				that.isFilter1stSet          = isFilter1stSet;
+				that.isSliderClickedForEvent = false;
+
+				$btnMobileContentsMore.attr('page', that.pageNum);
+				$btnMobileContentsMore.show();
+
+				that.setResearchKeywordQueryParam(incl, excl);
+
+				// 20200921 추가
+				if( collectionName == 'event' && isMobileYN == 'Y') {
+					searchParamPageSize = that.searchConstant['TAB'].MOBILE_PAGESIZE;
+				}
+
+				// exQuery가 없는 경우
+				if ( exQuery == undefined || exQuery == '') {
+
+// 							data = new WNSearchParamVo(that.getKeyword(), 0, that.searchConstant.COLLECTION_NAME, sort, that.searchConstant['TAB'].PAGESIZE, '', ''
+// 									, '', '', '', '', '', exQuery, 'b2c', that.isMobileYN, that.isBestMatchYn, that.suggestion
+// 									, isFilterSet, isFilter1stSet, that.isFilter2ndSet, '', currentPage, 'Y', incl, excl);
+					// 20200921 수정
+					data = new WNSearchParamVo(that.getKeyword(), 0, that.searchConstant.COLLECTION_NAME, sort, searchParamPageSize, '', ''
+							, '', '', '', '', '', exQuery, 'b2c', that.isMobileYN, that.isBestMatchYn, that.suggestion
+							, isFilterSet, isFilter1stSet, that.isFilter2ndSet, '', currentPage, 'Y', incl, excl);
+
+					that.getTabContents(sort, data);
+					that.setConditionsByQueryParam(data);
+					return;
+				}
+
+				// exQuery가 있는 경우
+
+// 						data = new WNSearchParamVo(that.getKeyword(), pager.getStartCount(), that.searchConstant.COLLECTION_NAME, sort, that.searchConstant['TAB'].PAGESIZE, '', ''
+// 									, maxPrice, minPrice, '', '', '', exQuery, 'b2c', isMobileYN, isBestMatchYn, suggestion
+// 									, isFilterSet, isFilter1stSet, that.isFilter2ndSet, '' , currentPage, 'Y', incl, excl);
+				// 20200921 수정
+				data = new WNSearchParamVo(that.getKeyword(), pager.getStartCount(), that.searchConstant.COLLECTION_NAME, sort, searchParamPageSize, '', ''
+						, maxPrice, minPrice, '', '', '', exQuery, 'b2c', isMobileYN, isBestMatchYn, suggestion
+						, isFilterSet, isFilter1stSet, that.isFilter2ndSet, '' , currentPage, 'Y', incl, excl);
+
+
+				// pager init
+				pager.init({
+					data                 : data,
+					pageSize             : data.pageSize,
+					initialize           : true,
+					blockSize            : 5,
+					pagingHtml           : '<li><a href="javascript:;"></a></li>',
+					appendingTargetHtml  : constant.appendingTarget,
+					paginationHtml       : paginationHtml,
+					paginationTargetHtml : paginationHtml + ' ul',
+					paginationWingBarHtml: paginationHtml + ' span',
+					firstBtnClass        : ' .btn_first',
+					prevBtnClass         : ' .btn_prev',
+					nextBtnClass         : ' .btn_next',
+					lastBtnClass         : ' .btn_last',
+					callback             : that.callback
+				});
+
+				pager.currentPage        = currentPage;
+				pager.data.isBestMatchYn = that.isBestMatchYn;
+				pager.data.exQuery       = exQuery;
+				pager.data.sort          = sort;
+				pager.data.minPrice      = minPrice;
+				pager.data.maxPrice      = maxPrice;
+				pager.data.startCount    = pager.getStartCount();
+
+				that.initFilterTabContents(data);
+			},
+
+			// 데이터 호출 ajax
+			initFilterTabContents: function(data) {
+				var that = searchResultManager;
+				that.callAjax({
+					url         : '/sec/xhr/search/getSearchContentsByTab/',
+					data        : data,
+					method      : 'POST',
+					dataType    : 'text',
+					contentType : 'application/x-www-form-urlencoded; charset=UTF-8',
+					done        : function(result) {
+						that.commonInitFilterTabContentsCallback(false, result, data);
+					}
+				});
+			},
+
+			// 데이터 호출 ajax callback
+			commonInitFilterTabContentsCallback: function(isMobile, result, data) {
+				var $result               = $(result)
+						, that                  = searchResultManager
+						, collectionName        = data.collection
+						, $list                 = $result.find('#list').children()
+						, $filterList           = $result.find('#filterList')
+						, $flexibleFilterList   = $result.find('#flexibleFilterList')
+						, $flexibleInFilterList = $filterList.find('#flexible')
+						, $fixedInFilterList    = $filterList.find('#fixed').children()
+						, $priceInFilterList    = $filterList.find('#price').children()
+						, $filterAppendingList  = that.$filterAppendingTarget
+						, count                 = $result.find('#count').text()
+						, isBestMatchYn         = $result.find('#isBestMatchYn').children()
+						, old_scroll            = $(window).scrollTop();
+
+				$(pager.appendingTargetHtml).empty();
+				$(pager.appendingTargetHtml).append($list);
+
+				if ( count == '' ) {
+					count = 0;
+				}
+
+				// 필터 적용결과 count 수정
+				$('div.result-filter-wrap[collection-name="' + collectionName + '"] .result-num span.num').text(count);
+
+				pager.data.isTriggeredByTab = undefined;
+				pager.totalCount            = count;
+				pager.initialize            = true;
+				pager.isPagingDataSet       = false;
+				pager.getPage(pager.currentPage);
+
+				// 제품 이외의 Tab
+				if ( collectionName != 'product' ) {
+					$filterAppendingList.prepend($filterList.children());
+					that.setConditionsByQueryParam(data);
+					that.isFilterSet = 'Y';
+					return;
+				}
+
+				// 제품 Tab
+				var isBestMatchYn      = $result.find('#isBestMatchYn').text()
+						, $selectedFilterDiv = $filterAppendingList.find('div.changeable[selected="selected"]');
+
+				// 1. 카테고리 설정
+				$filterAppendingList.append($fixedInFilterList);
+				that.isFilterSet = 'Y';
+
+				// 2. 하위 유형 및 고정 filter 설정
+				$filterAppendingList.append($flexibleInFilterList.children());
+				$filterAppendingList.find('.first-item').after($flexibleFilterList.children());
+
+				// 3. 가격 설정
+				$filterAppendingList.append($priceInFilterList);
+				that.minPrice = data.minPrice;
+				that.maxPrice = data.maxPrice;
+				searchApp.priceRange();
+
+				$('.price-slider div.cont').on('mouseup', that.eventListener.filterPriceMouseDown);
+				$('span.ui-slider-handle').on('mousedown', function() {
+					that.isSliderClicked         = true;
+					that.isSliderClickedForEvent = true;
+				});
+				$('div.price-range.ui-slider').on('mousedown', function() {
+					that.isSliderClicked         = true;
+					that.isSliderClickedForEvent = true;
+				});
+
+				searchResultManager.isBestMatchYn = isBestMatchYn;
+				pager.data.isBestMatchYn = isBestMatchYn;
+
+				if ( that.isMobileDevice() == 'Y' ) {
+					if ( pager.lastPage == pager.currentPage ) {
+						$('.mo-contents-more a[collection-name="' + collectionName + '"]').hide();
+					}
+					$(document).scrollTop(old_scroll);
+				}
+
+				that.setConditionsByQueryParam(data);
+			},
+			// query param에 따른 조건 설정
+			setConditionsByQueryParam: function(data) {
+				var that           = searchResultManager
+						, collectionName = data.collection
+						, $dropList      = $('ul.droplist[collection-name="' + collectionName + '"][search-type="TAB"]')
+						, sort           = data.sort
+						, $currentSortLi = $dropList.find('li[sort="' + sort + '"]')
+						, sortName       = $currentSortLi.text()
+						, exQuery        = data.exQuery
+						, rekeyword      = data.rekeyword
+						, $filterBtn     = $('.sort-control button[collection-name="' + collectionName + '"]')
+						, $btnReset      = $('.filter-footer[collection-name="' + collectionName + '"] .btn-filter-reset');
+
+				// sort 설정
+				that.setSortingConditionsByQueryParam(collectionName, sort);
+
+				if ( exQuery == undefined || exQuery == '' ) {
+					return;
+				}
+
+				that.isFilterSelected = true;
+
+				// filter 설정(exQuery가 있는 경우)
+				// collection이 product가 아닌 경우
+				if ( collectionName != 'product' ) {
+					var $filterList      = that.getFilterQueryList(collectionName, exQuery)
+							, $filterWrap      = $('div.result-filter-wrap[collection-name="' + collectionName + '"]')
+							, $filterInput     = $filterWrap.find('div.filter-cont ul li input')
+							, is1DepthSelected = false
+							, is2DepthSelected = false;
+
+					$.each($filterInput, function(idx, element) {
+						$.each($filterList, function(idx2, element2) {
+							var $element                = $(element)
+									, $filterUl               = $element.parent().parent()
+									, filterType              = $filterUl.attr('filter-type')
+									, filterName              = $filterUl.attr('filter-name')
+									, $filterDiv              = $('div.item[filter-name="' + filterName +'"]')
+									, filterValue             = $element.attr('code')
+									, $appendingTarget        = ''
+									, appendingText           = $element.next().text()
+									, filterValue             = $element.attr('code')
+
+							if ( filterValue == element2 ) {
+								$element.attr('selected', 'selected');
+								$element.prop('checked', true);
+								$appendingTarget = $(that.eventListener.filterAppendingHtml(filterType, filterValue, appendingText, 'changeable'));
+								that.setFilterQuery(element2);
+
+								$appendingTarget.on('click', 'button.btn-delete', function(e) {
+									that.eventListener.deleteBtnFilter(e, collectionName);
+								});
+
+								$('.filter-footer[collection-name="' + collectionName + '"] ul').append($appendingTarget);
+							}
+						});
+					});
+
+					// collection이 product인 경우
+				} else {
+					var $filterList      = that.getFilterQueryList(collectionName, exQuery)
+							, $filterWrap      = $('div.result-filter-wrap[collection-name="' + collectionName + '"]')
+							, $filterInput     = $filterWrap.find('div.filter-cont ul li input')
+							, $filterBtn       = $('.sort-control button[collection-name="' + collectionName + '"]')
+							, is1DepthSelected = false
+							, is2DepthSelected = false;
+
+					$.each($filterInput, function(idx, element) {
+						$.each($filterList, function(idx2, element2) {
+							var $element                = $(element)
+									, $filterUl               = $element.parent().parent()
+									, filterType              = $filterUl.attr('filter-type')
+									, filterName              = $filterUl.attr('filter-name')
+									, $filterDiv              = $('div.item[filter-name="' + filterName +'"]')
+									, filterValue             = $element.attr('code')
+									, $appendingTarget        = ''
+									, appendingText           = $element.next().text()
+									, filterValue             = $element.attr('code')
+									, filterText              = filterName + ':' + filterValue
+									, $filterDiv              = $('div.item[filter-name="' + filterName +'"]');
+
+							if ( filterText == element2 ) {
+								$filterDiv.attr('selected', 'selected');
+								$element.attr('selected', 'selected');
+								$element.prop('checked', true);
+
+								var key       = ''
+										, classType = '';
+
+								// 카테고리 Depth1
+								if ( filterType == 'category') {
+									key              = searchConstants.filter.product.CATEGORY_L;
+									classType        = 'fixed';
+									is1DepthSelected = true;
+									$('.filter-cont .category-depth2 li[code="' + filterValue + '"]').show();
+
+									// 카테고리 Depth2
+								} else if ( filterType == 'check' ) {
+									key              = searchConstants.filter.product.CATEGORY_M;
+									classType        = 'fixed';
+									is2DepthSelected = true;
+
+									// 그 이외 filter
+								} else {
+									key       = filterName;
+									classType = 'changeable';
+								}
+
+								$appendingTarget = $(that.eventListener.filterAppendingHtml(filterType, filterValue, appendingText, classType));
+								that.setFilterProductQuery(key, filterText);
+
+								$appendingTarget.on('click', 'button.btn-delete', function(e) {
+									that.eventListener.deleteProductBtnFilter(e);
+								});
+
+								$('.filter-footer[collection-name="' + collectionName + '"] ul').append($appendingTarget);
+							}
+						});
+					});
+
+					if ( is1DepthSelected ) {
+						$('.filter-cont .category-depth2').show();
+					}
+					if ( is2DepthSelected ) {
+						$('.filter-cont .flexible-filter-item li').show();
+						$('.filter-cont .flexible-filter-item').show();
+					}
+				}
+
+				$btnReset.removeAttr('disabled');
+				$filterBtn.trigger('click');
+			},
+			// 정렬 조건 설정
+			setSortingConditionsByQueryParam: function(collectionName, sort) {
+				// 해당하는 정렬이 없는지 체크
+				if ( sort == undefined || sort == ''
+						|| !(sort == searchConstants.sort.RELEVANCE
+								|| sort == searchConstants.sort.PRICE_DESC
+								|| sort == searchConstants.sort.PRICE_ASC
+								|| sort == searchConstants.sort.TITLE_DESC
+								|| sort == searchConstants.sort.TITLE_ASC
+								|| sort == searchConstants.sort.LATEST
+								|| sort == searchConstants.sort.OLDEST
+								|| sort == searchConstants.sort.POPULARITY)) {
+					return;
+				}
+
+				var that              = searchResultManager
+						, topCollectionName = that.topCollectionName;
+
+				// 고객서비스, 디지털프라자인 경우
+				if ( topCollectionName != undefined && topCollectionName != '' ) {
+					collectionName = topCollectionName;
+				}
+
+				var $dropList      = $('ul.droplist[collection-name="' + collectionName + '"][search-type="TAB"]')
+						, $currentSortLi = $dropList.find('li[sort="' + sort + '"]')
+						, sortName       = $currentSortLi.text();
+
+				$dropList.removeAttr('aria-selected');
+				$dropList.removeClass('focused');
+				$dropList.prev().text(sortName);
+				$currentSortLi.addClass('focused');
+				$currentSortLi.attr('aria-selected', 'selected');
+			},
+			/* e: URL에 값이 설정되어 들어온 경우 */
+
+			/* s: Tab 데이터 호출 */
+			// 데이터 호출 ajax : PC / Mobile
+			getTabContents: function(sort, data) {
+				var that           = searchResultManager
+						, constant       = that.searchConstant['TAB']
+						, paginationHtml = constant.paginationHtml
+						, sort           = sort == undefined ? '' : sort
+						, pageNum        = that.pageNum == undefined? 1 : that.pageNum;
+
+				pager = new Pager();
+				pager.init({
+					data                 : data,
+					pageSize             : data.pageSize,
+					initialize           : true,
+					blockSize            : 5,
+					totalCount           : that.searchConstant.TOTAL_COUNT,
+					pagingHtml           : '<li><a href="javascript:;"></a></li>',
+					appendingTargetHtml  : constant.appendingTarget,
+					paginationHtml       : paginationHtml,
+					paginationTargetHtml : paginationHtml + ' ul',
+					paginationWingBarHtml: paginationHtml + ' span',
+					firstBtnClass        : ' .btn_first',
+					prevBtnClass         : ' .btn_prev',
+					nextBtnClass         : ' .btn_next',
+					lastBtnClass         : ' .btn_last',
+					callback             : that.callback
+				});
+
+				pager.currentPage           = pageNum;
+				pager.data.startCount       = pager.getStartCount();
+				pager.callAjax();
+				pager.data.isTriggeredByTab = undefined;
+				pager.getPage(pageNum);
+			},
+
+			// PC 데이터 호출
+			pcCallback: function() {
+				var that = this;
+
+				that.data.currentPage = pager.currentPage;
+
+				searchResultManager.callAjax({
+					url         : '/sec/xhr/search/getSearchContentsByTab/',
+					data        : that.data,
+					method      : 'POST',
+					dataType    : 'text',
+					contentType : 'application/x-www-form-urlencoded; charset=UTF-8',
+					done        : function(result) {
+						var $result = $(result)
+								, $list   = $result.find('#list').children();
+
+						$(that.appendingTargetHtml).empty();
+						$(that.appendingTargetHtml).append($list);
+
+						searchResultManager.commonFilterCallback($result, that.data);
+					}
+				});
+			},
+
+			// Mobile 데이터 호출
+			mobileCallback: function() {
+				var that        = this
+						, currentPage = searchResultManager.pageNum;
+
+				that.currentPage = currentPage == undefined ? 1 : currentPage;
+				that.data.startCount = that.getStartCount();
+				that.data.currentPage = pager.currentPage;
+
+				searchResultManager.callAjax({
+					url         : '/sec/xhr/search/getSearchContentsByTab/',
+					data        : that.data,
+					method      : 'POST',
+					dataType    : 'text',
+					contentType : 'application/x-www-form-urlencoded; charset=UTF-8',
+					done        : function(result) {
+						var $result    = $(result)
+								, $list      = $result.find('#list').children()
+								, old_scroll = $(window).scrollTop();
+
+						if ( searchResultManager.isNeededInitializing || searchResultManager.isFilterSelected ) {
+							$(pager.appendingTargetHtml).empty();
+						}
+
+						$(that.appendingTargetHtml).append($list);
+						searchResultManager.commonFilterCallback($result, that.data);
+						$(document).scrollTop(old_scroll);
+					}
+				});
+			},
+
+			// PC / Mobile 공통 callback
+			commonFilterCallback: function($result, data) {
+				var that                  = searchResultManager
+						, collectionName        = data.collection
+						, $filterList           = $result.find('#filterList')
+						, $fixedInFilterList    = $filterList.find('#fixed').children()
+						, $flexibleInFilterList = $filterList.find('#flexible').children()
+						, $priceInFilterList    = $filterList.find('#price').children()
+						, $filterAppendingList  = that.$filterAppendingTarget
+						, isFilterSet           = that.isFilterSet
+						, count                 = $result.find('#count').text();
+
+				pager.data.isTriggeredByTab = undefined;
+				that.setCurrentUrl(that.getCurrentUrlByParam(data, pager));
+
+				if ( count == '' ) {
+					count = 0;
+				}
+				$('div.result-filter-wrap[collection-name="' + collectionName + '"] .result-num span.num').text(count);
+
+				// 1. colleciton이 product가 아닌 경우
+				if ( collectionName != 'product' ) {
+					if ( isFilterSet == undefined && $filterAppendingList != undefined ) {
+						$filterAppendingList.prepend($filterList.children());
+						that.isFilterSet = 'Y';
+					}
+					return;
+				}
+
+				// 2. colleciton이 product인 경우
+				// 처음 데이터가 setting된 경우가 아니면 filter를 변경하지 않음
+				if ( pager.isPagingDataSet ) {
+					return;
+				}
+
+				$filterAppendingList.find('div.changeable').remove();
+				if ( isFilterSet == undefined && $filterAppendingList != undefined ) {
+					$filterAppendingList.prepend($fixedInFilterList);
+					that.isFilterSet = 'Y';
+				}
+				$filterAppendingList.append($flexibleInFilterList);
+
+				// 가격이 변동된 경우만 가격 slider 설정(paging에서 선택된 가격 slider는 유지)
+				if ( !searchResultManager.isSliderClicked ) {
+					$filterAppendingList.find('div.changeable-price').remove();
+					$filterAppendingList.append($priceInFilterList);
+					that.minPrice = $priceInFilterList.find('span.min-range').text();
+					that.maxPrice = $priceInFilterList.find('span.max-range').text();
+					searchApp.priceRange();
+
+					$('.price-slider div.cont').on('mouseup', that.eventListener.filterPriceMouseDown);
+					$('span.ui-slider-handle').on('mousedown', function() {
+						that.isSliderClicked         = true;
+						that.isSliderClickedForEvent = true;
+					});
+					$('div.price-range.ui-slider').on('mousedown', function() {
+						that.isSliderClicked         = true;
+						that.isSliderClickedForEvent = true;
+					});
+				}
+			},
+			/* e: Tab 데이터 호출 */
+
+			/* s: 정렬 데이터 조회 */
+			// 전체 Tab 정렬(고객서비스, 디지털프라자 제외)
+			getAllSortedContents: function(sort) {
+				var that                  = searchResultManager
+						, constant              = that.searchConstant['ALL']
+						, collectionName        = that.searchConstant.COLLECTION_NAME
+						, isProductSearchAllTab = 'N'
+						, isMobileYN			  = that.isMobileDevice() // 20200921 추가
+						, searchParamPageSize   = constant.PAGESIZE; // 20200921 추가
+
+				if( collectionName == 'event' && isMobileYN == 'Y') { // 20200921 추가
+					searchParamPageSize = constant.MOBILE_PAGESIZE;
+				}
+
+				sort == undefined ? '' : sort;
+
+				if ( collectionName == searchConstants.product.COLLECTION_NAME ) {
+					isProductSearchAllTab = 'Y';
+				}
+
+				searchResultManager.callAjax({ // 20200921 data의 WNSearchParamVo 수정
+					url         : '/sec/xhr/search/getSearchContentsByTab/',
+					data        : new WNSearchParamVo(that.getKeyword(), 0, collectionName
+							, sort, searchParamPageSize, '', '', '', '', '', '', '', '', 'b2c', that.isMobileYN, that.isBestMatchYn, that.suggestion
+							, that.isFilterSet, that.isFilter1stSet, that.isFilter2ndSet, isProductSearchAllTab),
+					method      : 'POST',
+					dataType    : 'text',
+					contentType : 'application/x-www-form-urlencoded; charset=UTF-8',
+					done        : function(result) {
+						var $result = $(result)
+								, $list   = $result.find('#list').children();
+
+						$(constant.appendingTarget).empty();
+						$(constant.appendingTarget).append($list);
+					}
+				});
+			},
+			// 전체 Tab 정렬(고객서비스, 디지털프라자)
+			getAllSortedMultiContents: function(collectionName, sort, callback) {
+				var that     = searchResultManager
+						, constant = that.searchConstant['ALL'];
+
+				sort == undefined ? '' : sort;
+
+				searchResultManager.callAjax({
+					url         : '/sec/xhr/search/searchmultiresult/',
+					data        : new WNSearchParamVo(that.getKeyword(), 0, collectionName, sort
+							, '', '', '', '', '', '', '', '', '', 'b2c', that.isMobileYN, that.isBestMatchYn, that.suggestion
+							, that.isFilterSet, that.isFilter1stSet, that.isFilter2ndSet),
+					method      : 'POST',
+					dataType    : 'text',
+					contentType : 'application/x-www-form-urlencoded; charset=UTF-8',
+					done        : function(result) {
+						callback(result);
+					}
+				});
+			},
+
+			// PC filter 설정된 경우 데이터 조회
+			getFilterTabContents: function(data) {
+				var that = searchResultManager;
+				that.callAjax({
+					url         : '/sec/xhr/search/getSearchContentsByTab/',
+					data        : data,
+					method      : 'POST',
+					dataType    : 'text',
+					contentType : 'application/x-www-form-urlencoded; charset=UTF-8',
+					done        : function(result) {
+						that.commonFilterTabContentsCallback(false, result, data);
+					}
+				});
+			},
+
+			// Mobile filter 설정된 경우 데이터 조회
+			getFilterMobileTabContents: function(data) {
+				var that = searchResultManager;
+				that.callAjax({
+					url         : '/sec/xhr/search/getSearchContentsByTab/',
+					data        : data,
+					method      : 'POST',
+					dataType    : 'text',
+					contentType : 'application/x-www-form-urlencoded; charset=UTF-8',
+					done        : function(result) {
+						that.commonFilterTabContentsCallback(true, result, data);
+					}
+				});
+			},
+			// PC, Mobile 공통 Callback
+			commonFilterTabContentsCallback: function(isMobile, result, data) {
+				var $result               = $(result)
+						, that                  = searchResultManager
+						, collectionName        = data.collection
+						, $list                 = $result.find('#list').children()
+						, $filterList           = $result.find('#filterList')
+						, $fixedInFilterList    = $filterList.find('#fixed').children()
+						, $priceInFilterList    = $filterList.find('#price').children()
+						, $filterAppendingList  = that.$filterAppendingTarget
+						, count                 = $result.find('#count').text()
+						, isBestMatchYn         = $result.find('#isBestMatchYn').children()
+						, old_scroll            = $(window).scrollTop();
+
+				$(pager.appendingTargetHtml).empty();
+				$(pager.appendingTargetHtml).append($list);
+
+				if ( count == '' ) {
+					count = 0;
+				}
+
+				// 필터 적용결과 count 수정
+				$('div.result-filter-wrap[collection-name="' + collectionName + '"] .result-num span.num').text(count);
+
+				pager.totalCount      = count;
+				pager.initialize      = true;
+				pager.isPagingDataSet = false;
+				pager.getPage(1);
+
+				that.setCurrentUrl(that.getCurrentUrlByParam(data, pager));
+
+				if ( collectionName == 'product' ) {
+					var isBestMatchYn      = $result.find('#isBestMatchYn').text()
+							, $selectedFilterDiv = $filterAppendingList.find('div.changeable[selected="selected"]');
+
+					// filter 설정
+					$filterAppendingList.find('div.changeable').not('[selected="selected"]').remove();
+
+					if ( that.isFilter1stSet == 'Y' ) {
+						var $flexibleFilterList = $result.find('#flexibleFilterList');
+
+						$.each($selectedFilterDiv, function(idx, element) {
+							var filterName = $(element).attr('filter-name');
+							$flexibleFilterList.find('div.item[filter-name="' + filterName + '"]').remove();
+						});
+
+						var flexibleFilterLast = $filterAppendingList.find('.flexible-filter-item').last();
+						if ( flexibleFilterLast == undefined || flexibleFilterLast.length == 0 ) {
+							$filterAppendingList.find('.first-item').after($flexibleFilterList.children());
+
+						} else {
+							flexibleFilterLast.after($flexibleFilterList.children());
+						}
+
+						$filterAppendingList.find('.flexible-filter-item').show();
+					}
+
+					// 가격 설정(가격을 선택하지 않은 경우만)
+					if ( !that.isSliderClicked ) {
+						$filterAppendingList.find('div.changeable-price').remove();
+						$filterAppendingList.append($priceInFilterList);
+
+						that.minPrice = $priceInFilterList.find('span.min-range').text();
+						that.maxPrice = $priceInFilterList.find('span.max-range').text();
+						that.eventListener.initPriceSlider();
+
+						$('.price-slider div.cont').on('mouseup', that.eventListener.filterPriceMouseDown);
+						$('span.ui-slider-handle').on('mousedown', function() {
+							that.isSliderClicked         = true;
+							that.isSliderClickedForEvent = true;
+						});
+						$('div.price-range.ui-slider').on('mousedown', function() {
+							that.isSliderClicked         = true;
+							that.isSliderClickedForEvent = true;
+						});
+					}
+
+					var $flexibleInFilterList = $filterList.find('#flexible');
+					$.each($selectedFilterDiv, function(idx, element) {
+						var filterName = $(element).attr('filter-name');
+						$flexibleInFilterList.find('div.item[filter-name="' + filterName + '"]').remove();
+					});
+
+					$filterAppendingList.find('div.changeable-price').before($flexibleInFilterList.children());
+
+					searchResultManager.isBestMatchYn = isBestMatchYn;
+					pager.data.isBestMatchYn = isBestMatchYn;
+				}
+
+				if ( that.isMobileDevice() == 'Y' ) {
+					if ( pager.lastPage == pager.currentPage ) {
+						$('.mo-contents-more a[collection-name="' + pager.collectionName + '"]').hide();
+					}
+					$(document).scrollTop(old_scroll);
+				}
+			},
+			/* e: 정렬 데이터 조회 */
+
+			/* s: 재검색(포함, 제외 검색어) */
+			// 재검색 검색어 포함한 검색어
+			getKeyword: function() {
+				var that = searchResultManager;
+
+				if ( that.reKeyword != undefined) {
+					return that.keyword + that.reKeyword;
+				}
+
+				return that.keyword;
+			},
+			// 재검색 데이터 조회
+			reSearchResult: function(reKeyword) {
+				reKeyword = reKeyword.trim();
+				if ( reKeyword == '' ) {
+					commonAlert({
+						content : '검색어를 입력해주세요.'
+					});
+					openLayer('commonAlert');
+					return;
+				}
+
+				var that                = searchResultManager
+						, searchType          = $('#research-form input:checked').attr('id')
+						, keyword             = that.keyword
+						, $keywordList        = $('.keyword-list')
+						, $keywordListWrapper = $('.result-tit.searchbar-item');
+
+				if ( that.reKeyword == undefined ) {
+					that.reKeyword = '';
+				}
+
+				// '포함'인 경우
+				if ( searchType == 'radioReSearch1' ) {
+					if ( that.includeKeywords == undefined ) {
+						that.includeKeywords = [];
+					}
+					if ( that.excludeKeywords != undefined ) {
+						var idx = -1;
+						for (var i = 0; i < that.excludeKeywords.length; ++i) {
+							if (that.excludeKeywords[i] == reKeyword) {
+								idx = i;
+								break;
+							}
+						}
+						if ( idx > -1 ) {
+							that.excludeKeywords.splice(idx, 1);
+						}
+					}
+					if ( $.inArray(reKeyword, that.includeKeywords) < 0) {
+						that.includeKeywords.push(reKeyword);
+					}
+
+					// '제외'인 경우
+				} else if ( searchType == 'radioReSearch2' ) {
+					if ( that.excludeKeywords == undefined ) {
+						that.excludeKeywords = [];
+					}
+					if ( that.includeKeywords != undefined ) {
+						var idx = -1;
+						for (var i = 0; i < that.includeKeywords.length; ++i) {
+							if (that.includeKeywords[i] == reKeyword) {
+								idx = i;
+								break;
+							}
+						}
+						if ( idx > -1 ) {
+							that.includeKeywords.splice(idx, 1);
+						}
+					}
+					if ( $.inArray(reKeyword, that.excludeKeywords) < 0) {
+						that.excludeKeywords.push(reKeyword);
+					}
+				}
+				that.setReSearchText();
+				$keywordList.show();
+
+				if ( !$keywordListWrapper.hasClass('type-keyword') ) {
+					$keywordListWrapper.addClass('type-keyword');
+				}
+				$('#tabAll').trigger('click');
+				that.searchAllCallback(new WNSearchParamVo(that.getKeyword(), 0, '', '', '', '', ''
+						, '', '', '', '', '', '', 'b2c', that.isMobileYN, that.isBestMatchYn, that.suggestion
+						, that.isFilterSet, that.isFilter1stSet, that.isFilter2ndSet), that.keyword);
+			},
+			// 재검색 데이터 설정(상위 재검색 keyword 목록)
+			setReSearchText: function() {
+				var that         = searchResultManager
+						, $keywordList = $('.keyword-list')
+						, reKeywordText = '';
+
+				$keywordList.empty();
+				$.each(that.includeKeywords, function(idx, keyword) {
+					reKeywordText += ' ' + keyword;
+					$keywordList.append('<span class="type-include">\'' + keyword + '\'</span>');
+				});
+
+				$.each(that.excludeKeywords, function(idx, keyword) {
+					reKeywordText += '!(' + keyword + ')';
+					$keywordList.append('<span class="type-except">\'' + keyword + '\'</span>');
+				});
+
+				that.reKeyword = reKeywordText;
+			},
+			// 재검색 결과 없는 경우 결과 화면의 재검색 keyword 설정
+			getResearchTextInResult: function() {
+				var that         = searchResultManager
+						, reKeywordHtml = '';
+
+				$.each(that.includeKeywords, function(idx, keyword) {
+					reKeywordHtml += '<b class="type-include">\'' + keyword + '\'</b>';
+				});
+
+				$.each(that.excludeKeywords, function(idx, keyword) {
+					reKeywordHtml += '<b class="type-except">\'' + keyword + '\'</b>';
+				});
+
+				return reKeywordHtml;
+			},
+			// 데이터 조회 ajax
+			searchAllCallback: function(data, keyword) {
+				var that = searchResultManager;
+
+				that.callAjax({
+					url         : '/sec/xhr/search/searchallresult/?keyword=' + encodeURIComponent(keyword),
+					data        : data,
+					method      : 'POST',
+					dataType    : 'text',
+					contentType : 'application/x-www-form-urlencoded; charset=UTF-8',
+					done        : function(result) {
+						var $result      = $(result)
+								, $contentsAll = $result.find('#contentsAll').children()
+								, totalCount   = $result.find('#totalCount').text();
+
+						$('.result-tab-box').empty();
+						$('.search-result-wrap').empty();
+
+						$('.searchbar-item span.search-count').text(totalCount);
+						$('span.result-num-txt span.num').text(totalCount);
+						$('.filter-summary span.num').text(totalCount);
+
+						that.setCurrentUrlWithResearchText();
+
+						if ( totalCount == 0 ) {
+							$($contentsAll.find('#noResultText')).prepend(that.getResearchTextInResult());
+							$('div.unified-search-inner div.search-result-wrap').append($contentsAll);
+
+						} else {
+							var $tabList           = $result.find('#tabList').children()
+									, isBestMatchYn      = $result.find('#isBestMatchYn').text()
+									, $countTab          = $result.find('#countTab')
+									, productCount       = $countTab.find('#product').text()
+									, reviewCount        = $countTab.find('#review').text()
+									, eventCount         = $countTab.find('#event').text()
+									, storyCount         = $countTab.find('#story').text()
+									, companyCount       = $countTab.find('#company').text()
+									, manualCount        = $countTab.find('#serviceManual').text()
+									, newsCount          = $countTab.find('#serviceNotice').text()
+									, appServiceCount    = $countTab.find('#serviceAppService').text()
+									, plazaEventCount    = $countTab.find('#digitalEvent').text()
+									, plazaBaseCount     = $countTab.find('#digitalBase').text()
+									, $serviceFirstChild = $($('#serviceTabList a')[0])
+									, $plazaFirstChild   = $($('#digitalPlazaTabList a')[0]);
+
+							$('.result-tab-box').append($tabList);
+							$('.search-result-wrap').append($contentsAll);
+
+							if ( $serviceFirstChild != undefined ) {
+								$serviceFirstChild.attr('aria-selected', 'true');
+							}
+							if ( $plazaFirstChild != undefined ) {
+								$plazaFirstChild.attr('aria-selected', 'true');
+							}
+
+							searchConstants.product.TOTAL_COUNT           = productCount;
+							searchConstants.review.TOTAL_COUNT            = reviewCount;
+							searchConstants.event.TOTAL_COUNT             = eventCount;
+							searchConstants.story.TOTAL_COUNT             = storyCount;
+							searchConstants.company_info.TOTAL_COUNT      = companyCount;
+							searchConstants.serviceManual.TOTAL_COUNT     = manualCount;
+							searchConstants.serviceNotice.TOTAL_COUNT     = newsCount;
+							searchConstants.serviceAppService.TOTAL_COUNT = appServiceCount;
+							searchConstants.digitalEvent.TOTAL_COUNT      = plazaEventCount;
+							searchConstants.digitalBase.TOTAL_COUNT       = plazaBaseCount;
+
+							that.isBestMatchYn = isBestMatchYn;
+							that.eventListener.initResearchEventListener();
+						}
+					}
+				});
+			},
+			// URL에 값이 설정되어 들어온 경우
+			getResearchKeyword: function(list) {
+				var rearchText = '';
+
+				$.each(list, function(idx, element) {
+					rearchText += '%2B' + element;
+				});
+
+				return rearchText;
+			},
+			/* e: 재검색 */
+
+			/* s: 오탈자 무시 검색 */
+			getSearchResultNoSuggestion: function(keyword) {
+				searchInputManager.saveSearchHistory(keyword);
+				window.location.href = '/sec/search/searchresult/?keyword=' + encodeURIComponent(keyword) + '&sug=N';
+			},
+			/* e: 오탈자 무시 검색 */
+
+			/* s: URL data 설정 */
+			// 현재 설정된 값을 query param으로 생성
+			getCurrentUrlByParam: function(data, pager, sug) {
+				var that           = searchResultManager
+						, queryParamText = ''
+						, queryParamData = {
+					sort              : data.sort,
+					pageSize          : data.pageSize,
+					maxPrice          : data.maxPrice,
+					minPrice          : data.minPrice,
+					exQuery           : data.exQuery,
+					useMobileYN       : data.useMobileYN,
+					isBestMatchYn     : data.isBestMatchYn,
+					useSuggestQueryYN : data.useSuggestQueryYN,
+					incl              : that.getResearchKeyword(that.includeKeywords),
+					excl              : that.getResearchKeyword(that.excludeKeywords)
+				}
+						, pagerParamData = {
+					currentPage : pager.currentPage
+				}
+						, currentCollection = that.currentCollection;
+
+				if ( currentCollection != '' && currentCollection != undefined ) {
+					queryParamData.currentCollection = currentCollection;
+				}
+
+				if ( sug != '' && sug != undefined ) {
+					queryParamData.sug = sug;
+				}
+
+				$.each(queryParamData, function(idx, element) {
+					var currentUrlByParamText = that.getCurrentUrlByParamText(idx, element);
+					if ( !(currentUrlByParamText == '' || currentUrlByParamText == undefined)) {
+						queryParamText += '&' + currentUrlByParamText;
+					}
+				});
+
+				if ( pagerParamData != undefined ) {
+					$.each(pagerParamData, function(idx, element) {
+						var currentUrlByParamText = that.getCurrentUrlByParamText(idx, element);
+						if ( !(currentUrlByParamText == '' || currentUrlByParamText == undefined)) {
+							queryParamText += '&' + currentUrlByParamText;
+						}
+					});
+				}
+
+				return queryParamText;
+			},
+
+			getCurrentUrlByParamText: function(key, value) {
+				if ( key != undefined && key != ''
+						&& value != undefined && value != '') {
+					return key + '=' + value;
+				}
+			},
+
+			// URL에 현재 data의 query param 설정
+			setCurrentUrl: function(queryParam) {
+				var currentUrl     = (location.href).replace(/(.*?keyword=.*?)|(\&)(.*)/gi, '$1')
+						, regExp         = /(.*?)(exQuery=.*?)(\&.*)|$/g
+						, regExpExQuery  = /^exQuery/g
+						, queryParamList = regExp.exec(queryParam)
+						, queryParamText = '';
+
+				if( queryParamList != undefined && queryParamList != '' ) {
+					$.each(queryParamList, function(idx, element) {
+						if ( idx != 0 && element != undefined && element != '' ){
+							if ( regExpExQuery.exec(element) != null ) {
+								queryParamText += element.replace(/\+/g, '%2B').replace(/\|/g, '%7C');
+							} else {
+								queryParamText += element;
+							}
+						}
+					});
+				}
+
+				if ( queryParamText == '' ) {
+					queryParamText = queryParam;
+				}
+				history.pushState(null, null, currentUrl + queryParamText);
+			},
+
+			// 재검색 시 URL 설정
+			setCurrentUrlWithResearchText: function() {
+				var that       = searchResultManager
+						, incl       = that.getResearchKeyword(that.includeKeywords)
+						, excl       = that.getResearchKeyword(that.excludeKeywords)
+						, currentUrl = (location.href).replace(/(.*?keyword=.*?)|(\&)(.*)/gi, '$1').replace(/(.*searchresult\/).*?(\?.*)/gi, '$1$2') + '&sug=N';
+
+				if( incl != undefined && incl != '' ) {
+					currentUrl += '&incl=' + incl;
+				}
+
+				if( excl != undefined && excl != '' ) {
+					currentUrl += '&excl=' + excl;
+				}
+
+				history.pushState(null, null, currentUrl);
+			},
+
+			// 재검색 query param 설정
+			setResearchKeywordQueryParam: function(inclText, exclText) {
+				var that         = searchResultManager
+						, regExp       = /(%2B)([가-힣a-zA-Z0-9\s]*)*/g
+						, includeList  = that.includeKeywords
+						, excludeList  = that.excludeKeywords
+						, researchList;
+
+				if ( inclText != undefined ) {
+					inclText = inclText.replace(/\+/g, '%2B');
+
+					if ( includeList == undefined ) {
+						includeList = [];
+					}
+					while( researchList = regExp.exec(inclText) ) {
+						includeList.push(researchList[2]);
+					}
+					that.includeKeywords = includeList;
+				}
+
+				if ( exclText != undefined ) {
+					exclText = exclText.replace(/\+/g, '%2B');
+
+					if ( excludeList == undefined ) {
+						excludeList = [];
+					}
+
+					while( researchList = regExp.exec(exclText) ) {
+						excludeList.push(researchList[2]);
+					}
+					that.excludeKeywords = excludeList;
+				}
+
+				var $keywordList        = $('.keyword-list')
+						, $keywordListWrapper = $('.result-tit.searchbar-item');
+
+				that.setReSearchText();
+				$keywordList.show();
+
+				if ( !$keywordListWrapper.hasClass('type-keyword') ) {
+					$keywordListWrapper.addClass('type-keyword');
+				}
+			},
+			/* e: URL data 설정 */
+
+			/* s: filter */
+			// 해당 collection의 filter 초기화
+			initFilter: function(collectionName) {
+				var that       = searchResultManager
+						, $btnReset  = $('.filter-footer[collection-name="' + collectionName + '"] .btn-filter-reset')
+						, $filterBtn = $('.sort-control button[collection-name="' + collectionName + '"]');
+
+				if ( $filterBtn.hasClass('is-active') ) {
+					$filterBtn.trigger('click');
+				}
+				that.eventListener.initFilterByCategory();
+
+				$btnReset.attr('disabled', 'disabled');
+				$('.filter-footer[collection-name="' + collectionName + '"] ul').empty();
+				$('.result-filter-wrap[collection-name="' + collectionName + '"] input:checked').prop('checked', false);
+				$('.result-filter-wrap[collection-name="' + collectionName + '"] ul input').removeAttr('selected');
+				$('.result-filter-wrap[collection-name="' + collectionName + '"] .filter-cont').empty();
+				$('.result-filter-wrap[collection-name="product"] .btn-filter-depth1.changeable').removeAttr('selected');
+
+				that.filterQueryList  = undefined;
+				that.isFilterSet      = undefined;
+				that.isFilter1stSet   = undefined;
+				that.isFilterSelected = undefined;
+
+				pager.data = {};
+			},
+
+			// 모든 filter 초기화
+			initAllFilter: function() {
+				var that       = searchResultManager
+						, $btnReset  = $('.filter-footer .btn-filter-reset')
+						, $filterBtn = $('.sort-control button');
+
+				if ( $filterBtn.hasClass('is-active') ) {
+					$filterBtn.trigger('click');
+				}
+				$btnReset.attr('disabled', 'disabled');
+				$('.filter-footer ul').empty();
+				$('.result-filter-wrap input:checked').prop('checked', false);
+				$('.result-filter-wrap ul input').removeAttr('selected');
+
+				that.eventListener.initPriceSlider();
+				that.filterQueryList  = undefined;
+				that.isFilterSet      = undefined;
+				that.isFilter1stSet   = undefined;
+				that.isFilterSelected = undefined;
+			},
+
+			// 선택된 filter 데이터 설정 (collection이 product가 아닌 경우)
+			setFilterQuery: function(filterText) {
+				var that            = searchResultManager
+						, filterQueryList = that.filterQueryList;
+
+				if ( filterQueryList == undefined ) {
+					filterQueryList = [];
+				}
+
+				filterQueryList.push(filterText);
+				that.filterQueryList = filterQueryList;
+			},
+
+			// 선택된 filter 데이터 설정 (collection이 product인 경우)
+			setFilterProductQuery: function(key, filterText) {
+				var that               = searchResultManager
+						, filterProductQuery = that.filterProductQuery;
+
+				if ( filterProductQuery == undefined ) {
+					filterProductQuery = {};
+				}
+
+				var filterProductQueryList = filterProductQuery[key];
+				if ( filterProductQueryList == undefined) {
+					filterProductQueryList = [];
+				}
+
+				filterProductQueryList.push(filterText);
+				filterProductQuery[key] = filterProductQueryList;
+				that.filterProductQuery = filterProductQuery;
+			},
+
+			// exQuery 생성 (collection이 product가 아닌 경우)
+			getFilterQuery: function(filterKey) {
+				var delimiter           = '%7C'
+						, that            = searchResultManager
+						, filterQueryList = that.filterQueryList
+						, filterQuery     = '';
+
+				if ( filterQueryList == undefined ) {
+					return '';
+				}
+
+				$.each(filterQueryList, function(idx, element) {
+					filterQuery += element;
+
+					if ( idx < filterQueryList.length - 1 ) {
+						filterQuery += delimiter;
+					}
+				});
+
+				return filterQuery.trim();
+			},
+
+			// exQuery 생성 (collection이 product인 경우)
+			getFilterProductQuery: function() {
+				var and                   = '%2B'
+						, or                    = '%7C'
+						, that                  = searchResultManager
+						, filterProductQuery    = that.filterProductQuery
+						, newFilterProductQuery = {}
+						, filterQuery           = '';
+
+				if ( filterProductQuery == undefined ) {
+					return '';
+				}
+
+				var totalLength = 0;
+				$.each(filterProductQuery, function(idx, filterQueryList) {
+					if ( filterQueryList.length > 0 ) {
+						newFilterProductQuery[idx] = filterQueryList;
+						totalLength ++;
+					}
+				});
+
+				var i = 0;
+				$.each(newFilterProductQuery, function(idx, filterQueryList) {
+					var filterQuerySub = '';
+
+					$.each(filterQueryList, function(idx2, element) {
+						filterQuerySub += element;
+
+						if ( idx2 < filterQueryList.length - 1 ) {
+							filterQuerySub += or;
+						}
+					});
+					filterQuery += filterQuerySub;
+					if ( i < totalLength - 1 ) {
+						filterQuery += and;
+					}
+
+					i ++;
+				});
+
+				return filterQuery.trim();
+			},
+
+			// exQuery 목록 생성
+			getFilterQueryList: function(collectionName, exQuery) {
+				exQuery = exQuery.replace(/\+/gi, '%2B').replace(/\|/gi, '%7C');
+
+				var regExp = ''
+						, exQueryList = ''
+						, filterQueryList = [];
+
+				if ( collectionName == 'product' ) {
+					regExp = /(.*?):(.*?)(\%2B|\%7C|$)+/g;
+
+					while( exQueryList = regExp.exec(exQuery) ) {
+						filterQueryList.push(exQueryList[1] + ':' + exQueryList[2]);
+					}
+
+				} else {
+					regExp = /(.*?\w+)(%7C|$)*/g;
+
+					while( exQueryList = regExp.exec(exQuery) ) {
+						filterQueryList.push(exQueryList[1]);
+					}
+				}
+
+				return filterQueryList;
+			},
+
+			// exQuery text 생성
+			getFilterText: function(filterKey, filterValue) {
+				return '{' + filterKey + ':contains:' + filterValue + '}';
+			},
+
+			// 필터 삭제(collection이 product가 아닌 경우)
+			removeFilterQuery: function(filterText) {
+				var that            = searchResultManager
+						, filterQueryList = that.filterQueryList;
+
+				var idx = -1;
+				for (var i = 0; i < filterQueryList.length; ++i) {
+					if (filterQueryList[i] == filterText) {
+						idx = i;
+						break;
+					}
+				}
+				if ( idx > -1 ) {
+					filterQueryList.splice(idx, 1);
+					that.filterQueryList = filterQueryList;
+				}
+			},
+
+			// 필터 삭제(collection이 product인 경우)
+			removeFilterProductQuery: function(key, filterText) {
+				var that                   = searchResultManager
+						, filterProductQuery     = that.filterProductQuery
+						, filterProductQueryList = filterProductQuery[key];
+
+				var idx = -1;
+				for (var i = 0; i < filterProductQueryList.length; ++i) {
+					if (filterProductQueryList[i] == filterText) {
+						idx = i;
+						break;
+					}
+				}
+
+				if ( idx > -1 ) {
+					filterProductQueryList.splice(idx, 1);
+					that.filterProductQuery[key] = filterProductQueryList;
+				}
+
+			},
+
+			// collection이 product인 경우 해당 key 이외의 filter 모두 삭제
+			removeFilterProductQueryByKey: function(key1, key2) {
+				var that                  = searchResultManager
+						, filterProductQuery    = that.filterProductQuery
+						, newFilterProductQuery = {};
+
+				$.each(filterProductQuery, function(idx, element) {
+					if ( idx == key1 || idx == key2 ) {
+						newFilterProductQuery[idx] = element;
+					}
+				});
+
+				that.filterProductQuery = newFilterProductQuery;
+			},
+			/* e: filter */
+
+			getContentsUrlByStContextPath: function(link) {
+				var contextPath         = '/sec/'
+						, replacedContextPath = contextPath.replace(/\//g, '')
+						, regExp = new RegExp('(.*?\/' + replacedContextPath + '\/)|(http.*?:\/\/.(.*?)(\/)|(\/' + replacedContextPath + '\/))|(^\/)');
+
+				window.location.href = contextPath + link.replace(regExp, '');
+			},
+
+			eventListener: {
+				/* s: dropdown list 이벤트 */
+				dropDownList: function(e) {
+					e.preventDefault();
+					var $dropWrap = $(this).parent();
+					var $dropList = $(this).next();
+					var dropListBtm;
+					var docHeight = $(document).innerHeight();
+					if(!$dropWrap.hasClass("nodrop")){          // 클래스 nodrop이 없는 엘리먼트에만 이벤트 적용
+						if (!$dropWrap.hasClass("active")) {
+							$dropWrap.addClass("active");
+							$dropList.find(">li").each(function(){
+								$(this).attr("tabindex", -1);
+							});
+
+							if ( $dropList.length > 0 ) {
+								dropListBtm = $dropList.outerHeight() + $dropList.offset().top;
+								if(docHeight < dropListBtm){
+									$dropWrap.addClass("bottom");
+								}
+							}
+
+							$(this).attr("aria-expanded", "true");
+							$dropList.focus();
+							$dropList.find("[aria-selected]").focus();
+						} else {
+							$dropWrap.removeClass("active").removeClass("bottom");
+							$(this).removeAttr("aria-expanded").focus();
+						}
+					}
+				},
+				/* e: dropdown list 이벤트 */
+
+				/* s: Tab 정렬 이벤트 */
+				// PC 정렬변경 시 데이터 조회(고객서비스, 디지털프라자 제외)
+				sortingTabResult: function(e) {
+					var $target        = $(e.target)
+							, that           = searchResultManager
+							, sort           = $target.attr('sort')
+							, $ul            = $target.closest('ul')
+							, collectionName = $ul.attr('collection-name')
+							, $droplist      = $('ul.droplist[collection-name="' + collectionName + '"][search-type="TAB"] li[aria-selected="selected"]')
+							, currentSort    = $droplist.attr('sort');
+
+					if ( that.isMobileYN == 'Y' ) {
+						if ( currentSort != sort ) {
+							that.isNeededInitializing = true;
+						}
+						that.eventListener.getSortingMobileResult(0, collectionName, sort);
+
+					} else {
+						that.eventListener.getSortingResult(collectionName, sort);
+					}
+				},
+				// PC 정렬변경 시 데이터 조회(고객서비스, 디지털프라자)
+				sortingSubTabResult: function(e) {
+					var $target           = $(e.target)
+							, that              = searchResultManager
+							, sort              = $target.attr('sort')
+							, $ul               = $target.closest('ul')
+							, currentCollection = that.currentCollection
+							, $droplist         = $('ul.droplist[collection-name="' + currentCollection + '"][search-type="TAB"] li[aria-selected="selected"]')
+							, currentSort       = $droplist.attr('sort');
+
+					if ( that.isMobileYN == 'Y' ) {
+						if ( currentSort != sort ) {
+							that.isNeededInitializing = true;
+						}
+						that.eventListener.getSortingMobileResult(0, currentCollection, sort);
+
+					} else {
+						that.eventListener.getSortingResult(currentCollection, sort);
+					}
+
+				},
+				// Mobile 정렬변경 시 데이터 조회(고객서비스, 디지털프라자 제외)
+				sortingMobileTabResult: function(e) {
+					var $target        = $(e.target)
+							, that           = searchResultManager
+							, currentSort    = $target.attr('sort')
+							, pageNum        = $target.attr('page')
+							, collectionName = $target.attr('collection-name')
+							, $droplist      = $('ul.droplist[collection-name="' + collectionName + '"][search-type="TAB"] li[aria-selected="selected"]')
+							, sort           = $droplist.attr('sort');
+
+					that.isFilterSelected = undefined;
+					that.eventListener.getSortingMobileResult(pageNum, collectionName, sort);
+				},
+				// Mobile 정렬변경 시 데이터 조회(고객서비스, 디지털프라자)
+				sortingMobileSubTabResult: function(e) {
+					var $target        = $(e.target)
+							, that           = searchResultManager
+							, pageNum        = $target.attr('page')
+							, collectionName = $target.attr('collection-name')
+							, sort           = $('ul.droplist[collection-name="' + searchConstants[collectionName].TAB_NAME + '"][search-type="TAB"] li[aria-selected="selected"]').attr('sort');
+
+					that.isFilterSelected = undefined;
+					that.isNeededInitializing = undefined;
+					that.eventListener.getSortingMobileResult(pageNum, collectionName, sort);
+				},
+
+				// PC Tab 데이터 조회
+				getSortingResult: function(collectionName, sort) {
+					var that = searchResultManager
+							, $btnMobileContentsMore = $('.mo-contents-more a[collection-name="' + collectionName + '"]')
+							, isSliderClicked = that.isSliderClicked;
+
+					that.callback       = that.pcCallback;
+					that.pageNum        = 1;
+					that.searchConstant = searchConstants[collectionName];
+
+					$btnMobileContentsMore.attr('page', that.pageNum);
+					$btnMobileContentsMore.show();
+
+					var data     = ''
+							, exQuery  =  '';
+
+					if ( collectionName == 'product' ) {
+						exQuery = that.getFilterProductQuery();
+
+					} else {
+						exQuery = that.getFilterQuery(searchConstants.filter.FILTER_CATEGORY);
+					}
+
+					if ( (exQuery == undefined || exQuery == '') && !isSliderClicked ) {
+						that.getTabContents(
+								sort,
+								new WNSearchParamVo(that.getKeyword(), 0, that.searchConstant.COLLECTION_NAME, sort, that.searchConstant['TAB'].PAGESIZE, '', ''
+										, '', '', '', '', '', exQuery, 'b2c', that.isMobileYN, that.isBestMatchYn, that.suggestion
+										, that.isFilterSet, that.isFilter1stSet, that.isFilter2ndSet));
+
+						return;
+					}
+
+					var minPrice = searchResultManager.minPrice
+							, maxPrice = searchResultManager.maxPrice;
+
+					if ( !searchResultManager.isSliderClicked ) {
+						minPrice = '';
+						maxPrice = '';
+					}
+
+					data = new WNSearchParamVo(that.getKeyword(), 0, that.searchConstant.COLLECTION_NAME, sort, that.searchConstant['TAB'].PAGESIZE, '', ''
+							, maxPrice, minPrice, '', '', '', exQuery, 'b2c', that.isMobileYN, that.isBestMatchYn, that.suggestion
+							, that.isFilterSet, that.isFilter1stSet, that.isFilter2ndSet);
+
+					pager.data.isBestMatchYn = that.isBestMatchYn;
+					pager.data.exQuery       = exQuery;
+					pager.data.sort          = sort;
+					pager.data.minPrice      = minPrice;
+					pager.data.maxPrice      = maxPrice;
+					pager.data.startCount    = pager.getStartCount();
+
+					that.getFilterTabContents(data);
+				},
+
+				// Mobile Tab 데이터 조회
+				getSortingMobileResult: function(pageNum, collectionName, sort) {
+					var that                   = searchResultManager
+							, currentPage            = parseInt(pageNum) + 1
+							, $btnMobileContentsMore = $('.mo-contents-more a[collection-name="' + collectionName + '"]')
+							, isSliderClicked        = that.isSliderClicked;
+
+
+					that.callback       = that.mobileCallback;
+					that.pageNum        = currentPage;
+					that.collectionName = collectionName;
+					that.searchConstant = searchConstants[collectionName];
+
+					var searchParamPageSize = that.searchConstant['TAB'].PAGESIZE; // 20200921 추가
+
+					if( collectionName == 'event') { // 20200921 추가
+						searchParamPageSize = that.searchConstant['TAB'].MOBILE_PAGESIZE;
+					}
+
+					$btnMobileContentsMore.attr('page', currentPage);
+					$btnMobileContentsMore.show();
+
+					var data     = ''
+							, exQuery  = '';
+
+					if ( collectionName == 'product' ) {
+						exQuery = that.getFilterProductQuery();
+					} else {
+						exQuery = that.getFilterQuery(searchConstants.filter.FILTER_CATEGORY);
+					}
+
+					// Paging 처리)
+					if ( currentPage > 1 ) {
+						that.isNeededInitializing = undefined;
+
+						pager.isPagingDataSet = true;
+						pager.getPage(currentPage);
+						pager.callAjax();
+						if ( pager.lastPage == pager.currentPage ) {
+							$('.mo-contents-more a[collection-name="' + searchResultManager.collectionName + '"]').hide();
+						}
+
+						return;
+					}
+
+					// 처음 조회하는 경우
+					if ( (exQuery == undefined || exQuery == '') && !isSliderClicked ) {
+
+// 								data = new WNSearchParamVo(that.getKeyword(), 0, that.searchConstant.COLLECTION_NAME, sort, that.searchConstant['TAB'].PAGESIZE, '', ''
+// 										, '', '', '', '', '', exQuery, 'b2c', that.isMobileYN, that.isBestMatchYn, that.suggestion
+// 										, that.isFilterSet, that.isFilter1stSet, that.isFilter2ndSet);
+						// 20200921 수정
+						data = new WNSearchParamVo(that.getKeyword(), 0, that.searchConstant.COLLECTION_NAME, sort, searchParamPageSize, '', ''
+								, '', '', '', '', '', exQuery, 'b2c', that.isMobileYN, that.isBestMatchYn, that.suggestion
+								, that.isFilterSet, that.isFilter1stSet, that.isFilter2ndSet);
+
+						that.getTabContents(sort, data);
+						return;
+					}
+
+					var minPrice = searchResultManager.minPrice
+							, maxPrice = searchResultManager.maxPrice;
+
+					if ( !searchResultManager.isSliderClicked ) {
+						minPrice = '';
+						maxPrice = '';
+					}
+
+// 							data = new WNSearchParamVo(that.getKeyword(), 0, that.searchConstant.COLLECTION_NAME, sort, that.searchConstant['TAB'].PAGESIZE, '', ''
+// 										, maxPrice, minPrice, '', '', '', exQuery, 'b2c', that.isMobileYN, that.isBestMatchYn, that.suggestion
+// 										, that.isFilterSet, that.isFilter1stSet, that.isFilter2ndSet);
+					// 20200921 수정
+					data = new WNSearchParamVo(that.getKeyword(), 0, that.searchConstant.COLLECTION_NAME, sort, searchParamPageSize, '', ''
+							, maxPrice, minPrice, '', '', '', exQuery, 'b2c', that.isMobileYN, that.isBestMatchYn, that.suggestion
+							, that.isFilterSet, that.isFilter1stSet, that.isFilter2ndSet);
+
+					pager.currentPage        = currentPage;
+					pager.data.isBestMatchYn = that.isBestMatchYn;
+					pager.data.exQuery       = exQuery;
+					pager.data.sort          = sort;
+					pager.data.minPrice      = minPrice;
+					pager.data.maxPrice      = maxPrice;
+					pager.getPage(currentPage);
+
+					that.getFilterMobileTabContents(data);
+				},
+
+				// 전체 Tab에서 정렬 변경
+				sortingAllResult: function(e) {
+					var $target        = $(e.target)
+							, $parent        = $target.parent()
+							, sort           = $target.attr('sort')
+							, that           = searchResultManager
+							, $ul            = $target.closest('ul')
+							, collectionName = $ul.attr('collection-name');
+
+					that.searchConstant = searchConstants[collectionName];
+
+					if ( $parent.hasClass('tab') ) {
+						that.getAllSortedContents(sort);
+					}
+					if ( $parent.hasClass('sub-tab') ) {
+						var callback = '';
+						if ( collectionName == searchConstants.service.COLLECTION_NAME ) {
+							callback = that.eventListener.setServiceContents;
+						}
+						if ( collectionName == searchConstants.digitalPlaza.COLLECTION_NAME ) {
+							callback = that.eventListener.setDigitalPlazaContents;
+						}
+
+						that.getAllSortedMultiContents(collectionName, sort, callback);
+					}
+				},
+
+				// 전체 정렬 변경 시 고객서비스 callback
+				setServiceContents: function(result) {
+					var $manual = $(result).find('#manual').children();
+					var $notice = $(result).find('#notice').children();
+
+					$('#tabContentAll ul.list-type-download').empty();
+					$('#tabContentAll div.list-type-notice').empty();
+					$('#tabContentAll ul.list-type-download').append($manual);
+					$('#tabContentAll div.list-type-notice').append($notice);
+				},
+				// 전체 정렬 변경 시 디지털프라자 callback
+				setDigitalPlazaContents: function(result) {
+					var $event = $(result).find('#plazaEvent').children();
+					var $base  = $(result).find('#plazaBase').children();
+
+					$('#tabContentAll ul.list-type-exhibition.plaza-event').empty();
+					$('#tabContentAll ul.list-type-store').empty();
+					$('#tabContentAll ul.list-type-exhibition.plaza-event').append($event);
+					$('#tabContentAll ul.list-type-store').append($base);
+				},
+				/* e: Tab 정렬 이벤트 */
+
+				/* s: filter */
+				// URL에 값이 설정되어 들어온 경우
+				getExQueryWhenTabTriggered: function(collectionName, exQuery) {
+					var exQueryText = ''
+							, regExp = ''
+							, exQueryList;
+
+					if ( collectionName == 'product' ) {
+						regExp = /(.*?=\w+)(\%2B|\%7C)*/g;
+					} else {
+						regExp = /(.*?\w+)(\%2B|\%7C)*/g;
+					}
+
+					while( exQueryList = regExp.exec(exQuery) ) {
+						exQueryText += exQueryList[1];
+					}
+
+					return exQueryText;
+				},
+
+				filterAppendingHtml: function(filterType, filterValue, text, classType) {
+					return '<li class="item filter-footeritem ' + classType + '" filter-type="' + filterType + '" target-value="' + filterValue + '">'
+							+ '<span class="txt">' + text + '</span>'
+							+ '<button type="text" class="btn-delete">닫기</button>'
+							+ '</li>';
+				},
+				getExcludedFilterNameList: function() {
+					var that                   = searchResultManager
+							, $fixedFilter           = $('div.btn-filter-depth1.fixed')
+							, excludedFilterNameList = [];
+
+					$.each($fixedFilter, function(idx, element) {
+						var filterName = $(element).attr('filter-name');
+						if ( filterName != undefined ) {
+							excludedFilterNameList.push(filterName);
+						}
+					});
+
+					return excludedFilterNameList;
+				},
+
+				// 필터 삭제(collection이 product가 아닌 경우)
+				deleteBtnFilter: function(e, collectionName) {
+					var that        = searchResultManager
+							, $target       = $(e.target)
+							, $li           = $target.parent()
+							, filterType    = $li.attr('filter-type')
+							, filterValue   = $li.attr('target-value')
+							, $filterTarget = $('.filter-cont ul[filter-type="' + filterType + '"] input[code="' + filterValue + '"');
+
+					$li.remove();
+					$filterTarget.prop('checked', false);
+					$filterTarget.removeAttr('selected');
+
+					that.isFilterSelected = undefined;
+					that.removeFilterQuery(filterValue);
+
+					if ( $('.filter-footer[collection-name="' + collectionName + '"] li').length == 0 ) {
+						$('.btn-filter-reset').attr('disabled', 'disabled');
+					}
+					$($('ul.droplist[collection-name="' + collectionName + '"][search-type="TAB"] li')[0]).trigger('click');
+				},
+
+				// 필터 삭제(collection이 product인 경우)
+				deleteProductBtnFilter: function(e) {
+					var that         = searchResultManager
+							, $target        = $(e.target)
+							, $li            = $target.parent()
+							, filterType     = $li.attr('filter-type')
+							, filterValue    = $li.attr('target-value')
+							, $filterTarget  = $('.filter-cont ul[filter-type="' + filterType + '"] input[code="' + filterValue + '"')
+							, filterName     = $('.filter-cont ul[filter-type="' + filterType + '"]').attr('filter-name')
+							, $filterDiv     = $('div.item[filter-name="' + filterName +'"]')
+							, collectionName = 'product';
+
+					$li.remove();
+					$filterTarget.prop('checked', false);
+					$filterTarget.removeAttr('selected');
+					that.isFilterSelected = undefined;
+
+					if ( $('.filter-footer[collection-name="' + collectionName + '"] li').length == 0 ) {
+						$filterDiv.removeAttr('selected');
+						$('.btn-filter-reset').attr('disabled', 'disabled');
+					}
+					var key = '';
+
+					// 카테고리 1Depth
+					if ( filterType == 'category' ) {
+						that.eventListener.initFilterByCategory();
+						$('.btn-filter-reset').attr('disabled', 'disabled');
+						$($('ul.droplist[collection-name="' + collectionName + '"][search-type="TAB"] li')[0]).trigger('click');
+						return;
+
+						// 카테고리 2Depth
+					} else if ( filterType == 'check' ) {
+						$('.btn-filter-depth1[collection-name="product"].fluid').removeAttr('selected');
+						key = searchConstants.filter.product.CATEGORY_M;
+
+						/* 2Depth가 선택되지 않은 경우, 하위 필터 모두 삭제 */
+						if ( $('.filter-footer[collection-name="product"] li[filter-type="' + filterType + '"]').length == 0 ) {
+							that.isFilter1stSet = undefined;
+
+							$('.btn-filter-depth1[collection-name="product"].fluid').hide();
+							$('.btn-filter-depth1[collection-name="product"].fluid input').prop('checked', false);
+							$('.btn-filter-depth1[collection-name="product"].fluid input').removeAttr('selected');
+							$('.filter-footer[collection-name="product"] li.fluid').remove();
+
+						} else {
+							that.isFilter1stSet = 'Y';
+						}
+
+						// 그외 filter
+					} else {
+						if ( $('.filter-footer[collection-name="product"] li[filter-type="' + filterType + '"]').length == 0 ) {
+							$filterDiv.removeAttr('selected');
+						}
+
+						key = filterName;
+					}
+
+					that.removeFilterProductQuery(key, filterName + ':' + filterValue);
+					$($('ul.droplist[collection-name="' + collectionName + '"][search-type="TAB"] li')[0]).trigger('click');
+				},
+
+				// Product 카테고리 필터 초기화
+				initFilterByCategory: function() {
+					var that = searchResultManager;
+
+					$('.result-filter-wrap[collection-name="product"] div.fluid').hide();
+					$('.filter-cont .category-depth2').hide();
+					$('.filter-footer[collection-name="product"][filter-type="category"]').remove();
+					$('.filter-footer[collection-name="product"] ul').empty();
+					$('.result-filter-wrap[collection-name="product"] .category-depth2 input').prop('checked', false);
+					$('.result-filter-wrap[collection-name="product"] .category-depth2 input').removeAttr('selected');
+					$('.result-filter-wrap[collection-name="product"] .btn-filter-depth1.fluid input').prop('checked', false);
+					$('.result-filter-wrap[collection-name="product"] .btn-filter-depth1.fluid input').removeAttr('selected');
+					$('.result-filter-wrap[collection-name="product"] .btn-filter-depth1.fixed input').prop('checked', false);
+					$('.result-filter-wrap[collection-name="product"] .btn-filter-depth1.fixed input').removeAttr('selected');
+					$('.result-filter-wrap[collection-name="product"] .btn-filter-depth1.changeable input').prop('checked', false);
+					$('.result-filter-wrap[collection-name="product"] .btn-filter-depth1.changeable input').removeAttr('selected');
+
+					$('.result-filter-wrap[collection-name="product"] .btn-filter-depth1.changeable').removeAttr('selected');
+
+					that.eventListener.initPriceSlider();
+					that.filterProductQuery      = undefined;
+					that.isFilter1stSet          = undefined;
+					that.minPrice                = '';
+					that.maxPrice                = '';
+					that.isSliderClicked         = false;
+					that.isSliderClickedForEvent = false;
+				},
+				isCategoryNotSelected: function() {
+					var that = searchResultManager;
+
+					if ( $('.category-filter input:checked').length == 0 ) {
+						that.isCategoryNotSelected = true;
+						return;
+					}
+					that.isCategoryNotSelected = false;
+				},
+				// 제품 카테고리 1Depth 필터 선택
+				filterProductSearch1Depth: function(e) {
+					var that                    = searchResultManager
+							, $target                 = $(e.target)
+							, $filterUl               = $target.parent().parent()
+							, filterType              = $filterUl.attr('filter-type')
+							, filterName              = $filterUl.attr('filter-name')
+							, filterValue             = $target.attr('code')
+							, appendingText           = $target.next().text()
+							, isChecked               = $target.attr('checked')
+							, $filterFooterList       = $('.filter-footer[collection-name="product"] li[filter-type="' + filterType + '"]')
+							, filterFooterFilterValue = $filterFooterList.attr('target-value')
+							, collectionName          = 'product';
+
+					// 이미 선택한 category인 경우
+					if ( filterValue == filterFooterFilterValue ) {
+						$('.filter-footer[collection-name="product"] li[filter-type="' + filterType + '"][target-value="' + filterValue + '"] button.btn-delete').trigger('click');
+						return;
+					}
+
+					that.eventListener.initFilterByCategory();
+					that.isFilter1stSet        = undefined;
+					that.isFilterSelected      = true;
+					that.isCategoryNotSelected = false;
+
+					that.eventListener.setBtnResetDisabled(collectionName);
+					that.setFilterProductQuery(searchConstants.filter.product.CATEGORY_L, filterName + ':' + filterValue);
+
+					$('.filter-cont .category-depth2 li:not([code="' + filterValue + '"])').hide();
+					$('.filter-cont .category-depth2 li[code="' + filterValue + '"]').show();
+					$('.filter-cont .category-depth2').show();
+
+					var $appendingTarget = $(that.eventListener.filterAppendingHtml(filterType, filterValue, appendingText, 'fixed'));
+					$appendingTarget.on('click', 'button.btn-delete', function(e) {
+						that.eventListener.deleteProductBtnFilter(e);
+					});
+					$('.filter-footer[collection-name="product"] ul').append($appendingTarget);
+
+					$($('ul.droplist[collection-name="' + collectionName + '"][search-type="TAB"] li')[0]).trigger('click');
+				},
+
+				// 제품 카테고리 2Depth 필터 선택
+				filterProductSearch2Depth: function(e) {
+					var that              = searchResultManager
+							, $target           = $(e.target)
+							, $filterUl         = $target.parent().parent()
+							, filterType        = $filterUl.attr('filter-type')
+							, filterName        = $filterUl.attr('filter-name')
+							, $filterDiv        = $('div.item[filter-name="' + filterName +'"]')
+							, filterValue       = $target.attr('code')
+							, appendingText     = $target.next().text()
+							, isSelected        = $target.attr('selected')
+							, $fixedFilter      = $('div.btn-filter-depth1.fixed');
+
+					$('.btn-filter-depth1[collection-name="product"].fluid input').prop('checked', false);
+					$('.btn-filter-depth1[collection-name="product"].fluid input').removeAttr('selected');
+					$('.filter-footer[collection-name="product"] li.fluid').remove();
+
+					$('.btn-filter-depth1[collection-name="product"].changeable input').prop('checked', false);
+					$('.btn-filter-depth1[collection-name="product"].changeable input').removeAttr('selected');
+					$('.filter-footer[collection-name="product"] li.changeable').remove();
+
+					that.isFilterSelected = true;
+					that.removeFilterProductQueryByKey(searchConstants.filter.product.CATEGORY_L, searchConstants.filter.product.CATEGORY_M);
+
+					if ( isSelected != undefined || isSelected ) {
+						$target.removeAttr('selected');
+						if ( $filterUl.find('input:checked').length == 0 ) {
+							$('.btn-filter-depth1[collection-name="product"].fluid').hide();
+							that.isFilter1stSet = undefined;
+						}
+						$('.filter-footer[collection-name="product"] li[filter-type="' + filterType + '"][target-value="' + filterValue + '"] button.btn-delete').trigger('click');
+						return;
+					}
+
+					$('.btn-filter-depth1[collection-name="product"].fixed').removeAttr('selected');
+					that.isFilter1stSet = 'Y';
+					that.eventListener.setBtnResetDisabled('product');
+					that.eventListener.filterSearchCommonBtnAppend($target, filterType, filterValue, appendingText, 'fixed');
+					that.setFilterProductQuery(searchConstants.filter.product.CATEGORY_M, filterName + ':' + filterValue);
+
+					$filterDiv.attr('selected', 'selected');
+					$($('ul.droplist[collection-name="product"][search-type="TAB"] li')[0]).trigger('click');
+				},
+
+				// 제품 카테고리 2Depth 하위 필터 선택
+				filterProductSearch2DepthFluid: function(e) {
+					var that          = searchResultManager
+							, $target       = $(e.target)
+							, $filterUl     = $target.parent().parent()
+							, filterType    = $filterUl.attr('filter-type')
+							, filterName    = $filterUl.attr('filter-name')
+							, $filterDiv    = $('div.item[filter-name="' + filterName +'"]')
+							, filterValue   = $target.attr('code')
+							, appendingText = $target.next().text()
+							, isSelected    = $target.attr('selected');
+
+					that.isFilterSelected = true;
+
+					if ( isSelected != undefined || isSelected ) {
+						$target.removeAttr('selected');
+						$('.filter-footer[collection-name="product"] li[filter-type="' + filterType + '"][target-value="' + filterValue + '"] button.btn-delete').trigger('click');
+						return;
+					}
+
+					that.eventListener.filterSearchCommonBtnAppend($target, filterType, filterValue, appendingText, 'fluid');
+					that.setFilterProductQuery(filterName, filterName + ':' + filterValue);
+
+					$filterDiv.attr('selected', 'selected');
+					$($('ul.droplist[collection-name="product"][search-type="TAB"] li')[0]).trigger('click');
+				},
+
+				// 체크박스 필터 선택
+				filterSearchFixedCheckbox: function(e, collectionName) {
+					var that          = searchResultManager
+							, $target       = $(e.target)
+							, $filterUl     = $target.parent().parent()
+							, filterType    = $filterUl.attr('filter-type')
+							, filterName    = $filterUl.attr('filter-name')
+							, $filterDiv    = $('div.item[filter-name="' + filterName +'"]')
+							, filterValue   = $target.attr('code')
+							, appendingText = $target.next().text()
+							, isSelected    = $target.attr('selected');
+
+					that.isFilterSelected = true;
+
+					if ( isSelected != undefined || isSelected ) {
+						$target.removeAttr('selected');
+						$('.filter-footer[collection-name="' + collectionName + '"] li[filter-type="' + filterType + '"][target-value="' + filterValue + '"] button.btn-delete').trigger('click');
+						return;
+					}
+
+					var $appendingTarget = $(that.eventListener.filterAppendingHtml(filterType, filterValue, appendingText, 'changeable'));
+
+					that.eventListener.setBtnResetDisabled(collectionName);
+					that.eventListener.isCategoryNotSelected();
+					$target.attr('selected', 'selected');
+
+					if ( collectionName == 'product' ) {
+						that.setFilterProductQuery(filterName, filterName + ':' + filterValue);
+
+						$appendingTarget.on('click', 'button.btn-delete', function(e) {
+							that.eventListener.deleteProductBtnFilter(e, collectionName);
+						});
+
+					} else {
+						that.setFilterQuery(filterValue);
+						$appendingTarget.on('click', 'button.btn-delete', function(e) {
+							that.eventListener.deleteBtnFilter(e, collectionName);
+						});
+					}
+
+					$('.filter-footer[collection-name="' + collectionName + '"] ul').append($appendingTarget);
+					$($('ul.droplist[collection-name="' + collectionName + '"][search-type="TAB"] li')[0]).trigger('click');
+
+					$filterDiv.attr('selected', 'selected');
+				},
+
+				// 라디오 버튼 필터 선택
+				filterSearchFixedRadioButton: function(e, collectionName) {
+					var that                    = searchResultManager
+							, $target                 = $(e.target)
+							, $filterUl               = $target.parent().parent()
+							, filterType              = $filterUl.attr('filter-type')
+							, filterName              = $filterUl.attr('filter-name')
+							, filterValue             = $target.attr('code')
+							, appendingText           = $target.next().text()
+							, $filterFooterList       = $('.filter-footer li[filter-type="' + filterType + '"]')
+							, filterFooterFilterValue = $filterFooterList.attr('target-value') ;
+
+					that.isFilterSelected = true;
+
+					if ( filterValue == filterFooterFilterValue ) {
+						$filterFooterList.find('button.btn-delete').trigger('click');
+						return;
+					}
+
+					var $deleteTarget           = $('.filter-footer[collection-name="'+ collectionName + '"] li[filter-type="' + filterType + '"]')
+							, deleteTargetFilterType  = $deleteTarget.attr('filter-type')
+							, deleteTargetFilterValue = $deleteTarget.attr('target-value')
+							, $appendingTarget        = $(that.eventListener.filterAppendingHtml(filterType, filterValue, appendingText, 'fixed'));
+
+					that.eventListener.setBtnResetDisabled('product');
+					that.eventListener.isCategoryNotSelected();
+					$target.attr('selected', 'selected');
+
+					if ( collectionName == 'product' ) {
+						if ( $deleteTarget.length > 0 ) {
+							that.removeFilterProductQuery(filterName, filterName + ':' + deleteTargetFilterValue);
+							$deleteTarget.remove();
+						}
+
+						that.setFilterProductQuery(filterName, filterName + ':' + filterValue);
+
+						$appendingTarget.on('click', 'button.btn-delete', function(e) {
+							that.eventListener.deleteProductBtnFilter(e, collectionName);
+						});
+
+					} else {
+						if ( $deleteTarget.length > 0 ) {
+							that.removeFilterQuery(deleteTargetFilterValue);
+							$deleteTarget.remove();
+						}
+
+						that.setFilterQuery(filterValue);
+						$appendingTarget.on('click', 'button.btn-delete', function(e) {
+							that.eventListener.deleteBtnFilter(e, collectionName);
+						});
+					}
+
+					$('.filter-footer[collection-name="' + collectionName + '"] ul').append($appendingTarget);
+					$($('ul.droplist[collection-name="' + collectionName + '"][search-type="TAB"] li')[0]).trigger('click');
+				},
+
+				// 공통 필터 버튼 이벤트
+				filterSearchCommonBtnAppend: function($target, filterType, filterValue, appendingText, classType) {
+					var that = searchResultManager
+							, collectionName = 'product'
+							, $appendingTarget = $(that.eventListener.filterAppendingHtml(filterType, filterValue, appendingText, classType));
+
+					$target.attr('selected', true);
+					$appendingTarget.on('click', 'button.btn-delete', function(e) {
+						that.eventListener.deleteProductBtnFilter(e);
+					});
+					$('.filter-footer[collection-name="' + collectionName + '"] ul').append($appendingTarget);
+				},
+
+				// 가격 필터 초기화
+				initPriceSlider: function() {
+					var that            = searchResultManager
+							, $uiSlider       = $('.ui-slider-range.ui-widget-header')
+							, $uiSliderCircle = $('#sliderWrapper span')
+							, priceRange      = $('.box-range .price-range')
+							, rangePrice      = $('.box-range .range-price');
+
+					$uiSlider.css({'left': '0%', 'width': '100%'});
+					$($uiSliderCircle[0]).css('left', '0%');
+					$($uiSliderCircle[1]).css('left', '100%');
+
+					searchApp.priceRange(Number(that.minPrice), Number(that.maxPrice));
+				},
+
+				// 가격 변경시 이벤트
+				filterPriceMouseDown: function(e) {
+					var that          = searchResultManager
+							, filterType    = 'price'
+							, minPrice      = $('.range-price span.min-range').text()
+							, maxPrice      = $('.range-price span.max-range').text()
+							, appendingText = minPrice + ' ~ ' + maxPrice;
+
+					if ( !that.isSliderClickedForEvent ) {
+						return;
+					}
+
+					that.isSliderClicked         = true;
+					that.isSliderClickedForEvent = false;
+					that.isFilterSelected        = true;
+
+					searchResultManager.minPrice = minPrice.replace(/,/gi, '');
+					searchResultManager.maxPrice = maxPrice.replace(/,/gi, '');
+					$(".ui-slider-range").attr("data-omni",searchResultManager.minPrice+"-"+searchResultManager.maxPrice);
+
+					if ( $('.filter-footer li').length == 0 && $('.filter-footer li[filter-type="' + filterType + '"]').length == 0) {
+						$('.filter-footer[collection-name="product"] .btn-filter-reset').removeAttr('disabled');
+					}
+					that.eventListener.isCategoryNotSelected();
+					$('.filter-footer[collection-name="product"] li[filter-type="' + filterType + '"]').remove();
+
+					var $appendingTarget = $(that.eventListener.filterAppendingHtml(filterType, '', appendingText, 'fixed'));
+					$appendingTarget.on('click', 'button.btn-delete', function(e) {
+						var that           = searchResultManager
+								, $target        = $(e.target)
+								, $li            = $target.parent()
+								, filterType     = $li.attr('filter-type')
+								, filterValue    = $li.attr('target-value')
+								, $filterTarget  = $('.filter-cont ul[filter-type="' + filterType + '"] input[code="' + filterValue + '"')
+								, filterName     = $('.filter-cont ul[filter-type="' + filterType + '"]').attr('filter-name')
+								, collectionName = 'product';
+
+						that.isSliderClicked         = false;
+						that.isSliderClickedForEvent = false;
+						$li.remove();
+						$filterTarget.prop('checked', false);
+						$filterTarget.removeAttr('selected');
+
+						if ( $('.filter-footer[collection-name="' + collectionName + '"] li').length == 0 ) {
+							$('.btn-filter-reset').attr('disabled', 'disabled');
+						}
+
+						that.eventListener.initPriceSlider();
+						$($('ul.droplist[collection-name="' + collectionName + '"][search-type="TAB"] li')[0]).trigger('click');
+					});
+
+					$('.filter-footer[collection-name="product"] ul').append($appendingTarget);
+					$($('ul.droplist[collection-name="product"][search-type="TAB"] li')[0]).trigger('click');
+				},
+
+				// 필터 초기화 버튼 disabled 설정
+				setBtnResetDisabled: function(collectionName) {
+					var $btnReset = $('.filter-footer[collection-name="' + collectionName +'"] .btn-filter-reset');
+
+					if ( $('.filter-footer[collection-name="' + collectionName +'"] li').length > 0 ) {
+						$btnReset.attr('disabled');
+						return;
+					}
+					$btnReset.removeAttr('disabled');
+				},
+
+				// 필터 초기화 버튼 클릭 이벤트
+				btnFilterReset: function(e, collectionName) {
+					var that    = searchResultManager
+							, $target = $(e.target);
+
+					if ( $target.attr('disabled') == 'disabled' ) {
+						return;
+					}
+					$target.attr('disabled', 'disabled');
+					if ( collectionName == 'product' ) {
+						that.eventListener.initFilterByCategory();
+					} else {
+						$('.filter-footer[collection-name="' + collectionName +'"] ul').empty();
+					}
+
+					that.filterQueryList  = undefined;
+					that.isFilter1stSet   = undefined;
+					that.isFilterSelected = undefined;
+
+					$('.result-filter-wrap[collection-name="' + collectionName + '"] input:checked').prop('checked', false);
+					$('.result-filter-wrap[collection-name="' + collectionName + '"] ul input').removeAttr('selected');
+					$($('ul.droplist[collection-name="' + collectionName + '"][search-type="TAB"] li')[0]).trigger('click');
+				},
+				/* e: filter */
+
+				// URL에 값이 설정되어 들어온 경우
+				triggerTab: function() {
+					var that          = searchResultManager
+							, tabCollection = that.tabCollection
+							, queryParam    = that.getQueryParam();
+
+					switch(tabCollection) {
+						case searchConstants.product.COLLECTION_NAME :
+						case searchConstants.review.COLLECTION_NAME :
+						case searchConstants.event.COLLECTION_NAME :
+						case searchConstants.story.COLLECTION_NAME :
+						case searchConstants.company_info.COLLECTION_NAME :
+						case searchConstants.service.COLLECTION_NAME :
+						case searchConstants.digitalPlaza.COLLECTION_NAME :
+							that.isTabTriggered = true;
+							$('#searchResultTabList a[tab-type="' + tabCollection + '"]').trigger('click');
+
+							// 재검색 시 해당하는 탭이 없는 경우
+							if ( that.isTabTriggered ) {
+								var queryParam = that.getQueryParam()
+										, incl       = queryParam.incl
+										, excl       = queryParam.excl;
+
+								that.setResearchKeywordQueryParam(incl, excl);
+								that.isTabTriggered = undefined;
+							}
+							return;
+
+							// 해당 collection이 없는 경우
+						default:
+							that.setResearchKeywordQueryParam(queryParam.incl, queryParam.excl);
+							return;
+					}
+
+				},
+
+				// TODO. 대표 상품 아닌 경우 체크
+				linkProductContents: function(e) {
+					var $target              = $(e.target)
+							, link                 = $target.attr('link')
+							, that                 = searchResultManager
+							, isRepresentativeLink = 'Y';
+
+					if ( link == undefined ) {
+						var $targetA = $target.closest('a');
+						link = $targetA.attr('link');
+					}
+
+					if ( isRepresentativeLink == 'Y' ) {
+						window.location.href = link;
+						return;
+					}
+
+					that.callAjaxWithoutDim({
+						url         : '/sec/xhr/search//',
+						data        : {
+							goodsNm: 'test'
+						},
+						method      : 'POST',
+						dataType    : 'text',
+						contentType : 'application/x-www-form-urlencoded; charset=UTF-8',
+						done        : function(result) {
+							if ( result.link ) {
+								window.location.href = result.link;
+							}
+						}
+					});
+				},
+
+				// escape 문자 제거
+				replaceKeyword: function(e) {
+					var $target = $(e.target)
+							, keyword = $target.val().replace(/\\/gi, '');
+					$target.val(keyword);
+				},
+
+				// 재검색 이벤트
+				initResearchEventListener: function() {
+					var that = searchResultManager
+							, btnTabSyleId = ".btnTabSyleEvent";
+
+					that.eventListener.initEventListener();
+					that.initAllFilter();
+
+					tabContent('.result-tab-list');
+					dropTab('.search-result-wrap');
+					searchTabContent('.result-tab');
+
+					$(".btn-style-fillbox").on("click" + btnTabSyleId, "a", searchApp.eventListener.btnTabStyle);
+					$(".contents-more").on("click", "a", function(e) {
+						searchApp.eventListener.btnContentsMore(e);
+					});
+					$(document).on("click", ".droplist-button" , function(e) {
+						that.eventListener.dropDownList(e);
+					});
+				},
+				// 전체 Tab 클릭 이벤트
+				initTabAll: function() {
+					searchResultManager.setCurrentUrlWithResearchText();
+
+				},
+
+				/** s: 사이트 별 탭 구분*/
+				initTabForSite: function() {
+					var currentSiteGubunCode = '10';
+
+					// 임직원몰(E-Catalog)인 경우
+					if ( currentSiteGubunCode == '90') {
+						searchResultManager.initTab('product');
+						$('#tabContentProduct').show();
+					}
+				},
+				/** e: 사이트 별 탭 구분*/
+
+				initEventListener: function() {
+					var that = this;
+
+					$('#tabAll').on('click', that.initTabAll);
+					$('.tab-content-all').on('click', 'li.droplist-item', that.sortingAllResult);
+					$('.tab-content-each').on('click', 'ul.tab li.droplist-item', that.sortingTabResult);
+					$('.tab-content-each').on('click', 'ul.sub-tab li.droplist-item', that.sortingSubTabResult);
+					$('.mo-contents-more').on('click', 'a.tab', that.sortingMobileTabResult);
+					$('.mo-contents-more').on('click', 'a.sub-tab', that.sortingMobileSubTabResult);
+					$('.filter-cont').on('click', '.category-filter input', that.filterProductSearch1Depth);
+					$('.filter-cont').on('click', '.category-depth2 input', that.filterProductSearch2Depth);
+					$('.filter-cont').on('click', '.btn-filter-depth1.fluid input', that.filterProductSearch2DepthFluid);
+					$('.filter-cont').on('click', '.btn-filter-depth1.fixed.radio-button input', function(e) {
+						var $target        = $(e.target)
+								, collectionName = $target.parent().attr('collection-name');
+						that.filterSearchFixedRadioButton(e, collectionName);
+					});
+					$('.filter-cont').on('click', '.btn-filter-depth1.fixed.checkbox input', function(e) {
+						var $target        = $(e.target)
+								, collectionName = $target.parent().attr('collection-name');
+						that.filterSearchFixedCheckbox(e, collectionName);
+					});
+					$('.filter-footer').on('click', '.btn-filter-reset', function(e) {
+						var $target        = $(e.target)
+								, collectionName = $target.parent().attr('collection-name');
+						that.btnFilterReset(e, collectionName);
+					});
+
+					$('#inputSearch').on('keyup', that.replaceKeyword);
+					$('#inputSearch-sticy').on('keyup', that.replaceKeyword);
+					$('#searchWithinResults').on('keyup', that.replaceKeyword);
+
+				},
+			},
+
+			// 검색 키워드 전송
+			sendKeywordToAdobe: function() {
+				_satellite.track('search_result');
+			},
+
+			init: function() {
+				var that = this;
+
+				that.eventListener.initEventListener();
+				that.keyword        = '갤럭시탭';
+				that.isBestMatchYn  = '';
+				that.tabCollection  = 'Optional.empty';
+				that.suggestion     = '';
+				that.isMobileYN     = that.isMobileDevice();
+				that.isTabTriggered = undefined;
+			}
+		}
+
+		$(function() {
+			$('html').scrollTop(0);
+		});
+
+		$(document).ready(function () {
+			searchResultManager.init();
+			searchResultManager.eventListener.initTabForSite();
+			searchResultManager.eventListener.triggerTab();
+			searchResultManager.sendKeywordToAdobe();
+		});
+	</script>
+	<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"SJ-28a23671-9d97-49e9-a4be-a5954de254b8","rua.cook":"true","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false","rua.isuxp":"false","rua.texp":"norulematch"}]);</script>
+	<script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="VRZKC-5BSTD-4EWS3-R2J59-B8GYB",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"VRZKC-5BSTD-4EWS3-R2J59-B8GYB",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e="false"=="true"?1:0,t="cookiepresent",n="2jpcswokfm3s4yuk6bzq-f-fbf377702-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,_={"ak.v":"32","ak.cp":"143520","ak.ai":parseInt("293013",10),"ak.ol":"0","ak.cr":13,"ak.ipv":4,"ak.proto":"h2","ak.rid":"61f6e2","ak.r":6740,"ak.a2":e,"ak.m":"x","ak.n":"essl","ak.bpcip":"210.94.41.0","ak.cport":54318,"ak.gh":"61.111.58.46","ak.quicv":"","ak.tlsv":"tls1.2","ak.0rtt":"","ak.csrc":"-","ak.acc":"","ak.t":"1653272691","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==RUdFcOYTXSWtgjGICm+gPm2Z9bEL0ObFDg6o1iJkQbpnYQl7PWT3/KPdNCVG5EfK1TTZ+D2i1RWRy+dUstpmCIbsL5GZJUvaGx86rjELxPJpUHIdSE/fOaOszb3HkPBx2wepgOkyMo4CLqawHtYSIUdQs81s9FVQChkkdKnRO9XVnEt6sZ9SYuFCBaK7f5YSWKuX9SB2xxFRrhlrouQgDmnFZkXKbj7Xvq+dQGgb1DaGUNLmSM+OZY1oUGbiupyVAtCjDDxugg4q7xHt/K6dRThva3NnYmZYlh/82YVUsjh3WrvIDtWVc4SStWn8HZrXIQ0922+bXf8ey7UnLChxp1Td2UdsP9BOTAJGUO+V42VexdsUtYQQxJikXYJobxhD9Mh6svH8ijieAlDriQ+SUl1+AcxiXnav70ciVxRI7Eg=","ak.pv":"2538","ak.dpoabenc":"","ak.tf":i};if(""!==t)_["ak.ruds"]=t;var o={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))_["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(_)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:_,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a("before_beacon",o.av,null,null),a("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script>
+
+	<!-- s: 20220523 gc 추가 -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			GCFront.headerFixed();
+			GCFront.detectScroll2();
+			GCFront.hScroll();
+			GCFront.catOpen();
+			GCFront.gnbOpen();
+			GCFront.btnToggle();
+			GCFront.commonFooter(); //20220602 추가 : footer 스크립트
+		});
+	</script>
+	<!-- e: 20220523 gc 추가 -->
+	<!-- s: 20220517 gc 추가 -->
+    <script type="text/javascript">
+        function popupAlert01() {
+            openLayer('popupAlert01');
+        }
+
+		function popupAlert02() {
+            openLayer('popupAlert02');
+        }
+    </script>
+    <!-- e: 20220517 gc 추가 -->
+	<!-- s: 20220518 gc 추가 -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			GCFront.commonTab();
+		});
+	</script>
+	<!-- e: 20220518 gc 추가 -->
+
+	<!-- s: 20220526 gc 추가 -->
+	<script type="text/javascript">
+		function openCategory() {
+			openLayer('openCategory')
+		}
+		function openKV() {
+			openLayer('openKV')
+		}
+		function openKV2() {
+			openLayer('openKV2')
+		}
+	</script>
+	<!-- e: 20220526 gc 추가 -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVX3V74"
+				  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- s : 스킵 -->
+<div id="skip_content">
+	<a href="#container" class="">본문 바로가기</a>
+</div>
+<!-- e : 스킵 -->
+
+<div id="wrap">
+	<!-- s : 머리글 영역 -->
+	<script>
+		var __ST_GB_CD = "b2c";
+
+		$(document).ready(function(){
+			ts_hostChk('prd');
+			getSessionInfo();
+			getCartCnt();
+			//getCartCntHidden();
+
+			getWritableMyComment();
+
+		});
+		var apiFlag = 0;
+		var clipboard = new ClipboardJS('#lUrl');
+		clipboard.on('success', function(e) {
+			let alertData = {
+				title: ""
+				,content : "링크가 복사되었습니다."
+				,callback : ""
+				,btnText : "확인"
+			};
+			commonAlert(alertData);
+			openLayer('commonAlert');
+		});
+		clipboard.on('error', function(e) {
+			let alertData = {
+				title: ""
+				,content : "다시 시도하여 주십시오."
+				,callback : ""
+				,btnText : "확인"
+			};
+			commonAlert(alertData);
+			openLayer('commonAlert');
+		});
+
+		function getCartList(){
+			var options = {
+				url : '/sec/xhr/order/gnbCartList' ,
+				dataType : "html" ,
+				done : function(data){
+					$(".gnb-cartList").html(data);
+				}
+			}
+			ajax.call(options);
+		}
+
+		// 뒤로가기 시 이벤트
+		$(window).bind("pageshow", function(event){
+			if(event.originalEvent.persisted || window.performance && window.performance.navigation.type == 2){
+				getCartCnt();
+				//getCartCntHidden();
+			}
+		});
+
+		function getSessionInfo() {
+			$.ajax({
+				url : "/sec/xhr/member/getSession"
+				,type : "POST"
+				,success : function(result) {
+					result = JSON.parse(result);
+					if (result.mbrNo == "0") {
+						$("input[name=useLogin]").val("N");
+						$(".link-login i").addClass("ico-people");
+						$(".loginAfter").remove();
+					} else {
+						$("input[name=useLogin]").val("Y");
+						$(".link-login i").addClass("ico-people-logged");
+						$(".loginBefore").remove();
+
+						var htmlMo = "안녕하세요! <span>" + result.mbrNm + "</span>님";
+						var htmlPc = "안녕하세요! " + result.mbrNm + "님";
+						$(".loginAfter .welcomeMsg").html(htmlMo);
+						$(".loginAfter .greet-txt").html(htmlPc);
+					}
+				}
+			});
+		}
+
+		function getCartCnt() {
+			$.ajax({
+				url : "/sec/xhr/order/gnbCartCount"
+				,type : "POST"
+				,success : function(result) {
+					if (result > 0) {
+						$('.cart-inner-count').show();
+						$('.cart-inner-count').text(result);
+					}
+					else {
+						$('.cart-inner-count').hide();
+					}
+				}
+			});
+		}
+
+		function getApiMemid(sessionInfo) {
+			var jsonResult = JSON.stringify(sessionInfo);
+			$.ajax({
+				url : "/sec/xhr/member/getMemberShipNo"
+				, type : "POST"
+				, data : { mbrNo : sessionInfo.mbrNo, loginId : sessionInfo.loginId}
+				, success : function(result) {
+					apiFlag = result.updateCnt;
+				}
+			});
+		}
+
+		function getWritableMyComment() {
+			$.ajax({
+				url : "/sec/xhr/review/loadWritableMyCommentListCount"
+				, type : "POST"
+				, dataType : "json"
+				, contentType : "application/json; charset=utf-8"
+				, success : function(result) {
+					$('.writableCnt').text(result.cmntCnt);
+				}
+				, error : function(request, status, error) {
+
+					// TODO : exception message 처리
+					//alert("나의 작성 가능 상품평 수량 조회 Code : " + request.status);
+					// alert("Code : "+ request.status + "\n" + "message : " + request.responseText);
+					// 공백
+					// alert("Error : " + error);
+				}
+			});
+		}
+	</script>
+	<input type="hidden" id="loginYn" value="" />
+	<!-- s : 20220617 gc 추가 : GNB 교체-->
+	<header id="header" class="header">
+		<div class="s-inner">
+			<a href="/" class="logo">
+				<h1>갤럭시 캠퍼스 스토어</h1>
+				<!--<img src="../_images/common/logo_samsung_black.svg" alt="삼성" />-->
+			</a>
+			<!-- s : 20220518 gc 추가 : 메뉴변경 -->
+			<div class="new-gnb">
+				<nav class="gnb">
+					<ul class="gnb1depth">
+						<li>
+							<a href="javascript:;" aria-controls="700000115-menu" area-selected="false" data-omni="sb">학교게시판</a>
+						</li>
+						<li>
+							<a href="javascript:;" aria-controls="700000114-menu" area-selected="false" data-omni="fb">자유게시판</a>
+						</li>
+						<li>
+							<a href="javascript:;" aria-controls="700000113-menu" aria-selected="false" data-omni="promotion">이벤트</a>
+						</li>
+						<li>
+							<a href="javascript:;" aria-controls="700000112-menu" class="depth2_open" aria-selected="false" data-omni="Product">제품</a>
+							<div class="gnb2depth">
+								<div class="inner">
+									<ul class="list">
+										<li>
+											<a href="#"></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!-- s: markup 추가 0713  모바일용 메뉴 추가 -->
+					<input type="hidden" name="useLogin" id="useLogin" value="" />
+
+					<ul class="mob-onlyMenu loginBefore">
+						<li><a href="" onclick="NetFunnel_Action({action_id:'b2c_gnb_login'},'/sec/member/indexLogin/?returnUrl=/sec/');return false;" data-omni='login'>로그인</a></li>
+						<li><a href="/mypage/order/indexDeliveryList/" data-omni='orders'>주문/배송 조회</a></li>
+						<li><a href="/customer/myDigitalReservationSearch/" data-omni='store reservation'>매장상담예약신청 조회</a></li>
+						<li><a href="" onclick="NetFunnel_Action({action_id:'b2c_gnb_login'},'/sec/member/indexLogin/?returnUrl=/sec/mypage/coupon/indexMyCoupon/');return false;" data-omni='login'>쿠폰존</a></li>
+					</ul>
+
+					<ul class="mob-onlyMenu loginAfter">
+						<li class="welcomeMsg"></li>
+						<li><a href="/membership/point/" data-omni='my account'>나의 정보</a></li>
+						<li><a href="/mypage/review/indexMyReview/" data-omni='my comment'>상품평 작성 : <span class="cmt-num writableCnt"></span> 건</a></li>
+						<li><a href="/mypage/order/indexDeliveryList/" data-omni='orders'>주문/배송 조회</a></li>
+						<li><a href="/mypage/coupon/indexMyCoupon/" data-omni='coupon zone'>쿠폰존</a></li>
+						<li><a href="/member/logout/" data-omni='logout'>로그아웃</a></li>
+					</ul>
+					<!-- e: markup 추가 0713  모바일용 메뉴 추가 -->
+
+				</nav>
+				<button type="button" class="gnb-back" data-omni="gnb:back">이전 메뉴 보기</button>
+				<button type="button" class="gnb-close" data-omni="gnb:close">GNB 닫기</button>
+			</div>
+			<!-- e : 20220518 gc 추가 : 메뉴변경 -->
+			<!-- s : 20220617 gc 추가 : 2depth메뉴 추가 -->
+			<div class="nav_2depth_wrap is_pc">
+				<div class="nav_2depth hscroll-wrap">
+					<ul class="hscroll">
+						<li><a href="javascript:;" class="nav_item">스마트폰</a></li>
+						<li><a href="javascript:;" class="nav_item">워치</a></li>
+						<li><a href="javascript:;" class="nav_item">버즈</a></li>
+						<li><a href="javascript:;" class="nav_item">태블릿</a></li>
+						<li><a href="javascript:;" class="nav_item">PC</a></li>
+						<li><a href="javascript:;" class="nav_item">프린터</a></li>
+						<li><a href="javascript:;" class="nav_item">모니터</a></li>
+						<li><a href="javascript:;" class="nav_item">메모리&스토리지</a></li>
+						<li><a href="javascript:;" class="nav_item">모바일 액세서리</a></li>
+						<li><a href="javascript:;" class="nav_item">PC 액세서리</a></li>
+						<li><a href="javascript:;" class="nav_item">라이프스타일가전</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- e : 20220617 gc 추가 : 2depth메뉴 추가 -->
+			<div class="header-right gnbMenu">
+				<ul>
+					<li>
+						<a href="javascript:;" id="link-search" class="link-search" data-omni="search"><i class="icon ico-large ico-zoom">검색</i></a>
+					</li>
+					<li>
+						<a href="javascript:;" onclick="getCartList()" aria-controls="cart-menu" aria-selected="false" class="link-cart" data-omni="cart"><i class="icon ico-large ico-cart">장바구니</i>
+							<span class="cart-inner-count"></span>
+						</a>
+						<div class="s-gnbSubWrap textSubWrap cartMenu" id="cart-menu">
+							<div class="gnbSubRound">
+								<div>
+									<ul class="gnb-cartList">
+									</ul>
+									<div class="btn-box">
+										<button type="button" class="btn btn-d btn-type2" onclick="NetFunnel_Action({action_id :'b2c_cart_view'},function(ev, ret){location.href='/sec/cart/';});" data-omni="cart">장바구니 보기</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<input type="hidden" name="useLogin" id="useLogin" value="" />
+
+						<a href="javascript:;" aria-controls="login-menu" aria-selected="false" class="link-login" data-omni="login"><i class="icon ico-large ico-people">로그인</i></a>
+						<div class="s-gnbSubWrap textSubWrap loginMenu" id="login-menu">
+							<div class="gnbSubRound loginBefore">
+								<div>
+									<dl>
+										<dt><a href="" onclick="NetFunnel_Action({action_id:'b2c_gnb_login'},'/sec/member/indexLogin/?returnUrl=/sec/');return false;" data-omni='login'>로그인</a></dt>
+										<dt><a href="/mypage/order/indexDeliveryList/" data-omni='orders'>주문/배송조회</a></dt>
+										<dt><a href="/customer/myDigitalReservationSearch/" data-omni='store reservation'>매장상담 예약 신청 조회</a></dt>
+										<dt><a href="" onclick="NetFunnel_Action({action_id:'b2c_gnb_login'},'/sec/member/indexLogin/?returnUrl=/sec/mypage/coupon/indexMyCoupon/');return false;" data-omni='login'>쿠폰존</a></dt>
+									</dl>
+								</div>
+							</div>
+							<div class="gnbSubRound loginAfter">
+								<div>
+									<dl>
+										<dt><span class="greet-txt"></span></dt>
+										<dd><a href="/membership/point/" data-omni='my account'>나의 정보</a></dd>
+										<dd><a href="/mypage/review/indexMyReview/" data-omni='my comment'>상품평 작성 : <span class="cmt-num writableCnt"></span> 건</a></dd>
+										<dd><a href="/mypage/order/indexDeliveryList/" data-omni='orders'>주문/배송 조회</a></dd>
+										<dd><a href="/mypage/coupon/indexMyCoupon/" data-omni='coupon zone'>쿠폰존</a></dd>
+										<dd><a href="/member/logout/" data-omni='logout'>로그아웃</a></dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;" class="link-m-nav" data-omni="gnb:open"><i class="icon ico-large ico-nav">전체메뉴</i></a>
+					</li>
+				</ul>
+			</div>
+			<!-- s : 20220512 gc 추가 -->
+			<div class="util_box">
+				<a href="gc-alarm.html" class="btn-link">
+					<i class="gc_icon i-alarm-ivt">알림</i>
+				</a>
+			</div>
+			<!-- e : 20220512 gc 추가 -->
+		</div>
+	</header>
+	<!-- e : 20220617 gc 추가 : GNB 교체-->
+
+	<!-- s : 통합검색 -->
+	<script type="text/javascript">
+		var searchInputManager = {
+			isMobileDevice: function() {
+				var that = this,
+						winW = $(window).width();
+				if ( winW > 800 ) {
+					return 'N';
+				} else {
+					return 'Y';
+				}
+			},
+			init: function() {
+				var that = searchInputManager;
+				$.cookie.json = true;
+				$.cookie.data = {
+					SEARCH_HISTORY : 'sh-b2c',
+					SEARCH_MAX_SIZE: 10,
+					option: {
+						expires: 30,
+						path: '/'
+					}
+				};
+
+				that.$appendingTarget = {
+					searchHistory: $('#searchkeywordRecent ul.list'),
+					popular: $('#searchkeywordPopular ul.list'),
+					makeTime: $('#makeTime'),
+					autoComplete: $('#searchAuto ul.list')
+				};
+
+				that.cookieName = $.cookie.data.SEARCH_HISTORY;
+				that.isMobileYN = that.isMobileDevice();
+			},
+			searchHistoryTemplate: function(keyword) {
+				return {
+					keyword: keyword,
+					date: searchDatetimestampToString(new Date())
+				};
+			},
+			getKeywordList: function(cookieName) {
+				var searchKeywordList = new Array()
+						, dataList = $.cookie(cookieName).data;
+
+				if (!dataList || '' == dataList || undefined == dataList) {
+					return searchKeywordList;
+				}
+
+				$.each(dataList, function (idx, element) {
+					searchKeywordList.push(element.keyword);
+				});
+
+				return searchKeywordList;
+			},
+			saveSearchHistory: function(keyword) {
+				var that = searchInputManager
+						, $cookie = $.cookie
+						, cookieValue = $cookie(that.cookieName)
+						, dataList = null;
+
+				if ( cookieValue == undefined ) {
+					dataList = [ that.searchHistoryTemplate(keyword) ];
+				} else {
+					if ( cookieValue.length == 0 ) {
+						dataList = [ that.searchHistoryTemplate(keyword) ];
+
+					} else {
+						dataList = cookieValue.data;
+
+						if($.inArray(keyword, that.getKeywordList(that.cookieName)) >= 0) {
+							return;
+						}
+
+						if(dataList.length >= $cookie.data.SEARCH_MAX_SIZE) {
+							dataList.splice(0, 1);
+						}
+						dataList.push(that.searchHistoryTemplate(keyword));
+					}
+				}
+
+				$cookie(that.cookieName, {'data': dataList} , $cookie.data.option);
+			},
+			getSearchHistory: function() {
+				var cookieValue = $.cookie(searchInputManager.cookieName);
+
+				if (undefined != cookieValue) {
+					return cookieValue;
+				}
+			},
+			getSearchDate: function(keyword) {
+				var date = ''
+						, that = searchInputManager
+						, cookieValue = $.cookie(that.cookieName)
+						, searchHistoryList = that.getSearchHistory();
+
+				if ( '' == searchHistoryList || searchHistoryList == undefined || cookieValue == undefined) {
+					return date;
+				}
+
+				var dataList = cookieValue.data;
+
+				var idx = -1;
+				for (var i = 0; i < dataList.length; ++i) {
+					var keywordInList = dataList[i].keyword;
+
+					if ( keywordInList != undefined ) {
+						if (keywordInList.toLocaleLowerCase() == keyword.toLocaleLowerCase()) {
+							idx = i;
+							break;
+						}
+					}
+				}
+				if ( idx > -1 ) {
+					date = dataList[idx].date;
+				}
+
+				return date;
+			},
+			drawSearchHistory: function() {
+				var that = searchInputManager
+						, $cookie = $.cookie
+						, cookieValue = $cookie(that.cookieName);
+
+				if ( undefined == cookieValue ) {
+					return;
+				} else if ( cookieValue.length == 0 ) {
+					return;
+				}
+
+				var dataList = cookieValue.data
+						, template = '';
+
+				for( var i = dataList.length-1 ; i >= 0; i--) {
+					var element = dataList[i], keyword = element.keyword;
+					template += '<li class="item">';
+					template += '<a href="javascript:void(0);" class="link">' + keyword + '</a>';
+					template += '<button type="button" class="btn-delete delete" keyword="' + keyword + '" onclick="searchInputManager.clearSearchHistory(this)">';
+					template += '<span class="blind">삭제</span>';
+					template += '</button>';
+					template += '</li>';
+				}
+				that.$appendingTarget.searchHistory.html(template);
+				that.$appendingTarget.searchHistory.off('click').on('click', 'a', function(e) {
+					that.getSearchResult($(e.target).text());
+					chat_open4($(e.target).text());
+				});
+
+			},
+			clearSearchHistory: function(element) {
+				var that = searchInputManager
+						, $element = $(element)
+						, $cookie = $.cookie;
+
+				if ($element.hasClass('delete-all')) {
+					$.removeCookie( that.cookieName , { path: $cookie.data.option.path });
+					that.$appendingTarget.searchHistory.empty();
+
+				} else if ($element.hasClass('delete')) {
+					var selectedKeyword = $element.attr('keyword')
+							, cookieValue = $cookie(that.cookieName)
+							, dataList = cookieValue.data;
+
+					var idx = -1;
+					for (var i = 0; i < dataList.length; ++i) {
+						var keyword = dataList[i].keyword;
+						if ( keyword == undefined ) {
+							keyword = 'undefined';
+						}
+
+						if (keyword == selectedKeyword) {
+							idx = i;
+							break;
+						}
+					}
+					if ( idx > -1 ) {
+						dataList.splice(idx, 1);
+						$cookie(that.cookieName, {'data': dataList} , $cookie.data.option);
+
+						$element.parent().remove();
+					}
+				}
+			},
+			callAjax: function(options) {
+				$.ajax({
+					url: options.url,
+					type: options.type,
+					data: options.data
+
+				}).done(
+						function(data, textStatus, jqXHR) {
+							if (data.exCode != null && data.exCode !== "") {
+								if (options.fail !== undefined) {
+									options.fail();
+								}
+								let alertData = {
+									title: "alert",
+									content: data.exMsg
+								};
+								commonAlert(alertData);
+								openLayer('commonAlert');
+							} else {
+								options.done(data);
+							}
+						}).fail(function(jqXHR, textStatus, errorThrown) {
+					if (options.fail !== undefined) {
+						options.fail();
+					}
+					if (jqXHR.status !== 0) {
+						ajax.error(jqXHR.status, jqXHR.responseText);
+					}
+				}).always(function() {
+				}).then(function(data, textStatus, jqXHR) {
+				});
+			},
+
+			getRecommendKeyword: function(callback) {
+				var that = searchInputManager;
+				that.callAjax(
+						{
+							url: '/sec/xhr/search/recommendkeyword/',
+							type: 'GET',
+							done: function(result) {
+								that.recommendKeyword = result.recommendKeyword;
+
+								if ( callback != undefined ) {
+									callback();
+								}
+							}
+						}
+				);
+			},
+			setRecommendKeyword: function() {
+				var that = searchInputManager;
+
+				if (that.recommendKeyword == undefined) {
+					that.getRecommendKeyword(that.setRecommendKeywordCallback);
+					return;
+				}
+				that.setRecommendKeywordCallback();
+			},
+
+			setRecommendKeywordCallback: function() {
+				var that = searchInputManager;
+				//$('#unifiedInputSearch').attr('placeholder', that.recommendKeyword); // 20200917 삭제
+				$('.inp-placeholder').text(that.recommendKeyword); // 20200917 추가
+			},
+
+			getPopularKeyword: function() {
+				var that = searchInputManager;
+				that.callAjax(
+						{
+							url: '/sec/xhr/search/popword/',
+							type: 'POST',
+							data: new wnAddonParamVo('', 'popword', 'D', 'B2C_SearchWord', 'json', ''),
+							done: function(result) {
+								var popwordResult = result.popwordResult;
+								if ( popwordResult.Data == undefined ) {
+									return;
+								}
+
+								var queryList = popwordResult.Data.Query
+										, popularList = '';
+
+								$.each(queryList, function(idx, element) {
+									var order = idx + Number(1);
+									popularList += '<li class="item">'
+											+ '<span class="rank">' + order + '</span>'
+											+ '<a href="javascript:void(0);" class="link">' + element.content + '</a>';
+									if ( element.updown == 'U' ) {
+										popularList += '<span class="change arr-up"><span class="blind">순위상승</span></span>';
+									} else if ( element.updown == 'D' ) {
+										popularList += '<span class="change arr-down"><span class="blind">순위하락</span></span>';
+									} else if ( element.updown == 'C' ) {
+										popularList += '<span class="change arr-same"><span class="blind">순위유지</span></span>';
+									}
+									popularList += '</li>';
+								});
+
+								that.$appendingTarget.popular.off('click').on('click', 'a', function(e) {
+									that.getSearchResult($(e.target).text());
+									chat_open4($(e.target).text());
+								});
+								that.$appendingTarget.popular.empty();
+								that.$appendingTarget.makeTime.empty();
+
+								that.$appendingTarget.popular.append(popularList);
+								that.$appendingTarget.makeTime.append(popwordResult.Data.MakeTime + ' 기준');
+							}
+						}
+				);
+			},
+			getSearchInputAutoComplete: function(keyword) {
+				var that = searchInputManager;
+				keyword = keyword.trim();
+
+				that.callAjax(
+						{
+							url: '/sec/xhr/search/autocom/',
+							type: 'POST',
+							data: new wnAddonParamVo(keyword, 'b2c', '', '', 'json', 'fw'),
+							done: function(result) {
+								var template = '';
+								var autoCompleteResultList = result.autoCompleteResult;
+								that.$appendingTarget.autoComplete.empty();
+
+								if ( autoCompleteResultList.length > 0 && autoCompleteResultList != undefined ) {
+									$.each(autoCompleteResultList, function (idx, element) {
+										template += '<li class="item">';
+										template += '<a href="javascript:void(0);" class="link" text="' + element.text + '">';
+										template +=  (element.modified).replace(/\<!HS\>(.*)\<!HE\>/gi, "\<span class=\"key\"\>$1\</span\>");
+										template += '</a>';
+										template += '<span class="date">' + searchInputManager.getSearchDate(element.text) + '</span>';
+										template += '</li>';
+									});
+
+									that.$appendingTarget.autoComplete.html(template);
+
+									that.$appendingTarget.autoComplete.off('click').on('click', 'a', function(e) {
+										if($(e.target).attr('text') != undefined){
+											that.getSearchResult($(e.target).attr('text'));
+											chat_open4($(e.target).attr('text'));
+										}else{
+											that.getSearchResult($(e.target).parent().attr('text'));
+											chat_open4($(e.target).parent().attr('text'));
+										}
+									});
+
+									$('.unified-search-layer.type-keyword').hide();
+									$('.unified-search-layer.type-auto').show();
+
+								} else {
+									$('.unified-search-layer.type-auto').hide();
+									if ( keyword == '' ) {
+										//$('#unifiedInputSearch').attr('placeholder', searchInputManager.recommendKeyword); // 20200917 삭제
+										$('.inp-placeholder').text(that.recommendKeyword); // 20200917 추가
+										$('.unified-search-layer.type-keyword').show();
+									}
+								}
+							}
+						}
+				)
+			},
+
+			getSearchResult: function(keyword, searchResultInputId) {
+				console.log(keyword);
+				keyword = escapeHtml(keyword);
+
+				var that = searchInputManager;
+				keyword = keyword.trim();
+				console.log("@@ keyword1 : " + keyword);
+				keyword = filterAcc(keyword); // 에어컨액세서리
+
+				if ( searchResultInputId != undefined ) {
+					that.searchResultInputId = searchResultInputId;
+				}
+
+				if ( keyword == '' ) {
+					var recommendKeyword = that.recommendKeyword;
+					if ( recommendKeyword == undefined ) {
+						that.getRecommendKeyword(that.getSearchResultNoKeywordCallback);
+					}
+					that.getSearchResultCallback(recommendKeyword);
+					return;
+				}
+				that.getSearchResultCallback(keyword);
+			},
+			getSearchResultNoKeywordCallback: function() {
+				var that = searchInputManager
+						, recommendKeyword = that.recommendKeyword
+						, searchResultInputId = that.searchResultInputId;
+
+				if ( searchResultInputId != undefined ) {
+					$(searchResultInputId).val(recommendKeyword);
+					$(searchResultInputId).attr('placeholder', recommendKeyword);
+				}
+
+				that.getSearchResultCallback(recommendKeyword);
+			},
+			getSearchResultCallback: function(keyword) {
+				console.log("@@ start getSearchResultCallback");
+				var that	   = searchInputManager
+						, isMobileYN = that.isMobileDevice();
+				console.log("@@ keyword : " + keyword);
+				that.saveSearchHistory(keyword);
+				ajax.call({
+					url: '/sec/xhr/search/keywordRedirect?keyword=' + encodeURIComponent(keyword),
+					data: new WNSearchParamVo(keyword, '', '', '', '', '', '', '', '', '', '', '', '', 'b2c', isMobileYN),
+					dataType : 'json',
+					contentType : 'application/x-www-form-urlencoded; charset=UTF-8',
+					done: function(result) {
+						console.log("@@ ajax success");
+						console.log("@@result : " + JSON.stringify(result));
+						//yhj
+						$(".unified-search-input-wrap").removeClass("is-active");
+						$("body").removeClass("is-pc is-mo");
+						$(".unified-search-layer").hide();
+						$("body").removeClass("fixed-scroll");
+						$("#gnbmask").hide();
+						$(".unified-search-input-wrap .inp").val("");
+						$(".unified-search-input-wrap .btn-inp-clear").hide();
+						$(".unified-result-search-wrap .inp").val("");
+						$(".unified-result-search-wrap .btn-inp-clear").hide();
+						$(".inp-placeholder").show();
+						if ( isSecApp() == "true" ) {
+							window.secapp.showAndHideGnb('VISIBLE');
+						}
+
+
+						var keywordRedirect = result.keywordRedirect;
+
+						if (keywordRedirect.totalCount > 0) {
+							window.location.href = keywordRedirect.REDIRECT_URL;
+							return;
+						}
+						var $form = document.createElement("form");
+						$form.setAttribute('charset', 'UTF-8');
+						$form.setAttribute('method', 'POST');
+						$form.setAttribute('action', '/sec/search/searchresult/?keyword=' + encodeURIComponent(keyword));
+
+						var $input = document.createElement('input');
+						$input.setAttribute('type', 'hidden');
+						$input.setAttribute('name', 'isMobileYN');
+						$input.setAttribute('value', searchInputManager.isMobileYN);
+						$form.appendChild($input);
+						document.body.appendChild($form);
+
+						$form.submit();
+					}
+				});
+			}
+		}
+
+		function filterAcc(keyword) {
+			if((keyword.indexOf("에어컨") > -1 || keyword.indexOf("무풍에어컨") > -1) && (keyword.indexOf("액세서리") > -1 || keyword.indexOf("악세서리") > -1 || keyword.indexOf("엑세서리") > -1) ) {
+				keyword = "에어컨액세서리";
+				console.log("@@ keyword2: " + keyword);
+			}
+			return keyword;
+		}
+
+		function escapeHtml (string) {
+			return String(string).replace(/[&<>"'`=\/]/g, function (s) {
+				return entityMap[s];
+			});
+		}
+		var entityMap = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;', '/': '&#x2F;', '`': '&#x60;', '=': '&#x3D;' };
+
+		/* s: APP용 함수 */
+		function isSecApp() {
+			return 'false';
+		}
+
+		function once(func) {
+			var flag
+					, result;
+
+			return function() {
+				if ( flag ) {
+					return result;
+				}
+				flag = true;
+				return result = func.apply(this);
+			}
+		}
+
+		/* s : 20200917 수정 */
+		var searchLinkforApp = once(function() {
+			var that = searchInputManager;
+
+			that.setRecommendKeyword();
+			that.drawSearchHistory();
+			that.getPopularKeyword();
+
+		});
+
+		function searchOpenforApp() { // 20200917 추가
+			searchLinkforApp();
+			headerSearch.eventListener.uinifiedSearchOpen();
+		}
+		/* e : 20200917 수정 */
+
+		/* e: APP용 함수 */
+
+		/* s : 닷컴 웹 검색시 챗봇 검색 연계 구현  jiwon0.id 22.04.26 */
+		function chat_open4(chatbotKeyword) {
+			var birthAge = null;
+			var birthDate = $.cookie("birthDate_1_");
+
+			if(birthDate != 0 && birthDate != null){
+				birthAge = checkAge(birthDate);
+			}
+
+			if(birthAge >= 14 || birthAge == 0 || birthAge == null) {
+				fcTrack('click','floating chat:chat online');
+
+				var keyword = encodeURIComponent(chatbotKeyword);
+				var popupX = (window.screen.width / 2) - (356 / 2);
+				var popupY = (window.screen.height / 2) - (750 / 2);
+
+				window.open('/sec/chatbot/?keyword='+ keyword, '_chatbot4', 'status=no, height=750, width=356, left=' + popupX + ', top=' + popupY + ', screenX=' + popupX + ', screenY= ' + popupY);
+			}
+		}
+		/* e : 닷컴 웹 검색시 챗봇 검색 연계 구현  jiwon0.id 22.04.26 */
+
+		/* s : 만 나이 구하는 함수 @param birthDate : 생년월일  jiwon0.id 22.05.17 */
+		function checkAge(birthDate){
+			const today = new Date(); //현재날짜
+			birthDate = (birthDate + "")
+
+			var age = today.getFullYear() - Number(birthDate.slice(0,4)); 	//나이
+			var mon = (today.getMonth()+1) - Number(birthDate.slice(4,6));	//월
+			//생일 안지났으면 -1
+			if(mon < 0 || (mon === 0 && today.getDate() < Number(birthDate.slice(6,8)))) {
+				age = age -1;
+			}
+			return age;
+		}
+		/* e : 만 나이 구하는 함수 @param birthDate : 생년월일  jiwon0.id 22.05.17 */
+
+		$(document).ready(function() {
+			var that = searchInputManager;
+
+			$('#link-search').on('click', function() {
+				that.setRecommendKeyword();
+				that.drawSearchHistory();
+				that.getPopularKeyword();
+			});
+
+			$('#unifiedInputSearch').on('keyup', function(e) {
+				var $target = $(e.target)
+						, keyword = $target.val().replace(/\\/gi, '');
+				$target.val(keyword);
+
+				that.getSearchInputAutoComplete(keyword);
+			});
+
+			$('#unifiedInputSearch').on('click', function() { //20210324 추가
+				$('.inp-placeholder').hide();
+			});
+
+		});
+
+
+	</script>
+	<!-- s : 통합검색 -->
+	<div class="unified-search-input-wrap">
+		<div class="unified-search-input-inner">
+			<div class="search-box">
+				<label for="unifiedInputSearch" class="blind">통합 검색</label><!-- 20200622 for 값 변경 -->
+				<input type="text" id="unifiedInputSearch" class="inp" onfocus="headerSearch.eventListener.uinifiedSearchInp()"
+					   onkeydown="headerSearch.eventListener.uinifiedSearchChange()">
+				<span class="inp-placeholder"></span><!-- 20200917 추천검색어 추가 -->
+				<button type="button" class="btn-inp-clear" title="삭제"><span class="blind">삭제</span></button><!-- 20200616 삭제 버튼 추가-->
+				<button type="button" class="btn-search chatbot-search" title="검색" id="unifiedSearchButton" onclick="javascript:searchInputManager.getSearchResult($('#unifiedInputSearch').val(), '#unifiedInputSearch')"><span class="blind">검색</span></button>
+			</div>
+		</div>
+
+		<!-- s : 검색레이어 : 최근, 인기-->
+		<div class="unified-search-layer type-keyword" style="display:none">
+			<div class="unified-search-layer-inner"><!-- 20200618 감싸는 태그 unified-search-layer-inner 추가 -->
+				<!-- s: 20220520 gc 추가 : 최근검색어, 인기검색어 목록 -->
+				<div class="layer-cont">
+					<div class="cont-inner box-recent" id="searchkeywordRecent" role="tabpanel">
+						<strong class="tit">최근 검색어</strong>
+						<ul class="list">
+							<li class="item"><a href="javascript:void(0);" class="link">삼성</a><button type="button" class="btn-delete delete" keyword="삼성" onclick="searchInputManager.clearSearchHistory(this)"><span class="blind">삭제</span></button></li>
+						</ul>
+						<div class="etc"><a href="javascript:void(0);" class="btn-delete delete-all" onclick="searchInputManager.clearSearchHistory(this)">최근 검색어 전체 삭제</a></div>
+					</div>
+					<div class="cont-inner box-popular" id="searchkeywordPopular" role="tabpanel">
+						<strong class="tit">인기 검색어</strong>
+						<ul class="list">
+							<li class="item"><span class="rank">1</span><a href="javascript:void(0);" class="link">워치4</a><span class="change arr-same"><span class="blind">순위유지</span></span></li>
+							<li class="item"><span class="rank">2</span><a href="javascript:void(0);" class="link">공동구매</a></li>
+							<li class="item"><span class="rank">3</span><a href="javascript:void(0);" class="link">버즈2</a><span class="change arr-same"><span class="blind">순위유지</span></span></li>
+							<li class="item"><span class="rank">4</span><a href="javascript:void(0);" class="link">버즈</a><span class="change arr-down"><span class="blind">순위하락</span></span></li>
+							<li class="item"><span class="rank">5</span><a href="javascript:void(0);" class="link">갤럭시 S22</a><span class="change arr-down"><span class="blind">순위하락</span></span></li>
+							<li class="item"><span class="rank">6</span><a href="javascript:void(0);" class="link">포켓몬</a><span class="change arr-up"><span class="blind">순위상승</span></span></li>
+							<li class="item"><span class="rank">7</span><a href="javascript:void(0);" class="link">Z플립3</a><span class="change arr-down"><span class="blind">순위하락</span></span></li>
+							<li class="item"><span class="rank">8</span><a href="javascript:void(0);" class="link">스트랩</a><span class="change arr-down"><span class="blind">순위하락</span></span></li>
+							<li class="item"><span class="rank">9</span><a href="javascript:void(0);" class="link">충전기</a><span class="change arr-down"><span class="blind">순위하락</span></span></li>
+							<li class="item"><span class="rank">10</span><a href="javascript:void(0);" class="link">노트북</a><span class="change arr-down"><span class="blind">순위하락</span></span></li>
+						</ul>
+						<div class="etc" id="makeTime">2022-05-19 23:51:42 기준</div>
+					</div>
+				</div>
+				<!-- e: 20220520 gc 추가 : 최근검색어, 인기검색어 목록 -->
+			</div><!-- 20200618 감싸는 태그 unified-search-layer-inner의 닫는 태그 추가 -->
+			<button type="button" class="btn-close-search"><span class="blind">검색 레이어 닫기</span></button><!-- 20200618 닫는 태그 추가--><!-- 20200622 button type 변경-->
+		</div>
+		<!-- e : 검색레이어 : 최근, 인기-->
+
+		<!-- s : 검색레이어 : 자동 완성-->
+		<div class="unified-search-layer type-auto" style="display:none">
+			<div class="unified-search-layer-inner"><!-- 20200618 감싸는 태그 unified-search-layer-inner 추가 -->
+				<div class="layer-cont" id="searchAuto">
+					<ul class="list">
+					</ul>
+				</div>
+			</div><!-- 20200618 감싸는 태그 unified-search-layer-inner의 닫는 태그 추가 -->
+			<button type="button" class="btn-close-search"><span class="blind">검색 레이어 닫기</span></button><!-- 20200618 닫는 태그 추가--><!-- 20200622 button type 변경-->
+		</div>
+		<!-- e : 검색레이어 : 자동 완성-->
+
+		<button type="button" class="btn-close-search"><span class="blind">검색 레이어 닫기</span></button><!-- 20200622 button type 변경-->
+	</div>
+	<!-- e : 통합검색 --><!-- e : 통합검색 -->
+
+	<!-- s : 본문 영역 -->
+	<div id="container" class="gc_container">
+
+		<!-- s : 페이지 로케이션 영역 -->
+		<script type="text/javascript">
+			getDispPathByUrl();
+
+			function getDispPathByUrl() {
+
+				let stId = "1";
+				let reqUri = "/sec/search/searchresult/product/";
+				reqUri = reqUri.replace("/sec/", "");
+				if (reqUri.length == 0) return;
+
+				let tmp = "";
+
+				if("" === "Y") return;
+
+				if(reqUri.indexOf('homefitness') > -1) {
+					return;
+				}
+
+				$.ajax({
+					url : "/sec/xhr/display/getGnbByUrl"
+					,type : "POST"
+					,data : {stId:stId, linkUrl:reqUri}
+					,success : function(data) {
+						list = data.list;
+						if (list == null) return;
+
+						$.each(list, function(idx, obj) {
+							if (obj.linkUrl.length > 0) {
+								tmp += '<a href="/sec/'+obj.linkUrl+'">'+obj.dispClsfNm+'</a>';
+							} else if(obj.dispClsfNm != obj.upDispClsfNm){	//동일명칭 Depth Skip 2020.09.14 YJU
+								tmp += "<span>"+obj.dispClsfNm+"</span>";
+							}
+						});
+
+						if (tmp == '') return;
+						let html = "";
+						html += "<div class=\"pg-location-inner locationDiv\">";
+						html += "<a href='/sec/'>HOME</a>";
+						html += tmp;
+						html += "</div>";
+						$(".pg-location").html(html);
+					}
+				});
+			}
+		</script>
+
+		<div class="pg-location">
+		</div><!-- e : 페이지 로케이션 영역 -->
+
+		<!-- s : 최근 본 제품 -->
+		<div id='latestItemLayer' class='layer-pop layer-normal floatingStyle'>
+			<div class="layer-header">
+				<h2>최근 본 제품</h2>
+			</div>
+			<button type='button' class='pop-close' onclick = "closePop(latestItemLayer)" data-focus-next="latestItemLayer"><span class='blind'>최근 본 제품 닫기</span></button>
+			<div class="LatestItm-result">
+				<p class="result-tit">
+					<span>검색 결과</span><strong class="num">0</strong> 개
+				</p>
+				<button type="button" class="btn btn-d btn-allListClear" onclick = "deleteRecentGoods('Y')" data-st-path ="/sec/" data-focus-next="latestItemLayer">전체삭제</button>
+			</div>
+			<div class="caution-note">※ 최근 본 제품은 7일간 보관됩니다.</div>
+		</div><!-- e : 최근 본 제품 -->
+
+		<!-- s : 본문 영역 -->
+		<div id="container">
+
+			<!-- s : 페이지 로케이션 영역 -->
+			<div class="pg-location">
+				<div class="pg-location-inner">
+					<a href="/sec/">HOME</a>
+					<span>검색</span>
+				</div>
+			</div>
+			<!-- e : 페이지 로케이션 영역 -->
+
+			<div class="unified-result-search-wrap type_02">
+				<div class="util_box">
+					<a href="javascript:;" onclick="history.back();" class="gc_btn_prev">
+						<i class="gc_icon i-prev-wh">뒤로가기</i>
+					</a>
+				</div>
+				<div class="search-box">
+					<label for="inputSearch" class="blind">통합 검색</label>
+					<input type="text" id="inputSearch" class="inp" value="갤럭시">
+					<button type="button" class="btn-inp-clear" title="삭제"><span class="blind">삭제</span></button><!-- 20200616 삭제 버튼 추가-->
+					<button type="button" class="btn-search chatbot-search" title="검색" id="inputSearchButton" onclick="javascript:searchInputManager.getSearchResult($('#inputSearch').val(), '#inputSearch')"><span class="blind">검색</span></button>
+				</div>
+			</div>
+
+			<div class="content content-unified-search">
+				<!-- s : conbox 영역 -->
+				<section class="conbox conbox-unified-search">
+					<div class="unified-search-inner">
+
+						<!-- s : 20220523 gc 추가 : 탭 타이틀 변경 -->
+						<div class="result-searchbar">
+
+							<!-- s : 20200716 구조 변경 -->
+							<!-- [D] 'result-tit'에  경우에 맞는 클래스를 부여합니다.
+
+								.type-keyword
+								포함/제외 키워드 존재 시
+
+								.type-suggest
+								오탈자로 검색하여 검색어 제안 시
+							-->
+							<div class="result-tit searchbar-item"><!-- 클래스 추가 'type-keyword' , 'type-suggest' -->
+								<div class="keyword-wrap">
+									<div class="keyword-summary">
+										<strong class="keyword">'갤럭시탭'</strong>
+										<span class="result-num-txt">검색 결과 <span class="num search-count">16120</span>건</span>
+									</div>
+									<div class="keyword-box">
+										<div class="keyword-list">
+										</div>
+
+										<span class="result-num-txt">검색 결과 <span class="num search-count">16120</span>건</span>
+									</div>
+								</div>
+							</div>
+							<!-- e : 20200716 구조 변경 -->
+
+							<div class="re-search searchbar-item">
+								<div class="chk-form" id="research-form">
+									<input id="radioReSearch1" type="radio" name="radioReSearch" checked>
+									<label for="radioReSearch1">포함</label>
+									<input id="radioReSearch2" type="radio" name="radioReSearch">
+									<label for="radioReSearch2">제외</label>
+								</div>
+								<div class="input-box">
+									<label for="searchWithinResults" class="blind">검색</label>
+									<input type="text" class="inp" id="searchWithinResults" placeholder="결과 내 검색">
+									<button type="button" class="btn-search" id="searchWithinResultsButton" onclick='javascript:searchResultManager.reSearchResult($("#searchWithinResults").val())' title="검색"><span class="blind">검색</span></button>
+								</div>
+							</div>
+						</div>
+						<!-- e : 20220523 gc 추가 : 탭 타이틀 변경 -->
+
+                        <div class="box-tab-point-content partition swiper-container">
+                            <ul class="tab-style-btn tab-point-content tabstyle02 swiper-wrapper" role="tablist">
+                                <li class="tab swiper-slide">
+                                    <a href="javascript:void(0)" onclick="setBbsInfo('1', '회원가입/인증','0');" role="tab" aria-controls="tabContent-fillbox1" data-omni="회원가입/인증" aria-selected="true">
+                                        <span>게시물 (2)</span><em class="blind">활성화</em>
+                                    </a>
+                                </li>
+                                <li class="tab swiper-slide">
+                                    <a href="javascript:void(0)" onclick="setBbsInfo('2', '주문/결제','1');" role="tab" aria-controls="tabContent-fillbox2" data-omni="주문/결제" aria-selected="false">
+                                        <span>해시태그 (32)</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content tabcontent-community" id="tabContent-fillbox1" role="tabpanel">
+                                <div class="gc_community">
+									<!-- 리스트 시작 -->
+									<div class="box_item_list_wrap">
+										<ul class="gc_list gc_list_comm">
+											<li class="gc_list_item">
+												<div class="box_item_wrap">
+													<div class="inner_box">
+														<div class="board_type">
+															<span class="badge_icon type_01">일상</span>
+														</div>
+														<div class="icon_flex_box">
+															<dl>
+																<dt><i class="gc_icon i_eye">조회수</i></dt>
+																<dd>120</dd>
+															</dl>
+															<dl>
+																<dt><i class="gc_icon i_reply">댓글</i></dt>
+																<dd>222</dd>
+															</dl>
+															<button type="button" class="btn bookmark btn-tgl">
+																<i class="gc_icon i_bookmark">스크랩</i>
+															</button>
+														</div>
+													</div>
+													<div class="list-cont">
+														<p class="tit">학교 게시판 글 제목 영역입니다. 글 제목은 한 줄 말줄임표로 표시되며</p>
+														<div class="desc_box">
+															<p class="desc">학교 게시판 글 내용 영역입니다. 커뮤니티 내 학교 게시판  글이 보여지는 영역입니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다.</p>
+														</div>
+													</div>
+													<div class="user_box_wrap">
+														<div class="gc_flex">
+															<div class="user_box">
+																<div class="user_profile_img">
+																	<img src="../../../_images/temps/avatar-fmale.svg" alt="프로필이미지">
+																</div>
+																<div class="user_info_state">
+																	<div class="user_info">
+																		<span class="user_name">Sko***</span>
+																		<span class="u_level">3성</span>
+																	</div>
+																	<div class="user_state">
+																		<div class="state_box">
+																			<span>2022.02.17</span>
+																			<span>10:10</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="sympathy_box">
+																<button type="button" class="gc_btn btn_tgl" data-attr="like">
+																	<i class="gc_icon i-emotion-like">좋아요</i>
+																	<span class="txt_item">226</span>
+																</button>
+																<button type="button" class="gc_btn btn_tgl">
+																	<i class="gc_icon i-emotion-hate">싫어요</i>
+																	<span class="txt_item">0</span>
+																</button>
+																<button type="button" class="gc_btn btn_tgl">
+																	<i class="gc_icon i-emotion-soso">그저그래요</i>
+																	<span class="txt_item">222</span>
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="gc_list_item">
+												<div class="item_close_box">
+													<p>해당 게시글은 정책 위반 등의 사유로<br /> 관리자에 의해 숨김 처리되었습니다.</p>
+												</div>
+											</li>
+											<li class="gc_list_item">
+												<div class="box_item_wrap">
+													<div class="inner_box">
+														<div class="board_type">
+															<span class="badge_icon type_01">일상</span>
+														</div>
+														<div class="icon_flex_box">
+															<dl>
+																<dt><i class="gc_icon i_eye">조회수</i></dt>
+																<dd>120</dd>
+															</dl>
+															<dl>
+																<dt><i class="gc_icon i_reply">댓글</i></dt>
+																<dd>222</dd>
+															</dl>
+															<button type="button" class="btn bookmark btn-tgl">
+																<i class="gc_icon i_bookmark">스크랩</i>
+															</button>
+														</div>
+													</div>
+													<div class="list-cont">
+														<p class="tit">학교 게시판 글 제목 영역입니다. 글 제목은 한 줄 말줄임표로 표시되며</p>
+														<div class="desc_box">
+															<p class="desc">학교 게시판 글 내용 영역입니다. 커뮤니티 내 학교 게시판  글이 보여지는 영역입니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다.</p>
+														</div>
+													</div>
+													<div class="user_box_wrap">
+														<div class="gc_flex">
+															<div class="user_box">
+																<div class="user_profile_img">
+																	<img src="../../../_images/temps/avatar-fmale.svg" alt="프로필이미지">
+																</div>
+																<div class="user_info_state">
+																	<div class="user_info">
+																		<span class="user_name">Sko***</span>
+																		<span class="u_level">3성</span>
+																	</div>
+																	<div class="user_state">
+																		<div class="state_box">
+																			<span>2022.02.17</span>
+																			<span>10:10</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="sympathy_box">
+																<button type="button" class="gc_btn btn_tgl" data-attr="like">
+																	<i class="gc_icon i-emotion-like">좋아요</i>
+																	<span class="txt_item">226</span>
+																</button>
+																<button type="button" class="gc_btn btn_tgl">
+																	<i class="gc_icon i-emotion-hate">싫어요</i>
+																	<span class="txt_item">0</span>
+																</button>
+																<button type="button" class="gc_btn btn_tgl">
+																	<i class="gc_icon i-emotion-soso">그저그래요</i>
+																	<span class="txt_item">222</span>
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="gc_list_item">
+												<div class="box_item_wrap">
+													<div class="inner_box">
+														<div class="board_type">
+															<span class="badge_icon type_01">일상</span>
+														</div>
+														<div class="icon_flex_box">
+															<dl>
+																<dt><i class="gc_icon i_eye">조회수</i></dt>
+																<dd>120</dd>
+															</dl>
+															<dl>
+																<dt><i class="gc_icon i_reply">댓글</i></dt>
+																<dd>222</dd>
+															</dl>
+															<button type="button" class="btn bookmark btn-tgl">
+																<i class="gc_icon i_bookmark">스크랩</i>
+															</button>
+														</div>
+													</div>
+													<div class="list-cont">
+														<p class="tit">학교 게시판 글 제목 영역입니다. 글 제목은 한 줄 말줄임표로 표시되며</p>
+														<div class="desc_box">
+															<p class="desc">학교 게시판 글 내용 영역입니다. 커뮤니티 내 학교 게시판  글이 보여지는 영역입니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다.</p>
+														</div>
+													</div>
+													<div class="user_box_wrap">
+														<div class="gc_flex">
+															<div class="user_box">
+																<div class="user_profile_img">
+																	<img src="../../../_images/temps/avatar-fmale.svg" alt="프로필이미지">
+																</div>
+																<div class="user_info_state">
+																	<div class="user_info">
+																		<span class="user_name">Sko***</span>
+																		<span class="u_level">3성</span>
+																	</div>
+																	<div class="user_state">
+																		<div class="state_box">
+																			<span>2022.02.17</span>
+																			<span>10:10</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="sympathy_box">
+																<button type="button" class="gc_btn btn_tgl" data-attr="like">
+																	<i class="gc_icon i-emotion-like">좋아요</i>
+																	<span class="txt_item">226</span>
+																</button>
+																<button type="button" class="gc_btn btn_tgl">
+																	<i class="gc_icon i-emotion-hate">싫어요</i>
+																	<span class="txt_item">0</span>
+																</button>
+																<button type="button" class="gc_btn btn_tgl">
+																	<i class="gc_icon i-emotion-soso">그저그래요</i>
+																	<span class="txt_item">222</span>
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<!-- //리스트 -->
+									
+									<div class="btn_more_large_box">
+										<button type="button" class="btn_more color01" onclick="morePage(1)">더보기</button>
+									</div>
+								</div>
+
+                            </div>
+                            <div class="tab-content tabcontent-community" id="tabContent-fillbox2" role="tabpane2" style="display: none;">
+                                <div class="gc_community">
+									<!-- 리스트 시작 -->
+									<div class="box_item_list_wrap">
+										<ul class="gc_list gc_list_comm">
+											<li class="gc_list_item">
+												<div class="box_item_wrap">
+													<div class="inner_box">
+														<div class="board_type">
+															<span class="badge_icon type_01">일상</span>
+														</div>
+														<div class="icon_flex_box">
+															<dl>
+																<dt><i class="gc_icon i_eye">조회수</i></dt>
+																<dd>120</dd>
+															</dl>
+															<dl>
+																<dt><i class="gc_icon i_reply">댓글</i></dt>
+																<dd>222</dd>
+															</dl>
+															<button type="button" class="btn bookmark btn-tgl">
+																<i class="gc_icon i_bookmark">스크랩</i>
+															</button>
+														</div>
+													</div>
+													<div class="list-cont">
+														<p class="tit">학교 게시판 글 제목 영역입니다. 글 제목은 한 줄 말줄임표로 표시되며</p>
+														<div class="desc_box">
+															<p class="desc">학교 게시판 글 내용 영역입니다. 커뮤니티 내 학교 게시판  글이 보여지는 영역입니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다.</p>
+														</div>
+													</div>
+													<div class="user_box_wrap">
+														<div class="gc_flex">
+															<div class="user_box">
+																<div class="user_profile_img">
+																	<img src="../../../_images/temps/avatar-fmale.svg" alt="프로필이미지">
+																</div>
+																<div class="user_info_state">
+																	<div class="user_info">
+																		<span class="user_name">Sko***</span>
+																		<span class="u_level">3성</span>
+																	</div>
+																	<div class="user_state">
+																		<div class="state_box">
+																			<span>2022.02.17</span>
+																			<span>10:10</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="sympathy_box">
+																<button type="button" class="gc_btn btn_tgl" data-attr="like">
+																	<i class="gc_icon i-emotion-like">좋아요</i>
+																	<span class="txt_item">226</span>
+																</button>
+																<button type="button" class="gc_btn btn_tgl">
+																	<i class="gc_icon i-emotion-hate">싫어요</i>
+																	<span class="txt_item">0</span>
+																</button>
+																<button type="button" class="gc_btn btn_tgl">
+																	<i class="gc_icon i-emotion-soso">그저그래요</i>
+																	<span class="txt_item">222</span>
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="gc_list_item">
+												<div class="box_item_wrap">
+													<div class="inner_box">
+														<div class="board_type">
+															<span class="badge_icon type_01">일상</span>
+														</div>
+														<div class="icon_flex_box">
+															<dl>
+																<dt><i class="gc_icon i_eye">조회수</i></dt>
+																<dd>120</dd>
+															</dl>
+															<dl>
+																<dt><i class="gc_icon i_reply">댓글</i></dt>
+																<dd>222</dd>
+															</dl>
+															<button type="button" class="btn bookmark btn-tgl">
+																<i class="gc_icon i_bookmark">스크랩</i>
+															</button>
+														</div>
+													</div>
+													<div class="list-cont">
+														<p class="tit">학교 게시판 글 제목 영역입니다. 글 제목은 한 줄 말줄임표로 표시되며</p>
+														<div class="desc_box">
+															<p class="desc">학교 게시판 글 내용 영역입니다. 커뮤니티 내 학교 게시판  글이 보여지는 영역입니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다.</p>
+														</div>
+													</div>
+													<div class="user_box_wrap">
+														<div class="gc_flex">
+															<div class="user_box">
+																<div class="user_profile_img">
+																	<img src="../../../_images/temps/avatar-fmale.svg" alt="프로필이미지">
+																</div>
+																<div class="user_info_state">
+																	<div class="user_info">
+																		<span class="user_name">Sko***</span>
+																		<span class="u_level">3성</span>
+																	</div>
+																	<div class="user_state">
+																		<div class="state_box">
+																			<span>2022.02.17</span>
+																			<span>10:10</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="sympathy_box">
+																<button type="button" class="gc_btn btn_tgl" data-attr="like">
+																	<i class="gc_icon i-emotion-like">좋아요</i>
+																	<span class="txt_item">226</span>
+																</button>
+																<button type="button" class="gc_btn btn_tgl">
+																	<i class="gc_icon i-emotion-hate">싫어요</i>
+																	<span class="txt_item">0</span>
+																</button>
+																<button type="button" class="gc_btn btn_tgl">
+																	<i class="gc_icon i-emotion-soso">그저그래요</i>
+																	<span class="txt_item">222</span>
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="gc_list_item">
+												<div class="box_item_wrap">
+													<div class="inner_box">
+														<div class="board_type">
+															<span class="badge_icon type_01">일상</span>
+														</div>
+														<div class="icon_flex_box">
+															<dl>
+																<dt><i class="gc_icon i_eye">조회수</i></dt>
+																<dd>120</dd>
+															</dl>
+															<dl>
+																<dt><i class="gc_icon i_reply">댓글</i></dt>
+																<dd>222</dd>
+															</dl>
+															<button type="button" class="btn bookmark btn-tgl">
+																<i class="gc_icon i_bookmark">스크랩</i>
+															</button>
+														</div>
+													</div>
+													<div class="list-cont">
+														<p class="tit">학교 게시판 글 제목 영역입니다. 글 제목은 한 줄 말줄임표로 표시되며</p>
+														<div class="desc_box">
+															<p class="desc">학교 게시판 글 내용 영역입니다. 커뮤니티 내 학교 게시판  글이 보여지는 영역입니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다.</p>
+														</div>
+													</div>
+													<div class="user_box_wrap">
+														<div class="gc_flex">
+															<div class="user_box">
+																<div class="user_profile_img">
+																	<img src="../../../_images/temps/avatar-fmale.svg" alt="프로필이미지">
+																</div>
+																<div class="user_info_state">
+																	<div class="user_info">
+																		<span class="user_name">Sko***</span>
+																		<span class="u_level">3성</span>
+																	</div>
+																	<div class="user_state">
+																		<div class="state_box">
+																			<span>2022.02.17</span>
+																			<span>10:10</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="sympathy_box">
+																<button type="button" class="gc_btn btn_tgl" data-attr="like">
+																	<i class="gc_icon i-emotion-like">좋아요</i>
+																	<span class="txt_item">226</span>
+																</button>
+																<button type="button" class="gc_btn btn_tgl">
+																	<i class="gc_icon i-emotion-hate">싫어요</i>
+																	<span class="txt_item">0</span>
+																</button>
+																<button type="button" class="gc_btn btn_tgl">
+																	<i class="gc_icon i-emotion-soso">그저그래요</i>
+																	<span class="txt_item">222</span>
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<!-- //리스트 -->
+								
+									<div class="btn_more_large_box">
+										<button type="button" class="btn_more color01" onclick="morePage(1)">더보기</button>
+									</div>
+								</div>
+                            </div>
+                        </div>
+					</div>
+				</section>
+				<!-- e : conbox 영역 -->
+			</div>
+		</div>
+		<!-- e : 본문 영역 -->
+		<!-- 레이어 팝업 모음 -------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+		<!-- s : 공통 팝업(alert)  -->
+		<div class="layer-pop layer-default alert" id="commonAlert" tabindex="0" data-popup-layer="commonAlert" data-focus="commonAlert">
+			<div class="layer-header blind"><h2></h2></div>
+			<div class="layer-content">
+				<p style="word-break:keep-all;"></p>
+				<div class="btn-box">
+					<a href="javascript:void(0)" onclick="" class="btn btn-d btn-type2">확인</a>
+				</div>
+			</div>
+		</div>
+		<!-- e : 공통 팝업(alert)  -->
+		<!-- s : 공통 팝업(confirm)  -->
+		<div class="layer-pop layer-default" id="commonConfirm" tabindex="0" data-popup-layer="commonConfirm" data-focus="commonConfirm">
+			<div class="layer-header blind">
+				<h2></h2>
+			</div>
+			<div class="layer-content">
+				<p></p>
+				<div class="btn-box double">
+					<!-- 버튼 두개시 클래스 double 추가 -->
+					<a href="javascript:void(0)" class="btn btn-d btn-type1" id="commonConfirmCancelBtn" onclick="closeLayer('commonConfirm');">취소</a>
+					<a href="javascript:void(0)" class="btn btn-d btn-type2" id="commonConfirmOkBtn">확인</a>
+				</div>
+			</div>
+			<button type="button" class="pop-close" id="closeCommonConfirmBtn" name="closeCommonConfirmBtn" data-focus-next="commonConfirm">팝업닫기</button>
+		</div>
+		<!-- e : 공통 팝업(confirm)  --></div>
+	<!-- e : 본문 영역 -->
+
+	<!-- 플로팅 메뉴 -->
+	<div id="floatingSticky" class="floating-sticky">
+		<div class="menu-list">
+			<div class="inner">
+				<ul>
+                    <li class="menu05"><a type="button" href="javascript:"><span>글쓰기</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<button type="button" class="btn-gotop">
+			<span>위로</span>
+		</button>
+	</div>
+	<script>
+		floatSticky();
+
+		function firstRecentGoods() {
+			$.ajax({
+				url: "/xhr/goods/getFirstRecentGoods",
+				type: "POST",
+				success: function(result) {
+					var recentGoodsData = JSON.parse(result);
+
+					if (recentGoodsData.recentYn === "Y") {
+						$("floatingSticky").find(".menu04").remove();
+						var html = "";
+						html += '<li class="menu04">'
+						html += '<a href="#" id = "btn-rcntgoods-floating" type="button" onclick="showLatestItem(self,\'latestItemLayer\'); getRecentGoods(); return false" data-st-path ="' + recentGoodsData.stContextPath + '"  data-popup-target="latestItemLayer" >'
+						html += '<span> <img src="' + recentGoodsData.recentImgPath + '?$128_128_PNG$" alt="' + recentGoodsData.recentGoodsNm + '"> 최근 본 제품 (' + recentGoodsData.recentGoodsLength + ')</span>'
+						html += '</a>'
+						html += '</li>'
+
+						$("#floatingSticky").find("ul").append(html);
+					}
+				}
+			});
+		}
+		if (!(new Date() >= new Date('2022/02/08 00:00:00') &&
+				new Date() < new Date('2022/02/15 18:00:00'))) {
+			firstRecentGoods();
+		}
+	</script>
+	<!-- //플로팅 메뉴 -->
+	<!-- s : 바닥글 영역 - b2c -->
+	<script type="text/javascript">
+		function showSafety() {
+			$(".dropDown-content .subDesc").hide();
+			$(".dropDown-content .dropButton").hide();
+
+			$(".dropDown-content .dropcontent").show();
+		}
+
+		// 약관 변경
+		$(document).on("click", "#dropClauseList01 .droplist-item", function(e) {
+			var id = $(this).attr("id");
+
+			if (id == "optServiceClause03") {
+				location.href = "/membership/terms/";
+			}
+		});
+
+		function openPrivacy() {
+			var agent = navigator.userAgent.toLowerCase();
+
+			if (((navigator.appName === 'Netscape' && agent.indexOf('trident') !== -1) || (agent.indexOf("msie") !== -1))) { // ie
+				window.open("https://www.eprivacy.or.kr/front/certifiedSiteMark/certifiedSiteMarkPopup.do?certCmd=E&certNum=2021-E-R033", "popup", "width=650, height=900, fullscreen=no, menubar=no, status=no, toolbar=no, titlebar=yes, location=no, scrollbar=no");
+			} else {
+				window.open("https://www.eprivacy.or.kr/front/certifiedSiteMark/certifiedSiteMarkPopup.do?certCmd=E&certNum=2021-E-R033", "popup", "width=550,height=750");
+			}
+		}
+
+		//협력회사 사이버 신문고(새창)
+		function openCyberVoc() {
+			var agent = navigator.userAgent.toLowerCase();
+			if (((navigator.appName === 'Netscape' && agent.indexOf('trident') !== -1) || (agent.indexOf("msie") !== -1))) { // ie
+				window.open("https://www.secbuy.com/irj/servlet/prt/portal/prtroot/com.sec.gsrm.com.cybervoc.BoardComponent?submissionId=introductionGuest&boardId=E0009&entrance=samsung.com", "popup", "width=830,height=600, fullscreen=no, menubar=no, status=no, toolbar=no, titlebar=yes, location=no, scrollbar=no");
+			} else {
+				window.open("https://www.secbuy.com/irj/servlet/prt/portal/prtroot/com.sec.gsrm.com.cybervoc.BoardComponent?submissionId=introductionGuest&boardId=E0009&entrance=samsung.com", "popup", "width=830,height=600");
+			}
+		}
+	</script>
+	<script type="text/javascript" src="https://wcs.naver.net/wcslog.js"></script>
+	<script type="text/javascript">
+		if (!wcs_add) var wcs_add = {};
+		wcs_add["wa"] = "13bc3440ce4191";
+		if (window.wcs) {
+			wcs_do();
+		}
+	</script>
+
+	<!-- s: 20220530 gc 추가 : footer -->
+	<footer id="footer" class="footer-b2c gc_main_footer">  <!-- 2022.05.27 gc 추가 .gc_main_footer추가로 풋터 디자인 수정 -->
+		<div class="footer-content">
+			<div class="footer-inner">
+				<div class="info-detail">
+					<div class="info_detail_a"><a href="#">로그아웃</a></div>|
+					<div class="info_detail_a"><a href="#">혜택/가이드</a></div>|
+					<div class="info_detail_a"><a href="#">매장상담예약</a></div>|
+					<div class="info_detail_a"><a href="#">서비스 센터</a></div>|
+					<div class="info_detail_a"><a href="#">서비스 이용약관</a></div>|
+					<div class="info_detail_a"><a href="#">커뮤니티 이용약관</a></div>|
+					<div class="info_detail_a"><a href="#">개인정보 처리방침</a></div>|
+					<div class="info_detail_a"><a href="#">이벤트 개인정보 처리 방침</a></div>|
+					<div class="info_detail_a"><a href="#">고객 서비스</a></div>|
+					<div class="info_detail_a"><a href="#">가입안내</a></div>
+				</div>
+
+				<button class="footer_com_btn">
+					<span>삼성전자 주식회사</span>
+				</button>
+			</div>
+		</div>
+		<div class="footer-content">
+			<div class="footer-inner">
+				<div class="info-detail">
+					<p>
+						<span>삼성전자 주식회사 대표이사 : 한종희</span>
+						<span class="mo-inline">사업자등록번호 : 124-81-00998</span>
+						<span class="comp-wrap"><a href="https://www.ftc.go.kr/www/bizCommView.do?key=232&apv_perm_no=2000374001130200515&pageUnit=10&searchCnd=wrkr_no&searchKrwd=1248100998&pageIndex=1" class="comp" title="새창 열림" target="_blank">사업자 정보확인</a></span>
+						<span>통신판매업 신고 : 2000-경기수원-0515</span>
+					</p>
+					<p class="gap">
+						<span>사업장주소 : 경기도 수원시 영통구 삼성로 129(매탄동)</span>
+						<span>호스팅서비스사업자 : 한국아이비엠(주)</span>
+						<span>대표번호 : 02-2255-0114</span>
+						<span>제품/서비스/멤버십: 1588-3366(통화요금 : 발신자부담)</span>
+						<span>구매문의 : 1588-6084</span>
+						<span>큐커 식품관 문의 : 1811-9228</span>
+					</p>
+					<p>본 사이트에서 판매되는 상품 중에는 등록된 개별 판매자가 판매하는 상품이 포함되어 있습니다. </p>
+					<p>개별 판매자 판매 상품의 경우 삼성전자(주)는 통신판매중개업자로서 통신판매의 당사자가 아니므로, 개별 판매자가 등록한 상품, 거래정보 및 거래 등에 대해 책임을 지지 않습니다.</p>
+					<p>본 사이트의 컨텐츠는 저작권법의 보호를 받는 바 무단 전재, 복사, 배포 등을 금합니다.</p>
+					<p class="copyright">Copyright &copy; 1995-2022 Samsung. All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- e: 20220530 gc 추가 : footer -->
+	
+	<!-- s : 이메일 무단 수집거부 -->
+	<div class="layer-pop layer-normal" id="popupGatherRefuse" tabindex="0" data-popup-layer="popupGatherRefuse" data-focus="popupGatherRefuse">
+		<div class="layer-header">
+			<h2>이메일 무단 수집거부</h2>
+		</div>
+		<div class="layer-content">
+			<div class="etc-divWrap">
+				<p>본 웹사이트는 게시된 이메일 주소가 전자우편 수집 프로그램이나 그 밖의 기술적 장치를 이용하여 무단 수집되는 것을 거부합니다.<br>
+					이를 위반 시 『정보통신망 이용 촉진 및 정보보호 등에 관한 법률』등에 의해 처벌받을 수 있습니다.</p>
+			</div>
+		</div>
+		<button type="button" class="pop-close" data-focus-next="popupGatherRefuse">팝업닫기</button>
+	</div>
+	<!-- e : 이메일 무단 수집거부 -->
+
+	<!-- s : 아이디어 정책 -->
+	<div class="layer-pop layer-normal" id="popupIdeaPolicy" tabindex="0" data-popup-layer="popupIdeaPolicy" data-focus="popupIdeaPolicy"">
+		<div class="layer-header">
+			<h2>아이디어 제안에 대한 정책</h2>
+		</div>
+		<div class="layer-content">
+			<div class="etc-divWrap">
+				<p>삼성전자 및 삼성전자 임직원은 당사가 공식적으로 요청하지 않았음에도 불구하고 여러분께서 일방적으로 당사에 제출하는 아이디어나 제안 등을 수령하거나 검토하지 않습니다.</p>
+
+				<p>이는 제출하신 내용이 당사 내부적으로 개발한 제품, 기술, 서비스와 유사할 경우 발생할 수 있는 오해와 분쟁을 방지하고 나아가 여러분의 창의적인 아이디어를 적극 보호하기 위함입니다.</p>
+
+				<p>이러한 취지를 이해하여 주시고 구체화되지 않은 아이디어나 콘셉트(Concept) 단계의 제안이 당사에 제출되지 않도록 하여 주시기 바랍니다.</p>
+			</div>
+		</div>
+		<button type="button" class="pop-close" data-focus-next="popupIdeaPolicy">팝업닫기</button>
+	</div>
+	<!-- e : 아이디어 정책 -->
+
+	<!-- s : 웹접근성 우수사이트 인증서  -->
+	<div class="layer-pop layer-default" id="popupWA" tabindex="0" data-popup-layer="popupWA" data-focus="popupWA">
+		<div class="layer-content">
+			<img src="../_images/common/WA-2021.jpg" alt="웹접근성 우수사이트 인증서">
+		</div>
+		<button type="button" class="pop-close" data-focus-next="popupWA">팝업닫기</button>
+	</div>
+	<!-- e : 웹접근성 우수사이트 인증서  -->
+
+	<!-- e : 바닥글 영역 - b2c -->
+</div>
+<input type="hidden" id="viewStContextPath" value="/sec/"/>
+</body>
+</html>

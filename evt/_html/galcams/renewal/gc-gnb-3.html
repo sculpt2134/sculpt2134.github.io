@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>사이트명</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge; chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="date" content="" />
+    <meta name="sitecode" content="" />
+
+    <meta name="google-site-verification" content="" />
+
+    <meta name="twitter:card" content="" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:creator" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="" />
+
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:locale" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:country-name" content="" />
+
+    <!--
+		<meta itemprop="name" content="">
+		<meta itemprop="image" content="">
+		<meta itemprop="url" content="">
+		<meta itemprop="description" content="">
+		<meta itemprop="keywords" content="">
+	-->
+
+    <link rel="shortcut icon" href="/sec/static/_images/favicon.ico" />
+    <link rel="apple-touch-icon" href="javascript:void(0)" sizes="" />
+
+    <!-- markup 변경 0616  -  reset.css 추가 -->
+    <link rel="stylesheet" href="/sec/static/_css/reset.css" />
+    <link rel="stylesheet" href="/sec/static/_css/style.css" />
+    <link rel="stylesheet" href="/sec/static/_css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="/sec/static/_css/gnb.css" />
+    <script src="/sec/static/_script/jquery-3.3.1.min.js"></script>
+    <script src="/sec/static/_script/jquery-ui.min.js"></script>
+    <script src="/sec/static/_script/base.js"></script>
+    <script defer src="/sec/static/_script/gnb.js"></script>
+    <script src="/sec/static/_script/slick.js"></script>
+    <script src="/sec/static/_script/slick-init.js"></script>
+
+		
+  </head>
+
+  <body style="background: pink;">
+    <!-- s : 스킵 -->
+    <div id="skip_content"></div>
+    <!-- e : 스킵 -->
+
+		<!-- s: 230302 header 간섭 test용 배너 -->
+		<!-- <div id="test__banner" style="width: 100%; height: 50px; background: steelblue; display: flex; justify-content: center; align-items: center; position: relative; z-index: 100;">
+			<p style="color: #fff;">나는야 테스트용 배너지롱? 알리모르가나</p>
+		</div> -->
+		<!-- e: 230302 header 간섭 test용 배너 -->
+
+    <div id="wrap">
+			<!-- 230302 바깥쪽 딤처리 -->
+			<div class="outer__mask" data-type=""></div>			
+
+      <!-- s : 230302 GNB -->
+			<!-- 230510 특정페이지에서 header 투명/반전기능 
+				* #header__navi에 클래스 invert 추가되어있을때만 투명/반전 기능 활성화
+				! 일단 모바일 진입시 무조건 invert 클래스 제거하도록 넣어두었지만 아예 안들어가는게 더 좋아요.
+			-->
+      <header id="header__navi" class="invert">
+        <div class="header__inner">
+					<!-- s: logo -->
+					<div class="logo">
+						<a href="https://www.samsung.com/sec/"><img src="/sec/static/_images/gnb/logo-gnb.svg" alt="삼성"></a>
+					</div>
+					<!-- e: logo -->
+
+					<!-- s: search -->
+					<!-- <div class="utility__button__search" data-name="utility__search"> -->
+						<div class="search__box" onclick="gnbObj.ultilityEvent('search')">
+							<ul id="search__slide__00">
+								<li><a href="javascript:void(0)"><b>1.</b> 스마트폰</a></li>
+								<li><a href="javascript:void(0)"><b>2.</b> 갤럭시 s23 ultra 자급제</a></li>
+								<li><a href="javascript:void(0)"><b>3.</b> BESPOKE 김치플러스 4도어 프리스탠딩 490 L</a></li>
+								<li><a href="javascript:void(0)"><b>4.</b> Crystal UHD 189 cm 스탠드형</a></li>
+							</ul>
+							<button type="button" class="search__button">
+								<span class="sr-only">검색 버튼</span>
+								<img src="/sec/static/_images/gnb/icon-26-Search.svg" alt="">
+							</button>
+						</div>
+					<!-- </div> -->
+					<!-- e: search -->
+
+					<!-- s: menu -->
+					<div class="menu__wrap">
+						<!-- s: 모바일 전용 메뉴 헤드(뒤로가기/검색/닫기) -->
+						<div class="menu__head m-only">
+              <div class="head__top">
+                <div class="search__box" onclick="gnbObj.ultilityEvent('search')">
+                  <ul id="search__slide__02">
+                    <li><a href="javascript:void(0)"><b>1.</b> 스마트폰</a></li>
+                    <li><a href="javascript:void(0)"><b>2.</b> 갤럭시 s23 ultra 자급제</a></li>
+                    <li><a href="javascript:void(0)"><b>3.</b> BESPOKE 김치플러스 4도어 프리스탠딩 490 L</a></li>
+                    <li><a href="javascript:void(0)"><b>4.</b> Crystal UHD 189 cm 스탠드형</a></li>
+                  </ul>
+                  <button type="button" class="menu__search__button">
+                    <span class="sr-only">검색 버튼</span>
+                    <img src="/sec/static/_images/gnb/icon-26-Search.svg" alt="">
+                  </button>
+                </div>
+
+                <div class="head__button__wrap">
+                  <button class="menu__location__button" onclick="location.href='https://www.samsung.com/sec/digitalplaza/storeMain/'">
+                    <span class="sr-only">위치</span>
+                    <img src="/sec/static/_images/gnb/icon-26-location.svg" alt="">
+                  </button>
+									<!-- 230518 알림버튼 추가 -->
+				  				<button class="menu__noti__button">
+                    <span class="sr-only">알림</span>
+                    <img src="/sec/static/_images/gnb/icon-notification.svg" alt="">
+                  </button>
+                
+                  <button class="menu__cart__button" onclick="gnbObj.ultilityEvent('cart');">
+                    <span class="sr-only">장바구니 버튼</span>
+                    <img src="/sec/static/_images/gnb/icon-26-cart.svg" alt="">
+                    <span class="cart__count">76</span>
+                  </button>
+
+                  <button class="menu__close__button">
+                    <span class="sr-only">메뉴닫기</span>
+                    <img src="/sec/static/_images/gnb/icon-gnb-close.svg" alt="">
+                  </button>
+                </div>
+              </div>
+
+              <div class="head__bottom">
+                <!-- s: 모바일 전용 로그인/회원가입 영역
+                  !비로그인시 활성화 / 로그인시 'login__user__wrap'이 대신 활성화
+                -->
+                <div class="login__join__wrap m-only">
+                  <a href="javascript:void(0)"><span class="icon-user"></span>로그인/회원가입 &#62;</a>
+                </div>
+
+                <!-- <div class="login__user__wrap m-only">
+                  <p><span class="icon-user"></span>안녕하세요! <span>홍길동</span>님</p>
+                </div> -->
+                <!-- e: 모바일 전용 로그인/회원가입 영역 -->
+
+                <!-- s: 모바일 전용 추가컨텐츠 캐러셀 영역 -->
+                <div class="add__contents__wrap m-only">
+                  <div class="add__contents__inner">
+                    <ul id="addContents__slider">
+                      <li><a href="javascript:void(0)">
+                        <div class="imgform"><img src="/sec/static/_images/temp/dummy_title.jpg" alt=""></div>
+                        <p>삼성 세일 페스타</p>
+                      </a></li>
+                      <li><a href="javascript:void(0)">
+                        <div class="imgform"><img src="/sec/static/_images/temp/dummy_title.jpg" alt=""></div>
+                        <p>선물하기</p>
+                      </a></li>
+                      <li><a href="javascript:void(0)">
+                        <div class="imgform"><img src="/sec/static/_images/temp/dummy_title.jpg" alt=""></div>
+                        <p>공동구매</p>
+                      </a></li>
+                      <li><a href="javascript:void(0)">
+                        <div class="imgform"><img src="/sec/static/_images/temp/dummy_title.jpg" alt=""></div>
+                        <p>신혼 | 웨딩</p>
+                      </a></li>
+                      <li><a href="javascript:void(0)">
+                        <div class="imgform"><img src="/sec/static/_images/temp/dummy_title.jpg" alt=""></div>
+                        <p>BESPOKE</p>
+                      </a></li>
+                      <li><a href="javascript:void(0)">
+                        <div class="imgform"><img src="/sec/static/_images/temp/dummy_title.jpg" alt=""></div>
+                        <p>삼성 세일 페스타</p>
+                      </a></li>
+                      <li><a href="javascript:void(0)">
+                        <div class="imgform"><img src="/sec/static/_images/temp/dummy_title.jpg" alt=""></div>
+                        <p>선물하기</p>
+                      </a></li>
+                      <li><a href="javascript:void(0)">
+                        <div class="imgform"><img src="/sec/static/_images/temp/dummy_title.jpg" alt=""></div>
+                        <p>공동구매</p>
+                      </a></li>
+                      <li><a href="javascript:void(0)">
+                        <div class="imgform"><img src="/sec/static/_images/temp/dummy_title.jpg" alt=""></div>
+                        <p>신혼 | 웨딩</p>
+                      </a></li>
+                      <li><a href="javascript:void(0)">
+                        <div class="imgform"><img src="/sec/static/_images/temp/dummy_title.jpg" alt=""></div>
+                        <p>BESPOKE</p>
+                      </a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- e: 모바일 전용 추가컨텐츠 캐러셀 영역 -->
+              </div>
+						</div>
+						<!-- e: 모바일 전용 메뉴 헤드(뒤로가기/검색/닫기) -->
+
+						<ul class="menu__list">
+							<li class="menuitem__l0">
+								<a href="javascript:void(0)" class="item__button" role="menuitem">모바일</a>
+								<div class="menuitem__l1__container"><!-- menu 1depth container -->
+									<p class="l1__title m-only">모바일</p>
+
+										<div class="menuitem__l2__wrap"><!-- menu 2depth container -->
+											<ul class="menuitem__l2__list">
+												<li><a href="https://www.samsung.com/sec/galaxy/home/">갤럭시의 모든 것</a><span class="badge _blue">NEW</span></li>
+												<li><a href="https://www.samsung.com/sec/smartphones/galaxy-s/">스마트폰</a></li>
+												<li><a href="https://www.samsung.com/sec/tablets/galaxy-tabs/">태블릿</a></li>
+												<li><a href="https://www.samsung.com/sec/pc/galaxybook/">갤럭시 북</a></li>
+												<li><a href="https://www.samsung.com/sec/watches/galaxy-watch/">워치</a></li>
+												<li><a href="https://www.samsung.com/sec/buds/galaxy-buds-pro/">버즈</a></li>
+												<li><a href="https://www.samsung.com/sec/mobile-accessories/all-mobile-accessories/">모바일 액세서리</a></li>
+												<li><a href="https://www.samsung.com/sec/apps/">앱 &#38; 서비스</a></li>
+												<li><a href="https://www.samsung.com/sec/one-ui/">One UI</a></li>
+												<!-- s: 230516 메뉴에 붙는 이미지 옵션 -->
+												<li>
+													<span class="icon-before"><img src="/sec/static/_images/gnb/logo-dacor.svg" alt=""></span>
+													<a href="https://www.samsung.com/sec/mobile/why-galaxy/">갤럭시가 특별한 이유</a>
+												</li>
+												<li>
+													<a href="https://www.samsung.com/sec/galaxycampus/">갤럭시 캠퍼스 스토어</a>
+													<span class="icon-after"><img src="/sec/static/_images/gnb/logo-dacor.svg" alt=""></span>
+												</li>
+												<!-- e: 230516 메뉴에 붙는 이미지 옵션 -->
+											</ul>
+										</div>
+
+										<div class="menuitem__l2__wrap type__table">
+											<ul id="new__prod__slider__01" class="menuitem__slider menuitem__l2__list">
+												<li><a href="javascript:void(0)">
+													<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+													<p>삼성닷컴 라이브</p>
+													<span class="badge _red">NEW</span>
+												</a></li>
+												<li><a href="javascript:void(0)">
+													<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+													<p>갤럭시 짝꿍 세일</p>
+												</a></li>
+												<li><a href="javascript:void(0)">
+													<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+													<p>새 출발 SALE</p>
+												</a></li>
+												<li><a href="javascript:void(0)">
+													<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+													<p>삼성닷컴 베스트 리뷰어 챌린지!</p>
+												</a></li>
+												<li><a href="javascript:void(0)">
+													<img src="/sec/static/_images/temp/component01-m.jpg" alt="">
+													<p class="wt">가족의달 선물하기</p>
+												</a></li>
+												<li><a href="javascript:void(0)">
+													<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+													<p>BESPOKE Infinite Line</p>
+												</a></li>
+												<li><a href="javascript:void(0)">
+													<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+													<p>BESPOKE Infinite Line</p>
+												</a></li>
+											</ul>
+											<div class="slider__button__wrap slider__button__1">
+												<div class="slider__button prev__button"><img src="/sec/static/_images/gnb/icon-gnb-arrow.svg" alt=""></div>
+												<div class="slider__button next__button"><img src="/sec/static/_images/gnb/icon-gnb-arrow.svg" alt=""></div>
+											</div>
+											<div class="slider__bar">
+												<div class="gauge"></div>
+											</div>
+										</div>
+								</div>
+							</li>
+							<li class="menuitem__l0">
+								<a href="javascript:void(0)" class="item__button" role="menuitem">TV&오디오</a>
+								<div class="menuitem__l1__container"><!-- menu 1depth container -->
+									<p class="l1__title m-only">TV&오디오</p>
+
+										<div class="menuitem__l2__wrap"><!-- menu 2depth container -->
+											<ul class="menuitem__l2__list">
+												<li><a href="https://www.samsung.com/sec/tvs/">TV</a></li>
+												<li><a href="https://www.samsung.com/sec/lifestyletv/home/">프로젝터</a></li>
+												<li><a href="https://www.samsung.com/sec/audio-devices/Sound-bar/">삼성 사운드바</a></li>
+												<li><a href="https://www.samsung.com/sec/harman/#highend_audio">하만</a></li>
+												<li><a href="https://www.samsung.com/sec/tv-accessories/all-tv-accessories/?TVs">TV & 오디오 액세서리</a></li>
+											</ul>
+										</div>
+
+										<div class="menuitem__l2__wrap type__table">
+											<ul id="new__prod__slider__02" class="menuitem__slider menuitem__l2__list">
+												<li><a href="javascript:void(0)">
+													<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+													<p>삼성닷컴 라이브</p>
+												</a></li>
+												<li><a href="javascript:void(0)">
+													<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+													<p>갤럭시 짝꿍 세일</p>
+												</a></li>
+												<li><a href="javascript:void(0)">
+													<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+													<p>새 출발 SALE</p>
+												</a></li>
+												<li><a href="javascript:void(0)">
+													<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+													<p>삼성닷컴 베스트 리뷰어 챌린지!</p>
+												</a></li>
+												<li><a href="javascript:void(0)">
+													<img src="/sec/static/_images/temp/component01-m.jpg" alt="">
+													<p class="wt">가족의달 선물하기</p>
+												</a></li>
+												<li><a href="javascript:void(0)">
+													<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+													<p>BESPOKE Infinite Line</p>
+												</a></li>
+												<li><a href="javascript:void(0)">
+													<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+													<p>BESPOKE Infinite Line</p>
+												</a></li>
+											</ul>
+											<div class="slider__button__wrap slider__button__2">
+												<div class="slider__button prev__button"><img src="/sec/static/_images/gnb/icon-gnb-arrow.svg" alt=""></div>
+												<div class="slider__button next__button"><img src="/sec/static/_images/gnb/icon-gnb-arrow.svg" alt=""></div>
+											</div>
+											<div class="slider__bar">
+												<div class="gauge"></div>
+											</div>
+										</div>
+								</div>
+							</li>
+							<li class="menuitem__l0">
+								<a href="javascript:void(0)" class="item__button" role="menuitem">주방가전</a>
+								<div class="menuitem__l1__container"><!-- menu 1depth container -->
+									<p class="l1__title m-only">주방가전</p>
+
+									<div class="menuitem__l2__wrap"><!-- menu 2depth container -->
+										<ul class="menuitem__l2__list">
+											<li><a href="https://www.samsung.com/sec/bespoke/home/">BESPOKE의 모든 것</a></li>
+											<li><a href="https://www.samsung.com/sec/bespoke-infinite-line/">BESPOKE Infinite Line의 모든 것</a></li>
+											<li><a href="https://www.samsung.com/sec/refrigerators/bespoke-infinite-line/">냉장고</a></li>
+											<li><a href="https://www.samsung.com/sec/kimchi-refrigerators/bespoke-kimchi-plus-infinite-line/">김치냉장고</a></li>
+											<li><a href="https://www.samsung.com/sec/dishwashers/bespoke-dishwashers/">식기 세척기</a></li>
+											<li><a href="https://www.samsung.com/sec/water-purifier/">정수기</a></li>
+											<li><a href="https://www.samsung.com/sec/electric-range/bespoke-induction/">전기레인지</a></li>
+											<li><a href="https://www.samsung.com/sec/cooking-appliances/bespoke-oven/">오븐/전자레인지</a></li>
+											<li><a href="https://www.samsung.com/sec/qooker/bespoke-qooker/">큐커</a></li>
+											<li><a href="https://www.samsung.com/sec/hood/">후드</a></li>
+											<li><a href="https://www.samsung.com/sec/kitchen-accessories/all-kitchen-accessories/">주방가전 액세서리</a></li>
+											<li><a href="https://www.dacorkorea.com/">데이코</a></li>
+										</ul>
+									</div>
+
+									<div class="menuitem__l2__wrap type__table">
+										<ul id="new__prod__slider__03" class="menuitem__slider menuitem__l2__list">
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>삼성닷컴 라이브</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>갤럭시 짝꿍 세일</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>새 출발 SALE</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>삼성닷컴 베스트 리뷰어 챌린지!</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/component01-m.jpg" alt="">
+												<p class="wt">가족의달 선물하기</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>BESPOKE Infinite Line</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>BESPOKE Infinite Line</p>
+											</a></li>
+										</ul>
+										<div class="slider__button__wrap slider__button__3">
+											<div class="slider__button prev__button"><img src="/sec/static/_images/gnb/icon-gnb-arrow.svg" alt=""></div>
+											<div class="slider__button next__button"><img src="/sec/static/_images/gnb/icon-gnb-arrow.svg" alt=""></div>
+										</div>
+										<div class="slider__bar">
+											<div class="gauge"></div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="menuitem__l0">
+                <a href="javascript:void(0)" class="item__button" role="menuitem">생활가전</a>
+                <div class="menuitem__l1__container"><!-- menu 1depth container -->
+									<p class="l1__title m-only">생활가전</p>
+
+                  <div class="menuitem__l2__wrap"><!-- menu 2depth container -->
+										<ul class="menuitem__l2__list">
+											<li><a href="https://www.samsung.com/sec/bespoke/home/">BESPOKE의 모든 것</a></li>
+											<li><a href="https://www.samsung.com/sec/washing-machines/grande-ai/">세탁기</a></li>
+											<li><a href="https://www.samsung.com/sec/dryers/grande-ai/">건조기</a></li>
+											<li><a href="https://www.samsung.com/sec/airdresser/bespoke-airdresser/">에어드레서/슈드레서</a></li>
+											<li><a href="https://www.samsung.com/sec/air-conditioners/gallery/">에어컨</a></li>
+											<li><a href="https://www.samsung.com/sec/system-air-conditioners/">시스템 에어컨</a></li>
+											<li><a href="https://www.samsung.com/sec/air-cleaners/bespoke-cube/">공기청정기/제습기</a></li>
+											<li><a href="https://www.samsung.com/sec/vacuum-cleaners/bespoke-jet/">청소기</a></li>
+											<li><a href="https://www.samsung.com/sec/small-appliances/all-small-appliances/">소형가전</a></li>											
+											<li><a href="https://www.samsung.com/sec/living-accessories/all-living-accessories/">생활가전 액세서리</a></li>
+										</ul>
+									</div>
+
+									<div class="menuitem__l2__wrap type__table">
+										<ul id="new__prod__slider__04" class="menuitem__slider menuitem__l2__list">
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>삼성닷컴 라이브</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>갤럭시 짝꿍 세일</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>새 출발 SALE</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>삼성닷컴 베스트 리뷰어 챌린지!</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/component01-m.jpg" alt="">
+												<p class="wt">가족의달 선물하기</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>BESPOKE Infinite Line</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>BESPOKE Infinite Line</p>
+											</a></li>
+										</ul>
+										<div class="slider__button__wrap slider__button__4">
+											<div class="slider__button prev__button"><img src="/sec/static/_images/gnb/icon-gnb-arrow.svg" alt=""></div>
+											<div class="slider__button next__button"><img src="/sec/static/_images/gnb/icon-gnb-arrow.svg" alt=""></div>
+										</div>
+										<div class="slider__bar">
+											<div class="gauge"></div>
+										</div>
+									</div>
+                </div>
+              </li>
+							<li class="menuitem__l0">
+                <a href="javascript:void(0)" class="item__button" role="menuitem">PC&#47;주변기기</a>
+                <div class="menuitem__l1__container"><!-- menu 1depth container -->
+									<p class="l1__title m-only">PC&#47;주변기기</p>
+
+                  <div class="menuitem__l2__wrap"><!-- menu 2depth container -->
+										<ul class="menuitem__l2__list">
+											<li><a href="https://www.samsung.com/sec/pc/galaxybook/">갤럭시 북</a></li>
+											<li><a href="https://www.samsung.com/sec/desktop/all-desktop/">데스크탑</a></li>
+											<li><a href="https://www.samsung.com/sec/pc-accessories/all-pc-accessories/">PC 악세서리</a></li>
+											<li><a href="https://www.samsung.com/sec/monitors/gaming-monitors/">모니터</a></li>
+											<li><a href="https://www.samsung.com/sec/printers/laser-multifunction/">프린터</a></li>
+											<li><a href="https://www.samsung.com/sec/printer-supplies/all-printer-supplies/">토너/잉크</a></li>
+											<li><a href="https://www.samsung.com/sec/memory-storage/portable-ssd/">메모리/스토리지</a></li>
+											<li><a href="https://www.samsung.com/sec/galaxycampus/">갤럭시 캠퍼스 스토어</a></li>											
+										</ul>
+									</div>
+
+									<div class="menuitem__l2__wrap type__table">
+										<ul id="new__prod__slider__05" class="menuitem__slider menuitem__l2__list">
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>삼성닷컴 라이브</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>갤럭시 짝꿍 세일</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>새 출발 SALE</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>삼성닷컴 베스트 리뷰어 챌린지!</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/component01-m.jpg" alt="">
+												<p class="wt">가족의달 선물하기</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>BESPOKE Infinite Line</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>BESPOKE Infinite Line</p>
+											</a></li>
+										</ul>
+										<div class="slider__button__wrap slider__button__5">
+											<div class="slider__button prev__button"><img src="/sec/static/_images/gnb/icon-gnb-arrow.svg" alt=""></div>
+											<div class="slider__button next__button"><img src="/sec/static/_images/gnb/icon-gnb-arrow.svg" alt=""></div>
+										</div>
+										<div class="slider__bar">
+											<div class="gauge"></div>
+										</div>
+									</div>
+                </div>
+              </li>
+							<li class="menuitem__l0">
+                <a href="javascript:void(0)" class="item__button" role="menuitem">로봇</a>
+                <div class="menuitem__l1__container"><!-- menu 1depth container -->
+									<p class="l1__title m-only">로봇</p>
+
+                  <div class="menuitem__l2__wrap"><!-- menu 2depth container -->
+										<ul class="menuitem__l2__list">
+											<li><a href="javascript:void(0)">갤럭시의 모든 것</a></li>
+											<li><a href="javascript:void(0)">스마트폰</a></li>
+											<li><a href="javascript:void(0)">태블릿</a></li>
+											<li><a href="javascript:void(0)">갤럭시 북</a></li>
+											<li><a href="javascript:void(0)">워치</a></li>
+											<li><a href="javascript:void(0)">버즈</a></li>
+										</ul>
+									</div>
+
+									<div class="menuitem__l2__wrap type__table">
+										<ul id="new__prod__slider__06" class="menuitem__slider menuitem__l2__list">
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>삼성닷컴 라이브</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>갤럭시 짝꿍 세일</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>새 출발 SALE</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>삼성닷컴 베스트 리뷰어 챌린지!</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/component01-m.jpg" alt="">
+												<p class="wt">가족의달 선물하기</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>BESPOKE Infinite Line</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>BESPOKE Infinite Line</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>BESPOKE Infinite Line</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>BESPOKE Infinite Line</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>BESPOKE Infinite Line</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>BESPOKE Infinite Line</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>BESPOKE Infinite Line</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>BESPOKE Infinite Line</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>BESPOKE Infinite Line</p>
+											</a></li>
+										</ul>
+										<div class="slider__button__wrap slider__button__6">
+											<div class="slider__button prev__button"><img src="/sec/static/_images/gnb/icon-gnb-arrow.svg" alt=""></div>
+											<div class="slider__button next__button"><img src="/sec/static/_images/gnb/icon-gnb-arrow.svg" alt=""></div>
+										</div>
+										<div class="slider__bar">
+											<div class="gauge"></div>
+										</div>
+									</div>
+								</div>
+              </li>
+							<li class="menuitem__l0">
+                <a href="javascript:void(0)" class="item__button" role="menuitem">액세서리</a>
+                <div class="menuitem__l1__container"><!-- menu 1depth container -->
+									<p class="l1__title m-only">액세서리</p>
+
+                  <div class="menuitem__l2__wrap"><!-- menu 2depth container -->
+										<ul class="menuitem__l2__list">
+											<li><a href="https://www.samsung.com/sec/accessories/">전체 액세서리/소모품</a></li>
+											<li><a href="https://www.samsung.com/sec/mobile-accessories/all-mobile-accessories/">모바일 액세서리</a></li>
+											<li><a href="https://www.samsung.com/sec/tv-accessories/all-tv-accessories/">TV&오디오 액세서리</a></li>
+											<li><a href="https://www.samsung.com/sec/kitchen-accessories/all-kitchen-accessories/">주방가전 액세서리</a></li>
+											<li><a href="https://www.samsung.com/sec/living-accessories/all-living-accessories/">생활가전 액세서리</a></li>
+											<li><a href="https://www.samsung.com/sec/pc-accessories/all-pc-accessories/">PC/주변기기 액세서리</a></li>
+											<li><a href="https://www.samsung.com/sec/smartthings-accessories/all-smartthings-accessories/">스마트싱스 액세서리</a></li>
+										</ul>
+									</div>
+
+									<div class="menuitem__l2__wrap type__table">
+										<ul id="new__prod__slider__07" class="menuitem__slider menuitem__l2__list">
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>삼성닷컴 라이브</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>갤럭시 짝꿍 세일</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>새 출발 SALE</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>삼성닷컴 베스트 리뷰어 챌린지!</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/component01-m.jpg" alt="">
+												<p class="wt">가족의달 선물하기</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>BESPOKE Infinite Line</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>BESPOKE Infinite Line</p>
+											</a></li>
+										</ul>
+										<div class="slider__button__wrap slider__button__7">
+											<div class="slider__button prev__button"><img src="/sec/static/_images/gnb/icon-gnb-arrow.svg" alt=""></div>
+											<div class="slider__button next__button"><img src="/sec/static/_images/gnb/icon-gnb-arrow.svg" alt=""></div>
+										</div>
+										<div class="slider__bar">
+											<div class="gauge"></div>
+										</div>
+									</div>
+								</div>
+              </li>
+							<li class="menuitem__l0">
+                <a href="javascript:void(0)" class="item__button" role="menuitem">스마트싱스</a>
+                <div class="menuitem__l1__container"><!-- menu 1depth container -->
+									<p class="l1__title m-only">스마트싱스</p>
+
+                  <div class="menuitem__l2__wrap"><!-- menu 2depth container -->
+										<ul class="menuitem__l2__list">
+											<li><a href="https://www.samsung.com/sec/smartthings/do-the-smartthings/">Do the SmartThings!</a></li>
+											<li><a href="https://www.samsung.com/sec/event/dothesmartthings/?anc=banner01">내가 만드는 스마트싱스 홈 라이프</a></li>
+											<li><a href="https://www.samsung.com/sec/smartthings-accessories/all-smartthings-accessories/">스마트싱스 액세서리</a></li>
+											<li><a href="https://www.samsung.com/sec/SmartThings/all-SmartThings/">스마트싱스 파트너 제품</a></li>
+											<li><a href="https://www.samsung.com/sec/apps/smartthings/">스마트싱스 앱 & 서비스</a></li>
+										</ul>
+									</div>
+
+									<div class="menuitem__l2__wrap type__table">
+										<ul id="new__prod__slider__08" class="menuitem__slider menuitem__l2__list">
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>삼성닷컴 라이브</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>갤럭시 짝꿍 세일</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>새 출발 SALE</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>삼성닷컴 베스트 리뷰어 챌린지!</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/component01-m.jpg" alt="">
+												<p class="wt">가족의달 선물하기</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>BESPOKE Infinite Line</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>BESPOKE Infinite Line</p>
+											</a></li>
+										</ul>
+										<div class="slider__button__wrap slider__button__8">
+											<div class="slider__button prev__button"><img src="/sec/static/_images/gnb/icon-gnb-arrow.svg" alt=""></div>
+											<div class="slider__button next__button"><img src="/sec/static/_images/gnb/icon-gnb-arrow.svg" alt=""></div>
+										</div>
+										<div class="slider__bar">
+											<div class="gauge"></div>
+										</div>
+									</div>
+                </div>
+              </li>
+							<li class="menuitem__l0"><a href="https://www.samsung.com/sec/youmake/" class="item__button" role="menuitem">#YouMake</a></li>
+							<li class="menuitem__l0">
+								<a href="javascript:void(0)" class="item__button" role="menuitem">이달의 추천</a>
+								<div class="menuitem__l1__container"><!-- menu 1depth container -->
+									<p class="l1__title m-only">이달의 추천</p>
+
+                  <div class="menuitem__l2__wrap"><!-- menu 2depth container -->
+										<ul class="menuitem__l2__list">
+											<li><a href="https://www.samsung.com/sec/event/indexExhibitionCollection/">이달의 추천 모두보기</a></li>
+											<li><a href="https://www.samsung.com/sec/event/indexExhibitionCollection/?eventTypeCd=10">삼성닷컴 단독</a></li>
+											<li><a href="https://www.samsung.com/sec/event/gift/">선물하기</a></li>
+											<li><a href="https://www.samsung.com/sec/event/april-festival/">공동구매</a></li>
+											<li><a href="https://www.samsung.com/sec/store-model/live/">삼성닷컴 Live</a></li>
+											<li><a href="https://www.samsung.com/sec/store-model/weddingshop/">웨딩.신혼샵</a></li>
+											<li><a href="https://www.samsung.com/sec/customstudio/">커스텀 스튜디오</a></li>
+											<li><a href="https://www.samsung.com/sec/customer/salesStore/">스토어 진열 할인 제품</a></li>
+											<li><a href="https://www.samsung.com/sec/event/indexExhibitionCollection/?eventTypeCd=90">이벤트/체험존</a></li>
+										</ul>
+									</div>
+
+									<div class="menuitem__l2__wrap type__table">
+										<ul id="new__prod__slider__08" class="menuitem__slider menuitem__l2__list">
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>삼성닷컴 라이브</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>갤럭시 짝꿍 세일</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>새 출발 SALE</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>삼성닷컴 베스트 리뷰어 챌린지!</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/component01-m.jpg" alt="">
+												<p class="wt">가족의달 선물하기</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>BESPOKE Infinite Line</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>BESPOKE Infinite Line</p>
+											</a></li>
+										</ul>
+										<div class="slider__button__wrap slider__button__8">
+											<div class="slider__button prev__button"><img src="/sec/static/_images/gnb/icon-gnb-arrow.svg" alt=""></div>
+											<div class="slider__button next__button"><img src="/sec/static/_images/gnb/icon-gnb-arrow.svg" alt=""></div>
+										</div>
+										<div class="slider__bar">
+											<div class="gauge"></div>
+										</div>
+									</div>
+                </div>
+							</li>
+							<li class="menuitem__l0"><a href="https://www.samsung.com/sec/outlets/all-outlets/" class="item__button" role="menuitem">아울렛</a></li>
+							<li class="menuitem__l0 list__divide right__menu">
+								<a href="javascript:void(0)" class="item__button" role="menuitem">#Samsung Experience</a>
+								<div class="menuitem__l1__container"><!-- menu 1depth container -->
+									<p class="l1__title m-only">#Samsung Experience</p>
+
+                  <div class="menuitem__l2__wrap"><!-- menu 2depth container -->
+										<ul class="menuitem__l2__list">
+											<li><a href="https://www.samsung.com/sec/bespokeshop/">e식품관</a></li>
+											<li><a href="">펫 케어 스토어</a></li>
+											<li><a href="">홈 트레이닝</a></li>
+											<li><a href="https://www.samsung.com/sec/idea-goods/all-idea-goods/">아이디어 상품</a></li>
+										</ul>
+									</div>
+
+									<div class="menuitem__l2__wrap type__table">
+										<ul id="new__prod__slider__09" class="menuitem__slider menuitem__l2__list">
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>삼성닷컴 라이브</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>갤럭시 짝꿍 세일</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>새 출발 SALE</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>삼성닷컴 베스트 리뷰어 챌린지!</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/component01-m.jpg" alt="">
+												<p class="wt">가족의달 선물하기</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>BESPOKE Infinite Line</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list.png" alt="">
+												<p>BESPOKE Infinite Line</p>
+											</a></li>
+										</ul>
+										<div class="slider__button__wrap slider__button__9">
+											<div class="slider__button prev__button"><img src="/sec/static/_images/gnb/icon-gnb-arrow.svg" alt=""></div>
+											<div class="slider__button next__button"><img src="/sec/static/_images/gnb/icon-gnb-arrow.svg" alt=""></div>
+										</div>
+										<div class="slider__bar">
+											<div class="gauge"></div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="menuitem__l0 list__right right__menu">
+								<a href="javascript:void(0)" class="item__button" role="menuitem">고객 지원</a>
+								<div class="menuitem__l1__container"><!-- menu 1depth container -->
+									<p class="l1__title m-only">고객 지원</p>
+
+                  <div class="menuitem__l2__wrap"><!-- menu 2depth container -->
+										<ul class="menuitem__l2__list">
+											<li><a href="https://www.samsung.com/sec/support/">무엇을 도와드릴까요?</a></li>
+											<li><a href="https://www.samsung.com/sec/support/">제품지원</a></li>
+											<li><a href="https://www.samsung.com/sec/support/newsalert/">추천 부가정보</a></li>
+											<li><a href="https://www.samsung.com/sec/digitalplaza/centerMain/">서비스센터</a></li>
+											<li><a href="https://www.samsung.com/sec/Samsung-Care-Plus/IM/">삼성케어플러스 모바일/PC</a></li>
+											<li><a href="https://www.samsung.com/sec/Samsung-Care-Plus/CE/">삼성케어플러스 가전/TV</a></li>
+										</ul>
+									</div>
+
+									<div class="menuitem__l2__wrap type__table">
+										<ul id="new__prod__slider__10" class="menuitem__slider menuitem__l2__list">
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list2.png" alt="">
+												<p>매뉴얼 & 다운로드</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list2.png" alt="">
+												<p>원격 상담</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list2.png" alt="">
+												<p>전화상담 예약</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list2.png" alt="">
+												<p>삼성닷컴 FAQ</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/component01-m.jpg" alt="">
+												<p>컴퓨터 온라인 상담 </p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list2.png" alt="">
+												<p>출장 서비스 예약</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list2.png" alt="">
+												<p>삼성케어플러스 모바일/PC</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list2.png" alt="">
+												<p>삼성케어플러스 전문세척</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list2.png" alt="">
+												<p>삼성케어플러스 이전설치</p>
+											</a></li>
+										</ul>
+										<div class="slider__button__wrap slider__button__10">
+											<div class="slider__button prev__button"><img src="/sec/static/_images/gnb/icon-gnb-arrow.svg" alt=""></div>
+											<div class="slider__button next__button"><img src="/sec/static/_images/gnb/icon-gnb-arrow.svg" alt=""></div>
+										</div>
+										<div class="slider__bar">
+											<div class="gauge"></div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="menuitem__l0"><a href="https://www.samsung.com/sec/business/" class="item__button newtab" role="menuitem" target="_blank">비즈니스</a></li>
+							<li class="menuitem__l0 right__menu">
+								<a href="javascript:void(0)" class="item__button" role="menuitem">삼성스토어</a>
+								<div class="menuitem__l1__container"><!-- menu 1depth container -->
+									<p class="l1__title m-only">삼성스토어</p>
+
+                  <div class="menuitem__l2__wrap"><!-- menu 2depth container -->
+										<ul class="menuitem__l2__list">
+											<li><a href="https://www.samsung.com/sec/samsungstore/main/">삼성스토어</a></li>
+											<li><a href="https://www.samsung.com/sec/digitalplaza/untact/">언택트 쇼핑 안내</a></li>
+											<li><a href="https://www.samsung.com/sec/digitalplaza/eventList/">이벤트</a></li>
+											<li><a href="https://www.samsung.com/sec/event/apt/">아파트 입주 상담</a></li>
+											<li><a href="https://www.samsung.com/sec/digitalplaza/newOpenStore/">신규 오픈 매장</a></li>
+											<li><a href="https://www.samsung.com/sec/digitalplaza/storeMain/">매장 찾기</a></li>
+											<li><a href="https://www.samsung.com/sec/customer/reservationstore/">매장 상담 예약</a></li>
+											<li><a href="https://www.samsung.com/sec/customer/salesStore/">매장 진열 할인 상품</a></li>
+											<li><a href="https://samsungdigitalplaza-vr.com/">VR 스토어</a></li>
+											<li><a href="https://bespokehomemeta.com/intro">BESPOKE 홈 메타</a></li>
+										</ul>
+									</div>
+
+									<div class="menuitem__l2__wrap type__table">
+										<ul id="new__prod__slider__11" class="menuitem__slider menuitem__l2__list">
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list2.png" alt="">
+												<p>매뉴얼 & 다운로드</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list2.png" alt="">
+												<p>원격 상담</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list2.png" alt="">
+												<p>전화상담 예약</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list2.png" alt="">
+												<p>삼성닷컴 FAQ</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/component01-m.jpg" alt="">
+												<p>컴퓨터 온라인 상담 </p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list2.png" alt="">
+												<p>출장 서비스 예약</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list2.png" alt="">
+												<p>삼성케어플러스 모바일/PC</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list2.png" alt="">
+												<p>삼성케어플러스 전문세척</p>
+											</a></li>
+											<li><a href="javascript:void(0)">
+												<img src="/sec/static/_images/temp/dummy_list2.png" alt="">
+												<p>삼성케어플러스 이전설치</p>
+											</a></li>
+										</ul>
+										<div class="slider__button__wrap slider__button__11">
+											<div class="slider__button prev__button"><img src="/sec/static/_images/gnb/icon-gnb-arrow.svg" alt=""></div>
+											<div class="slider__button next__button"><img src="/sec/static/_images/gnb/icon-gnb-arrow.svg" alt=""></div>
+										</div>
+										<div class="slider__bar">
+											<div class="gauge"></div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+
+						<div class="user__mypage__list">
+							<ul>
+								<li><a href="javascript:void(0)">
+									<img src="/sec/static/_images/gnb/icon-mypage-01.svg" alt="">
+									로그인
+								</a></li>
+								<li><a href="https://account.samsung.com/accounts/v1/SECKDPWEB/userVerifyKoreanRepresentative?itnlYN=Y">
+									<img src="/sec/static/_images/gnb/icon-mypage-02.svg" alt="">
+									회원가입
+								</a></li>
+								<li><a href="https://www.samsung.com/sec/mypage/order/indexDeliveryList/">
+									<img src="/sec/static/_images/gnb/icon-mypage-03.svg" alt="">
+									주문&#47;배송 조회
+								</a></li>
+								<li><a href="https://www.samsung.com/sec/mypage/info/indexMyDeviceList/">
+									<img src="/sec/static/_images/gnb/icon-mypage-04.svg" alt="">
+									제품 등록
+								</a></li>
+								<li><a href="https://www.samsung.com/sec/mypage/coupon/indexMyCoupon/">
+									<img src="/sec/static/_images/gnb/icon-mypage-04.svg" alt="">
+									쿠폰존
+								</a></li>
+								<li><a href="javascript:void(0)">
+									<img src="/sec/static/_images/gnb/icon-mypage-10.svg" alt="">
+									매장상담 예약 신청 조회
+								</a></li>
+								<li><a href="https://www.samsung.com/sec/membership/membershipMain/">
+									<img src="/sec/static/_images/gnb/icon-mypage-05.svg" alt="">
+									멤버십
+								</a></li>
+								<li><a href="https://www.samsung.com/sec/eventList/benefitzone/">
+									<img src="/sec/static/_images/gnb/icon-mypage-06.svg" alt="">
+									삼성전자 회원혜택
+								</a></li>
+								<li><a href="https://www.samsung.com/sec/membership/point/">
+									<img src="/sec/static/_images/gnb/icon-mypage-07.svg" alt="">
+									나의 정보
+								</a></li>
+								<li><a href="https://www.samsung.com/sec/mypage/review/indexMyReview/">
+									<img src="/sec/static/_images/gnb/icon-mypage-09.svg" alt="">
+									작성 가능한 상품평 : <span>26</span>건
+								</a></li>
+								<li><a href="https://www.samsung.com/sec/mypage/coupon/indexMyCoupon/">
+									<img src="/sec/static/_images/gnb/icon-mypage-08.svg" alt="">
+									사용가능한 쿠폰 : <span>8</span>개
+								</a></li>
+								<!-- 230518 설정항목 추가 -->
+								<li><a href="#url">
+									<img src="/sec/static/_images/gnb/icon-setting.svg" alt="">
+									설정
+								</a></li>
+								<li class="logout"><a href="javascript:void(0)">
+									<img src="/sec/static/_images/gnb/icon-mypage-11.svg" alt="">
+									로그아웃
+								</a></li>
+							</ul>
+						</div>	
+					</div>
+					<!-- e: menu -->
+
+					<!-- s: utility -->
+					<div class="utility__wrap">
+						<!-- <div class="utility__button__search" data-name="utility__search">
+							<div class="search__box">
+								<ul id="search__slide__01">
+									<li><a href="javascript:void(0)"><b>1.</b> 스마트폰</a></li>
+									<li><a href="javascript:void(0)"><b>2.</b> 갤럭시 s23 ultra 자급제</a></li>
+									<li><a href="javascript:void(0)"><b>3.</b> BESPOKE 김치플러스 4도어 프리스탠딩 490 L</a></li>
+									<li><a href="javascript:void(0)"><b>4.</b> Crystal UHD 189 cm 스탠드형</a></li>
+								</ul>
+								<button type="button" class="search__button">
+									<span class="sr-only">검색 버튼</span>
+									<img src="/sec/static/_images/gnb/icon-26-Search.svg" alt="">
+								</button>
+							</div>
+						</div> -->
+
+						<div class="utility__button__search__m" data-name="utility__search">
+							<button class="search__button">
+								<span class="sr-only">검색버튼</span>
+								<img src="/sec/static/_images/gnb/icon-26-Search.svg" alt="">
+							</button>
+						</div>
+
+						<div class="utility__button__location" data-name="utility__location">
+							<button class="location__button" onclick="location.href='https://www.samsung.com/sec/digitalplaza/storeMain/'">
+								<span class="sr-only">위치</span>
+								<img src="/sec/static/_images/gnb/icon-26-location.svg" alt="">
+							</button>
+						</div>
+						<!-- 230518 바코드 버튼 추가 -->
+						<div class="utility__button__barcode__m" data-name="utility__barcode">
+							<button class="barcode__button">
+								<span class="sr-only">바코드</span>
+								<img src="/sec/static/_images/gnb/icon-barcode.svg" alt="">
+							</button>
+						</div>
+
+						<div class="utility__button__cart noitem" data-name="utility__cart">
+							<button class="cart__button">
+								<span class="sr-only">장바구니 버튼</span>
+								<img src="/sec/static/_images/gnb/icon-26-cart.svg" alt="">
+								<span class="cart__count">76</span>
+							</button>
+							<div class="cart__list">
+								<ul>
+									<li><a href="#">
+										<img src="https://images.samsung.com/kdp/goods/2023/01/11/ee434007-39ce-4038-b2ff-f0789c78b86c.png?$128_128_PNG$" alt="">
+										<div class="cart__prod__info">
+											<p class="cart__name">갤럭시 S23+ 자급제</p>
+											<p class="cart__price">판매가 <span>1,353,000</span>원</p>
+										</div>
+									</a></li>
+									<li><a href="#">
+										<img src="https://images.samsung.com/kdp/goods/2023/01/11/ee434007-39ce-4038-b2ff-f0789c78b86c.png?$128_128_PNG$" alt="">
+										<div class="cart__prod__info">
+											<p class="cart__name">갤럭시 S23+ 자급제</p>
+											<p class="cart__price">판매가 <span>1,353,000</span>원</p>
+										</div>
+									</a></li>
+									<li><a href="#">
+										<img src="https://images.samsung.com/kdp/goods/2023/01/11/ee434007-39ce-4038-b2ff-f0789c78b86c.png?$128_128_PNG$" alt="">
+										<div class="cart__prod__info">
+											<p class="cart__name">갤럭시 S23+ 자급제</p>
+											<p class="cart__price">판매가 <span>1,353,000</span>원</p>
+										</div>
+									</a></li>
+									<li><a href="#">
+										<img src="https://images.samsung.com/kdp/goods/2023/01/11/ee434007-39ce-4038-b2ff-f0789c78b86c.png?$128_128_PNG$" alt="">
+										<div class="cart__prod__info">
+											<p class="cart__name">갤럭시 S23+ 자급제</p>
+											<p class="cart__price">판매가 <span>1,353,000</span>원</p>
+										</div>
+									</a></li>
+									<li><a href="#">
+										<img src="https://images.samsung.com/kdp/goods/2023/01/11/ee434007-39ce-4038-b2ff-f0789c78b86c.png?$128_128_PNG$" alt="">
+										<div class="cart__prod__info">
+											<p class="cart__name">갤럭시 S23+ 자급제</p>
+											<p class="cart__price">판매가 <span>1,353,000</span>원</p>
+										</div>
+									</a></li>
+								</ul>
+								<!-- 230518 장바구니에 상품이 없을때 문구 -->
+								<div class="cart__noitem">
+									<p>장바구니에 담겨있는 상품이 없습니다.</p>
+								</div>
+								<button type="button" class="btn btn-d btn-type2">장바구니 보기</button>
+							</div>
+						</div>
+
+						<div class="utility__button__user" data-name="utility__user">
+							<button class="user__button">
+								<span class="sr-only">유저 메뉴버튼</span>
+								<img src="/sec/static/_images/gnb/icon-26-mypage.svg" alt="">
+								<!-- 로그인시 사용자 이미지 예시 -->
+								<!-- <img src="/sec/static/_images/temp/dummy_profile.png" alt=""> -->
+							</button>
+							<div class="user__list">
+								<div class="login__user__wrap">
+									<p><span class="icon-user"></span>안녕하세요! <span>홍길동</span></p>
+								</div>
+								<ul>
+									<li><a href="javascript:void(0)">										
+										로그인
+									</a></li>
+									<li><a href="https://account.samsung.com/accounts/v1/SECKDPWEB/userVerifyKoreanRepresentative?itnlYN=Y">										
+										회원가입
+									</a></li>
+									<li><a href="https://www.samsung.com/sec/mypage/order/indexDeliveryList/">										
+										주문&#47;배송 조회
+									</a></li>
+									<li><a href="https://www.samsung.com/sec/mypage/coupon/indexMyCoupon/">										
+										보유 쿠폰
+									</a></li>
+									<li><a href="https://www.samsung.com/sec/membership/membershipMain/">										
+										삼성전자 멤버십
+									</a></li>
+									<li><a href="https://www.samsung.com/sec/eventList/benefitzone/">										
+										삼성전자 회원혜택
+									</a></li>
+									<li><a href="https://www.samsung.com/sec/membership/point/">										
+										나의 정보
+									</a></li>
+									<li><a href="https://www.samsung.com/sec/mypage/info/indexMyDeviceList/">										
+										등록 가능 제품 : <span>8</span>건
+									</a></li>
+									<li><a href="https://www.samsung.com/sec/mypage/review/indexMyReview/">										
+										작성 가능한 상품평 : <span>26</span>건
+									</a></li>
+									<li><a href="https://www.samsung.com/sec//loginOrderNonMember/?loginType=NMODS&returnUrl=%2Fsec%2Fmypage%2Forder%2FindexDeliveryList%2F">										
+										스토어상담 예약 신청 조회
+									</a></li>
+									<li class="logout"><a href="javascript:void(0)">										
+										로그아웃
+									</a></li>
+								</ul>
+							</div>							
+						</div>
+
+						<div class="utility__button__menu__m" data-name="utility__menu">
+							<button class="menu__button">
+								<span class="sr-only">메뉴</span>
+								<img src="/sec/static/_images/gnb/icon-26-menu.svg" alt="">
+							</button>
+						</div>
+					</div>
+					<!-- e: utility -->
+
+					<div class="inner__mask" data-type=""></div>
+        </div>
+      </header>
+			
+			<!-- s : 230302 검색창  -->
+			<div class="unified-search-input-wrap is-active" tabindex="0">
+				<div class="unified-search-input-inner">
+					<div class="search-box">
+						<label for="unifiedInputSearch" class="blind">통합 검색</label><!-- 20200622 for 값 변경 -->
+						<input type="text" id="unifiedInputSearch" class="inp" onfocus="headerSearch.eventListener.uinifiedSearchInp()" onkeydown="headerSearch.eventListener.uinifiedSearchChange()" autocomplete="off">
+						<span class="inp-placeholder" style="display: none;">갤럭시 S20 5G</span><!-- 20200917 추천검색어 추가 -->
+						<button type="button" class="btn-inp-clear" title="삭제"><span class="blind">삭제</span></button><!-- 20200616 삭제 버튼 추가-->
+						<button type="button" class="btn-search" title="검색" id="unifiedSearchButton" onclick="javascript:searchInputManager.getSearchResult($('#unifiedInputSearch').val(), '#unifiedInputSearch')"><span class="blind">검색</span></button>
+					</div>
+				</div>
+
+				<!-- s : 검색레이어 : 최근, 인기-->
+				<div class="unified-search-layer type-keyword" style="display: block;">
+					<div class="unified-search-layer-inner"><!-- 20200618 감싸는 태그 unified-search-layer-inner 추가 -->
+						<div class="layer-cont">
+							<div class="cont-inner box-recent" id="searchkeywordRecent" role="tabpanel">
+								<strong class="tit">최근 검색어</strong>
+								<ul class="list">
+								</ul>
+								<div class="etc"><a href="javascript:void(0)" class="btn-delete delete-all" onclick="searchInputManager.clearSearchHistory(this)">최근 검색어 전체 삭제</a></div>
+							</div>
+							<div class="cont-inner box-popular" id="searchkeywordPopular" role="tabpanel">
+								<strong class="tit">인기 검색어</strong>
+								<ul class="list"><li class="item"><span class="rank">1</span><a href="javascript:void(0)" class="link">모니터</a></li><li class="item"><span class="rank">2</span><a href="javascript:void(0)" class="link">UHD</a><span class="change arr-same"><span class="blind"></span></span></li><li class="item"><span class="rank">3</span><a href="javascript:void(0)" class="link">UHD 커브드 모니터 80 CM</a><span class="change arr-down"><span class="blind"></span></span></li><li class="item"><span class="rank">4</span><a href="javascript:void(0)" class="link">모니터 모니터</a></li><li class="item"><span class="rank">5</span><a href="javascript:void(0)" class="link">블루스카이 7000 일체형필터</a></li></ul>
+								<div class="etc" id="makeTime">2022-08-16 18:00:02 기준</div>
+							</div>
+						</div> 
+					</div><!-- 20200618 감싸는 태그 unified-search-layer-inner의 닫는 태그 추가 -->
+					<button type="button" class="btn-close-search"><span class="blind">검색 레이어 닫기</span></button><!-- 20200618 닫는 태그 추가--><!-- 20200622 button type 변경-->
+				</div>
+				<!-- e : 검색레이어 : 최근, 인기-->
+
+				<!-- s : 검색레이어 : 자동 완성-->
+				<div class="unified-search-layer type-auto" style="display:none">
+					<div class="unified-search-layer-inner"><!-- 20200618 감싸는 태그 unified-search-layer-inner 추가 -->
+						<div class="layer-cont" id="searchAuto">
+							<ul class="list">
+							</ul>
+						</div>
+					</div><!-- 20200618 감싸는 태그 unified-search-layer-inner의 닫는 태그 추가 -->
+					<button type="button" class="btn-close-search"><span class="blind">검색 레이어 닫기</span></button><!-- 20200618 닫는 태그 추가--><!-- 20200622 button type 변경-->
+				</div>
+				<!-- e : 검색레이어 : 자동 완성-->
+				
+				<button type="button" class="btn-close-search"><span class="blind">검색 레이어 닫기</span></button><!-- 20200622 button type 변경-->
+			</div>
+			<!-- e : 230302 검색창  -->
+      <!-- e : 230302 GNB -->
+
+      <!-- s : 본문 영역 -->
+      <div id="container">
+        <div class="pg-location">
+          <div class="pg-location-inner">
+            <a href="javascript:;">HOME</a>
+            <span>마이삼성</span>
+            <span>나의정보</span>
+            <a href="javascript:;">간편로그인 설정</a>
+          </div>
+        </div>
+
+				<div id="test__bodyarea" style="background: #000; padding: 15px; color: #fff;">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione incidunt libero porro magni sint officia, tenetur aspernatur adipisci eum quam vero dolorem repudiandae earum. Veritatis nostrum dolores adipisci tempore voluptatem.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione incidunt libero porro magni sint officia, tenetur aspernatur adipisci eum quam vero dolorem repudiandae earum. Veritatis nostrum dolores adipisci tempore voluptatem.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione incidunt libero porro magni sint officia, tenetur aspernatur adipisci eum quam vero dolorem repudiandae earum. Veritatis nostrum dolores adipisci tempore voluptatem.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione incidunt libero porro magni sint officia, tenetur aspernatur adipisci eum quam vero dolorem repudiandae earum. Veritatis nostrum dolores adipisci tempore voluptatem.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione incidunt libero porro magni sint officia, tenetur aspernatur adipisci eum quam vero dolorem repudiandae earum. Veritatis nostrum dolores adipisci tempore voluptatem.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione incidunt libero porro magni sint officia, tenetur aspernatur adipisci eum quam vero dolorem repudiandae earum. Veritatis nostrum dolores adipisci tempore voluptatem.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione incidunt libero porro magni sint officia, tenetur aspernatur adipisci eum quam vero dolorem repudiandae earum. Veritatis nostrum dolores adipisci tempore voluptatem.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione incidunt libero porro magni sint officia, tenetur aspernatur adipisci eum quam vero dolorem repudiandae earum. Veritatis nostrum dolores adipisci tempore voluptatem.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione incidunt libero porro magni sint officia, tenetur aspernatur adipisci eum quam vero dolorem repudiandae earum. Veritatis nostrum dolores adipisci tempore voluptatem.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione incidunt libero porro magni sint officia, tenetur aspernatur adipisci eum quam vero dolorem repudiandae earum. Veritatis nostrum dolores adipisci tempore voluptatem.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione incidunt libero porro magni sint officia, tenetur aspernatur adipisci eum quam vero dolorem repudiandae earum. Veritatis nostrum dolores adipisci tempore voluptatem.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione incidunt libero porro magni sint officia, tenetur aspernatur adipisci eum quam vero dolorem repudiandae earum. Veritatis nostrum dolores adipisci tempore voluptatem.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione incidunt libero porro magni sint officia, tenetur aspernatur adipisci eum quam vero dolorem repudiandae earum. Veritatis nostrum dolores adipisci tempore voluptatem.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione incidunt libero porro magni sint officia, tenetur aspernatur adipisci eum quam vero dolorem repudiandae earum. Veritatis nostrum dolores adipisci tempore voluptatem.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione incidunt libero porro magni sint officia, tenetur aspernatur adipisci eum quam vero dolorem repudiandae earum. Veritatis nostrum dolores adipisci tempore voluptatem.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione incidunt libero porro magni sint officia, tenetur aspernatur adipisci eum quam vero dolorem repudiandae earum. Veritatis nostrum dolores adipisci tempore voluptatem.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione incidunt libero porro magni sint officia, tenetur aspernatur adipisci eum quam vero dolorem repudiandae earum. Veritatis nostrum dolores adipisci tempore voluptatem.</p>
+					</div>
+      </div>
+      <!-- e : 본문 영역 -->
+
+      <!-- e : 바닥글 영역 -->
+    </div>
+
+		<script>
+			// 230302 script
+			
+			// 하위메뉴 동일유형 슬라이더 함수 230518 부분 제거
+			// $(document).ready(function(){
+
+      //   const menuSliders = $('.menuitem__slider');
+
+			// 	const iterateSlider = () => {
+			// 		for (let i = 0; i < menuSliders.length; i++) {
+			// 			const element = $(menuSliders[i]);
+			// 			let option = {
+			// 				rows: 2,
+			// 				// slidesPerRow: 2,
+			// 				slidesToShow: 1.8,
+			// 				slidesToScroll: 1,
+			// 				infinite: false,
+			// 				draggable: true,
+			// 				arrows: true,
+			// 				prevArrow: $('.slider__button__'+ (i + 1) + ' .prev__button'),
+			// 				nextArrow: $('.slider__button__'+ (i + 1) + ' .next__button'),	
+			// 			}
+			// 			element.not('.slick-initialized').slick(option);
+			// 		}
+			// 		slideBarInit();
+			// 	}
+
+			// 	const stopSlider = () => {
+			// 		for (let i = 0; i < menuSliders.length; i++) {
+			// 			const element = $(menuSliders[i]);
+			// 			element.filter('.slick-initialized').slick('unslick');
+			// 		}
+			// 	}
+
+			// 	// iterateSlider();
+						
+			// 	let delay = 300;
+			// 	let timer = null;
+				
+			// 	window.innerWidth > 1280 ? stopSlider() : iterateSlider();				
+
+			// 	$(window).on("load resize", function () {
+			// 		clearTimeout(timer);
+			// 		timer = setTimeout(function () {
+			// 			console.log("resize event!");
+						
+			// 			if (device.val == 'm' || device.val == 't' || window.innerWidth < 1280 ) {
+			// 				iterateSlider();
+			// 			}else{
+			// 				stopSlider();
+			// 			}
+			// 		}, delay);
+			// 	});
+
+			// 	function slideBarInit() {
+			// 		menuSliders.each(function(idx, item){
+			// 			let gauge = $(item).parent().find('.gauge');
+			// 			let sldLen = $(item).find('.slick-slide').length;						
+			// 			let barWidth = Math.round(parseInt(100 / sldLen).toFixed(4));
+			// 			gauge.css({
+			// 				'width': barWidth + '%'
+			// 			});
+
+			// 			$(item).on('afterChange', function (event, slick, currentSlide, nextSlide) {
+			// 				// console.log(currentSlide);
+			// 				let gaugeP = parseInt(100 / slick.$slides.length).toFixed(4);
+			// 				gauge.animate({
+			// 					'width': (gaugeP * (currentSlide + 1)) + '%'
+			// 				}, 300);
+			// 			});
+			// 		});
+			// 	};
+			// });
+
+			// 인기검색어 슬라이드
+			const favorSearchOpt = {
+				autoplay: true,
+  			autoplaySpeed: 2000,
+				infinite: true,
+				vertical: true,
+				verticalSwiping: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				focusOnSelect: true,
+				arrows: false
+			};
+			$('#search__slide__00').slick(favorSearchOpt);
+			$('#search__slide__01').slick(favorSearchOpt);
+			$('#search__slide__02').slick(favorSearchOpt);
+
+			// s: test script
+			// $(document).on('click',function(e){
+			// 	console.log(e.target);
+			// });
+			
+			// menu 링크 없는경우 체크 : 빨간색 테두리 생김
+			const l2Wrap = $('.menuitem__l2__wrap');
+			const l2Check = l2Wrap.find('a');
+			const aTag = $('#header__navi').find('a');
+
+			// aTag.each(function(idx, item){
+			// 	let thisItem = $(item);
+			// 	thisItem.attr('href') == '' || thisItem.attr('href') == 'javascript:void(0)' 
+			// 		? thisItem.css('outline', '2px solid red') : false;	
+			// });
+			
+			// e: test script
+		</script>
+		
+  </body>
+</html>
