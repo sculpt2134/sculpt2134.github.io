@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+html, body, div, h1, h2, h3, h4, h5, h6, span, object, iframe,
+ p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, a,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, textarea, select,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary, button,
+time, mark, audio, video {
+    word-break: normal; letter-spacing: normal;
+}
+a { box-sizing: unset; -webkit-box-sizing: unset; -moz-box-sizing: unset; -ms-box-sizing: unset; }
+body{ line-height: inherit; line-height: 1.32;}
+span, strong, input, select { vertical-align:inherit; }
+sup { vertical-align:super;}
+td { vertical-align:middle;}
+
+/*common*/
+.btn { border:none; padding-left:0; padding-right:0; background:none;}
+.btn-box {margin-top:0;}
+
+@media all and (max-width:1440px) and (min-width:1101px){
+
+    html, body, div, span, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    abbr, address, cite, code,
+    del, dfn, em, img, ins, kbd, q, samp,
+    small, strong, sub, sup, var,
+    b, i, a,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section, summary, button,
+    time, mark, audio, video { font-size:inherit; }
+
+}
+
+@media all and (max-width:1100px) and (min-width:801px){
+    html, body, div, span, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    abbr, address, cite, code,
+    del, dfn, em, img, ins, kbd, q, samp,
+    small, strong, sub, sup, var,
+    b, i, a,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section, summary, button,
+    time, mark, audio, video { font-size:inherit; }
+
+}
+
+@media all and (max-width:800px){
+    html, body, div, span, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    abbr, address, cite, code,
+    del, dfn, em, img, ins, kbd, q, samp,
+    small, strong, sub, sup, var,
+    b, i, a,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section, summary, button,
+    time, mark, audio, video { font-size:inherit; }
+    
+    /*common*/
+	.btn { border:none;}
+
+}
+
+@media all and (max-width:414px){
+    html, body, div, span, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    abbr, address, cite, code,
+    del, dfn, em, img, ins, kbd, q, samp,
+    small, strong, sub, sup, var,
+    b, i, a,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section, summary, button,
+    time, mark, audio, video { font-size:inherit; }
+} 

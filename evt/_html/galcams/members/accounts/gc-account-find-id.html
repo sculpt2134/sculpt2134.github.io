@@ -1,0 +1,459 @@
+
+<!DOCTYPE html>
+<html lang="ko" >
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8">
+<title>삼성계정</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+
+<!-- <script>var PAGEPATH = '/accounts/find/findId.js';</script> -->
+<script>var PAGEPATH = '../../../_script/accounts/findId.js';</script>
+<link rel="stylesheet" href="../../../../_css/angular-block-ui.min.css">
+<link rel="stylesheet" type="text/css" href="../../../../_css/angular-material.css">
+<link rel="stylesheet" type="text/css" href="../../../../_css/default.css">
+<link rel="stylesheet" type="text/css" href="../../../../_css/gc-common.css"><!-- 20220628 gc 추가 -->
+
+<link type="image/x-icon" rel="shortcut icon" href="https://account.samsung.com/favicon.ico" />
+<!--[if lt IE 9]>
+	<script src="https://account.samsung.com/accounts/v1/resources/js/common/json/json3.min.js"></script>
+	<script src="https://account.samsung.com/accounts/v1/resources/js/common/html5shiv/html5shiv.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+//<![CDATA[
+    var wipLogicalPath            = "../../../../_script/accounts/";
+	var wipResourcesVerDt		= "20220504123407";
+	var wipCancelURI			= "https://account.samsung.com/membership/";
+	var wipGoBackURI			= "https://account.samsung.com/membership/";
+	var loLangCD				= "ko";
+	var loCntyCD				= "KR";
+	var isTextRightAlign		= false;
+	var isTextFirstFamilyName	= true;
+	var isTextFirstDateYear		= true;
+	var wipAcsChnlEnum			= "WEB";
+	var wipViewTypeEnum			= "v2";
+	var userGeoIPCnty3dgtCd		= "KOR";
+	var userAcsCnty3dgtCd		= "KOR";
+	var userCnty3dgtCd			= "";
+	var wipUriEnum				= "findId";
+	var APPNAME					= "SECKDPWEB";
+	var sJSESSIONID				= "f7a5a499-0808-45a9-9079-871246b82e13";
+	var wipCsrf 				= {'token' : '4f50a9ae-7877-42c8-bfac-07aeeea24d8a', 'headerName' : 'X-CSRF-TOKEN'};
+	var wipResourcesUrl			= "https://account.samsung.com/accounts/v1/resources";
+	var isGAEnabled 			= true;
+	var googleRecaptchaApiUrl 	= "https://www.google.com";
+//]]>
+
+    if(isGAEnabled) {
+        var containerId;
+        if(wipResourcesUrl.indexOf("sad") !== -1) {
+          containerId = 'GTM-KCH2BM6';
+        }
+        else if(wipResourcesUrl.indexOf("stg") !== -1) {
+          containerId = 'GTM-W3S5ZM6';
+        }
+        else {
+          containerId = 'GTM-5C6SNNV';
+        }
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer', containerId);
+    }
+
+	var createPostMessage = function(){
+
+	    var sendPostMessage = function(){
+	        console.log("");
+	    }
+
+	    if(APPNAME.indexOf("samsung_com_us") !== -1) {
+	        if(document.getElementsByClassName('wrapper')[0]) {
+	            var pageType = "signin";
+	            if(document.querySelector('form[name="signUpForm"]')) {
+	                pageType = "signup";
+	            } else if (document.querySelector('form[name=findIdForm]')){
+	                pageType = "findid";
+	            } else if (document.querySelector('form[name=rstPwd]')){
+	                pageType = "resetpwd";
+	            } else {
+	                pageType = "others";
+	            }
+	            sendPostMessage = function(){
+	                window.parent.postMessage({
+	                    pageType: pageType
+	                }, '*');
+	            }
+	        }
+	    }
+	    sendPostMessage();
+	}
+
+</script>
+
+<!-- js loading -->
+<script src="https://account.samsung.com/accounts/v1/resources/js/common/wip.js"></script>
+
+<script src="https://account.samsung.com/accounts/v1/resources/js/v2/app.js"></script>
+<script src="https://account.samsung.com/accounts/v1/resources/js/v2/run.js"></script>
+
+<script src="https://account.samsung.com/accounts/v1/resources/js/common/qrcode-generator/qrcode.js"></script>
+<script src="https://account.samsung.com/accounts/v1/resources/js/common/qrcode-generator/qrcode_UTF8.js"></script>
+<script src="https://account.samsung.com/accounts/v1/resources/js/common/angular-qrcode/angular-qrcode.js"></script>
+
+</head>
+<script type="text/javascript">
+</script>
+
+<style>
+    .error-msg {display: block !important}
+</style>
+
+<body data-ng-cloak>
+<div class="wrapper" data-ng-controller="cmmController as cmm">
+    
+<div class="banner" ng-if="isIESupportMessageShow=='Y'">
+	<div class="banner-inner">
+		<div class="title">Internet Explorer 지원 종료 예정</div>
+		<div class="cnt">
+			2022-04-01 이후에는  삼성 계정에 접속할 때 Internet Explorer를 더 이상 사용할 수 없습니다.
+			<br>
+			 2022-04-01 이후에 삼성 계정에 접속할 때는  <a href="https://www.microsoft.com/edge" target="_blank">Microsoft Edge</a>, <a href="https://www.google.com/chrome/" target="_blank">Google Chrome</a>, <a href="https://www.mozilla.org/" target="_blank">Mozilla Firefox</a>를 사용하세요.
+        </div>
+		<div class="close"><button type="button" ng-click="isIESupportMessageShowToggle()">Banner Close</button></div>
+	</div>
+</div>
+<header class="one-header">
+	<div class="header-inner">
+		<div class="logo">
+			<h1><img src="https://account.samsung.com/accounts/v1/resources/one-ui/images/svg/txt_logo.svg" onerror="this.src='https://account.samsung.com/accounts/v1/resources/one-ui/images/layout/txt_logo.png';" alt="Samsung account"></h1>
+		</div>
+	</div>
+</header>
+
+    <main class="one-main" data-ng-controller="mainController as vm">
+        <div class="main-inner" onclick="inputEvent()" onkeydown="inputEvent()">
+            <!-- container -->
+            <div class="container">
+                <div class="title" data-ng-show="!showUserInfoField">
+                    <h1>내 계정 ID 찾기</h1>
+                </div>
+                <!-- <div class="title" data-ng-show="showUserInfoField">
+                    <h1>계정 확인</h1>
+                </div> -->
+                <div class="content">
+                    <!-- content -->
+                    <p class="text-guide" data-ng-show="!showUserInfoField">
+                        내 계정 ID를 복구하려면 복구용 이메일 주소 또는 전화번호를 입력하세요.
+                    </p>
+                    <!-- <p class="text-guide" data-ng-show="showUserInfoField">
+                        내 계정 ID를 복구하려면 아래 정보를 입력하세요.
+                    </p> -->
+
+                    <!-- forms -->
+                    <div class="one-forms">
+                        <form name="findIdForm" novalidate>
+                            <fieldset role="form">
+                                <legend>Email or phone number</legend>
+                                <div class="one-input-container" data-ng-show="!showUserInfoField">
+                                    <label for="recoveryId">복구용 전화번호 또는 이메일</label>
+                                    <input name="recoveryId" mendatory id="recoveryId" type="text" data-ng-model="vm.recoveryId" ng-required="findIdForm.recoveryId.$dirty" ng-pattern="$parent.phoneEmailRegex" maxlength="100" server-validation="'svrRtnValidate'">
+                                    <div ng-messages="findIdForm.recoveryId.$error" class="error-msg">
+                                        <div ng-message="required">유효한 전화번호 또는 이메일 주소를 입력하세요.</div>
+                                        <div ng-message="pattern">유효한 전화번호 또는 이메일 주소를 입력하세요.</div>
+                                        <div ng-message="svrRtnValidate">{{vm.svrRtnMsg}}</div>
+                                    </div>
+                                </div>
+
+                                <div class="one-forms" data-ng-if="showUserInfoField">
+                                    <form name="findIdForm" autocomplete="off">
+                                        <fieldset>
+                                            <legend>Information for find id</legend>
+                                            <div class="one-input-container"
+                                                 data-ng-show="vm.isTextFirstFamilyName">
+                                                <label for="familyName">
+                                                    성
+                                                </label>
+                                                <input data-ng-model="vm.familyName" id="familyName"
+                                                       name="familyName" type="text" aria-required="true"
+                                                       aria-invalid="findIdForm.familyName.$error.pattern || err.familyName"
+                                                       aria-describeby="{{findIdForm.familyName.$error.pattern ? 'fmerr1' : 'fmerr2' }}"
+                                                       maxlength="50" data-ng-pattern="$parent.nameRegex"
+                                                       ng-model-options="{ updateOn: 'keyup blur' }" not-enter/>
+                                                <!-- error text 영역 -->
+                                                <div data-ng-show="findIdForm.familyName.$error.pattern"
+                                                     class="error-msg" id="fmerr1">
+                                                    이름에 특수문자를 사용할 수 없습니다.
+                                                </div>
+                                                <div data-ng-show="err.familyName" class="error-msg" id="fmerr2">
+                                                    성을 입력하십시오.
+                                                </div>
+                                                <!-- //error text 영역 -->
+                                            </div>
+                                            <div class="one-input-container"
+                                                 data-ng-show="vm.isTextFirstFamilyName">
+                                                <label for="givenName">이름</label>
+                                                <input data-ng-model="vm.givenName" id="givenName" name="givenName" type="text" aria-required="true" aria-invalid="findIdForm.givenName.$error.pattern || err.givenName" aria-describeby="{{findIdForm.givenName.$error.pattern ? 'gverr1' : 'gverr2' }}" maxlength="50" data-ng-pattern="$parent.nameRegex" ng-model-options="{ updateOn: 'keyup blur' }" not-enter/>
+                                                <!-- error text 영역 -->
+                                                <div data-ng-show="findIdForm.givenName.$error.pattern" class="error-msg" id="gverr1">이름에 특수문자를 사용할 수 없습니다.</div>
+                                                <div data-ng-show="err.givenName" class="error-msg" id="gverr2">
+                                                    이름을 입력하십시오.</div>
+                                                <!-- //error text 영역 -->
+                                            </div>
+                                            <div class="one-input-container"
+                                                 data-ng-show="!vm.isTextFirstFamilyName">
+                                                <label for="givenName">이름
+                                                </label>
+                                                <input data-ng-model="vm.givenName" id="givenName1"
+                                                       name="givenName1" type="text" aria-required="true"
+                                                       aria-invalid="findIdForm.givenName1.$error.pattern || err.givenName"
+                                                       aria-describeby="{{findIdForm.givenName1.$error.pattern ? 'gverr1' : 'gverr2' }}"
+                                                       maxlength="50" data-ng-pattern="$parent.nameRegex"
+                                                       ng-model-options="{ updateOn: 'keyup blur' }" not-enter/>
+                                                <!-- error text 영역 -->
+                                                <div data-ng-show="findIdForm.givenName1.$error.pattern"
+                                                     class="error-msg" id="gverr1">
+                                                    이름에 특수문자를 사용할 수 없습니다.
+                                                </div>
+                                                <div data-ng-show="err.givenName" class="error-msg" id="gverr2">
+                                                    이름을 입력하십시오.
+                                                </div>
+                                                <!-- //error text 영역 -->
+                                            </div>
+                                            <div class="one-input-container"
+                                                 data-ng-show="!vm.isTextFirstFamilyName">
+                                                <label for="familyName">
+                                                    성
+                                                </label>
+                                                <input data-ng-model="vm.familyName" id="familyName1"
+                                                       name="familyName1" type="text" aria-required="true"
+                                                       aria-invalid="findIdForm.familyName1.$error.pattern || err.familyName"
+                                                       aria-describeby="{{findIdForm.familyName1.$error.pattern ? 'fmerr1' : 'fmerr2' }}"
+                                                       maxlength="50" data-ng-pattern="$parent.nameRegex"
+                                                       ng-model-options="{ updateOn: 'keyup blur' }" not-enter/>
+                                                <!-- error text 영역 -->
+                                                <div data-ng-show="findIdForm.familyName1.$error.pattern"
+                                                     class="error-msg" id="fmerr1">이름에 특수문자를 사용할 수 없습니다.</div>
+                                                <div data-ng-show="err.familyName" class="error-msg"
+                                                     id="fmerr2">성을 입력하십시오.</div>
+                                                <!-- //error text 영역 -->
+                                            </div>
+
+                                            <div class="oneinput-flexbox">
+                                                <div class="one-input-container active flexbdy">
+                                                    <label for="day">
+                                                        생년월일
+                                                    </label>
+                                                </div>
+
+                                                <div class="one-input-container"
+                                                     data-ng-if="!vm.isTextFirstDateYear  && !($parent.angularCountryCode == 'USA')">
+                                                    <label for="day">
+                                                        일
+                                                    </label>
+                                                    <input type="tel" id="day" name="day" data-ng-model="vm.day"
+                                                           maxlength="2"
+                                                           aria-required="true"
+                                                           aria-invalid="{{err.birthDate || findIdForm.year.$error.pattern || findIdForm.day.$error.pattern}}"
+                                                           aria-describedby="{{findIdForm.year.$error.pattern || findIdForm.day.$error.pattern ? 'bdnumberpattern' : 'bderror'+err.birthDateCode }}"
+                                                           ng-model-options="{ updateOn: 'keyup blur' }"
+                                                           not-enter kr-input
+                                                           data-ng-pattern="$parent.birthdateNumber">
+                                                </div>
+                                                <div class="one-input-container"
+                                                     data-ng-if="vm.isTextFirstDateYear  && !($parent.angularCountryCode == 'USA')">
+                                                    <label for="year">년</label>
+                                                    <input type="tel" id="year" name="year"
+                                                           data-ng-model="vm.year" class="dateofbirthForm"
+                                                           maxlength="4" aria-required="true"
+                                                           aria-invalid="{{err.birthDate || findIdForm.year.$error.pattern || findIdForm.day.$error.pattern}}"
+                                                           aria-describedby="{{findIdForm.year.$error.pattern || findIdForm.day.$error.pattern ? 'bdnumberpattern' : 'bderror'+err.birthDateCode }}"
+                                                           ng-model-options="{ updateOn: 'keyup blur' }"
+                                                           not-enter kr-input
+                                                           data-ng-pattern="$parent.birthdateNumber">
+                                                </div>
+                                                <div class="one-input-container selectfield">
+                                                    <label for="month">월</label>
+                                                    <select id="month" name="month" data-ng-model="vm.month"
+                                                            items="vm.month" data-validate="select"
+                                                            aria-required="true"
+                                                            aria-invalid="{{err.birthDate || signUpForm.year.$error.pattern || signUpForm.day.$error.pattern}}"
+                                                            aria-describedby="{{signUpForm.year.$error.pattern || signUpForm.day.$error.pattern ? 'bdnumberpattern' : 'bderror'+err.birthDateCode }}"
+                                                            data-ng-focus="vm.showTip=true;"
+                                                            data-ng-blur="vm.showTip=false;">
+                                                        <option value="" disabled="disabled">월
+                                                        </option>
+                                                        <option data-ng-repeat="value in ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] | monthTextRange"
+                                                                value="{{value.index}}">{{value.month}}
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div class="one-input-container"
+                                                     data-ng-if="!vm.isTextFirstDateYear && !($parent.angularCountryCode == 'USA')">
+                                                    <label for="year">
+                                                        년
+                                                    </label>
+                                                    <input type="tel" id="year" name="year"
+                                                           data-ng-model="vm.year" class="dateofbirthForm"
+                                                           maxlength="4" aria-required="true"
+                                                           aria-invalid="{{err.birthDate || findIdForm.year.$error.pattern || findIdForm.day.$error.pattern}}"
+                                                           aria-describedby="{{findIdForm.year.$error.pattern || findIdForm.day.$error.pattern ? 'bdnumberpattern' : 'bderror'+err.birthDateCode }}"
+                                                           ng-model-options="{ updateOn: 'keyup blur' }"
+                                                           not-enter kr-input
+                                                           data-ng-pattern="$parent.birthdateNumber">
+                                                </div>
+                                                <div class="one-input-container"
+                                                     data-ng-if="vm.isTextFirstDateYear && !($parent.angularCountryCode == 'USA')">
+                                                    <label for="day">일
+                                                    </label>
+                                                    <input type="tel" id="day" name="day" data-ng-model="vm.day"
+                                                           maxlength="2"
+                                                           aria-required="true"
+                                                           aria-invalid="{{err.birthDate || findIdForm.year.$error.pattern || findIdForm.day.$error.pattern}}"
+                                                           aria-describedby="{{findIdForm.year.$error.pattern || findIdForm.day.$error.pattern ? 'bdnumberpattern' : 'bderror'+err.birthDateCode }}"
+                                                           ng-model-options="{ updateOn: 'keyup blur' }"
+                                                           not-enter kr-input
+                                                           data-ng-pattern="$parent.birthdateNumber">
+                                                </div>
+
+                                                <div class="one-input-container"
+                                                     data-ng-if="($parent.angularCountryCode == 'USA')">
+                                                    <label for="day">
+                                                        일
+                                                    </label>
+                                                    <input type="tel" id="day" name="day" data-ng-model="vm.day"
+                                                           maxlength="2"
+                                                           aria-required="true"
+                                                           aria-invalid="{{err.birthDate || findIdForm.year.$error.pattern || findIdForm.day.$error.pattern}}"
+                                                           aria-describedby="{{findIdForm.year.$error.pattern || findIdForm.day.$error.pattern ? 'bdnumberpattern' : 'bderror'+err.birthDateCode }}"
+                                                           ng-model-options="{ updateOn: 'keyup blur' }"
+                                                           not-enter kr-input
+                                                           data-ng-pattern="$parent.birthdateNumber">
+                                                </div>
+                                                <div class="one-input-container"
+                                                     data-ng-if="($parent.angularCountryCode == 'USA')">
+                                                    <label for="year">년</label>
+                                                    <input type="tel" id="year" name="year"
+                                                           data-ng-model="vm.year" class="dateofbirthForm"
+                                                           maxlength="4" aria-required="true"
+                                                           aria-invalid="{{err.birthDate || findIdForm.year.$error.pattern || findIdForm.day.$error.pattern}}"
+                                                           aria-describedby="{{findIdForm.year.$error.pattern || findIdForm.day.$error.pattern ? 'bdnumberpattern' : 'bderror'+err.birthDateCode }}"
+                                                           ng-model-options="{ updateOn: 'keyup blur' }"
+                                                           not-enter kr-input
+                                                           data-ng-pattern="$parent.birthdateNumber">
+                                                </div>
+
+                                                <input data-ng-model="vm.birthDate" id="birthDate"
+                                                       name="birthDate"
+                                                       type="hidden"/>
+                                                <!-- error text 영역 -->
+                                                <div data-ng-show="findIdForm.year.$error.pattern || findIdForm.day.$error.pattern"
+                                                     class="error-msg" id="bdnumberpattern">
+                                                    숫자만 입력할 수 있습니다.
+                                                </div>
+
+                                                <div data-ng-switch on="err.birthDateCode" class="error-msg"
+                                                     data-ng-hide="!err.birthDate || findIdForm.year.$error.pattern || findIdForm.day.$error.pattern">
+                                                    <div data-ng-switch-when="01"
+                                                         id="bderror{{err.birthDateCode}}">
+                                                        생년월일을 입력하십시오.</div>
+                                                    <div data-ng-switch-when="02"
+                                                         id="bderror{{err.birthDateCode}}">
+                                                        유효한 생년월일을 입력하십시오.</div>
+                                                    <div data-ng-switch-default
+                                                         id="bderror{{err.birthDateCode}}">
+                                                        가입 가능한 최소 연령을 확인해 주세요.</div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <!-- //content -->
+                </div>
+            </div>
+            <!-- //container -->
+            <!-- under content -->
+            <div class="under-content">
+                <div class="one-btn-container" data-ng-show="!showUserInfoField">
+                    <button class="one-primary one-button" type="button" id="continueButton" data-ng-disabled="findIdForm.$invalid || !vm.recoveryId" data-ng-click="btnShowUserInfoField()">
+                        계속
+                    </button>
+                </div>
+                <div class="under-menu" data-ng-show="!showUserInfoField">
+                    <ul>
+                        <li><a href="#" data-ng-click="btnFindIdWithUserInfo()">계정 ID를 찾는데 어려움이 있나요?</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--//under content -->
+        </div>
+    </main>
+    <!-- footer -->
+    
+	<!-- footer -->
+	<footer class="one-footer" role="contentinfo">
+		<div class="footer-inner">
+			<div class="footer-logo"><img src="https://account.samsung.com/accounts/v1/resources/one-ui/images/layout/txt_foo_logo.png" onerror="this.src='https://account.samsung.com/accounts/v1/resources/one-ui/images/layout/txt_foo_logo.png';" alt="Samsung account"></div>
+			<address class="footer-address">Copyright © 1995-2022 Samsung. All Rights Reserved.</address>
+			<div class="footer-links" role="link">
+				<a href="https://account.samsung.com/membership/terms/termscontents?paramLocale=ko_KR" title="Open links in a new window Terms and Conditions">이용약관</a>
+				<a href="https://account.samsung.com/membership/terms/privacypolicy?paramLocale=ko_KR" title="Open links in a new window Privacy Policy" class="active">개인정보 처리방침</a>
+				<a href="https://account.samsung.com/membership/notice/notice-list?paramLocale=ko_KR" title="Open links in a new window Notices">공지</a>
+				<a href="https://help.content.samsung.com/csweb/auth/gosupport.do?targetUrl=/main/main.do&serviceCd=saccount&_common_country=KR&_common_lang=ko" title="Open links in a new window Contact us">문의하기</a>
+			</div>
+		</div>
+	</footer>
+	<!-- //footer -->
+
+    <!-- //footer -->
+</div>
+<!--//pageWrap -->
+
+<!-- javascript -->
+<script src="https://account.samsung.com/accounts/v1/resources/one-ui/js/common/jquery/jquery.min.js"></script>
+
+<script>
+  window.onload = function(){
+
+    inputEvent();
+    if($('form').find(':input')[0]!==undefined){
+      $(':focus').blur();
+      $('form').find(':input')[0].focus();
+    }
+  };
+
+  var inputEvent = function() {
+    var $inputs = $('form').find(':input');
+    $inputs.each(function() {
+      var $input = $(this),
+          $label = $input.parent('div.one-input-container');
+      if ($input.val()) {
+        $label.addClass('active');
+        $label.siblings('div.flexbdy').addClass('off');
+      }
+      
+      $input.focusin(function() {
+        $label.addClass('focus');
+        $label.siblings('div.flexbdy').addClass('off');
+      });
+      $input.change(function() {
+        $label.addClass('active');
+      });
+      $input.focusout(function() {
+        $label.removeClass('focus');
+
+        if (!$input.val()) $label.removeClass('active').siblings('div.flexbdy').removeClass('off');
+      });
+    }
+    );
+  }
+</script>
+
+</body>
+</html>

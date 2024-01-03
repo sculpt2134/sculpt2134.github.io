@@ -1,0 +1,2425 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+
+    <title>나의 상품평 | Samsung 대한민국</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="date" content="">
+    <meta name="sitecode" content="sec">
+
+
+    <meta name="twitter:card" content="">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+
+    <!-- s: 2022.03.15 VAC 광고 세팅 중 웹사이트 확인을 위한 tag -->
+    <meta name="google-site-verification" content="Y5FXtKRkwrMXPsNBUlQe-3vZp4mtp_PZRy1jmEyp6wM" />
+    <!-- e: 2022.03.15 VAC 광고 세팅 중 웹사이트 확인을 위한 tag -->
+
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Samsung sec">
+    <meta property="og:locale" content="ko">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:country-name" content="sec">
+
+    <meta itemprop="name" content="Samsung sec">
+    <meta itemprop="image" content="">
+    <meta itemprop="url" content="">
+    <meta itemprop="description" content="">
+    <meta itemprop="keywords" content="">
+
+    <link rel="dns-prefetch" href="https://images.samsung.com">
+    <link rel="preconnect" href="https://images.samsung.com">
+    <link rel="shortcut icon" href="../../_images/favicon.ico">
+    <link rel="apple-touch-icon" href="" sizes="">
+
+    <link rel="stylesheet" href="../../_css/reset.css">
+    <link rel="stylesheet" href="../../_css/style.css">
+    <link rel="stylesheet" href="../../_css/component.css"><!-- 컴포넌트 스타일 -->
+    <link rel="stylesheet" href="../../_css/app.css">
+    <link rel="stylesheet" href="../../_css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../_css/swiper.min.css">
+    <link rel="stylesheet" href="../../_css/homefitness.css">
+    <link rel="stylesheet" href="../../_css/gc-common.css"><!-- 20220509 gc 추가 -->
+    <link rel="stylesheet" href="../../_css/gc-common-hkh.css"><!-- 20220509 gc 추가 -->
+    <link rel="stylesheet" href="../../_css/gc-common-jaeyeon.css"><!-- 20220621 gc 추가 -->
+
+
+    <script src="../../_script/jquery-3.3.1.min.js"></script>
+    <script src="../../_script/jquery-ui.min.js"></script>
+    <script src="../../_script/slick.js"></script>
+    <script src="../../_script/slick-init.js"></script>
+    <script src="../../_script/swiper.min.js"></script>
+    <script src="../../_script/masonry.min.js"></script><!-- masonry js -->
+    <!--    <script src="../../_script/jquery.blockUI.js"></script>-->
+    <script src="../../_script/base.js"></script>
+    <script src="../../_script/layerPop.js"></script>
+    <script type="text/javascript" src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js" charset="utf-8"></script>
+    <script src="../../_script/netfunnel.js" charset="UTF-8"></script>
+    <script src="../../_script/netfunnel_skin.js" charset="UTF-8"></script>
+    <script src="../../_script/common.js"></script>
+    <script src="../../_script/default.js"></script><!-- 20220509 gc 추가 -->
+    <script src="../../_script/custom.js"></script>
+    <script src="../../_script/sticky.min.js"></script>
+    <script src="../../_script/jquery.cookie.js"></script>
+    <script src="../../_script/search.js"></script>
+    <script src="../../_script/component.js"></script>
+    <script src="../../_script/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../_script/event/event.js"></script>
+    <script src="../../_script/clipboard.min.js"></script>
+    <script src="../../_script/buynow.js"></script>
+    <script type="text/javascript" src="../../_script/picturePolyfill.min.js"></script>
+   
+    <script type="text/javascript">
+        var checkActionTimeOut;
+        $(document).ready(function() {
+            /*
+		$.ajax({
+			 url : "/sec/xhr/member/getSession"
+			,type : "POST"
+			,success : function(data) {
+				var session = JSON.parse(data);
+				if(session.mbrNo != 0){
+					resetLoginTimeOut();
+					$(document).on('click keypress' , 'body' , function(){
+						resetLoginTimeOut();
+					});
+				}
+			}
+		});
+		*/
+            if ('200600145' != 0) {
+                resetLoginTimeOut();
+                $(document).on('click keypress', 'body', function() {
+                    resetLoginTimeOut();
+                });
+            }
+        });
+
+        function resetLoginTimeOut() {
+            window.clearTimeout(checkActionTimeOut);
+            checkActionTimeOut = setTimeout(function() { // 30분 후 로그아웃
+                location.href = "/sec/member/logout/";
+            }, 24 * 60 * 60 * 1000);
+        }
+    </script>
+    <!-- s : AA 태깅 -->
+    <script type="text/javascript">
+        var pageURL = window.location.href;
+        var siteCode = "sec";
+
+        var digitalData = {
+            "page": {
+                "pageInfo": {
+                    "siteCode": siteCode,
+                    "siteSection": "",
+                    "pageName": "",
+                    "pageURL": pageURL,
+                    "pageTrack": "my account",
+                    "version": "KDP"
+                },
+                "pathIndicator": {
+                    "depth_2": "my account",
+                    "depth_3": "activity",
+                    "depth_4": "review",
+                    "depth_5": ""
+                }
+            },
+            "user": {
+                "loginStatus": ""
+            },
+            "product": {
+                "category": "",
+                "model_code": "",
+                "model_name": "",
+                "displayName": "",
+                "pvi_type_code": "",
+                "pvi_type_name": "",
+                "pvi_subtype_code": "",
+                "pvi_subtype_name": ""
+
+            }
+        }
+
+        // depth Info.
+        var depth = window.location.href.split("/").length;
+        var depth_last = window.location.href.split("/")[depth - 1];
+        if (depth_last == "" || depth_last.charAt(0) == "?") {
+            depth -= 1;
+        }
+
+        // set site section value
+        if ((digitalData.page.pathIndicator.depth_2 != "") || (digitalData.page.pageInfo.pageTrack == "flagship pdp")) {
+            if (digitalData.page.pathIndicator.depth_2 == "shop" || digitalData.page.pathIndicator.depth_2 == "my account") {
+                digitalData.page.pageInfo.siteSection = siteCode + ":" + digitalData.page.pathIndicator.depth_2;
+            } else {
+                digitalData.page.pageInfo.siteSection = siteCode + ":consumer"; //product page
+            }
+        } else if (depth == 4) {
+            digitalData.page.pageInfo.siteSection = siteCode + ":home"; //home
+        } else {
+            digitalData.page.pageInfo.siteSection = siteCode + ":" + window.location.href.split("/")[4];
+        }
+
+        // set product category value
+        /* 	if(digitalData.page.pathIndicator.depth_3 != ""){
+	    digitalData.product.category = digitalData.page.pathIndicator.depth_3;
+	} */
+
+        // set pathIndicator(not product page)
+        if (digitalData.page.pathIndicator.depth_2 == "") {
+            if (depth >= 5) digitalData.page.pathIndicator.depth_2 = window.location.href.split("/")[4].toLowerCase();
+            if (depth >= 6) digitalData.page.pathIndicator.depth_3 = window.location.href.split("/")[5].toLowerCase();
+            if (depth >= 7) digitalData.page.pathIndicator.depth_4 = window.location.href.split("/")[6].toLowerCase();
+            if (depth >= 8) digitalData.page.pathIndicator.depth_5 = window.location.href.split("/")[7].toLowerCase();
+        }
+
+        // set pageName
+        var pageName = siteCode;
+        if (digitalData.page.pathIndicator.depth_2 != "")
+            pageName += ":" + digitalData.page.pathIndicator.depth_2;
+        if (digitalData.page.pathIndicator.depth_3 != "")
+            pageName += ":" + digitalData.page.pathIndicator.depth_3;
+        if (digitalData.page.pathIndicator.depth_4 != "")
+            pageName += ":" + digitalData.page.pathIndicator.depth_4;
+        if (digitalData.page.pathIndicator.depth_5 != "")
+            pageName += ":" + digitalData.page.pathIndicator.depth_5.replace(/^\s+|\s+$/gm, '');
+
+        // check PD, GPD
+        var pageTrackName = digitalData.page.pageInfo.pageTrack;
+        if (pageTrackName == "product detail" || pageTrackName == "generic product details") {
+            pageName += ":" + digitalData.product.model_code;
+            var displayName = "".replace(/(<([^>]+)>)/gi, "");
+            digitalData.product.displayName = displayName;
+        }
+        digitalData.page.pageInfo.pageName = pageName;
+    </script>
+    <script async src="https://assets.adobedtm.com/c8a575b84bb9/0d8938615268/launch-160c25cdcd93.min.js"></script>
+    <!-- e : AA 태깅 -->
+
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NVX3V74');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- s : Global site tag (gtag.js) - Google Ads: 10864240863 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10864240863"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'AW-10864240863');
+    </script>
+    <!-- e : Global site tag (gtag.js) - Google Ads: 10864240863 -->
+
+    <script src="../../_script/clipboard.min.js"></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="../../_script/jsrender.min.js"></script>
+    <script src="../../_script/jquery.form.min.js"></script>
+    <script src="../../_script/swiper.min.js"></script><!-- 20200813 스크립트 추가 -->
+    <script type="text/javascript">
+        // JS Render Helpers 재 정의
+        $.views.helpers({
+            fn_equals: function(A, B) {
+                return A == B
+            },
+            fn_lt: function(A, B) {
+                return A < B
+            },
+            fn_gt: function(A, B) {
+                return A > B
+            },
+            fn_ne: function(A, B) {
+                return A != B
+            },
+            // 값 유무 체크
+            fn_notEmpty: function(A) {
+                if (typeof A == 'undefined') {
+                    return false;
+                }
+                if (A == null) {
+                    return false;
+                }
+                if (A.length < 1) {
+                    return false;
+                }
+                return true;
+            },
+            // 천단위 콤마
+            fn_comma: function(value) {
+                var v = (value + '');
+                var reg = /(^[+-]?\d+)(\d{3})/;
+                var n = v.split(",").join("").replace(/^\s*|\s*$/g, '');
+                while (reg.test(n)) {
+                    n = n.replace(reg, '$1' + ',' + '$2');
+                }
+                return n;
+            },
+            fn_length: function(obj) {
+                if (typeof obj == 'object') {
+                    if (Array.isArray(obj)) {
+                        return obj.length;
+                    } else {
+                        return Object.keys(compareData).length;
+                    }
+                } else {
+                    return (obj + '').length;
+                }
+            },
+            fn_first: function(obj) {
+                if (Array.isArray(obj)) {
+                    return obj[0];
+                } else {
+                    var keys = Object.keys(compareData);
+                    return obj[(keys[0])];
+                }
+            },
+            fn_last: function(obj) {
+                if (Array.isArray(obj)) {
+                    return obj[obj.length - 1];
+                } else {
+                    var keys = Object.keys(compareData);
+                    return obj[(keys[keys.length - 1])];
+                }
+            },
+            fn_default: function(val, v) {
+                if (typeof val == 'undefined') {
+                    return v;
+                } else if (val == null) {
+                    return v;
+                } else if (val == '') {
+                    return v;
+                }
+                return val;
+            }
+        });
+
+        // JS Render Tag 재 정의
+        $.views.tags('script', { // 스크립트
+            init: function(tagCtx) {
+                switch (tagCtx.props.mode) {
+                    case 'include':
+                        this.template = '<' + 'script type="text/javascript" src="{{:}}"></' + 'script>';
+                        break;
+                    case 'open':
+                        this.template = '<' + 'script type="text/javascript">';
+                        break;
+                    case 'close':
+                        this.template = '</' + 'script>';
+                        break;
+                    default:
+                        this.template = '{{:}}';
+                        break;
+                }
+            }
+        });
+    </script>
+    <script src="../../_script/snsShare.js"></script>
+
+
+    <!-- s: 20220510 gc 추가 -->
+    <script type="text/javascript">
+        function delReply() {
+            openLayer('replyDelete');
+        }
+        function delArticle() {
+            openLayer('articleDelete')
+        }
+    </script>
+    <!-- e: 20220510 gc 추가 -->
+
+    <!-- s: 20220603 gc 추가 -->
+    <script type="text/javascript">
+        function board_search() {
+           openLayer('board_search');
+       }
+   </script>
+   <!-- e: 20220603 gc 추가 -->
+
+    <!-- s: 20220518 gc 추가 -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			GCFront.detectScroll2();
+			GCFront.swipeBanner();
+			GCFront.btnToggle();
+            GCFront.swipeNotice(); // notice banner
+            GCFront.commonFooter(); //20220602 추가 : footer 스크립트
+		});
+	</script>
+	<!-- e: 20220518 gc 추가 -->
+
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVX3V74" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- s : 스킵 -->
+<div id="skip_content">
+    <a href="#container" class="">본문 바로가기</a>
+</div>
+<!-- e : 스킵 -->
+
+<div id="wrap">
+    <!-- s : 머리글 영역 -->
+    <script>
+        var __ST_GB_CD = "b2c";
+
+        $(document).ready(function() {
+            ts_hostChk('prd');
+            getSessionInfo();
+            getCartCnt();
+            //getCartCntHidden();
+
+            getWritableMyComment();
+
+        });
+        var apiFlag = 0;
+        var clipboard = new ClipboardJS('#lUrl');
+        clipboard.on('success', function(e) {
+            let alertData = {
+                title: "",
+                content: "링크가 복사되었습니다.",
+                callback: "",
+                btnText: "확인"
+            };
+            commonAlert(alertData);
+            openLayer('commonAlert');
+        });
+        clipboard.on('error', function(e) {
+            let alertData = {
+                title: "",
+                content: "다시 시도하여 주십시오.",
+                callback: "",
+                btnText: "확인"
+            };
+            commonAlert(alertData);
+            openLayer('commonAlert');
+        });
+
+        function getCartList() {
+            var options = {
+                url: '/sec/xhr/order/gnbCartList',
+                dataType: "html",
+                done: function(data) {
+                    $(".gnb-cartList").html(data);
+                }
+            }
+            ajax.call(options);
+        }
+
+        // 뒤로가기 시 이벤트
+        $(window).bind("pageshow", function(event) {
+            if (event.originalEvent.persisted || window.performance && window.performance.navigation.type == 2) {
+                getCartCnt();
+                //getCartCntHidden();
+            }
+        });
+
+        function getSessionInfo() {
+            $.ajax({
+                url: "/sec/xhr/member/getSession",
+                type: "POST",
+                success: function(result) {
+                    result = JSON.parse(result);
+                    if (result.mbrNo == "0") {
+                        $("input[name=useLogin]").val("N");
+                        $(".link-login i").addClass("ico-people");
+                        $(".loginAfter").remove();
+                    } else {
+                        $("input[name=useLogin]").val("Y");
+                        $(".link-login i").addClass("ico-people-logged");
+                        $(".loginBefore").remove();
+
+                        var htmlMo = "안녕하세요! <span>" + result.mbrNm + "</span>님";
+                        var htmlPc = "안녕하세요! " + result.mbrNm + "님";
+                        $(".loginAfter .welcomeMsg").html(htmlMo);
+                        $(".loginAfter .greet-txt").html(htmlPc);
+                    }
+                }
+            });
+        }
+
+        function getCartCnt() {
+            $.ajax({
+                url: "/sec/xhr/order/gnbCartCount",
+                type: "POST",
+                success: function(result) {
+                    if (result > 0) {
+                        $('.cart-inner-count').show();
+                        $('.cart-inner-count').text(result);
+                    } else {
+                        $('.cart-inner-count').hide();
+                    }
+                }
+            });
+        }
+
+        function getApiMemid(sessionInfo) {
+            var jsonResult = JSON.stringify(sessionInfo);
+            $.ajax({
+                url: "/sec/xhr/member/getMemberShipNo",
+                type: "POST",
+                data: {
+                    mbrNo: sessionInfo.mbrNo,
+                    loginId: sessionInfo.loginId
+                },
+                success: function(result) {
+                    apiFlag = result.updateCnt;
+                }
+            });
+        }
+
+        function getWritableMyComment() {
+            $.ajax({
+                url: "/sec/xhr/review/loadWritableMyCommentListCount",
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function(result) {
+                    $('.writableCnt').text(result.cmntCnt);
+                },
+                error: function(request, status, error) {
+
+                    // TODO : exception message 처리
+                    //alert("나의 작성 가능 상품평 수량 조회 Code : " + request.status);
+                    // alert("Code : "+ request.status + "\n" + "message : " + request.responseText);
+                    // 공백
+                    // alert("Error : " + error);
+                }
+            });
+        }
+    </script>
+    <input type="hidden" id="loginYn" value="" />
+    <header id="header" class="header"><!-- 20220504 클래스 추가 -->
+		<div class="s-inner">
+			<a href="/" class="logo">
+				<h1>경희대학교 게시판</h1>
+			</a>
+			<div class="header-right gnbMenu">
+				<ul>
+					<li>
+						<a href="javascript:;" id="link-search" class="link-search" data-omni="search"><i class="icon ico-large ico-zoom">검색</i></a>
+					</li>
+					<li>
+						<a href="javascript:;" onclick="getCartList()" aria-controls="cart-menu" aria-selected="false" class="link-cart" data-omni="cart"><i class="icon ico-large ico-cart">장바구니</i>
+							<span class="cart-inner-count"></span>
+						</a>
+						<div class="s-gnbSubWrap textSubWrap cartMenu" id="cart-menu">
+							<div class="gnbSubRound">
+								<div>
+									<ul class="gnb-cartList">
+									</ul>
+									<div class="btn-box">
+										<button type="button" class="btn btn-d btn-type2" onclick="NetFunnel_Action({action_id :'b2c_cart_view'},function(ev, ret){location.href='/sec/cart/';});" data-omni="cart">장바구니 보기</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<input type="hidden" name="useLogin" id="useLogin" value="" />
+
+						<a href="javascript:;" aria-controls="login-menu" aria-selected="false" class="link-login" data-omni="login"><i class="icon ico-large ico-people">로그인</i></a>
+						<div class="s-gnbSubWrap textSubWrap loginMenu" id="login-menu">
+							<div class="gnbSubRound loginBefore">
+								<div>
+									<dl>
+										<dt><a href="" onclick="NetFunnel_Action({action_id:'b2c_gnb_login'},'/sec/member/indexLogin/?returnUrl=/sec/');return false;" data-omni='login'>로그인</a></dt>
+										<dt><a href="/mypage/order/indexDeliveryList/" data-omni='orders'>주문/배송조회</a></dt>
+										<dt><a href="/customer/myDigitalReservationSearch/" data-omni='store reservation'>매장상담 예약 신청 조회</a></dt>
+										<dt><a href="" onclick="NetFunnel_Action({action_id:'b2c_gnb_login'},'/sec/member/indexLogin/?returnUrl=/sec/mypage/coupon/indexMyCoupon/');return false;" data-omni='login'>쿠폰존</a></dt>
+									</dl>
+								</div>
+							</div>
+							<div class="gnbSubRound loginAfter">
+								<div>
+									<dl>
+										<dt><span class="greet-txt"></span></dt>
+										<dd><a href="/membership/point/" data-omni='my account'>나의 정보</a></dd>
+										<dd><a href="/mypage/review/indexMyReview/" data-omni='my comment'>상품평 작성 : <span class="cmt-num writableCnt"></span> 건</a></dd>
+										<dd><a href="/mypage/order/indexDeliveryList/" data-omni='orders'>주문/배송 조회</a></dd>
+										<dd><a href="/mypage/coupon/indexMyCoupon/" data-omni='coupon zone'>쿠폰존</a></dd>
+										<dd><a href="/member/logout/" data-omni='logout'>로그아웃</a></dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;" class="link-m-nav" data-omni="gnb:open"><i class="icon ico-large ico-nav">전체메뉴</i></a>
+					</li>
+				</ul>
+			</div>
+			<!-- s : 20220519 gc 추가 -->
+			<div class="util_box">
+				<a href="gc-alarm.html" class="btn-link">
+					<i class="gc_icon i-alarm-ivt">알림</i>
+				</a>
+			</div>
+			<!-- e : 20220519 gc 추가 -->
+		</div>
+	</header>
+    <!-- e : 머리글 영역 -->
+    <!-- s : 통합검색 -->
+    <script type="text/javascript">
+        var searchInputManager = {
+            isMobileDevice: function() {
+                var that = this,
+                    winW = $(window).width();
+                if (winW > 800) {
+                    return 'N';
+                } else {
+                    return 'Y';
+                }
+            },
+            init: function() {
+                var that = searchInputManager;
+                $.cookie.json = true;
+                $.cookie.data = {
+                    SEARCH_HISTORY: 'sh-b2c',
+                    SEARCH_MAX_SIZE: 10,
+                    option: {
+                        expires: 30,
+                        path: '/'
+                    }
+                };
+
+                that.$appendingTarget = {
+                    searchHistory: $('#searchkeywordRecent ul.list'),
+                    popular: $('#searchkeywordPopular ul.list'),
+                    makeTime: $('#makeTime'),
+                    autoComplete: $('#searchAuto ul.list')
+                };
+
+                that.cookieName = $.cookie.data.SEARCH_HISTORY;
+                that.isMobileYN = that.isMobileDevice();
+            },
+            searchHistoryTemplate: function(keyword) {
+                return {
+                    keyword: keyword,
+                    date: searchDatetimestampToString(new Date())
+                };
+            },
+            getKeywordList: function(cookieName) {
+                var searchKeywordList = new Array(),
+                    dataList = $.cookie(cookieName).data;
+
+                if (!dataList || '' == dataList || undefined == dataList) {
+                    return searchKeywordList;
+                }
+
+                $.each(dataList, function(idx, element) {
+                    searchKeywordList.push(element.keyword);
+                });
+
+                return searchKeywordList;
+            },
+            saveSearchHistory: function(keyword) {
+                var that = searchInputManager,
+                    $cookie = $.cookie,
+                    cookieValue = $cookie(that.cookieName),
+                    dataList = null;
+
+                if (cookieValue == undefined) {
+                    dataList = [that.searchHistoryTemplate(keyword)];
+                } else {
+                    if (cookieValue.length == 0) {
+                        dataList = [that.searchHistoryTemplate(keyword)];
+
+                    } else {
+                        dataList = cookieValue.data;
+
+                        if ($.inArray(keyword, that.getKeywordList(that.cookieName)) >= 0) {
+                            return;
+                        }
+
+                        if (dataList.length >= $cookie.data.SEARCH_MAX_SIZE) {
+                            dataList.splice(0, 1);
+                        }
+                        dataList.push(that.searchHistoryTemplate(keyword));
+                    }
+                }
+
+                $cookie(that.cookieName, {
+                    'data': dataList
+                }, $cookie.data.option);
+            },
+            getSearchHistory: function() {
+                var cookieValue = $.cookie(searchInputManager.cookieName);
+
+                if (undefined != cookieValue) {
+                    return cookieValue;
+                }
+            },
+            getSearchDate: function(keyword) {
+                var date = '',
+                    that = searchInputManager,
+                    cookieValue = $.cookie(that.cookieName),
+                    searchHistoryList = that.getSearchHistory();
+
+                if ('' == searchHistoryList || searchHistoryList == undefined || cookieValue == undefined) {
+                    return date;
+                }
+
+                var dataList = cookieValue.data;
+
+                var idx = -1;
+                for (var i = 0; i < dataList.length; ++i) {
+                    var keywordInList = dataList[i].keyword;
+
+                    if (keywordInList != undefined) {
+                        if (keywordInList.toLocaleLowerCase() == keyword.toLocaleLowerCase()) {
+                            idx = i;
+                            break;
+                        }
+                    }
+                }
+                if (idx > -1) {
+                    date = dataList[idx].date;
+                }
+
+                return date;
+            },
+            drawSearchHistory: function() {
+                var that = searchInputManager,
+                    $cookie = $.cookie,
+                    cookieValue = $cookie(that.cookieName);
+
+                if (undefined == cookieValue) {
+                    return;
+                } else if (cookieValue.length == 0) {
+                    return;
+                }
+
+                var dataList = cookieValue.data,
+                    template = '';
+
+                for (var i = dataList.length - 1; i >= 0; i--) {
+                    var element = dataList[i],
+                        keyword = element.keyword;
+                    template += '<li class="item">';
+                    template += '<a href="javascript:void(0);" class="link">' + keyword + '</a>';
+                    template += '<button type="button" class="btn-delete delete" keyword="' + keyword + '" onclick="searchInputManager.clearSearchHistory(this)">';
+                    template += '<span class="blind">삭제</span>';
+                    template += '</button>';
+                    template += '</li>';
+                }
+                that.$appendingTarget.searchHistory.html(template);
+                that.$appendingTarget.searchHistory.off('click').on('click', 'a', function(e) {
+                    that.getSearchResult($(e.target).text());
+                    chat_open4($(e.target).text());
+                });
+
+            },
+            clearSearchHistory: function(element) {
+                var that = searchInputManager,
+                    $element = $(element),
+                    $cookie = $.cookie;
+
+                if ($element.hasClass('delete-all')) {
+                    $.removeCookie(that.cookieName, {
+                        path: $cookie.data.option.path
+                    });
+                    that.$appendingTarget.searchHistory.empty();
+
+                } else if ($element.hasClass('delete')) {
+                    var selectedKeyword = $element.attr('keyword'),
+                        cookieValue = $cookie(that.cookieName),
+                        dataList = cookieValue.data;
+
+                    var idx = -1;
+                    for (var i = 0; i < dataList.length; ++i) {
+                        var keyword = dataList[i].keyword;
+                        if (keyword == undefined) {
+                            keyword = 'undefined';
+                        }
+
+                        if (keyword == selectedKeyword) {
+                            idx = i;
+                            break;
+                        }
+                    }
+                    if (idx > -1) {
+                        dataList.splice(idx, 1);
+                        $cookie(that.cookieName, {
+                            'data': dataList
+                        }, $cookie.data.option);
+
+                        $element.parent().remove();
+                    }
+                }
+            },
+            callAjax: function(options) {
+                $.ajax({
+                    url: options.url,
+                    type: options.type,
+                    data: options.data
+
+                }).done(
+                    function(data, textStatus, jqXHR) {
+                        if (data.exCode != null && data.exCode !== "") {
+                            if (options.fail !== undefined) {
+                                options.fail();
+                            }
+                            let alertData = {
+                                title: "alert",
+                                content: data.exMsg
+                            };
+                            commonAlert(alertData);
+                            openLayer('commonAlert');
+                        } else {
+                            options.done(data);
+                        }
+                    }).fail(function(jqXHR, textStatus, errorThrown) {
+                    if (options.fail !== undefined) {
+                        options.fail();
+                    }
+                    if (jqXHR.status !== 0) {
+                        ajax.error(jqXHR.status, jqXHR.responseText);
+                    }
+                }).always(function() {}).then(function(data, textStatus, jqXHR) {});
+            },
+
+            getRecommendKeyword: function(callback) {
+                var that = searchInputManager;
+                that.callAjax({
+                    url: '/sec/xhr/search/recommendkeyword/',
+                    type: 'GET',
+                    done: function(result) {
+                        that.recommendKeyword = result.recommendKeyword;
+
+                        if (callback != undefined) {
+                            callback();
+                        }
+                    }
+                });
+            },
+            setRecommendKeyword: function() {
+                var that = searchInputManager;
+
+                if (that.recommendKeyword == undefined) {
+                    that.getRecommendKeyword(that.setRecommendKeywordCallback);
+                    return;
+                }
+                that.setRecommendKeywordCallback();
+            },
+
+            setRecommendKeywordCallback: function() {
+                var that = searchInputManager;
+                //$('#unifiedInputSearch').attr('placeholder', that.recommendKeyword); // 20200917 삭제
+                $('.inp-placeholder').text(that.recommendKeyword); // 20200917 추가
+            },
+
+            getPopularKeyword: function() {
+                var that = searchInputManager;
+                that.callAjax({
+                    url: '/sec/xhr/search/popword/',
+                    type: 'POST',
+                    data: new wnAddonParamVo('', 'popword', 'D', 'B2C_SearchWord', 'json', ''),
+                    done: function(result) {
+                        var popwordResult = result.popwordResult;
+                        if (popwordResult.Data == undefined) {
+                            return;
+                        }
+
+                        var queryList = popwordResult.Data.Query,
+                            popularList = '';
+
+                        $.each(queryList, function(idx, element) {
+                            var order = idx + Number(1);
+                            popularList += '<li class="item">' +
+                                '<span class="rank">' + order + '</span>' +
+                                '<a href="javascript:void(0);" class="link">' + element.content + '</a>';
+                            if (element.updown == 'U') {
+                                popularList += '<span class="change arr-up"><span class="blind">순위상승</span></span>';
+                            } else if (element.updown == 'D') {
+                                popularList += '<span class="change arr-down"><span class="blind">순위하락</span></span>';
+                            } else if (element.updown == 'C') {
+                                popularList += '<span class="change arr-same"><span class="blind">순위유지</span></span>';
+                            }
+                            popularList += '</li>';
+                        });
+
+                        that.$appendingTarget.popular.off('click').on('click', 'a', function(e) {
+                            that.getSearchResult($(e.target).text());
+                            chat_open4($(e.target).text());
+                        });
+                        that.$appendingTarget.popular.empty();
+                        that.$appendingTarget.makeTime.empty();
+
+                        that.$appendingTarget.popular.append(popularList);
+                        that.$appendingTarget.makeTime.append(popwordResult.Data.MakeTime + ' 기준');
+                    }
+                });
+            },
+            getSearchInputAutoComplete: function(keyword) {
+                var that = searchInputManager;
+                keyword = keyword.trim();
+
+                that.callAjax({
+                    url: '/sec/xhr/search/autocom/',
+                    type: 'POST',
+                    data: new wnAddonParamVo(keyword, 'b2c', '', '', 'json', 'fw'),
+                    done: function(result) {
+                        var template = '';
+                        var autoCompleteResultList = result.autoCompleteResult;
+                        that.$appendingTarget.autoComplete.empty();
+
+                        if (autoCompleteResultList.length > 0 && autoCompleteResultList != undefined) {
+                            $.each(autoCompleteResultList, function(idx, element) {
+                                template += '<li class="item">';
+                                template += '<a href="javascript:void(0);" class="link" text="' + element.text + '">';
+                                template += (element.modified).replace(/\<!HS\>(.*)\<!HE\>/gi, "\<span class=\"key\"\>$1\</span\>");
+                                template += '</a>';
+                                template += '<span class="date">' + searchInputManager.getSearchDate(element.text) + '</span>';
+                                template += '</li>';
+                            });
+
+                            that.$appendingTarget.autoComplete.html(template);
+
+                            that.$appendingTarget.autoComplete.off('click').on('click', 'a', function(e) {
+                                that.getSearchResult($(e.target).attr('text'));
+                            });
+
+                            $('.unified-search-layer.type-keyword').hide();
+                            $('.unified-search-layer.type-auto').show();
+
+                        } else {
+                            $('.unified-search-layer.type-auto').hide();
+                            if (keyword == '') {
+                                //$('#unifiedInputSearch').attr('placeholder', searchInputManager.recommendKeyword); // 20200917 삭제
+                                $('.inp-placeholder').text(that.recommendKeyword); // 20200917 추가
+                                $('.unified-search-layer.type-keyword').show();
+                            }
+                        }
+                    }
+                })
+            },
+
+            getSearchResult: function(keyword, searchResultInputId) {
+                console.log(keyword);
+                keyword = escapeHtml(keyword);
+
+                var that = searchInputManager;
+                keyword = keyword.trim();
+                console.log("@@ keyword1 : " + keyword);
+                keyword = filterAcc(keyword); // 에어컨액세서리
+
+                if (searchResultInputId != undefined) {
+                    that.searchResultInputId = searchResultInputId;
+                }
+
+                if (keyword == '') {
+                    var recommendKeyword = that.recommendKeyword;
+                    if (recommendKeyword == undefined) {
+                        that.getRecommendKeyword(that.getSearchResultNoKeywordCallback);
+                    }
+                    that.getSearchResultCallback(recommendKeyword);
+                    return;
+                }
+                that.getSearchResultCallback(keyword);
+            },
+            getSearchResultNoKeywordCallback: function() {
+                var that = searchInputManager,
+                    recommendKeyword = that.recommendKeyword,
+                    searchResultInputId = that.searchResultInputId;
+
+                if (searchResultInputId != undefined) {
+                    $(searchResultInputId).val(recommendKeyword);
+                    $(searchResultInputId).attr('placeholder', recommendKeyword);
+                }
+
+                that.getSearchResultCallback(recommendKeyword);
+            },
+            getSearchResultCallback: function(keyword) {
+                console.log("@@ start getSearchResultCallback");
+                var that = searchInputManager,
+                    isMobileYN = that.isMobileDevice();
+                console.log("@@ keyword : " + keyword);
+                that.saveSearchHistory(keyword);
+                ajax.call({
+                    url: '/sec/xhr/search/keywordRedirect?keyword=' + encodeURIComponent(keyword),
+                    data: new WNSearchParamVo(keyword, '', '', '', '', '', '', '', '', '', '', '', '', 'b2c', isMobileYN),
+                    dataType: 'json',
+                    contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+                    done: function(result) {
+                        console.log("@@ ajax success");
+                        console.log("@@result : " + JSON.stringify(result));
+                        //yhj
+                        $(".unified-search-input-wrap").removeClass("is-active");
+                        $("body").removeClass("is-pc is-mo");
+                        $(".unified-search-layer").hide();
+                        $("body").removeClass("fixed-scroll");
+                        $("#gnbmask").hide();
+                        $(".unified-search-input-wrap .inp").val("");
+                        $(".unified-search-input-wrap .btn-inp-clear").hide();
+                        $(".inp-placeholder").show();
+                        if (isSecApp() == "true") {
+                            window.secapp.showAndHideGnb('VISIBLE');
+                        }
+
+
+                        var keywordRedirect = result.keywordRedirect;
+
+                        if (keywordRedirect.totalCount > 0) {
+                            window.location.href = keywordRedirect.REDIRECT_URL;
+                            return;
+                        }
+                        var $form = document.createElement("form");
+                        $form.setAttribute('charset', 'UTF-8');
+                        $form.setAttribute('method', 'POST');
+                        $form.setAttribute('action', '/sec/search/searchresult/?keyword=' + encodeURIComponent(keyword));
+
+                        var $input = document.createElement('input');
+                        $input.setAttribute('type', 'hidden');
+                        $input.setAttribute('name', 'isMobileYN');
+                        $input.setAttribute('value', searchInputManager.isMobileYN);
+                        $form.appendChild($input);
+                        document.body.appendChild($form);
+
+                        $form.submit();
+                    }
+                });
+            }
+        }
+
+        function filterAcc(keyword) {
+            if ((keyword.indexOf("에어컨") > -1 || keyword.indexOf("무풍에어컨") > -1) && (keyword.indexOf("액세서리") > -1 || keyword.indexOf("악세서리") > -1 || keyword.indexOf("엑세서리") > -1)) {
+                keyword = "에어컨액세서리";
+                console.log("@@ keyword2: " + keyword);
+            }
+            return keyword;
+        }
+
+        function escapeHtml(string) {
+            return String(string).replace(/[&<>"'`=\/]/g, function(s) {
+                return entityMap[s];
+            });
+        }
+        var entityMap = {
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;',
+            '"': '&quot;',
+            "'": '&#39;',
+            '/': '&#x2F;',
+            '`': '&#x60;',
+            '=': '&#x3D;'
+        };
+
+        /* s: APP용 함수 */
+        function isSecApp() {
+            return 'false';
+        }
+
+        function once(func) {
+            var flag, result;
+
+            return function() {
+                if (flag) {
+                    return result;
+                }
+                flag = true;
+                return result = func.apply(this);
+            }
+        }
+
+        /* s : 20200917 수정 */
+        var searchLinkforApp = once(function() {
+            var that = searchInputManager;
+
+            that.setRecommendKeyword();
+            that.drawSearchHistory();
+            that.getPopularKeyword();
+
+        });
+
+        function searchOpenforApp() { // 20200917 추가
+            searchLinkforApp();
+            headerSearch.eventListener.uinifiedSearchOpen();
+        }
+        /* e : 20200917 수정 */
+
+        /* e: APP용 함수 */
+
+        /* s : 닷컴 웹 검색시 챗봇 검색 연계 구현  jiwon0.id 22.04.26 */
+        function chat_open4(chatbotKeyword) {
+            fcTrack('click', 'floating chat:chat online');
+
+            var keyword = encodeURIComponent(chatbotKeyword);
+            var popupX = (window.screen.width / 2) - (356 / 2);
+            var popupY = (window.screen.height / 2) - (750 / 2);
+
+            window.open('/sec/chatbot/?keyword=' + keyword, '_chatbot4', 'status=no, height=750, width=356, left=' + popupX + ', top=' + popupY + ', screenX=' + popupX + ', screenY= ' + popupY);
+        }
+        /* e : 닷컴 웹 검색시 챗봇 검색 연계 구현  jiwon0.id 22.04.26 */
+
+        $(document).ready(function() {
+            var that = searchInputManager;
+
+            $('#link-search').on('click', function() {
+                that.setRecommendKeyword();
+                that.drawSearchHistory();
+                that.getPopularKeyword();
+            });
+
+            $('#unifiedInputSearch').on('keyup', function(e) {
+                var $target = $(e.target),
+                    keyword = $target.val().replace(/\\/gi, '');
+                $target.val(keyword);
+
+                that.getSearchInputAutoComplete(keyword);
+            });
+
+            $('#unifiedInputSearch').on('click', function() { //20210324 추가
+                $('.inp-placeholder').hide();
+            });
+
+            /* s : 닷컴 웹 검색시 챗봇 검색 연계 구현  jiwon0.id 22.04.26 */
+            $('.chatbot-search').on('click', function() {
+                let chatbotKeyword;
+                if ($(this).attr('id') == 'unifiedSearchButton') {
+                    chatbotKeyword = $("#unifiedInputSearch").val();
+                } else if ($(this).attr('id') == 'inputSearchButton') {
+                    chatbotKeyword = $("#inputSearch").val();
+                }
+
+                if ($(this).attr('id') == 'unifiedSearchButton') {
+                    if (chatbotKeyword == null || chatbotKeyword == "") {
+                        chatbotKeyword = that.recommendKeyword;
+                        chat_open4(chatbotKeyword);
+                    } else {
+                        chat_open4(chatbotKeyword);
+                    }
+                } else {
+                    if (chatbotKeyword != null && chatbotKeyword != "") {
+                        chat_open4(chatbotKeyword);
+                    }
+                }
+            });
+            /* e : 닷컴 웹 검색시 챗봇 검색 연계 구현  jiwon0.id 22.04.26 */
+
+        });
+    </script>
+    <!-- s : 통합검색 -->
+    <div class="unified-search-input-wrap">
+        <div class="unified-search-input-inner">
+            <div class="search-box">
+                <label for="unifiedInputSearch" class="blind">통합 검색</label><!-- 20200622 for 값 변경 -->
+                <input type="text" id="unifiedInputSearch" class="inp" onfocus="headerSearch.eventListener.uinifiedSearchInp()" onkeydown="headerSearch.eventListener.uinifiedSearchChange()">
+                <span class="inp-placeholder"></span><!-- 20200917 추천검색어 추가 -->
+                <button type="button" class="btn-inp-clear" title="삭제"><span class="blind">삭제</span></button><!-- 20200616 삭제 버튼 추가-->
+                <button type="button" class="btn-search chatbot-search" title="검색" id="unifiedSearchButton" onclick="javascript:searchInputManager.getSearchResult($('#unifiedInputSearch').val(), '#unifiedInputSearch')"><span class="blind">검색</span></button>
+            </div>
+        </div>
+
+        <!-- s : 검색레이어 : 최근, 인기-->
+        <div class="unified-search-layer type-keyword" style="display:none">
+            <div class="unified-search-layer-inner">
+                <!-- 20200618 감싸는 태그 unified-search-layer-inner 추가 -->
+                <div class="layer-cont">
+                    <div class="cont-inner box-recent" id="searchkeywordRecent" role="tabpanel">
+                        <strong class="tit">최근 검색어</strong>
+                        <ul class="list">
+                        </ul>
+                        <div class="etc"><a href="javascript:void(0);" class="btn-delete delete-all" onclick="searchInputManager.clearSearchHistory(this)">최근 검색어 전체 삭제</a></div>
+                    </div>
+                    <div class="cont-inner box-popular" id="searchkeywordPopular" role="tabpanel">
+                        <strong class="tit">인기 검색어</strong>
+                        <ul class="list">
+                        </ul>
+                        <div class="etc" id="makeTime">
+                            <p class="date"></p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- 20200618 감싸는 태그 unified-search-layer-inner의 닫는 태그 추가 -->
+            <button type="button" class="btn-close-search"><span class="blind">검색 레이어 닫기</span></button><!-- 20200618 닫는 태그 추가-->
+            <!-- 20200622 button type 변경-->
+        </div>
+        <!-- e : 검색레이어 : 최근, 인기-->
+
+        <!-- s : 검색레이어 : 자동 완성-->
+        <div class="unified-search-layer type-auto" style="display:none">
+            <div class="unified-search-layer-inner">
+                <!-- 20200618 감싸는 태그 unified-search-layer-inner 추가 -->
+                <div class="layer-cont" id="searchAuto">
+                    <ul class="list">
+                    </ul>
+                </div>
+            </div><!-- 20200618 감싸는 태그 unified-search-layer-inner의 닫는 태그 추가 -->
+            <button type="button" class="btn-close-search"><span class="blind">검색 레이어 닫기</span></button><!-- 20200618 닫는 태그 추가-->
+            <!-- 20200622 button type 변경-->
+        </div>
+        <!-- e : 검색레이어 : 자동 완성-->
+
+        <button type="button" class="btn-close-search"><span class="blind">검색 레이어 닫기</span></button><!-- 20200622 button type 변경-->
+    </div>
+    <!-- e : 통합검색 -->
+    <!-- e : 통합검색 -->
+
+    <!-- s : 본문 영역 -->
+    <div id="container" class='gc_container gc_community'>
+
+        <div class="content">
+            
+            <!-- s : conbox 영역 -->
+            <section class="conbox customer-center-conbox my-cmt-pd">
+                <div id="my-reviewWrap" data-kakaokey="5880e4317936087f2764a5d340e6bca6" data-facebookid="">
+                    <input type="hidden" id="searchCommentType" name="searchCommentType" value="00">
+                    <input type="hidden" id="searchCommentCd" name="searchCommentCd" value="01">
+                    <input type="hidden" id="searchBuySiteCd" name="searchBuySiteCd" value="00">
+                    <script>
+                        $(document).ready(function() {
+
+                            /* if(navigator.platform){
+                                if(false){
+                                    //mobile
+                                    $("button[name=moreList]").parent(".mob-moreViewList").hide();
+                                }
+                            } */
+
+
+                            /* 작성하기 - 평점 선택 */
+                            $("#exLayer").on('click', '.gradechoice>.review-starating button', function() {
+                                var idx = $(this).val();
+                                var scoreHtml = "";
+                                $(".gradechoice>.review-starating").children().remove();
+                                for (var i = 1; i <= 5; i++) {
+                                    var ariaHidden = "";
+                                    if (i > 1) {
+                                        ariaHidden = "aria-hidden='true'";
+                                    }
+
+                                    if (idx >= i) {
+                                        scoreHtml += '<button type="button" value="' + i + '"><span class="star-yellow"' + ariaHidden + '>별점</span></button> ';
+                                    } else {
+                                        scoreHtml += '<button type="button" value="' + i + '"><span class="star-gray"' + ariaHidden + '>별점</span></button> ';
+                                    }
+                                }
+                                scoreHtml += '<input type="hidden" id="estmScore" name="estmScore" value="' + idx + '"/>';
+                                scoreHtml += '<span class="starating-score"><strong>';
+                                scoreHtml += idx;
+                                scoreHtml += '</strong>/5</span>';
+                                $(".gradechoice>.review-starating").append(scoreHtml);
+                                $("button[value='" + idx + "']").focus();
+                            });
+
+                            /* 글자 수 */
+                            var content;
+                            /* 상품평 글자수 실시간 카운팅 */
+                            $("#exLayer").on('propertychange keyup paste input', 'textarea[name=commentArea]', function(e) {
+                                $("div[name=write-validate]").hide();
+                                content = $(this).val();
+                                $(".txtCount").html("<span><strong>" + (content.length).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "</strong>/5,000</span>");
+
+                                /* 상품평 글자 수 5000자 제한 */
+                                if (content.length > 5000) {
+                                    var data = {
+                                        content: "내용은 최대 5,000자 이하로 입력해 주세요."
+                                    }
+                                    myReview.fnAlertPop(data);
+                                    $(this).val(content.substr(0, 5000));
+                                    content = $(this).val();
+                                    $(".txtCount").html("<span><strong>" + (content.length).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "</strong>/5,000</span>");
+                                }
+                            });
+
+                            /* 상품평 등록 */
+                            $("#exLayer").on('click', 'button[name=insertWrite]', function() {
+                                var commentLength = $("#commentArea").val().length;
+                                var estmSbjCd = $("input[name=revive-topic]:checked").val();
+
+                                if (estmSbjCd === "") {
+                                    $("div[name=write-validate]").html("주제를 선택해 주세요.");
+                                    $("div[name=write-validate]").show();
+                                    return false;
+                                }
+
+                                if (commentLength < 10) {
+                                    $("div[name=write-validate]").html("내용은 최소 10자 이상으로 입력해 주세요.");
+                                    $("div[name=write-validate]").show();
+                                    return false;
+                                }
+
+                                var imgPath = new Array;
+                                var addImgPathArr = $('input[name=imgPath]');
+                                if ($(addImgPathArr).length > 0) {
+                                    for (var i = 0; i < addImgPathArr.length; i++) {
+                                        imgPath.push($(addImgPathArr[i]).val());
+                                    }
+                                }
+
+                                var content = $("#commentArea").val();
+
+                                var insertData = {
+                                    goodsId: $('#insertGoodsId').val(),
+                                    estmScore: $("#estmScore").val(),
+                                    estmSbjCd: estmSbjCd,
+                                    buySiteCd: $("input[name=revive-purchasing]:checked").val(),
+                                    content: content,
+                                    compNo: $('#insertCompNo').val(),
+                                    stId: $('#insertStId').val(),
+                                    imgPath: imgPath,
+                                    ordNo: $('#insertOrdNo').val(),
+                                    commentType: $('#insertCommentType').val()
+                                }
+                                var options = {
+                                    url: "/sec/xhr/goods/insertComment",
+                                    data: insertData,
+                                    done: function() {
+                                        myReviewPage.page = 1;
+                                        myReviewPage.commentType = '00';
+                                        myReviewPage.commentCd = '02';
+                                        myReviewPage.buySiteCd = '00'
+                                        var data = {
+                                            content: "상품평이 등록되었습니다",
+                                            callback: loadMyReview
+                                        }
+                                        myReview.fnAlertPop(data);
+                                        $cmtPop.removeAttr('data-popup-target').removeClass('clicked');
+                                        $('#exLayer').removeClass('cmt-popup active');
+                                        $('#mask').remove();
+                                        // 22-02-23 remove scrollLock
+                                        $('html').removeClass('scrollLock');
+                                    }
+                                }
+                                ajax.call(options);
+                            });
+
+                            /* 상품평 수정*/
+                            $(document).on('click', 'button[name=updateWrite]', function() {
+                                var commentLength = $("#commentArea").val().length;
+                                var estmSbjCd = $("input[name=revive-topic]:checked").val();
+
+                                if (estmSbjCd === "") {
+                                    $("div[name=write-validate]").html("주제를 선택해 주세요.");
+                                    $("div[name=write-validate]").show();
+                                    return false;
+                                }
+
+                                if (commentLength < 10) {
+                                    $("div[name=write-validate]").html("내용은 최소 10자 이상으로 입력해 주세요.");
+                                    $("div[name=write-validate]").show();
+                                    return false;
+                                }
+
+                                var imgPath = new Array;
+                                var addImgPathArr = $('input[name=imgPath]');
+                                if ($(addImgPathArr).length > 0) {
+                                    for (var i = 0; i < addImgPathArr.length; i++) {
+                                        imgPath.push($(addImgPathArr[i]).val());
+                                    }
+                                }
+
+                                var deleteImgSeq = new Array;
+                                var deleteImgSeqArr = $('input[name=deleteImgSeq]');
+                                if ($(deleteImgSeqArr).length > 0) {
+                                    for (var i = 0; i < deleteImgSeqArr.length; i++) {
+                                        deleteImgSeq.push($(deleteImgSeqArr[i]).val());
+                                    }
+                                }
+
+                                var content = $("#commentArea").val();
+
+                                var insertData = {
+                                    goodsId: $('#insertGoodsId').val(),
+                                    estmScore: $("#estmScore").val(),
+                                    estmSbjCd: estmSbjCd,
+                                    buySiteCd: $("input[name=revive-purchasing]:checked").val(),
+                                    content: content,
+                                    compNo: $("input[name=compNo]").val(),
+                                    stId: $('#insertStId').val(),
+                                    imgPath: imgPath,
+                                    ordNo: $('#insertOrdNo').val(),
+                                    commentType: $('#insertCommentType').val(),
+                                    deleteSeq: deleteImgSeq,
+                                    goodsEstmNo: $('#insertGoodsEstmNo').val()
+                                }
+
+                                var options = {
+                                    url: "/sec/xhr/goods/updateComment",
+                                    data: insertData,
+                                    done: function() {
+                                        myReviewPage.page = 1;
+                                        myReviewPage.commentType = '00';
+                                        myReviewPage.commentCd = '02';
+                                        myReviewPage.buySiteCd = '00'
+                                        var data = {
+                                            content: "상품평이 수정되었습니다",
+                                            callback: loadMyReview()
+                                        }
+                                        myReview.fnAlertPop(data);
+                                        $cmtPop.removeAttr('data-popup-target').removeClass('clicked');
+                                        $('#exLayer').removeClass('cmt-popup active');
+                                        $('#mask').remove();
+                                        // 22-02-23 remove scrollLock
+                                        $('html').removeClass('scrollLock');
+                                    }
+                                }
+                                ajax.call(options);
+                            });
+
+                            /* 공유 버튼 */
+                            $('.review-util>.btn-sns-link, .btn-tooltop02').on('click', function() {
+                                var $tooltip = $(this).data();
+                                if ($(this).hasClass("btn-tooltop02")) {
+                                    $tooltip.content = $(".btn-tooltop02").siblings(".tooltip-content").html();
+                                } else $tooltip.content = $(this).siblings(".tooltip-content").html();
+
+                                var $divTooltip = $(".pd-tooltip");
+                                $divTooltip.html($("#tooltipTempl").render($tooltip));
+
+                                var $estmData = $(this).parent().parent().parent();
+                                var goodsId = $estmData.data("goodsId");
+
+                                //var url = "/sec/goods/"+goodsId+"/?focus=review";
+                                //openSns(url, "", "", "");
+                                if ($(this).hasClass("btn-sns-link")) {
+                                    // 외부공유링크
+                                    $divTooltip.find('a').off().on('click', function() {
+                                        if ($(this).hasClass('pd-sns-facebook')) {
+                                            // 페이스북 링크
+                                        } else if ($(this).hasClass('pd-sns-instagram')) {
+                                            //인스타그램
+                                            window.open('https://www.instagram.com', 'instagramPopup', 'resizable=no width=480 height=720');
+                                        }
+                                    });
+                                }
+                                if (!$("body").children().is("#mask")) {
+                                    $("body").append("<div id='mask' style=''></div>");
+                                }
+                                $("#mask").css('z-index', 14).fadeIn();
+                                $("#mask").css('background', 'rgba(0,0,0,0.0)');
+                                $('#mask').off().on('click', function() {
+                                    $divTooltip.hide();
+                                    $("body").css("overflow", "");
+                                    $("#mask").fadeOut("fast").remove();
+                                    $(this).off();
+                                });
+                                tooltipCenterTop(this, 'pd-tooltip', 380);
+                            });
+
+                            $(document).on('click', '.btn-tooltip-close', function() {
+                                $("#mask").trigger('click');
+                            });
+                            /* $(".attached-file a", myReview.vWrapId).on('click', function(){
+			var tagName = $(this).children()[0].tagName;
+			var html = ""
+			if(tagName == "IMG"){
+				html += '<img src="'+$(this).children()[0].src+'" alt="첨부파일1" style="width:100%">';
+			}else{
+				html += '<video muted="" controls="" preload="auto" style="width:100%;">';
+				html += '<source src="'+$(this).children().children()[0].src+'" type="video/mp4">';
+				html += 'Your browser does not support the video tag.';
+				html += '</video>';
+			}
+			var data = {
+				content : html
+				, callback : setLayerCss
+			}
+			myReview.fnAlertPop(data);
+			$("#commonAlert").css('max-width', '800px')
+		}); */
+
+                        });
+
+                        function setLayerCss() {
+                            $("#commonAlert").css('max-width', '400px');
+                        }
+
+
+                        /* 첨부파일 수 */
+                        var result = 0;
+                        //파일 업로드
+                        var fileUpload = {
+                            /* 첨부파일 callback지정 */
+                            file: function(callback, mob) {
+                                result = $('.attach-file>ol>li').length;
+                                console.log(result);
+                                fileUpload.callBack = callback;
+                                fileUpload.fileForm("goods_comment", mob);
+                            },
+                            /* 첨부파일 upload용 form 생성 */
+                            fileForm: function(type, mob) {
+                                if (result == 10) {
+                                    $("div[name=write-validate]").html("더 이상 첨부가 불가능합니다.");
+                                    $("div[name=write-validate]").show();
+                                    return false;
+                                }
+                                $("#fileUploadForm").remove();
+                                var html = [];
+                                html.push("<form name=\"fileUploadForm\" id=\"fileUploadForm\" method=\"post\" enctype=\"multipart/form-data\">");
+                                html.push("	<div style=\"display:none;\">");
+                                if (mob == undefined) {
+                                    html.push("		<input type=\"file\" name=\"uploadFile\" id=\"commentUploadFile\" accept=\".jpg, .jpeg, .png, .gif, .mp4\" />");
+                                } else if (mob == "camera") {
+                                    html.push("		<input type=\"file\" name=\"uploadFile\" id=\"commentUploadFile\" accept=\"image/*\" />");
+                                } else if (mob == "camcorder") {
+                                    html.push("		<input type=\"file\" name=\"uploadFile\" id=\"commentUploadFile\" accept=\"video/*\" />");
+                                }
+                                html.push("		<input type=\"hidden\" name=\"uploadType\" value=\"" + type + "\">");
+                                html.push("	</div>");
+                                html.push("</form>");
+
+                                $("body").append(html.join(''));
+                                $("#commentUploadFile").click();
+                            },
+                            /* (callback) 선택한 첨부파일 유효성 체크 -> 파일 목록 추가 */
+                            afterFileSelect: function(file, exCode) {
+                                if (file.exMsg != null) {
+                                    var data = {
+                                        content: file.exMsg
+                                    }
+                                    myReview.fnAlertPop(data);
+                                    return false;
+                                }
+                                var ext = file.file.fileName.split('.').pop().toLowerCase();
+                                var attachLength = $(".attach-file>ol>li>a").length;
+                                for (var i = 0; i < attachLength; i++) {
+                                    if (file.file.fileName === $(".attach-file>ol>li>a")[i].title) {
+                                        var data = {
+                                            content: "동일한 파일이 등록되어 있습니다."
+                                        }
+
+                                        myReview.fnAlertPop(data);
+                                        return false;
+                                    }
+                                }
+                                var html = '';
+                                if (ext !== "mp4") {
+                                    html += '<li id="' + result + '">';
+                                    html += '<button type="button" class="delete" id="delFileBtnComment" name="delFileBtnComment"><span class="blind">삭제</span></button>';
+                                    html += '<a href="javascript:;" title="' + file.file.fileName + '">';
+                                    html += '<input type="hidden" name="imgPath" value="' + file.file.filePath + '"/>';
+                                    html += '<img src="/sec/xhr/common/imageView?filePath=' + file.file.filePath + '" alt="' + file.file.fileName + '">';
+                                    html += '</a></li>';
+                                } else {
+                                    html += '<li id="' + result + '">';
+                                    html += '<button type="button" class="delete" id="delFileBtnComment" name="delFileBtnComment"><span class="blind">삭제</span></button>';
+                                    html += '<a href="javascript:;" title="' + file.file.fileName + '">';
+                                    html += '<input type="hidden" name="imgPath" value="' + file.file.filePath + '"/>';
+                                    html += '<video muted="muted" loop="loop">'
+                                    html += '<source src="/sec/xhr/common/imageView?filePath=' + file.file.filePath + '" type="video/mp4">'
+                                    html += 'Your browser does not support the video tag.'
+                                    html += '</video>'
+                                    html += '</a></li>';
+                                }
+                                $(".attach-file>ol").append(html);
+                                result++;
+                                $("#attach-file-btn>p").remove();
+                                $("#attach-file-btn").append("<p>(<em>" + result + "</em>/10)</p>");
+                                $(".mediaCount").html("<p>(<em>" + result + "</em>/10)</p>");
+                                if (result == 10) {
+                                    $("#attach-file-btn").hide();
+                                }
+                            }
+                        }
+
+                        function writeAreaClear() {
+                            $('#fileOl').empty();
+                            $("#attach-file-btn>p").remove();
+                            $("#attach-file-btn").append("<p>(<em>0</em>/10)</p>");
+                            $(".mediaCount").html("<p>(<em>0</em>/10)</p>");
+                            $("#commentArea").val('');
+                            result = 0;
+
+                            var idx = 5;
+                            var scoreHtml = "";
+                            $(".gradechoice>.review-starating").children().remove();
+                            for (var i = 1; i <= 5; i++) {
+                                var ariaHidden = "";
+                                if (i > 1) {
+                                    ariaHidden = "aria-hidden='true'";
+                                }
+
+                                if (idx >= i) {
+                                    scoreHtml += '<button type="button" value="' + i + '"><span class="star-yellow"' + ariaHidden + '>별점</span></button> ';
+                                } else {
+                                    scoreHtml += '<button type="button" value="' + i + '"><span class="star-gray"' + ariaHidden + '>별점</span></button> ';
+                                }
+                            }
+                            scoreHtml += '<input type="hidden" id="estmScore" name="estmScore" value="' + idx + '"/>';
+                            scoreHtml += '<span class="starating-score"><strong>';
+                            scoreHtml += idx;
+                            scoreHtml += '</strong>/5</span>';
+                            $(".gradechoice>.review-starating").append(scoreHtml);
+                            $("button[value='" + idx + "']").focus();
+
+                            $("#revive-topic-10").prop('checked', true);
+                        }
+                    </script>
+                    <!-- s : 20220509 gc 추가 (탭 id - #commentCD1, #commentCD2 추가) -->
+
+                    <div class="box-tab-point-content">
+                        <div class="gc_tab_wrap gc_community tab_sticky">
+                            <ul class="gc_tab_common">
+                                <li class="tab_list"><!-- on 클래스 추가 시 활성화 상태 표시 -->
+                                    <a href="gc-community-school-board.html">
+                                        <span>학교 게시판</span>
+                                    </a>
+                                </li>
+                                <li class="tab_list">
+                                    <a href="gc-community-free-board.html">
+                                        <span>자유게시판</span>
+                                    </a>
+                                </li>
+                                <li class="tab_list on"><!-- on 클래스 추가 시 활성화 상태 표시 -->
+                                    <a href="gc-community-supporter-board.html">
+                                        <span>서포터즈</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gc_community gc_support"><!-- 화면명 구분클래스:gc_community / 게시판구분 클래스:gc_school, gc_free, gc_support -->
+                            <h1 class="con-tit">서포터즈</h1>
+                            <div class="con-box-search">
+                                <!-- e : b2c 검색 옵션 -->
+                                <div class="wrap-search">
+                                    <label for="inpListSearch" class="blind">검색어 입력</label>
+                                    <input type="text" id="inpListSearch" name="searchWord" placeholder="검색어를 입력하세요.">
+                                    <button type="button" class="btn-search" id="ntc-btn-search" title="검색" data-popup-target="board_search"><span class="blind">검색</span></button>
+                                </div>
+                            </div>
+                            <!-- s : Banner -->
+                            <div class="gc_banner_community">
+                                <div class="swiper swiper-notice">
+                                    <ul class="swiper-wrapper">
+                                        <li class="swiper-slide">
+                                            <div class="inner">
+                                                <a href="javascript:;">
+                                                    <span class="badge">공지-<em class="time">2022.02.17</em></span>
+                                                    <p class="txt_item">경희대학교 게시판 공지사항입니다. 금년 5월 5일 행사에 여러분을 초대합니다</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <div class="inner">
+                                                <a href="javascript:;">
+                                                    <span class="badge">공지-<em class="time">2022.02.17</em></span>
+                                                    <p class="txt_item">경희대학교 게시판 공지사항입니다. 금년 5월 5일 행사에 여러분을 초대합니다</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <div class="inner">
+                                                <a href="javascript:;">
+                                                    <span class="badge">공지-<em class="time">2022.02.17</em></span>
+                                                    <p class="txt_item">경희대학교 게시판 공지사항입니다. 금년 5월 5일 행사에 여러분을 초대합니다</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                            <!-- e : Banner -->
+                            <!-- -->
+                            <div class="community-board">
+                                <div class="listHeader">
+                                    <div class="board-title">
+                                        <ul class="cta-check-type"><!-- 버튼 구분 클래스명 : 일상:type01 / 정보:type02 / 질문:type03 / 리뷰:type04 / 투표:type05 -->
+                                            <li ><!-- class="checked" -->
+                                                <button class="btn" data-omni="" id="" name="" data-commenttype="" data-commentcd="">전체</button>
+                                            </li>
+                                            <li>
+                                                <button class="btn type01" data-omni="" id="" name="" data-commenttype="" data-commentcd="">일상</button>
+                                            </li>
+                                            <li>
+                                                <button class="btn type02" data-omni="" id="" name="" data-commenttype="" data-commentcd="">정보</button>
+                                            </li>
+                                            <li>
+                                                <button class="btn type03" data-omni="" id="" name="" data-commenttype="" data-commentcd="">질문</button>
+                                            </li>
+                                            <li>
+                                                <button class="btn type04" data-omni="" id="" name="" data-commenttype="" data-commentcd="">리뷰</button>
+                                            </li>
+                                            <li>
+                                                <button class="btn type05" data-omni="" id="" name="" data-commenttype="" data-commentcd="">투표</button>
+                                            </li>
+                                        </ul>
+                                        <div id="odrDeliveryCycle" class="wrap-droplist">
+                                            <button id="odrDeliveryCycleBtn" type="button" class="droplist-button selected" aria-haspopup="listbox" aria-labelledby="odrDeliveryCycleTitle odrDeliveryCycleBtn">
+                                                최신 순
+                                                <span class="blind">하위메뉴있음</span>
+                                            </button>
+                                            <ul class="droplist right" tabindex="-1" data-roll="listbox" aria-labelledby="odrDeliveryCycleTitle" aria-activedescendant="optDeliveryCycle20">
+                                                <!--aria-activedescendant에 선택된 li의 id 삽입-->
+                                                <li id="optDeliveryCycle10" name="optDeliveryCycle" data-commentcd="01" data-buysite="00" data-roll="option" class="droplist-item focused" data-sort-type="10" data-omni="recommended"><button type="button">최신 순</button></li>
+                                                <li id="optDeliveryCycle20" name="optDeliveryCycle" data-commentcd="02" data-buysite="10" data-roll="option" class="droplist-item " data-sort-type="20" data-omni="newest"><button type="button">조회 순</button></li>
+                                                <li id="optDeliveryCycle30" name="optDeliveryCycle" data-commentcd="03" data-buysite="20" data-roll="option" class="droplist-item " data-sort-type="30" data-omni="mostclicked"><button type="button">글공감 순</button></li>
+                                                <li id="optDeliveryCycle40" name="optDeliveryCycle" data-commentcd="04" data-buysite="30" data-roll="option" class="droplist-item " data-sort-type="40" data-omni="mostclicked"><button type="button">좋아요 순</button></li>
+                                                <li id="optDeliveryCycle50" name="optDeliveryCycle" data-commentcd="05" data-buysite="40" data-roll="option" class="droplist-item " data-sort-type="50" data-omni="mostclicked"><button type="button">투표 글만 보기</button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listBody">
+                                    <!-- 리스트 시작 -->
+                                    <div class="box_item_list_wrap">
+                                        <ul class="gc_list gc_list_comm">
+                                            <li class="gc_list_item">
+                                                <div class="box_item_wrap">
+                                                    <div class="inner_box">
+                                                        <div class="board_type">
+                                                            <span class="badge_icon type_01">일상</span>
+                                                        </div>
+                                                        <div class="icon_flex_box">
+                                                            <dl>
+                                                                <dt><i class="gc_icon i_eye">조회수</i></dt>
+                                                                <dd>120</dd>
+                                                            </dl>
+                                                            <dl>
+                                                                <dt><i class="gc_icon i_reply">댓글</i></dt>
+                                                                <dd>222</dd>
+                                                            </dl>
+                                                            <button type="button" class="btn bookmark btn-tgl">
+                                                                <i class="gc_icon i_bookmark">스크랩</i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-cont">
+                                                        <!-- s : 20220622 gc 추가 : 구조 변경 / 이미지 추가 -->
+                                                        <div class="cont_txt">
+                                                            <p class="tit">학교 게시판 글 제목 영역입니다. 글 제목은 한 줄 말줄임표로 표시되며</p>
+                                                            <div class="desc_box">
+                                                                <p class="desc">학교 게시판 글 내용 영역입니다. 커뮤니티 내 학교 게시판  글이 보여지는 영역입니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다.</p>
+                                                            </div>
+                                                        </div>
+                                                        <!--<div class="cont_thumb">
+                                                            <div class="inner">
+                                                                <img src="../../_images/temps/day_benefit_mo_v4.jpg" alt="커뮤니티 서포터즈 게시판 이미지">
+                                                            </div>
+                                                        </div>--><!-- thumbnail 없는 경우 삭제-->
+                                                        <!-- s : 20220622 gc 추가 : 구조 변경 / 이미지 추가 -->
+                                                    </div>
+                                                    <div class="user_box_wrap">
+                                                        <div class="gc_flex">
+                                                            <div class="user_box">
+                                                                <div class="user_profile_img">
+                                                                    <img src="../../_images/temps/avatar-fmale.svg" alt="프로필이미지">
+                                                                </div>
+                                                                <div class="user_info_state">
+                                                                    <div class="user_info">
+                                                                        <span class="user_name">Sko***</span>
+                                                                        <span class="u_level">3성</span>
+                                                                    </div>
+                                                                    <div class="user_state">
+                                                                        <div class="state_box">
+                                                                            <span>2022.02.17</span>
+                                                                            <span>10:10</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="sympathy_box">
+                                                                <button type="button" class="gc_btn btn_tgl" data-attr="like">
+                                                                    <i class="gc_icon i-emotion-like">좋아요</i>
+                                                                    <span class="txt_item">226</span>
+                                                                </button>
+                                                                <button type="button" class="gc_btn btn_tgl">
+                                                                    <i class="gc_icon i-emotion-hate">싫어요</i>
+                                                                    <span class="txt_item">0</span>
+                                                                </button>
+                                                                <button type="button" class="gc_btn btn_tgl">
+                                                                    <i class="gc_icon i-emotion-soso">그저그래요</i>
+                                                                    <span class="txt_item">222</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="gc_list_item">
+                                                <div class="item_close_box">
+                                                    <p>해당 게시글은 정책 위반 등의 사유로<br /> 관리자에 의해 숨김 처리되었습니다.</p>
+                                                </div>
+                                            </li>
+                                            <li class="gc_list_item">
+                                                <div class="box_item_wrap">
+                                                    <div class="inner_box">
+                                                        <div class="board_type">
+                                                            <span class="badge_icon type_01">일상</span>
+                                                        </div>
+                                                        <div class="icon_flex_box">
+                                                            <dl>
+                                                                <dt><i class="gc_icon i_eye">조회수</i></dt>
+                                                                <dd>120</dd>
+                                                            </dl>
+                                                            <dl>
+                                                                <dt><i class="gc_icon i_reply">댓글</i></dt>
+                                                                <dd>222</dd>
+                                                            </dl>
+                                                            <button type="button" class="btn bookmark btn-tgl">
+                                                                <i class="gc_icon i_bookmark">스크랩</i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-cont">
+                                                        <!-- s : 20220622 gc 추가 : 구조 변경 / 이미지 추가 -->
+                                                        <div class="cont_txt">
+                                                            <p class="tit">학교 게시판 글 제목 영역입니다. 글 제목은 한 줄 말줄임표로 표시되며</p>
+                                                            <div class="desc_box">
+                                                                <p class="desc">학교 게시판 글 내용 영역입니다. 커뮤니티 내 학교 게시판  글이 보여지는 영역입니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cont_thumb">
+                                                            <div class="inner">
+                                                                <img src="../../_images/temps/day_benefit_mo_v4.jpg" alt="커뮤니티 서포터즈 게시판 이미지">
+                                                            </div>
+                                                        </div>
+                                                        <!-- s : 20220622 gc 추가 : 구조 변경 / 이미지 추가 -->
+                                                    </div>
+                                                    <div class="user_box_wrap">
+                                                        <div class="gc_flex">
+                                                            <div class="user_box">
+                                                                <div class="user_profile_img">
+                                                                    <img src="../../_images/temps/avatar-fmale.svg" alt="프로필이미지">
+                                                                </div>
+                                                                <div class="user_info_state">
+                                                                    <div class="user_info">
+                                                                        <span class="user_name">Sko***</span>
+                                                                        <span class="u_level">3성</span>
+                                                                    </div>
+                                                                    <div class="user_state">
+                                                                        <div class="state_box">
+                                                                            <span>2022.02.17</span>
+                                                                            <span>10:10</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="sympathy_box">
+                                                                <button type="button" class="gc_btn btn_tgl" data-attr="like">
+                                                                    <i class="gc_icon i-emotion-like">좋아요</i>
+                                                                    <span class="txt_item">226</span>
+                                                                </button>
+                                                                <button type="button" class="gc_btn btn_tgl">
+                                                                    <i class="gc_icon i-emotion-hate">싫어요</i>
+                                                                    <span class="txt_item">0</span>
+                                                                </button>
+                                                                <button type="button" class="gc_btn btn_tgl">
+                                                                    <i class="gc_icon i-emotion-soso">그저그래요</i>
+                                                                    <span class="txt_item">222</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="gc_list_item">
+                                                <div class="box_item_wrap">
+                                                    <div class="inner_box">
+                                                        <div class="board_type">
+                                                            <span class="badge_icon type_01">일상</span>
+                                                        </div>
+                                                        <div class="icon_flex_box">
+                                                            <dl>
+                                                                <dt><i class="gc_icon i_eye">조회수</i></dt>
+                                                                <dd>120</dd>
+                                                            </dl>
+                                                            <dl>
+                                                                <dt><i class="gc_icon i_reply">댓글</i></dt>
+                                                                <dd>222</dd>
+                                                            </dl>
+                                                            <button type="button" class="btn bookmark btn-tgl">
+                                                                <i class="gc_icon i_bookmark">스크랩</i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-cont">
+                                                        <!-- s : 20220622 gc 추가 : 구조 변경 / 이미지 추가 -->
+                                                        <div class="cont_txt">
+                                                            <p class="tit">학교 게시판 글 제목 영역입니다. 글 제목은 한 줄 말줄임표로 표시되며</p>
+                                                            <div class="desc_box">
+                                                                <p class="desc">학교 게시판 글 내용 영역입니다. 커뮤니티 내 학교 게시판  글이 보여지는 영역입니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다. 글 내용은 세 줄까지 가능하면  그 외 텍스트는 말 줄임표로 표시됩니다.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cont_thumb">
+                                                            <div class="inner">
+                                                                <img src="../../_images/temps/day_benefit_mo_v4.jpg" alt="커뮤니티 서포터즈 게시판 이미지">
+                                                            </div>
+                                                        </div>
+                                                        <!-- s : 20220622 gc 추가 : 구조 변경 / 이미지 추가 -->
+                                                    </div>
+                                                    <div class="user_box_wrap">
+                                                        <div class="gc_flex">
+                                                            <div class="user_box">
+                                                                <div class="user_profile_img">
+                                                                    <img src="../../_images/temps/avatar-fmale.svg" alt="프로필이미지">
+                                                                </div>
+                                                                <div class="user_info_state">
+                                                                    <div class="user_info">
+                                                                        <span class="user_name">Sko***</span>
+                                                                        <span class="u_level">3성</span>
+                                                                    </div>
+                                                                    <div class="user_state">
+                                                                        <div class="state_box">
+                                                                            <span>2022.02.17</span>
+                                                                            <span>10:10</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="sympathy_box">
+                                                                <button type="button" class="gc_btn btn_tgl" data-attr="like">
+                                                                    <i class="gc_icon i-emotion-like">좋아요</i>
+                                                                    <span class="txt_item">226</span>
+                                                                </button>
+                                                                <button type="button" class="gc_btn btn_tgl">
+                                                                    <i class="gc_icon i-emotion-hate">싫어요</i>
+                                                                    <span class="txt_item">0</span>
+                                                                </button>
+                                                                <button type="button" class="gc_btn btn_tgl">
+                                                                    <i class="gc_icon i-emotion-soso">그저그래요</i>
+                                                                    <span class="txt_item">222</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- //리스트 -->
+								
+                                    <div class="btn_more_large_box">
+                                        <button type="button" class="btn_more color01" onclick="morePage(1)">더보기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- -->
+                        </div>
+                        
+                        
+                        
+                    </div>
+                    <!-- e : 20220509 gc 추가 (탭 id - #commentCD1, #commentCD2 추가) -->
+                    <div class="layer-pop layer-normal" id="exLayer" tabindex="0" data-popup-layer="exLayer" data-focus="exLayer">
+                        <!-- s : 22-01-14 상품평 개선
+                    공통 팝업으로 작성 되었습니다. -->
+                        <div class="layer-header">
+                            <h2 id="commentTyeNm">상품평 작성</h2>
+                        </div>
+                        <div class="review-write-form" id="writeArea">
+                            <input type="hidden" id="insertGoodsId" />
+                            <input type="hidden" id="insertOrdNo" />
+                            <input type="hidden" id="insertCommentType" />
+                            <input type="hidden" id="insertStId" value="1" />
+                            <input type="hidden" id="insertCompNo" />
+
+                            <div class="review-content-body">
+                                <div class="cmt-pd-title">
+                                    <h3 id="commentGoodsNm"></h3>
+                                </div>
+                                <div class="review-sort">
+                                    <div class="gradechoice">
+                                        <h5 class="article-title">평점 선택</h5>
+                                        <div class="review-starating">
+                                            <!-- 클릭한 별점은 star-yellow 로 변경 -->
+                                            <button type="button" value="1"><span class="star-yellow">별점</span></button>
+                                            <button type="button" value="2"><span class="star-yellow" aria-hidden="true">별점</span></button>
+                                            <button type="button" value="3"><span class="star-yellow" aria-hidden="true">별점</span></button>
+                                            <button type="button" value="4"><span class="star-yellow" aria-hidden="true">별점</span></button>
+                                            <button type="button" value="5"><span class="star-yellow" aria-hidden="true">별점</span></button>
+                                            <input type="hidden" id="estmScore" name="estmScore" value="5">
+                                            <span class="starating-score"><strong>5</strong>/5</span>
+                                        </div>
+                                    </div>
+                                    <div class="chk-form">
+                                        <div>
+                                            <h5 class="article-title">주제 선택</h5>
+                                            <div>
+                                                <div style="display:none;">
+                                                    <input type="radio" id="revive-topic-none" name="revive-topic" value="">
+                                                </div>
+                                                <input id="revive-topic-10" type="radio" name="revive-topic" value="10" required="" checked="checked">
+                                                <label for="revive-topic-10">상품</label>
+                                                <input id="revive-topic-20" type="radio" name="revive-topic" value="20" required="">
+                                                <label for="revive-topic-20">배송</label>
+                                                <input id="revive-topic-30" type="radio" name="revive-topic" value="30" required="">
+                                                <label for="revive-topic-30">프로모션</label>
+                                                <input id="revive-topic-40" type="radio" name="revive-topic" value="40" required="">
+                                                <label for="revive-topic-40">기타</label>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h5 class="article-title">구매처 선택</h5>
+                                            <div>
+                                                <input id="revive-purchasing-1" type="radio" name="revive-purchasing" value="10" required="" checked="checked" disabled="true">
+                                                <label for="revive-purchasing-1">삼성닷컴</label>
+                                                <input id="revive-purchasing-2" type="radio" name="revive-purchasing" value="20" required="" disabled="true">
+                                                <label for="revive-purchasing-2">기타</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-write">
+                                    <div class="write-div">
+                                        <div class="writeTxt-box">
+                                            <textarea id="commentArea" name="commentArea" cols="200" wrap="hard" title="리뷰 작성하는 공간" placeholder="상품평은 10자 이상, 5,000자까지 입력 가능합니다."></textarea>
+                                            <p class="txtCount" id="txtCount"><span><strong>0</strong>/5,000</span></p>
+                                        </div>
+                                        <div class="attach-file">
+                                            <div class="addMedia" id="attach-file-btn">
+                                                <label class="inp-file" for="attachFile" tabindex="0">
+                                                    <em class="blind">파일첨부하기</em>
+                                                    <button type="button" id="attachFile" style="width:100%; background:none;" onclick="fileUpload.file(fileUpload.afterFileSelect);"><span>첨부</span></button>
+                                                </label>
+                                                <p>(<em>0</em>/10)</p>
+                                            </div>
+                                            <ol id="fileOl"></ol>
+                                            <p class="mediaCount">(<em>0</em>/10)</p>
+                                        </div>
+                                        <div class="precautions-msg">
+                                            <p>
+                                                ※ 고객후기를 위한 공간입니다. 제품 및 기타 문의사항은 <a href="https://www.samsung.com/sec/info/contactus/">고객서비스</a>을 이용해 주세요.
+                                            </p>
+                                            <p>[타인에게 불쾌감을 유발할 수 있는 욕설과 저속한 비어를 사용하거나 타인을 근거 없이 비방하는 리뷰는 제한될 수 있습니다.]</p>
+                                            <p>※ 파일용량은 최대 50MB까지 업로드 가능합니다.</p>
+                                        </div>
+
+                                        <div class="appOnlyBtn">
+                                            <button type="button" class="btn-camera" onclick="fileUpload.file(fileUpload.afterFileSelect, 'camera');">카메라</button>
+                                            <button type="button" class="btn-movie" onclick="fileUpload.file(fileUpload.afterFileSelect, 'camcorder');">동영상</button>
+                                        </div>
+                                        <div class="btn-box">
+                                            <button type="button" id="cancelWrite" class="btn btn-l btn-type1" name="cancelWrite">취소</button>
+                                            <button type="button" id="insertWrite" class="btn btn-l btn-type2" name="insertWrite">등록</button>
+                                        </div>
+                                        <!-- 작성 에러 메세지 -->
+                                        <div class="nocheck-validate" name="write-validate" style="display:none;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- e : 22-01-14 상품평 개선 -->
+                    </div>
+                    <script>
+                        /* s: 22-01-14 상품평 개선 */
+                        // CTA check type
+                        var $checkCta = $('.cta-check-type .btn');
+                        $checkCta.on('click', function() {
+                            var $this = $(this);
+                            if (!$this.parent().hasClass('checked')) {
+                                $checkCta.parent().removeClass('checked');
+                                $this.parent().addClass('checked');
+                            }
+                        });
+
+                        // 상품평 임시팝업 제어
+                        var $cmtPop = $('.cmtPop');
+                        var $cancel = $('#cancelWrite');
+                        $cmtPop.on('click', function() {
+                            var $this = $(this);
+                            $('#commentGoodsNm').text($this.data('goodsnm'));
+                            $('#insertGoodsId').val($this.data('goodsid'));
+                            $('#insertOrdNo').val($this.data('ordno'));
+                            $('#insertCommentType').val($this.data('commenttype'));
+                            $('#insertCompNo').val($this.data('compno'));
+                            if ($this.data('commenttype') == '01') {
+                                $('#commentTyeNm').text('한달 상품평 작성');
+                            } else {
+                                $('#commentTyeNm').text('상품평 작성');
+                            }
+                            if ($this.data('buysitecd') == '10') {
+                                $("#revive-purchasing-1").prop('checked', true);
+                            } else {
+                                $("#revive-purchasing-2").prop('checked', true);
+                            }
+                            $this.attr('data-popup-target', 'exLayer');
+                            $('#exLayer').addClass('cmt-popup');
+                        });
+                        $cancel.on('click', function() {
+                            writeAreaClear();
+                            $cmtPop.removeAttr('data-popup-target').removeClass('clicked');
+                            $('#exLayer').removeClass('cmt-popup active');
+                            $('#mask').remove();
+                            // 22-02-23 remove scrollLock
+                            $('html').removeClass('scrollLock');
+                        });
+                        // e: 22-01-14 상품평 개선
+                    </script>
+                </div>
+                <!-- e : 게시판 -->
+            </section>
+            <!-- e : conbox 영역 -->
+            <!-- s : 20220526 gc 추가 : Appbar -->
+            <aside class="appbar">
+                <div class="appbar_inner">
+                    <ul class="list_item">
+                        <li class="menu_item"><!-- menu_item 클래스에 active 클래스 추가 시, active 상태로 노출 -->
+                            <a href="javascript:;" class="gnb_open" onclick="openCategory();" ><!--onclick="openCategory();"-->
+                                <i class="gc_icon i-appbar-menu1">메뉴아이콘</i>
+                                <span>제품</span>
+                            </a>
+                        </li>
+                        <li class="menu_item active">
+                            <a href="javascript:;">
+                                <i class="gc_icon i-appbar-menu2">메뉴아이콘</i>
+                                <span>커뮤니티</span>
+                            </a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="javascript:;">
+                                <i class="gc_icon i-appbar-home">홈메뉴</i>
+                                <span>홈</span>
+                            </a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="javascript:;">
+                                <i class="gc_icon i-appbar-menu3">메뉴아이콘</i>
+                                <span>이벤트</span>
+                            </a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="javascript:;">
+                                <i class="gc_icon i-appbar-menu4">메뉴아이콘</i>
+                                <span>나의 정보</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </aside>
+            <!-- e : 20220526 gc 추가 : Appbar -->
+            <!-- 레이어 팝업 모음 -------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <!-- s : 공통 팝업(alert)  -->
+            <div class="layer-pop layer-default alert" id="commonAlert" tabindex="0" data-popup-layer="commonAlert" data-focus="commonAlert">
+                <div class="layer-header blind">
+                    <h2></h2>
+                </div>
+                <div class="layer-content">
+                    <p style="word-break:keep-all;"></p>
+                    <div class="btn-box">
+                        <a href="javascript:void(0)" onclick="" class="btn btn-d btn-type2">확인</a>
+                    </div>
+                </div>
+            </div>
+            <!-- e : 공통 팝업(alert)  -->
+            <!-- s : 공통 팝업(confirm)  -->
+            <div class="layer-pop layer-default" id="commonConfirm" tabindex="0" data-popup-layer="commonConfirm" data-focus="commonConfirm">
+                <div class="layer-header blind">
+                    <h2></h2>
+                </div>
+                <div class="layer-content">
+                    <p></p>
+                    <div class="btn-box double">
+                        <!-- 버튼 두개시 클래스 double 추가 -->
+                        <a href="javascript:void(0)" class="btn btn-d btn-type1" id="commonConfirmCancelBtn" onclick="closeLayer('commonConfirm');">취소</a>
+                        <a href="javascript:void(0)" class="btn btn-d btn-type2" id="commonConfirmOkBtn">확인</a>
+                    </div>
+                </div>
+                <button type="button" class="pop-close" id="closeCommonConfirmBtn" name="closeCommonConfirmBtn" data-focus-next="commonConfirm">팝업닫기</button>
+            </div>
+            <!-- e : 공통 팝업(confirm)  -->
+        </div>
+    </div>
+    <!-- e : 본문 영역 -->
+
+    <!-- 플로팅 메뉴 -->
+	<div id="floatingSticky" class="floating-sticky">
+		<div class="menu-list">
+			<div class="inner">
+				<a href="#" class="btn-floating" onclick="floating_open();"><span>메뉴 보기</span></a>
+				<ul>
+					<!-- 모바일 앱에서 AR 기능 한시적 OFF-->
+					<!---->
+					<li class="menu01" aria-hidden=""><a href="javascript:chat_open();">빠르고 편리하게 도와드리는<br>삼성닷컴 챗봇입니다.</a></li>
+					<li class="menu02" aria-hidden=""><a href="javascript:chat_open2();">무엇을 도와드릴까요?<br> 온라인 구매 상담사 입니다.</a></li>
+					<li class="menu03" aria-hidden="true" style="display:none;"><a href="/customer/reservationstore/?ref=floating/ " onclick="chat_open3();">매장 방문 예약하고<br> 맞춤 상담을 받아보세요.</a></li>
+					<!-- s : 20220523 gc 추가 : 최근 본 상품 -->
+					<li class="menu04"><a href="#" id="btn-rcntgoods-floating" type="button" onclick="showLatestItem(self,'latestItemLayer'); getRecentGoods(); return false" data-st-path="/sec/" data-popup-target="latestItemLayer"><span> <img src="https://images.samsung.com/is/image/samsung/sec-galaxy-fit2-r220-sm-r220nzkakoo-frontblack-307445599?$128_128_PNG$" alt="갤럭시 핏2"> 최근 본 제품 (1)</span></a></li>
+					<!-- e : 20220523 gc 추가 : 최근 본 상품 -->
+				</ul>
+			</div>
+		</div>
+		<button type="button" class="btn-gotop">
+			<span>위로</span>
+		</button>
+	</div>
+	<script>
+		floatSticky();
+
+		function firstRecentGoods() {
+			$.ajax({
+				url: "/xhr/goods/getFirstRecentGoods",
+				type: "POST",
+				success: function(result) {
+					var recentGoodsData = JSON.parse(result);
+
+					if (recentGoodsData.recentYn === "Y") {
+						$("floatingSticky").find(".menu04").remove();
+						var html = "";
+						html += '<li class="menu04">'
+						html += '<a href="#" id = "btn-rcntgoods-floating" type="button" onclick="showLatestItem(self,\'latestItemLayer\'); getRecentGoods(); return false" data-st-path ="' + recentGoodsData.stContextPath + '"  data-popup-target="latestItemLayer" >'
+						html += '<span> <img src="' + recentGoodsData.recentImgPath + '?$128_128_PNG$" alt="' + recentGoodsData.recentGoodsNm + '"> 최근 본 제품 (' + recentGoodsData.recentGoodsLength + ')</span>'
+						html += '</a>'
+						html += '</li>'
+
+						$("#floatingSticky").find("ul").append(html);
+					}
+				}
+			});
+		}
+		if (!(new Date() >= new Date('2022/02/08 00:00:00') &&
+				new Date() < new Date('2022/02/15 18:00:00'))) {
+			firstRecentGoods();
+		}
+	</script>
+	<!-- //플로팅 메뉴 -->
+	<!-- s : 바닥글 영역 - b2c -->
+	<script type="text/javascript">
+		function showSafety() {
+			$(".dropDown-content .subDesc").hide();
+			$(".dropDown-content .dropButton").hide();
+
+			$(".dropDown-content .dropcontent").show();
+		}
+
+		// 약관 변경
+		$(document).on("click", "#dropClauseList01 .droplist-item", function(e) {
+			var id = $(this).attr("id");
+
+			if (id == "optServiceClause03") {
+				location.href = "/membership/terms/";
+			}
+		});
+
+		function openPrivacy() {
+			var agent = navigator.userAgent.toLowerCase();
+
+			if (((navigator.appName === 'Netscape' && agent.indexOf('trident') !== -1) || (agent.indexOf("msie") !== -1))) { // ie
+				window.open("https://www.eprivacy.or.kr/front/certifiedSiteMark/certifiedSiteMarkPopup.do?certCmd=E&certNum=2021-E-R033", "popup", "width=650, height=900, fullscreen=no, menubar=no, status=no, toolbar=no, titlebar=yes, location=no, scrollbar=no");
+			} else {
+				window.open("https://www.eprivacy.or.kr/front/certifiedSiteMark/certifiedSiteMarkPopup.do?certCmd=E&certNum=2021-E-R033", "popup", "width=550,height=750");
+			}
+		}
+
+		//협력회사 사이버 신문고(새창)
+		function openCyberVoc() {
+			var agent = navigator.userAgent.toLowerCase();
+			if (((navigator.appName === 'Netscape' && agent.indexOf('trident') !== -1) || (agent.indexOf("msie") !== -1))) { // ie
+				window.open("https://www.secbuy.com/irj/servlet/prt/portal/prtroot/com.sec.gsrm.com.cybervoc.BoardComponent?submissionId=introductionGuest&boardId=E0009&entrance=samsung.com", "popup", "width=830,height=600, fullscreen=no, menubar=no, status=no, toolbar=no, titlebar=yes, location=no, scrollbar=no");
+			} else {
+				window.open("https://www.secbuy.com/irj/servlet/prt/portal/prtroot/com.sec.gsrm.com.cybervoc.BoardComponent?submissionId=introductionGuest&boardId=E0009&entrance=samsung.com", "popup", "width=830,height=600");
+			}
+		}
+	</script>
+	<script type="text/javascript" src="https://wcs.naver.net/wcslog.js"></script>
+	<script type="text/javascript">
+		if (!wcs_add) var wcs_add = {};
+		wcs_add["wa"] = "13bc3440ce4191";
+		if (window.wcs) {
+			wcs_do();
+		}
+	</script>
+
+    <!-- s: 20220620 gc 추가 : footer -->
+    <footer id="footer" class="footer-b2c gc_main_footer">  <!-- 2022.05.27 gc 추가 .gc_main_footer추가로 풋터 디자인 수정 -->
+
+        <!-- e: mypage 에서 노출  -->
+        <!--		<div class="footer-content gc_footer_content">-->
+        <!--			<div class="footer-inner">-->
+        <!--				<div class="cs-btn">-->
+        <!--					<div class="gc_btnbox">-->
+        <!--						<span><a href="#">FAQ</a></span>-->
+        <!--						<span><a href="#">공지사항</a></span>-->
+        <!--					</div>-->
+        <!--				</div>-->
+        <!--			</div>-->
+        <!--		</div>-->
+        <!-- e: mypage 에서 노출  -->
+        <div class="footer-content">
+            <div class="footer-inner">
+                <div class="cs-btn">
+                    <div class="gc_btnbox">
+                        <span><a href="#">로그아웃</a></span>
+                        <span><a href="#">혜택안내/가이드</a></span>
+                        <span><a href="#">매장상담예약</a></span>
+                        <span><a href="#">서비스 센터</a></span>
+                        <span><a href="#">서비스 이용약관</a></span>
+                        <span><a href="#">커뮤니티 이용약관</a></span>
+                        <span><a href="#">개인정보 처리방침</a></span>
+                        <span><a href="#">이벤트 개인정보 처리 방침</a></span>
+                        <span><a href="#">고객 서비스</a></span>
+                        <span><a href="#">가입안내</a></span>
+                    </div>
+                </div>
+
+                <button class="footer_com_btn">
+                    <span>삼성전자 주식회사</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-inner">
+                <div class="info-detail">
+                    <p>
+                        <span>대표이사 : 한종희</span>
+                        <span class="mo-inline">사업자등록번호 : 124-81-00998</span>
+                        <span class="comp-wrap"><a href="https://www.ftc.go.kr/www/bizCommView.do?key=232&apv_perm_no=2000374001130200515&pageUnit=10&searchCnd=wrkr_no&searchKrwd=1248100998&pageIndex=1" class="comp" title="새창 열림" target="_blank">사업자 정보확인</a></span>
+                        <span>통신판매업 신고 : 2000-경기수원-0515</span>
+                    </p>
+                    <p class="gap">
+                        <span>사업장주소 : 경기도 수원시 영통구 삼성로 129(삼성전자)</span>
+                        <span>문의 전화 : 1588-6084</span>
+                    </p>
+                    <p>삼성전자 주식회사는 통신판매중개자로서 통신판매의 당사자가 아니며,개별 판매자가 등록한 거래정보 및 거래에 대하여 책임을 지지 않습니다.</p>
+                    <p>본 사이트의 컨텐츠는 저작권법의 보호를 받는바 무단 전재, 복사,배포등을금합니다.</p>
+                    <p class="copyright">Copyright &copy; 1995-2022 Samsung. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- e: 20220620 gc 추가 : footer -->
+
+    <!-- s : 게시판 검색 20220603 -->
+    <div class="layer-pop board_search full" id="board_search" tabindex="0" data-popup-layer="board_search" data-focus="board_search" aria-hidden="false" style="display: none;">
+        <div class="layer-content">
+            <div class="unified-result-search-wrap type_02">
+                <div class="search-box">
+                    <label for="inputSearch" class="blind">통합 검색</label>
+                    <input type="text" id="inputSearch" class="inp" value="갤럭시">
+                    <button type="button" class="btn-inp-clear" title="삭제"><span class="blind">삭제</span></button><!-- 20200616 삭제 버튼 추가-->
+                    <button type="button" class="btn-search chatbot-search" title="검색" id="inputSearchButton" onclick="javascript:searchInputManager.getSearchResult($('#inputSearch').val(), '#inputSearch')"><span class="blind">검색</span></button>
+                </div>
+            </div>
+            <div class="unified-search-layer type-keyword">
+                <div class="unified-search-layer-inner">
+                    <!-- 20200618 감싸는 태그 unified-search-layer-inner 추가 -->
+                    <div class="layer-cont">
+                        <div class="cont-inner box-recent" id="searchkeywordRecent" role="tabpanel">
+                            <strong class="tit">최근 검색어</strong>
+                            <ul class="list full">
+                                <li class="item"><a href="javascript:void(0);" class="link">검색어1</a><button type="button" class="btn-delete delete" keyword="undefined" onclick="searchInputManager.clearSearchHistory(this)"><span class="blind">삭제</span></button></li>
+                                <li class="item"><a href="javascript:void(0);" class="link">검색어2</a><button type="button" class="btn-delete delete" keyword="undefined" onclick="searchInputManager.clearSearchHistory(this)"><span class="blind">삭제</span></button></li>
+                            </ul>
+                            <div class="etc"><a href="javascript:void(0);" class="btn-delete delete-all" onclick="searchInputManager.clearSearchHistory(this)">최근 검색어 전체 삭제</a></div>
+                        </div>
+                    </div>
+                </div><!-- 20200618 감싸는 태그 unified-search-layer-inner의 닫는 태그 추가 -->
+                <button type="button" class="btn-close-search"><span class="blind">검색 레이어 닫기</span></button><!-- 20200618 닫는 태그 추가-->
+                <!-- 20200622 button type 변경-->
+            </div>
+        </div>
+        <button type="button" class="pop-close" data-focus-next="popupsrhWord">팝업닫기</button>
+    </div>
+    <!-- e :  게시판 검색 20220603 -->
+	
+	<!-- s : 이메일 무단 수집거부 -->
+	<div class="layer-pop layer-normal" id="popupGatherRefuse" tabindex="0" data-popup-layer="popupGatherRefuse" data-focus="popupGatherRefuse">
+		<div class="layer-header">
+			<h2>이메일 무단 수집거부</h2>
+		</div>
+		<div class="layer-content">
+			<div class="etc-divWrap">
+				<p>본 웹사이트는 게시된 이메일 주소가 전자우편 수집 프로그램이나 그 밖의 기술적 장치를 이용하여 무단 수집되는 것을 거부합니다.<br>
+					이를 위반 시 『정보통신망 이용 촉진 및 정보보호 등에 관한 법률』등에 의해 처벌받을 수 있습니다.</p>
+			</div>
+		</div>
+		<button type="button" class="pop-close" data-focus-next="popupGatherRefuse">팝업닫기</button>
+	</div>
+	<!-- e : 이메일 무단 수집거부 -->
+
+	<!-- s : 아이디어 정책 -->
+	<div class="layer-pop layer-normal" id="popupIdeaPolicy" tabindex="0" data-popup-layer="popupIdeaPolicy" data-focus="popupIdeaPolicy"">
+		<div class="layer-header">
+			<h2>아이디어 제안에 대한 정책</h2>
+		</div>
+		<div class="layer-content">
+			<div class="etc-divWrap">
+				<p>삼성전자 및 삼성전자 임직원은 당사가 공식적으로 요청하지 않았음에도 불구하고 여러분께서 일방적으로 당사에 제출하는 아이디어나 제안 등을 수령하거나 검토하지 않습니다.</p>
+
+				<p>이는 제출하신 내용이 당사 내부적으로 개발한 제품, 기술, 서비스와 유사할 경우 발생할 수 있는 오해와 분쟁을 방지하고 나아가 여러분의 창의적인 아이디어를 적극 보호하기 위함입니다.</p>
+
+				<p>이러한 취지를 이해하여 주시고 구체화되지 않은 아이디어나 콘셉트(Concept) 단계의 제안이 당사에 제출되지 않도록 하여 주시기 바랍니다.</p>
+			</div>
+		</div>
+		<button type="button" class="pop-close" data-focus-next="popupIdeaPolicy">팝업닫기</button>
+	</div>
+	<!-- e : 아이디어 정책 -->
+
+	<!-- s : 웹접근성 우수사이트 인증서  -->
+	<div class="layer-pop layer-default" id="popupWA" tabindex="0" data-popup-layer="popupWA" data-focus="popupWA">
+		<div class="layer-content">
+			<img src="../_images/common/WA-2021.jpg" alt="웹접근성 우수사이트 인증서">
+		</div>
+		<button type="button" class="pop-close" data-focus-next="popupWA">팝업닫기</button>
+	</div>
+	<!-- e : 웹접근성 우수사이트 인증서  -->
+
+	<!-- e : 바닥글 영역 - b2c -->
+</div>
+
+<script id="popupMsgTempl" type="text/x-jsrender">
+        <div class="layer-content" data-popup-name="{{:popupnm}}">
+			<p>{{:content}}</p>
+			{{if yes || no}}
+				<div class="btn-box double">
+					{{if no}}
+						<a href="javascript:void(0);" class="btn btn-d btn-type1 {{:nocls}}">{{:no}}</a>
+					{{/if}}
+					{{if yes}}
+						<a href="javascript:void(0);" class="btn btn-d btn-type2 {{:yescls}}">{{:yes}}</a>
+					{{/if}}
+				</div>
+			{{/if}}
+		</div>
+		{{if close}}
+			<button type="button" class="pop-close">{{:close}}</button>
+		{{/if}}
+	</script>
+<div class="layer-pop layer-default alert popup-msg" tabindex="0" data-popup-layer="popupMsg" data-focus="popupMsg"></div>
+<div class="layer-pop layer-normal" id="popupLayer" tabindex="0" data-popup-layer="popupLayer" data-focus="popupLayer"></div>
+<script id="tooltipTempl" type="text/x-jsrender">
+        <p class="tooltip-title">{{:title}}</p>
+		<div class="tooltip-content">
+			{{:content}}
+		</div>
+		{{if close}}
+			<button type="button" class="btn-tooltip-close"><em class="blind">{{:close}}</em></button>
+		{{/if}}
+	</script>
+<div class="tooltip-layer pd-tooltip" tabindex="0"></div>
+
+<input type="hidden" id="viewStContextPath" value="/sec/" />
+
+</body>
+
+</html>

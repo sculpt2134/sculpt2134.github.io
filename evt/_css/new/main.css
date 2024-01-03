@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+.icon_reply { background-image: url('/sec/static/evt/_images/new/icons/icon-reply.svg'); }
+.icon_like_solid { background-image: url('/sec/static/evt/_images/new/icons/icon-like-solid.svg'); }
+.icon_like_outlined { background-image: url('/sec/static/evt/_images/new/icons/icon-like-outlined.svg'); }
+.icon_view { background-image: url('/sec/static/evt/_images/new/icons/icon-view.svg'); }
+
+.scroll-up .gc_container.type_main { padding-top:0; }
+
+/* KV */
+.gc_carousel.wrap-component,
+.gc_carousel > .wrap-component { padding-left:0; padding-right:0; }
+.gc_carousel.wrap-component .component-contents,
+.gc_carousel > .wrap-component .component-contents { border-radius:0; }
+.gc_carousel.wrap-component .component-contents .pagingInfo,
+.gc_carousel > .wrap-component .component-contents .pagingInfo { padding:3px 28px 3px 10px; background-color:rgba(0,0,0,.6); background-image: url('/sec/static/evt/_images/new/icons/icon-kv-more.svg'); line-height:1.5; }
+
+/* Shortcut */
+.gc_shortcut { margin-top:40px; }
+.gc_shortcut .shortcut_item .visual_item { padding:0; border:0; border-radius:10px; box-shadow:none; }
+
+/* Samsung NOW */
+.gc_now_new { margin-top:60px; }
+.gc_now_new .gc_now_inner { max-width:1440px; width:100%; padding:0 24px; margin:0 auto; }
+.gc_now_new .title_box { position:relative; }
+.gc_now_new .title_box .now_title { font-size:51px; font-weight:700; }
+.gc_now_new .title_box .now_desc { margin-top:12px; font-size:16px; line-height:24px; }
+.gc_now_new .title_box .btn_now_more { position:absolute; right:0; bottom:0; }
+.gc_now_new .title_box .btn_now_more p { color:#707070; font-size:16px; line-height:1.5; } 
+.gc_now_new .title_box .btn_now_more p::after{ content:''; display: inline-block; width:4px; height:8px; margin-left:4px; background:url('/sec/static/evt/_images/new/icons/icon-now-more.svg') center center no-repeat; vertical-align:middle; }
+.gc_now_new .contents_box { margin-top:40px; }
+.gc_now_new .content_list { display:flex; flex-wrap:wrap; justify-content:flex-start; gap:24px 0; }
+.gc_now_new .content_list_item { position:relative; }
+.gc_now_new .now_visual { overflow:hidden; position:relative; width:448px; height:448px; border-radius:15px; }
+.gc_now_new .now_visual img { width:100%; }
+.gc_now_new .now_text { position:absolute; bottom:0; box-sizing:border-box; padding:30px; color:#fff; }
+.gc_now_new .now_text .sub { margin-bottom:6px; font-size:16px; }
+.gc_now_new .now_text .title { overflow:hidden; font-size:24px; font-weight:700; line-height:26px; white-space:nowrap; text-overflow:ellipsis; }
+
+/* Commnity */
+.gc_community_new { display:none; }
+
+/* Category */
+.gc_category { padding:60px 0; margin:60px 0 0; background-color:#f4f4f4; }
+.gc_category .gc_category_inner { max-width:1440px; width:100%; padding: 0 24px; margin:0 auto; }
+.gc_category .title_box { text-align:center; }
+.gc_category .title_box .cate_title { font-size:51px; font-weight:700; }
+.gc_category .title_box .cate_desc { margin-top:12px; font-size:16px; line-height:24px; }
+.gc_category .contents_box {  margin-top:40px; }
+.gc_category .contents_box .hscroll { min-width:100%; justify-content:center; }
+.gc_category .contents_box .hscroll li { flex:0 0 auto; width:120px; margin-left:40px; }
+.gc_category .contents_box .hscroll li .cate_item .visual_item {padding:5px;}
+.gc_category .contents_box .hscroll li .cate_item .tit_item { margin-top:10px; font-size:16px; line-height:24px; text-align:center; }
+
+
+
+@media all and (max-width:1440px) and (min-width:801px) {
+    .gc_now_new .gc_now_inner { padding:0 1.3888vw; }
+    .gc_now_new .content_list { gap:1.6666vw; }
+    .gc_now_new .now_visual { width:31.1111vw; height:31.1111vw; }
+}
+
+
+
+@media all and (max-width:1100px) and (min-width:801px) {
+    .gc_shortcut .shortcut_item .visual_item { width:100px; height:100px; }
+
+    .gc_now_new .title_box .now_title { font-size:48px; }
+    .gc_now_new .title_box .now_desc { margin-top:10px; font-size:14px; line-height:20px; }
+    .gc_now_new .title_box .btn_now_more p { font-size:14px;}
+    .gc_now_new .now_text { padding:24px; }
+    .gc_now_new .now_text .sub { font-size:14px; }
+    .gc_now_new .now_text .title { font-size:22px; }
+
+    .gc_category .title_box .cate_title { font-size:48px; }
+    .gc_category .title_box .cate_desc { margin-top:10px; font-size:14px; line-height:20px; }
+    .gc_category .contents_box .hscroll li { width:100px; margin-left:24px; } 
+
+}
+
+
+
+@media all and (max-width: 800px) {
+    /* KV popup */
+    .gc_container .layer-pop.layer-normal .layer-header { background-color:#000; }
+
+    /* Shortcut */
+    .gc_shortcut { width:100%; padding:0 20px; margin-top:24px; } 
+    .gc_shortcut ul.hscroll {  min-width:auto; }
+    .gc_shortcut ul.hscroll li { padding:0; }
+    .gc_shortcut .shortcut_item .visual_item { width:80px; height:80px; }
+    .gc_shortcut .shortcut_item .tit_item { margin-top:10px; line-height:16px; }
+
+    /* Samsung NOW */
+    .gc_now_new { margin-top:40px; }
+    .gc_now_new .gc_now_inner { padding:0 20px; }
+    .gc_now_new .title_box .now_title { font-size:32px; }
+    .gc_now_new .title_box .now_desc { margin-top:8px; font-size:16px; line-height:21px; }
+    .gc_now_new .title_box .btn_now_more p { font-size:14px; } 
+    .gc_now_new .contents_box { margin-top:20px; }
+    .gc_now_new .content_list { gap:20px 0; }
+    .gc_now_new .content_list_item { width:100%; }
+    .gc_now_new .now_visual { width:100%; height:auto; }
+    .gc_now_new .now_text { padding:5.5555vw; }
+    .gc_now_new .now_text .sub { margin-bottom:3px; font-size:3.8888vw; }
+    .gc_now_new .now_text .title { font-size:6.6666vw; line-height:7.2222vw; }
+
+    /* Commnity */
+    .gc_community_new { display:block; background-color:#000; margin-top: 44px; }
+    .gc_community_new .gc_community_inner { width:100%; padding:37px 20px 22px; margin:0 auto; }
+    .gc_community_new .comm_title { color:#fff; font-size:32px; font-weight:700; line-height:43px; }
+    .gc_community_new .comm_desc { margin-top:7px; color:#fff; font-size:16px; line-height:21px; }
+    .gc_community_new .contents_box { overflow:hidden; padding:8px 0; margin-top:28px; border-radius:10px; background-color:#fff; }
+    .gc_community_new .comm_list_item + .comm_list_item { border-top:1px solid #000; }
+    .gc_community_new .comm_preview { padding: 20px 16px; }
+    .gc_community_new .comm_preview_info { display:flex; justify-content:space-between; margin-bottom:12px; }
+    .gc_community_new .comm_preview_info p { color:#707070; font-size:12px; line-height:16px; }
+    .gc_community_new .comm_preview_info ul { display:flex; }
+    .gc_community_new .comm_preview_info ul li { color:#707070; font-size:12px; line-height:16px; }
+    .gc_community_new .comm_preview_info ul li + li::before { content: '|'; color:#D9D9D9; margin: 0 6px; }
+    .gc_community_new .comm_preview_content { display:flex; justify-content:space-between; }
+    .gc_community_new .comm_preview_text { display:flex; flex-direction:column; }
+    .gc_community_new .comm_preview_text .title { overflow:hidden; display:-webkit-box; max-height:44px; margin-bottom:12px; font-size:15px; line-height:22px; text-overflow:ellipsis; -webkit-box-orient:vertical; -webkit-line-clamp:2; }
+    .gc_community_new .comm_preview_filter { display:flex; margin-top:auto; }
+    .gc_community_new .comm_preview_filter li { font-size:12px; }
+    .gc_community_new .comm_preview_filter li + li { margin-left:16px; }
+    .gc_community_new .comm_preview_filter .icon { width:14px; height:14px; margin-right:6px; }
+    .gc_community_new .comm_preview_visual { flex-shrink:0; width:72px; margin-left:12px; }
+    .gc_community_new .comm_link { margin-top:26px; }
+    .gc_community_new .comm_link_title { color:#fff; font-size:20px; line-height:26px; }
+    .gc_community_new .comm_link_list { display:flex; flex-wrap:wrap; justify-content:space-between; gap:10px 0; margin-top:19px; }
+    .gc_community_new .comm_link_list li { width:calc(50% - 10px); }
+    .gc_community_new .btn_comm { display:flex; justify-content:center; align-items:center; width:100%; height:40px; background-color: #fff; border:1px solid #D9D9D9; border-radius:20px; }
+    .gc_community_new .btn_comm p { font-size:14px; font-weight:700; line-height:1.5; }
+
+    /* Category */
+    .gc_category { padding:0; margin:40px 0 60px; background-color:#fff;}
+    .gc_category .gc_category_inner { padding: 0; }
+    .gc_category .title_box { padding:0 20px; text-align:left; }
+    .gc_category .title_box .cate_title { font-size:32px; font-weight:700; line-height:43px; }
+    .gc_category .title_box .cate_desc { margin-top:7px; font-size:16px; line-height:21px; }
+    .gc_category .contents_box { padding:0 20px; margin-top:32px; }
+    .gc_category .contents_box .hscroll { justify-content:flex-start; }
+    .gc_category .contents_box .hscroll li { width:80px; margin-left:20px; }
+    .gc_category .contents_box .hscroll li .cate_item .tit_item { margin-top:10px; font-size:16px; line-height:21px; }
+}
+
+
+
+@media all and (max-width: 540px) {
+    .gc_carousel.carousel-container .component-contents .slider-carousel-visual .visual,
+    .gc_carousel > .carousel-container .component-contents .slider-carousel-visual .visual { height:auto; }
+
+    .gc_shortcut ul.hscroll {  gap: 0 20px; }
+    .gc_shortcut .shortcut_item .visual_item { width:60px; height:60px; }
+}

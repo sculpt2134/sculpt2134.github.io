@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/*reset*/
+html, body, div, h1, h2, h3, h4, h5, h6, span, object, iframe, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, a, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, input, textarea, select, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, button, time, mark, audio, video
+{letter-spacing: 0;}
+/*icon*/
+.gc_icon.i-prev-bl {
+  background: url("../../_images/icons/icon-prev.svg") no-repeat;
+  background-size: 100%;
+}
+
+/*header*/
+.secapp #header, .secapp .header{
+  background: #fff;
+  border-bottom: none;
+}
+.secapp #header .logo, .secapp .header .logo {
+  padding: 0 20px;
+  display: flex;
+  justify-content: start;
+  margin: 0;
+  position: absolute;
+  left: 38px;
+  right: 0;
+}
+.secapp #header .logo h1, .secapp .header .logo h1 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+/*bbs*/
+.renewal .box-tab-point-content .gc_community.gc_tab_wrap{padding:0}
+.renewal .gc_tab_common .tab_list{background:#fff}
+.renewal .secapp .gc_tab_common .tab_list a{padding: 15px 0}
+.renewal .gc_tab_common .tab_list,.secapp .gc_tab_common .tab_list.on{border-radius: 0; border-bottom:1px solid #d9d9d9;}
+.renewal .gc_community.gc_tab_wrap .gc_tab_common .tab_list span{color:#d9d9d9;font-weight:normal}
+.renewal .gc_community.gc_tab_wrap .gc_tab_common .tab_list.on.tab-inf span{color:#000 ;font-weight:bold}
+.renewal .gc_community.gc_tab_wrap .gc_tab_common .tab_list.on.tab-inf:after{background:#000;height:1px;top:auto;bottom:0}
+
+/* .gc_community.gc_information .community-board .listHeader .board-title .cta-check-type li button { padding: 2px 4px 4px; }
+.gc_community.gc_information .community-board .listHeader .board-title .cta-check-type li button.type-all { color: #000; }
+.gc_community.gc_information .community-board .listHeader .board-title .cta-check-type li.checked button.type-all { color: #fff; }
+.gc_community.gc_information .community-board .listHeader .board-title .cta-check-type li button.type01 { border: 1px solid #2384F5; color: #2384F5; }
+.gc_community.gc_information .community-board .listHeader .board-title .cta-check-type li button.type02 { border: 1px solid #22BCA5; color: #22BCA5; }
+.gc_community.gc_information .community-board .listHeader .board-title .cta-check-type li button.type03 { border: 1px solid #F5805A; color: #F5805A; }
+.gc_community.gc_information .community-board .listHeader .board-title .cta-check-type li button.type04 { border: 1px solid #FCB30F; color: #FCB30F; }
+
+.gc_community.gc_information .community-board .listHeader .board-title .cta-check-type li.checked { border: 0; box-shadow: none; }
+.gc_community.gc_information .community-board .listHeader .board-title .cta-check-type li.checked button.type01 { background: #2384F5; color: #fff; }
+.gc_community.gc_information .community-board .listHeader .board-title .cta-check-type li.checked button.type02 { background: #22BCA5; color: #fff; }
+.gc_community.gc_information .community-board .listHeader .board-title .cta-check-type li.checked button.type03 { background: #F5805A; color: #fff;}
+.gc_community.gc_information .community-board .listHeader .board-title .cta-check-type li.checked button.type04 { background: #FCB30F; color: #fff; } */
+.gc_community.gc_tab_wrap .gc_tab_common .tab_list.on.tab-inf span{color:#000}
+.gc_community .community-board .listHeader .board-title .cta-check-type li.checked button[class*=type0] {background:#fff;color:#333;border-color:#d9d9d9}
+.gc_community .badge_icon[class*=type_0]{background:#fff;color:#6db3bc;border:0;font-size:14px;padding:0}
+.gc_community .listHeader .board-title .cta-check-type li button{ border-color: #d9d9d9; color: #000; }
+.gc_community .con-tit:after{background-image: none;}
+.gc_community .community-board .listHeader .board-title .cta-check-type li button.typenew{background:#fff;color:#000;border:1px solid #d9d9d9;font-size:14px;padding:0;border-radius: 20px;}
+.gc_community .community-board .listHeader .board-title .cta-check-type li button{padding:4px 6px;height:25px;font-size:14px}
+.gc_community .listHeader .board-title .cta-check-type li.checked button{background:#6db3bc;border:0 !important;color:#fff}
+.gc_community .box_item_wrap{border:0}
+.gc_community .list-box .icon_flex_box{justify-content: flex-start;}
+.gc_community .user_box .user_info_state{display: flex;}
+.gc_community .user_box .user_info_state > div span{color:#707070;font-weight:normal}/*유저네임*/
+.gc_community .user_box .user_info_state > div + div:before{clear:both;content:"|";margin:0 6px}
+.gc_community .box_item_wrap .user_box_wrap{margin-top:0;padding-top:0;border-top:0}
+.gc_community .box_item_list_wrap .gc_list_item{border-bottom:1px solid #d9d9d9;border-radius:0;}
+.renewal .detail_herder .badge_icon{padding: 5px 15px; height: 27px; color: #333;}
+
+
+.box-tab-point-content .gc_community.gc_tab_wrap{padding:0}
+.gc_tab_common .tab_list{background:#fff}
+.secapp .gc_tab_common .tab_list a{padding: 15px 0}
+.gc_tab_common .tab_list,.secapp .gc_tab_common .tab_list.on{border-radius: 0; border-bottom:1px solid #d9d9d9;}
+.gc_community.gc_tab_wrap .gc_tab_common .tab_list span{color:#d9d9d9;font-weight:normal}
+.gc_community.gc_tab_wrap .gc_tab_common .tab_list.on.tab-inf span{color:#000 ;font-weight:bold}
+.gc_community.gc_tab_wrap .gc_tab_common .tab_list.on.tab-inf:after{background:#000;height:1px;top:auto;bottom:0}
+
+/*now*/
+
+/*search*/
+/* 통합 검색 */
+.content-unified-search .conbox-unified-search { overflow: hidden; }
+.content-unified-search .conbox-unified-search .unified-search-inner { padding-left: 0; padding-right: 0; }
+.unified-search-input-wrap { position: fixed; }
+.unified-search-input-wrap .unified-search-input-inner { padding: 0 12px; height: 60px; background-color: #fff; }
+.unified-search-input-wrap .unified-search-input-inner .search-box { width: 100%; height: 40px; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; border: 1px solid #D9D9D9; padding-left: 10px; }
+.unified-search-input-wrap .unified-search-input-inner .search-box .inp-placeholder { top: 10px; left: 20px; }
+.unified-search-input-wrap .unified-search-input-inner .btn-inp-clear { right: 43px; }
+.unified-search-input-wrap .unified-search-input-inner .btn-search { width: 40px; height: 40px; right: 0; background-position: 2px center; }
+.unified-search-input-wrap .btn-close-search { top: 20px; }
+.unified-search-input-wrap > .btn-close-search { display: none; }
+.is-pc .unified-search-input-wrap, .is-pc .page-dimmed { display: none; }
+.is-mo .unified-search-input-wrap, .is-mo .page-dimmed { display: block; }
+.unified-search-layer { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; top: 60px; margin: 0; width: 100%; }
+.unified-search-layer .unified-search-layer-inner { border-radius: 0; border: 0; }
+.unified-search-layer .tit { padding-bottom: 8px; }
+
+
+.content-unified-search .conbox-unified-search { overflow: hidden; }
+.content-unified-search .conbox-unified-search .unified-search-inner { padding-left: 0; padding-right: 0; }
+
+.search-input-inner { padding: 0 12px; height: 60px; background-color: #fff; }
+.search-input-inner .search-box { width: 100%; height: 40px; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; border: 1px solid #D9D9D9; padding-left: 10px; }
+.search-input-inner .search-box .inp-placeholder { top: 10px; left: 20px; }
+.search-input-inner .btn-inp-clear { right: 43px; }
+.search-input-inner .btn-search { width: 40px; height: 40px; right: 0; background-position: 2px center; }
+.pd0{margin:0}
+.pdlr20{margin:0 20px}

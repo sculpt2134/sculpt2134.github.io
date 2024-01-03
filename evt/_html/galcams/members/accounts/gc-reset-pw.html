@@ -1,0 +1,551 @@
+<html lang="ko">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>비밀번호 재설정&nbsp;|&nbsp;삼성 계정</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+
+
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-5C6SNNV"></script>
+    <script>
+        var PAGEPATH = '/accounts/find/resetPassword.js';
+    </script>
+
+    <link rel="stylesheet"
+        href="https://account.samsung.com/accounts/v1/resources/js/common/angular-block-ui/angular-block-ui.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://account.samsung.com/accounts/v1/resources/css/v2/angular-material.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://account.samsung.com/accounts/v1/resources/one-ui/css/default.css">
+    <link rel="stylesheet" type="text/css" href="../../../../_css/gc-common.css"><!-- 20220628 gc 추가 -->
+
+    <link type="image/x-icon" rel="shortcut icon" href="https://account.samsung.com/favicon.ico">
+    <!--[if lt IE 9]>
+        <script src="https://account.samsung.com/accounts/v1/resources/js/common/json/json3.min.js"></script>
+        <script src="https://account.samsung.com/accounts/v1/resources/js/common/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+        //<![CDATA[
+        // var wipLogicalPath = "/accounts/v1";
+        var wipLogicalPath = "../../../../_script/accounts";
+
+        // var wipResourcesVerDt = "20220517024951";
+        var wipCancelURI = "https://www.samsung.com/sec//sec/galaxycampus/?state=g9gjvCkYtvPzLcHGWOygIAo3eA";
+        var wipGoBackURI = "https://www.samsung.com/sec//sec/galaxycampus/?state=g9gjvCkYtvPzLcHGWOygIAo3eA";
+        var loLangCD = "ko";
+        var loCntyCD = "KR";
+        var isTextRightAlign = false;
+        var isTextFirstFamilyName = true;
+        var isTextFirstDateYear = true;
+        var wipAcsChnlEnum = "WEB";
+        var wipViewTypeEnum = "v2";
+        var userGeoIPCnty3dgtCd = "KOR";
+        var userAcsCnty3dgtCd = "KOR";
+        var userCnty3dgtCd = "";
+        var wipUriEnum = "resetPassword";
+        var APPNAME = "SECKDPWEB";
+        var sJSESSIONID = "2cc638b7-b15f-4428-a39a-5e5301ffd989";
+        var wipCsrf = {
+            'token': 'a66fc9af-8041-4aac-a02b-bc43bcf68d9e',
+            'headerName': 'X-CSRF-TOKEN'
+        };
+        var wipResourcesUrl = "https://account.samsung.com/accounts/v1/resources";
+        var isGAEnabled = true;
+        var googleRecaptchaApiUrl = "https://www.google.com";
+        //]]>
+
+        if (isGAEnabled) {
+            var containerId;
+            if (wipResourcesUrl.indexOf("sad") !== -1) {
+                containerId = 'GTM-KCH2BM6';
+            } else if (wipResourcesUrl.indexOf("stg") !== -1) {
+                containerId = 'GTM-W3S5ZM6';
+            } else {
+                containerId = 'GTM-5C6SNNV';
+            }
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', containerId);
+        }
+
+        var createPostMessage = function () {
+
+            var sendPostMessage = function () {
+                console.log("");
+            }
+
+            if (APPNAME.indexOf("samsung_com_us") !== -1) {
+                if (document.getElementsByClassName('wrapper')[0]) {
+                    var pageType = "signin";
+                    if (document.querySelector('form[name="signUpForm"]')) {
+                        pageType = "signup";
+                    } else if (document.querySelector('form[name=findIdForm]')) {
+                        pageType = "findid";
+                    } else if (document.querySelector('form[name=rstPwd]')) {
+                        pageType = "resetpwd";
+                    } else {
+                        pageType = "others";
+                    }
+                    sendPostMessage = function () {
+                        window.parent.postMessage({
+                            pageType: pageType
+                        }, '*');
+                    }
+                }
+            }
+            sendPostMessage();
+        }
+    </script>
+
+    <!-- js loading -->
+    <script src="https://account.samsung.com/accounts/v1/resources/js/common/wip.js"></script>
+
+    <script src="https://account.samsung.com/accounts/v1/resources/js/v2/app.js"></script>
+    <script src="https://account.samsung.com/accounts/v1/resources/js/v2/run.js"></script>
+    <script src="../../../../_script/accounts/config.js"></script>
+    <script src="../../../../_script/accounts/controller.js"></script>
+    <script src="../../../../_script/accounts/directive.js"></script>
+    <script src="../../../../_script/accounts/filter.js"></script>
+    <script src="../../../../_script/accounts/loading.js"></script>
+    <script src="../../../../_script/accounts/provider.js"></script>
+    <script src="../../../../_script/accounts/service.js"></script>
+    <script src="../../../../_script/accounts/util.js"></script>
+    <script src="../../../../_script/accounts/resetPassword.js"></script>
+
+    <script src="https://account.samsung.com/accounts/v1/resources/js/common/qrcode-generator/qrcode.js"></script>
+    <script src="https://account.samsung.com/accounts/v1/resources/js/common/qrcode-generator/qrcode_UTF8.js"></script>
+    <script src="https://account.samsung.com/accounts/v1/resources/js/common/angular-qrcode/angular-qrcode.js"></script>
+
+    <script type="text/javascript">
+        window.document.title = '비밀번호 재설정 | 삼성 계정';
+    </script>
+    <style>
+        .error-msg {
+            display: block !important
+        }
+    </style>
+</head>
+
+
+
+
+<body block-ui="main" class="ng-scope block-ui block-ui-anim-fade" aria-busy="false">
+    <!-- iam-wrapper -->
+    <div class="wrapper ng-scope" data-ng-controller="cmmController as cmm">
+
+        <!-- ngIf: isIESupportMessageShow=='Y' -->
+        <header class="one-header">
+            <div class="header-inner">
+                <div class="logo">
+                    <h1><img src="https://account.samsung.com/accounts/v1/resources/one-ui/images/svg/txt_logo.svg"
+                            onerror="this.src='https://account.samsung.com/accounts/v1/resources/one-ui/images/layout/txt_logo.png';"
+                            alt="Samsung account"></h1>
+                </div>
+            </div>
+        </header>
+
+        <main class="one-main one-single ng-scope" data-ng-controller="mainController as vm" onclick="inputEvent()"
+            onkeydown="inputEvent()" ng-init="inputEvent()">
+            <div class="main-inner" role="main" data-ng-show="!blnFailResult &amp;&amp; isVerificated">
+                <div class="container">
+                    <div class="title">
+                        <h1>비밀번호 재설정</h1>
+                    </div>
+                    <!-- div class="subDesc">서브 설명 들어가는 곳</div -->
+                    <div class="content">
+                        <!-- content -->
+                        <p class="text-guide">
+                            비밀번호를 재설정하려면 아래에 내 계정 ID를 입력하세요.
+                        </p>
+
+                        <div class="one-forms">
+                            <form name="rstPwd" class="ng-pristine ng-valid ng-valid-pattern ng-valid-maxlength">
+                                <fieldset>
+                                    <legend>information for Reset Password</legend>
+                                    <div class="one-input-container">
+                                        <!-- ngIf: $parent.geoIPCountryCode == 'KOR' || $parent.geoIPCountryCode == 'CHN' || $parent.geoIPCountryCode == 'IND' --><label
+                                            for="signUpID"
+                                            ng-if="$parent.geoIPCountryCode == 'KOR' || $parent.geoIPCountryCode == 'CHN' || $parent.geoIPCountryCode == 'IND'"
+                                            class="ng-scope">ID (이메일 주소 또는 전화번호)</label>
+                                        <!-- end ngIf: $parent.geoIPCountryCode == 'KOR' || $parent.geoIPCountryCode == 'CHN' || $parent.geoIPCountryCode == 'IND' -->
+                                        <!-- ngIf: $parent.geoIPCountryCode != 'KOR' && $parent.geoIPCountryCode != 'CHN' && $parent.geoIPCountryCode != 'IND' -->
+                                        <input data-ng-model="vm.signUpID" id="signUpID" name="signUpID"
+                                            spellcheck="false" ng-model-options="{ updateOn: 'input keyup blur' }"
+                                            type="text" aria-required="true" aria-invalid="" aria-describeby="rst"
+                                            data-ng-pattern="[object Object]" maxlength="100" not-enter=""
+                                            class="ng-pristine ng-valid ng-empty ng-valid-pattern ng-valid-maxlength ng-touched"
+                                            autocomplete="off">
+                                        <div data-ng-show="rstPwd.signUpID.$touched &amp;&amp; rstPwd.signUpID.$error.pattern"
+                                            class="error-msg ng-hide" id="rsterror">ID 입력 값이 유효하지 않습니다.</div>
+                                        <!-- ngIf: !(rstPwd.signUpID.$touched && rstPwd.signUpID.$error.pattern) -->
+                                        <div data-ng-if="!(rstPwd.signUpID.$touched &amp;&amp; rstPwd.signUpID.$error.pattern)"
+                                            class="error-msg ng-scope">
+                                            <div data-ng-switch="" on="err.signUpIDCode">
+                                                <!-- ngSwitchWhen: 01 -->
+
+                                                <!-- ngSwitchWhen: 03 -->
+                                                <!-- ngSwitchWhen: 99 -->
+                                                <!-- ngSwitchDefault: -->
+                                                <div data-ng-switch-default="" class="ng-scope"></div>
+                                                <!-- end ngSwitchWhen: -->
+                                            </div>
+                                        </div>
+                                        <!-- end ngIf: !(rstPwd.signUpID.$touched && rstPwd.signUpID.$error.pattern) -->
+                                    </div>
+
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="under-content">
+                    <div class="one-btn-container">
+                        <button class="one-primary one-button" type="button" id="resetPasswordButton"
+                            data-ng-click="btnConfirm()" data-ng-disabled="rstPwd.$invalid || !vm.blnAllEleFilled"
+                            disabled="disabled">
+                            비밀번호 재설정
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-inner ng-hide" role="main" data-ng-show="blnFailResult">
+                <div class="container">
+                    <div class="content">
+                        죄송합니다. 일치하는 정보가 없습니다.<br>
+                        <br>
+                        입력한 정보를 다시 확인해 주세요.
+                    </div>
+                </div>
+                <div class="under-content">
+
+                    <div class="one-btn-container">
+                        <button class="one-primary one-button" type="button" data-ng-click="tryAgain()">
+                            다시 시도
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-inner ng-hide" role="main" data-ng-show="!blnFailResult &amp;&amp; !isVerificated"
+                onclick="inputEvent()" onkeydown="inputEvent()">
+                <div class="container">
+                    <div class="title">
+                        <h1>이름 및 생년월일 인증</h1>
+                    </div>
+
+                    <div class="content">
+
+                        <p class="text-guide">
+                            이 계정의 본인 인증을 위해 아래 정보를 입력하세요.
+                        </p>
+
+                        <div class="one-forms joinAccount">
+                            <form name="findIdForm" method="post" autocomplete="off"
+                                class="ng-pristine ng-valid ng-valid-pattern ng-valid-maxlength">
+                                <fieldset>
+                                    <legend>Information for Find ID</legend>
+
+                                    <div class="one-input-container" data-ng-show="vm.isTextFirstFamilyName">
+                                        <label for="familyName">성</label>
+                                        <input data-ng-model="vm.familyName" id="familyName" name="familyName"
+                                            type="text" aria-required="true"
+                                            aria-invalid="findIdForm.familyName.$error.pattern || err.familyName"
+                                            aria-describeby="fmerr2" maxlength="50"
+                                            data-ng-pattern="/^([^£\s¥€§※☆★○●◎◇◆□■△▲▽▼→←←↑↓↔〓◁◀▷▶♤♠♡♥♧♣⊙◈▣◐◑▒▤▥▨▧▦▩♨☏☎☜☞¶†‡↕↗↙↖↘♭♩♪♬㉿{}\[\]\/?;:|)*~`!^+<>@#$%&amp;=×÷₩•°¤《》¡¿(&quot;\\\uD800-\uDFFF]+\s{0,1})*[^£\s¥€§※☆★○●◎◇◆□■△▲▽▼→←←↑↓↔〓◁◀▷▶♤♠♡♥♧♣⊙◈▣◐◑▒▤▥▨▧▦▩♨☏☎☜☞¶†‡↕↗↙↖↘♭♩♪♬㉿{}\[\]\/?;:|)*~`!^+<>@#$%&amp;=×÷₩•°¤《》¡¿(&quot;\\\uD800-\uDFFF]+$/"
+                                            ng-model-options="{ updateOn: 'keyup blur' }" not-enter=""
+                                            class="ng-pristine ng-untouched ng-valid ng-empty ng-valid-pattern ng-valid-maxlength"
+                                            autocomplete="off">
+                                        <!-- error text 영역 -->
+                                        <div data-ng-show="findIdForm.familyName.$error.pattern"
+                                            class="error-msg ng-hide" id="fmerr1">이름에 특수문자를 사용할 수 없습니다.</div>
+                                        <div data-ng-show="err.familyName" class="error-msg ng-hide" id="fmerr2">성을
+                                            입력하십시오.</div>
+                                        <!-- //error text 영역 -->
+                                    </div>
+                                    <div class="one-input-container" data-ng-show="vm.isTextFirstFamilyName">
+                                        <label for="givenName">이름</label>
+                                        <input data-ng-model="vm.givenName" id="givenName" name="givenName" type="text"
+                                            aria-required="true"
+                                            aria-invalid="findIdForm.givenName.$error.pattern || err.givenName"
+                                            aria-describeby="gverr2" maxlength="50"
+                                            data-ng-pattern="/^([^£\s¥€§※☆★○●◎◇◆□■△▲▽▼→←←↑↓↔〓◁◀▷▶♤♠♡♥♧♣⊙◈▣◐◑▒▤▥▨▧▦▩♨☏☎☜☞¶†‡↕↗↙↖↘♭♩♪♬㉿{}\[\]\/?;:|)*~`!^+<>@#$%&amp;=×÷₩•°¤《》¡¿(&quot;\\\uD800-\uDFFF]+\s{0,1})*[^£\s¥€§※☆★○●◎◇◆□■△▲▽▼→←←↑↓↔〓◁◀▷▶♤♠♡♥♧♣⊙◈▣◐◑▒▤▥▨▧▦▩♨☏☎☜☞¶†‡↕↗↙↖↘♭♩♪♬㉿{}\[\]\/?;:|)*~`!^+<>@#$%&amp;=×÷₩•°¤《》¡¿(&quot;\\\uD800-\uDFFF]+$/"
+                                            ng-model-options="{ updateOn: 'keyup blur' }" not-enter=""
+                                            class="ng-pristine ng-untouched ng-valid ng-empty ng-valid-pattern ng-valid-maxlength"
+                                            autocomplete="off">
+                                        <!-- error text 영역 -->
+                                        <div data-ng-show="findIdForm.givenName.$error.pattern"
+                                            class="error-msg ng-hide" id="gverr1">이름에 특수문자를 사용할 수 없습니다.</div>
+                                        <div data-ng-show="err.givenName" class="error-msg ng-hide" id="gverr2">
+                                            이름을 입력하십시오.</div>
+                                        <!-- //error text 영역 -->
+                                    </div>
+                                    <div class="one-input-container ng-hide" data-ng-show="!vm.isTextFirstFamilyName">
+                                        <label for="givenName">이름</label>
+                                        <input data-ng-model="vm.givenName" id="givenName1" name="givenName1"
+                                            type="text" aria-required="true"
+                                            aria-invalid="findIdForm.givenName1.$error.pattern || err.givenName"
+                                            aria-describeby="gverr2" maxlength="50"
+                                            data-ng-pattern="/^([^£\s¥€§※☆★○●◎◇◆□■△▲▽▼→←←↑↓↔〓◁◀▷▶♤♠♡♥♧♣⊙◈▣◐◑▒▤▥▨▧▦▩♨☏☎☜☞¶†‡↕↗↙↖↘♭♩♪♬㉿{}\[\]\/?;:|)*~`!^+<>@#$%&amp;=×÷₩•°¤《》¡¿(&quot;\\\uD800-\uDFFF]+\s{0,1})*[^£\s¥€§※☆★○●◎◇◆□■△▲▽▼→←←↑↓↔〓◁◀▷▶♤♠♡♥♧♣⊙◈▣◐◑▒▤▥▨▧▦▩♨☏☎☜☞¶†‡↕↗↙↖↘♭♩♪♬㉿{}\[\]\/?;:|)*~`!^+<>@#$%&amp;=×÷₩•°¤《》¡¿(&quot;\\\uD800-\uDFFF]+$/"
+                                            ng-model-options="{ updateOn: 'keyup blur' }" not-enter=""
+                                            class="ng-pristine ng-untouched ng-valid ng-empty ng-valid-pattern ng-valid-maxlength"
+                                            autocomplete="off">
+                                        <!-- error text 영역 -->
+                                        <div data-ng-show="findIdForm.givenName1.$error.pattern"
+                                            class="error-msg ng-hide" id="gverr1">이름에 특수문자를 사용할 수 없습니다.</div>
+                                        <div data-ng-show="err.givenName" class="error-msg ng-hide" id="gverr2">
+                                            이름을 입력하십시오.</div>
+                                        <!-- //error text 영역 -->
+                                    </div>
+                                    <div class="one-input-container ng-hide" data-ng-show="!vm.isTextFirstFamilyName">
+                                        <label for="familyName">성</label>
+                                        <input data-ng-model="vm.familyName" id="familyName1" name="familyName1"
+                                            type="text" aria-required="true"
+                                            aria-invalid="findIdForm.familyName1.$error.pattern || err.familyName"
+                                            aria-describeby="fmerr2" maxlength="50"
+                                            data-ng-pattern="/^([^£\s¥€§※☆★○●◎◇◆□■△▲▽▼→←←↑↓↔〓◁◀▷▶♤♠♡♥♧♣⊙◈▣◐◑▒▤▥▨▧▦▩♨☏☎☜☞¶†‡↕↗↙↖↘♭♩♪♬㉿{}\[\]\/?;:|)*~`!^+<>@#$%&amp;=×÷₩•°¤《》¡¿(&quot;\\\uD800-\uDFFF]+\s{0,1})*[^£\s¥€§※☆★○●◎◇◆□■△▲▽▼→←←↑↓↔〓◁◀▷▶♤♠♡♥♧♣⊙◈▣◐◑▒▤▥▨▧▦▩♨☏☎☜☞¶†‡↕↗↙↖↘♭♩♪♬㉿{}\[\]\/?;:|)*~`!^+<>@#$%&amp;=×÷₩•°¤《》¡¿(&quot;\\\uD800-\uDFFF]+$/"
+                                            ng-model-options="{ updateOn: 'keyup blur' }" not-enter=""
+                                            class="ng-pristine ng-untouched ng-valid ng-empty ng-valid-pattern ng-valid-maxlength"
+                                            autocomplete="off">
+                                        <!-- error text 영역 -->
+                                        <div data-ng-show="findIdForm.familyName1.$error.pattern"
+                                            class="error-msg ng-hide" id="fmerr1">이름에 특수문자를 사용할 수 없습니다.</div>
+                                        <div data-ng-show="err.familyName" class="error-msg ng-hide" id="fmerr2">성을
+                                            입력하십시오.</div>
+                                        <!-- //error text 영역 -->
+                                    </div>
+
+                                    <div class="oneinput-flexbox">
+
+                                        <div class="one-input-container active flexbdy">
+                                            <label for="day">생년월일</label>
+                                        </div>
+
+
+                                        <!-- ngIf: !vm.isTextFirstDateYear -->
+                                        <!-- ngIf: vm.isTextFirstDateYear -->
+                                        <div class="one-input-container ng-scope" data-ng-if="vm.isTextFirstDateYear">
+                                            <label for="year">년</label>
+                                            <input type="tel" id="year" name="year" data-ng-model="vm.year"
+                                                class="dateofbirthForm ng-pristine ng-untouched ng-valid ng-empty ng-valid-pattern ng-valid-maxlength"
+                                                maxlength="4" aria-required="true" aria-invalid=""
+                                                aria-describedby="bderror" ng-model-options="{ updateOn: 'keyup blur' }"
+                                                not-enter="" kr-input="" data-ng-pattern="/^[0-9]{1,4}$/"
+                                                autocomplete="off">
+                                        </div><!-- end ngIf: vm.isTextFirstDateYear -->
+                                        <div class="one-input-container selectfield">
+                                            <label for="month">월</label>
+                                            <select id="month" name="month" data-ng-model="vm.month" items="vm.month"
+                                                data-validate="select" aria-required="true" aria-invalid=""
+                                                aria-describedby="bderror" data-ng-focus="vm.showTip=true;"
+                                                data-ng-blur="vm.showTip=false;"
+                                                class="ng-pristine ng-untouched ng-valid ng-empty">
+                                                <option value="" disabled="disabled" selected="selected">월</option>
+                                                <!-- ngRepeat: value in ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] | monthTextRange -->
+                                                <option
+                                                    data-ng-repeat="value in ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] | monthTextRange"
+                                                    value="01" class="ng-binding ng-scope">1월
+                                                </option>
+                                                <!-- end ngRepeat: value in ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] | monthTextRange -->
+                                                <option
+                                                    data-ng-repeat="value in ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] | monthTextRange"
+                                                    value="02" class="ng-binding ng-scope">2월
+                                                </option>
+                                                <!-- end ngRepeat: value in ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] | monthTextRange -->
+                                                <option
+                                                    data-ng-repeat="value in ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] | monthTextRange"
+                                                    value="03" class="ng-binding ng-scope">3월
+                                                </option>
+                                                <!-- end ngRepeat: value in ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] | monthTextRange -->
+                                                <option
+                                                    data-ng-repeat="value in ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] | monthTextRange"
+                                                    value="04" class="ng-binding ng-scope">4월
+                                                </option>
+                                                <!-- end ngRepeat: value in ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] | monthTextRange -->
+                                                <option
+                                                    data-ng-repeat="value in ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] | monthTextRange"
+                                                    value="05" class="ng-binding ng-scope">5월
+                                                </option>
+                                                <!-- end ngRepeat: value in ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] | monthTextRange -->
+                                                <option
+                                                    data-ng-repeat="value in ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] | monthTextRange"
+                                                    value="06" class="ng-binding ng-scope">6월
+                                                </option>
+                                                <!-- end ngRepeat: value in ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] | monthTextRange -->
+                                                <option
+                                                    data-ng-repeat="value in ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] | monthTextRange"
+                                                    value="07" class="ng-binding ng-scope">7월
+                                                </option>
+                                                <!-- end ngRepeat: value in ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] | monthTextRange -->
+                                                <option
+                                                    data-ng-repeat="value in ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] | monthTextRange"
+                                                    value="08" class="ng-binding ng-scope">8월
+                                                </option>
+                                                <!-- end ngRepeat: value in ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] | monthTextRange -->
+                                                <option
+                                                    data-ng-repeat="value in ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] | monthTextRange"
+                                                    value="09" class="ng-binding ng-scope">9월
+                                                </option>
+                                                <!-- end ngRepeat: value in ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] | monthTextRange -->
+                                                <option
+                                                    data-ng-repeat="value in ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] | monthTextRange"
+                                                    value="10" class="ng-binding ng-scope">10월
+                                                </option>
+                                                <!-- end ngRepeat: value in ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] | monthTextRange -->
+                                                <option
+                                                    data-ng-repeat="value in ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] | monthTextRange"
+                                                    value="11" class="ng-binding ng-scope">11월
+                                                </option>
+                                                <!-- end ngRepeat: value in ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] | monthTextRange -->
+                                                <option
+                                                    data-ng-repeat="value in ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] | monthTextRange"
+                                                    value="12" class="ng-binding ng-scope">12월
+                                                </option>
+                                                <!-- end ngRepeat: value in ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] | monthTextRange -->
+                                            </select>
+                                        </div>
+                                        <!-- ngIf: !vm.isTextFirstDateYear -->
+                                        <!-- ngIf: vm.isTextFirstDateYear -->
+                                        <div class="one-input-container ng-scope" data-ng-if="vm.isTextFirstDateYear">
+                                            <label for="day">일</label>
+                                            <input type="tel" id="day" name="day" data-ng-model="vm.day" maxlength="2"
+                                                aria-required="true" aria-invalid="" aria-describedby="bderror"
+                                                ng-model-options="{ updateOn: 'keyup blur' }" not-enter="" kr-input=""
+                                                data-ng-pattern="/^[0-9]{1,4}$/"
+                                                class="ng-pristine ng-untouched ng-valid ng-empty ng-valid-pattern ng-valid-maxlength"
+                                                autocomplete="off">
+                                        </div><!-- end ngIf: vm.isTextFirstDateYear -->
+                                        <input data-ng-model="vm.birthDate" id="birthDate" name="birthDate"
+                                            type="hidden" autocomplete="off"
+                                            class="ng-pristine ng-untouched ng-valid ng-empty">
+                                        <!-- error text 영역 -->
+                                        <div data-ng-show="findIdForm.year.$error.pattern || findIdForm.day.$error.pattern"
+                                            class="error-msg ng-hide" id="bdnumberpattern">숫자만 입력할 수 있습니다.</div>
+                                        <div data-ng-switch="" on="err.birthDateCode" class="error-msg ng-hide"
+                                            data-ng-hide="!err.birthDate || findIdForm.year.$error.pattern || findIdForm.day.$error.pattern">
+                                            <!-- ngSwitchWhen: 01 -->
+                                            <!-- ngSwitchWhen: 02 -->
+                                            <!-- ngSwitchDefault: -->
+                                            <div data-ng-switch-default="" id="bderror" class="ng-scope">
+                                                가입 가능한 최소 연령을 확인해 주세요.</div><!-- end ngSwitchWhen: -->
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="under-content">
+                    <!-- div class="outDesc">
+                        <p>하단 설명 들어가는 곳</p>
+                    </div -->
+                    <div class="one-btn-container">
+                        <button class="one-primary one-button" type="button" data-ng-click="btnNext()"
+                            data-ng-disabled="findIdForm.$invalid || !vm.blnInfoAllEleFilled || err.birthDate"
+                            disabled="disabled">
+                            비밀번호 변경</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </main>
+        <!-- footer -->
+
+        <!-- footer -->
+        <footer class="one-footer" role="contentinfo">
+            <div class="footer-inner">
+                <div class="footer-logo"><img
+                        src="https://account.samsung.com/accounts/v1/resources/one-ui/images/layout/txt_foo_logo.png"
+                        onerror="this.src='https://account.samsung.com/accounts/v1/resources/one-ui/images/layout/txt_foo_logo.png';"
+                        alt="Samsung account"></div>
+                <address class="footer-address">Copyright © 1995-2022 Samsung. All Rights Reserved.</address>
+                <div class="footer-links" role="link">
+                    <a href="https://account.samsung.com/membership/terms/termscontents?paramLocale=ko_KR"
+                        title="Open links in a new window Terms and Conditions">이용약관</a>
+                    <a href="https://account.samsung.com/membership/terms/privacypolicy?paramLocale=ko_KR"
+                        title="Open links in a new window Privacy Policy" class="active">개인정보 처리방침</a>
+                    <a href="https://account.samsung.com/membership/notice/notice-list?paramLocale=ko_KR"
+                        title="Open links in a new window Notices">공지</a>
+                    <a href="https://help.content.samsung.com/csweb/auth/gosupport.do?targetUrl=/main/main.do&amp;serviceCd=saccount&amp;_common_country=KR&amp;_common_lang=ko"
+                        title="Open links in a new window Contact us">문의하기</a>
+                </div>
+            </div>
+        </footer>
+        <!-- //footer -->
+
+        <!-- //footer -->
+    </div>
+    <!--//pageWrap -->
+
+    <!-- javascript -->
+    <script src="https://account.samsung.com/accounts/v1/resources/one-ui/js/common/jquery/jquery.min.js"></script>
+
+    <script>
+        window.onload = function () {
+
+            inputEvent();
+            if ($('form').find(':input')[0] !== undefined) {
+                $(':focus').blur();
+                $('form').find(':input')[0].focus();
+            }
+        };
+
+        var inputEvent = function () {
+            var $inputs = $('form').find(':input');
+            $inputs.each(function () {
+                var $input = $(this),
+                    $label = $input.parent('div.one-input-container');
+                if ($input.val()) {
+                    $label.addClass('active');
+                    $label.siblings('div.flexbdy').addClass('off');
+                }
+
+                $input.focusin(function () {
+                    $label.addClass('focus');
+                    $label.siblings('div.flexbdy').addClass('off');
+                });
+                $input.change(function () {
+                    $label.addClass('active');
+                });
+                $input.focusout(function () {
+                    $label.removeClass('focus');
+
+                    if (!$input.val()) $label.removeClass('active').siblings('div.flexbdy')
+                        .removeClass('off');
+                });
+            });
+        }
+    </script>
+
+
+
+    <div block-ui-container="" class="block-ui-container ng-scope">
+        <!-- loading -->
+        <div class="loadingWrap" style="display : none">
+            <div class="dimBg"></div><!-- 딤처리 -->
+            <div class="cssload-spin-box"></div>
+        </div>
+        <!-- //loading -->
+    </div>
+</body>
+
+</html>
