@@ -459,6 +459,9 @@ footer .copyright + .copyright {
   padding: 22px 20px 24px;
   margin-top: 52px;
 }
+.HCAU-title .HCAU-h1 {
+  color: #fff;
+}
 
 .HCAU-title .HCAU-h1 + div {
   margin-top: 8px;
@@ -634,6 +637,9 @@ footer .copyright + .copyright {
 .border-box.secondary {
   border-color: #ccc;
   background: #f5f5f5;
+}
+.border-box.rad12 {
+  border-radius: 12px;
 }
 
 .bg-box {
@@ -1030,7 +1036,6 @@ textarea.HCAU-form.form-control {
 
 .HCAU-bullet-list li {
   position: relative;
-  color: #666666;
   padding-left: 11px;
 }
 .HCAU-bullet-list li::before {
@@ -2125,4 +2130,25 @@ textarea.HCAU-form.form-control {
 }
 .accordion-toggle-area button.collapsed {
   transform: rotate(180deg);
+}
+
+.login-btn li {
+  position: relative;
+  flex: 1 1 auto;
+}
+.login-btn li a {
+  display: inline-block;
+  width: 100%;
+  padding: 16px 0;
+}
+.login-btn li + li:before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 20px;
+  background: #d5d5d5;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10px;
 }/*# sourceMappingURL=HCAU-m-component-genesis.css.map */

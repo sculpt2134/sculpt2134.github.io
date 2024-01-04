@@ -54,14 +54,14 @@ $font-size-xs : 11px;
 .py16{padding-top: 16px;padding-bottom: 16px;}
 .py20{padding-top: 20px;padding-bottom: 20px;}
 .py24{padding-top: 24px;padding-bottom: 24px;}
-.py28{padding-top: 28px;padding-bottom: 28px;}
+.py28{padding-top: 28px !important;padding-bottom: 28px !important;}
 .py32{padding-top: 32px;padding-bottom: 32px;}
 .py35{padding-top: 35px;padding-bottom: 35px;}
 .py40{padding-top: 40px;padding-bottom: 40px;}
 .py60{padding-top: 60px;padding-bottom: 60px;}
 
 .px20{padding-left: 20px;padding-right: 20px;}
-.px32{padding-left: 32px;padding-right: 32px;}
+.px32{padding-left: 32px !important;padding-right: 32px !important;}
 .px36{padding-left: 32px;padding-right: 36px;}
 .px40{padding-left: 40px;padding-right: 40px;}
 
@@ -831,6 +831,7 @@ top:15px;}
             // line-height: 1.1;
             font-size: 13px;
         }
+        tfoot th{padding: 16px 22px;}
         td{
             padding: 16px 22px;
             .HCAU-bullet-list{
@@ -1037,6 +1038,7 @@ top:15px;}
     .HCAU-form.form-control[type="text"]{min-height: 44px;}
 }
 .HCAU-search-bar + div{margin-top: 20px;}
+.HCAU-address-result ul{max-height:250px;overflow: auto;}
 .radio-group{
     white-space: nowrap;
     .radio-group-inner{

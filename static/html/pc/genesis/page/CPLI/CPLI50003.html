@@ -1,65 +1,24 @@
-<style>
-    .HCAU-tab {margin-top: 20px;
-     padding: 10px 10px 0 10px;
-     border-radius: 4px 4px 0 0;
-     border: 1px solid #e5e5e5;
-     }
-          .HCAU-tab .nav-tabs{border:0;justify-content: space-around;position: relative;}
-     .HCAU-tab .nav-tabs li,.HCAU-tab .nav-tabs .nav-link{border:0;background:#fff;position: relative;border:0;color:#444; border-bottom: 1px solid #e5e5e5;
-        margin-bottom: -1px;padding:0}
-     .HCAU-tab .nav-tabs li:before{display: block;content:"";height:20px;width:1px;background:#e5e5e5;position:absolute;left:-40px;top:10px;z-index: 2;}
-     .HCAU-tab .nav-tabs .nav-link.active {
-        border-bottom: 2px solid #000;
-        background: #fff;
-        color: #000;
-    }
-
-     .HCAU-tab .nav-tabs .nav-link.active:before,
-     .HCAU-tab .nav-tabs li:first-child:before{clear:both;display: none;}
-     .ellipsis {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-      }
-
-     .tab-content{position: relative;}
-     .tab-content>.tab-pane:before{display: block;content:"";border-left:1px solid #e5e5e5;height:100px;position:absolute;}
-     .tab-content>.tab-pane:after{display: block;
-         content: "";
-         border-right:1px solid #e5e5e5;
-         height: 100px;
-         position: absolute;
-         right: 0;
-         top: 0;
-         width: 100%;}
-         .d-flex.flex-column.px3.py24.border-bottom.pb-20{border-radius:4px;border:1px solid #e5e5e5}
-
- </style>
-<!-- HCAU-breadcrumb -->
-<div class="HCAU-breadcrumb">
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-        <symbol id="house-door-fill" viewBox="0 0 16 16">
-            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
-        </symbol>
-    </svg>
-    <nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb">
-        <ol class="breadcrumb breadcrumb-chevron">
-            <li class="breadcrumb-item">
-                <a class="link-body-emphasis" href="#none">
-                    <svg class="bi" width="16" height="16">
-                        <use xlink:href="#house-door-fill"></use>
-                    </svg>
-                    <span class="visually-hidden">Home</span>
-                </a>
-            </li>
-            <li class="breadcrumb-item"><a class="link-body-emphasis text-decoration-none" href="#none">Usage Details</a></li>
-            <li class="breadcrumb-item" aria-current="page">Product Usage Details</li>
-            <li class="breadcrumb-item active" aria-current="page"><a class="link-body-emphasis text-decoration-none  fw-semibold " href="#none">Product Details</a></li>
-        </ol>
-    </nav>
-    <!-- bredcrumb 영역 -->
-</div>
-<!-- //HCAU-breadcrumb -->
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>HCAU-PUBL</title>
+  <link rel="stylesheet" href="/static/html/pc/genesis/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/pc/genesis/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+    <div class="wrap">
+      <div class="HCAU-sidebar" include-html="/static/html/pc/genesis/aside.html"></div>
+      <div class="HCAU-menubar" include-html="/static/html/pc/genesis/menu.html"></div>
+  
+      <div class="HCAU-container">
+            <div class="HCAU-contents" id="contents">
+                <!-- HCAU-breadcrumb -->
+                <div class="HCAU-breadcrumb" include-html="/static/html/pc/genesis/breadcrumb.html"></div>
+            <!-- //HCAU-breadcrumb -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////START PAGE CONTENTS/////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
 <!-- HCAU-title -->
 <div class="HCAU-title">
@@ -507,3 +466,24 @@
 
 </div>
 <!-- //HCAU-detail -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+            </div><!--//HCAU-contents-->
+        </div><!--//HCAU-contentainer-->
+    </div><!--//wrap-->
+    <footer include-html="/static/html/pc/genesis/footer.html"></footer>
+<script src="/static/html/pc/genesis/js/bootstrap.bundle.min.js"></script>
+<script src="/static/html/pc/genesis/js/main.js"></script>
+<script src="/static/html/pc/genesis/js/includeHTML.js"></script>
+<script src="/static/html/pc/genesis/js/includeRouter.js"></script>
+<script>
+includeHTML( function () {
+includeRouter( function () {
+});
+});
+
+</script>
+</body>
+
+</html>

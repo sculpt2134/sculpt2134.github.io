@@ -1,47 +1,51 @@
-<!-- HCAU-breadcrumb -->
-<div class="HCAU-breadcrumb">
-    <ul class="breadcrumb">
-        <li>
-            <a href="#" class="d-block">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.61979 17.3184V14.7627C7.61977 14.1151 8.1464 13.5889 8.79871 13.5848H11.1939C11.8491 13.5848 12.3802 14.1122 12.3802 14.7627V17.311C12.3802 17.8727 12.8367 18.3292 13.4025 18.3333H15.0365C15.7997 18.3353 16.5323 18.0357 17.0727 17.5006C17.613 16.9655 17.9167 16.239 17.9167 15.4813V8.22153C17.9167 7.60948 17.6434 7.02892 17.1705 6.63624L11.6192 2.22855C10.6488 1.45759 9.26282 1.4825 8.32117 2.28781L2.88919 6.63624C2.39396 7.01734 2.09797 7.59963 2.08334 8.22153V15.4739C2.08334 17.0531 3.37283 18.3333 4.96349 18.3333H6.56025C6.83265 18.3353 7.09458 18.2292 7.2879 18.0387C7.48123 17.8481 7.58995 17.5889 7.58994 17.3184H7.61979Z" fill="#000000"/>
-                </svg>
-            </a>
-        </li>
-        <li><span class="HCAU-txt-md">Usage Details</span></li>
-        <li><span class="HCAU-txt-md">Product usage details</span></li>
-        <li class="position-relative" aria-current="page">
-            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="HCAU-txt-md fw-bold">Product Details</span>
-                <!-- <img src="/static/html/pc/genesis/img/svg/ico_breadcrumb_dropdown.svg" alt=""> -->
-            </a>
-            <!-- <ul class="dropdown-menu">
-                <li><a class="dropdown-item HCAU-txt-sm" href="#">3depth menu 01</a></li>
-                <li><a class="dropdown-item HCAU-txt-sm" href="#">3depth menu 02</a></li>
-                <li><a class="dropdown-item HCAU-txt-sm" href="#">3 depth menu 03 long~long~long~long~long~lon</a></li>
-            </ul> -->
-        </li>
-    </ul>
-</div>
-<!-- //HCAU-breadcrumb -->
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>HCAU-PUBL</title>
+  <link rel="stylesheet" href="/static/html/pc/genesis/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/pc/genesis/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+    <div class="wrap">
+      <div class="HCAU-sidebar" include-html="/static/html/pc/genesis/aside.html"></div>
+      <div class="HCAU-menubar" include-html="/static/html/pc/genesis/menu.html"></div>
+  
+      <div class="HCAU-container">
+            <div class="HCAU-contents" id="contents">
+                <!-- HCAU-breadcrumb -->
+                <div class="HCAU-breadcrumb" include-html="/static/html/pc/genesis/breadcrumb.html"></div>
+            <!-- //HCAU-breadcrumb -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////START PAGE CONTENTS/////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-<div class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="d-flex">
-      <div class="toast-body">
-        Hello, world! This is a toast message.
-      </div>
-      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-    </div>
-  </div>
 <!-- HCAU-title -->
 <div class="HCAU-title"><!-- class option : border-bottom -->
     <div class="HCAU-h1">Title text</div>
     <div class="HCAU-txt-md">lead text area</div>
 </div>
 <!-- //HCAU-title -->
+<!-- HCAU-step -->
+<div class="HCAU-step">
+    <div class="position-relative">
+        <div class="step-item active">
+            <div class="num">STEP1</div>
+            <div class="txt">Identity verification</div>
+        </div>
+        <div class="step-item">
+            <div class="num">STEP2</div>
+            <div class="txt">Enter information and agree to terms and conditions</div>
+        </div>
+    </div>
+</div>
+<!-- //HCAU-step -->
+<!-- HCAU-detail -->
+<div class="HCAU-detail">
 
- <!-- HCAU-detail -->
- <div class="HCAU-detail">
+   
+   
+
 
     <section>
         <div class="title-area d-flex align-items-baseline g16">
@@ -66,7 +70,15 @@
 
     </section>
 
-
+    <section>
+         <div id="sandbox" class="calendar">
+                        <input type="text" class="form-control date">
+                        <span>
+                          <img src="/static/html/m/hyundai/img/ico_calendar.svg" alt="">
+                          <!-- readonly,disable용 <img src="/static/html/m/hyundai/img/ico_calendar_readonly.svg" alt=""> -->
+                        </span>
+                    </div>
+    </section>
     <section>
         <div class="title-area d-flex align-items-baseline g16">
             <div class="title">Layer popup</div>
@@ -2710,6 +2722,28 @@
 
 
 
-
 </div>
-<!-- //HCAU-detail -->
+<!-- HCAU-detail -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+            </div><!--//HCAU-contents-->
+        </div><!--//HCAU-contentainer-->
+    </div><!--//wrap-->
+    <footer include-html="/static/html/pc/genesis/footer.html"></footer>
+<script src="/static/html/pc/genesis/js/bootstrap.bundle.min.js"></script>
+<script src="/static/html/pc/genesis/js/main.js"></script>
+<script src="/static/html/pc/genesis/js/includeHTML.js"></script>
+<script src="/static/html/pc/genesis/js/includeRouter.js"></script>
+<script>
+includeHTML( function () {
+includeRouter( function () {
+});
+});
+
+</script>
+</body>
+
+</html>
+
+

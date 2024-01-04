@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>genesis-PUBL</title>
+  <link rel="stylesheet" href="/static/html/pc/genesis/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/pc/genesis/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/html/pc/genesis/favicon.ico">
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="HCAU-container">
+    
+      <header class="HCAU-menubar" include-html="/static/html/pc/genesis/menu.html"></header>
+      <div class="HCAU-contents" id="contents" style="min-height:800px;width:100%"></div>
+      
+    </div>
+    
+    <footer include-html="/static/html/pc/genesis/footer.html"></footer>  
+  </div>
+  
+  <script src="/static/html/pc/genesis/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/html/pc/genesis/js/main.js"></script>
+  <script src="/static/html/pc/genesis/js/includeHTML.js"></script>
+  <script src="/static/html/pc/genesis/js/includeRouter.js"></script>
+  <script>
+    includeHTML( function () {
+      includeRouter( function () {
+      });
+    });
+
+    </script>
+   <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;">Top</button>
+</body>
+
+</html>

@@ -1022,7 +1022,7 @@ textarea.HCAU-form.form-control{
         // left: 0;
         // bottom: 0;
     }
-    
+
     &.native-scroll {
         overflow: hidden;
         overflow-x: auto;        
@@ -1049,7 +1049,7 @@ textarea.HCAU-form.form-control{
             button.three{margin-right:20px;}
         }
     }
-    
+
     &.native-scroll::-webkit-scrollbar {
         display: none
     }
@@ -1076,7 +1076,7 @@ textarea.HCAU-form.form-control{
         text-overflow: ellipsis;
         white-space: nowrap;
     }
-    &.me-20{ margin-right:-20px; }  
+    &.me-20{ margin-right:-20px; }
 }
 
 

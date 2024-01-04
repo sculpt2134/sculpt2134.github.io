@@ -345,6 +345,7 @@ footer {
 .HCAU-title {
     padding: 22px 20px 24px;
     margin-top:52px;
+    .HCAU-h1{color:#fff;}
 }
 .HCAU-title .HCAU-h1 + div {
     margin-top: 8px;
@@ -526,6 +527,7 @@ footer {
         border-color: $secondary01;
         background: $secondary02;
     }
+    &.rad12{border-radius: 12px}
 }
 .bg-box {
     background: $gray01;
@@ -923,7 +925,7 @@ textarea.HCAU-form.form-control {
     li {
         position: relative;
         // font-size: 14px;
-        color: $gray04;
+        // color: $gray04;
         padding-left: 11px;
         &::before {
             content: "";
@@ -1258,10 +1260,10 @@ textarea.HCAU-form.form-control {
     //     left: 0;
     //     bottom: 0;
     // }
-    
+
     &.native-scroll {
         overflow: hidden;
-        overflow-x: auto;        
+        overflow-x: auto;
         margin-right:-20px;
         padding-left:0px;
         margin-left:-20px;
@@ -1285,7 +1287,7 @@ textarea.HCAU-form.form-control {
             button.three{margin-right:20px;}
         }
     }
-    
+
     &.native-scroll::-webkit-scrollbar {
         display: none
     }
@@ -1305,13 +1307,13 @@ textarea.HCAU-form.form-control {
             border-bottom: 2px solid $black;
             color: $black;
         }
-       
+
     }
     &.ellipsis{overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
     }
-    &.me-20{ margin-right:-20px; }  
+    &.me-20{ margin-right:-20px; }
 }
 
 
@@ -1946,5 +1948,28 @@ textarea.HCAU-form.form-control {
         &.collapsed{
             transform: rotate(180deg);
         }
+    }
+}
+
+.login-btn{
+    li{
+        position: relative;
+        flex: 1 1 auto;
+        a{
+            display: inline-block;
+            width: 100%;
+            padding: 16px 0;
+        }
+    }
+    li + li:before{
+        content:'';
+        display: block;
+        width: 1px;
+        height: 20px;
+        background: #d5d5d5;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -10px;
     }
 }

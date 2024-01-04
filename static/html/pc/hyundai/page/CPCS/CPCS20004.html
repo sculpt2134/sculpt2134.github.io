@@ -23,7 +23,7 @@
 <!-- HCAU-title -->
 <div class="HCAU-title">
     <!-- class option : border-bottom -->
-    <div class="HCAU-h1">HARDSHIP</div>
+    <div class="HCAU-h1">Financial Hardship Assistance</div>
 </div>
 <!-- //HCAU-title -->
 
@@ -44,100 +44,76 @@
                 <div class="num">3</div>
                 <div class="txt">Income/expenditure details</div>
             </div>
+            <div class="step-item">
+                <div class="num">4</div>
+                <div class="txt">Asset & Liability</div>
+            </div>
+            <div class="step-item">
+                <div class="num">5</div>
+                <div class="txt">Application completed</div>
+            </div>
         </div>
-        
+
         <div class="title-area d-flex align-items-baseline g16">
-            <div class="title">Payment plan Request</div>
+            <div class="title mt10">Payment plan Request</div>
         </div>
 
-        <div class="border-top border-bottom">
-            <div class="py24 mx20 d-flex align-items-center justify-content-start g40">
-                <div class="form-check">
-                    <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
-                    <label class="form-check-label" for="exampleRadios1">
-                        Deferral
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked>
-                    <label class="form-check-label" for="exampleRadios2">
-                        Extension
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
-                    <label class="form-check-label" for="exampleRadios3">
-                        Deferral & Extension
-                    </label>
-                </div>
-          </div>
-        </div>
-
-        <div class="title-area d-flex align-items-baseline g16 mt50">
-            <div class="title mt10">Months of Request & Frequency</div>
-        </div>
-        
         <div class="HCAU-table HCAU-valid">
             <table class="table fixed">
                 <colgroup>
                     <col style="width:150px">
                     <col>
-                    <col style="width:150px">
-                    <col>
                 </colgroup>
                 <tbody>
                     <tr>
-                        <th class="align-middle">Month</th>
+                        <th class="align-middle">Reason for Hardship</th>
                         <td>
-                            <div class="no-txt-input">
-                                <input type="text" class="form-control HCAU-form is-invalid" placeholder="Enter only numbers" value=""><span class="HCAU-txt-sm ps-2">Months</span>
-                            
+                            <div class="dropdown">
+                                <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                                    Injury or Illness
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+                                </ul>
                             </div>
-                            <div class="invalid-feedback lh" style="display: block;">Please enter the month.</div>
-                        </td>
-                        <th class="align-middle">Frequency</th>
-                        <td>
-                            <div class="no-txt-input d-flex full">
-                                    
-                                <div class="dropdown">
-                                    <button class="HCAU-btn dropdown-toggle  HCAU-form is-invalid" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
-                                        Monthly
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
-                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
-                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
-                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
-                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
-                                    </ul>
-                                </div>
-                                
-                                
-                            </div>
-                            <div class="invalid-feedback lh" style="display: block;">Please select frequency</div>
+                            <div class="HCAU-info-msg">A medical certificate supporting your injury or illness, your time of work and anticipated return</div>
                         </td>
                     </tr>
-                    
+                    <tr>
+                        <th class="align-middle">Supporting Document</th>
+                        <td>
+                            <div class="filebox">
+                                <input type="text" class="form-control HCAU-form upload-name" value="text.pdf" placeholder="">
+                                <label for="file" class="HCAU-btn btn-smd fw-bold">Search</label>
+                                <input type="file" id="file">
+                                <a href="" class="btn-clear"><img src="/static/html/pc/hyundai/img/svg/ico_clear.svg" alt="Close"></a>
+                            </div>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>
 
         <div class="title-area align-items-baseline g16 mt50">
-            <div class="title mt10">Reason for Request</div>
-            <div class="HCAU-txt-sm mt10">Please write down the reason for the request in detail. HCAU may request proof documents for reason.</div>
+            <div class="title mt10">Additional Information</div>
+            <div class="HCAU-txt-sm mt10">Please provide any additional information which may assist us in assessing your request.</div>
 
         </div>
         <div class="mb-3 HCAU-valid">
             <div class="position-relative">
-                <textarea class="form-control HCAU-form is-invalid" id="exampleFormControlTextarea1" rows="6" placeholder="Enter Reason for request" required></textarea>
+                <textarea class="form-control HCAU-form is-invalid" id="exampleFormControlTextarea1" rows="6" placeholder="Enter Additional Information" required></textarea>
                 <p class="position-absolute end-0 bottom-0 HCAU-txt-sm gray03 mx-2 my-2 xs-font"><span class="black">0</span>/5000byte</p>
             </div>
             <div class="invalid-feedback lh" style="display:block">
-                Please enter Reason for Request.
+                Please enter Additional Information
             </div>
         </div>
-        
-                
+
+
         <div class="cta-btn-wrap">
             <div class="d-flex g12 justify-content-center">
                 <button type="button" class="HCAU-btn btn-large gray03">Previous</button>
@@ -146,8 +122,8 @@
         </div>
     </section>
 
-   
-    
+
+
 </div>
 <!-- HCAU-detail -->
 <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->

@@ -119,8 +119,8 @@
 }
 
 .py28 {
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding-top: 28px !important;
+  padding-bottom: 28px !important;
 }
 
 .py32 {
@@ -149,8 +149,8 @@
 }
 
 .px32 {
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 32px !important;
+  padding-right: 32px !important;
 }
 
 .px36 {
@@ -1089,6 +1089,9 @@ a {
   background: #f5f5f5;
   font-size: 13px;
 }
+.HCAU-table .table tfoot th {
+  padding: 16px 22px;
+}
 .HCAU-table .table td {
   padding: 16px 22px;
 }
@@ -1337,6 +1340,11 @@ a {
 
 .HCAU-search-bar + div {
   margin-top: 20px;
+}
+
+.HCAU-address-result ul {
+  max-height: 250px;
+  overflow: auto;
 }
 
 .radio-group {

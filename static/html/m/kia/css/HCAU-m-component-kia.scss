@@ -1255,10 +1255,10 @@ textarea.HCAU-form.form-control {
     //     left: 0;
     //     bottom: 0;
     // }
-    
+
     &.native-scroll {
         overflow: hidden;
-        overflow-x: auto;        
+        overflow-x: auto;
         margin-right:-20px;
         padding-left:0px;
         margin-left:-20px;
@@ -1282,7 +1282,7 @@ textarea.HCAU-form.form-control {
             button.three{margin-right:20px;}
         }
     }
-    
+
     &.native-scroll::-webkit-scrollbar {
         display: none
     }
@@ -1302,13 +1302,13 @@ textarea.HCAU-form.form-control {
             border-bottom: 2px solid $black;
             color: $black;
         }
-       
+
     }
     &.ellipsis{overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
     }
-    &.me-20{ margin-right:-20px; }  
+    &.me-20{ margin-right:-20px; }
 }
 
 

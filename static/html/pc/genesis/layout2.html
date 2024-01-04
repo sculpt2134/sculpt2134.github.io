@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>HCAU-PUBL</title>
+  <link rel="stylesheet" href="/static/html/pc/genesis/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/pc/genesis/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+    <div class="wrap">
+       
+        
+        <div class="HCAU-menubar" include-html="/static/html/pc/genesis/menu.html"></div>
+        <div class="HCAU-container">
+                <div class="HCAU-contents" id="contents">
+                    <!-- HCAU-breadcrumb -->
+                    <div class="HCAU-breadcrumb" include-html="/static/html/pc/genesis/breadcrumb.html"></div>
+                <!-- //HCAU-breadcrumb -->
+    <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <!--///////////////////////////////////START PAGE CONTENTS/////////////////////////////////////////////////////// -->
+    <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    
+    
+<!-- HCAU-title -->
+<div class="HCAU-title">
+    <!-- class option : border-bottom -->
+    <div class="HCAU-h1">Document</div>
+</div>
+<!-- //HCAU-title -->
+
+<!-- HCAU-detail -->
+<div class="HCAU-detail">
+<div class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+        Hello, world! This is a toast message.
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
+
+
+    <section>
+        <div class="title-area d-flex align-items-baseline g16">
+            <div class="title">Tooltip</div>
+        </div>
+        <span class="HCAU-tooltip">
+            <a href=""><img src="/static/html/pc/genesis/img/svg/ico_tooltip.svg" alt=""></a>
+            <div class="HCAU-tooltip-inner">
+                <div class="HCAU-tooltip-arrow"></div>
+                <div class="HCAU-tooltip-cont HCAU-txt-sm">
+                    <div class="d-flex justify-content-between">
+                        <p>fines</p>
+                        <p>120 $</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p>toll gate fee</p>
+                        <p>290 $</p>
+                    </div>
+                </div>
+            </div>
+        </span>
+
+    </section>
+
+    
+    <section>
+        <div class="title-area d-flex align-items-baseline g16">
+            <div class="title">Layer popup</div>
+        </div>
+        <div>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="HCAU-btn primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                login
+            </button>
+            <button type="button" class="HCAU-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                modal sample 1
+            </button>
+            <button type="button" class="HCAU-btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                modal sample 2
+            </button>
+            <button type="button" class="HCAU-btn" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                modal sample 3
+            </button>
+            <button type="button" class="HCAU-btn" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                address 1
+            </button>
+            <button type="button" class="HCAU-btn" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                address 2
+            </button>
+            <button type="button" class="HCAU-btn" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                terms
+            </button>
+            <button type="button" class="HCAU-btn" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                xsmall
+            </button>
+            <button type="button" class="HCAU-btn" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                xsmall alert
+            </button>
+
+            <!-- modal login -->
+            <div class="HCAU-modal modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-sm"><!-- modal-lg modal-md modal-sm -->
+                    <div class="modal-content">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/html/pc/genesis/img/svg/ico_modal_close.svg" alt="Close" /></button>
+                        <div class="modal-content-inner">
+                            <div class="modal-header">
+                                <div class="HCAU-h2" id="exampleModalLabel">Login</div>
+                            </div>
+
+                            <!-- modal-body -->
+                            <div class="modal-body">
+
+                                <!-- HCAU-tab -->
+                                <div class="HCAU-tab mt20">
+                                    <ul class="nav nav-tabs" id="" role="tablist">
+                                        <li class="nav-item"><button class="nav-link active" id="tab01" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Individual</button></li>
+                                        <li class="nav-item"><button class="nav-link" id="tab02" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Businessman</button></li>
+                                    </ul>
+                                </div>
+                                <!-- //HCAU-tab -->
+                                <!-- tab-content -->
+                                <div class="tab-content" id="">
+                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="tab01" tabindex="0">
+                                        <div class="pt40">
+                                            <div>
+                                                <input type="email" class="form-control HCAU-form" id="mail" aria-describedby="" value="" placeholder="E-mail">
+                                            </div>
+                                            <div class="pt20">
+                                                <input type="password" class="form-control HCAU-form" id="pass" placeholder="password">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="tab02" tabindex="0">
+                                        222222222 <br>
+                                        222222222 <br>
+                                        222222222 <br>
+                                    </div>
+                                </div>
+                                <!-- //tab-content -->
+
+
+                                <div class="pt40 d-flex full">
+                                    <button type="button" class="HCAU-btn btn-large primary">Log in</button>
+                                </div>
+                                <div class="d-flex align-items-baseline g20 pt20">
+                                    <div><a href="#none" class="link">Find ID</a></div>
+                                    <div><a href="#none" class="link">Find Password</a></div>
+                                    <div class="ms-auto">
+                                        <a href="#none" class="link">Sign up</a>
+                                    </div>
+                                </div>
+                                <ul class="HCAU-bullet-list pt40">
+                                    <li>
+                                        To protect your information, you will be automatically logged out if you do not use the service for more than 10 minutes.
+                                    </li>
+                                    <li>
+                                        If you enter an incorrect password 5 times in a row, you must change your password after verifying your identity.
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //modal-body -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+
+    <section>
+        <div id="sandbox" class="calendar">
+            <input type="text" class="form-control date">
+            <span>
+              <img src="/static/html/m/genesis/img/ico_calendar.svg" alt="">
+              <!-- readonly,disable용 <img src="/static/html/m/genesis/img/ico_calendar_readonly.svg" alt=""> -->
+            </span>
+        </div>
+    </section>
+
+
+
+
+
+
+</div>
+<!-- //HCAU-detail -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+</div>
+
+</div>
+</div>
+<footer include-html="/static/html/pc/genesis/footer.html"></footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="/static/html/pc/genesis/js/bootstrap.bundle.min.js"></script>
+<script src="/static/dist/js/datepicker-full.js"></script>
+<script src="/static/html/pc/genesis/js/main.js"></script>
+<script src="/static/html/pc/genesis/js/includeHTML.js"></script>
+<script src="/static/html/pc/genesis/js/includeRouter.js"></script>
+<script>
+includeHTML();
+
+
+</script>
+</body>
+
+</html>

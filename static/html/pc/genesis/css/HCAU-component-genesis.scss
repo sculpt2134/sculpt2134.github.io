@@ -123,7 +123,7 @@ a{text-decoration: none;}
 .border-bottom-dashed{border-bottom:1px dashed $gray03;}
 
 //폰트 사이즈
-.HCAU-h1{color: $black;font-size: $font-size-h1;text-transform: uppercase;font-weight: 700;line-height: 1.2;}
+.HCAU-h1{color: $black;font-size: $font-size-h1;text-transform: uppercase;line-height: 1.2;font-family: GenesisHeadOffice;}
 .HCAU-h2{color: $black;font-size: $font-size-h2;font-weight: 700;}
 .HCAU-lead-txt{color: $black;font-size: $font-size-lg;}
 .HCAU-txt-lg{color: $black;font-size: $font-size-lg;}
@@ -145,13 +145,39 @@ a{text-decoration: none;}
 .wrap{
     width:100%;    
     background: url(/static/html/pc/genesis/img/img_sub.png) no-repeat 0 0;
+    .HCAU-sidebar{height: 100%;
+        width: 100px;
+        display: block;
+        position: absolute;}
+    //메뉴바
+    .HCAU-menubar{
+        margin:0 auto;
+        max-width: 1440px;
+        width:100%;        
+        padding-top:32px;
+        .menu{
+            background: #fff;
+            width:100%;
+            min-width: 1440px;
+            padding:0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+                ul > li {
+                    font-weight: 700;
+                    padding: 32px 14px;
+                    font-size: 16px;
+                    float:left;
+                    line-height: 16px;
+                }
+            .HCAU-btn{
+               gap:28px;
+               border:0
+            }    
+            }
+        }
     .HCAU-container{
-        --bs-gutter-x: 1.5rem;
-        --bs-gutter-y: 0;        
-        padding-right: calc(var(--bs-gutter-x) * .5);
-        padding-left: calc(var(--bs-gutter-x) * .5);
-        margin-right: auto;
-        margin-left: auto;
+        margin:0 auto;
         max-width: 1440px;
         width:100%;
         height:calc(100% - 80px);
@@ -159,88 +185,181 @@ a{text-decoration: none;}
         display: flex;
         flex-direction: column;
         .HCAU-contents{
-            padding: 40px;         
+            padding: 0;         
             width: 100%;
-            max-width:1280px;
+            min-width: 1440px;
+            position: relative;
+            //브레드크럼
+            .HCAU-breadcrumb {
+                position: absolute;
+                width:100%;
+                height:160px;
+                top:210px;
+                background: linear-gradient(92deg, #505050 0.09%, #000 100%);
+                .breadcrumb{
+                    margin:32px auto 0;
+                    max-width: 1280px;
+                    align-items: center;
+                    > li{
+                        a.d-block{position: relative;top: -1px;}
+                        & + li:before{
+                            content:'';
+                            display: inline-block;
+                            position: relative;
+                            top: 1px;
+                            width: 1px;
+                            height: 14px;
+                            background: $white;
+                            margin:0 7px;
+                            transform: rotate(40deg);
+                        }
+                        .HCAU-txt-md{color:#fff}
+                    }
+                    svg{vertical-align: top;}
+                    .dropdown-toggle{
+                        img{margin-left: 4px;vertical-align: middle;}
+                        &:after{display: none;}
+                    }
+                    .dropdown-menu{
+                        top:6px !important;
+                        --bs-dropdown-link-active-color: none;
+                        --bs-dropdown-link-active-bg: none;
+                        width: max-content;
+                        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07);
+                        border-color: $border-color;
+                        li:nth-child(2n-1){
+                            background: $white;
+                        }
+                        li + li{border-top: 1px solid $border-color;}
+                        .dropdown-item{
+                            padding: 10px 20px;
+                        }
+                    }
+                    }
+            }
+            //상세
+            .HCAU-detail{
+                position: relative;
+                width:100%;
+                max-width: 1280px;
+                min-height:230px;
+                margin:0 auto;
+                margin-top:120px;
+                padding:40px 40px 80px;
+                background: #fff;
+                > section{
+                    // border: 1px solid #000;
+                    & + section{margin-top: 60px;}
+                    .title-area{
+                        margin-bottom: 20px;
+                        .title{font-size: 24px;font-weight: 700;line-height: 1.1;}
+                        .sub-title{font-size: 14px;color: $gray04;}
+                    }
+                }
+                
+            }
         }
 
     }
+
+}
+    //footer
     .HCAU-footer { 
-        background: #05141f;
+        width: 100%;
+        height:280px;
+        background: #111;        
         color: #697279;
+        .border-bottom{border-bottom:1px solid #222 !important;}
         .footer-inner {
-            width: 1440px;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 1280px;
             height: 80px;
-            padding-left: 65px;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            .HCAU-btn.dropdown-toggle{background: #222;border: 0;color:#666;min-width: 260px;
+                &:after{color:#000;transform:rotate(180deg);transition: all 0.3s ease-out;}
+                &.show::after{ transform:rotate(0deg);}
             }
-        }   
+            
+            .copyright{           
+            line-height: 28px;
+            text-transform: uppercase;
+            color:#999;
+            font-size:14px
+            }
+        } 
+        //HCAU-cs
+            .HCAU-cs {
+                width: 260px;
+                position: absolute;
+                right: 24px;
+                bottom: 80px;
+                .chat-bot {
+                    background: $point;
+                    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.10);
+                    width: 70px;
+                    height: 70px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 100%;
+                    gap: 7px;
+                    line-height: 1;
+                    color: $white;
+                    &:hover{color: $white;}
+                    img {
+                        width: 28px;
+                        height: 28px;
+                    }
+                    span {
+                        font-size: 12px;
+                        font-weight: 700;
+                    }
+                }
+                .contact-us {
+                    margin-top: 40px;
+                    line-height: 1;
+                    > div {
+                        display: flex;
+                        align-items: center;
+                        gap: 12px;
+                        img {
+                            a {
+                                color: #666;
+                            }
+                        }
+                    }
+                }
+                .family-site {
+                    margin-top: 20px;
+                    background:#222 ;
+                    .dropdown-toggle::after {
+                        transform: rotate(180deg);
+                    }
+                }
+            }  
     }
 
-//브레드크럼
-.HCAU-breadcrumb {
-    margin-bottom: 80px;
-    .breadcrumb{
-        align-items: center;
-        > li{
-            a.d-block{position: relative;top: -1px;}
-            & + li:before{
-                content:'';
-                display: inline-block;
-                position: relative;
-                top: 1px;
-                width: 1px;
-                height: 14px;
-                background: $gray03;
-                margin:0 8px;
-            }
-        }
-        svg{vertical-align: top;}
-        .dropdown-toggle{
-            img{margin-left: 4px;vertical-align: middle;}
-            &:after{display: none;}
-        }
-        .dropdown-menu{
-            top:6px !important;
-            --bs-dropdown-link-active-color: none;
-            --bs-dropdown-link-active-bg: none;
-            width: max-content;
-            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07);
-            border-color: $border-color;
-            li:nth-child(2n-1){
-                background: $white;
-            }
-            li + li{border-top: 1px solid $border-color;}
-            .dropdown-item{
-                padding: 10px 20px;
-            }
-        }
-    }
-}
 
 //타이틀
 .HCAU-title{
-    padding-bottom:40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:170px;
+    padding-top:90px;
+    .HCAU-h1{ color: $white;font-size:40px;font-weight: bold;
+    br{display: inline-block;line-height:0}
+    }
     .HCAU-txt-md{
-        color: $gray04;
-        margin-top: 12px;
+        color: $gray03;
+        margin-top: 2px;
     }
 
-}
-
-//상세
-.HCAU-detail{
-    > section{
-        // border: 1px solid #000;
-        & + section{margin-top: 60px;}
-        .title-area{
-            margin-bottom: 20px;
-            .title{font-size: 24px;font-weight: 700;line-height: 1.1;}
-            .sub-title{font-size: 14px;color: $gray04;}
-        }
-    }
 }
 
 //안내
@@ -361,7 +480,7 @@ a{text-decoration: none;}
     border-radius: 4px;
     background: $white;
     border: 1px solid $black;
-    line-height: 1.5;
+    line-height: 1;
     //버튼 사이즈
     &.btn-sm{
         font-size: 13px;
@@ -389,13 +508,13 @@ a{text-decoration: none;}
         padding: 11px 16px;
     }
     &.btn-large{
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 700;
         min-height: 52px;
-        min-width: 123px;
+        min-width: 180px;
         text-align: center;
         // padding: 13px 16px;
-        padding: 13px 36px;
+        padding: 20px 48px;
     }
     &.full{width: 100%;}
     &.dropdown-toggle{
@@ -417,10 +536,15 @@ a{text-decoration: none;}
             right: 23px;
             top: 50%;
             transform: translateY(-50%);
+            transition: all 0.2s ease-out;
         }
+        
+        &.show::after{ transform:rotate(180deg)}
         &.is-invalid{
             border-color: $point-red;
         }
+        // transform:rotate(180deg);transition: all 0.3s ease-out;
+        // &.show::after{ transform:rotate(0deg);}
     }
     //버튼컬러
     &.primary{
@@ -548,62 +672,28 @@ a{text-decoration: none;}
 
 //스텝
 .HCAU-step{
-    display: flex;
-    gap: 20px;
-    & + div{margin-top: 28px;}
-    .step-item{
-        position: relative;
-        border: 2px solid $gray02;
-        border-radius: 36px;
-        flex-grow:0;
-        flex-shrink:0;
-        flex-basis: 36px;
-        height: 36px;
-        align-items:center;
-        justify-content: center;
-        display: flex;
-        .num{font-size: 15px;font-weight: 600;line-height: 1;}
-        .txt{
-            display: none;
+    position: absolute;
+    right:0;
+    top:0;height:160px;
+    width:458px;
+    margin-top:-80px;
+    margin-right:-78px;
+    background:rgba(175,98,73,.16);
+    color:#fff;
+   .step-item{
+    display: none;
+    font-size:16px;
+    .num,.txt{font-weight: 700;display:flex;}
+    &.active{display: block;}    
+    &:after{ content:'';background: #fff; display: block;height:80px;width:400px;position: absolute;top:80px;right:82px;}
+        .number{
+        position: absolute;top:80px;right:80px;top:14px;width:52px;height:52px;background:#af6249;
+        span{font-size:16px;font-weight: 700;}
+        &:after{height:1px;background:rgba(255,255,255,.2);;width:32px; content:'';position: absolute;margin-top:4px;margin-left:10px; display: block;transform: rotate(-45deg);}       
         }
-    }
-    .step-item.active{
-        flex-basis:auto;
-        padding-left: 3px;
-        padding-right: 3px;
-        border-color: $primary;
-        .num{
-            background: $primary;
-            color: $white;
-            width: 26px;
-            height: 26px;
-            border-radius: 100%;
-            line-height: 26px;
-            text-align: center;
-        }
-        .txt{
-            display: block;
-            padding: 0 12px;
-            font-size: 14px;
-            font-weight: 700;
-            color: $primary;
-            font-size: 13px;
-            font-weight: 600;
-            color: $primary;
-        }
-        // flex-grow: 1;
-    }
-    .step-item + .step-item:before{
-        content:'';
-        display: block;
-        width: 20px;
-        height: 2px;
-        background: $gray02;
-        position: absolute;
-        left: -22px;top: 50%;
+    
     }
 }
-
 //border-box
 .border-box{
     border: 1px solid $gray02;
@@ -801,16 +891,18 @@ top:15px;}
                 }
             }
         }
-        border-top: 1px solid $secondary01;
+        border-top: 1px solid $border-color;
         margin-bottom: 0;
         th,td{
-            border-color: $secondary01;
+            border-color: $border-color;
         }
         th{
             padding: 22px;
-            background: $secondary02;
+            //background: $secondary02;
+            background: transparent;
             // line-height: 1.1;
             font-size: 13px;
+            color:#fff;
         }
         td{
             padding: 16px 22px;
@@ -834,6 +926,8 @@ top:15px;}
                 }
             }
         }
+        thead{  background: linear-gradient(92deg, #505050 0.09%, #000 100%); th{background: transparent;}}
+        tbody{ th {background:$gray01}br{height:0}}
         tfoot .HCAU-form.form-control,
         tr.sum .HCAU-form.form-control{background: #f5f5f5;color:#000;
         }
@@ -910,7 +1004,8 @@ top:15px;}
     position: relative;
     // padding-bottom:200px;
     .HCAU-flex-table{
-        display: flex;
+        display: none;
+
         justify-content: center;
         align-items: center;
         position: relative;
@@ -931,12 +1026,12 @@ top:15px;}
                 padding: 16px 20px;
             }
         }
-        &.pd-02{margin-top: -97px;}
-        &.pd-03{margin-top: -106px;}
-        &.pd-04{margin-top: -130px;}
-        &.pd-05{margin-top: -106px;}
-        &.pd-06{margin-top: -97px;}
-        &.pd-07{margin-top: -97px;}
+        // &.pd-02{margin-top: -97px;}
+        // &.pd-03{margin-top: -106px;}
+        // &.pd-04{margin-top: -130px;}
+        // &.pd-05{margin-top: -106px;}
+        // &.pd-06{margin-top: -97px;}
+        // &.pd-07{margin-top: -97px;}
     }
     .chart-wrap{
         position: relative;
@@ -966,12 +1061,14 @@ top:15px;}
             position: relative;
             padding: 40px;
             border: none;
-            border-radius: 4px;
             display: block;
             // line-height: 1;
             .modal-content-inner{
+                
+            border-radius: 4px;
                 display: flex;
                 flex-direction: column;
+                padding-top:40px;
             }
             .btn-close{
                 // position: absolute;
@@ -985,13 +1082,19 @@ top:15px;}
                 background-image: none;
                 // background-size: contain;
                 position: absolute;
-                right: 20px;
-                top: 20px;
+                right: 24px;
+                top: 24px;
+                z-index:1;
             }
             .modal-header{
                 // display: block;
-                padding: 0;
-                border: none;
+                background: linear-gradient(92deg, #505050 0.09%, #000 100%);
+                position: absolute;
+                height:80px;
+                width:100%;
+                left:0;
+                top:0;
+                .HCAU-h2{color:#fff;padding-left:32px}
             }
             .modal-body{
                 padding: 0;
@@ -1018,6 +1121,7 @@ top:15px;}
     .HCAU-form.form-control[type="text"]{min-height: 44px;}
 }
 .HCAU-search-bar + div{margin-top: 20px;}
+.HCAU-address-result ul{max-height:250px;overflow: auto;}
 .radio-group{
     white-space: nowrap;
     .radio-group-inner{
@@ -1344,56 +1448,6 @@ form + .g-notice {
     // line-height: 1;
 }
 
-//HCAU-cs
-.HCAU-cs {
-	width: 260px;
-	position: absolute;
-	right: 24px;
-	bottom: 80px;
-	.chat-bot {
-		background: $point;
-        box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.10);
-		width: 70px;
-		height: 70px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		border-radius: 100%;
-		gap: 7px;
-		line-height: 1;
-        color: $white;
-        &:hover{color: $white;}
-		img {
-			width: 28px;
-			height: 28px;
-		}
-		span {
-			font-size: 12px;
-			font-weight: 700;
-		}
-	}
-	.contact-us {
-		margin-top: 40px;
-		line-height: 1;
-		> div {
-			display: flex;
-			align-items: center;
-			gap: 12px;
-			img {
-				a {
-					color: #666;
-				}
-			}
-		}
-	}
-	.family-site {
-		margin-top: 20px;
-		.dropdown-toggle::after {
-			transform: rotate(180deg);
-		}
-	}
-}
 // Login
 .HCAU-login-wrap {
 	width: 644px;
@@ -1683,3 +1737,46 @@ form + .g-notice {
 // .HCAU-accordion.faq .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after{background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='24' y='24' width='24' height='24' rx='4' transform='rotate(180 24 24)' fill='black'/%3E%3Cpath d='M7 14.381L11.5847 9.79632C11.6383 9.74026 11.7028 9.69566 11.7742 9.66518C11.8456 9.63471 11.9224 9.619 12 9.619C12.0776 9.619 12.1544 9.63471 12.2258 9.66518C12.2972 9.69566 12.3617 9.74026 12.4153 9.79632L17 14.381' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");}
 
 
+
+
+
+
+
+.HCAU-tab {margin-top: 20px;
+    padding: 10px 10px 0 10px;
+    border-radius: 4px 4px 0 0;
+    border: 1px solid #e5e5e5;
+    }
+         .HCAU-tab .nav-tabs{border:0;justify-content: space-around;position: relative;}
+    .HCAU-tab .nav-tabs li,.HCAU-tab .nav-tabs .nav-link{border:0;background:#fff;position: relative;border:0;color:#444; border-bottom: 1px solid #e5e5e5;
+       margin-bottom: -1px;padding:0}
+    .HCAU-tab .nav-tabs li:before{display: block;content:"";height:20px;width:1px;background:#e5e5e5;position:absolute;left:-40px;top:10px;z-index: 2;}
+    .HCAU-tab .nav-tabs .nav-link.active {
+       border-bottom: 2px solid #000;
+       background: #fff;
+       color: #000;
+   }
+
+    .HCAU-tab .nav-tabs .nav-link.active:before,
+    .HCAU-tab .nav-tabs li:first-child:before{clear:both;display: none;}
+    .ellipsis {
+       overflow: hidden;
+       text-overflow: ellipsis;
+       white-space: nowrap;
+     }
+
+    .tab-content{position: relative;}
+    .tab-content>.tab-pane:before{display: block;content:"";border-left:1px solid #e5e5e5;height:100px;position:absolute;}
+    .tab-content>.tab-pane:after{display: block;
+        content: "";
+        border-right:1px solid #e5e5e5;
+        height: 100px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;}
+        .d-flex.flex-column.px3.py24.border-bottom.pb-20{border-radius:4px;border:1px solid #e5e5e5}
+
+        .HCAU-flex-table.border-top.mt28{border-top:0 !important;margin-top:0;position: relative;z-index: 0} 
+
+        

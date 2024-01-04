@@ -1,3 +1,5 @@
+
+/*validate*/
 (function () {
     'use strict'
   
