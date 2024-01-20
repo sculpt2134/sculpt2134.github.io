@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>HCAU-PUBL</title>
+  <link rel="stylesheet" href="/static/html/pc/hyundai/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/pc/hyundai/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+    <div class="wrap">
+      <div class="HCAU-sidebar" include-html="/static/html/pc/hyundai/aside.html"></div>
+      <div class="HCAU-menubar" include-html="/static/html/pc/hyundai/menu.html"></div>
+  
+      <div class="HCAU-container">
+            <div class="HCAU-contents" id="contents">
+                <!-- HCAU-breadcrumb -->
+                <div class="HCAU-breadcrumb" include-html="/static/html/pc/hyundai/breadcrumb.html"></div>
+            <!-- //HCAU-breadcrumb -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////START PAGE CONTENTS/////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- HCAU-title -->
+<div class="HCAU-title">
+    <!-- class option : border-bottom -->
+    <div class="HCAU-h1">Personal information inquiry</div>
+    <div class="HCAU-txt-md">Please keep your personal information up to date.</div>
+</div>
+<!-- //HCAU-title -->
+
+<!-- HCAU-detail -->
+<div class="HCAU-detail">
+
+
+    <section>
+        <div class="title-area d-flex align-items-baseline g16">
+            <div class="title">Basic Information</div>
+        </div>
+        <div class="HCAU-table HCAU-valid">
+            <table class="table fixed">
+                <colgroup>
+                    <col style="width:150px">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th class="align-middle">Name</th>
+                        <td>
+                            <div class="no-txt-input">
+                                <span class="HCAU-txt-sm">Juan Sebastian Veron</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="align-middle">Date Of Birth</th>
+                        <td>
+                            <div class="no-txt-input">
+                                <span class="HCAU-txt-sm">01/01/1999</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="align-middle">E-mail</th>
+                        <td>
+                            <input type="email" class="form-control HCAU-form" id="" value="hyundai@hcs.com" placeholder="Enter E-mail" required>
+                            <div class="invalid-feedback" style="display: block;">invalid message1</div>
+                            <div class="invalid-feedback" style="display: block;">invalid message2</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="align-middle">Mobile Phone</th>
+                        <td>
+                            <input type="text" class="form-control HCAU-form" id="" value="041 223 4466" placeholder="Enter phone number" required>
+                            <div class="invalid-feedback" style="display: block;">invalid message1</div>
+                            <div class="invalid-feedback" style="display: block;">invalid message2</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="align-middle">Address</th>
+                        <td>
+                            <div class="d-flex g10">
+                                <input type="text" class="form-control HCAU-form w200" id="" value="zipcode" placeholder="Enter a Suburb or postcode" required>
+                                <input type="text" class="form-control HCAU-form" id="" value="" placeholder="Enter address" required>
+                            </div>
+                            <div class="mt10">
+                                <input type="text" class="form-control HCAU-form" id="" value="" placeholder="Enter address2" required>
+                                <div class="invalid-feedback" style="display: block;">invalid message1</div>
+                                <div class="invalid-feedback" style="display: block;">invalid message2</div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <!-- OTP certification -->
+        <div class="HCAU-valid bg-box2 p10">
+            <div class="border-box px32 py28">
+                <!-- title-area -->
+                <div class="title-area d-flex align-items-baseline g16">
+                    <div class="HCAU-txt-md fw-bold">OTP certification</div>
+                    <div class="ms-auto">
+                        <!-- HCAU-tab-small -->
+                        <div class="HCAU-tab-small">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="">
+                                    <button class="active" id="" data-bs-toggle="tab" data-bs-target="#tabCont_01" type="button" role="tab" aria-selected="true">Cell phone</button>
+                                </li>
+                                <li class="">
+                                    <button class="" id="" data-bs-toggle="tab" data-bs-target="#tabCont_02" type="button" role="tab" aria-selected="false">E-mail</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //HCAU-tab-small -->
+                    </div>
+                </div>
+                <!-- //title-area -->
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="tabCont_01" role="tabpanel">
+
+                        <div class="d-flex justify-content-between g20">
+                            <div class="d-flex g12 w-50">
+                                <div class="flex-grow-1">
+                                    <input type="text" class="form-control HCAU-form" placeholder="Enter phone number" value="01099999999" readonly>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-smd">Send</button>
+                                </div>
+                            </div>
+                            <div class="d-flex g12 w-50">
+                                <div class="flex-grow-1 position-relative">
+                                    <input type="text" class="form-control HCAU-form time-limit" placeholder="Enter OTP verification code" value="">
+                                    <!-- <span class="time-limit-num">2:59</span> -->
+                                </div>
+                                <!-- <div>
+                                    <button type="button" class="HCAU-btn btn-smd">OK</button>
+                                </div> -->
+                            </div>
+                        </div>
+                        <br>
+                        <div class="d-flex justify-content-between g20">
+                            <div class="d-flex g12 w-50">
+                                <div class="flex-grow-1">
+                                    <input type="text" class="form-control HCAU-form" placeholder="Enter phone number" value="01099999999" readonly>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-smd">Send</button>
+                                </div>
+                            </div>
+                            <div class="d-flex g12 w-50">
+                                <div class="flex-grow-1 position-relative">
+                                    <input type="text" class="form-control HCAU-form time-limit" placeholder="Enter OTP verification code" value="">
+                                    <span class="time-limit-num">2:59</span>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-smd">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="d-flex justify-content-between g20">
+                            <div class="d-flex g12 w-50">
+                                <div class="flex-grow-1">
+                                    <input type="text" class="form-control HCAU-form" placeholder="Enter phone number" value="01099999999" readonly>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-smd">Send</button>
+                                </div>
+                            </div>
+                            <div class="d-flex g12 w-50">
+                                <div class="flex-grow-1 position-relative">
+                                    <input type="text" class="form-control HCAU-form time-limit is-invalid" placeholder="Enter OTP verification code" value="">
+                                    <div class="invalid-feedback">Please enter OTP verification code</div>
+                                    <!-- <span class="time-limit-num">2:59</span> -->
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-smd">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="d-flex justify-content-between g20">
+                            <div class="d-flex g12 w-50">
+                                <div class="flex-grow-1">
+                                    <input type="text" class="form-control HCAU-form" placeholder="Enter phone number" value="01099999999" readonly>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-smd">Send</button>
+                                </div>
+                            </div>
+                            <div class="d-flex g12 w-50">
+                                <div class="flex-grow-1 position-relative">
+                                    <input type="text" class="form-control HCAU-form time-limit is-valid" placeholder="Enter OTP verification code" value="1234567" readonly>
+                                    <div class="valid-feedback">Please enter OTP verification code</div>
+                                    <!-- <span class="time-limit-num">2:59</span> -->
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-smd">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tabCont_02" role="tabpanel">
+
+                        <div class="d-flex justify-content-between g20">
+                            <div class="d-flex g12 w-50">
+                                <div class="flex-grow-1">
+                                    <input type="text" class="form-control HCAU-form" placeholder="Enter phone number" value="hyundai@hcs.com" readonly>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-smd">Send</button>
+                                </div>
+                            </div>
+                            <div class="d-flex g12 w-50">
+                                <div class="flex-grow-1 position-relative">
+                                    <input type="text" class="form-control HCAU-form time-limit" placeholder="Enter OTP verification code" value="">
+                                    <!-- <span class="time-limit-num">2:59</span> -->
+                                </div>
+                                <!-- <div>
+                                    <button type="button" class="HCAU-btn btn-smd">OK</button>
+                                </div> -->
+                            </div>
+                        </div>
+                        <br>
+                        <div class="d-flex justify-content-between g20">
+                            <div class="d-flex g12 w-50">
+                                <div class="flex-grow-1">
+                                    <input type="text" class="form-control HCAU-form" placeholder="Enter phone number" value="hyundai@hcs.com" readonly>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-smd">Send</button>
+                                </div>
+                            </div>
+                            <div class="d-flex g12 w-50">
+                                <div class="flex-grow-1 position-relative">
+                                    <input type="text" class="form-control HCAU-form time-limit" placeholder="Enter OTP verification code" value="">
+                                    <span class="time-limit-num">2:59</span>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-smd">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="d-flex justify-content-between g20">
+                            <div class="d-flex g12 w-50">
+                                <div class="flex-grow-1">
+                                    <input type="text" class="form-control HCAU-form" placeholder="Enter phone number" value="hyundai@hcs.com" readonly>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-smd">Send</button>
+                                </div>
+                            </div>
+                            <div class="d-flex g12 w-50">
+                                <div class="flex-grow-1 position-relative">
+                                    <input type="text" class="form-control HCAU-form time-limit is-invalid" placeholder="Enter OTP verification code" value="">
+                                    <div class="invalid-feedback">Please enter OTP verification code</div>
+                                    <!-- <span class="time-limit-num">2:59</span> -->
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-smd">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="d-flex justify-content-between g20">
+                            <div class="d-flex g12 w-50">
+                                <div class="flex-grow-1">
+                                    <input type="text" class="form-control HCAU-form" placeholder="Enter phone number" value="hyundai@hcs.com" readonly>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-smd">Send</button>
+                                </div>
+                            </div>
+                            <div class="d-flex g12 w-50">
+                                <div class="flex-grow-1 position-relative">
+                                    <input type="text" class="form-control HCAU-form time-limit is-valid" placeholder="Enter OTP verification code" value="1234567" readonly>
+                                    <div class="valid-feedback">Please enter OTP verification code</div>
+                                    <!-- <span class="time-limit-num">2:59</span> -->
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-smd">OK</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //OTP certification -->
+    </section>
+
+    <div class="cta-btn-wrap">
+        <div class="d-flex g12 justify-content-center">
+            <!-- <button type="button" class="HCAU-btn btn-md">Change member information</button> -->
+            <!-- <button type="button" class="HCAU-btn btn-md">Change Password</button> -->
+            <button type="button" class="HCAU-btn btn-large gray03">Cancel</button>
+            <button type="button" class="HCAU-btn btn-large primary">Change</button>
+        </div>
+    </div>
+
+    <!-- <div class="g-notice">
+        <div class="d-flex g40">
+            <a href="#" class="link">Marketing opt-out</a>
+            <a href="#" class="link">Customer portal withdrawal</a>
+        </div>
+    </div> -->
+
+    <!-- <div class="g-notice">
+        <dl>
+            <dt>
+                <span class="ico-gnotice"><img src="/static/html/pc/hyundai/img/svg/ico_notice.svg" alt=""></span>
+                <span>Guidance Notice</span>
+            </dt>
+            <dd>
+                <ul class="HCAU-bullet-list">
+                    <li>
+                        If an error occurs while registering a payment account and the operation cannot be completed, payment may be made to your existing account.
+                    </li>
+                    <li>
+                        The result of the application to change the payment account must be confirmed as normal withdrawal from the changed account on the next payment date.
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+    </div> -->
+
+</div>
+<!-- HCAU-detail -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+            </div><!--//HCAU-contents-->
+            <footer include-html="/static/html/pc/hyundai/footer.html"></footer>
+        </div><!--//HCAU-contentainer-->
+    </div><!--//wrap-->
+<script src="/static/html/pc/hyundai/js/bootstrap.bundle.min.js"></script>
+<script src="/static/html/pc/hyundai/js/main.js"></script>
+<script src="/static/html/pc/hyundai/js/includeHTML.js"></script>
+<script src="/static/html/pc/hyundai/js/includeRouter.js"></script>
+<script>
+includeHTML();
+</script>
+</body>
+</html>

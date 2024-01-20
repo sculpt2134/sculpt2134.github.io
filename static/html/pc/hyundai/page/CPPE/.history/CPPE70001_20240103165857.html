@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>HCAU-PUBL</title>
+  <link rel="stylesheet" href="/static/html/pc/hyundai/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/pc/hyundai/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+    <div class="wrap">
+      <div class="HCAU-sidebar" include-html="/static/html/pc/hyundai/aside.html"></div>
+      <div class="HCAU-menubar" include-html="/static/html/pc/hyundai/menu.html"></div>
+  
+      <div class="HCAU-container">
+            <div class="HCAU-contents" id="contents">
+                <!-- HCAU-breadcrumb -->
+                <div class="HCAU-breadcrumb" include-html="/static/html/pc/hyundai/breadcrumb.html"></div>
+            <!-- //HCAU-breadcrumb -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////START PAGE CONTENTS/////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- HCAU-title -->
+<div class="HCAU-title">
+    <!-- class option : border-bottom -->
+    <div class="HCAU-h1">Register/change vehicle person<br>in charge</div>
+    <!-- <div class="HCAU-txt-md">Please keep your personal information up to date.</div> -->
+    <ul class="HCAU-bullet-list mt12">
+        <li>Business customers need to register vehicle manager information to change and process customer portal information.</li>
+        <li>The vehicle manager is the person in charge of overall corporate loan-related work, including billing/deposits, information changes, and document issuance requests.</li>
+    </ul>
+</div>
+<!-- //HCAU-title -->
+
+<!-- HCAU-detail -->
+<div class="HCAU-detail">
+
+    <section>
+        <div class="title-area d-flex align-items-baseline g16">
+            <div class="title">Enter vehicle manager information</div>
+        </div>
+        <!-- HCAU-valid -->
+        <form class="HCAU-valid needs-validation row gx-20 gy-28 mt-2" novalidate>
+            <div class="col-md-12 mt0">
+                <label for="validationCustom01" class="HCAU-txt-md fw-bold mb-3">Contact Name</label>
+                <input type="text" class="form-control HCAU-form is-invalid" placeholder="Enter contact name" id="validationCustom01" value="" required>
+                <div class="invalid-feedback">invalid message.</div>
+            </div>
+            <!-- <div class="col-md-12">
+                <label for="validationCustom02" class="HCAU-txt-md fw-bold mb-3">Department</label>
+                <input type="text" class="form-control HCAU-form" placeholder="Enter department" id="validationCustom02" value="" required>
+                <div class="invalid-feedback" style="display: block;">invalid message.</div>
+            </div> -->
+            <div class="col-md-12">
+                <label for="validationCustom03" class="HCAU-txt-md fw-bold mb-3">E-mail</label>
+                <input type="text" class="form-control HCAU-form" placeholder="Enter E-mail" id="validationCustom03" value="" required>
+                <div class="invalid-feedback" style="display: block;">invalid message1.</div>
+                <div class="invalid-feedback" style="display: block;">invalid message2.</div>
+            </div>
+            <!-- <div class="col-md-12">
+                <label for="validationCustom04" class="HCAU-txt-md fw-bold mb-3">Mobile Phone</label>
+                <input type="text" class="form-control HCAU-form" placeholder="Enter mobile phone" id="validationCustom04" value="" required>
+                <div class="invalid-feedback" style="display: block;">invalid message1.</div>
+                <div class="invalid-feedback" style="display: block;">invalid message2.</div>
+            </div> -->
+
+            <div class="col-md-12">
+                <label for="" class="HCAU-txt-md fw-bold mb-3">Agree to terms and conditions</label>
+                <div class="border-box edge p32">
+                    <div class="">
+                        <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck1">
+                        <label class="HCAU-txt-sm fw-bold" for="defaultCheck1">
+                            Full agreement
+                        </label>
+                    </div>
+                    <div class="border-top mt20"></div>
+                    <div class="d-flex justify-content-between mt20">
+                        <div>
+                            <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck2">
+                            <label class="HCAU-txt-sm" for="defaultCheck2">
+                                Consent to collection/use/handling consignment of personal information
+                            </label>
+                        </div>
+                        <div>
+                            <a href="#" class="link">View content</a>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mt20">
+                        <div>
+                            <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck3">
+                            <label class="HCAU-txt-sm" for="defaultCheck3">
+                                Consent to collection/use/handling consignment of personal information
+                            </label>
+                        </div>
+                        <div>
+                            <a href="#" class="link">View content</a>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mt20">
+                        <div>
+                            <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck4">
+                            <label class="HCAU-txt-sm" for="defaultCheck4">
+                                Consent to collection/use/handling consignment of personal information
+                            </label>
+                        </div>
+                        <div>
+                            <a href="#" class="link">View content</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="col-md-12">
+                <label for="" class="HCAU-txt-md fw-bold mb-3">How to recieve</label>
+                <div class="border-box edge p32">
+
+                    <div class="d-flex g40">
+                        <div>
+                            <input class="form-check-input HCAU-form" type="checkbox" id="inlineCheckbox1" value="">
+                            <label class="form-check-label" for="inlineCheckbox1">Send SMS</label>
+                        </div>
+                        <div>
+                            <input class="form-check-input HCAU-form" type="checkbox" id="inlineCheckbox2" value="">
+                            <label class="form-check-label" for="inlineCheckbox2">Send E-mail</label>
+                        </div>
+                    </div>
+
+                </div>
+            </div> -->
+
+            <div class="cta-btn-wrap">
+                <div class="d-flex g12 justify-content-center">
+                    <!-- <button type="button" class="HCAU-btn btn-large">List</button> -->
+                    <!-- <button type="button" class="HCAU-btn btn-large gray03">Cancel</button> -->
+                    <button type="submit" class="HCAU-btn btn-large primary" disabled>Application for registration</button>
+                </div>
+            </div>
+
+        </form>
+        <!-- //HCAU-valid -->
+    </section>
+
+    <!-- <div class="g-notice">
+        <div class="d-flex g40">
+            <a href="#" class="link">Marketing opt-out</a>
+            <a href="#" class="link">Customer portal withdrawal</a>
+        </div>
+    </div> -->
+
+    <!-- <div class="g-notice">
+        <dl>
+            <dt>
+                <span class="ico-gnotice"><img src="/static/html/pc/hyundai/img/svg/ico_notice.svg" alt=""></span>
+                <span>Guidance Notice</span>
+            </dt>
+            <dd>
+                <ul class="HCAU-bullet-list">
+                    <li>
+                        ID search is available only for individual customers.
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+    </div> -->
+
+</div>
+<!-- HCAU-detail -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+            </div><!--//HCAU-contents-->
+            <footer include-html="/static/html/pc/hyundai/footer.html"></footer>
+        </div><!--//HCAU-contentainer-->
+    </div><!--//wrap-->
+<script src="/static/html/pc/hyundai/js/bootstrap.bundle.min.js"></script>
+<script src="/static/html/pc/hyundai/js/main.js"></script>
+<script src="/static/html/pc/hyundai/js/includeHTML.js"></script>
+<script src="/static/html/pc/hyundai/js/includeRouter.js"></script>
+<script>
+includeHTML();
+</script>
+</body>
+</html>

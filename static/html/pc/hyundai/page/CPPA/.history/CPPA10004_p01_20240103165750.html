@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>HCAU-PUBL</title>
+  <link rel="stylesheet" href="/static/html/pc/hyundai/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/pc/hyundai/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+    <div class="wrap">
+      <div class="HCAU-sidebar" include-html="/static/html/pc/hyundai/aside.html"></div>
+      <div class="HCAU-menubar" include-html="/static/html/pc/hyundai/menu.html"></div>
+  
+      <div class="HCAU-container">
+            <div class="HCAU-contents" id="contents">
+                <!-- HCAU-breadcrumb -->
+                <div class="HCAU-breadcrumb" include-html="/static/html/pc/hyundai/breadcrumb.html"></div>
+            <!-- //HCAU-breadcrumb -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////START PAGE CONTENTS/////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- HCAU-title -->
+<div class="HCAU-title">
+    <!-- class option : border-bottom -->
+    <div class="HCAU-h1">Request to pay the amount due</div>
+</div>
+<!-- //HCAU-title -->
+
+<!-- HCAU-detail -->
+<div class="HCAU-detail">
+
+
+    <!-- Button trigger modal -->
+    <button type="button" class="HCAU-btn btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        popup
+    </button>
+
+    <!-- Modal -->
+    <div class="HCAU-modal modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/html/pc/hyundai/img/svg/ico_modal_close.svg" alt="Close" /></button>
+                <div class="modal-content-inner">
+                    <div class="modal-header">
+                        <div class="HCAU-h2" id="exampleModalLabel">Prior consent to pay the amount due</div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="border-box">
+                            <div class="bg-box2 p32">
+
+                                <div class="HCAU-txt-md text-center">
+                                    Your current payment due is being debited from your bank account.<br>
+                                    If you pay an amount due today, your bank account might be debited twice.<br>
+                                    Please be reminded before you request to pay an amount due.
+                                </div>
+                                <div class="HCAU-txt-md text-center mt20">
+                                    ※ The amount that you overpaid will be refunded to your bank account on the next business day.
+                                </div>
+                                <div class="HCAU-txt-md text-center mt40 fw-bold">
+                                    Do you want to pay an amount due today?<br>
+                                    When you click the ‘Consent’ button, we will accept your request to pay an amount due.
+                                </div>
+
+                                <div class="d-flex g12 justify-content-center mt40">
+                                    <button type="button" class="HCAU-btn btn-large gray03" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="HCAU-btn btn-large primary">Consent</button>
+                                    <!-- <button type="button" class="HCAU-btn btn-large" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="HCAU-btn btn-large">Save changes</button>
+                                    <button type="button" class="HCAU-btn btn-large">button</button> -->
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- <div class="modal-footer">
+
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- //HCAU-detail -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+</div><!--//HCAU-contents-->
+<footer include-html="/static/html/pc/hyundai/footer.html"></footer>
+</div><!--//HCAU-contentainer-->
+</div><!--//wrap-->
+<script src="/static/html/pc/hyundai/js/bootstrap.bundle.min.js"></script>
+<script src="/static/html/pc/hyundai/js/main.js"></script>
+<script src="/static/html/pc/hyundai/js/includeHTML.js"></script>
+<script src="/static/html/pc/hyundai/js/includeRouter.js"></script>
+<script>
+includeHTML();
+</script>
+</body>
+</html>

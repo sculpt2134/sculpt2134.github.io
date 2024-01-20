@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>GENESIS-PUBL</title>
+  <link rel="stylesheet" href="/static/html/pc/genesis/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/pc/genesis/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+    <div class="wrap">
+      <div class="HCAU-sidebar" include-html="/static/html/pc/genesis/aside.html"></div>
+      <div class="HCAU-menubar" include-html="/static/html/pc/genesis/menu.html"></div>
+  
+      <div class="HCAU-container">
+            <div class="HCAU-contents" id="contents">
+                <!-- HCAU-breadcrumb -->
+                <div class="HCAU-breadcrumb" include-html="/static/html/pc/genesis/breadcrumb.html"></div>
+            <!-- //HCAU-breadcrumb -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////START PAGE CONTENTS/////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- HCAU-title -->
+<div class="HCAU-title">
+    <!-- class option : border-bottom -->
+    <div class="HCAU-h1">FIND contract number</div>
+    <div class="HCAU-txt-md">In order to find your contract number, you will need to verify your identity.</div>
+</div>
+<!-- //HCAU-title -->
+
+<!-- HCAU-detail -->
+<div class="HCAU-detail">
+
+
+    <!-- HCAU-tab -->
+    <div class="HCAU-tab">
+        <ul class="nav nav-tabs" id="" role="tablist">
+            <li class="nav-item"><button class="nav-link active" id="tab01"  data-bs-target="#tabCont01" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Personal</button></li>
+            <li class="nav-item"><button class="nav-link" id="tab02" data-bs-target="#tabCont02" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Business</button></li>
+        </ul>
+    </div>
+    <!-- //HCAU-tab -->
+
+    <section>
+
+        <form class="HCAU-valid needs-validation row gx-20 gy-28 mt12" novalidate="">
+            <div class="col-md-12">
+                <label for="validationCustom02" class="HCAU-txt-md fw-bold mb-3">Name</label>
+                <div class="d-flex g12">
+                    <input type="text" class="form-control HCAU-form" id="validationCustom02" placeholder="First Name" value="Juan" required readonly>
+                    <input type="text" class="form-control HCAU-form" id="validationCustom02" placeholder="Middle Name" value="Sebastian" required readonly>
+                    <input type="text" class="form-control HCAU-form" id="validationCustom02" placeholder="Last Name" value="Sebastian" required readonly>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom02" class="HCAU-txt-md fw-bold mb-3">Date of Birth</label>
+                <input type="text" class="form-control HCAU-form" id="validationCustom02" placeholder="8-digit input (DD/MM/YYYY)" value="11/01/2000" required readonly>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom01" class="HCAU-txt-md fw-bold mb-3">Mobile Phone</label>
+                <input type="text" class="form-control HCAU-form" id="validationCustom01" placeholder="Enter only 8 digits" value="041 123 1234" required readonly>
+                <div class="invalid-feedback">Please enter your loan number</div>
+                <div class="invalid-feedback">Please enter a 16-digit combination of English and numbers.</div>
+            </div>
+
+        </form>
+
+        <div class="cta-btn-wrap">
+            <div class="d-flex g12 justify-content-center">
+                <!-- <button type="button" class="HCAU-btn btn-large">List</button> -->
+                <!-- <button type="button" class="HCAU-btn btn-large gray03">Home</button> -->
+                <button type="submit" class="HCAU-btn btn-large primary">Identification</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- <div class="g-notice">
+        <dl>
+            <dt>
+                <span class="ico-gnotice"><img src="/static/html/pc/genesis/img/svg/ico_notice.svg" alt=""></span>
+                <span>Guidance Notice</span>
+            </dt>
+            <dd>
+                <ul class="HCAU-bullet-list">
+                    <li>Upon user authentication, the password setting URL is sent to the registered e-mail.</li>
+                </ul>
+            </dd>
+        </dl>
+    </div> -->
+
+    <!-- <div class="d-flex gap-3">
+        <div class="border-box flex-fix p-4">
+            <p class="HCAU-txt-sm">Do you want to make a payment before your due date?o make a payment before your due date?</p>
+            <p class="pt12"><a href="#none" class="link">Make a payment</a></p>
+        </div>
+        <div class="border-box flex-fix p-4">
+            <p class="HCAU-txt-sm">Do you want to pay off all or part of your loan early?</p>
+            <p class="pt12"><a href="#none" class="link">pay off early</a></p>
+        </div>
+    </div> -->
+
+</div>
+<!-- HCAU-detail -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+            </div><!--//HCAU-contents-->
+        </div><!--//HCAU-contentainer-->
+    </div><!--//wrap-->
+    <footer include-html="/static/html/pc/genesis/footer.html"></footer>
+<script src="/static/html/pc/genesis/js/bootstrap.bundle.min.js"></script>
+<script src="/static/html/pc/genesis/js/main.js"></script>
+<script src="/static/html/pc/genesis/js/includeHTML.js"></script>
+<script src="/static/html/pc/genesis/js/includeRouter.js"></script>
+<script>
+includeHTML( function () {
+includeRouter( function () {
+});
+});
+
+</script>
+</body>
+
+</html>

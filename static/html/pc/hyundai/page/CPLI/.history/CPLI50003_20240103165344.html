@@ -1,0 +1,523 @@
+
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>HCAU-PUBL</title>
+  <link rel="stylesheet" href="/static/html/pc/hyundai/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/pc/hyundai/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+  <style>
+    .HCAU-tab {margin-top: 20px;
+     padding: 10px 10px 0 10px;
+     border-radius: 4px 4px 0 0;
+     border: 1px solid #e5e5e5;
+     }
+          .HCAU-tab .nav-tabs{border:0;justify-content: space-around;position: relative;}
+     .HCAU-tab .nav-tabs li,.HCAU-tab .nav-tabs .nav-link{border:0;background:#fff;position: relative;border:0;color:#444; border-bottom: 1px solid #e5e5e5;
+        margin-bottom: -1px;padding:0}
+     .HCAU-tab .nav-tabs li:before{display: block;content:"";height:20px;width:1px;background:#e5e5e5;position:absolute;left:-40px;top:10px;z-index: 2;}
+     .HCAU-tab .nav-tabs .nav-link.active {
+        border-bottom: 2px solid #000;
+        background: #fff;
+        color: #000;
+    }
+
+     .HCAU-tab .nav-tabs .nav-link.active:before,
+     .HCAU-tab .nav-tabs li:first-child:before{clear:both;display: none;}
+     .ellipsis {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+     .tab-content{position: relative;}
+     .tab-content>.tab-pane:before{display: block;content:"";border-left:1px solid #e5e5e5;height:100px;position:absolute;}
+     .tab-content>.tab-pane:after{display: block;
+         content: "";
+         border-right:1px solid #e5e5e5;
+         height: 100px;
+         position: absolute;
+         right: 0;
+         top: 0;
+         width: 100%;}
+         .d-flex.flex-column.px3.py24.border-bottom.pb-20{border-radius:4px;border:1px solid #e5e5e5}
+
+ </style>
+</head>
+<body>
+    <div class="wrap">
+      <div class="HCAU-sidebar" include-html="/static/html/pc/hyundai/aside.html"></div>
+      <div class="HCAU-menubar" include-html="/static/html/pc/hyundai/menu.html"></div>
+  
+      <div class="HCAU-container">
+            <div class="HCAU-contents" id="contents">
+                <!-- HCAU-breadcrumb -->
+                <div class="HCAU-breadcrumb" include-html="/static/html/pc/hyundai/breadcrumb.html"></div>
+            <!-- //HCAU-breadcrumb -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////START PAGE CONTENTS/////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- HCAU-title -->
+<div class="HCAU-title">
+    <!-- class option : border-bottom -->
+    <div class="HCAU-h1">Billing Statement</div>
+</div>
+<!--//HCAU-title-->
+
+<!-- HCAU-detail -->
+<div class="HCAU-detail">
+
+    <section>
+        <div class="d-flex align-items-baseline g40">
+            <div class="dropdown me-auto">
+                <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                    April 2023
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+                </ul>
+            </div>
+            <div class="HCAU-txt-md fw500">Total amount billed</div>
+            <div class="HCAU-h2">2,034.00 $</div>
+        </div>
+        <div class="detail-contents">
+
+           <!-- HCAU-tab -->
+            <div class="HCAU-tab">
+                <ul class="nav nav-tabs" id="" role="tablist">
+                    <li><button class="nav-link active" id="tab01" data-bs-toggle="tab" data-bs-target="#state01" type="button" role="tab" aria-controls="state01" aria-selected="true">NewCar Standard H2023NA000248</button></li>
+                    <li><button class="nav-link" id="tab02" data-bs-toggle="tab" data-bs-target="#state02" type="button" role="tab" aria-controls="state02" aria-selected="false">loarnH2023NA000248</button></li>
+                    <li><button class="nav-link" id="tab03" data-bs-toggle="tab" data-bs-target="#state03" type="button" role="tab" aria-controls="state03" aria-selected="false">lease H2023NA000248</button></li>
+                    <li><button class="nav-link ellipsis" id="tab04" data-bs-toggle="tab" data-bs-target="#state04" type="button" role="tab" aria-controls="state04" aria-selected="false">NewCar Loan</button></li>
+
+                </ul>
+            </div>
+            <div class="tab-content" id="">
+                <!--tab content01-->
+                <div class="tab-pane show active" id="state01" role="tabpanel" aria-labelledby="tab01" tabindex="0">
+                    <div class="d-flex flex-column px32 py24 border-bottom pb-20">
+                        <div class="d-flex justify-content-between align-items-end">
+                            <div class="HCAU-txt-sm gray04">Payment Cycle / Payment Date</div>
+                            <div class="HCAU-txt-md fw-bold">Monthly / 11th of every month</div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-end pt16">
+                            <div class="HCAU-txt-sm gray04">Bank / Account number</div>
+                            <div class="HCAU-txt-md fw-bold">ANZ / 2635****9</div>
+                        </div>
+                    </div>
+                    <section class="pt40">
+                        <div class="HCAU-txt-md gray04 pb-2">A total of <span class="black fw500">4 claims</span> amounted to <span class="black fw500">4,034.00 $</span></div>
+
+                        <div class="HCAU-nodata type02 flex-column border-top border-bottom">
+                            <img src="/static/html/pc/hyundai/img/svg/ico_no_matches_hd02.svg" alt="">
+                            <div class="HCAU-txt-sm">No matches found.</div>
+                        </div>
+
+                        <div class="HCAU-flex-table border-top">
+
+                            <div class="d-flex py28 px32 g40 align-items-center border-bottom">
+                                <div>
+                                    <p class="HCAU-txt-sm">12/60</p>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-sm">
+                                        statement
+                                        <span class="ico-print"><img src="/static/html/pc/hyundai/img/svg/ico_print.svg" alt=""></span>
+                                    </button>
+                                </div>
+                                <div>
+                                    <div class="d-flex g16 align-items-center">
+                                        <p class="HCAU-txt-sm">payment date : 10/04/2023</p>
+                                        <p>
+                                            <span class="HCAU-badge type01">Overdue</span>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex gap-3 pt12">
+                                        <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
+                                        <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                        <span class="HCAU-txt-sm">
+                                            etc : 20.00 $&nbsp;
+                                            <span class="HCAU-tooltip">
+                                                <a href=""><img src="/static/html/pc/hyundai/img/svg/ico_tooltip.svg" alt=""></a>
+                                                <div class="HCAU-tooltip-inner">
+                                                    <div class="HCAU-tooltip-arrow"></div>
+                                                    <div class="HCAU-tooltip-cont HCAU-txt-sm">
+                                                        <div class="d-flex justify-content-between">
+                                                            <p>fines</p>
+                                                            <p>120.00 $</p>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between">
+                                                            <p>toll gate fee</p>
+                                                            <p>290.00 $</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="ms-auto text-end">
+                                    <div class="HCAU-txt-sm">8,797.00 $</div>
+                                </div>
+                            </div>
+                            <div class="d-flex py28 px32 g40 align-items-center border-bottom">
+                                <div>
+                                    <p class="HCAU-txt-sm">12/60</p>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-sm">
+                                        statement
+                                        <span class="ico-print"><img src="/static/html/pc/hyundai/img/svg/ico_print.svg" alt=""></span>
+                                    </button>
+                                </div>
+                                <div>
+                                    <div class="d-flex g16 align-items-center">
+                                        <p class="HCAU-txt-sm">payment date : 10/04/2023</p>
+                                        <!-- <p>
+                                            <span class="HCAU-badge type01">Overdue</span>
+                                        </p> -->
+                                    </div>
+                                    <div class="d-flex gap-3 pt12">
+                                        <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
+                                        <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                        <span class="HCAU-txt-sm">
+                                            etc : 20.00 $&nbsp;
+                                            <span class="HCAU-tooltip">
+                                                <a href=""><img src="/static/html/pc/hyundai/img/svg/ico_tooltip.svg" alt=""></a>
+                                                <div class="HCAU-tooltip-inner">
+                                                    <div class="HCAU-tooltip-arrow"></div>
+                                                    <div class="HCAU-tooltip-cont HCAU-txt-sm">
+                                                        <div class="d-flex justify-content-between">
+                                                            <p>fines</p>
+                                                            <p>120.00 $</p>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between">
+                                                            <p>toll gate fee</p>
+                                                            <p>290.00 $</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="ms-auto text-end">
+                                    <div class="HCAU-txt-sm">8,797.00 $</div>
+                                </div>
+                            </div>
+                            <div class="d-flex py28 px32 g40 align-items-center border-bottom">
+                                <div>
+                                    <p class="HCAU-txt-sm">12/60</p>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-sm">
+                                        statement
+                                        <span class="ico-print"><img src="/static/html/pc/hyundai/img/svg/ico_print.svg" alt=""></span>
+                                    </button>
+                                </div>
+                                <div>
+                                    <div class="d-flex g16 align-items-center">
+                                        <p class="HCAU-txt-sm">payment date : 10/04/2023</p>
+                                        <p>
+                                            <span class="HCAU-badge type01">Overdue</span>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex gap-3 pt12">
+                                        <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
+                                        <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                        <span class="HCAU-txt-sm">
+                                            etc : 20.00 $&nbsp;
+                                            <span class="HCAU-tooltip">
+                                                <a href=""><img src="/static/html/pc/hyundai/img/svg/ico_tooltip.svg" alt=""></a>
+                                                <div class="HCAU-tooltip-inner">
+                                                    <div class="HCAU-tooltip-arrow"></div>
+                                                    <div class="HCAU-tooltip-cont HCAU-txt-sm">
+                                                        <div class="d-flex justify-content-between">
+                                                            <p>fines</p>
+                                                            <p>120.00 $</p>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between">
+                                                            <p>toll gate fee</p>
+                                                            <p>290.00 $</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="ms-auto text-end">
+                                    <div class="HCAU-txt-sm">8,797.00 $</div>
+                                </div>
+                            </div>
+                            <div class="d-flex py28 px32 g40 align-items-center border-bottom">
+                                <div>
+                                    <p class="HCAU-txt-sm">12/60</p>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-sm">
+                                        statement
+                                        <span class="ico-print"><img src="/static/html/pc/hyundai/img/svg/ico_print.svg" alt=""></span>
+                                    </button>
+                                </div>
+                                <div>
+                                    <div class="d-flex g16 align-items-center">
+                                        <p class="HCAU-txt-sm">payment date : 10/04/2023</p>
+                                        <p>
+                                            <span class="HCAU-badge type01">Overdue</span>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex gap-3 pt12">
+                                        <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
+                                        <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                        <span class="HCAU-txt-sm">
+                                            etc : 20.00 $&nbsp;
+                                            <span class="HCAU-tooltip">
+                                                <a href=""><img src="/static/html/pc/hyundai/img/svg/ico_tooltip.svg" alt=""></a>
+                                                <div class="HCAU-tooltip-inner">
+                                                    <div class="HCAU-tooltip-arrow"></div>
+                                                    <div class="HCAU-tooltip-cont HCAU-txt-sm">
+                                                        <div class="d-flex justify-content-between">
+                                                            <p>fines</p>
+                                                            <p>120.00 $</p>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between">
+                                                            <p>toll gate fee</p>
+                                                            <p>290.00 $</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="ms-auto text-end">
+                                    <div class="HCAU-txt-sm">8,797.00 $</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!--tab content02-->
+                <div class="tab-pane" id="state02" role="tabpanel" aria-labelledby="tab02" tabindex="1">
+                    <div class="d-flex flex-column px32 py24 border-bottom pb-20">
+                        <div class="d-flex justify-content-between align-items-end">
+                            <div class="HCAU-txt-sm gray04">Payment Cycle / Payment Date</div>
+                            <div class="HCAU-txt-md fw-bold">Monthly / 02th of every month</div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-end pt16">
+                            <div class="HCAU-txt-sm gray04">Bank / Account number</div>
+                            <div class="HCAU-txt-md fw-bold">Direct Debit / TOSS Bank 811**********1</div>
+                        </div>
+                    </div>
+                    <section class="pt40">
+                        <div class="HCAU-txt-md gray04 pb-2">A total of <span class="black fw500">0 claim</span> amounted to <span class="black fw500">$0</span></div>
+                        <div class="HCAU-nodata type02 flex-column border-top border-bottom pb-20 pt-20">
+                            <img src="/static/html/pc/hyundai/img/svg/ico_no_matches_hd02.svg" alt="">
+                            <div class="HCAU-txt-sm">No matches found.</div>
+                        </div>
+
+                    </section>
+                </div>
+                <!--tab content03-->
+                <div class="tab-pane" id="state03" role="tabpanel" aria-labelledby="tab03" tabindex="2">
+                    <div class="d-flex flex-column px32 py24 border-bottom pb-20">
+                        <div class="d-flex justify-content-between align-items-end">
+                            <div class="HCAU-txt-sm gray04">Payment Cycle / Payment Date</div>
+                            <div class="HCAU-txt-md fw-bold">Weekly / Friday of every week</div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-end pt16">
+                            <div class="HCAU-txt-sm gray04">Bank / Account number</div>
+                            <div class="HCAU-txt-md fw-bold">Direct Debit / Woori Bank 811**********1</div>
+                        </div>
+                    </div>
+                    <section class="pt40">
+                        <div class="HCAU-txt-md gray04 pb-2">A total of <span class="black fw500">2 claims</span> amounted to <span class="black fw500">$2,034.00</span></div>
+
+                        <div class="HCAU-flex-table border-top">
+
+                            <div class="d-flex py28 px32 g40 align-items-center border-bottom">
+                                <div>
+                                    <p class="HCAU-txt-sm">12/60</p>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-sm">
+                                        statement
+                                        <span class="ico-print"><img src="/static/html/pc/hyundai/img/svg/ico_print.svg" alt=""></span>
+                                    </button>
+                                </div>
+                                <div>
+                                    <div class="d-flex g16 align-items-center">
+                                        <p class="HCAU-txt-sm">payment date : 10/04/2023</p>
+                                        <p>
+                                            <span class="HCAU-badge type01">Overdue</span>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex gap-3 pt12">
+                                        <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
+                                        <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                        <span class="HCAU-txt-sm">
+                                            etc : 20.00 $&nbsp;
+                                            <span class="HCAU-tooltip">
+                                                <a href=""><img src="/static/html/pc/hyundai/img/svg/ico_tooltip.svg" alt=""></a>
+                                                <div class="HCAU-tooltip-inner">
+                                                    <div class="HCAU-tooltip-arrow"></div>
+                                                    <div class="HCAU-tooltip-cont HCAU-txt-sm">
+                                                        <div class="d-flex justify-content-between">
+                                                            <p>fines</p>
+                                                            <p>120.00 $</p>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between">
+                                                            <p>toll gate fee</p>
+                                                            <p>290.00 $</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="ms-auto text-end">
+                                    <div class="HCAU-txt-sm">8,797.00 $</div>
+                                </div>
+                            </div>
+                            <div class="d-flex py28 px32 g40 align-items-center border-bottom">
+                                <div>
+                                    <p class="HCAU-txt-sm">12/60</p>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-sm">
+                                        statement
+                                        <span class="ico-print"><img src="/static/html/pc/hyundai/img/svg/ico_print.svg" alt=""></span>
+                                    </button>
+                                </div>
+                                <div>
+                                    <div class="d-flex g16 align-items-center">
+                                        <p class="HCAU-txt-sm">payment date : 10/04/2023</p>
+                                        <!-- <p>
+                                            <span class="HCAU-badge type01">Overdue</span>
+                                        </p> -->
+                                    </div>
+                                    <div class="d-flex gap-3 pt12">
+                                        <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
+                                        <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                        <span class="HCAU-txt-sm">
+                                            etc : 20.00 $&nbsp;
+                                            <span class="HCAU-tooltip">
+                                                <a href=""><img src="/static/html/pc/hyundai/img/svg/ico_tooltip.svg" alt=""></a>
+                                                <div class="HCAU-tooltip-inner">
+                                                    <div class="HCAU-tooltip-arrow"></div>
+                                                    <div class="HCAU-tooltip-cont HCAU-txt-sm">
+                                                        <div class="d-flex justify-content-between">
+                                                            <p>fines</p>
+                                                            <p>120.00 $</p>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between">
+                                                            <p>toll gate fee</p>
+                                                            <p>290.00 $</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="ms-auto text-end">
+                                    <div class="HCAU-txt-sm">8,797.00 $</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!--tab content04-->
+                <div class="tab-pane" id="state04" role="tabpanel" aria-labelledby="tab04" tabindex="3">
+                    <div class="d-flex flex-column px32 py24 border-bottom pb-20">
+                        <div class="d-flex justify-content-between align-items-end">
+                            <div class="HCAU-txt-sm gray04">Payment Cycle / Payment Date</div>
+                            <div class="HCAU-txt-md fw-bold">Monthly / 11th of every month</div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-end pt16">
+                            <div class="HCAU-txt-sm gray04">Bank / Account number</div>
+                            <div class="HCAU-txt-md fw-bold">ANZ / 2635****9</div>
+                        </div>
+                    </div>
+                    <section class="pt40">
+                        <div class="HCAU-txt-md gray04 pb-2">A total of <span class="black fw500">0 claims</span> amounted to <span class="black fw500">0</span></div>
+                        <div class="HCAU-nodata type02 flex-column border-top border-bottom pb-20 pt-20">
+                            <img src="/static/html/pc/hyundai/img/svg/ico_no_matches_hd02.svg" alt="">
+                            <div class="HCAU-txt-sm">No matches found.</div>
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+            <!-- //tab-content -->
+        </div>
+
+
+
+
+
+
+    </section>
+
+    <div class="g-notice">
+        <dl>
+            <dt>
+                <span class="ico-gnotice"><img src="/static/html/pc/hyundai/img/svg/ico_notice.svg" alt=""></span>
+                <span>Guidance Notice</span>
+            </dt>
+            <dd>
+                <ul class="HCAU-bullet-list">
+                    <li>
+                        Billing statements over the last three years are available only.
+                    </li>
+                    <li>
+                        If your repayment frequency is monthly, your billing statement gets issued a week before your payment due date.
+                    </li>
+                    <li>
+                        If your repayment frequency is either weekly or fortnightly, your billing statement gets issued three days before your payment due date.
+                    </li>
+                    <li>
+                        To check payment status of the amounts billed on the statement, please go to
+                        <a href="#none" class="link">Product details</a>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+    <div class="d-flex gap-3 mt20">
+        <div class="border-box edge flex-fix p-4">
+            <p class="HCAU-txt-sm">Do you want to make a payment before your due date?</p>
+            <p class="pt12"><a href="#none" class="link">Make a payment </a></p>
+        </div>
+        <div class="border-box edge flex-fix p-4">
+            <p class="HCAU-txt-sm">Do you want to pay off all or part of your loan early?</p>
+            <p class="pt12"><a href="#none" class="link">pay off early</a></p>
+        </div>
+    </div>
+
+</div>
+<!--// HCAU-detail -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+</div><!--//HCAU-contents-->
+<footer include-html="/static/html/pc/hyundai/footer.html"></footer>
+</div><!--//HCAU-contentainer-->
+</div><!--//wrap-->
+<script src="/static/html/pc/hyundai/js/bootstrap.bundle.min.js"></script>
+<script src="/static/html/pc/hyundai/js/main.js"></script>
+<script src="/static/html/pc/hyundai/js/includeHTML.js"></script>
+<script src="/static/html/pc/hyundai/js/includeRouter.js"></script>
+<script>
+includeHTML();
+</script>
+</body>
+</html>

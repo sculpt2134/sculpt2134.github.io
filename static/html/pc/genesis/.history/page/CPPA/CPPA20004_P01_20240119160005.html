@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>GENESIS-PUBL</title>
+  <link rel="stylesheet" href="/static/html/pc/genesis/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/pc/genesis/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+    <div class="wrap">
+      <div class="HCAU-sidebar" include-html="/static/html/pc/genesis/aside.html"></div>
+      <div class="HCAU-menubar" include-html="/static/html/pc/genesis/menu.html"></div>
+  
+      <div class="HCAU-container">
+            <div class="HCAU-contents" id="contents">
+                <!-- HCAU-breadcrumb -->
+                <div class="HCAU-breadcrumb" include-html="/static/html/pc/genesis/breadcrumb.html"></div>
+            <!-- //HCAU-breadcrumb -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////START PAGE CONTENTS/////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- HCAU-title -->
+<div class="HCAU-title">
+    <!-- class option : border-bottom -->
+    <div class="HCAU-h1">Early payoff</div>
+</div>
+<!-- //HCAU-title -->
+
+<!-- HCAU-detail -->
+<div class="HCAU-detail">
+
+    <!-- Button trigger modal -->
+    <button type="button" class="HCAU-btn btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        popup
+    </button>
+
+    <!-- Modal -->
+    <div class="HCAU-modal modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/html/pc/genesis/img/svg/ico_modal_close.svg" alt="Close" /></button>
+                <div class="modal-content-inner">
+                    <div class="modal-header">
+                        <div class="HCAU-h2" id="exampleModalLabel">Prior consent to early payout</div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-content-box pt-0 HCAU-txt-md text-center g40">
+                            <p>Your current payment due is being debited from your bank account.<br>If you pay off early today, your bank account might be debited twice.<br> Please be reminded before you request to pay off early.</p>
+                            <p>※ The amount that you overpaid will be refunded to your bank account on the next business day.</p>
+                            <p class="fw-bold">Do you want to early payout today?<br/>When you click the 'Consent' button, we will accept your request to<br/> early payout.</p>
+                        </div>
+                        <div class="modal-btn-wrap">
+                            <button type="button" class="HCAU-btn gray03" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="HCAU-btn primary">Consent</button>
+                        </div>
+                    </div>
+                    <!-- <div class="modal-footer">
+
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!-- HCAU-detail -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+            </div><!--//HCAU-contents-->
+        </div><!--//HCAU-contentainer-->
+    </div><!--//wrap-->
+    <footer include-html="/static/html/pc/genesis/footer.html"></footer>
+<script src="/static/html/pc/genesis/js/bootstrap.bundle.min.js"></script>
+<script src="/static/html/pc/genesis/js/main.js"></script>
+<script src="/static/html/pc/genesis/js/includeHTML.js"></script>
+<script src="/static/html/pc/genesis/js/includeRouter.js"></script>
+<script>
+includeHTML( function () {
+includeRouter( function () {
+});
+});
+
+</script>
+</body>
+
+</html>

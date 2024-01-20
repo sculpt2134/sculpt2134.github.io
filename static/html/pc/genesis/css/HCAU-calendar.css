@@ -1,0 +1,52 @@
+
+.toggle-button {
+    display: none;
+  }
+  
+  .calendar {
+  position: relative;
+  }
+  .calendar .HCAU-form.form-control {
+  padding-right: 50px;
+  }
+  .calendar span button,
+  .calendar span img {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  outline: none;
+  border: none;
+  background: none;
+  margin: -12px 0 0 0;
+  padding: 0;
+  }
+  
+  /* .datepicker-cell:not(.month).focused:not(.selected){border-radius: 50%;}*/
+  
+  .datepicker-main{padding:20px}
+  .datepicker span{border-radius:2rem}
+  .datepicker-cell.focused:not(.selected),
+  .datepicker-cell.selected, .datepicker-cell.selected:hover{background-color: #00AAD2;color:#fff;}
+  .datepicker-view.months.datepicker-grid,
+  .datepicker-view.years.datepicker-grid{border-bottom:1px solid #e5e5e5;border-right:1px solid #e5e5e5}
+  .datepicker-cell.month,
+  .datepicker-cell.year{border-top:1px solid #e5e5e5;border-left:1px solid #e5e5e5;border-radius:0;font-weight:bold;font-size:14px}
+  .datepicker-cell:not(.day){
+  flex-basis:50%;height:36px
+  }
+  .datepicker-cell.day,.datepicker .dow{min-height: 24px;
+  height: 2rem;
+  flex-basis: 2rem;
+  margin: 0.1rem;border-radius: 50% !important;border:1px solid #e5e5e5}
+  .datepicker .days-of-week .dow{margin:0.1rem ;max-width:32px}
+  .datepicker .days .dow:nth-child(1),.datepicker .days .dow:nth-child(2),.datepicker .days .dow:nth-child(3),.datepicker .days .dow:nth-child(4),
+  .datepicker .days .dow:nth-child(5){background-color: #444;color:#fff}
+  .datepicker .days .dow:nth-child(6){background-color: #1760B6;color:#fff}
+  .datepicker .days .dow:nth-child(7){background-color: #C31818;color:#fff}
+  
+  .form-control.date.datepicker-input:focus {
+    border-color: #00aad2 !important;
+    outline: 1px solid #00aad2 !important;
+    box-shadow:0 0 0 0
+  }
+  

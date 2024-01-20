@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>HCAU-PUBL</title>
+  <link rel="stylesheet" href="/static/html/pc/hyundai/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/pc/hyundai/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+    <div class="wrap">
+      <div class="HCAU-sidebar" include-html="/static/html/pc/hyundai/aside.html"></div>
+      <div class="HCAU-menubar" include-html="/static/html/pc/hyundai/menu.html"></div>
+  
+      <div class="HCAU-container">
+            <div class="HCAU-contents" id="contents">
+                <!-- HCAU-breadcrumb -->
+                <div class="HCAU-breadcrumb" include-html="/static/html/pc/hyundai/breadcrumb.html"></div>
+            <!-- //HCAU-breadcrumb -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////START PAGE CONTENTS/////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- HCAU-title -->
+<div class="HCAU-title">
+    <!-- class option : border-bottom -->
+    <div class="HCAU-h1">PERSONAL INFORMATION INQUIRY</div>
+</div>
+<!-- //HCAU-title -->
+
+<!-- HCAU-detail -->
+<div class="HCAU-detail">
+
+    <button type="button" class="HCAU-btn" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+        CPPE10001_P02
+    </button>
+
+    <!-- modal sample 3 -->
+    <div class="HCAU-modal modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg"><!-- modal-lg modal-md modal-sm -->
+            <div class="modal-content">
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/html/pc/hyundai/img/svg/ico_modal_close.svg" alt="Close" /></button>
+                <div class="modal-content-inner">
+                    <div class="modal-header">
+                        <div class="HCAU-h2" id="exampleModalLabel">Change Mobile Phone</div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="border-box edge">
+                            <div class="p32">
+
+                                <div class="HCAU-table HCAU-valid">
+                                    <table class="table fixed">
+                                        <colgroup>
+                                            <col style="width:150px">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th class="align-middle">Current</th>
+                                                <td class="align-middle">
+                                                    <div class="no-txt-input">
+                                                        <span class="HCAU-txt-sm">041 223 4466</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="align-middle">New</th>
+                                                <td class="align-middle">
+                                                    <div class="d-flex g12">
+                                                        <div class="flex-grow-1">
+                                                            <input type="text" class="form-control HCAU-form is-invalid" placeholder="Please enter mobile phone number" value="">
+                                                        </div>
+                                                        <button type="button" class="HCAU-btn btn-smd">Send an OTP</button>
+                                                    </div>
+                                                    <div class="invalid-feedback d-block">invalid message1</div>
+                                                    <div class="invalid-feedback d-block">invalid message2</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="align-middle">OTP authentication</th>
+                                                <td class="align-middle">
+                                                    <div class="d-flex g12">
+                                                        <div class="flex-grow-1 position-relative">
+                                                            <input type="text" class="form-control HCAU-form time-limit is-invalid" placeholder="Please enter the code" value="">
+                                                            <span class="time-limit-num">2:59</span>
+                                                        </div>
+                                                        <div>
+                                                            <button type="button" class="HCAU-btn btn-smd">OK</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="invalid-feedback d-block">invalid message1</div>
+                                                    <div class="invalid-feedback d-block">invalid message2</div>
+                                                    <div class="invalid-feedback d-block">invalid message3</div>
+                                                    <div class="invalid-feedback d-block">invalid message4</div>
+                                                    <div class="valid-feedback d-block">valid message1</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="HCAU-info-msg mt-2">
+                                    Hyundai Finance, Kia Finance, and Genesis Finance utilize integrated customer information.
+                                </p>
+                                <div class="d-flex g12 justify-content-center mt40">
+                                    <button type="button" class="HCAU-btn btn-large gray03">Cancel</button>
+                                    <button type="button" class="HCAU-btn btn-large primary" disabled>Change</button>
+                                    <!-- <button type="button" class="HCAU-btn btn-large" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="HCAU-btn btn-large">Save changes</button>
+                                    <button type="button" class="HCAU-btn btn-large">button</button>
+                                    <a href="#none" class="HCAU-btn btn-large">a link</a>
+                                    <a href="#none" class="HCAU-btn btn-large">a link</a> -->
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- <div class="modal-footer">
+
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- HCAU-detail -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+            </div><!--//HCAU-contents-->
+            <footer include-html="/static/html/pc/hyundai/footer.html"></footer>
+        </div><!--//HCAU-contentainer-->
+    </div><!--//wrap-->
+<script src="/static/html/pc/hyundai/js/bootstrap.bundle.min.js"></script>
+<script src="/static/html/pc/hyundai/js/main.js"></script>
+<script src="/static/html/pc/hyundai/js/includeHTML.js"></script>
+<script src="/static/html/pc/hyundai/js/includeRouter.js"></script>
+<script>
+includeHTML();
+</script>
+</body>
+</html>

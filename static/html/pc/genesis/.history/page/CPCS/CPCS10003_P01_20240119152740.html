@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>GENESIS-PUBL</title>
+  <link rel="stylesheet" href="/static/html/pc/genesis/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/pc/genesis/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+  <div class="wrap">
+    <div class="HCAU-sidebar" include-html="/static/html/pc/genesis/aside.html"></div>
+    <div class="HCAU-menubar" include-html="/static/html/pc/genesis/menu.html"></div>
+
+    <div class="HCAU-container">
+            <div class="HCAU-contents" id="contents">
+                <!-- HCAU-breadcrumb -->
+                <div class="HCAU-breadcrumb" include-html="/static/html/pc/genesis/breadcrumb.html"></div>
+            <!-- //HCAU-breadcrumb -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////START PAGE CONTENTS/////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- HCAU-title -->
+<div class="HCAU-title">
+    <!-- class option : border-bottom -->
+    <div class="HCAU-h1">repayment schedule</div>
+</div>
+<!-- //HCAU-title -->
+
+<!-- HCAU-detail -->
+<div class="HCAU-detail">
+    <button type="button" class="HCAU-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        CPCS10003_P01
+    </button>
+
+</div>
+
+
+<!-- modal sample 1 -->
+
+
+
+
+<div class="HCAU-modal modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true" role="dialog" style="">
+    <div class="modal-dialog modal-dialog-centered modal-lg"><!-- modal-lg modal-md modal-sm -->
+        <div class="modal-content">
+
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/html/pc/genesis/img/svg/ico_modal_close.svg" alt="Close"></button>
+            <div class="modal-content-inner">
+                <div class="modal-header">
+                    <div class="HCAU-h2" id="exampleModalLabel">Send repayment schedule email</div>
+                </div>
+                <div class="modal-body">
+                        <div class="modal-content-box g40 px80">
+                            <div>
+                                <ul class="HCAU-bullet-list">
+                                    <li>
+                                        The file will be sent to the email address registered in customer information.
+                                    </li>
+                                    <li>
+                                        If you would like to change the email address you will receive, please change the email address in your member information.
+                                        <span class="pt12"><a href="#none" class="link fw-bold">Change the email</a></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <input type="email" class="form-control HCAU-form" id="exampleInputEmail1" aria-describedby="emailHelp" value="hyundai@hyundaicapital.com" disabled="">
+                            </div>
+                        </div>
+                        <div class="modal-btn-wrap">
+                            <button type="button" class="HCAU-btn primary">Send</button>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- <div class="modal-footer">
+
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- HCAU-detail -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+            </div><!--//HCAU-contents-->
+        </div><!--//HCAU-contentainer-->
+    </div><!--//wrap-->
+    <footer include-html="/static/html/pc/genesis/footer.html"></footer>
+<script src="/static/html/pc/genesis/js/bootstrap.bundle.min.js"></script>
+<script src="/static/html/pc/genesis/js/main.js"></script>
+<script src="/static/html/pc/genesis/js/includeHTML.js"></script>
+<script src="/static/html/pc/genesis/js/includeRouter.js"></script>
+<script>
+includeHTML( function () {
+includeRouter( function () {
+});
+});
+
+</script>
+</body>
+
+</html>
