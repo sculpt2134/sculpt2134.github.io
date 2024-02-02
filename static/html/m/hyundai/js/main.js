@@ -30,3 +30,22 @@
         // console.log(tabName);
     });
   });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const button = document.querySelector('.native-scroll > div > button.active');
+    const left = button.getBoundingClientRect().left;
+    const nativeScroll = document.querySelector('.native-scroll');
+    const curLeft = nativeScroll.scrollLeft;
+    nativeScroll.scrollLeft = curLeft + left - 20;
+  });
+  const handleScroll = () => {
+    const header = document.querySelector('header');
+    if (window.scrollY >= 1) {
+        header.classList.add('scroll');
+    } else {
+        header.classList.remove('scroll');
+    }
+  };
+  window.addEventListener('scroll', handleScroll);
+  
+  //const carousel = new bootstrap.Carousel('#MortorsPromo','#FinancePromo')

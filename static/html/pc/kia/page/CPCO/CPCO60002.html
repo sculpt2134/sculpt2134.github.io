@@ -11,7 +11,7 @@
     <div class="wrap">
       <div class="HCAU-sidebar" include-html="/static/html/pc/kia/aside.html"></div>
       <div class="HCAU-menubar" include-html="/static/html/pc/kia/menu.html"></div>
-  
+
       <div class="HCAU-container">
             <div class="HCAU-contents" id="contents">
                 <!-- HCAU-breadcrumb -->
@@ -21,12 +21,11 @@
 <!--///////////////////////////////////START PAGE CONTENTS/////////////////////////////////////////////////////// -->
 <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-
 <!-- HCAU-title -->
 <div class="HCAU-title">
     <!-- class option : border-bottom -->
-    <div class="HCAU-h1">Sign up</div>
-    <div class="HCAU-txt-md">User authentication is required to sign up for the customer portal service.</div>
+    <div class="HCAU-h1">Register</div>
+    <div class="HCAU-txt-md">Please refer to the welcome pack email to obtain a copy of your contract number</div>
 </div>
 <!-- //HCAU-title -->
 
@@ -49,9 +48,9 @@
     <!-- HCAU-valid -->
     <form class="HCAU-valid needs-validation row gx-20 gy-28 mt-2" novalidate>
         <div class="col-md-6">
-            <label for="validationCustom01" class="HCAU-txt-md fw-bold mb-3">Loan number</label>
-            <input type="text" class="form-control HCAU-form is-invalid" id="validationCustom01" placeholder="Enter loan number" value="" required>
-            <div class="invalid-feedback">Please enter your loan number</div>
+            <label for="validationCustom01" class="HCAU-txt-md fw-bold mb-3">Contract number</label>
+            <input type="text" class="form-control HCAU-form is-invalid" id="validationCustom01" placeholder="Enter Contract number" value="" required>
+            <div class="invalid-feedback">Please enter your Contract number</div>
             <div class="invalid-feedback">Please enter a 16-digit combination of English and numbers.</div>
         </div>
         <div class="col-md-6">
@@ -76,7 +75,7 @@
 
 
 
-    <!-- <div class="g-notice">
+    <div class="g-notice">
         <dl>
             <dt>
                 <span class="ico-gnotice"><img src="/static/html/pc/kia/img/svg/ico_notice.svg" alt=""></span>
@@ -84,11 +83,11 @@
             </dt>
             <dd>
                 <ul class="HCAU-bullet-list">
-                    <li>The customer portal site is available only to customers who have a history of using loan products.</li>
+                    <li>If you do not have your contract number please <a href="#" class="text-decoration-underline gray04">click here</a> and enter your details to receive your contract number by email. Alternatively, please contact one of our friendly Customer Service Representatives on 1300 XXX XXX</li>
                 </ul>
             </dd>
         </dl>
-    </div> -->
+    </div>
 
     <!-- <div class="d-flex gap-3">
         <div class="border-box flex-fix p-4">
@@ -96,20 +95,28 @@
             <p class="pt12"><a href="#none" class="link">Make a payment</a></p>
         </div>
         <div class="border-box flex-fix p-4">
-            <p class="HCAU-txt-sm">Do you want to pay off all or part of your loan early?</p>
-            <p class="pt12"><a href="#none" class="link">pay off early</a></p>
+            <p class="HCAU-txt-sm">Do you want to payout all or part of your loan early?</p>
+            <p class="pt12"><a href="#none" class="link">Early payout</a></p>
         </div>
     </div> -->
 
+
+<script>
+    function maxLengthCheck(object){
+        if (object.value.length > object.maxLength){
+            object.value = object.value.slice(0, object.maxLength);
+        }
+    }
+</script>
 </div>
-<!-- //HCAU-detail -->
+<!-- HCAU-detail -->
 <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 <!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
 <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-</div><!--//HCAU-contents-->
-<footer include-html="/static/html/pc/kia/footer.html"></footer>
-</div><!--//HCAU-contentainer-->
-</div><!--//wrap-->
+            </div><!--//HCAU-contents-->
+            <footer class="HCAU-footer" include-html="/static/html/pc/kia/footer.html"></footer>
+        </div><!--//HCAU-contentainer-->
+    </div><!--//wrap-->
 <script src="/static/html/pc/kia/js/bootstrap.bundle.min.js"></script>
 <script src="/static/html/pc/kia/js/main.js"></script>
 <script src="/static/html/pc/kia/js/includeHTML.js"></script>
@@ -119,11 +126,3 @@ includeHTML();
 </script>
 </body>
 </html>
-
-<script>
-    function maxLengthCheck(object){
-        if (object.value.length > object.maxLength){
-            object.value = object.value.slice(0, object.maxLength);
-        }
-    }
-</script>

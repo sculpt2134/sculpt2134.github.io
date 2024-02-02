@@ -190,6 +190,10 @@
   margin-top: 12px;
 }
 
+.mt16 {
+  margin-top: 16px;
+}
+
 .mt20 {
   margin-top: 20px;
 }
@@ -266,6 +270,10 @@ a {
   width: 92px;
 }
 
+.w120 {
+  width: 120px;
+}
+
 .w180 {
   width: 180px;
 }
@@ -296,6 +304,10 @@ a {
 
 .h60 {
   height: 60px;
+}
+
+.h400 {
+  height: 400px;
 }
 
 .border-bottom {
@@ -394,6 +406,28 @@ a {
 
 .point-red {
   color: #EA0029;
+}
+
+.point02 {
+  color: #43b100;
+}
+
+.scroll-wrap {
+  overflow: auto;
+  min-height: 200px;
+  max-height: 500px;
+  height: 100%;
+}
+
+.dollar:before {
+  content: "$";
+  display: inline-block;
+  margin-right: 5px;
+  height: 20px;
+}
+
+.backdrop {
+  backdrop-filter: blur(6px) saturate(150%);
 }
 
 .HCAU-sidebar .sidebar-menu {
@@ -525,6 +559,10 @@ a {
   font-size: 14px;
   color: #37434C;
 }
+.HCAU-detail .border-top.bank {
+  padding-left: 36.5px;
+  padding-right: 36.5px;
+}
 
 .g-notice {
   border-top: 1px dashed #697279;
@@ -563,7 +601,7 @@ a {
   margin-left: 4px;
 }
 .HCAU-bullet-list li + li {
-  margin-top: 8px;
+  margin-top: 12px;
 }
 .HCAU-bullet-list .point-red {
   color: #EA0029;
@@ -810,6 +848,22 @@ a {
   width: 85px;
   text-align: center;
   font-weight: 700;
+}
+.HCAU-badge.success {
+  background: #EDF6FA;
+  color: #1D8ABC;
+  font-weight: 400;
+  margin-left: 12px;
+  min-width: 75px;
+  text-align: center;
+}
+.HCAU-badge.fail {
+  font-weight: 400;
+  background: #FEEBEE;
+  color: #ea0029;
+  margin-left: 12px;
+  min-width: 75px;
+  text-align: center;
 }
 
 .HCAU-step {
@@ -1669,8 +1723,8 @@ form + .g-notice {
 .HCAU-cs .chat-bot {
   background: #5d7d2b;
   box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
-  width: 70px;
-  height: 70px;
+  width: 52px;
+  height: 52px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1977,6 +2031,15 @@ form + .g-notice {
   background: #fff;
   color: #05141f;
 }
+.HCAU-tab-btn.half .nav-item {
+  flex-basis: 50%;
+}
+.HCAU-tab-btn.half .nav-item .active {
+  border-bottom-width: 2px;
+}
+.HCAU-tab-btn .nav-item:nth-child(3) .nav-link.active, .HCAU-tab-btn .nav-item:last-child .nav-link.active {
+  border-width: 1px;
+}
 
 .HCAU-tab-radio2 {
   display: flex;
@@ -2039,6 +2102,7 @@ form + .g-notice {
 
 .calendar .HCAU-form.form-control {
   padding-right: 50px;
+  opacity: 1;
 }
 
 .calendar span button,

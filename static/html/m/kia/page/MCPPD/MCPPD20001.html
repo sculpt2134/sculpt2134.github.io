@@ -18,121 +18,327 @@
             <div class="HCAU-contents" id="contents">
                 <!-- HCAU-title -->
                 <div class="HCAU-title">
-                    <div class="HCAU-h1">CALCULATE QUOTATION </div>
+                    <div class="HCAU-h1">CALCULATE QUOTATION</div>
                 </div>
                 <!-- //HCAU-title -->
                 <!-- HCAU-detail -->
 
-                <div class="HCAU-detail prd-keyvi">
-                        <div class="HCAU-flex-table flex-column">
-                            <img src="/static/html/pc/kia/img/bg_product-visual.png" >
-                            <div class="HCAU-txt-sm white">
-                                Flexible repayment plan of equal monthly<br>
-                                installments for up to 4 years<br>
-                                Set usage period
+                <div class="HCAU-detail product">
+
+
+                    <div>
+                        <div class="HCAU-step">
+                            <div class="step-num">
+                                <div class="step-item active">
+                                    <div class="num">1</div>
+                                </div>
+                                <div class="step-item ">
+                                    <div class="num">2</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="num">3</div>
+                                </div>
+                                <div class="step-item ">
+                                    <div class="num">4</div>
+                                </div>
+                                <div class="step-item ">
+                                    <div class="num">5</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="num">6</div>
+                                </div>
+                            </div>
+                            <div class="step-txt mt12">
+                                <div class="HCAU-txt-md active">Select Vehicle</div>
+                                <div class="HCAU-txt-md">Select Model/Option</div>
+                                <div class="HCAU-txt-md">Select Colour</div>
+                                <div class="HCAU-txt-md">Select Accessory</div>
+                                <div class="HCAU-txt-md">Vehicle quote results</div>
+                                <div class="HCAU-txt-md">Financial quote</div>
                             </div>
                         </div>
+                    </div>
+                    <!-- postcode-->
+                    <div class="postcode">
+                        <div class="mt32 mb20">
+                            <div class="inner d-flex justify-content-end align-items-center g12">
+                                <div class="HCAU-txt-md fw-bold text-end">Your postcode 4546</div>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#postcode">
+                                    <img src="/static/html/pc/hyundai/img/svg/ico_postcode.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Modal postcode-->
+                        <div class="HCAU-modal modal fade" id="postcode" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-fullscreen">
+                                <div class="modal-content">
+                                    <div class="modal-top">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                            <img src="/static/html/m/kia/img/ico_modal_close.svg" alt="Close">
+                                        </button>
+                                    </div>
+
+                                    <div class="modal-body postcode">
+                                        <div class="modal-header">
+                                            <div class="HCAU-h1" id="exampleModalLabel">
+                                                <span>Select membership type/<br/>Select postcode</span>
+                                                <div class="HCAU-txt-md mt12">After selecting the membership type<br/>
+                                                Please select a financial product</div>
+                                            </div>
+                                        </div>
+                                        <div class="pt12">
+                                            <div class="HCAU-form-wrap">
+                                               <div class="form-title HCAU-txt-md fw-bold">Select membership type</div>
+                                               <form>
+                                                <div class="HCAU-tab-radio2">
+                                                    <div>
+                                                        <input type="radio" class="btn-check radioTab" name="tab-radio" id="tab-radio01" value="tab-email" checked="">
+                                                        <label for="tab-radio01" class="HCAU-btn btn-smd">
+                                                            <span>Personal</span>
+                                                        </label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" class="btn-check radioTab" name="tab-radio" id="tab-radio02" value="tab-mobile">
+                                                        <label for="tab-radio02" class="HCAU-btn btn-smd">
+                                                            <span>Business</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="mt20">
+                                                    <div class="tab-radio-cont">
+                                                        <div class="tab-email">
+                                                            <input type="text" class="form-control HCAU-form" id="" value="hyundai@hcs.com" placeholder="Enter Email Address" readonly>
+                                                        </div>
+                                                        <div class="tab-mobile" style="display: none;">
+                                                            <input type="text" class="form-control HCAU-form" id="" value="01011111111" placeholder="Enter Mobile phone" readonly>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+                                            </form>
+                                            </div>
+                                            <div class="HCAU-form-wrap">
+                                                <div class="form-title HCAU-txt-md fw-bold">Postcode</div>
+                                                <div>
+                                                    <input type="text" class="form-control HCAU-form HCAU-form-invalid" id="form-txt05" aria-describedby="" placeholder="Enter your postcode">
+                                                    <div class="HCAU-invalid-feedback">
+                                                        Please enter postcode
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="btn-cta-wrap">
+                                            <!-- <button type="button" class="HCAU-btn btn-cta gray03" data-bs-dismiss="modal">Cancel</button> -->
+                                            <button type="button" class="HCAU-btn btn-cta primary">Ok</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- filter-->
+                    <div class="filter">
+
+                            <div class="border-box black d-flex justify-content-between align-items-center g12 p20">
+                                <div class="HCAU-txt-md fw-bold">Selected Filters</div>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#filter">
+                                    <img src="/static/html/m/kia/img/ico_filter.svg" alt="">
+                                </button>
+                            </div>
+
+                        <!-- Modal filter-->
+                        <div class="HCAU-modal modal fade" id="filter" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-fullscreen">
+                                <div class="modal-content">
+                                    <div class="modal-top">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                            <img src="/static/html/m/kia/img/ico_modal_close.svg" alt="Close">
+                                        </button>
+                                    </div>
+                                    <div class="modal-header">
+                                        <div class="HCAU-h1">Vehicle selection filter</div>
+                                    </div>
+                                    <div class="modal-body filter">
+
+                                        <div class="mt-2">
+                                            <div class="border-bottom black">
+                                                <div class="form-title HCAU-txt-md fw-bold">Vehicle Types</div>
+                                            </div>
+                                            <div class="d-flex flex-column g08 mt20">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input HCAU-form" type="checkbox" id="inlineCheckbox1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">All</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input HCAU-form" type="checkbox" id="inlineCheckbox11" checked>
+                                                    <label class="form-check-label" for="inlineCheckbox11">SUVs</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input HCAU-form" type="checkbox" id="inlineCheckbox12">
+                                                    <label class="form-check-label" for="inlineCheckbox12">Sedans</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input HCAU-form" type="checkbox" id="inlineCheckbox13">
+                                                    <label class="form-check-label" for="inlineCheckbox13">People Movers</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt32">
+                                            <div class="border-bottom black">
+                                                <div class="form-title HCAU-txt-md fw-bold">Power Train</div>
+                                            </div>
+                                            <div class="d-flex flex-column g08 mt20">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input HCAU-form" type="checkbox" id="inlineCheckbox2" checked>
+                                                    <label class="form-check-label" for="inlineCheckbox2">All</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input HCAU-form" type="checkbox" id="inlineCheckbox21">
+                                                    <label class="form-check-label" for="inlineCheckbox21">Electric</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input HCAU-form" type="checkbox" id="inlineCheckbox22">
+                                                    <label class="form-check-label" for="inlineCheckbox22">Plug in Hybrid</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input HCAU-form" type="checkbox" id="inlineCheckbox23">
+                                                    <label class="form-check-label" for="inlineCheckbox23">Gasoline</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt32">
+                                            <div class="border-bottom black">
+                                                <div class="form-title HCAU-txt-md fw-bold">Power Train</div>
+                                            </div>
+                                            <div class="d-flex flex-column g08 mt20">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input HCAU-form" type="checkbox" id="inlineCheckbox2" checked>
+                                                    <label class="form-check-label" for="inlineCheckbox2">All</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input HCAU-form" type="checkbox" id="inlineCheckbox21">
+                                                    <label class="form-check-label" for="inlineCheckbox21">Electric</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input HCAU-form" type="checkbox" id="inlineCheckbox22">
+                                                    <label class="form-check-label" for="inlineCheckbox22">Plug in Hybrid</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input HCAU-form" type="checkbox" id="inlineCheckbox23">
+                                                    <label class="form-check-label" for="inlineCheckbox23">Gasoline</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="btn-cta-wrap">
+                                            <button type="reset" class="HCAU-btn btn-cta gray03" >Reset</button>
+                                            <button type="button" class="HCAU-btn btn-cta primary">66 views</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
                         <div class="mt32">
-                            <div class="HCAU-table">
-                                <table>
-                                    <colgroup>
-                                        <col style="width:140px">
-                                        <col>
-                                    </colgroup>
-                                    <tbody>
-                                        <tr>
-                                            <th>
-                                                <span class="HCAU-txt-sm">Period</span>
-                                            </th>
-                                            <td>
-                                                <div class="HCAU-txt-sm">12~48M</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>
-                                                <span class="HCAU-txt-sm">Interest rate</span>
-                                            </th>
-                                            <td>
-                                                <div class="HCAU-txt-sm">8.0~11.0%</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>
-                                                <span class="HCAU-txt-sm">Late payment fee</span>
-                                            </th>
-                                            <td>
-                                                <div class="HCAU-txt-sm">25.00 $</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>
-                                                <span class="HCAU-txt-sm">Early termination fee</span>
-                                            </th>
-                                            <td>
-                                                <div class="HCAU-txt-sm">2% of remaining loan amount</div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="mt40">
-                            <div class="title-area">
-                                <div class="HCAU-txt-lg">
-                                    Repayment method
-                                </div>
-                            </div>
-                            <div>
-                                <ul class="HCAU-bullet-list black">
-                                    <li class="HCAU-txt-sm">Equal repayment method of principal and interest</li>
-                                    <li class="HCAU-txt-sm">Repayment of a certain amount every month</li>
-                                    <li class="HCAU-txt-sm">Set installment period in 12-month increments up to 48 months</li>
+                            <div class="HCAU-prd">
+                                <ul>
+                                    <li>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <span><img src="/static/html/pc/hyundai/img/@/no-image.png" alt="" class="error"></span>
+                                                <div class="HCAU-txt-md">IONIQ5</div>
+                                                <div class="HCAU-txt-sm">$ 67,943.30 ~ $ 93,488.30</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <span><img src="/static/html/pc/hyundai/img/@/car_img03.png" alt=""></span>
+                                                <div class="HCAU-txt-md">IONIQ6</div>
+                                                <div class="HCAU-txt-sm">$ 67,943.30 ~ $ 93,488.30</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <span><img src="/static/html/pc/hyundai/img/@/car_img02.png" alt=""></span>
+                                                <div class="HCAU-txt-md ">IONIQ5</div>
+                                                <div class="HCAU-txt-sm">$ 67,943.30 ~ $ 93,488.30</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card active"  onclick="location.href='/static/html/m/kia/page/MCPPD/MCPPD20003.html'">
+                                            <div class="card-body">
+                                            <span><img src="/static/html/pc/hyundai/img/@/car_img03.png" alt=""></span>
+                                                <div class="HCAU-txt-md ">SANTA FE</div>
+                                                <div class="HCAU-txt-sm">$ 67,943.30 ~ $ 93,488.30</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <span><img src="/static/html/pc/hyundai/img/@/car_img01.png" alt=""></span>
+                                                <div class="HCAU-txt-md ">IONIQ6</div>
+                                                <div class="HCAU-txt-sm">$ 67,943.30 ~ $ 93,488.30</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <span><img src="/static/html/pc/hyundai/img/@/car_img02.png" alt=""></span>
+                                                <div class="HCAU-txt-md ">IONIQ5</div>
+                                                <div class="HCAU-txt-sm">$ 67,943.30 ~ $ 93,488.30</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card">
+                                            <div class="card-body">
+                                            <span><img src="/static/html/pc/hyundai/img/@/car_img03.png" alt=""></span>
+                                                <div class="HCAU-txt-md ">SANTA FE</div>
+                                                <div class="HCAU-txt-sm">$ 67,943.30 ~ $ 93,488.30</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <span><img src="/static/html/pc/hyundai/img/@/car_img01.png" alt=""></span>
+                                                <div class="HCAU-txt-md ">IONIQ6</div>
+                                                <div class="HCAU-txt-sm">$ 67,943.30 ~ $ 93,488.30</div>
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="mt40">
-                            <div class="title-area">
-                                <div class="HCAU-txt-lg">
-                                    Recommended Customer
-                                </div>
-                            </div>
-                            <div>
-                                <ul class="HCAU-bullet-list black">
-                                    <li class="HCAU-txt-sm">Customers whose source of funds is stable income/salary</li>
-                                    <li class="HCAU-txt-sm">Customers who prefer equal payments</li>
-                                    <li class="HCAU-txt-sm">No additional costs upon contract expiration</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="mt40">
-                            <div class="HCAU-flex-table flex-column chart-wrap">
-                                <img src="/static/html/m/kia/img/bg_prdChart_07.svg" alt="">
-                                <div class="HCAU-txt-lg">Standard (fixed interest rate)</div>
-                                <div class="HCAU-txt-md">
-                                    A repayment method that divides the same<br>
-                                    amount every month
-                                </div>
-                            </div>
-                        </div>
 
-
+                    </div>
                 </div>
                 <!-- //HCAU-detail -->
             </div>
         </div>
         <!-- //HCAU-container -->
-        <!-- btn-cta-wrap -->
+        <!-- btn-cta-wrap
         <div class="btn-cta-wrap">
-            <button type="button" class="HCAU-btn btn-cta primary">
-                Find a dealer
+            <button type="button" class="HCAU-btn btn-cta primary" onclick="location.href='/static/html/m/kia/page/MCPPD/MCPPD20003.html'">
+                Next
             </button>
         </div>
-        <!-- //btn-cta-wrap -->
+        //btn-cta-wrap -->
         <script type="text/javascript" src="/static/html/m/kia/js/Footer.js"></script>
     </div>
     <!-- <script src="/static/html/m/kia/js/jquery-3.3.1.min.js"></script> -->
     <script src="/static/html/m/kia/js/bootstrap.bundle.min.js"></script>
-    <!-- <script type="module" src="js/main.js"></script> -->
+    <script type="module" src="/static/html/m/kia/js/main.js"></script>
 </body>
 
 </html>

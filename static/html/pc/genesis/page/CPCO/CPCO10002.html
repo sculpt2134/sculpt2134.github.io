@@ -7,164 +7,167 @@
   <link rel="stylesheet" href="/static/html/pc/genesis/css/main.css" />
   <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
 </head>
-<body>
+<body class="login">
     <div class="wrap main">      
         <div class="HCAU-menubar" include-html="/static/html/pc/genesis/nav.html" id="parallax__nav" style="position:fixed"></div>
-
         <div class="HCAU-container d-flex justify-content-between">
             <div class="HCAU-tlt-wrap">
                 <h1 class="HCAU-h1">genesis Finance<br>Customer portal</h1>
                 <p class="HCAU-h1 HCAU-txt-md">Take a closer look at the Genesis design philosophy<br/>through our concept vehicles. </p>
             </div>                    
-            <div class="HCAU-contents pe-0" style="min-height:1000px">
-                <div class="d-flex justify-content-between pe-40">
-                    <div class="HCAU-h2 title">Your accounts</div>
-                    <div class="ms-auto position-relative">
-                        <button class="carousel-control-prev" type="button" data-bs-target="#ProductDetail" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="31" height="31" rx="15.5" fill="#111111"/><rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="white"/><path d="M19.5 9L12.5 16L19.5 23" stroke="white" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#ProductDetail" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="31" height="31" rx="15.5" fill="#111111"/><rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="white"/><path d="M12.5 23L19.5 16L12.5 9" stroke="white" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+            <div class="HCAU-contents pe-0">
+                <div class="d-flex justify-content-between">
+                    <div class="HCAU-h2 title">Product usage details</div>
+                    <div class="position-relative">                        
                         <button class="carousel-control-more" type="button">
-                            <span class="carousel-control-more-icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"> <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" fill="#111111"/> <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="white"/> <g clip-path="url(#clip0_269_19759)"> <path d="M7.64453 16L24.3588 16" stroke="white" stroke-linecap="round" stroke-linejoin="round"/> <path d="M15.9492 24.3574L15.9492 7.64313" stroke="white" stroke-linecap="round" stroke-linejoin="round"/> </g> <defs> <clipPath id="clip0_269_19759"> <rect width="18" height="18" fill="white" transform="translate(7 25) rotate(-90)"/> </clipPath> </defs> </svg> </span>
+                            <span class="carousel-control-more-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.4549 10.9094H10.9094V15.4549C10.9094 15.9549 10.5004 16.364 10.0004 16.364C9.50036 16.364 9.09126 15.9549 9.09126 15.4549V10.9094H4.54581C4.04581 10.9094 3.63672 10.5004 3.63672 10.0004C3.63672 9.50036 4.04581 9.09126 4.54581 9.09126H9.09126V4.54581C9.09126 4.04581 9.50036 3.63672 10.0004 3.63672C10.5004 3.63672 10.9094 4.04581 10.9094 4.54581V9.09126H15.4549C15.9549 9.09126 16.364 9.50036 16.364 10.0004C16.364 10.5004 15.9549 10.9094 15.4549 10.9094Z" fill="white"/></svg></span>
                             <span class="visually-hidden">more</span>
                         </button>
                     </div>
                 </div>
                 <!--carousel-->
-                <div class="d-flex flex-column">
-                    <div id="ProductDetail" class="carousel slide product">                       
+                <div class="d-flex flex-column" style="margin-top:32px">
+                    <div class="carousel-btn">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#ProductDetail" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.4"><rect x="23.5" y="23.5" width="23" height="23" rx="11.5" transform="rotate(-180 23.5 23.5)" stroke="white"/><path d="M14.4636 8.47268L10.9363 12L14.4636 15.5272C14.8181 15.8818 14.8181 16.4545 14.4636 16.809C14.109 17.1636 13.5363 17.1636 13.1818 16.809L9.00904 12.6363C8.65449 12.2818 8.65449 11.709 9.00904 11.3545L13.1818 7.18177C13.5363 6.82723 14.109 6.82723 14.4636 7.18177C14.809 7.53632 14.8181 8.11813 14.4636 8.47268Z" fill="white"/></g></svg></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#ProductDetail" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="23" height="23" rx="11.5" stroke="white"/><path d="M9.53642 15.5273L13.0637 12L9.53642 8.47278C9.18187 8.11823 9.18187 7.5455 9.53642 7.19096C9.89096 6.83641 10.4637 6.83641 10.8182 7.19096L14.991 11.3637C15.3455 11.7182 15.3455 12.291 14.991 12.6455L10.8182 16.8182C10.4637 17.1728 9.89096 17.1728 9.53642 16.8182C9.19096 16.4637 9.18187 15.8819 9.53642 15.5273Z" fill="white"/></svg></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div id="ProductDetail" class="carousel slide product pe-0">                       
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <section>
-                                    <div class="title-wrap d-flex flex-column">
-                                        <div class="title-area d-flex justify-content-center">
-                                            <span class="HCAU-h3">Loan standard</span>
-                                            <span class="HCAU-badge type01 ms-2">Overdue</span>
-                                        </div>
-                                        
-                                        <div class="title-txt">ABCD 20233 9289 3845</div>
-                                        <div class="title-bgbox">
-                                            <div class="">14th<span>/60th times</span></div>
-                                            <div class="line"></div>
-                                            <div class="">11/02/23~11/02/27</div>
-                                        </div>
+                                <div class="title-wrap d-flex flex-column">
+                                    <span class="HCAU-badge type01">Overdue</span>
+                                    <div class="title-area d-flex justify-content-center">
+                                        <span class="HCAU-h3">Loan standard</span>                                            
                                     </div>
-                                    <div class="title-detail">    
-                                        <div>
-                                            <ul>
-                                                <li>
-                                                    <dl>
-                                                        <dt class="HCAU-txt-sm">Amount due</dt>
-                                                        <dd class="HCAU-txt-md">$ 409,000.69</dd>
-                                                    </dl>
-                                                </li>
-                                                <li>
-                                                    <dl>
-                                                        <dt class="HCAU-txt-sm">Due date</dt>
-                                                        <dd class="HCAU-txt-md">11/02/2023</dd>
-                                                    </dl>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div> 
-                                    
-                                </section>
+                                    <div class="title-bgbox d-flex">
+                                        <div class="">14th<span> / 60th</span></div>
+                                        <div class="">11/02/2023 ~ 11/02/2027</div>
+                                    </div>
+                                </div>
+                                <div class="title-detail">    
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <dl>
+                                                    <dt class="HCAU-txt-sm">Contract number</dt>
+                                                    <dd class="HCAU-txt-md">384950182734</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt class="HCAU-txt-sm">Amount due</dt>
+                                                    <dd class="HCAU-txt-md">$ 409,000.69</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt class="HCAU-txt-sm">Due date</dt>
+                                                    <dd class="HCAU-txt-md">11/02/2023</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                             <div class="carousel-item">
-                                <section>
-                                    <div class="title-wrap d-flex flex-column">
-                                        <div class="title-area d-flex justify-content-center">
-                                            <span class="HCAU-h3">Chattle mortgage_Only interest </span>
-                                            <span class="HCAU-badge type01 ms-2">Overdue</span>
-                                        </div>
-                                        
-                                        <div class="title-txt">ABCD 1234 9289 3845</div>
-                                        <div class="title-bgbox">
-                                            <div class="">14th<span>/60th times</span></div>
-                                            <div class="line"></div>
-                                            <div class="">11/02/23~11/02/27</div>
-                                        </div>
+                                <div class="title-wrap d-flex flex-column">
+                                    <span class="HCAU-badge type01">Overdue</span>
+                                    <div class="title-area d-flex justify-content-center">
+                                        <span class="HCAU-h3">Chattle mortgage_Only interest</span>                                            
                                     </div>
-                                    <div class="title-detail">    
-                                        <div>
-                                            <ul>
-                                                <li>
-                                                    <dl>
-                                                        <dt class="HCAU-txt-sm">Amount due</dt>
-                                                        <dd class="HCAU-txt-md">$ 409,000.69</dd>
-                                                    </dl>
-                                                </li>
-                                                <li>
-                                                    <dl>
-                                                        <dt class="HCAU-txt-sm">Due date</dt>
-                                                        <dd class="HCAU-txt-md">11/02/2023</dd>
-                                                    </dl>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>                                    
-                                </section>
+                                    <div class="title-bgbox d-flex">
+                                        <div class="">14th<span> / 60th</span></div>
+                                        <div class="">11/02/2023 ~ 11/02/2027</div>
+                                    </div>
+                                </div>
+                                <div class="title-detail">    
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <dl>
+                                                    <dt class="HCAU-txt-sm">Contract number</dt>
+                                                    <dd class="HCAU-txt-md">384950182734</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt class="HCAU-txt-sm">Amount due</dt>
+                                                    <dd class="HCAU-txt-md">$ 409,000.69</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt class="HCAU-txt-sm">Due date</dt>
+                                                    <dd class="HCAU-txt-md">11/02/2023</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                             <div class="carousel-item">
-                                <section>
-                                    <div class="title-wrap d-flex flex-column">
-                                        <div class="title-area d-flex justify-content-center">
-                                            <span class="HCAU-h3">Loan standard</span>
-                                            <span class="HCAU-badge type01 ms-2">Overdue</span>
-                                        </div>
-                                        
-                                        <div class="title-txt">ABCD 20233 9289 3845</div>
-                                        <div class="title-bgbox">
-                                            <div class="">14th<span>/60th times</span></div>
-                                            <div class="line"></div>
-                                            <div class="">11/02/23~11/02/27</div>
-                                        </div>
+                                <div class="title-wrap d-flex flex-column">
+                                    <span class="HCAU-badge type01">Overdue</span>
+                                    <div class="title-area d-flex justify-content-center">
+                                        <span class="HCAU-h3">Loan standard</span>                                            
                                     </div>
-                                    <div class="title-detail">    
-                                        <div>
-                                            <ul>
-                                                <li>
-                                                    <dl>
-                                                        <dt class="HCAU-txt-sm">Amount due</dt>
-                                                        <dd class="HCAU-txt-md">$ 409,000.69</dd>
-                                                    </dl>
-                                                </li>
-                                                <li>
-                                                    <dl>
-                                                        <dt class="HCAU-txt-sm">Due date</dt>
-                                                        <dd class="HCAU-txt-md">11/02/2023</dd>
-                                                    </dl>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div> 
-                                </section>
+                                    <div class="title-bgbox d-flex">
+                                        <div class="">14th<span> / 60th</span></div>
+                                        <div class="">11/02/2023 ~ 11/02/2027</div>
+                                    </div>
+                                </div>
+                                <div class="title-detail">    
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <dl>
+                                                    <dt class="HCAU-txt-sm">Contract number</dt>
+                                                    <dd class="HCAU-txt-md">384950182734</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt class="HCAU-txt-sm">Amount due</dt>
+                                                    <dd class="HCAU-txt-md">$ 409,000.69</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt class="HCAU-txt-sm">Due date</dt>
+                                                    <dd class="HCAU-txt-md">11/02/2023</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
+                        
                     </div>
                     
                 </div>
                 <!--//carousel-->
-                <div class="d-flex btn-wrap mt20 g12">
-                    <button type="button" class="HCAU-btn btn-xs">Make a payment</button>
+                <div class="d-flex btn-wrap">
+                    <button type="button" class="HCAU-btn btn-xs">Amount due</button>
                     <button type="button" class="HCAU-btn btn-xs">Copy of contract</button>
                     <button type="button" class="HCAU-btn btn-xs">Payment transactions</button>
                 </div>
-                <div class="d-flex justify-content-between pe-40 mt60">
-                    <div class="HCAU-h2 title">FAQ</div>
+                <div class="d-flex justify-content-between mt60">
+                    <div class="HCAU-h2 title">FAQS</div>
                     <div class="ms-auto position-relative">                        
                         <button class="carousel-control-more" type="button">
-                            <span class="carousel-control-more-icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"> <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" fill="#111111"/> <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="white"/> <g clip-path="url(#clip0_269_19759)"> <path d="M7.64453 16L24.3588 16" stroke="white" stroke-linecap="round" stroke-linejoin="round"/> <path d="M15.9492 24.3574L15.9492 7.64313" stroke="white" stroke-linecap="round" stroke-linejoin="round"/> </g> <defs> <clipPath id="clip0_269_19759"> <rect width="18" height="18" fill="white" transform="translate(7 25) rotate(-90)"/> </clipPath> </defs> </svg> </span>
+                            <span class="carousel-control-more-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.4549 10.9094H10.9094V15.4549C10.9094 15.9549 10.5004 16.364 10.0004 16.364C9.50036 16.364 9.09126 15.9549 9.09126 15.4549V10.9094H4.54581C4.04581 10.9094 3.63672 10.5004 3.63672 10.0004C3.63672 9.50036 4.04581 9.09126 4.54581 9.09126H9.09126V4.54581C9.09126 4.04581 9.50036 3.63672 10.0004 3.63672C10.5004 3.63672 10.9094 4.04581 10.9094 4.54581V9.09126H15.4549C15.9549 9.09126 16.364 9.50036 16.364 10.0004C16.364 10.5004 15.9549 10.9094 15.4549 10.9094Z" fill="white"/></svg></span>
                             <span class="visually-hidden">more</span>
                         </button>
                     </div>
                 </div>          
-                <div class="faq pe-40">
+                <div class="faq">
                     <div class="faq-inner">    
                         <div>
                             <ul>
@@ -193,91 +196,51 @@
             </div><!--//HCAU-contents-->
         </div><!--//HCAU-contentainer-->
         <!--HCAU-footer-->
-            <footer class="HCAU-footer d-flex justify-content-between">
-                
-                <div class="footer-inner">
-                    <div class="family-site">
-                    <div class="dropdown flex-fix">
-                        <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
-                            Family Site
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
-                        </ul>
-                    </div>
-                </div>      
-                <div class="copyright">
-                    Genesis Capital Australia © 2023 Genesis Capital Austrailia. All Rights Reserved.<br>
-                    Privacy Policy | Do Not Sell or Share My Personal Information | California Privacy Rights
-                </div>
-                </div>
-                
-                <div class="footer-inner">
-                    <div class="sns">
-                        <span>
-                            <a href="">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.1475 10.6666V16.6666H10.9459V10.75H12.8389L13.3327 8.24998H10.9459C10.9459 8.24998 10.9459 7.08331 10.9459 6.41665C10.9459 6.16665 11.0282 5.83331 11.4397 5.83331C12.0158 5.83331 12.7566 5.83331 12.7566 5.83331V3.33331C12.7566 3.33331 11.522 3.33331 10.2051 3.33331C9.38207 3.33331 8.1475 4.41665 8.1475 5.66665C8.1475 6.91665 8.1475 8.24998 8.1475 8.24998H6.66602V10.75L8.1475 10.6666Z" fill="#999999"/>
-                                </svg>
-                            </a>
-                        </span>
-                        <span>
-                            <a href="">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_91_5592)">
-                                    <path d="M5.85325 7.49908H2.72461V17.4999H5.85325V7.49908Z" fill="#999999"/>
-                                    <path d="M17.1255 12.138V17.5H13.9968V12.5008C13.9968 11.1862 13.839 10.1213 12.3077 10.1213C10.7763 10.1213 10.6208 11.1885 10.6208 12.5008V17.5H7.49219V7.49919H10.6208V8.92922C11.092 7.89027 11.9825 7.23297 13.6293 7.23297C13.7565 7.23297 13.879 7.23768 13.9968 7.24475C16.8216 7.41202 17.1255 9.53705 17.1255 12.138Z" fill="#999999"/>
-                                    <path d="M6.08333 4.29049C6.08333 3.30101 5.27997 2.5 4.29049 2.5C3.30101 2.5 2.5 3.30101 2.5 4.29049C2.5 5.27997 3.30101 6.08098 4.29049 6.08098C5.27997 6.08098 6.08098 5.27997 6.08098 4.29049H6.08333Z" fill="#999999"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_91_5592">
-                                    <rect width="20" height="20" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>
-                            </a>
-                        </span>
-                        <span>
-                            <a href="">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.0002 7.36127C8.57379 7.36127 7.36133 8.57373 7.36133 10.0002C7.36133 11.4266 8.57379 12.639 10.0002 12.639C11.4266 12.639 12.6391 11.4266 12.6391 10.0002C12.6391 8.57373 11.4266 7.36127 10.0002 7.36127Z" fill="#999999"/>
-                                    <path d="M13.3832 2.08331H6.69004C4.09914 2.08331 2.08398 4.09846 2.08398 6.6174V13.3106C2.08398 15.9015 4.09914 17.9166 6.69004 17.9166H13.3832C15.9022 17.9166 17.9173 15.9015 17.9173 13.3106V6.6174C17.9173 4.09846 15.9022 2.08331 13.3832 2.08331ZM10.0007 14.1742C7.69762 14.1742 5.89838 12.303 5.89838 10.0719C5.89838 7.84089 7.69762 5.89771 10.0007 5.89771C12.3037 5.89771 14.1029 7.76892 14.1029 9.99998C14.1029 12.231 12.3037 14.1742 10.0007 14.1742ZM14.2469 6.76134C13.7431 6.76134 13.3113 6.32952 13.3113 5.82574C13.3113 5.32195 13.7431 4.89013 14.2469 4.89013C14.7507 4.89013 15.1825 5.32195 15.1825 5.82574C15.1825 6.32952 14.7507 6.76134 14.2469 6.76134Z" fill="#999999"/>
-                                </svg>
-                
-                            </a>
-                        </span>
-                        <span>
-                            <a href="">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1655 3.92976C17.9546 4.13997 18.5755 4.76412 18.7857 5.55968C19.1673 6.99879 19.1641 9.99991 19.1641 9.99991C19.1641 9.99991 19.1641 13.001 18.7825 14.4401C18.5723 15.2325 17.9513 15.8566 17.1623 16.0701C15.7329 16.4549 9.99903 16.4549 9.99903 16.4549C9.99903 16.4549 4.26522 16.4549 2.83581 16.0701C2.04672 15.8598 1.4258 15.2357 1.21559 14.4401C0.833984 13.001 0.833984 9.99991 0.833984 9.99991C0.833984 9.99991 0.833984 6.99879 1.21883 5.55645C1.42903 4.76412 2.04995 4.13997 2.83904 3.92653C4.26845 3.54169 10.0023 3.54169 10.0023 3.54169C10.0023 3.54169 15.7329 3.54169 17.1655 3.92976ZM8.12657 7.27371V12.7262L12.9193 9.99994L8.12657 7.27371Z" fill="#999999"/>
-                                </svg>
-                
-                            </a>
-                        </span>
+        <footer class="HCAU-footer">
+            <div class="footer-inner">
+                <div class="d-flex">
+                    <div class="copyright">
+                        <p>Terms of Use  |  Privacy Policy  |  Cookie Policy  |  Policy  |  Terms</p>
+                        <span>©2024 Hyundai Capital Australia Pty Ltd ABN 42 611 226 316 Australian Credit Licence Number</span>
                     </div>
                     
                 </div>
-                <div class="HCAU-cs d-none">
-                    <a href="#" class="chat-bot">
-                        <img src="/static/html/pc/genesis/img/svg/ico_chat.svg" alt="">
-                        <span>CHAT</span>
-                    </a>
-                    <div class="contact-us">
-                        <div class="call">
-                            <img src="/static/html/pc/genesis/img/svg/ico_call.svg" alt="">
-                            <a href="tel:" class="HCAU-txt-sm">949 468 4000</a>
-                        </div>
-                        <div class="email mt-2">
-                            <img src="/static/html/pc/genesis/img/svg/ico_email.svg" alt="">
-                            <a href="mailto:" class="HCAU-txt-sm">genesis_master@genesis.com</a>
+                <div class="d-flex">
+                    <div class="family-site">
+                        <div class="dropdown flex-fix">
+                            <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                                Family Site
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                                <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                                <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                                <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                                <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </footer>
+            </div>
+            <div class="HCAU-cs">                
+                <div class="contact-us">
+                    <div class="email">
+                        <img src="/static/html/pc/genesis/img/svg/ico_email.svg" alt="">
+                        <a href="mailto:genesis_master@genesis.com" class="HCAU-txt-sm">Contact us<svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.8" d="M1 9.5L5 5.50002L1 1.5" stroke="white" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                    </div>
+                    <div class="call">
+                        <img src="/static/html/pc/genesis/img/svg/ico_call.svg" alt="">
+                        <a href="tel:" class="HCAU-txt-sm">1300 933 193</a>
+                        <a href="tel:" class="HCAU-txt-sm">+61 2000 0000</a>
+                    </div> 
+                </div>
+                <a href="#" class="chat-bot">
+                    <!-- ////circle chatbot icon//// 
+                        <img src="/static/html/pc/genesis/img/svg/ico_chat.svg" alt=""> -->
+                    <svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="50" rx="25" fill="#AF6249"/><rect x="10" y="9" width="32" height="32" rx="16" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M26 14.75C24.9645 14.75 24.125 15.5895 24.125 16.625C24.125 17.3939 24.5878 18.0546 25.25 18.344V19.8149C23.4152 19.8266 22.0568 19.8803 21.1224 19.9351C19.9043 20.0066 18.9183 20.9131 18.8148 22.1549C18.7464 22.9752 18.6875 24.119 18.6875 25.625C18.6875 27.131 18.7464 28.2748 18.8148 29.0951C18.9183 30.337 19.9043 31.2434 21.1225 31.3149C22.1799 31.377 23.7804 31.4375 26 31.4375C28.2196 31.4375 29.8201 31.377 30.8776 31.3149C32.0957 31.2434 33.0817 30.337 33.1852 29.0951C33.2535 28.2748 33.3125 27.131 33.3125 25.625C33.3125 24.119 33.2535 22.9752 33.1852 22.1549C33.0817 20.9131 32.0957 20.0066 30.8776 19.9351C29.9432 19.8803 28.5848 19.8266 26.75 19.8149V18.344C27.4122 18.0546 27.875 17.3939 27.875 16.625C27.875 15.5895 27.0355 14.75 26 14.75ZM24.125 23.75C24.125 23.3358 23.7892 23 23.375 23C22.9608 23 22.625 23.3358 22.625 23.75V24.125C22.625 24.5392 22.9608 24.875 23.375 24.875C23.7892 24.875 24.125 24.5392 24.125 24.125V23.75ZM28.625 23C28.2108 23 27.875 23.3358 27.875 23.75V24.125C27.875 24.5392 28.2108 24.875 28.625 24.875C29.0392 24.875 29.375 24.5392 29.375 24.125V23.75C29.375 23.3358 29.0392 23 28.625 23ZM23.2355 26.9543C23.5976 26.6129 24.0098 26.7644 24.345 27.0252C24.4015 27.0691 24.4978 27.1362 24.6357 27.2061C24.9082 27.3444 25.3552 27.5 26 27.5C26.6448 27.5 27.0918 27.3444 27.3643 27.2061C27.5022 27.1362 27.5985 27.0691 27.655 27.0252C27.9902 26.7644 28.4024 26.6129 28.7645 26.9543C29.0762 27.2482 29.0665 27.7476 28.769 28.0418C28.757 28.0536 28.7419 28.0681 28.7237 28.0849C28.6872 28.1183 28.6381 28.1608 28.5759 28.2092C28.4515 28.3059 28.2746 28.4263 28.0428 28.5439C27.5761 28.7806 26.898 29 26 29C25.102 29 24.4239 28.7806 23.9572 28.5439C23.7254 28.4263 23.5485 28.3059 23.4241 28.2092C23.362 28.1608 23.3128 28.1183 23.2763 28.0849C22.9569 27.7917 22.8943 27.276 23.2355 26.9543Z" fill="#AF6249"/><circle opacity="0.4" cx="82" cy="25" r="4" fill="white"/><circle opacity="0.7" cx="100" cy="25" r="4" fill="white"/><circle cx="118" cy="25" r="4" fill="white"/></svg>                        
+                </a>
+            </div>
+        </footer>
         <!--//HCAU-footer-->
     </div><!--//wrap-->
     

@@ -11,7 +11,7 @@
     <div class="wrap">
       <div class="HCAU-sidebar" include-html="/static/html/pc/genesis/aside.html"></div>
       <div class="HCAU-menubar" include-html="/static/html/pc/genesis/menu.html"></div>
-  
+
       <div class="HCAU-container">
             <div class="HCAU-contents" id="contents">
                 <!-- HCAU-breadcrumb -->
@@ -24,7 +24,7 @@
 <!-- HCAU-title -->
 <div class="HCAU-title">
     <!-- class option : border-bottom -->
-    <div class="HCAU-h1">Payment details</div>
+    <div class="HCAU-h1">Payment Transactions & Statements</div>
 </div>
 <!--//HCAU-title-->
 
@@ -32,21 +32,21 @@
 <div class="HCAU-detail">
 
     <section>
-        <div class="HCAU-search-bar d-flex g20 align-items-top">
-            <div class="d-flex g20">
+        <div class="HCAU-search-bar d-flex g20 align-items-top flex-wrap">
+            <div class="d-flex g20 radio-group  filter w-100">
                 <div class="radio-group">
                     <div class="radio-group-inner">
                         <div>
-                            <input type="radio" class="btn-check" name="options-base" id="option5" autocomplete="off" checked>
-                            <label class="HCAU-btn btn-smd" for="option5">1 month</label>
+                            <input type="radio" class="btn-check" name="options-base" id="option5" autocomplete="off">
+                            <label class="HCAU-btn btn-smd" for="option5">1 months</label>
                         </div>
                         <div>
                             <input type="radio" class="btn-check" name="options-base" id="option6" autocomplete="off">
-                            <label class="HCAU-btn btn-smd" for="option6">3 month</label>
+                            <label class="HCAU-btn btn-smd" for="option6">3 months</label>
                         </div>
                         <div>
-                            <input type="radio" class="btn-check" name="options-base" id="option7" autocomplete="off">
-                            <label class="HCAU-btn btn-smd" for="option7">6 month</label>
+                            <input type="radio" class="btn-check" name="options-base" id="option7" autocomplete="off" checked>
+                            <label class="HCAU-btn btn-smd" for="option7">6 months</label>
                         </div>
                         <div>
                             <input type="radio" class="btn-check" name="options-base" id="option8" autocomplete="off">
@@ -54,44 +54,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex g08 rg0 align-items-top flex-wrap">
-                    <div class="dropdown flex-grow-1">
-                        <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
-                            April 2023
-                        </button>
-                        <ul class="dropdown-menu flex-fill">
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#none">label 1</a></li>
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#none">label 2</a></li>
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#none">label 3</a></li>
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#none">label 4</a></li>
-                        </ul>
+                <div class="d-flex rg0 align-items-top flex-wrap w-100">
+                    <div id="sandbox2" class="HCAU-calendar flex-fix">
+                        <input type="text" class="HCAU-form form-control date" value="19/01/2023" disabled>
+                        <span>
+                            <img src="/static/html/m/genesis/img/ico_calendar_readonly.svg" alt="">
+                        </span>
+                        <div class="toggle-button"></div>
                     </div>
-                    <div class="h44 d-flex align-items-center">
-                        <div>~</div>
-                    </div>
-                    <div class="dropdown flex-grow-1">
-                        <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
-                            April 2023
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
-                        </ul>
-                    </div>
-                    <div class="invalid-feedback" style="display: block;">
-                        invalid message.
+                    <div class="d-flex align-items-center mx-1">~</div>                    
+                    <div id="sandbox1" class="HCAU-calendar flex-fix">
+                        <input type="text" class="HCAU-form form-control date" value="19/01/2023" disabled>
+                        <span>
+                            <img src="/static/html/m/genesis/img/ico_calendar_readonly.svg" alt="">
+                        </span>
+                        <div class="toggle-button"></div>
                     </div>
                 </div>
-            </div>
-            <div class="search-btn ms-auto">
-                <button type="button" class="HCAU-btn btn-smd full">Search</button>
+                <div class="search-btn">
+                    <button type="button" class="HCAU-btn btn-smd full">Search</button>
+                </div>
             </div>
         </div>
-    </section>
-    <section>
-        <div class="">
+        <div class="mt40">
             <div class="d-flex align-items-end">
                 <div class="HCAU-txt-sm fw-bold">10/11/2022 ~ 09/05/2023</div>
                 <div class="ms-auto d-flex gap-2">
@@ -246,7 +231,7 @@
                 <div class="HCAU-txt-lg fw-bold mt40">No matches found.</div>
             </div>
         </div>
-        
+
     </section>
 
     <div class="g-notice mx-40">
@@ -266,8 +251,8 @@
                 </ul>
             </dd>
         </dl>
-    
-    
+
+
 </div>
 
 </div>

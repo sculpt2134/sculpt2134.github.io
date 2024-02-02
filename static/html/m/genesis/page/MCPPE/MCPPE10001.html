@@ -13,16 +13,16 @@
 <body>
     <div class="wrap">
         <script type="text/javascript" src="/static/html/m/genesis/js/Header.js"></script>
-
+        <!-- HCAU-title -->
+        <div class="HCAU-title">
+            <div class="HCAU-h1">View personal information</div>
+            <div class="HCAU-txt-md gray04">Please make sure your personal information is up to date.</div>
+        </div>
+        <!-- //HCAU-title -->
         <!-- HCAU-container -->
         <div class="HCAU-container">
             <div class="HCAU-contents" id="contents">
-                <!-- HCAU-title -->
-                <div class="HCAU-title">
-                    <div class="HCAU-h1">View personal information</div>
-                    <div class="HCAU-txt-md gray04">Please make sure your personal information is up to date.</div>
-                </div>
-                <!-- //HCAU-title -->
+
                 <!-- HCAU-detail -->
                 <div class="HCAU-detail">
 
@@ -36,7 +36,7 @@
                                 <tbody>
                                     <tr>
                                         <th>
-                                            <span class="HCAU-txt-sm">E-mail ID</span>
+                                            <span class="HCAU-txt-sm">User ID</span>
                                         </th>
                                         <td>
                                             <div class="HCAU-txt-sm">hyundai@hcs.com</div>
@@ -60,7 +60,7 @@
                                     </tr> -->
                                     <tr>
                                         <th>
-                                            <span class="HCAU-txt-sm">E-mail</span>
+                                            <span class="HCAU-txt-sm">E-mail address</span>
                                         </th>
                                         <td>
                                             <div class="d-flex justify-content-between align-items-center">
@@ -117,18 +117,20 @@
 
 
                     <div class="g-notice border-top-dashed">
-                        <div class="border-box edge px-4 py20">
-                            <div class="HCAU-txt-sm">Would you like to be informed of the product and service?</div>
-                            <div class="mt12">
-                                <a href="" class="link HCAU-txt-sm">Opt in to marketing communications</a>
-                            </div>
-                        </div>
-                        <div class="border-box edge px-4 py20 mt12">
-                            <div class="HCAU-txt-sm">Would you like to leave the customer portal service?</div>
-                            <div class="mt12">
-                                <a href="" class="link HCAU-txt-sm">Delete Customer Portal account permanently</a>
-                            </div>
-                        </div>
+                        <dl>
+                            <dt>
+                                <span class="ico-gnotice"><img src="/static/html/m/genesis/img/ico_notice.svg" alt=""></span>
+                                <span class="HCAU-txt-sm">Guidance Notice</span>
+                            </dt>
+                            <dd>
+                                <ul class="HCAU-bullet-list">
+                                    <li class="HCAU-txt-sm">
+                                        You can change your marketing preferences.<br>
+                                        <a href="#none" class="link HCAU-txt-sm ms-0">Marketing preferences</a>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
                     </div>
 
                 </div>
@@ -148,7 +150,7 @@
     </div>
     <!-- <script src="/static/html/m/genesis/js/jquery-3.3.1.min.js"></script> -->
     <script src="/static/html/m/genesis/js/bootstrap.bundle.min.js"></script>
-    <!-- <script type="module" src="js/main.js"></script> -->
+    <script type="module" src="/static/html/m/genesis/js/main.js"></script>
 </body>
 
 </html>

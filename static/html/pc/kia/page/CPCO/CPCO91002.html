@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>HCAU-PUBL</title>
+  <link rel="stylesheet" href="/static/html/pc/kia/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/pc/kia/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+    <div class="wrap">
+      <div class="HCAU-sidebar" include-html="/static/html/pc/kia/aside.html"></div>
+      <div class="HCAU-menubar" include-html="/static/html/pc/kia/menu.html"></div>
+
+      <div class="HCAU-container">
+            <div class="HCAU-contents" id="contents">
+                <!-- HCAU-breadcrumb -->
+                <div class="HCAU-breadcrumb" include-html="/static/html/pc/kia/breadcrumb.html"></div>
+            <!-- //HCAU-breadcrumb -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////START PAGE CONTENTS/////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- HCAU-title -->
+<div class="HCAU-title">
+    <!-- class option : border-bottom -->
+    <div class="HCAU-h1">FIND contract number</div>
+    <div class="HCAU-txt-md">In order to find your contract number, you will need to verify your identity.</div>
+</div>
+<!-- //HCAU-title -->
+
+<!-- HCAU-detail -->
+<div class="HCAU-detail">
+
+
+    <!-- HCAU-tab -->
+    <div class="HCAU-tab">
+        <ul class="nav nav-tabs" id="" role="tablist">
+            <li class="nav-item"><button class="nav-link" id="tab01"  data-bs-target="#tabCont01" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Personal</button></li>
+            <li class="nav-item"><button class="nav-link active" id="tab02" data-bs-target="#tabCont02" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Business</button></li>
+        </ul>
+    </div>
+    <!-- //HCAU-tab -->
+
+    <section>
+
+        <form class="HCAU-valid needs-validation row gx-20 gy-28 mt12" novalidate="">
+            <div class="col-md-6">
+                <label for="validationCustom01" class="HCAU-txt-md fw-bold mb-3">ABN</label>
+                <input type="text" class="form-control HCAU-form" id="validationCustom01" placeholder="Enter 11 digit number" value="" required="" >
+                <!-- <div class="invalid-feedback d-block">invalid message1.</div> -->
+                <!-- <div class="invalid-feedback d-block">invalid message2.</div> -->
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom01" class="HCAU-txt-md fw-bold mb-3">Mobile Phone</label>
+                <input type="text" class="form-control HCAU-form" id="validationCustom01" placeholder="Enter only 8 digits" value="" required >
+                <div class="invalid-feedback">Please enter your loan number</div>
+                <div class="invalid-feedback">Please enter a 16-digit combination of English and numbers.</div>
+            </div>
+
+        </form>
+
+        <div class="cta-btn-wrap">
+            <div class="d-flex g12 justify-content-center">
+                <!-- <button type="button" class="HCAU-btn btn-large">List</button> -->
+                <!-- <button type="button" class="HCAU-btn btn-large gray03">Home</button> -->
+                <button type="submit" class="HCAU-btn btn-large primary">Identification</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- <div class="g-notice">
+        <dl>
+            <dt>
+                <span class="ico-gnotice"><img src="/static/html/pc/kia/img/svg/ico_notice.svg" alt=""></span>
+                <span>Guidance Notice</span>
+            </dt>
+            <dd>
+                <ul class="HCAU-bullet-list">
+                    <li>Upon user authentication, the password setting URL is sent to the registered e-mail.</li>
+                </ul>
+            </dd>
+        </dl>
+    </div> -->
+
+    <!-- <div class="d-flex gap-3">
+        <div class="border-box flex-fix p-4">
+            <p class="HCAU-txt-sm">Do you want to make a payment before your due date?o make a payment before your due date?</p>
+            <p class="pt12"><a href="#none" class="link">Make a payment</a></p>
+        </div>
+        <div class="border-box flex-fix p-4">
+            <p class="HCAU-txt-sm">Do you want to payout all or part of your loan early?</p>
+            <p class="pt12"><a href="#none" class="link">Early payout</a></p>
+        </div>
+    </div> -->
+
+</div>
+<!-- HCAU-detail -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+            </div><!--//HCAU-contents-->
+            <footer class="HCAU-footer" include-html="/static/html/pc/kia/footer.html"></footer>
+        </div><!--//HCAU-contentainer-->
+    </div><!--//wrap-->
+
+<script src="/static/html/pc/kia/js/bootstrap.bundle.min.js"></script>
+<script src="/static/html/pc/kia/js/main.js"></script>
+<script src="/static/html/pc/kia/js/includeHTML.js"></script>
+<script src="/static/html/pc/kia/js/includeRouter.js"></script>
+<script>
+includeHTML( function () {
+includeRouter( function () {
+});
+});
+
+</script>
+</body>
+
+</html>

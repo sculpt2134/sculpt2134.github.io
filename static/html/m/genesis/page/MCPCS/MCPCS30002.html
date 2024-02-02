@@ -13,182 +13,84 @@
 <body>
     <div class="wrap">
         <script type="text/javascript" src="/static/html/m/genesis/js/Header.js"></script>
-
+        <!-- HCAU-title -->
+        <div class="HCAU-title">
+            <div class="HCAU-h1">complaint</div>
+        </div>
+        <!-- //HCAU-title -->
         <!-- HCAU-container -->
         <div class="HCAU-container">
             <div class="HCAU-contents" id="contents">
-                <!-- HCAU-title -->
-                <div class="HCAU-title">
-                    <div class="HCAU-h1">Submit e-complaint</div>
-                </div>
-                <!-- //HCAU-title -->
+
                 <!-- HCAU-detail -->
                 <div class="HCAU-detail">
-
-                    <div>
-                        <div class="title-area">
-                            <div class="HCAU-txt-lg">Contract Number</div>
-                        </div>
-                        <div>
-                            <button class="HCAU-btn dropdown-toggle HCAU-form-invalid" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">Select Contract Number</button>
-                            <div class="invalid-feedback d-block">invalid message.</div>
-                            <div class="HCAU-bottom-sheet offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-                                <div class="offcanvas-header">
-                                    <!-- <h5 class="offcanvas-title" id="offcanvasBottomLabel">bottom sheet title</h5> -->
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-                                        <img src="/static/html/m/genesis/img/ico_modal_close.svg" alt="Close">
-                                    </button>
-                                </div>
-                                <div class="offcanvas-body">
-                                    <ul class="bottom-sheet-item">
-                                        <li><a href="#none" class="HCAU-txt-sm">Select object 1</a></li>
-                                        <li><a href="#none" class="HCAU-txt-sm">Select object 2</a></li>
-                                        <li><a href="#none" class="HCAU-txt-sm">Select object 3</a></li>
-                                        <li><a href="#none" class="HCAU-txt-sm">Select object 4</a></li>
-                                        <li><a href="#none" class="HCAU-txt-sm">Select object 5</a></li>
-                                    </ul>
-                                </div>
+                    <ul class="HCAU-bullet-list">
+                        <li class="HCAU-txt-sm">Your feedback is important to us. If you would like to provide feedback or make a Complaint regarding our service, please complete the details in the box below. We will reply to you via email within 48 hours.</li>
+                        <li class="HCAU-txt-sm">If your enquiry is urgent, or you would like to speak with someone, please contact our Customer Service team on 1300 XXX XXX.</li>
+                    </ul>
+                    <div class="mt52">
+                        <div class="HCAU-form-wrap">
+                            <div class="form-title HCAU-txt-md fw-bold">Contract Number</div>
+                            <div>
+                                <input type="text" class="form-control HCAU-form black" id="" value="H2023NA0002481" placeholder="" readonly="">
                             </div>
+                        </div>
+                        <div class="position-relative mt20">
+                            <textarea class="form-control HCAU-form HCAU-form-invalid" id="exampleFormControlTextarea1" rows="6" placeholder="Please provide as much information as possible." required=""></textarea>
+                            <p class="position-absolute end-0 bottom-0 HCAU-txt-xs gray03 mx-3 my-3"><span class="black">0</span>/5000byte</p>
+                        </div>
+                        <div class="invalid-feedback d-block">
+                            Please enter the details of your complaint
                         </div>
                     </div>
                     <div class="mt52">
-                        <div class="title-area">
-                            <div class="HCAU-txt-lg">How to Contract first</div>
-                        </div>
-                        <div>
-                            <form>
-                                <div class="HCAU-tab-radio2">
-                                    <div>
-                                        <input type="radio" class="btn-check radioTab" name="tab-radio" id="tab-radio01" value="tab-email" checked="">
-                                        <label for="tab-radio01" class="HCAU-btn btn-smd">
-                                            <span>E-mail</span>
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" class="btn-check radioTab" name="tab-radio" id="tab-radio02" value="tab-mobile">
-                                        <label for="tab-radio02" class="HCAU-btn btn-smd">
-                                            <span>Mobile</span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="mt20">
-                                    <div class="tab-radio-cont">
-                                        <div class="tab-email">
-                                            <input type="text" class="form-control HCAU-form" id="" value="hyundai@hcs.com" placeholder="Enter Email Address" readonly>
-                                        </div>
-                                        <div class="tab-mobile" style="display: none;">
-                                            <input type="text" class="form-control HCAU-form" id="" value="01011111111" placeholder="Enter Mobile phone" readonly>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="mt52">
-                        <div class="title-area">
-                            <div class="HCAU-txt-lg">Type of Complaint</div>
-                        </div>
-                        <div>
-                            <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom2">Select a Service category</button>
-                            <div class="invalid-feedback d-block">invalid message.</div>
-                            <div class="HCAU-bottom-sheet offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom2" aria-labelledby="offcanvasBottomLabel">
-                                <div class="offcanvas-header">
-                                    <!-- <h5 class="offcanvas-title" id="offcanvasBottomLabel">bottom sheet title</h5> -->
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-                                        <img src="/static/html/m/genesis/img/ico_modal_close.svg" alt="Close">
-                                    </button>
-                                </div>
-                                <div class="offcanvas-body">
-                                    <ul class="bottom-sheet-item">
-                                        <li><a href="#none" class="HCAU-txt-sm">Select object 1</a></li>
-                                        <li><a href="#none" class="HCAU-txt-sm">Select object 2</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt12">
-                            <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom2" disabled>Select detail type</button>
-                        </div>
-                    </div>
-                    <div class="mt52">
-                        <div class="title-area">
-                            <div class="HCAU-txt-lg">Details</div>
-                        </div>
-                        <div class="HCAU-valid">
-                            <div class="position-relative">
-                                <textarea class="form-control HCAU-form HCAU-form-invalid" id="exampleFormControlTextarea1" rows="6" placeholder="Enter details" required=""></textarea>
-                                <p class="position-absolute end-0 bottom-0 HCAU-txt-xs gray03 mx-3 my-3"><span class="black">0</span>/5000byte</p>
-                            </div>
-                            <div class="invalid-feedback d-block">
-                                invalid message.
+                        <div class="HCAU-txt-sm text-center">In the event we are unable to resolve your complaint or if you are unsatisfied with our response, you may contact the Australian Financial Complaints Authority (AFCA) and request further investigation of your complaint.</div>
+                        <div class="mt20">
+                            <div class="HCAU-table">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:140px">
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                <span class="HCAU-txt-sm">Website</span>
+                                            </th>
+                                            <td>
+                                                <div class="HCAU-txt-sm"><a href="https://www.afca.org.au" target="_blank" class="text-decoration-underline">www.afca.org.au</a></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <span class="HCAU-txt-sm">Telephone</span>
+                                            </th>
+                                            <td>
+                                                <div class="HCAU-txt-sm">1800 931 678 (free call)</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <span class="HCAU-txt-sm">E-mail</span>
+                                            </th>
+                                            <td>
+                                                <div class="HCAU-txt-sm"><a href="mailto:info@afca.org.au" class="text-decoration-underline">info@afca.org.au</a></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <span class="HCAU-txt-sm">In writing to</span>
+                                            </th>
+                                            <td>
+                                                <div class="HCAU-txt-sm">Australian Financial Complaints Authority, GPO Box 3, Melbourne VIC 3001</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
-                    <div class="mt52">
-                        <div class="title-area">
-                            <div class="HCAU-txt-lg">Supporting Document (Optional)</div>
-                        </div>
-                        <div class="HCAU-valid">
-                            <div class="filebox d-flex g12">
-                                <div class="flex-fill position-relative">
-                                    <input type="text" class="form-control HCAU-form" id="" value="text.pdf">
-                                    <input type="file" id="file">
-                                    <a href="" class="btn-clear"><img src="/static/html/pc/hyundai/img/svg/ico_clear.svg" alt="Close"></a>
-                                </div>
-                                <div>
-                                    <button type="button" class="HCAU-btn btn-smd">
-                                        <label for="file">Search</label>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="filebox d-flex g12 mt12">
-                                <div class="flex-fill position-relative">
-                                    <input type="text" class="form-control HCAU-form" id="" value="text.pdf">
-                                    <input type="file" id="file">
-                                    <a href="" class="btn-clear"><img src="/static/html/pc/hyundai/img/svg/ico_clear.svg" alt="Close"></a>
-                                </div>
-                                <div>
-                                    <button type="button" class="HCAU-btn btn-smd">
-                                        <label for="file">Search</label>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="filebox d-flex g12 mt12">
-                                <div class="flex-fill position-relative">
-                                    <input type="text" class="form-control HCAU-form" id="" value="text.pdf">
-                                    <input type="file" id="file">
-                                    <a href="" class="btn-clear"><img src="/static/html/pc/hyundai/img/svg/ico_clear.svg" alt="Close"></a>
-                                </div>
-                                <div>
-                                    <button type="button" class="HCAU-btn btn-smd">
-                                        <label for="file">Search</label>
-                                    </button>
-                                </div>
-                            </div>
 
-                            <div class="HCAU-info-msg">
-                                Only document and image files of 3Mbyte or less can be registered.
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="g-notice border-top-dashed">
-                        <dl>
-                            <dt>
-                                <span class="ico-gnotice"><img src="/static/html/m/genesis/img/ico_notice.svg" alt=""></span>
-                                <span class="HCAU-txt-sm">Guidance Notice</span>
-                            </dt>
-                            <dd>
-                                <ul class="HCAU-bullet-list">
-                                    <li class="HCAU-txt-sm">개인 정보 보호를 위해 로그인 후 15분 이상 경과하면 자동 로그아웃 됩니다.</li>
-                                    <li class="HCAU-txt-sm">민원내용 작성 중에 자동 로그아웃 될 수 있으니, 메모장 등의 보조 프로그램 사용을 권장합니다.</li>
-                                    <li class="HCAU-txt-sm">회원님께서 기재하신 연락처 및 이메일 주소(신규 정보 포함)는 고객포털 회원 가입시 동의한 “개인정보의 수집 이용에 대한 동의＂에 따라 처리됩니다.</li>
-                                    <li class="HCAU-txt-sm">회원님께서 기재하신 연락처 및 이메일 주소(신규 정보 포함)는 고객포털 회원 가입시 동의한 “개인정보의 수집 이용에 대한 동의＂에 따라 처리됩니다.</li>
-                                </ul>
-                            </dd>
-                        </dl>
-                    </div>
 
                 </div>
                 <!-- //HCAU-detail -->
@@ -198,8 +100,8 @@
 
         <!-- btn-cta-wrap -->
         <div class="btn-cta-wrap">
-            <button type="button" class="HCAU-btn btn-cta gray03">Cancel</button>
-            <button type="button" class="HCAU-btn btn-cta primary">Receipt</button>
+            <!-- <button type="button" class="HCAU-btn btn-cta gray03">Cancel</button> -->
+            <button type="button" class="HCAU-btn btn-cta primary">Submit</button>
         </div>
         <!-- //btn-cta-wrap -->
 

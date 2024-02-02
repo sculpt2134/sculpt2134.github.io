@@ -59,7 +59,6 @@ $font-size-xs : 11px;
 .py35{padding-top: 35px;padding-bottom: 35px;}
 .py40{padding-top: 40px;padding-bottom: 40px;}
 .py60{padding-top: 60px;padding-bottom: 60px;}
-
 .px20{padding-left: 20px;padding-right: 20px;}
 .px32{padding-left: 32px !important;padding-right: 32px !important;}
 .px36{padding-left: 32px;padding-right: 36px;}
@@ -72,6 +71,7 @@ $font-size-xs : 11px;
 .mt0{margin-top: 0px;}
 .mt10{margin-top: 10px;}
 .mt12{margin-top: 12px;}
+.mt16{margin-top: 16px;}
 .mt20{margin-top: 20px;}
 .mt28{margin-top: 28px;}
 .mt32{margin-top: 32px;}
@@ -94,6 +94,7 @@ a{text-decoration: none;}
 .w50{width: 50px;}
 .w80{width: 80px;}
 .w92{width: 92px;}
+.w120{width: 120px;}
 .w180{width: 180px;}
 .w200{width: 200px;}
 .w320{width: 320px;}
@@ -102,6 +103,7 @@ a{text-decoration: none;}
 .h44{height: 44px;}
 .h52{height: 52px;}
 .h60{height: 60px;}
+.h400{height: 400px;}
 
 .border-bottom{border-bottom:1px solid $border-color;}
 .border-bottom.black{border-color: $black !important;}
@@ -130,8 +132,14 @@ a{text-decoration: none;}
 .black{color: $black}
 .point{color: $point}
 .point-red{color: $point-red}
-
-
+.point02{color: $primary}
+.scroll-wrap{overflow:auto;min-height:200px;max-height:500px;height:100%}
+.dollar{
+    &:before{content:"$";display: inline-block;margin-right:5px;height:20px;}
+}
+.backdrop{
+    backdrop-filter: blur(6px) saturate(150%);
+}
 //사이드바
 .HCAU-sidebar{
     .sidebar-menu{
@@ -259,6 +267,10 @@ a{text-decoration: none;}
             .sub-title{font-size: 14px;color: $gray04;}
         }
     }
+    .border-top.bank{
+        padding-left:36.5px;
+        padding-right:36.5px;
+    }  
 }
 
 //안내
@@ -306,7 +318,7 @@ a{text-decoration: none;}
             top: 7px;
         }
         .link{margin-left: 4px;}
-        & + li{margin-top: 8px;}
+        & + li{margin-top: 12px;}
     }
     .point-red{color: $point-red;}
     .point-red:before{
@@ -610,6 +622,8 @@ a{text-decoration: none;}
     &.type03 {color: $point;background: #EBF5F9;}
     &.type04 {color: #999; background: #f5f5f5;}
     &.small{width:85px;text-align:center;font-weight:700;}
+    &.success{background:#EDF6FA ;color:#1D8ABC;font-weight: 400;margin-left:12px;min-width:75px;text-align: center;}
+    &.fail{font-weight: 400;background:#FEEBEE;color: #ea0029;margin-left:12px;min-width:75px;text-align: center;}
 }
 
 //스텝
@@ -1421,8 +1435,8 @@ form + .g-notice {
 	.chat-bot {
 		background: $point;
         box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.10);
-		width: 70px;
-		height: 70px;
+		width: 52px;
+		height: 52px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -1597,6 +1611,7 @@ form + .g-notice {
         }
         .HCAU-table.type04{padding-top:23px;padding-bottom:23px;}
     }
+    
 }
     //product table
     .HCAU-table.type03{
@@ -1656,7 +1671,12 @@ form + .g-notice {
             color: $black;
         }
     }
+   
+}
+&.half .nav-item{flex-basis:50%;
+    .active{    border-bottom-width: 2px }
     }
+    .nav-item:nth-child(3) .nav-link.active,.nav-item:last-child .nav-link.active{border-width: 1px;}
 }
 .HCAU-tab-radio2{
     display: flex;
@@ -1717,7 +1737,7 @@ form + .g-notice {
     position: relative;
 }
 .calendar .HCAU-form.form-control {
-    padding-right: 50px;
+    padding-right: 50px;opacity: 1;
 }
 .calendar span button,
 .calendar span img {

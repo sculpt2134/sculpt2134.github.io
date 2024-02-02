@@ -1,6 +1,9 @@
 /*monokai-sublime.min.css*/
 pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{background:#23241f;color:#f8f8f2}.hljs-subst,.hljs-tag{color:#f8f8f2}.hljs-emphasis,.hljs-strong{color:#a8a8a2}.hljs-bullet,.hljs-link,.hljs-literal,.hljs-number,.hljs-quote,.hljs-regexp{color:#ae81ff}.hljs-code,.hljs-section,.hljs-selector-class,.hljs-title{color:#a6e22e}.hljs-strong{font-weight:700}.hljs-emphasis{font-style:italic}.hljs-attr,.hljs-keyword,.hljs-name,.hljs-selector-tag{color:#f92672}.hljs-attribute,.hljs-symbol{color:#66d9ef}.hljs-class .hljs-title,.hljs-params,.hljs-title.class_{color:#f8f8f2}.hljs-addition,.hljs-built_in,.hljs-selector-attr,.hljs-selector-id,.hljs-selector-pseudo,.hljs-string,.hljs-template-variable,.hljs-type,.hljs-variable{color:#e6db74}.hljs-comment,.hljs-deletion,.hljs-meta{color:#75715e}
-
+@font-face {font-family:'HYRegular';src:url("./Youandi_Modern_TextRegular.eot");
+  src:local('※'), url("./Youandi_Modern_TextRegular.woff") ;
+  font-weight:normal;font-style:normal;}
+body,div,li,a{font-family: HYRegular;}
 #myBtn {
     display: none;
     position: fixed;
@@ -328,7 +331,7 @@ body, header, footer, main, section, article, aside, nav, div, p, dl, dt, dd, ul
   box-sizing: border-box;
   font-weight: 300;
   word-break: keep-all;
-  font-family: "HyundaiHeadOffice", "dotum", sans-serif;
+  font-family: "HYRegular", "dotum", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -514,7 +517,7 @@ label.blind {
   text-overflow: ellipsis;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Samsung Sharp Sans";
   font-style: normal;
   font-weight: normal;
@@ -526,28 +529,28 @@ label.blind {
   font-weight: bold;
   src: url("../_font/SamsungSharpSans-Bold.eot");
   src: url("../_font/SamsungSharpSans-Bold.eot?#iefix") format("embedded-opentype"), url("../_font/SamsungSharpSans-Bold.woff2") format("woff2"), url("../_font/SamsungSharpSans-Bold.woff") format("woff"), url("../_font/SamsungSharpSans-Bold.ttf") format("truetype");
-}
+} 
 @font-face {
-  font-family: "HyundaiHeadOffice";
+  font-family: "HYRegular";
   font-style: normal;
   font-weight: normal;
-  src: url("../_font/HyundaiHeadOffice-400.eot");
-  src: url("../_font/HyundaiHeadOffice-400.eot?#iefix") format("embedded-opentype"), url("../_font/HyundaiHeadOffice-400.woff2") format("woff2"), url("../_font/HyundaiHeadOffice-400.woff") format("woff"), url("../_font/HyundaiHeadOffice-400.ttf") format("truetype");
+  src: url("../_font/HYRegular-400.eot");
+  src: url("../_font/HYRegular-400.eot?#iefix") format("embedded-opentype"), url("../_font/HYRegular-400.woff2") format("woff2"), url("../_font/HYRegular-400.woff") format("woff"), url("../_font/HYRegular-400.ttf") format("truetype");
 }
 @font-face {
-  font-family: "HyundaiHeadOffice";
+  font-family: "HYRegular";
   font-style: normal;
   font-weight: bold;
-  src: url("../_font/HyundaiHeadOffice-700.eot");
-  src: url("../_font/HyundaiHeadOffice-700.eot?#iefix") format("embedded-opentype"), url("../_font/HyundaiHeadOffice-700.woff2") format("woff2"), url("../_font/HyundaiHeadOffice-700.woff") format("woff"), url("../_font/HyundaiHeadOffice-700.ttf") format("truetype");
-}
+  src: url("../_font/HYRegular-700.eot");
+  src: url("../_font/HYRegular-700.eot?#iefix") format("embedded-opentype"), url("../_font/HYRegular-700.woff2") format("woff2"), url("../_font/HYRegular-700.woff") format("woff"), url("../_font/HYRegular-700.ttf") format("truetype");
+} */
 /* 삼성 'AS-IS'에서 적용된 폰트 */
-@font-face {
+/* @font-face {
   font-family: "samsungIcon";
   font-style: normal;
   font-weight: normal;
   src: url("../_font/samsungIcon.woff") format("woff");
-}
+} */
 .guide {
   background: #eee;
 }
@@ -578,7 +581,7 @@ label.blind {
 }
 .guide .tab_guide .container-body {
   padding: 20px;
-  height: 2200px;
+  /* height: 2200px; */
 }
 .guide .container {
   padding-top: 0;
@@ -602,7 +605,7 @@ label.blind {
   margin: 0;
   padding: 0;
   width: 100%;
-  table-layout: fixed;
+  
   font-size: 13px;
 }
 .guide-tbl table tr {
@@ -624,20 +627,23 @@ label.blind {
 .guide-tbl table tbody tr:hover {
   background-color: #EDF9FE;
 }
-
+.guide-tbl table tr.del td, td a.del{text-decoration: line-through;
+  background: #eee;
+  color: #bbb;}
+/* 
 @media screen and (min-width: 601px) {
   .guide-tbl table td:nth-child(1), .guide-tbl table th:nth-child(1) {
     width: 50px;
     text-align: center;
   }
-  .guide-tbl table td:last-child(),.guide-tbl table th:last-child(),
+  
   .guide-tbl table td:nth-child(9), .guide-tbl table td:nth-child(3),
    .guide-tbl table td:nth-last-child(2), .guide-tbl table td:nth-last-child(3), 
    .guide-tbl table th:nth-child(9), .guide-tbl table th:nth-child(3), 
    .guide-tbl table th:nth-last-child(2), .guide-tbl table th:nth-last-child(3) {
     width: 70px;
   }
-  .guide-tbl table td:nth-last-child(1), .guide-tbl table th:nth-last-child(1) ,.guide-tbl table td:nth-child(2), .guide-tbl table th:nth-child(2) {
+  .guide-tbl table td:nth-child(2), .guide-tbl table th:nth-child(2) {
     width: 120px;
   }
   
@@ -654,6 +660,9 @@ label.blind {
   .guide-tbl table td:nth-child(6),.guide-tbl table th:nth-child(6){  text-align: left;
     width:230px;}
 }
+#tabs-7  .guide-tbl table th:nth-child(2){width:180px}
+
+.guide-tbl table td:last-child(),.guide-tbl table th:last-child(),.guide-tbl table td:last-child(1),.guide-tbl table th:last-child(1){width:400px !important}
 @media screen and (max-width: 600px) {
   .guide-tbl table {
     border: 0;
@@ -690,7 +699,11 @@ label.blind {
 }
 #tabs-5 .guide-tbl table th:nth-child(3),#tabs-5 .guide-tbl table td:nth-child(3),
 #tabs-6 .guide-tbl table th:nth-child(3),#tabs-6 .guide-tbl table td:nth-child(3){width:200px}
-#tabs-6 .guide-tbl table th:nth-child(6),#tabs-6 .guide-tbl table td:nth-child(6){width:250px}
+#tabs-6 .guide-tbl table th:nth-child(6),#tabs-6 .guide-tbl table td:nth-child(6){width:250px} */
+
+table td a{padding:0 10px;line-height: 18px;font-weight: bold;}
+table td a:nth-child(1){color:#00AAD2}
+table td a:nth-child(2){color:#5D7D2B}
 html, body {
   padding: 0;
   margin: 0;
@@ -1052,7 +1065,7 @@ html, body {
   height: 16px;
   content: "";
   display: inline-block;
-  background: url("../_images/icons/icon-list-arrow.svg") no-repeat;
+  /* background: url("../_images/icons/icon-list-arrow.svg") no-repeat; */
   background-size: 100% auto;
   vertical-align: middle;
 }
@@ -1117,7 +1130,7 @@ html, body {
   font-size: 3.88889vw;
 }
 .btn-good.btn-tgl.on .icon.i-goods {
-  background: url("../_images/icons/icon-goods-on.svg") no-repeat;
+  /* background: url("../_images/icons/icon-goods-on.svg") no-repeat; */
   background-size: 100%;
 }
 .btn-goods {
@@ -1133,7 +1146,7 @@ html, body {
   color: #2189ff;
 }
 .btn-goods.active span:before {
-  background-image: url(../_images/icons/icon-good-on.svg);
+ /* background-image: url(../_images/icons/icon-good-on.svg);*/
 }
 .btn-goods span {
   position: relative;
@@ -1151,12 +1164,12 @@ html, body {
   width: 16px;
   height: 16px;
   margin-top: -9px;
-  background: url(../_images/icons/icon-good.svg) left center no-repeat;
+ /* background: url(../_images/icons/icon-good.svg) left center no-repeat;*/
 }
 .btn-delete {
   width: 16px;
   height: 16px;
-  background: url("../_images/icons/icon-close-s.svg") center no-repeat;
+ /* background: url("../_images/icons/icon-close-s.svg") center no-repeat;*/
   background-size: 8px auto;
 }
 .btn-list-more {
@@ -1173,7 +1186,7 @@ html, body {
   display: inline-block;
   vertical-align: middle;
   margin-left: 5px;
-  background: url("../_images/icons/icon-list-arrow.svg") no-repeat center center;
+ /* background: url("../_images/icons/icon-list-arrow.svg") no-repeat center center;*/
   background-size: 100% auto;
   transform: rotate(90deg);
 }
@@ -1184,7 +1197,7 @@ html, body {
   position: absolute;
   top: 50%;
   right: 43px;
-  background: url("../_images/icons/icon-delete-circle4.svg") 50% 50% no-repeat;
+ /* background: url("../_images/icons/icon-delete-circle4.svg") 50% 50% no-repeat; */
   background-size: 10px auto;
   transform: translate(0, -50%);
 }
@@ -1205,27 +1218,27 @@ html, body {
   margin-left: 5px;
 }
 .btn.on .icon.i-goods {
-  background: url("../_images/icons/icon-goods-on.svg") no-repeat;
+ /* background: url("../_images/icons/icon-goods-on.svg") no-repeat;*/
   background-size: 100%;
 }
 .btn.on .icon.i-like {
-  background: url("../_images/icons/icon-like-on.svg") no-repeat;
+ /* background: url("../_images/icons/icon-like-on.svg") no-repeat;*/
   background-size: 100%;
 }
 .btn.on .icon.i-dislike {
-  background: url("../_images/icons/icon-dislike-on.svg") no-repeat;
+ /* background: url("../_images/icons/icon-dislike-on.svg") no-repeat;*/
   background-size: 100%;
 }
 .btn.on .icon.i-bookmark {
-  background: url("../_images/icons/icon-bookmark-on.svg") no-repeat;
+ /* background: url("../_images/icons/icon-bookmark-on.svg") no-repeat; */
   background-size: 100%;
 }
 .btn.on .icon.i-soso {
-  background: url("../_images/icons/icon-soso-on.svg") no-repeat;
+ /* background: url("../_images/icons/icon-soso-on.svg") no-repeat; */
   background-size: 100%;
 }
 .btn.on .icon.i-alarm2 {
-  background: url("../_images/icons/icon-alarm2-on.svg") no-repeat;
+ /* background: url("../_images/icons/icon-alarm2-on.svg") no-repeat; */
   background-size: 100%;
 }
 .btn .txt-item {
@@ -1257,7 +1270,7 @@ html, body {
   top: 0;
   width: 34px;
   height: 34px;
-  background: url(../_images/icons/icon_coupon-download.svg) #2189FF center center no-repeat;
+ /* background: url(../_images/icons/icon_coupon-download.svg) #2189FF center center no-repeat; */
 }
 .btn-coupon span {
   display: inline-block;
@@ -1276,75 +1289,75 @@ html, body {
   vertical-align: middle;
 }
 .icon.i-cart {
-  background: url("../_images/icons/icon-cart.svg") no-repeat;
+ /* background: url("../_images/icons/icon-cart.svg") no-repeat; */
   background-size: 100%;
 }
 .icon.i-zoom {
-  background: url("../_images/icons/icon-zoom.svg") no-repeat;
+ /* background: url("../_images/icons/icon-zoom.svg") no-repeat; */
   background-size: 100%;
 }
 .icon.i-nav {
-  background: url("../_images/icons/icon-nav.svg") no-repeat;
+ /* background: url("../_images/icons/icon-nav.svg") no-repeat; */
   background-size: 100%;
 }
 .icon.i-goods {
-  background: url("../_images/icons/icon-goods.svg") no-repeat;
+ /* background: url("../_images/icons/icon-goods.svg") no-repeat; */
   background-size: 100%;
 }
 .icon.i-alarm {
-  background: url("../_images/icons/icon-alarm.svg") no-repeat;
+ /* background: url("../_images/icons/icon-alarm.svg") no-repeat; */
   background-size: 100%;
 }
 .icon.i-prev {
-  background: url("../_images/icons/icon-prev.svg") no-repeat;
+ /* background: url("../_images/icons/icon-prev.svg") no-repeat; */
   background-size: 100%;
 }
 .icon.i-list-arrow {
-  background: url("../_images/icons/icon-list-arrow.svg") no-repeat;
+ /* background: url("../_images/icons/icon-list-arrow.svg") no-repeat; */
   background-size: 100%;
 }
 .icon.i-like {
-  background: url("../_images/icons/icon-like.svg") no-repeat;
+ /* background: url("../_images/icons/icon-like.svg") no-repeat; */
   background-size: 100%;
 }
 .icon.i-dislike {
-  background: url("../_images/icons/icon-dislike.svg") no-repeat;
+ /* background: url("../_images/icons/icon-dislike.svg") no-repeat; */
   background-size: 100%;
 }
 .icon.i-soso {
-  background: url("../_images/icons/icon-soso.svg") no-repeat;
+ /* background: url("../_images/icons/icon-soso.svg") no-repeat; */
   background-size: 100%;
 }
 .icon.i-bookmark {
-  background: url("../_images/icons/icon-bookmark.svg") no-repeat;
+ /* background: url("../_images/icons/icon-bookmark.svg") no-repeat;*/
   background-size: 100%;
 }
 .icon.i-reply {
-  background: url("../_images/icons/icon-reply.svg") no-repeat;
+ /* background: url("../_images/icons/icon-reply.svg") no-repeat;*/
   background-size: 100%;
 }
 .icon.i-eye {
-  background: url("../_images/icons/icon-eye.svg") no-repeat;
+ /* background: url("../_images/icons/icon-eye.svg") no-repeat;*/
   background-size: 100%;
 }
 .icon.i-alarm2 {
-  background: url("../_images/icons/icon-alarm2.svg") no-repeat;
+ /* background: url("../_images/icons/icon-alarm2.svg") no-repeat;*/
   background-size: 100%;
 }
 .icon.i-more {
-  background: url("../_images/icons/icon-more.svg") no-repeat;
+ /* background: url("../_images/icons/icon-more.svg") no-repeat;*/
   background-size: 100%;
 }
 .icon.i-warning {
-  background: url("../_images/icons/icon-warning.svg") no-repeat;
+ /* background: url("../_images/icons/icon-warning.svg") no-repeat;*/
   background-size: 100%;
 }
 .icon.i-tooltip {
-  background: url("../_images/icons/icon-tooltip.svg") no-repeat;
+ /* background: url("../_images/icons/icon-tooltip.svg") no-repeat;*/
   background-size: 100%;
 }
 .icon.i-membership {
-  background: url("../_images/icons/icon-membership.svg") no-repeat;
+ /* background: url("../_images/icons/icon-membership.svg") no-repeat;*/
   background-size: 100%;
 }
 
@@ -1531,7 +1544,7 @@ html, body {
   height: 15px;
   top: 15px;
   left: 10px;
-  background: url("../_images/icons/icon-alarm.svg") center no-repeat;
+ /* background: url("../_images/icons/icon-alarm.svg") center no-repeat; */
 }
 .list-comm .list-item {
   border-radius: 5px;
@@ -1838,7 +1851,7 @@ html, body {
   background: #000;
 }
 .swiper-button-next, .swiper-button-prev {
-  background: url("../_images/icons/icon-list-arrow.svg") no-repeat center;
+ /* background: url("../_images/icons/icon-list-arrow.svg") no-repeat center;*/
   background-size: 20px;
 }
 .swiper-button-next:after, .swiper-button-prev:after {
@@ -1924,7 +1937,7 @@ html, body {
   position: absolute;
   width: 16px;
   height: 16px;
-  background: url("../_images/icons/icon-list-arrow.svg") no-repeat center;
+ /* background: url("../_images/icons/icon-list-arrow.svg") no-repeat center;*/
   transform: rotate(90deg);
   right: 0;
   top: calc(50% - 8px);
@@ -2098,7 +2111,7 @@ html, body {
   position: absolute;
   top: 0;
   right: 0;
-  background: url("../_images/icons/icon-search-middle.svg") 20% 50% no-repeat;
+ /* background: url("../_images/icons/icon-search-middle.svg") 20% 50% no-repeat;*/
   background-size: 19px auto;
 }
 .search-body {
@@ -2168,15 +2181,15 @@ html, body {
   background-position: center center;
 }
 .search .inner-item .list .change.arr-same {
-  background-image: url("../_images/icons/icon-arr-same.svg");
+/*  background-image: url("../_images/icons/icon-arr-same.svg");*/
   background-size: 10px auto;
 }
 .search .inner-item .list .change.arr-up {
-  background-image: url("../_images/icons/icon-arr-up.svg");
+ /* background-image: url("../_images/icons/icon-arr-up.svg");*/
   background-size: 10px auto;
 }
 .search .inner-item .list .change.arr-down {
-  background-image: url("../_images/icons/icon-arr-down.svg");
+ /* background-image: url("../_images/icons/icon-arr-down.svg");*/
   background-size: 10px auto;
 }
 .search .inner-item .etc {
@@ -2603,7 +2616,7 @@ input[type=text], input[type=password] {
   position: absolute;
   top: 50%;
   left: 0;
-  background: url(../_images/icons/icon-compare.svg) no-repeat center;
+ /* background: url(../_images/icons/icon-compare.svg) no-repeat center;*/
   background-size: 100% auto;
   transform: translateY(-50%);
   width: 6.38889vw;
@@ -2631,7 +2644,7 @@ input[type=text], input[type=password] {
   left: 0;
   width: 4.44444vw;
   height: 4.44444vw;
-  background: url(../_images/icons/icon-star.svg) no-repeat center;
+ /* background: url(../_images/icons/icon-star.svg) no-repeat center;*/
   background-size: 100% auto;
 }
 .list-product .list .item .card-purchase .message-list {
@@ -2864,4 +2877,5 @@ input[type=text], input[type=password] {
   vertical-align: baseline;
   border-bottom: 2px solid #000;
 }
+
 

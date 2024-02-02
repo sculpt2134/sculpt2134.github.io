@@ -25,7 +25,7 @@
 <!-- HCAU-title -->
 <div class="HCAU-title">
     <!-- class option : border-bottom -->
-    <div class="HCAU-h1">Check payment information</div>
+    <div class="HCAU-h1">Change bank account</div>
     <div class="HCAU-txt-md">You can check and change the payment-related information of the product you are using.</div>
 </div>
 <!-- //HCAU-title -->
@@ -75,7 +75,7 @@
             </div>
             <div class="dropdown flex-fix d-flex g12">
                 <input type="text" class="form-control HCAU-form flex-grow-1" placeholder="Enter contract number" value="">
-                <button type="button" class="HCAU-btn btn-smd" disabled>Search</button>
+                <button type="button" class="HCAU-btn btn-smd">Search</button>
             </div>
         </div>
     </div>
@@ -261,6 +261,19 @@
             </div>
         </div>
 
+        <div class="border-box mt60 py32 px24">
+            <div class="d-flex justify-content-between px32">
+                <div>
+                    <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck4">
+                    <label class="HCAU-txt-sm" for="defaultCheck4">
+                        결제방식 변경에 필요한 동의가 필요합니다.
+                    </label>
+                </div>
+                <div>
+                    <a href="#" class="link">View content</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section>
@@ -382,10 +395,10 @@
             <dd>
                 <ul class="HCAU-bullet-list">
                     <li>
-                        If an error occurs while registering a payment account and the operation cannot be completed, payment may be made to your existing account.
+                        If we were not able to get your bank account changed due to errors in the process of updating bank information, your payment might be made from the old bank account.
                     </li>
                     <li>
-                        The result of the application to change the payment account must be confirmed as normal withdrawal from the changed account on the next payment date.
+                        Whether your request to change your bank account that you pay from has been accepted would be confirmed when your next payment gets successfully paid from the new bank account you submitted to us.
                     </li>
                 </ul>
             </dd>
@@ -409,7 +422,7 @@
 <!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
 <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 </div><!--//HCAU-contents-->
-<footer include-html="/static/html/pc/kia/footer.html"></footer>
+<footer class="HCAU-footer" include-html="/static/html/pc/kia/footer.html"></footer>
 </div><!--//HCAU-contentainer-->
 </div><!--//wrap-->
 <script src="/static/html/pc/kia/js/bootstrap.bundle.min.js"></script>

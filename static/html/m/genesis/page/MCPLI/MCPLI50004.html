@@ -13,15 +13,15 @@
 <body>
     <div class="wrap">
         <script type="text/javascript" src="/static/html/m/genesis/js/Header.js"></script>
-
+        <!-- HCAU-title -->
+        <div class="HCAU-title">
+            <div class="HCAU-h1">Billing Statement</div>
+        </div>
+        <!-- //HCAU-title -->
         <!-- HCAU-container -->
         <div class="HCAU-container">
             <div class="HCAU-contents" id="contents">
-                <!-- HCAU-title -->
-                <div class="HCAU-title">
-                    <div class="HCAU-h1">Billing Statement</div>
-                </div>
-                <!-- //HCAU-title -->
+
                 <!-- HCAU-detail -->
                 <div class="HCAU-detail">
                     <div class="HCAU-filter">
@@ -43,12 +43,12 @@
                                         <img src="/static/html/m/genesis/img/ico_modal_close.svg" alt="Close" />
                                     </button>
                                 </div>
-                                <div class="modal-header">
-                                    <div class="HCAU-h1">
-                                        Search conditions
-                                    </div>
-                                </div>
                                 <div class="modal-body">
+                                    <div class="modal-header">
+                                        <div class="HCAU-h1">
+                                            Search conditions
+                                        </div>
+                                    </div>
                                     <div class="mt-2">
                                         <div class="HCAU-form-wrap">
                                             <div class="form-title HCAU-txt-md fw-bold">
@@ -106,7 +106,7 @@
                                             <div class="HCAU-bottom-sheet offcanvas offcanvas-bottom" tabindex="-1" id="filter01">
                                                 <div class="offcanvas-header">
                                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-                                                        <img src="/static/html/m/genesis/img/ico_modal_close.svg" alt="Close">
+                                                        <img src="/static/html/m/genesis/img/ico_modal_close2.svg" alt="Close">
                                                     </button>
                                                 </div>
                                                 <div class="offcanvas-body">
@@ -131,7 +131,7 @@
                                                 <div class="offcanvas-header">
                                                     <!-- <h5 class="offcanvas-title" id="offcanvasBottomLabel">bottom sheet title</h5> -->
                                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-                                                        <img src="/static/html/m/genesis/img/ico_modal_close.svg" alt="Close" />
+                                                        <img src="/static/html/m/genesis/img/ico_modal_close2.svg" alt="Close" />
                                                     </button>
                                                 </div>
                                                 <div class="offcanvas-body">
@@ -170,7 +170,7 @@
                                             <div class="HCAU-bottom-sheet offcanvas offcanvas-bottom" tabindex="-1" id="filter01">
                                                 <div class="offcanvas-header">
                                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-                                                        <img src="/static/html/m/genesis/img/ico_modal_close.svg" alt="Close" />
+                                                        <img src="/static/html/m/genesis/img/ico_modal_close2.svg" alt="Close" />
                                                     </button>
                                                 </div>
                                                 <div class="offcanvas-body">
@@ -306,29 +306,20 @@
                     <div class="g-notice border-top-dashed">
                         <dl>
                             <dt>
-                                <span class="ico-gnotice"><img src="/static/html/m/genesis/img/ico_notice.svg" alt="" /></span>
+                                <span class="ico-gnotice"><img src="/static/html/m/genesis/img/ico_notice.svg" alt=""></span>
                                 <span class="HCAU-txt-sm">Guidance Notice</span>
                             </dt>
                             <dd>
                                 <ul class="HCAU-bullet-list">
                                     <li class="HCAU-txt-sm">
-                                        Only usage statements from the last
-                                        5 years can be viewed.
+                                        Your amount due will be determined three days before your payment due date and a billing statement will be created.
                                     </li>
                                     <li class="HCAU-txt-sm">
-                                        The billing amount will be confirmed
-                                        3 days prior to the payment date and
-                                        a usage statement will be prepared.
+                                        When you request a statement, the amount due at the time of your request will appear on the statement.
                                     </li>
                                     <li class="HCAU-txt-sm">
-                                        When a statement is issued, the
-                                        amount to be paid at the time of
-                                        inquiry will be listed and sent via
-                                        email.
-                                    </li>
-                                    <li class="HCAU-txt-sm">
-                                        You can check the detailed payment status of the billed amount in the statement of use through the product usage details.<br>
-                                        <a href="#none" class="link HCAU-txt-sm ms-0">Product usage details</a>
+                                        To check payment status of the amounts billed on the statement, please go to Product details.<br>
+                                        <a href="#none" class="link HCAU-txt-sm ms-0">Account information</a>
                                     </li>
                                 </ul>
                             </dd>
@@ -336,22 +327,15 @@
                     </div>
                     <div class="mt40">
                         <div class="border-box edge px-4 py20">
-                            <div class="HCAU-txt-sm">
-                                To pay the bill in advance
-                            </div>
+                            <div class="HCAU-txt-sm">Do you want to make a payment before your due date?</div>
                             <div class="mt12">
-                                <a href="" class="link HCAU-txt-sm">Make a payment
-                                </a>
+                                <a href="" class="link HCAU-txt-sm">Make a payment</a>
                             </div>
                         </div>
                         <div class="border-box edge px-4 py20 mt12">
-                            <div class="HCAU-txt-sm">
-                                To repay in full or in part for each product
-                                you are using
-                            </div>
+                            <div class="HCAU-txt-sm">Do you want to payout all or part of your loan early?</div>
                             <div class="mt12">
-                                <a href="" class="link HCAU-txt-sm">Pay off early
-                                </a>
+                                <a href="" class="link HCAU-txt-sm">Early payout</a>
                             </div>
                         </div>
                     </div>
@@ -372,7 +356,7 @@
     </div>
     <!-- <script src="/static/html/m/genesis/js/jquery-3.3.1.min.js"></script> -->
     <script src="/static/html/m/genesis/js/bootstrap.bundle.min.js"></script>
-    <!-- <script type="module" src="js/main.js"></script> -->
+    <script type="module" src="/static/html/m/genesis/js/main.js"></script>
 </body>
 
 </html>

@@ -34,7 +34,7 @@
   padding-bottom: 100px;
 }
 .wrap .HCAU-container .HCAU-footer {
-  background: #323232;
+  background: #444;
   color: #999;
 }
 .wrap .HCAU-container .HCAU-footer .footer-inner {
@@ -53,8 +53,10 @@
   gap: 16px;
 }
 
-
-
+.HCAU-footer .footer-inner .email a, .HCAU-footer .footer-inner .call a, .HCAU-footer .footer-inner .policy a {
+  color: #999;  font-size: 14px;  margin-left: 2px; font-weight: 700; margin-bottom:8px; display: inline-block;
+}
+.HCAU-footer .footer-inner .email .ms-1{margin-left:9px}
 /* CSS ADD  */
 
 .main .HCAU-menubar .menu .logo {

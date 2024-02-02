@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>HCAU-PUBL</title>
+  <link rel="stylesheet" href="/static/html/pc/kia/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/pc/kia/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+    <div class="wrap">
+      <div class="HCAU-sidebar" include-html="/static/html/pc/kia/aside.html"></div>
+      <div class="HCAU-menubar" include-html="/static/html/pc/kia/menu.html"></div>
+  
+      <div class="HCAU-container">
+            <div class="HCAU-contents" id="contents">
+                <!-- HCAU-breadcrumb -->
+                <div class="HCAU-breadcrumb" include-html="/static/html/pc/kia/breadcrumb.html"></div>
+            <!-- //HCAU-breadcrumb -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////START PAGE CONTENTS/////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- HCAU-title -->
+<div class="HCAU-title">
+    <!-- class option : border-bottom -->
+    <div class="HCAU-h1">PERSONAL INFORMATION INQUIRY</div>
+</div>
+<!-- //HCAU-title -->
+
+<!-- HCAU-detail -->
+<div class="HCAU-detail">
+
+
+    <!-- Button trigger modal -->
+    <button type="button" class="HCAU-btn btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        popup
+    </button>
+
+    <!-- Modal -->
+    <div class="HCAU-modal modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/html/pc/kia/img/svg/ico_modal_close.svg" alt="Close" /></button>
+                <div class="modal-content-inner">
+                    <div class="modal-header">
+                        <div class="HCAU-h2" id="exampleModalLabel">Change Marketing preference</div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="border-box">
+                            <div class="bg-box2 p32">
+
+                                <div class="HCAU-txt-md text-center">
+                                    You can opt out of receiving marketing phone calls, emails, text messages, etc. from Hyundai Capital.
+                                </div>
+                               
+                                <div class="px40">
+                                    <div class="HCAU-txt-md fw-bold text-center mt32">Consent to receive Hyundai Capital marketing</div>
+                                    <div class="border-box black mt12">
+                                        <div class="d-flex flex-column">
+                                            <div class="px32 py20  d-flex justify-content-between align-items-center border-bottom">
+                                                <div class="form-check">
+                                                    <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheckAll">
+                                                    <label class="form-check-label fw-bold" for="defaultCheckAll">
+                                                        Agree to receive all
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="px32 py20 d-flex justify-content-start align-items-center g40">
+                                                <div class="form-check">
+                                                    <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck1" checked>
+                                                    <label class="form-check-label" for="defaultCheck1">
+                                                        Call
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck2" checked>
+                                                    <label class="form-check-label" for="defaultCheck2">
+                                                        E-mail
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck3">
+                                                    <label class="form-check-label" for="defaultCheck3">
+                                                        SMS
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex g12 justify-content-center mt40">
+                                    <button type="button" class="HCAU-btn btn-large gray03">Cancel</button>
+                                    <button type="button" class="HCAU-btn btn-large primary">OK</button>
+
+                                    <!-- <button type="button" class="HCAU-btn btn-large" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="HCAU-btn btn-large">Save changes</button>
+                                    <button type="button" class="HCAU-btn btn-large">button</button>
+                                    <a href="#none" class="HCAU-btn btn-large">a link</a>
+                                    <a href="#none" class="HCAU-btn btn-large">a link</a> -->
+                                </div>
+                            </div>
+                           
+
+                        </div>
+
+                    </div>
+                    <!-- <div class="modal-footer">
+
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- HCAU-detail -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+            </div><!--//HCAU-contents-->
+            <footer class="HCAU-footer" include-html="/static/html/pc/kia/footer.html"></footer>
+        </div><!--//HCAU-contentainer-->
+    </div><!--//wrap-->
+
+<script src="/static/html/pc/kia/js/bootstrap.bundle.min.js"></script>
+<script src="/static/html/pc/kia/js/main.js"></script>
+<script src="/static/html/pc/kia/js/includeHTML.js"></script>
+<script src="/static/html/pc/kia/js/includeRouter.js"></script>
+<script>
+includeHTML( function () {
+includeRouter( function () {
+});
+});
+
+</script>
+</body>
+
+</html>

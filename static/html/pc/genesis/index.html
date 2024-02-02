@@ -10,7 +10,7 @@
     <div class="wrap">
       <div class="HCAU-sidebar" include-html="/static/html/pc/genesis/aside.html" style="display:block;position:absolute;top:400px;height:calc(100% - 400px)"></div>
       <div class="HCAU-menubar" include-html="/static/html/pc/genesis/nav.html"  id="parallax__nav" style="position:fixed"></div>
-  
+
       <div class="HCAU-container">
             <div class="HCAU-contents" id="contents">
                 <!-- HCAU-breadcrumb -->
@@ -77,10 +77,10 @@
         <div class="title-area d-flex align-items-baseline g16">
             <div class="title">Calendar</div>
         </div>
-        
+
         <div id="foo" data-date="01/25/2020"></div>
 
-       
+
         <section class="section container-fluid">
             <div class="d-flex flex-column gap-2">
                 <div id="sandbox" class="HCAU-calendar col-3">
@@ -157,8 +157,8 @@
                                 <!-- HCAU-tab -->
                                 <div class="HCAU-tab mt20">
                                     <ul class="nav nav-tabs" id="" role="tablist">
-                                        <li class="nav-item"><button class="nav-link active" id="tab01" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Individual</button></li>
-                                        <li class="nav-item"><button class="nav-link" id="tab02" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Businessman</button></li>
+                                        <li class="nav-item"><button class="nav-link active" id="tab01" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Personal</button></li>
+                                        <li class="nav-item"><button class="nav-link" id="tab02" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Business</button></li>
                                     </ul>
                                 </div>
                                 <!-- //HCAU-tab -->
@@ -693,7 +693,7 @@
             <button type="button" class="HCAU-btn btn-sm">default</button>
             <button type="button" class="HCAU-btn btn-sm primary">primary</button>
             <button type="button" class="HCAU-btn btn-sm gray03">button</button>
-            <button type="button" class="HCAU-btn btn-sm gray01">Search</button>            
+            <button type="button" class="HCAU-btn btn-sm gray01">Search</button>
             <button type="button" class="HCAU-btn btn-sm" disabled>disabled button</button>
         </div>
         <br>
@@ -1756,8 +1756,8 @@
                 <p class="pt12"><a href="#none" class="link">Make a payment</a></p>
             </div>
             <div class="border-box flex-fill p-4">
-                <p class="HCAU-txt-sm">Do you want to pay off all or part of your loan early?</p>
-                <p class="pt12"><a href="#none" class="link">pay off early</a></p>
+                <p class="HCAU-txt-sm">Do you want to payout all or part of your loan early?</p>
+                <p class="pt12"><a href="#none" class="link">Early payout</a></p>
             </div>
         </div>
 
@@ -2108,7 +2108,7 @@
         </div>
 
         <div class="pt-3">
-            <input type="text" class="form-control HCAU-form text-end fw-bold" id="exampleInputEmail1" aria-describedby="emailHelp" value="456.98 $">
+            <input type="text" class="form-control HCAU-form text-end fw-bold" id="exampleInputEmail1" aria-describedby="emailHelp" value="$ 456.98">
         </div>
 
 
@@ -2195,7 +2195,7 @@
                         </div>
                     </div>
                     <div class="pt-3">
-                        <input type="text" class="form-control HCAU-form text-end fw-bold" id="input-text-sample" aria-describedby="" value="456.98 $">
+                        <input type="text" class="form-control HCAU-form text-end fw-bold" id="input-text-sample" aria-describedby="" value="$ 456.98">
                         <div class="HCAU-invalid-feedback">
                             Please provide a valid city.
                         </div>
@@ -2641,7 +2641,7 @@
                 <div class="invalid-feedback">invalid message</div>
             </div>
             <div class="col-md-6">
-                <label for="validationCustom05" class="HCAU-txt-md fw-bold mb-3">Verify password</label>
+                <label for="validationCustom05" class="HCAU-txt-md fw-bold mb-3">Confirm password</label>
                 <input type="password" class="form-control HCAU-form is-valid" id="validationCustom05" placeholder="8 to 12 letters/numbers/special characters" value="1234567489" required>
                 <div class="valid-feedback">Password matches.</div>
             </div>
@@ -2770,36 +2770,36 @@
         });
     </script>
     <script type="text/javascript">
-    
-    
+
+
         document.addEventListener("DOMContentLoaded", function(){
                 document.querySelectorAll('.nav-bar').forEach(function(everyitem){
-                    
+
                     everyitem.addEventListener('mouseover', function(e){
-    
+
                         let el_link = this.querySelector('button[data-bs-toggle]');
-    
+
                         if(el_link != null){
                             let nextEl = el_link.nextElementSibling;
                             el_link.classList.add('show');
                              nextEl.classList.add('show');
                         }
-                        
+
                     });
                     everyitem.addEventListener('mouseleave', function(e){
                          let el_link = this.querySelector('button[data-bs-toggle]');
-                        
+
                         if(el_link != null){
                             let nextEl = el_link.nextElementSibling;
                             el_link.classList.remove('show');
                              nextEl.classList.remove('show');
                         }
-                        
-    
+
+
                     })
                 });
-        }); 
-    
+        });
+
     </script>
 </body>
 

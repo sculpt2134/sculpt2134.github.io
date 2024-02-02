@@ -597,6 +597,7 @@ var GCFront = {
     },
 }
 // AS_IS base.js
+/*
 var viewportChange = function() {
     var pcView = "width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0";
     var normalView = "width=device-width,initial-scale=1.0";
@@ -619,3 +620,4 @@ var viewportChange = function() {
 ! function() {
     viewportChange()
 }();
+*/

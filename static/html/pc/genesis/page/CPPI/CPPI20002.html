@@ -24,7 +24,7 @@
 <!-- HCAU-title -->
 <div class="HCAU-title">
     <!-- class option : border-bottom -->
-    <div class="HCAU-h1">Check payment information</div>
+    <div class="HCAU-h1">Change bank account</div>
     <div class="HCAU-txt-md">You can check and change the payment-related information of the product you are using.</div>
 </div>
 <!-- //HCAU-title -->
@@ -52,6 +52,8 @@
                     <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
                 </ul>
             </div>
+        </div>
+        <div class="d-flex justify-content-between g20 mt20">
             <div class="dropdown flex-fix">
                 <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
                     Vehicle type (all)
@@ -61,9 +63,7 @@
                     <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
                 </ul>
             </div>
-        </div>
-        <div class="d-flex justify-content-between g20 mt20">
-            <div class="dropdown" style="width: 290px;">
+            <!-- <div class="dropdown" style="width: 290px;">
                 <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
                     Method (all)
                 </button>
@@ -71,26 +71,22 @@
                     <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
                     <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
                 </ul>
-            </div>
+            </div> -->
             <div class="dropdown flex-fix d-flex g12">
                 <input type="text" class="form-control HCAU-form flex-grow-1" placeholder="Enter contract number" value="">
-                <button type="button" class="HCAU-btn btn-smd" disabled>Search</button>
+                <button type="button" class="HCAU-btn btn-smd">Search</button>
             </div>
         </div>
     </div>
 
     <section>
-        <div class="HCAU-nodata type02 flex-column border-top border-bottom mt40">
-            <img src="/static/html/pc/genesis/img/svg/ico_no_matches_hd02.svg" alt="">
-            <div class="HCAU-txt-sm">No matches found.</div>
-        </div>
         <div class="px32 mt40">
             <input class="form-check-input HCAU-form" type="checkbox" value="" id="chk0">
             <label for="chk0" class="ml-2">Select All</label>
         </div>
         <div class="border-top mt-3">
             <div class="d-flex g20 align-items-center checked-bold-table px32 py24 border-bottom">
-                <input class="form-check-input HCAU-form mt0" type="checkbox" value="" id="chk1">
+                <input class="form-check-input HCAU-form mt0" type="checkbox" value="" id="chk1" checked>
                 <label for="chk1" class="d-flex align-items-center separator g16">
                     <span class="HCAU-txt-sm">New Car Loan_Standard</span>
                     <span class="HCAU-txt-sm">H2023NA000248</span>
@@ -99,7 +95,7 @@
                 </label>
             </div>
             <div class="d-flex g20 align-items-center checked-bold-table px32 py24 border-bottom">
-                <input class="form-check-input HCAU-form mt0" type="checkbox" value="" id="chk2">
+                <input class="form-check-input HCAU-form mt0" type="checkbox" value="" id="chk2" checked>
                 <label for="chk2" class="d-flex separator g16">
                     <span class="HCAU-txt-sm">New Car Loan_Standard</span>
                     <span class="HCAU-txt-sm">H2023NA000248</span>
@@ -159,104 +155,125 @@
                 </ul>
             </div>
         </div>
+        <div class="HCAU-nodata type01 flex-column border-bottom mt40">
+            <img src="/static/html/pc/genesis/img/svg/ico_no_matches_hd01.svg" alt="">
+            <div class="HCAU-txt-lg fw-bold mt40">No matches found.</div>
+        </div>
     </section>
     <section>
 
-        <div class="mt40">
-            <div class="title-area ">
-                <div class="title">Payment information to change</div>
-            </div>
-            <div class="HCAU-table HCAU-valid">
-                <table class="table fixed">
-                    <colgroup>
-                        <col style="width:150px">
-                        <col>
-                    </colgroup>
-                    <tbody>
-                        <tr>
-                            <th class="align-middle">Payment method</th>
-                            <td class="align-middle">
-                                <div class="no-txt-input">
-                                    <div class="form-check form-check-inline mr40">
-                                        <input class="form-check-input HCAU-form" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="" checked>
-                                        <label class="form-check-label" for="inlineRadio1">Direct debit</label>
-                                    </div>
-                                    <div class="form-check form-check-inline mr40">
-                                        <input class="form-check-input HCAU-form" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="">
-                                        <label class="form-check-label" for="inlineRadio2">BPAY</label>
-                                    </div>
+    
+        <div class="title-area ">
+            <div class="title">Payment information to change</div>
+        </div>
+        <div class="HCAU-table HCAU-valid">
+            <table class="table fixed">
+                <colgroup>
+                    <col style="width:200px">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th class="align-middle">Payment method</th>
+                        <td class="align-middle">
+                            <div class="no-txt-input">
+                                <div class="form-check form-check-inline mr40">
+                                    <input class="form-check-input HCAU-form" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="" checked>
+                                    <label class="form-check-label" for="inlineRadio1">Direct debit</label>
                                 </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th class="align-middle">Change bank<br>selection</th>
-                            <td class="align-middle">
-                                <div class="d-flex g12">
-                                    <div class="flex-grow-1">
-                                        <input type="text" class="form-control HCAU-form" placeholder="Enter BSB number" value="">
-                                    </div>
-                                    <button type="button" class="HCAU-btn btn-smd">Search</button>
+                                <div class="form-check form-check-inline mr40">
+                                    <input class="form-check-input HCAU-form" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="">
+                                    <label class="form-check-label" for="inlineRadio2">BPAY</label>
                                 </div>
-                                <div class="valid-feedback d-block">valid messsage.</div>
-                                <div class="invalid-feedback d-block">invalid messsage1.</div>
-                                <div class="invalid-feedback d-block">invalid messsage2.</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th class="align-middle">Change account<br>number</th>
-                            <td class="align-middle">
-                                <input type="text" class="form-control HCAU-form" placeholder="Enter change account number" value="">
-                                <div class="invalid-feedback d-block">invalid messsage.</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th class="align-middle">Change account<br>holder</th>
-                            <td class="align-middle">
-                                <input type="text" class="form-control HCAU-form" placeholder="Enter change account holder name" value="">
-                                <div class="invalid-feedback d-block">invalid messsage.</div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table class="table fixed">
-                    <colgroup>
-                        <col style="width:150px">
-                        <col>
-                    </colgroup>
-                    <tbody>
-                        <tr>
-                            <th class="align-middle">Payment method</th>
-                            <td class="align-middle">
-                                <div class="no-txt-input">
-                                    <div class="form-check form-check-inline mr40">
-                                        <input class="form-check-input HCAU-form" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="">
-                                        <label class="form-check-label" for="inlineRadio1">Direct debit</label>
-                                    </div>
-                                    <div class="form-check form-check-inline mr40">
-                                        <input class="form-check-input HCAU-form" type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="" checked>
-                                        <label class="form-check-label" for="inlineRadio2">BPAY</label>
-                                    </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="align-middle">Change<br>bank selection</th>
+                        <td class="align-middle">
+                            <div class="d-flex g12">
+                                <div class="flex-grow-1">
+                                    <input type="text" class="form-control HCAU-form" placeholder="Enter BSB number" value="">
                                 </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th class="align-middle">Biller code</th>
-                            <td class="align-middle">
-                                <div class="no-txt-input">
-                                    <p class="HCAU-txt-sm">BPAY Biller code</p>
+                                <button type="button" class="HCAU-btn btn-smd">Search</button>
+                            </div>
+                            <div class="valid-feedback d-block">valid messsage.</div>
+                            <div class="invalid-feedback d-block">invalid messsage1.</div>
+                            <div class="invalid-feedback d-block">invalid messsage2.</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="align-middle">Change<br>account number</th>
+                        <td class="align-middle">
+                            <input type="text" class="form-control HCAU-form" placeholder="Enter change account number" value="">
+                            <div class="invalid-feedback d-block">invalid messsage.</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="align-middle">Change<br>account holder</th>
+                        <td class="align-middle">
+                            <input type="text" class="form-control HCAU-form" placeholder="Enter change account holder name" value="">
+                            <div class="invalid-feedback d-block">invalid messsage.</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="title-area mt60">
+            <div class="title">Payment information to change</div>
+        </div>
+        <div class="HCAU-table HCAU-valid">
+            <table class="table fixed">
+                <colgroup>
+                    <col style="width:200px">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th class="align-middle">Payment method</th>
+                        <td class="align-middle">
+                            <div class="no-txt-input">
+                                <div class="form-check form-check-inline mr40">
+                                    <input class="form-check-input HCAU-form" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="">
+                                    <label class="form-check-label" for="inlineRadio1">Direct debit</label>
                                 </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th class="align-middle">Reference number</th>
-                            <td class="align-middle">
-                                <div class="no-txt-input">
-                                    <p class="HCAU-txt-sm">Reference number</p>
+                                <div class="form-check form-check-inline mr40">
+                                    <input class="form-check-input HCAU-form" type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="" checked>
+                                    <label class="form-check-label" for="inlineRadio2">BPAY</label>
                                 </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- <tr>
+                        <th class="align-middle">Biller code</th>
+                        <td class="align-middle">
+                            <div class="no-txt-input">
+                                <p class="HCAU-txt-sm">BPAY Biller code</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="align-middle">Reference number</th>
+                        <td class="align-middle">
+                            <div class="no-txt-input">
+                                <p class="HCAU-txt-sm">Reference number</p>
+                            </div>
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+        <div class="border-box mt60 py32 px24">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck4">
+                    <label class="HCAU-txt-sm" for="defaultCheck4">
+                        결제방식 변경에 필요한 동의가 필요합니다.
+                    </label>
+                </div>
+                <div>
+                    <a href="#" class="link">View content</a>
+                </div>
             </div>
         </div>
 
@@ -381,10 +398,10 @@
             <dd>
                 <ul class="HCAU-bullet-list">
                     <li>
-                        If an error occurs while registering a payment account and the operation cannot be completed, payment may be made to your existing account.
+                        If we were not able to get your bank account changed due to errors in the process of updating bank information, your payment might be made from the old bank account.
                     </li>
                     <li>
-                        The result of the application to change the payment account must be confirmed as normal withdrawal from the changed account on the next payment date.
+                        Whether your request to change your bank account that you pay from has been accepted would be confirmed when your next payment gets successfully paid from the new bank account you submitted to us.
                     </li>
                 </ul>
             </dd>

@@ -1,6 +1,26 @@
-<!-- HCAU-breadcrumb -->
-<script src="breadcrumb.js"></script>
-<!-- //HCAU-breadcrumb -->
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>HCAU-PUBL</title>
+  <link rel="stylesheet" href="/static/html/pc/kia/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/pc/kia/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+    <div class="wrap">
+      <div class="HCAU-sidebar" include-html="/static/html/pc/kia/aside.html"></div>
+      <div class="HCAU-menubar" include-html="/static/html/pc/kia/menu.html"></div>
+
+      <div class="HCAU-container">
+            <div class="HCAU-contents" id="contents">
+                <!-- HCAU-breadcrumb -->
+                <div class="HCAU-breadcrumb" include-html="/static/html/pc/kia/breadcrumb.html"></div>
+            <!-- //HCAU-breadcrumb -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////START PAGE CONTENTS/////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
 
 <!-- HCAU-title -->
 <div class="HCAU-title">
@@ -40,9 +60,9 @@
 
             <div class="d-flex flex-wrap justify-content-between px32 py24 gap-3 border-bottom">
                 <dl class="loan-items d-flex justify-content-between align-items-end">
-                    <dt class="fw-normal HCAU-txt-sm gray04">Overdue</dt>
+                    <dt class="fw-normal HCAU-txt-sm gray04">Status</dt>
                     <dd class="fw-bold HCAU-txt-md">
-                        <span class="point-red">Y</span>
+                        <span class="point-red">Overdue</span>  <span class="point02">Completed</span>  <span class="point">Scheduled</span>
                     </dd>
                 </dl>
                 <dl class="loan-items d-flex justify-content-between align-items-end">
@@ -205,7 +225,7 @@
         </div>
 
         <div class="d-flex full g20 pt20">
-            <button type="button" class="HCAU-btn btn-md">Make a payment</button>
+            <button type="button" class="HCAU-btn btn-md">Amount due</button>
             <button type="button" class="HCAU-btn btn-md">Pay off your loan early</button>
             <button type="button" class="HCAU-btn btn-md">View payment details</button>
         </div>
@@ -434,15 +454,15 @@
                 <ul class="HCAU-bullet-list">
                     <li>
                         You can check the details of the payments you have already made.
-                        <a href="#none" class="link">Payment details</a>
+                        <a href="#none" class="link">Payment transactions&statements</a>
                     </li>
                     <li>
                         You can view and print all payments schedules of the products either you have or had.
-                        <a href="#none" class="link">Repayment schedule</a>
+                        <a href="#none" class="link">Payment schedule</a>
                     </li>
-                    <li>
+                    <!-- <li>
                         To check MT details, please contact your dealer.
-                    </li>
+                    </li> -->
                 </ul>
             </dd>
         </dl>
@@ -456,10 +476,27 @@
             <p class="pt12"><a href="#none" class="link">Make a payment</a></p>
         </div>
         <div class="border-box flex-fix p-4">
-            <p class="HCAU-txt-sm">Do you want to pay off all or part of your loan early?</p>
-            <p class="pt12"><a href="#none" class="link">pay off early</a></p>
+            <p class="HCAU-txt-sm">Do you want to payout all or part of your loan early?</p>
+            <p class="pt12"><a href="#none" class="link">Early payout</a></p>
         </div>
     </div> -->
 
 </div>
 <!-- //HCAU-detail -->
+<!-- //HCAU-detail -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+</div><!--//HCAU-contents-->
+<footer class="HCAU-footer" include-html="/static/html/pc/kia/footer.html"></footer>
+</div><!--//HCAU-contentainer-->
+</div><!--//wrap-->
+<script src="/static/html/pc/kia/js/bootstrap.bundle.min.js"></script>
+<script src="/static/html/pc/kia/js/main.js"></script>
+<script src="/static/html/pc/kia/js/includeHTML.js"></script>
+<script src="/static/html/pc/kia/js/includeRouter.js"></script>
+<script>
+includeHTML();
+</script>
+</body>
+</html>

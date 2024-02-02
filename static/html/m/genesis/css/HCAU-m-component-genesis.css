@@ -83,6 +83,10 @@
   padding-top: 20px;
 }
 
+.pt28 {
+  padding-top: 28px !important;
+}
+
 .pt32 {
   padding-top: 32px;
 }
@@ -97,6 +101,10 @@
 
 .pt80 {
   padding-top: 80px;
+}
+
+.pe16 {
+  padding-right: 16px;
 }
 
 .pb20 {
@@ -192,6 +200,11 @@
   margin-right: -16px;
 }
 
+.mx12 {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
 .mx20 {
   margin-left: 20px;
   margin-right: 20px;
@@ -245,7 +258,11 @@
 }
 
 .mt40 {
-  margin-top: 40px;
+  margin-top: 40px !important;
+}
+
+.mt48 {
+  margin-top: 48px;
 }
 
 .mt50 {
@@ -258,6 +275,10 @@
 
 .mt60 {
   margin-top: 60px;
+}
+
+.mt70 {
+  margin-top: 70px;
 }
 
 .mt80 {
@@ -308,6 +329,10 @@ a {
   width: 200px;
 }
 
+.w250 {
+  width: 250px;
+}
+
 .w320 {
   width: 320px;
 }
@@ -333,11 +358,15 @@ a {
 }
 
 .border-bottom {
-  border-bottom: 1px solid #e5e5e5 !important;
+  border-bottom: 1px solid #d5d5d5 !important;
+}
+
+.border-bottom.gray03 {
+  border-color: #a2a2a2;
 }
 
 .border-top {
-  border-top: 1px solid #e5e5e5 !important;
+  border-top: 1px solid #d5d5d5 !important;
 }
 
 .border-top.black {
@@ -350,6 +379,10 @@ a {
 
 .border-top-dashed.gray02 {
   color: #e5e5e5 !important;
+}
+
+.border-top-dashed.black {
+  border-color: #000000 !important;
 }
 
 .border-bottom-dashed {
@@ -365,10 +398,20 @@ a {
 
 .HCAU-h1 {
   color: #000000;
-  font-size: 28px;
+  font-size: 26px;
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1;
+}
+.HCAU-h1.number {
+  font-size: 24px;
+  font-family: "GenesisTextOffice";
+}
+
+.HCAU-txt-24 {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .HCAU-txt-lg {
@@ -379,12 +422,12 @@ a {
 
 .HCAU-txt-md {
   color: #000000;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .HCAU-txt-sm {
   color: #000000;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .HCAU-txt-xs {
@@ -428,6 +471,18 @@ a {
   color: #000000;
 }
 
+.color-complete {
+  color: #AF6249;
+}
+
+.color-overdue {
+  color: #CE2D2D;
+}
+
+.color-scheduled {
+  color: #1D8ABC;
+}
+
 header {
   background: transparent;
   padding: 12px 20px;
@@ -437,30 +492,110 @@ header {
   width: 100%;
   z-index: 2;
 }
+header.scroll {
+  background: linear-gradient(90deg, rgb(76, 76, 76) 0%, rgb(41, 41, 41) 35%, rgb(5, 5, 5) 100%);
+}
 
 footer {
-  background: #e5e5e5;
   padding: 32px 20px;
+  background: #e5e5e5;
 }
-footer .copyright {
+footer .family-site {
+  position: relative;
+}
+footer .family-site .HCAU-btn {
+  background: transparent;
+  border-color: #444;
+  color: #444;
+}
+footer .family-site .HCAU-btn::after {
+  display: none;
+}
+footer .family-site .ico-dropdown {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  margin-top: -12px;
+}
+footer .family-site .ico-dropdown path {
+  fill: #444;
+}
+footer .mail path,
+footer .call path,
+footer .bar rect {
+  fill: #444 !important;
+}
+footer .arrow path {
+  stroke: #444;
+}
+footer .contact-us * {
   font-size: 13px;
-  color: #a2a2a2;
+  color: #444;
 }
-footer .copyright + .copyright {
-  margin-top: 11px;
+footer .footer-menu span {
+  display: inline-block;
+  margin-top: 4px;
+}
+footer .footer-menu rect {
+  fill: #444;
+}
+footer .footer-menu a {
+  font-size: 13px;
+  color: #444;
+}
+footer .copy {
+  font-size: 13px;
+  color: #444;
+}
+
+body.main footer {
+  background: #000000;
+}
+body.main footer .family-site .HCAU-btn {
+  border-color: #666666;
+  color: #666666;
+}
+body.main footer .family-site .ico-dropdown path {
+  fill: #666666;
+}
+body.main footer .mail path,
+body.main footer .call path,
+body.main footer .bar rect {
+  fill: #666666 !important;
+}
+body.main footer .arrow path {
+  stroke: #666666;
+}
+body.main footer .contact-us * {
+  color: #666666;
+}
+body.main footer .footer-menu rect {
+  fill: #666666;
+}
+body.main footer .footer-menu a {
+  color: #666666;
+}
+body.main footer .copy {
+  color: #666666;
 }
 
 .HCAU-detail {
-  padding: 0px 20px 60px;
+  padding: 32px 20px 60px;
   position: relative;
 }
 
 .HCAU-title {
-  padding: 22px 20px 24px;
-  margin-top: 52px;
+  padding: 22px 20px;
+  margin-top: 48px;
 }
 .HCAU-title .HCAU-h1 {
   color: #fff;
+}
+.HCAU-title .HCAU-h1 + .HCAU-txt-md.gray04 {
+  color: #a2a2a2;
+}
+.HCAU-title .HCAU-bullet-list .HCAU-txt-sm {
+  color: #a2a2a2;
 }
 
 .HCAU-title .HCAU-h1 + div {
@@ -485,7 +620,7 @@ footer .copyright + .copyright {
   text-align: center;
 }
 .HCAU-btn.btn-sm {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
   padding: 0 16px;
   line-height: 1;
@@ -496,21 +631,21 @@ footer .copyright + .copyright {
   vertical-align: middle;
 }
 .HCAU-btn.btn-smd {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
   padding: 0 20px;
   line-height: 1;
   height: 44px;
 }
 .HCAU-btn.btn-md {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 700;
   padding: 0 20px;
   line-height: 1;
   height: 48px;
 }
 .HCAU-btn.btn-lg {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 700;
   padding: 0 20px;
   line-height: 1;
@@ -523,7 +658,7 @@ footer .copyright + .copyright {
   background-color: #f8f8f8;
 }
 .HCAU-btn.btn-cta {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 700;
   padding: 20px 10px;
   line-height: 1.177;
@@ -554,12 +689,12 @@ footer .copyright + .copyright {
   width: 100%;
 }
 .HCAU-btn.dropdown-toggle {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.429;
   padding: 11px 54px 11px 16px;
   height: 44px;
   color: #000000;
-  border-color: #e5e5e5;
+  border-color: #a2a2a2;
   box-shadow: none;
   width: 100%;
   text-align: left;
@@ -613,11 +748,15 @@ footer .copyright + .copyright {
   display: flex;
   gap: 1px;
   background: #fff;
+  z-index: 3;
 }
 .btn-cta-wrap > button {
   flex-shrink: 1;
   flex-grow: 1;
   flex-basis: 50%;
+}
+.btn-cta-wrap > button + button:disabled {
+  margin-left: -1px;
 }
 .btn-cta-wrap.g0 {
   gap: 0;
@@ -628,7 +767,7 @@ footer .copyright + .copyright {
 }
 
 .border-box {
-  border: 1px solid #e5e5e5;
+  border: 1px solid #d5d5d5;
   background: #fff;
 }
 .border-box.black {
@@ -641,13 +780,16 @@ footer .copyright + .copyright {
 .border-box.rad12 {
   border-radius: 12px;
 }
+.border-box.gray03 {
+  border-color: #a2a2a2;
+}
 
 .bg-box {
   background: #f8f8f8;
 }
 
 .bg-box2 {
-  background: #fafafa;
+  background: #f8f8f8;
 }
 
 .bg-box3 {
@@ -664,26 +806,30 @@ footer .copyright + .copyright {
 }
 
 *.edge {
-  border-radius: 0;
+  border-radius: 0 !important;
 }
 
 .form-label {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .HCAU-form.form-control,
 .HCAU-form.form-select {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.2;
   padding: 12px 16px;
   height: 44px;
   color: #000000;
-  border-color: #e5e5e5;
+  border-color: #a2a2a2;
   box-shadow: none;
   border-radius: 4px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.HCAU-form.form-control::placeholder,
+.HCAU-form.form-select::placeholder {
+  color: #a2a2a2;
 }
 
 .HCAU-form:placeholder-shown {
@@ -692,6 +838,7 @@ footer .copyright + .copyright {
 
 textarea.HCAU-form.form-control {
   height: auto;
+  white-space: break-spaces;
 }
 
 .HCAU-form.form-control:focus,
@@ -708,7 +855,6 @@ textarea.HCAU-form.form-control {
 }
 .HCAU-form.form-control:read-only:focus {
   outline: none;
-  border-color: #e5e5e5;
 }
 .HCAU-form.form-control:read-only.black {
   color: #000000;
@@ -718,6 +864,11 @@ textarea.HCAU-form.form-control {
 .HCAU-form.form-select:disabled {
   background-color: #f8f8f8;
   color: #000000;
+  border-color: #e5e5e5;
+}
+.HCAU-form.form-control:disabled + span img,
+.HCAU-form.form-select:disabled + span img {
+  opacity: 0.6;
 }
 
 .HCAU-form.time-limit + .time-limit-num {
@@ -734,9 +885,6 @@ textarea.HCAU-form.form-control {
 .calendar .HCAU-form.form-control {
   padding-right: 50px;
 }
-.calendar .HCAU-form.form-control:read-only + span > img {
-  opacity: 0.4;
-}
 .calendar span {
   display: inline-block;
   position: absolute;
@@ -748,17 +896,17 @@ textarea.HCAU-form.form-control {
 .HCAU-form.form-check-input {
   width: 20px;
   height: 20px;
-  border-color: #e5e5e5;
+  border-color: #d5d5d5;
   margin-top: 2px;
 }
 .HCAU-form.form-check-input + label {
-  font-size: 14px;
+  font-size: 15px;
   margin-left: 2px;
   line-height: 1.8;
 }
 
 .HCAU-form.form-check-input[type=checkbox] {
-  border-color: #e5e5e5;
+  border-color: #d5d5d5;
   background-image: url(/static/html/m/genesis/img/bg_input_check.svg);
   background-size: 14px 14px;
 }
@@ -773,7 +921,7 @@ textarea.HCAU-form.form-control {
 }
 
 .HCAU-form.form-check-input[type=radio] {
-  border-color: #e5e5e5;
+  border-color: #d5d5d5;
 }
 .HCAU-form.form-check-input[type=radio]:disabled {
   opacity: 1;
@@ -801,7 +949,7 @@ textarea.HCAU-form.form-control {
 .HCAU-valid .form-control.is-valid,
 .HCAU-valid.was-validated .form-control:valid {
   background: #fff;
-  border-color: #e5e5e5;
+  border-color: #d5d5d5;
 }
 
 .HCAU-valid .form-control.is-valid:read-only,
@@ -887,6 +1035,7 @@ textarea.HCAU-form.form-control {
 .HCAU-bottom-sheet .offcanvas-header {
   padding: 12px 20px;
   flex-direction: row-reverse;
+  background: linear-gradient(90deg, rgb(76, 76, 76) 0%, rgb(41, 41, 41) 35%, rgb(5, 5, 5) 100%);
 }
 .HCAU-bottom-sheet .offcanvas-header .btn-close {
   background: none;
@@ -915,6 +1064,9 @@ textarea.HCAU-form.form-control {
 
 .HCAU-modal .modal-dialog.modal-mid {
   margin: 20px;
+}
+.HCAU-modal .modal-dialog.modal-mid .modal-top {
+  background: #fff;
 }
 .HCAU-modal .modal-dialog.modal-mid .modal-content {
   border: none;
@@ -957,6 +1109,7 @@ textarea.HCAU-form.form-control {
 .HCAU-modal .modal-top {
   padding: 12px 20px;
   text-align: right;
+  background: linear-gradient(90deg, rgb(76, 76, 76) 0%, rgb(41, 41, 41) 35%, rgb(5, 5, 5) 100%);
 }
 .HCAU-modal .modal-top .btn-close {
   background: none;
@@ -966,15 +1119,29 @@ textarea.HCAU-form.form-control {
   height: auto;
   opacity: 1;
 }
-.HCAU-modal .modal-header {
-  padding: 12px 20px;
+.HCAU-modal .modal-body {
+  padding: 32px 20px 60px;
+}
+.HCAU-modal .modal-body .modal-header {
+  display: block;
+  margin-top: -32px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 0;
   border-bottom: none;
 }
-.HCAU-modal .modal-header .HCAU-h1 {
+.HCAU-modal .modal-body .modal-header .HCAU-h1 {
   text-transform: none;
+  padding: 22px 20px;
+  border-bottom: 1px solid #000000;
 }
-.HCAU-modal .modal-body {
-  padding: 12px 20px 60px;
+.HCAU-modal .modal-body .modal-header .HCAU-h1 + .bg-box {
+  padding: 22px 20px;
+}
+.HCAU-modal .modal-body .modal-header:after {
+  content: "";
+  display: block;
+  height: 32px;
 }
 .HCAU-modal .modal-footer {
   display: block;
@@ -1095,22 +1262,22 @@ textarea.HCAU-form.form-control {
 }
 
 .HCAU-table {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #e5e5e5;
 }
 .HCAU-table th,
 .HCAU-table td {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #e5e5e5;
   padding: 16px;
 }
 .HCAU-table th {
-  background: #f5f5f5;
+  background: #f8f8f8;
   font-weight: 700;
 }
 .HCAU-table td {
   background: #fff;
 }
 .HCAU-table tr.table-active td {
-  background: rgba(234, 0, 41, 0.04);
+  background: rgba(206, 45, 45, 0.04);
 }
 
 .prd-keyvi {
@@ -1152,7 +1319,7 @@ textarea.HCAU-form.form-control {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #d5d5d5;
   padding: 40px 20px;
 }
 .prd-keyvi .chart-wrap .HCAU-txt-sm {
@@ -1160,7 +1327,7 @@ textarea.HCAU-form.form-control {
   left: initial;
   top: initial;
   margin-top: 16px;
-  font-size: 14px;
+  font-size: 15px;
 }
 .prd-keyvi .chart-wrap img {
   margin-top: 50px;
@@ -1185,7 +1352,7 @@ textarea.HCAU-form.form-control {
   box-sizing: border-box;
   min-width: 180px;
   max-width: 180px;
-  background: #666666;
+  background: #000000;
   position: absolute;
   left: -20px;
   bottom: 25px;
@@ -1194,7 +1361,7 @@ textarea.HCAU-form.form-control {
 .HCAU-tooltip .HCAU-tooltip-inner .HCAU-tooltip-arrow {
   width: 10px;
   height: 10px;
-  background: #666666;
+  background: #000000;
   position: absolute;
   left: 23px;
   bottom: -4px;
@@ -1206,59 +1373,86 @@ textarea.HCAU-form.form-control {
 .HCAU-tooltip .HCAU-tooltip-inner .HCAU-tooltip-cont > div + div {
   margin-top: 4px;
 }
+.HCAU-tooltip.rtl .HCAU-tooltip-inner {
+  left: initial;
+  right: -14px;
+  z-index: 1;
+}
+.HCAU-tooltip.rtl .HCAU-tooltip-inner .HCAU-tooltip-arrow {
+  left: initial;
+  right: 16px;
+}
 
 .HCAU-step {
-  margin: 0 auto;
-  position: relative;
-}
-.HCAU-step .step-num {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-.HCAU-step .step-num .step-item {
-  position: relative;
-}
-.HCAU-step .step-num .step-item + .step-item:before {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 2px;
-  background: #e5e5e5;
-  position: absolute;
-  left: -20px;
-  top: 15px;
-}
-.HCAU-step .step-num .step-item .num {
-  width: 32px;
-  height: 32px;
-  border: 2px solid #e5e5e5;
-  border-radius: 100%;
-  font-size: 16px;
-  font-weight: 700;
+  margin: -32px -20px 0;
+  background: linear-gradient(90deg, rgb(92, 80, 76) 0%, rgb(62, 50, 46) 35%, rgb(36, 24, 20) 100%);
+  padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 20px;
 }
-.HCAU-step .step-num .step-item img {
-  display: none;
-  margin-top: 4px;
-  margin-left: auto;
-  margin-right: auto;
+.HCAU-step .HCAU-step-inner {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 32px;
 }
-.HCAU-step .step-num .step-item.active .num {
-  background: #000000;
-  border-color: #000000;
+.HCAU-step .HCAU-step-inner .step {
+  flex-shrink: 0;
+  font-size: 15px;
   color: #fff;
-}
-.HCAU-step .step-txt .HCAU-txt-md {
   font-weight: 700;
-  color: #000000;
-  text-align: center;
-  display: none;
+  padding: 10px 0;
+  position: relative;
 }
-.HCAU-step .step-txt .HCAU-txt-md.active {
+.HCAU-step .HCAU-step-inner .step:after {
+  content: "";
   display: block;
+  width: 1px;
+  height: 40px;
+  opacity: 0.4;
+  background: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  right: -16px;
+  top: 0;
+}
+.HCAU-step .HCAU-step-inner .step-name {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 0;
+}
+.HCAU-step .step-paging {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background: #af6249;
+  position: relative;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 700;
+}
+.HCAU-step .step-paging:after {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: #fff;
+  opacity: 0.2;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: rotate(-45deg);
+}
+.HCAU-step .step-paging .step-current {
+  position: absolute;
+  left: 6px;
+  top: 5px;
+}
+.HCAU-step .step-paging .step-total {
+  position: absolute;
+  right: 6px;
+  bottom: 0px;
 }
 
 .HCAU-badge {
@@ -1267,6 +1461,8 @@ textarea.HCAU-form.form-control {
   padding: 3px 8px;
   border-radius: 15px;
   vertical-align: middle;
+  min-width: 60px;
+  text-align: center;
 }
 .HCAU-badge.type01 {
   color: #ce2d2d;
@@ -1274,14 +1470,14 @@ textarea.HCAU-form.form-control {
   border: 1px solid #ce2d2d;
 }
 .HCAU-badge.type02 {
-  color: #000000;
-  background: #ebeff3;
-  border: 1px solid #3f6fa6;
+  color: #a2a2a2;
+  background: #f8f8f8;
+  border: 1px solid #a2a2a2;
 }
 .HCAU-badge.type03 {
-  color: #43B100;
-  background: #EAF6E3;
-  border: 1px solid #43B100;
+  color: #1d8abc;
+  background: #EDF6FA;
+  border: 1px solid #1d8abc;
 }
 .HCAU-badge.type04 {
   color: #000000;
@@ -1313,6 +1509,7 @@ textarea.HCAU-form.form-control {
   justify-content: center;
   align-items: center;
   padding: 110px 0;
+  padding-top: 78px;
 }
 .HCAU-nodata.type01 .HCAU-txt-md {
   font-weight: 700;
@@ -1335,7 +1532,7 @@ textarea.HCAU-form.form-control {
 
 .HCAU-filter {
   padding: 20px 16px;
-  background: #fafafa;
+  background: #f8f8f8;
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;
 }
@@ -1346,6 +1543,9 @@ textarea.HCAU-form.form-control {
 }
 .HCAU-filter .inner > div {
   flex-grow: 1;
+}
+.HCAU-filter ~ .HCAU-nodata.type01 {
+  padding-top: 110px;
 }
 
 .HCAU-form-wrap + .HCAU-form-wrap {
@@ -1379,24 +1579,24 @@ textarea.HCAU-form.form-control {
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-.HCAU-tab.native-scroll .btn-2 {
+.HCAU-tab.native-scroll:after {
+  content: "";
+  display: block;
+  width: calc(100% - 20px);
+  height: 1px;
+  background: #a2a2a2;
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+}
+.HCAU-tab.native-scroll > div {
   display: inline-flex;
   position: relative;
 }
-.HCAU-tab.native-scroll .btn-2 button.one {
+.HCAU-tab.native-scroll > div button:first-child {
   margin-left: 20px;
 }
-.HCAU-tab.native-scroll .btn-2 button.two {
-  margin-right: 20px;
-}
-.HCAU-tab.native-scroll .btn-3 {
-  display: inline-flex;
-  position: relative;
-}
-.HCAU-tab.native-scroll .btn-3 button.one {
-  margin-left: 20px;
-}
-.HCAU-tab.native-scroll .btn-3 button.three {
+.HCAU-tab.native-scroll > div button:last-child {
   margin-right: 20px;
 }
 .HCAU-tab.native-scroll::-webkit-scrollbar {
@@ -1413,7 +1613,7 @@ textarea.HCAU-form.form-control {
   font-weight: 700;
   padding: 12px 36px;
   white-space: nowrap;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #a2a2a2;
 }
 .HCAU-tab button.active {
   border-bottom: 2px solid #000000;
@@ -1438,9 +1638,11 @@ textarea.HCAU-form.form-control {
   width: 100%;
   padding: 7px;
   border: 1px solid #e5e5e5;
+  background: #e5e5e5;
 }
 .HCAU-tab-small li button.active {
   border-color: #000000;
+  background: #fff;
 }
 .HCAU-tab-small li:first-child button {
   border-radius: 4px 0px 0px 4px;
@@ -1449,14 +1651,20 @@ textarea.HCAU-form.form-control {
   border-radius: 0px 4px 4px 0px;
 }
 
-.request-step > div {
+.request-step > .border-box {
   position: relative;
+  border-color: #a2a2a2;
 }
-.request-step > div .HCAU-txt-md {
-  display: inline-block;
-  border-bottom: 1px solid #000000;
+.request-step > .border-box .HCAU-txt-md {
+  padding: 12px 24px;
+  border-bottom: 1px solid #e5e5e5;
+  background: #f8f8f8;
+  border-radius: 4px 4px 0 0;
 }
-.request-step > div img {
+.request-step > .border-box .HCAU-txt-sm {
+  padding: 27px 24px;
+}
+.request-step > .border-box img {
   position: absolute;
   left: 50%;
   margin-left: -12px;
@@ -1481,7 +1689,7 @@ textarea.HCAU-form.form-control {
   background: #fff;
 }
 .request-amount .HCAU-h1 {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .HCAU-search-bar > div + div {
@@ -1490,7 +1698,7 @@ textarea.HCAU-form.form-control {
 .HCAU-search-bar .radio-group {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #d5d5d5;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -1498,10 +1706,10 @@ textarea.HCAU-form.form-control {
   flex: 1 0 50%;
 }
 .HCAU-search-bar .radio-group > div:nth-child(3), .HCAU-search-bar .radio-group > div:nth-child(4) {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #d5d5d5;
 }
 .HCAU-search-bar .radio-group > div:nth-child(1), .HCAU-search-bar .radio-group > div:nth-child(3) {
-  border-right: 1px solid #e5e5e5;
+  border-right: 1px solid #d5d5d5;
 }
 .HCAU-search-bar .radio-group > div .btn {
   display: block;
@@ -1539,12 +1747,8 @@ textarea.HCAU-form.form-control {
 }
 
 .HCAU-result-msg {
-  padding: 80px 40px;
+  padding: 48px 10px 40px;
   text-align: center;
-}
-
-.HCAU-result-msg + .g-notice {
-  margin-top: 0;
 }
 
 .HCAU-tab-radio .d-flex {
@@ -1563,7 +1767,7 @@ textarea.HCAU-form.form-control {
 .HCAU-tab-radio .HCAU-btn.btn-sm {
   height: auto;
   padding: 8px 16px;
-  border-color: #e5e5e5;
+  border-color: #d5d5d5;
   width: 100%;
 }
 .HCAU-tab-radio input:checked + .HCAU-btn.btn-sm {
@@ -1584,12 +1788,13 @@ textarea.HCAU-form.form-control {
 }
 .HCAU-tab-radio2 > div label {
   border-radius: 0;
-  border-color: #e5e5e5;
+  border-color: #d5d5d5;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-weight: 400 !important;
 }
 .HCAU-tab-radio2 > div input:checked + label {
   background-color: #000000;
@@ -1627,13 +1832,13 @@ textarea.HCAU-form.form-control {
 }
 
 .HCAU-accordion .accordion {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #d5d5d5;
 }
 .HCAU-accordion .accordion .accordion-item {
   border: none;
 }
 .HCAU-accordion .accordion .accordion-item + .accordion-item {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #d5d5d5;
 }
 .HCAU-accordion .accordion .accordion-item .accordion-header .accordion-button {
   gap: 16px;
@@ -1656,9 +1861,20 @@ textarea.HCAU-form.form-control {
 
 .HCAU-modal.HCAU-gnb .modal-top {
   text-align: left;
+  background: #fff;
 }
 .HCAU-modal.HCAU-gnb .modal-header {
   padding: 24px 20px;
+  border-bottom: 1px solid transparent;
+}
+.HCAU-modal.HCAU-gnb .modal-header .HCAU-txt-xl {
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "GenesisHeadOffice";
+}
+.HCAU-modal.HCAU-gnb .modal-header .HCAU-txt-xl img {
+  position: relative;
+  top: -3px;
 }
 .HCAU-modal.HCAU-gnb .modal-body {
   padding: 0;
@@ -1675,7 +1891,7 @@ textarea.HCAU-form.form-control {
   border: none;
   padding: 20px;
   padding-right: 60px;
-  font-size: 14px;
+  font-size: 15px;
   background: #f5f5f5;
 }
 .HCAU-gnb-search .btn-search {
@@ -1693,7 +1909,7 @@ textarea.HCAU-form.form-control {
   appearance: none;
   width: 24px;
   height: 24px;
-  background: url(/static/html/m/hyundai/img/ico_search_clear.svg) 0 0 no-repeat;
+  background: url(/static/html/m/genesis/img/ico_search_clear.svg) 0 0 no-repeat;
   cursor: pointer;
   position: absolute;
   right: 20px;
@@ -1706,7 +1922,7 @@ textarea.HCAU-form.form-control {
   -webkit-appearance: none;
   width: 24px;
   height: 24px;
-  background: url(/static/html/m/hyundai/img/ico_search_clear.svg) 0 0 no-repeat;
+  background: url(/static/html/m/genesis/img/ico_search_clear.svg) 0 0 no-repeat;
   cursor: pointer;
   position: absolute;
   right: 20px;
@@ -1724,14 +1940,17 @@ textarea.HCAU-form.form-control {
   border: none;
   box-shadow: none;
 }
+.HCAU-gnb-menu > .accordion > .accordion-item > .accordion-header button .HCAU-txt-lg {
+  font-size: 22px;
+}
 .HCAU-gnb-menu > .accordion > .accordion-item > .accordion-header button:after {
-  background: url(/static/html/m/hyundai/img/ico_gnb_close.svg);
+  background: url(/static/html/m/genesis/img/ico_gnb_close.svg);
 }
 .HCAU-gnb-menu > .accordion > .accordion-item > .accordion-header button.collapsed {
   border: none;
 }
 .HCAU-gnb-menu > .accordion > .accordion-item > .accordion-header button.collapsed:after {
-  background: url(/static/html/m/hyundai/img/ico_gnb_open.svg);
+  background: url(/static/html/m/genesis/img/ico_gnb_open.svg);
 }
 .HCAU-gnb-menu > .accordion > .accordion-item > .accordion-collapse .accordion-body {
   padding: 0 32px 20px;
@@ -1813,8 +2032,10 @@ textarea.HCAU-form.form-control {
 .select-membership a.border-box {
   padding: 54px 0;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 12px;
+  border-color: #000000;
   flex: 1 1 100%;
+  overflow: hidden;
 }
 .select-membership a.border-box img.hover {
   display: none;
@@ -1886,8 +2107,8 @@ textarea.HCAU-form.form-control {
 }
 
 .postcode.select .inner {
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5;
   margin-left: -20px;
   margin-right: -20px;
   padding: 12px 16px;
@@ -1913,7 +2134,7 @@ textarea.HCAU-form.form-control {
 
 .sticky-wrap {
   padding: 32px;
-  z-index: 999;
+  z-index: 2;
   width: 100vw;
   position: sticky;
   left: 0;
@@ -2059,7 +2280,7 @@ textarea.HCAU-form.form-control {
 }
 .HCAU-tab-radio2 > div label {
   border-radius: 0;
-  border-color: #e5e5e5;
+  border-color: #d5d5d5;
   width: 100%;
   display: flex;
   align-items: center;
@@ -2151,4 +2372,12 @@ textarea.HCAU-form.form-control {
   left: 0;
   top: 50%;
   margin-top: -10px;
+}
+
+.HCAU-otp.bg-box2 {
+  border: 1px solid #af6249;
+  background-color: #f8f8f8;
+}
+.HCAU-otp.bg-box2 > .border-box {
+  border-color: transparent;
 }/*# sourceMappingURL=HCAU-m-component-genesis.css.map */

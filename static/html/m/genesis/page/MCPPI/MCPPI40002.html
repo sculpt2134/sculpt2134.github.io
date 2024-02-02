@@ -13,41 +13,33 @@
 <body>
     <div class="wrap">
         <script type="text/javascript" src="/static/html/m/genesis/js/Header.js"></script>
-
+        <!-- HCAU-title -->
+        <div class="HCAU-title">
+            <div class="HCAU-h1">Statement preferences</div>
+            <div class="HCAU-txt-md gray04">You can change the email address that receives a billing statement of the lease product you have chosen.</div>
+        </div>
+        <!-- //HCAU-title -->
         <!-- HCAU-container -->
         <div class="HCAU-container">
             <div class="HCAU-contents" id="contents">
-                <!-- HCAU-title -->
-                <div class="HCAU-title">
-                    <div class="HCAU-h1">Change the email address that receives a billing statement</div>
-                    <div class="HCAU-txt-md gray04">You can change the email address for receiving the invoice for the lease product you have selected.</div>
-                </div>
-                <!-- //HCAU-title -->
+
                 <!-- HCAU-detail -->
                 <div class="HCAU-detail">
 
                     <div class="HCAU-step">
-                        <div class="step-num">
-                            <div class="step-item active">
-                                <div class="num">1</div>
-                            </div>
-                            <div class="step-item ">
-                                <div class="num">2</div>
-                            </div>
-                            <div class="step-item ">
-                                <div class="num">3</div>
-                            </div>
+                        <div class="HCAU-step-inner">
+                            <div class="step">STEP 1</div>
+                            <div class="step-name">Select change target</div>
                         </div>
-                        <div class="step-txt mt12">
-                            <div class="HCAU-txt-md active">Select change target</div>
-                            <div class="HCAU-txt-md">Enter information</div>
-                            <div class="HCAU-txt-md">Application completed</div>
+                        <div class="step-paging">
+                            <span class="step-current">1</span>
+                            <span class="step-total">3</span>
                         </div>
                     </div>
 
                     <div class="HCAU-filter mt32">
                         <div class="inner">
-                            <div class="HCAU-txt-md fw-bold">Lease</div>
+                            <div class="HCAU-txt-md fw-bold">Search conditions</div>
                             <button type="button" data-bs-toggle="modal" data-bs-target="#filter">
                                 <img src="/static/html/m/genesis/img/ico_filter.svg" alt="">
                             </button>
@@ -62,18 +54,17 @@
                                         <img src="/static/html/m/genesis/img/ico_modal_close.svg" alt="Close">
                                     </button>
                                 </div>
-                                <div class="modal-header">
-                                    <div class="HCAU-h1">Search conditions</div>
-                                </div>
-                                <div class="modal-body">
 
-                                    <div class="mt-2">
-                                        <div class="HCAU-form-wrap">
+                                <div class="modal-body">
+                                    <div class="modal-header">
+                                        <div class="HCAU-h1">Search conditions</div>
+                                    </div>
+                                    <div class="">
+                                        <!-- <div class="HCAU-form-wrap">
                                             <div class="form-title HCAU-txt-md fw-bold">Product classcification</div>
                                             <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#filter01">all</button>
                                             <div class="HCAU-bottom-sheet offcanvas offcanvas-bottom" tabindex="-1" id="filter01">
                                                 <div class="offcanvas-header">
-                                                    <!-- <h5 class="offcanvas-title" id="offcanvasBottomLabel">bottom sheet title</h5> -->
                                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
                                                         <img src="/static/html/m/genesis/img/ico_modal_close.svg" alt="Close">
                                                     </button>
@@ -94,7 +85,6 @@
                                             <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#filter02">all</button>
                                             <div class="HCAU-bottom-sheet offcanvas offcanvas-bottom" tabindex="-1" id="filter02">
                                                 <div class="offcanvas-header">
-                                                    <!-- <h5 class="offcanvas-title" id="offcanvasBottomLabel">bottom sheet title</h5> -->
                                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
                                                         <img src="/static/html/m/genesis/img/ico_modal_close.svg" alt="Close">
                                                     </button>
@@ -109,7 +99,7 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div class="HCAU-form-wrap">
                                             <div class="form-title HCAU-txt-md fw-bold">Car type</div>
                                             <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#filter03">all</button>
@@ -172,24 +162,12 @@
                                 <label class="form-check-label" for="chk01">
                                     <div class="HCAU-txt-md fw-bold">New Car Loan_Standard</div>
                                     <div class="HCAU-txt-sm fw-bold pt-1">
-                                        <span>H2023NA000248</span>
+                                        <span>H2023NA000248 / Santa Fe</span>
                                     </div>
                                 </label>
                             </div>
                             <div class="border-top px-3 py20">
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <span class="HCAU-txt-sm">
-                                            Car type
-                                        </span>
-                                    </div>
-                                    <div class="text-end">
-                                        <span class="HCAU-txt-sm">
-                                            Santa Fe
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center mt12">
                                     <div>
                                         <span class="HCAU-txt-sm">
                                             Existing E-mail
@@ -212,24 +190,12 @@
                                 <label class="form-check-label" for="chk02">
                                     <div class="HCAU-txt-md fw-bold">New Car Loan_Standard</div>
                                     <div class="HCAU-txt-sm fw-bold pt-1">
-                                        <span>H2023NA000248</span>
+                                        <span>H2023NA000248 / Santa Fe</span>
                                     </div>
                                 </label>
                             </div>
                             <div class="border-top px-3 py20">
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <span class="HCAU-txt-sm">
-                                            Car type
-                                        </span>
-                                    </div>
-                                    <div class="text-end">
-                                        <span class="HCAU-txt-sm">
-                                            Santa Fe
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center mt12">
                                     <div>
                                         <span class="HCAU-txt-sm">
                                             Existing E-mail
@@ -252,24 +218,12 @@
                                 <label class="form-check-label" for="chk03">
                                     <div class="HCAU-txt-md fw-bold">New Car Loan_Standard</div>
                                     <div class="HCAU-txt-sm fw-bold pt-1">
-                                        <span>H2023NA000248</span>
+                                        <span>H2023NA000248 / Santa Fe</span>
                                     </div>
                                 </label>
                             </div>
                             <div class="border-top px-3 py20">
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <span class="HCAU-txt-sm">
-                                            Car type
-                                        </span>
-                                    </div>
-                                    <div class="text-end">
-                                        <span class="HCAU-txt-sm">
-                                            Santa Fe
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center mt12">
                                     <div>
                                         <span class="HCAU-txt-sm">
                                             Existing E-mail
@@ -314,15 +268,15 @@
                             <dd>
                                 <ul class="HCAU-bullet-list">
                                     <li class="HCAU-txt-sm">
-                                        We do not issue billing statements for loans on a regular basis. You can download a billing statement for each payment number on Account page.
-                                        <a href="" class="link">Accounts</a>
+                                        We do not issue billing statements for loans on a regular basis. You can download a billing statement for each payment number on billing statement page.
+                                        <a href="" class="link">Billing statement</a>
                                     </li>
                                     <li class="HCAU-txt-sm">
                                         The email address that you want us to send a billing statement to can be different from the one in your personal information.
                                     </li>
                                     <li class="HCAU-txt-sm">
                                         If you want to change the email address to access our Customer Portal with, go to<br>
-                                        <a href="" class="link ms-auto">Personal information change</a>
+                                        <a href="" class="link ms-auto">View personal information</a>
                                     </li>
                                 </ul>
                             </dd>
@@ -346,7 +300,7 @@
     </div>
     <!-- <script src="/static/html/m/genesis/js/jquery-3.3.1.min.js"></script> -->
     <script src="/static/html/m/genesis/js/bootstrap.bundle.min.js"></script>
-    <!-- <script type="module" src="js/main.js"></script> -->
+    <script type="module" src="/static/html/m/genesis/js/main.js"></script>
 </body>
 
 </html>

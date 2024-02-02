@@ -17,15 +17,33 @@
         }, false)
       })
   })()
-  document.querySelectorAll('.HCAU-tab-radio2 input[type="radio"]').forEach(radio => {
-    radio.addEventListener('change', function () {
-        const tabName = this.value;
-        document.querySelectorAll('.tab-radio-cont > div').forEach(div => {
-            div.style.display = 'none';
-        });
-        document.querySelectorAll(`.${tabName}`).forEach(selectedDiv => {
-            selectedDiv.style.display = 'block';
-        });
-        // console.log(tabName);
-    });
+document.querySelectorAll('.HCAU-tab-radio2 input[type="radio"]').forEach(radio => {
+  radio.addEventListener('change', function () {
+      const tabName = this.value;
+      document.querySelectorAll('.tab-radio-cont > div').forEach(div => {
+          div.style.display = 'none';
+      });
+      document.querySelectorAll(`.${tabName}`).forEach(selectedDiv => {
+          selectedDiv.style.display = 'block';
+      });
+      // console.log(tabName);
   });
+});
+
+const handleScroll = () => {
+  const header = document.querySelector('header');
+  if (window.scrollY >= 1) {
+      header.classList.add('scroll');
+  } else {
+      header.classList.remove('scroll');
+  }
+};
+window.addEventListener('scroll', handleScroll);
+
+document.addEventListener('DOMContentLoaded', () => {
+  const button = document.querySelector('.native-scroll > div > button.active');
+  const left = button.getBoundingClientRect().left;
+  const nativeScroll = document.querySelector('.native-scroll');
+  const curLeft = nativeScroll.scrollLeft;
+  nativeScroll.scrollLeft = curLeft + left - 20;
+});

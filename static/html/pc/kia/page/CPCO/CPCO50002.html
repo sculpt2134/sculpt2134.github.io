@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>HCAU-PUBL</title>
+  <link rel="stylesheet" href="/static/html/pc/kia/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/pc/kia/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+    <div class="wrap">
+      <div class="HCAU-sidebar" include-html="/static/html/pc/kia/aside.html"></div>
+      <div class="HCAU-menubar" include-html="/static/html/pc/kia/menu.html"></div>
+
+      <div class="HCAU-container">
+            <div class="HCAU-contents" id="contents">
+                <!-- HCAU-breadcrumb -->
+                <div class="HCAU-breadcrumb" include-html="/static/html/pc/kia/breadcrumb.html"></div>
+            <!-- //HCAU-breadcrumb -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////START PAGE CONTENTS/////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- HCAU-title -->
+<div class="HCAU-title">
+    <!-- class option : border-bottom -->
+    <div class="HCAU-h1">Login</div>
+</div>
+<!-- //HCAU-title -->
+
+<!-- HCAU-detail -->
+<div class="HCAU-detail">
+
+    <!-- <button type="button" class="HCAU-btn primary" data-bs-toggle="modal" data-bs-target="#loginModal">login</button> -->
+
+<div class="HCAU-login-wrap">
+        <!-- HCAU-tab -->
+    <div class="HCAU-tab mt20" style="border:1px solid black;border-bottom:0;border-radius:12px 12px 0 0">
+        <ul class="nav nav-tabs" id="" role="tablist">
+            <li class="nav-item one"><button class="nav-link" id="tab01" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Personal</button></li>
+            <li class="nav-item two"><button class="nav-link active" id="tab02" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Business</button></li>
+        </ul>
+    </div>
+    <!-- //HCAU-tab -->
+
+    <!-- tab-content -->
+    <div class="tab-content" id="">
+        <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="tab01" tabindex="0">
+            <div class="HCAU-login">
+                    <div class="d-flex g20 flex-column">
+                        <div class="HCAU-login-input">
+                            <p><input type="email" class="form-control HCAU-form" id="" aria-describedby="" value="" placeholder="Enter E-mail"></p>
+                            <div class="invalid-feedback" style="display:block;">Please enter a properly formatted User ID</div>
+                            <p class="mt20"><input type="email" class="form-control HCAU-form" id="" aria-describedby="" value="" placeholder="Enter Password"></p>
+                            <div class="invalid-feedback" style="display:block;">The password field is mandatory</div>
+                        </div>
+                        <button type="button" class="HCAU-btn btn-cta primary btn-large">Login</button>
+                    </div>
+                </div>
+            <div class="d-flex g20 mt60  mb40 full">
+                    <a href="#" class="link">Find ID</a>
+                    <a href="#" class="link">Forgot my Password</a>
+                    <a href="#" class="link">Register</a>
+            </div>
+        </div>
+        <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="tab02" tabindex="0">
+            <div class="HCAU-login">
+                    <div class="d-flex g20 flex-column">
+                        <div class="HCAU-login-input">
+                            <p><input type="email" class="form-control HCAU-form" id="" aria-describedby="" value="" placeholder="Please enter an ABN"></p>
+                            <div class="invalid-feedback" style="display:block;">Please type in a 11-digit number</div>
+                            <p class="mt20"><input type="email" class="form-control HCAU-form" id="" aria-describedby="" value="" placeholder="Please type in password"></p>
+                            <div class="invalid-feedback" style="display:block;">The password field is mandatory</div>
+                        </div>
+                        <button type="button" class="HCAU-btn btn-cta primary btn-large">Login</button>
+                    </div>
+                </div>
+            <div class="d-flex g20 mt60 mb40 full">
+                    <a href="#" class="link">Forgot my Password</a>
+                    <a href="#" class="link">Register</a>
+            </div>
+        </div>
+        <div class="g-notice">
+            <ul class="HCAU-bullet-list">
+                <li>
+                    By continuing you confirm that you have read and agree to our <a href="#" class="under">Privacy Collection Notice</a> and <a href="#" class="under">Privacy Policy</a>.
+                </li>
+                <li>
+                    To protect your information, you will be automatically logged out if you do not use the service for more than 10 minutes.
+                </li>
+                <li>
+                    For security purposes, if you enter an incorrect password 5 times in a row, your will be required to verify your identity and change your password.
+                </li>
+                <li>
+                    If you’re unable to re-set your password, please give our friendly Customer Service representative a call on 1300 xxx xxx
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- //tab-content -->
+
+
+</div>
+<!-- HCAU-detail -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+            </div><!--//HCAU-contents-->
+            <footer class="HCAU-footer" include-html="/static/html/pc/kia/footer.html"></footer>
+        </div><!--//HCAU-contentainer-->
+    </div><!--//wrap-->
+
+<script src="/static/html/pc/kia/js/bootstrap.bundle.min.js"></script>
+<script src="/static/html/pc/kia/js/main.js"></script>
+<script src="/static/html/pc/kia/js/includeHTML.js"></script>
+<script src="/static/html/pc/kia/js/includeRouter.js"></script>
+<script>
+includeHTML( function () {
+includeRouter( function () {
+});
+});
+
+</script>
+</body>
+
+</html>

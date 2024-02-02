@@ -196,6 +196,11 @@
   margin-right: -16px;
 }
 
+.mx12 {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
 .mx20 {
   margin-left: 20px;
   margin-right: 20px;
@@ -432,6 +437,18 @@ a {
   color: #002C5F;
 }
 
+.color-complete {
+  color: #002C5F;
+}
+
+.color-overdue {
+  color: #E63312;
+}
+
+.color-scheduled {
+  color: #00AAD2;
+}
+
 header {
   background: #fff;
   padding: 12px 20px;
@@ -443,15 +460,86 @@ header {
 }
 
 footer {
-  background: #d5d5d5;
   padding: 32px 20px;
+  background: #d5d5d5;
 }
-footer .copyright {
+footer .family-site {
+  position: relative;
+}
+footer .family-site .HCAU-btn {
+  background: transparent;
+  border-color: #999;
+  color: #999;
+}
+footer .family-site .HCAU-btn::after {
+  display: none;
+}
+footer .family-site .ico-dropdown {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  margin-top: -12px;
+}
+footer .family-site .ico-dropdown path {
+  fill: #999;
+}
+footer .mail path,
+footer .call path,
+footer .bar rect {
+  fill: #999 !important;
+}
+footer .arrow path {
+  stroke: #999;
+}
+footer .contact-us * {
   font-size: 13px;
   color: #999;
 }
-footer .copyright + .copyright {
-  margin-top: 11px;
+footer .footer-menu span {
+  display: inline-block;
+  margin-top: 4px;
+}
+footer .footer-menu rect {
+  fill: #999;
+}
+footer .footer-menu a {
+  font-size: 13px;
+  color: #999;
+}
+footer .copy {
+  font-size: 13px;
+  color: #999;
+}
+
+body.main footer {
+  background: #000;
+}
+body.main footer .family-site .HCAU-btn {
+  border-color: #444;
+  color: #444;
+}
+body.main footer .family-site .ico-dropdown path {
+  fill: #444;
+}
+body.main footer .mail path,
+body.main footer .call path,
+body.main footer .bar rect {
+  fill: #444 !important;
+}
+body.main footer .arrow path {
+  stroke: #444;
+}
+body.main footer .contact-us * {
+  color: #444;
+}
+body.main footer .footer-menu rect {
+  fill: #444;
+}
+body.main footer .footer-menu a {
+  color: #444;
+}
+body.main footer .copy {
+  color: #444;
 }
 
 .HCAU-detail {
@@ -616,7 +704,7 @@ footer .copyright + .copyright {
   display: flex;
   gap: 1px;
   background: #fff;
-  z-index: 2;
+  z-index: 3;
 }
 .btn-cta-wrap > button {
   flex-shrink: 1;
@@ -686,6 +774,10 @@ footer .copyright + .copyright {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.HCAU-form.form-control::placeholder,
+.HCAU-form.form-select::placeholder {
+  color: #999;
+}
 
 .HCAU-form:placeholder-shown {
   text-overflow: ellipsis;
@@ -693,6 +785,7 @@ footer .copyright + .copyright {
 
 textarea.HCAU-form.form-control {
   height: auto;
+  white-space: break-spaces;
 }
 
 .HCAU-form.form-control:focus,
@@ -727,23 +820,6 @@ textarea.HCAU-form.form-control {
   top: 12px;
   font-size: 14px;
   color: #E63312;
-}
-
-.calendar {
-  position: relative;
-}
-.calendar .HCAU-form.form-control {
-  padding-right: 50px;
-}
-.calendar .HCAU-form.form-control:read-only + span > img {
-  opacity: 0.4;
-}
-.calendar span {
-  display: inline-block;
-  position: absolute;
-  right: 16px;
-  top: 50%;
-  margin-top: -12px;
 }
 
 .HCAU-form.form-check-input {
@@ -966,15 +1042,26 @@ textarea.HCAU-form.form-control {
   height: auto;
   opacity: 1;
 }
-.HCAU-modal .modal-header {
-  padding: 12px 20px;
-  border-bottom: none;
-}
-.HCAU-modal .modal-header .HCAU-h1 {
-  text-transform: none;
-}
 .HCAU-modal .modal-body {
   padding: 12px 20px 60px;
+}
+.HCAU-modal .modal-body .modal-header {
+  display: block;
+  margin-top: -12px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 0;
+  border-bottom: none;
+}
+.HCAU-modal .modal-body .modal-header + div {
+  margin-top: 8px;
+}
+.HCAU-modal .modal-body .modal-header .HCAU-h1 {
+  text-transform: none;
+  padding: 12px 20px;
+}
+.HCAU-modal .modal-body .modal-header .HCAU-h1 + .bg-box {
+  padding: 22px 20px;
 }
 .HCAU-modal .modal-footer {
   display: block;
@@ -1207,6 +1294,15 @@ textarea.HCAU-form.form-control {
 .HCAU-tooltip .HCAU-tooltip-inner .HCAU-tooltip-cont > div + div {
   margin-top: 4px;
 }
+.HCAU-tooltip.rtl .HCAU-tooltip-inner {
+  left: initial;
+  right: -14px;
+  z-index: 1;
+}
+.HCAU-tooltip.rtl .HCAU-tooltip-inner .HCAU-tooltip-arrow {
+  left: initial;
+  right: 16px;
+}
 
 .HCAU-step {
   margin: 0 auto;
@@ -1268,6 +1364,8 @@ textarea.HCAU-form.form-control {
   padding: 3px 8px;
   border-radius: 15px;
   vertical-align: middle;
+  min-width: 60px;
+  text-align: center;
 }
 .HCAU-badge.type01 {
   color: #E63312;
@@ -1380,24 +1478,24 @@ textarea.HCAU-form.form-control {
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-.HCAU-tab.native-scroll .btn-2 {
+.HCAU-tab.native-scroll:after {
+  content: "";
+  display: block;
+  width: calc(100% - 20px);
+  height: 1px;
+  background: #999;
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+}
+.HCAU-tab.native-scroll > div {
   display: inline-flex;
   position: relative;
 }
-.HCAU-tab.native-scroll .btn-2 button.one {
+.HCAU-tab.native-scroll > div button:first-child {
   margin-left: 20px;
 }
-.HCAU-tab.native-scroll .btn-2 button.two {
-  margin-right: 20px;
-}
-.HCAU-tab.native-scroll .btn-3 {
-  display: inline-flex;
-  position: relative;
-}
-.HCAU-tab.native-scroll .btn-3 button.one {
-  margin-left: 20px;
-}
-.HCAU-tab.native-scroll .btn-3 button.three {
+.HCAU-tab.native-scroll > div button:last-child {
   margin-right: 20px;
 }
 .HCAU-tab.native-scroll::-webkit-scrollbar {
@@ -1406,25 +1504,19 @@ textarea.HCAU-form.form-control {
 .HCAU-tab button {
   display: inline-flex;
   flex: 1;
-  position: relative;
   justify-content: center;
+  position: relative;
   z-index: 1;
   font-size: 16px;
   color: #999;
   font-weight: 700;
   padding: 12px 36px;
   white-space: nowrap;
-  border-bottom: 1px solid #d5d5d5;
+  border-bottom: 1px solid #999;
 }
 .HCAU-tab button.active {
   border-bottom: 2px solid #000;
   color: #000;
-}
-.HCAU-tab button.one {
-  margin-left: 20px;
-}
-.HCAU-tab button.two {
-  margin-right: 20px;
 }
 .HCAU-tab.ellipsis {
   overflow: hidden;
@@ -1601,6 +1693,7 @@ textarea.HCAU-form.form-control {
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-weight: 400 !important;
 }
 .HCAU-tab-radio2 > div input:checked + label {
   background-color: #000;
@@ -1670,6 +1763,7 @@ textarea.HCAU-form.form-control {
 }
 .HCAU-modal.HCAU-gnb .modal-header {
   padding: 24px 20px;
+  border-bottom: 1px solid #000;
 }
 .HCAU-modal.HCAU-gnb .modal-body {
   padding: 0;
@@ -1924,7 +2018,7 @@ textarea.HCAU-form.form-control {
 
 .sticky-wrap {
   padding: 32px;
-  z-index: 999;
+  z-index: 2;
   width: 100vw;
   position: sticky;
   left: 0;

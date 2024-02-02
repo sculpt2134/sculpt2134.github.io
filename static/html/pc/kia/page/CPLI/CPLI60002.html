@@ -11,7 +11,7 @@
     <div class="wrap">
       <div class="HCAU-sidebar" include-html="/static/html/pc/kia/aside.html"></div>
       <div class="HCAU-menubar" include-html="/static/html/pc/kia/menu.html"></div>
-  
+
       <div class="HCAU-container">
             <div class="HCAU-contents" id="contents">
                 <!-- HCAU-breadcrumb -->
@@ -25,7 +25,7 @@
 <!-- HCAU-title -->
 <div class="HCAU-title">
     <!-- class option : border-bottom -->
-    <div class="HCAU-h1">Payment details</div>
+    <div class="HCAU-h1">Payment Transactions & Statements</div>
 </div>
 <!--//HCAU-title-->
 
@@ -56,33 +56,22 @@
                     </div>
                 </div>
                 <div class="d-flex g08 rg0 align-items-top flex-wrap">
-                    <div class="dropdown flex-grow-1">
-                        <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
-                            April 2023
-                        </button>
-                        <ul class="dropdown-menu flex-fill">
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#none">label 1</a></li>
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#none">label 2</a></li>
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#none">label 3</a></li>
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#none">label 4</a></li>
-                        </ul>
+                    <div id="sandbox2" class="HCAU-calendar flex-fix">
+                        <input type="text" class="HCAU-form form-control date" value="19/01/2023" disabled>
+                        <span>
+                            <img src="/static/html/m/genesis/img/ico_calendar_readonly.svg" alt="">
+                        </span>
+                        <div class="toggle-button"></div>
                     </div>
                     <div class="h44 d-flex align-items-center">
                         <div>~</div>
                     </div>
-                    <div class="dropdown flex-grow-1">
-                        <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
-                            April 2023
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
-                        </ul>
-                    </div>
-                    <div class="invalid-feedback" style="display: block;">
-                        invalid message.
+                    <div id="sandbox2" class="HCAU-calendar flex-fix">
+                        <input type="text" class="HCAU-form form-control date" value="19/01/2023" disabled>
+                        <span>
+                            <img src="/static/html/m/genesis/img/ico_calendar_readonly.svg" alt="">
+                        </span>
+                        <div class="toggle-button"></div>
                     </div>
                 </div>
             </div>
@@ -250,17 +239,34 @@
             </dd>
         </dl>
     </div>
-    <div class="d-flex gap-3 mt20">
+    <!-- <div class="d-flex gap-3 mt20">
         <div class="border-box edge flex-fix p-4">
             <p class="HCAU-txt-sm">Do you want to check the products you are currently using?</p>
             <p class="pt12"><a href="#none" class="link">Product usage details</a></p>
         </div>
         <div class="border-box edge flex-fix p-4">
             <p class="HCAU-txt-sm">Do you want full or partial reimbursement for each product you are using?</p>
-            <p class="pt12"><a href="#none" class="link">pay off early</a></p>
+            <p class="pt12"><a href="#none" class="link">Early payout</a></p>
         </div>
-    </div>
+    </div> -->
 
 
 </div>
 <!-- //HCAU-detail -->
+<!-- //HCAU-detail -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+</div><!--//HCAU-contents-->
+<footer class="HCAU-footer" include-html="/static/html/pc/kia/footer.html"></footer>
+</div><!--//HCAU-contentainer-->
+</div><!--//wrap-->
+<script src="/static/html/pc/kia/js/bootstrap.bundle.min.js"></script>
+<script src="/static/html/pc/kia/js/main.js"></script>
+<script src="/static/html/pc/kia/js/includeHTML.js"></script>
+<script src="/static/html/pc/kia/js/includeRouter.js"></script>
+<script>
+includeHTML();
+</script>
+</body>
+</html>

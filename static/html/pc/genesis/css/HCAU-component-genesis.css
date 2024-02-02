@@ -46,6 +46,10 @@
   gap: 100px;
 }
 
+.g120 {
+  gap: 120px;
+}
+
 .g160 {
   gap: 160px;
 }
@@ -206,6 +210,11 @@
   padding-bottom: 100px;
 }
 
+.px16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
 .px20 {
   padding-left: 20px;
   padding-right: 20px;
@@ -241,6 +250,11 @@
   padding-right: 80px;
 }
 
+.mx16 {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
 .mx20 {
   margin-left: 20px;
   margin-right: 20px;
@@ -249,6 +263,16 @@
 .mx32 {
   margin-left: 32px;
   margin-right: 32px;
+}
+
+.mx40 {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.my32 {
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .my20 {
@@ -271,6 +295,10 @@
 
 .mt12 {
   margin-top: 12px;
+}
+
+.mt16 {
+  margin-top: 16px;
 }
 
 .mt20 {
@@ -325,6 +353,18 @@
   margin-bottom: 40px;
 }
 
+.mb42 {
+  margin-bottom: 42px !important;
+}
+
+.mb80 {
+  margin-bottom: 80px;
+}
+
+.mb100 {
+  margin-bottom: 100px;
+}
+
 .ml20 {
   margin-left: 20px;
 }
@@ -335,6 +375,10 @@
 
 .mr40 {
   margin-right: 40px !important;
+}
+
+section.mt40 {
+  margin-top: 40px !important;
 }
 
 a {
@@ -377,6 +421,10 @@ a {
   width: 350px;
 }
 
+.w360 {
+  width: 360px;
+}
+
 .w380 {
   width: 380px;
 }
@@ -405,11 +453,12 @@ a {
   height: 60px;
 }
 
-.dollar:before {
-  content: "$";
-  display: inline-block;
-  margin-right: 5px;
-  height: 20px;
+.h80 {
+  height: 80px;
+}
+
+.h500 {
+  height: 500px;
 }
 
 .border-bottom {
@@ -428,7 +477,15 @@ a {
 }
 
 .border-top-dashed {
-  border-top: 1px dashed #a2a2a2;
+  border-top: 1px dashed #000000;
+}
+
+.border-top-dashed.black {
+  border-top: 1px dashed #000000;
+}
+
+.border-top-dashed.gray {
+  border-color: #e5e5e5;
 }
 
 .border-bottom-dashed {
@@ -503,7 +560,7 @@ a {
 }
 
 .black {
-  color: #000000;
+  color: #000000 !important;
 }
 
 .point {
@@ -516,6 +573,24 @@ a {
 
 .point-blue {
   color: #1d8abc;
+}
+
+.scroll-wrap {
+  overflow: auto;
+  min-height: 200px;
+  max-height: 500px;
+  height: 100%;
+}
+
+.dollar:before {
+  content: "$";
+  display: inline-block;
+  margin-right: 5px;
+  height: 20px;
+}
+
+.backdrop {
+  backdrop-filter: blur(6px) saturate(150%);
 }
 
 .wrap {
@@ -549,7 +624,7 @@ a {
   padding: 32px 14px;
   font-size: 16px;
   float: left;
-  line-height: 16px;
+  line-height: 14px;
 }
 .wrap .HCAU-menubar .menu .HCAU-btn {
   gap: 28px;
@@ -687,6 +762,7 @@ a {
   max-width: 100%;
   padding-top: 0;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(6px) saturate(150%);
 }
 .wrap #parallax__nav.is-active .accordion-body, .wrap #parallax__nav.is-active .accordion-header, .wrap #parallax__nav.is-active .menu {
   max-width: 1440px;
@@ -802,6 +878,7 @@ a {
 }
 .wrap .HCAU-container .HCAU-contents .HCAU-breadcrumb .breadcrumb > li .HCAU-txt-md {
   color: #fff;
+  font-size: 16px;
 }
 .wrap .HCAU-container .HCAU-contents .HCAU-breadcrumb .breadcrumb svg {
   vertical-align: top;
@@ -844,7 +921,7 @@ a {
   margin-top: 60px;
 }
 .wrap .HCAU-container .HCAU-contents .HCAU-detail > section .title-area {
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 .wrap .HCAU-container .HCAU-contents .HCAU-detail > section .title-area .title {
   font-size: 24px;
@@ -869,7 +946,7 @@ a {
   margin-right: auto;
   margin-left: auto;
   max-width: 1280px;
-  height: 80px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -890,8 +967,7 @@ a {
 }
 .HCAU-footer .footer-inner .copyright {
   line-height: 28px;
-  text-transform: uppercase;
-  color: #999;
+  color: #666;
   font-size: 14px;
 }
 .HCAU-footer .footer-inner .sns {
@@ -900,48 +976,26 @@ a {
   justify-content: center;
   align-items: center;
 }
-.HCAU-footer .HCAU-cs {
-  width: 260px;
-  position: absolute;
-  right: 24px;
-  bottom: 80px;
-}
-.HCAU-footer .HCAU-cs .chat-bot {
-  background: #af6249;
-  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
-  width: 70px;
-  height: 70px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-  gap: 7px;
-  line-height: 1;
-  color: #fff;
-}
-.HCAU-footer .HCAU-cs .chat-bot:hover {
-  color: #fff;
-}
-.HCAU-footer .HCAU-cs .chat-bot img {
-  width: 28px;
-  height: 28px;
-}
-.HCAU-footer .HCAU-cs .chat-bot span {
+.HCAU-footer .footer-inner .email a, .HCAU-footer .footer-inner .call a, .HCAU-footer .footer-inner .policy a {
+  color: #666;
   font-size: 14px;
+  margin-left: 2px;
   font-weight: 700;
 }
-.HCAU-footer .HCAU-cs .contact-us {
-  margin-top: 40px;
-  line-height: 1;
+.HCAU-footer .footer-inner .email + .call {
+  margin-left: 25px;
 }
-.HCAU-footer .HCAU-cs .contact-us > div {
+.HCAU-footer .HCAU-cs .contact-us {
+  line-height: 1;
+  display: flex;
+}
+.HCAU-footer .HCAU-cs .contact-us div {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-.HCAU-footer .HCAU-cs .contact-us > div img a {
-  color: #666;
+.HCAU-footer .HCAU-cs .contact-us div a {
+  color: rgb(255, 255, 255);
 }
 .HCAU-footer .HCAU-cs .family-site {
   margin-top: 20px;
@@ -957,7 +1011,7 @@ a {
   align-items: center;
   justify-content: center;
   height: 170px;
-  padding-top: 90px;
+  padding-top: 45px;
 }
 .HCAU-title .HCAU-h1 {
   color: #fff;
@@ -971,6 +1025,7 @@ a {
 .HCAU-title .HCAU-txt-md {
   color: #a2a2a2;
   margin-top: 2px;
+  font-size: 16px;
 }
 
 .w910 {
@@ -1012,6 +1067,9 @@ a {
   justify-content: space-between;
   padding: 40px !important;
 }
+.g-notice .HCAU-bullet-list li + li {
+  margin-top: 8px;
+}
 
 .mx-40 {
   margin-left: -40px;
@@ -1037,7 +1095,7 @@ a {
 .HCAU-bullet-list li {
   position: relative;
   font-size: 16px;
-  color: #666666;
+  color: #000;
   padding-left: 11px;
 }
 .HCAU-bullet-list li::before {
@@ -1055,7 +1113,7 @@ a {
   margin-left: 4px;
 }
 .HCAU-bullet-list li + li {
-  margin-top: 8px;
+  margin-top: 20px;
 }
 .HCAU-bullet-list .point-red {
   color: #ce2d2d;
@@ -1068,6 +1126,32 @@ a {
 }
 .HCAU-bullet-list .gray03:before {
   background-color: #a2a2a2;
+}
+.HCAU-bullet-list.dash li {
+  padding-left: 15px;
+}
+.HCAU-bullet-list.dash li::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 1px;
+  background: #a2a2a2;
+  position: absolute;
+  left: 0px;
+  margin-right: 8px;
+  top: 8px;
+}
+.HCAU-bullet-list.alpha li {
+  list-style: lower-alpha;
+}
+.HCAU-bullet-list.alpha li::before {
+  display: none;
+}
+.HCAU-bullet-list.alpha li .romans li {
+  list-style: lower-roman;
+}
+.HCAU-bullet-list.alpha li .romans li::before {
+  display: none;
 }
 
 .link {
@@ -1142,8 +1226,8 @@ a {
 .HCAU-btn.btn-md {
   font-size: 16px;
   font-weight: 700;
-  min-height: 48px;
-  min-width: 120px;
+  min-height: 52px;
+  min-width: 180px;
   text-align: center;
   padding: 11px 16px;
 }
@@ -1168,8 +1252,9 @@ a {
   font-weight: 400;
   line-height: 1.429;
   padding: 16px 54px 16px 16px;
+  min-width: 240px;
   color: #000000;
-  border-color: #e5e5e5;
+  border-color: #a2a2a2;
   box-shadow: none;
   width: 100%;
   text-align: left;
@@ -1202,8 +1287,8 @@ a {
   color: #000000;
 }
 .HCAU-btn.gray03 {
-  background: #a2a2a2;
-  border: 1px solid #a2a2a2;
+  background: #666666;
+  border: 1px solid #666666;
   color: #fff;
 }
 .HCAU-btn:disabled {
@@ -1288,14 +1373,37 @@ a {
   border-radius: 0 4px 4px 0;
 }
 
+.HCAU-tab2 .nav-tabs {
+  border-bottom: 1px solid #000000;
+}
+.HCAU-tab2 .nav-tabs .nav-link {
+  border-color: #ddd;
+  border-bottom-color: #000000;
+  color: #a2a2a2;
+  background: #f5f5f5;
+  font-weight: 700;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding-left: 40px;
+  padding-right: 40px;
+  height: 44px;
+}
+.HCAU-tab2 .nav-tabs .nav-link.active {
+  border-color: #000000;
+  border-bottom-color: #fff;
+  background: #fff;
+  color: #000000;
+}
+
 .HCAU-badge {
   display: inline-block;
   font-size: 14px;
-  padding: 4px 8px;
+  line-height: 25px;
+  padding: 0 8px;
   border-radius: 15px;
   vertical-align: middle;
 }
-.HCAU-badge.type01 {
+.HCAU-badge.type01, .HCAU-badge.fail {
   color: #ea0029;
   background: #FEEBEE;
 }
@@ -1316,6 +1424,22 @@ a {
   text-align: center;
   font-weight: 700;
 }
+.HCAU-badge.success {
+  background: #EDF6FA;
+  color: #1D8ABC;
+  font-weight: 400;
+  margin-left: 12px;
+  min-width: 75px;
+  text-align: center;
+}
+.HCAU-badge.fail {
+  font-weight: 400;
+  background: #FEEBEE;
+  color: #ea0029;
+  margin-left: 12px;
+  min-width: 75px;
+  text-align: center;
+}
 
 .HCAU-step-wrap {
   position: absolute;
@@ -1324,6 +1448,7 @@ a {
   width: 540px;
   height: 80px;
   z-index: 0;
+  /*362A26,  1D110D  linear-gradient( #362A26 0%, #1D110D 100%); */
 }
 .HCAU-step-wrap:after {
   background: rgba(175, 98, 73, 0.16);
@@ -1497,6 +1622,9 @@ a {
 .border-box.black .loan-items-tlt.tab .HCAU-tab {
   margin-top: 0;
 }
+.border-box.gray03 {
+  border-color: #a2a2a2;
+}
 .border-box.secondary {
   border-color: #ccc;
   background: #f5f5f5;
@@ -1545,11 +1673,15 @@ a {
 .HCAU-form.form-select {
   font-size: 16px;
   line-height: 1;
-  padding: 18.5px 16px 18.5px;
+  padding: 17.5px 16px 17.5px;
   color: #000000;
-  border-color: #e5e5e5;
+  border-color: #a2a2a2;
   box-shadow: none;
   border-radius: 4px;
+}
+
+.HCAU-form.form-control::placeholder {
+  color: #a2a2a2;
 }
 
 .HCAU-form.form-control:focus,
@@ -1599,21 +1731,22 @@ a {
 .HCAU-form.form-select:disabled {
   background-color: #f8f8f8;
   color: #e5e5e5;
+  border-color: #e5e5e5;
 }
 
 .HCAU-form.form-check-input {
-  width: 20px;
-  height: 20px;
-  border-color: #e5e5e5;
+  width: 24px;
+  height: 24px;
+  border-color: #a2a2a2;
 }
 .HCAU-form.form-check-input + label {
   font-size: 16px;
-  margin-left: 4px;
+  margin-left: 8px;
   line-height: 2;
 }
 
 .HCAU-form.form-check-input[type=checkbox] {
-  border-color: #e5e5e5;
+  border-color: #a2a2a2;
   background-image: url(/static/html/pc/genesis/img/bg/bg_input_check.svg);
   background-size: 14px 14px;
 }
@@ -1673,18 +1806,29 @@ a {
   border-radius: 4px;
   background: #fff;
   line-height: 1.5;
-  height: 44px;
+  height: 56px;
 }
 .filebox label {
   display: inline-flex;
-  padding: 10px 20px;
+  padding: 10px 36px;
   vertical-align: middle;
   border: 1px solid #000;
   cursor: pointer;
-  height: 40px;
   margin-left: 12px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
+  line-height: 34px;
+}
+.filebox .btn-clear img {
+  top: 16px;
+  right: 135px;
+  margin-right: 16px;
+}
+
+.HCAU-terms-detail .tlt {
+  font-weight: 700;
+  margin-top: 28px;
+  margin-bottom: 16px;
 }
 
 .HCAU-table .table {
@@ -1715,7 +1859,7 @@ a {
   color: #fff;
 }
 .HCAU-table .table td {
-  padding: 16px 22px;
+  padding: 32px 40px;
 }
 .HCAU-table .table td .HCAU-bullet-list li {
   color: #000000;
@@ -1745,12 +1889,13 @@ a {
 }
 .HCAU-table .table tfoot .HCAU-form.form-control,
 .HCAU-table .table tr.sum .HCAU-form.form-control {
-  background: #f5f5f5;
+  background: #f8f8f8;
   color: #000;
 }
 .HCAU-table .table tfoot tr.sum th, .HCAU-table .table tfoot tr.sum td {
   background: #f3f3f3;
   color: #000;
+  padding: 32px 40px;
 }
 .HCAU-table .table.select th {
   font-weight: 700;
@@ -1941,11 +2086,30 @@ a {
   display: flex;
   flex-direction: column;
 }
-.HCAU-modal .modal-dialog .modal-content .modal-body .modal-content-box .HCAU-txt-sm {
-  font-size: 20px;
-}
 .HCAU-modal .modal-dialog .modal-content .modal-body .modal-content-box.pd40 {
   padding: 40px;
+  border-bottom: 0;
+}
+.HCAU-modal .modal-dialog .modal-content .modal-body .modal-content-box.product {
+  gap: 40px;
+  padding: 0 40px 20px;
+  border-bottom: 0;
+}
+.HCAU-modal .modal-dialog .modal-content .modal-body .modal-content-box.product .result-list {
+  max-height: 440px;
+  overflow: auto;
+}
+.HCAU-modal .modal-dialog .modal-content .modal-body .modal-content-box.product .result-list .w180 {
+  width: 200px;
+}
+.HCAU-modal .modal-dialog .modal-content .modal-body .modal-content-box.product .result-list .w50 {
+  width: 60px;
+}
+.HCAU-modal .modal-dialog .modal-content .modal-body .modal-content-box.product .result-list .HCAU-txt-sm {
+  font-size: 16px;
+}
+.HCAU-modal .modal-dialog .modal-content .modal-body .modal-content-box.mb60 {
+  padding: 40px 40px 60px;
   border-bottom: 0;
 }
 .HCAU-modal .modal-dialog .modal-content .modal-body .modal-btn-wrap {
@@ -2041,7 +2205,7 @@ a {
 }
 .HCAU-modal .modal-dialog.modal-xl {
   max-width: 920px;
-  max-height: 980px;
+  max-height: 1280px;
   overflow: auto;
 }
 
@@ -2066,14 +2230,15 @@ a {
 .radio-group .radio-group-inner .HCAU-btn {
   border: none;
   border-radius: 0;
-  min-height: 54px;
+  min-height: 56px;
 }
 .radio-group .radio-group-inner input[type=radio]:checked + .HCAU-btn {
   background: #000000;
   color: #fff;
 }
 .radio-group.filter .radio-group .radio-group-inner .HCAU-btn {
-  padding: 18.5px 24px;
+  padding: 19.5px 24px;
+  font-weight: 400;
 }
 
 .dropdown-menu {
@@ -2123,6 +2288,21 @@ a {
 }
 .HCAU-nodata.type02.h400 {
   padding: 165px 0;
+}
+
+.HCAU-nodata.type03 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  background: #fff;
+}
+.HCAU-nodata.type03 .HCAU-lead-txt {
+  margin-top: 40px;
+  font-weight: 700;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 1.2;
 }
 
 .ico-loan-btn {
@@ -2181,7 +2361,6 @@ a {
 }
 .loan-items .loan-text {
   float: left;
-  margin-left: 16px;
   margin-right: 160px;
   width: 100%;
 }
@@ -2315,7 +2494,7 @@ form + .g-notice {
 
 .gap-3.border-top-dashed {
   max-width: 1280px;
-  margin: 0 auto 100px;
+  margin: 0 -40px 100px;
   gap: 40px !important;
 }
 .gap-3.border-top-dashed .border-box {
@@ -2464,9 +2643,6 @@ form + .g-notice {
 
 .ico-reload {
   display: inline-flex;
-  border: 1px solid #000000;
-  border-radius: 4px;
-  padding: 4px;
 }
 
 .checked-bold-table input:checked + label {
@@ -2859,6 +3035,7 @@ form + .g-notice {
 .HCAU-calendar .form-control.gray, .HCAU-calendar .form-control:disabled {
   background: #f8f8f8;
   color: #000;
+  opacity: 1;
 }
 
 .HCAU-accordion.faq .accordion .accordion-item:first-child {
@@ -2866,6 +3043,7 @@ form + .g-notice {
 }
 .HCAU-accordion.faq .accordion .accordion-item .accordion-header .accordion-button {
   font-weight: 400;
+  padding: 28px 32px;
 }
 .HCAU-accordion.faq .accordion .accordion-item .accordion-header .accordion-button dt {
   font-weight: 400;
@@ -2876,13 +3054,29 @@ form + .g-notice {
 .HCAU-accordion.faq .accordion .accordion-item .accordion-header .accordion-button:focus {
   box-shadow: none;
 }
-.HCAU-accordion.faq .accordion .accordion-item .accordion-header .accordion-button::after, .HCAU-accordion.faq .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='23' height='23' rx='3.5' stroke='black'/%3E%3Cpath d='M7 14.381L11.5847 9.79632C11.6383 9.74026 11.7028 9.69566 11.7742 9.66518C11.8456 9.63471 11.9224 9.619 12 9.619C12.0776 9.619 12.1544 9.63471 12.2258 9.66518C12.2972 9.69566 12.3617 9.74026 12.4153 9.79632L17 14.381' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+.HCAU-accordion.faq .accordion .accordion-item .accordion-header .accordion-button::after {
+  width: 32px;
+  height: 32px;
+  background-size: 32px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgICA8cmVjdCB4PSIwLjUiIHk9IjAuNSIgd2lkdGg9IjM1IiBoZWlnaHQ9IjM1IiByeD0iMy41IiBzdHJva2U9ImJsYWNrIi8+DQogICAgPHBhdGggZD0iTTI0IDE1LjE0MjhMMTguNDk4NCAyMC42NDQ0QzE4LjQzNCAyMC43MTE3IDE4LjM1NjYgMjAuNzY1MiAxOC4yNzEgMjAuODAxOEMxOC4xODUzIDIwLjgzODQgMTguMDkzMSAyMC44NTcyIDE4IDIwLjg1NzJDMTcuOTA2OSAyMC44NTcyIDE3LjgxNDcgMjAuODM4NCAxNy43MjkgMjAuODAxOEMxNy42NDM0IDIwLjc2NTIgMTcuNTY2IDIwLjcxMTcgMTcuNTAxNiAyMC42NDQ0TDEyIDE1LjE0MjgiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4NCiAgICA8L3N2Zz4NCiAgICA=);
 }
 .HCAU-accordion.faq .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='24' y='24' width='24' height='24' rx='4' transform='rotate(180 24 24)' fill='black'/%3E%3Cpath d='M7 14.381L11.5847 9.79632C11.6383 9.74026 11.7028 9.69566 11.7742 9.66518C11.8456 9.63471 11.9224 9.619 12 9.619C12.0776 9.619 12.1544 9.63471 12.2258 9.66518C12.2972 9.69566 12.3617 9.74026 12.4153 9.79632L17 14.381' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  width: 32px;
+  height: 32px;
+  background-size: 32px;
+  transform: rotate(360deg);
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgICA8cmVjdCB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHJ4PSI0IiBmaWxsPSJibGFjayIvPg0KICAgIDxwYXRoIGQ9Ik0xMiAyMC44NTU1TDE3LjUwMTYgMTUuMzUzOUMxNy41NjYgMTUuMjg2NiAxNy42NDM0IDE1LjIzMzEgMTcuNzI5IDE1LjE5NjVDMTcuODE0NyAxNS4xNTk5IDE3LjkwNjkgMTUuMTQxMSAxOCAxNS4xNDExQzE4LjA5MzEgMTUuMTQxMSAxOC4xODUzIDE1LjE1OTkgMTguMjcxIDE1LjE5NjVDMTguMzU2NiAxNS4yMzMxIDE4LjQzNCAxNS4yODY2IDE4LjQ5ODQgMTUuMzUzOUwyNCAyMC44NTU1IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+DQogICAgPC9zdmc+DQogICAg);
 }
 
+/*!SECTION
+background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgICA8cmVjdCB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHJ4PSI0IiBmaWxsPSJibGFjayIvPg0KICAgIDxwYXRoIGQ9Ik0xMiAyMC44NTU1TDE3LjUwMTYgMTUuMzUzOUMxNy41NjYgMTUuMjg2NiAxNy42NDM0IDE1LjIzMzEgMTcuNzI5IDE1LjE5NjVDMTcuODE0NyAxNS4xNTk5IDE3LjkwNjkgMTUuMTQxMSAxOCAxNS4xNDExQzE4LjA5MzEgMTUuMTQxMSAxOC4xODUzIDE1LjE1OTkgMTguMjcxIDE1LjE5NjVDMTguMzU2NiAxNS4yMzMxIDE4LjQzNCAxNS4yODY2IDE4LjQ5ODQgMTUuMzUzOUwyNCAyMC44NTU1IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+DQogICAgPC9zdmc+DQogICAg)
+&::after
+       // &:not(.collapsed)::after{width:32px;height:32px;background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgICA8cmVjdCB4PSIwLjUiIHk9IjAuNSIgd2lkdGg9IjM1IiBoZWlnaHQ9IjM1IiByeD0iMy41IiBzdHJva2U9ImJsYWNrIi8+DQogICAgPHBhdGggZD0iTTI0IDE1LjE0MjhMMTguNDk4NCAyMC42NDQ0QzE4LjQzNCAyMC43MTE3IDE4LjM1NjYgMjAuNzY1MiAxOC4yNzEgMjAuODAxOEMxOC4xODUzIDIwLjgzODQgMTguMDkzMSAyMC44NTcyIDE4IDIwLjg1NzJDMTcuOTA2OSAyMC44NTcyIDE3LjgxNDcgMjAuODM4NCAxNy43MjkgMjAuODAxOEMxNy42NDM0IDIwLjc2NTIgMTcuNTY2IDIwLjcxMTcgMTcuNTAxNiAyMC42NDQ0TDEyIDE1LjE0MjgiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4NCiAgICA8L3N2Zz4NCiAgICA=);}
+        {width:32px;height:32px;background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='24' y='24' width='24' height='24' rx='4' transform='rotate(180 24 24)' fill='black'/%3E%3Cpath d='M7 14.381L11.5847 9.79632C11.6383 9.74026 11.7028 9.69566 11.7742 9.66518C11.8456 9.63471 11.9224 9.619 12 9.619C12.0776 9.619 12.1544 9.63471 12.2258 9.66518C12.2972 9.69566 12.3617 9.74026 12.4153 9.79632L17 14.381' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");}
+        &:not(.collapsed)::after
+            {width:32px;height:32px;background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='24' y='24' width='24' height='24' rx='4' transform='rotate(180 24 24)' fill='black'/%3E%3Cpath d='M7 14.381L11.5847 9.79632C11.6383 9.74026 11.7028 9.69566 11.7742 9.66518C11.8456 9.63471 11.9224 9.619 12 9.619C12.0776 9.619 12.1544 9.63471 12.2258 9.66518C12.2972 9.69566 12.3617 9.74026 12.4153 9.79632L17 14.381' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");}
+
+*/
 .HCAU-step-wrap {
   position: absolute;
   top: -80px;
@@ -2890,9 +3084,10 @@ form + .g-notice {
   width: 540px;
   height: 80px;
   z-index: 0;
+  /*362A26,  1D110D  linear-gradient( #362A26 0%, #1D110D 100%); */
 }
 .HCAU-step-wrap:after {
-  background: rgba(175, 98, 73, 0.16);
+  background: #1D110D;
   content: "";
   position: absolute;
   display: block;
@@ -2903,8 +3098,8 @@ form + .g-notice {
 }
 .HCAU-step-wrap .HCAU-step {
   margin: 0;
-  background: #1F130F;
-  padding: 20px;
+  background: linear-gradient(90deg, #362A26 0%, #1D110D 100%);
+  padding: 14px 0 14px 30px;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -2944,8 +3139,8 @@ form + .g-notice {
 }
 .HCAU-step-wrap .HCAU-step .step-paging {
   flex-shrink: 0;
-  width: 40px;
-  height: 40px;
+  width: 52px;
+  height: 52px;
   background: #af6249;
   position: relative;
   font-size: 15px;
@@ -2960,19 +3155,19 @@ form + .g-notice {
   background: #fff;
   opacity: 0.2;
   position: absolute;
-  left: 5px;
+  left: 10px;
   top: 50%;
   transform: rotate(-45deg);
 }
 .HCAU-step-wrap .HCAU-step .step-paging .step-current {
   position: absolute;
-  left: 6px;
-  top: 5px;
+  left: 10px;
+  top: 10.5px;
 }
 .HCAU-step-wrap .HCAU-step .step-paging .step-total {
   position: absolute;
-  right: 6px;
-  bottom: 0px;
+  right: 11px;
+  bottom: 3px;
 }
 .HCAU-step-wrap .HCAU-step.w320 {
   width: 320px;
@@ -3086,4 +3281,15 @@ nav.AU-tabs .active span:after {
   transform-origin: center;
   transition: 500ms;
   transform: scaleX(1);
+}
+
+.HCAU-btn.btn-md.w360 {
+  padding: 20px;
+  min-height: 60px;
+}
+
+@media (min-width: 1921px) {
+  .wrap {
+    background-size: 100% 390px;
+  }
 }/*# sourceMappingURL=HCAU-component-genesis.css.map */

@@ -13,16 +13,16 @@
 <body>
     <div class="wrap">
         <script type="text/javascript" src="/static/html/m/genesis/js/Header.js"></script>
-
+        <!-- HCAU-title -->
+        <div class="HCAU-title">
+            <div class="HCAU-h1">Statement preferences</div>
+            <div class="HCAU-txt-md gray04">You can change the email address that receives a billing statement of the lease product you have chosen.</div>
+        </div>
+        <!-- //HCAU-title -->
         <!-- HCAU-container -->
         <div class="HCAU-container">
             <div class="HCAU-contents" id="contents">
-                <!-- HCAU-title -->
-                <div class="HCAU-title">
-                    <div class="HCAU-h1">Change the email address that receives a billing statement</div>
-                    <div class="HCAU-txt-md gray04">You can change the email address for receiving the invoice for the lease product you have selected.</div>
-                </div>
-                <!-- //HCAU-title -->
+
                 <!-- HCAU-detail -->
                 <div class="HCAU-detail">
 
@@ -30,7 +30,7 @@
                         <div>
                             <!-- <button class="HCAU-btn btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">open bottom sheet</button> -->
                             <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">
-                                New Car Loan_Standard - Contract number
+                                New Car Loan_Standard - Contract number - SANTAFE
                             </button>
                             <div class="HCAU-bottom-sheet offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
                                 <div class="offcanvas-header">
@@ -60,14 +60,6 @@
 
                     <div class="mt52">
                         <div class="HCAU-form-wrap">
-                            <div class="form-title HCAU-txt-md fw-bold">Change E-mail</div>
-                            <div>
-                                <input type="text" class="form-control HCAU-form HCAU-form-invalid" id="" value="" placeholder="Enter E-mail">
-                                <div class="HCAU-invalid-feedback">invalid message</div>
-                                <div class="HCAU-invalid-feedback">invalid message2</div>
-                            </div>
-                        </div>
-                        <div class="HCAU-form-wrap">
                             <div class="form-title HCAU-txt-md fw-bold">Reception status</div>
                             <div>
                                 <div class="d-flex border-top border-bottom p-3 g40">
@@ -84,94 +76,31 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="d-flex border-top border-bottom p-3 g40">
-                                    <div class="form-check">
-                                        <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="exampleRadios1" disabled>
-                                        <label class="form-check-label" for="exampleRadios1">
-                                            No Send
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" disabled>
-                                        <label class="form-check-label" for="exampleRadios2">
-                                            E-mail
-                                        </label>
-                                    </div>
-                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="mt52">
-
-                        <div class="HCAU-otp bg-box2 p-2">
-                            <div class="border-box px-3 py20">
-                                <div class="HCAU-form-wrap">
-                                    <div class="form-title HCAU-txt-md fw-bold">OTP certification</div>
-                                    <ul class="HCAU-tab-small" id="" role="tablist">
-                                        <li class="" role="presentation">
-                                            <button class="active" id="tabmenu01" data-bs-toggle="tab" data-bs-target="#tab01" type="button" role="tab" aria-controls="tab01" aria-selected="true">
-                                                <span class="HCAU-txt-sm fw-bold">Cell phone</span>
-                                            </button>
-                                        </li>
-                                        <li class="" role="presentation">
-                                            <button class="" id="tabmenu02" data-bs-toggle="tab" data-bs-target="#tab02" type="button" role="tab" aria-controls="tab02" aria-selected="false">
-                                                <span class="HCAU-txt-sm fw-bold">E-mail</span>
-                                            </button>
-                                        </li>
-                                    </ul>
-                                    <div class="tab-content mt20" id="myTabContent">
-                                        <div class="tab-pane fade show active" id="tab01" role="tabpanel" aria-labelledby="tabmenu01">
-                                            <div class="d-flex g12">
-                                                <div class="flex-grow-1">
-                                                    <input type="text" class="form-control HCAU-form" id="form-txt01" aria-describedby="" value="01099999999" placeholder="Enter phone number" readonly>
-                                                    <!-- <div class="invalid-feedback" style="display: block;">invalid message1</div> -->
-                                                    <!-- <div class="invalid-feedback" style="display: block;">invalid message2</div> -->
-                                                </div>
-                                                <div>
-                                                    <button type="button" class="HCAU-btn btn-smd" style="width: 77px">Send</button>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex g12 mt12">
-                                                <div class="flex-grow-1 position-relative">
-                                                    <input type="text" class="form-control HCAU-form time-limit" id="form-txt01" aria-describedby="" value="" placeholder="Enter OTP verification code">
-                                                    <span class="time-limit-num HCAU-txt-sm">2:59</span>
-                                                    <div class="invalid-feedback" style="display: block;">invalid message1</div>
-                                                    <div class="invalid-feedback" style="display: block;">invalid message2</div>
-                                                    <div class="invalid-feedback" style="display: block;">invalid message3</div>
-                                                    <div class="invalid-feedback" style="display: block;">invalid message4</div>
-                                                    <div class="valid-feedback" style="display: block;">valid message</div>
-                                                </div>
-                                                <div>
-                                                    <button type="button" class="HCAU-btn btn-smd" style="width: 77px">OK</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="tab02" role="tabpanel" aria-labelledby="tabmenu02">
-                                            <div class="d-flex g12">
-                                                <div class="flex-grow-1">
-                                                    <input type="text" class="form-control HCAU-form" id="form-txt01" aria-describedby="" value="hyundai@hcs.com" placeholder="Enter email address" readonly>
-                                                    <!-- <div class="invalid-feedback" style="display: block;">invalid message1</div> -->
-                                                    <!-- <div class="invalid-feedback" style="display: block;">invalid message2</div> -->
-                                                </div>
-                                                <div>
-                                                    <button type="button" class="HCAU-btn btn-smd" style="width: 77px">Send</button>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex g12 mt12">
-                                                <div class="flex-grow-1 position-relative">
-                                                    <input type="text" class="form-control HCAU-form time-limit" id="form-txt01" aria-describedby="" value="" placeholder="Enter OTP verification code">
-                                                    <span class="time-limit-num HCAU-txt-sm">2:59</span>
-                                                    <div class="invalid-feedback" style="display: block;">invalid message1</div>
-                                                    <div class="invalid-feedback" style="display: block;">invalid message2</div>
-                                                    <div class="invalid-feedback" style="display: block;">invalid message3</div>
-                                                    <div class="invalid-feedback" style="display: block;">invalid message4</div>
-                                                    <div class="valid-feedback" style="display: block;">valid message</div>
-                                                </div>
-                                                <div>
-                                                    <button type="button" class="HCAU-btn btn-smd" style="width: 77px">OK</button>
-                                                </div>
-                                            </div>
-                                        </div>
+                        <div class="HCAU-form-wrap">
+                            <div class="form-title HCAU-txt-md fw-bold">Change email address</div>
+                            <div>
+                                <div class="d-flex g12">
+                                    <div class="flex-grow-1">
+                                        <input type="text" class="form-control HCAU-form" id="form-txt01" aria-describedby="" value="" placeholder="Enter email address">
+                                    </div>
+                                    <div>
+                                        <button type="button" class="HCAU-btn btn-smd" style="width: 77px">Send</button>
+                                    </div>
+                                </div>
+                                <div class="d-flex g12 mt12">
+                                    <div class="flex-grow-1 position-relative">
+                                        <input type="text" class="form-control HCAU-form time-limit" id="form-txt01" aria-describedby="" value="" placeholder="Enter OTP code">
+                                        <span class="time-limit-num HCAU-txt-sm">2:59</span>
+                                        <div class="invalid-feedback" style="display: block;">invalid message1</div>
+                                        <div class="invalid-feedback" style="display: block;">invalid message2</div>
+                                        <div class="invalid-feedback" style="display: block;">invalid message3</div>
+                                        <div class="invalid-feedback" style="display: block;">invalid message4</div>
+                                        <div class="valid-feedback" style="display: block;">valid message</div>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="HCAU-btn btn-smd" style="width: 77px">OK</button>
                                     </div>
                                 </div>
                             </div>
@@ -187,15 +116,15 @@
                             <dd>
                                 <ul class="HCAU-bullet-list">
                                     <li class="HCAU-txt-sm">
-                                        We do not issue billing statements for loans on a regular basis. You can download a billing statement for each payment number on Account page.
-                                        <a href="" class="link">Accounts</a>
+                                        We do not issue billing statements for loans on a regular basis. You can download a billing statement for each payment number on billing statement page.
+                                        <a href="" class="link">Billing statement</a>
                                     </li>
                                     <li class="HCAU-txt-sm">
                                         The email address that you want us to send a billing statement to can be different from the one in your personal information.
                                     </li>
                                     <li class="HCAU-txt-sm">
                                         If you want to change the email address to access our Customer Portal with, go to<br>
-                                        <a href="" class="link ms-auto">Personal information change</a>
+                                        <a href="" class="link ms-auto">View personal information</a>
                                     </li>
                                 </ul>
                             </dd>
@@ -211,7 +140,7 @@
         <!-- btn-cta-wrap -->
         <div class="btn-cta-wrap">
             <button type="button" class="HCAU-btn btn-cta gray03">Cancel</button>
-            <button type="button" class="HCAU-btn btn-cta primary">Change</button>
+            <button type="button" class="HCAU-btn btn-cta primary" disabled>Change</button>
         </div>
         <!-- //btn-cta-wrap -->
 
@@ -219,7 +148,7 @@
     </div>
     <!-- <script src="/static/html/m/genesis/js/jquery-3.3.1.min.js"></script> -->
     <script src="/static/html/m/genesis/js/bootstrap.bundle.min.js"></script>
-    <!-- <script type="module" src="js/main.js"></script> -->
+    <script type="module" src="/static/html/m/genesis/js/main.js"></script>
 </body>
 
 </html>
