@@ -1556,11 +1556,13 @@ form + .g-notice {
 .HCAU-valid.was-validated .form-control:invalid {
   background: #fff;
   border-color: #EA0029;
+  background-image: none;
 }
 
 .HCAU-form.form-control.is-invalid,
 .HCAU-form.form-control.HCAU-form-invalid {
   border-color: #EA0029;
+  background-image: none;
 }
 .HCAU-form.form-control.is-invalid::placeholder,
 .HCAU-form.form-control.HCAU-form-invalid::placeholder {

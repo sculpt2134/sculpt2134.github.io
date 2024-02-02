@@ -66,6 +66,37 @@
 
     </section>
 
+    <section>
+        <div id="foo" data-date="01/25/2020"></div>
+        
+        <div class="title-area d-flex align-items-baseline g16">
+            <div class="title">Calendar</div>
+        </div>
+        <section class="section container-fluid">
+            <div class="d-flex flex-column gap-2">
+                <div id="sandbox" class="calendar col-3">
+                    <input type="text" class="form-control date">
+                    <span>
+                        <img src="/static/html/m/hyundai/img/ico_calendar.svg" alt="">
+                    </span>
+                </div>
+
+                <div id="sandbox2" class="calendar col-3">
+                    <input type="text" class="form-control date" disabled>
+                    <span>
+                        <img src="/static/html/m/hyundai/img/ico_calendar_readonly.svg" alt="">
+                    </span>
+                </div>
+            </div>         
+        
+        </section>
+
+
+     
+
+      <div class="toggle-button"></div>
+                    
+    </section>
 
     <section>
         <div class="title-area d-flex align-items-baseline g16">
@@ -2329,7 +2360,7 @@
     <section>
         <div>
             <div class="HCAU-txt-md text-center mt80">
-                The transfer of the early redemption request information to B-pay has been completed.<br>
+                The transfer of the early redemption request information to BPAY has been completed.<br>
                 Payment is completed only when the requested amount is deposited.
             </div>
             <div class="mt-5">
@@ -2352,7 +2383,7 @@
                 <div class="border-box black">
                     <div class="px32 py16">
                         <dl class="d-flex justify-content-between HCAU-txt-sm">
-                            <dt class="fw-normal gray04">B-pay reference number</dt>
+                            <dt class="fw-normal gray04">BPAY reference number</dt>
                             <dd class="fw-bold">275394859173943</dd>
                         </dl>
                     </div>
@@ -2725,27 +2756,3 @@
 
 
 
-
-
-<script src="/static/html/pc/hyundai/js/bootstrap.bundle.min.js"></script>
-<script>
-(function () {
-    'use strict'
-
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.querySelectorAll('.needs-validation')
-
-    // Loop over them and prevent submission
-    Array.prototype.slice.call(forms)
-        .forEach(function (form) {
-        form.addEventListener('submit', function (event) {
-            if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-            }
-
-            form.classList.add('was-validated')
-        }, false)
-        })
-    })()
-</script>

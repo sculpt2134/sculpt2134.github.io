@@ -1,28 +1,26 @@
-<!-- HCAU-breadcrumb
-<div class="HCAU-breadcrumb">
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-        <symbol id="house-door-fill" viewBox="0 0 16 16">
-            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
-        </symbol>
-    </svg>
-    <nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb">
-        <ol class="breadcrumb breadcrumb-chevron">
-            <li class="breadcrumb-item">
-                <a class="link-body-emphasis" href="#none">
-                    <svg class="bi" width="16" height="16">
-                        <use xlink:href="#house-door-fill"></use>
-                    </svg>
-                    <span class="visually-hidden">Home</span>
-                </a>
-            </li>
-            <li class="breadcrumb-item"><a class="link-body-emphasis text-decoration-none" href="#none">Usage Details</a></li>
-            <li class="breadcrumb-item" aria-current="page">Product Usage Details</li>
-            <li class="breadcrumb-item active" aria-current="page"><a class="link-body-emphasis text-decoration-none  fw-semibold " href="#none">Product Details</a></li>
-        </ol>
-    </nav>
-</div>
-<!-- //HCAU-breadcrumb -->
-<div data-include-path="../components/breadcrumbs.html"></div>
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>GENESIS-PUBL</title>
+  <link rel="stylesheet" href="/static/html/pc/genesis/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/pc/genesis/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+    <div class="wrap">
+      <div class="HCAU-sidebar" include-html="/static/html/pc/genesis/aside.html"></div>
+      <div class="HCAU-menubar" include-html="/static/html/pc/genesis/menu.html"></div>
+  
+      <div class="HCAU-container">
+            <div class="HCAU-contents" id="contents">
+                <!-- HCAU-breadcrumb -->
+                <div class="HCAU-breadcrumb" include-html="/static/html/pc/genesis/breadcrumb.html"></div>
+            <!-- //HCAU-breadcrumb -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////START PAGE CONTENTS/////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
 <!-- HCAU-title -->
 <div class="HCAU-title">
     <!-- class option : border-bottom -->
@@ -34,72 +32,87 @@
 <div class="HCAU-detail">
 
     <section>
-        <div class="d-flex align-items-baseline g40">
-            <div class="dropdown me-auto">
-                <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
-                    April 2023
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
-                </ul>
+        <div class="d-flex align-items-baseline ">
+            <div class="">
+                <div id="sandbox2" class="HCAU-calendar">
+                    <input type="text" class="form-control date" value="April 2023">
+                    <span>
+                        <img src="/static/html/m/genesis/img/ico_calendar.svg" alt="">
+                    </span>
+                </div>
+                <div class="toggle-button"></div>
             </div>
-            <!-- <div class="HCAU-txt-md">Total amount billed</div>
-                <div class="HCAU-h2">$ 2,034.00</div> -->
+            <!-- <div class="ms-auto d-flex g40">
+                <div class="HCAU-txt-md">Total amount billed</div>
+                <div class="HCAU-h2">$ 12,034.00</div>
+            </div> -->
         </div>
-        <div class="border-box p20 mt-3">
-            <div class="bg-box d-flex justify-content-between align-items-end px32 py16 h60">
-                <div class="HCAU-lead-txt fw-bold">Chattel Mortagage_Deferment</div>
-                <div class="d-flex align-items-center g20">
-                    <span class="HCAU-lead-txt fw-bold">H2023NA000248</span>
-                    <!-- <a href="#" class="ico-loan-btn"></a> -->
+        <div class="border-box black mt40">
+            <div class="loan-items-tlt bg-box d-flex justify-content-between align-items-center px32 py16 h60">
+                <div class="HCAU-lead-txt fw-bold">Chattle Mortagage_Only interest</div>
+                <div class="loan-btn">
+                    <div class="HCAU-h2">H2023NA000248</div>
+                    
                 </div>
             </div>
-            <div class="d-flex flex-column px32 py24">
-                <div class="d-flex justify-content-between align-items-end">
-                    <div class="HCAU-txt-sm gray04">Payment Cycle / Payment Date</div>
-                    <div class="HCAU-txt-md fw-bold">Monthly / 11th of every month</div>
+            <div class="loan-items-wrap d-flex flex-wrap px32 py20">
+                <div class="loan-items col-4">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan12.svg" alt="">
+                    </div>
+                    <dl class="loan-text">
+                        <dt class="HCAU-txt-sm fw-normal gray04">Frequency / Due date</dt>
+                        <dd class="HCAU-txt-sm fw-bold mt-1">Fortnightly / Monday</dd>
+                    </dl>
                 </div>
-                <div class="d-flex justify-content-between align-items-end pt16">
-                    <div class="HCAU-txt-sm gray04">Bank / Account number</div>
-                    <div class="HCAU-txt-md fw-bold">ANZ / 2635****9</div>
+                
+                <div class="loan-items col-4">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan13.svg" alt="">
+                    </div>
+                    <dl class="loan-text">
+                        <dt class="HCAU-txt-sm fw-normal gray04">Method</dt>
+                        <dd class="HCAU-txt-sm fw-bold mt-1">BPAY</dd>
+                    </dl>
                 </div>
+                <div class="loan-items col-4">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan14.svg" alt="">
+                    </div>
+                    <dl class="loan-text">
+                        <dt class="HCAU-txt-sm fw-normal">Reference number</dt>
+                        <dd class="HCAU-txt-sm fw-bold"><span class="dollar">283495019465728</span></dd>
+                    </dl>
+                </div>              
             </div>
-        </div>
+        </div>       
     </section>
     <section>
-        <div class="HCAU-txt-md gray04 pb-2">A total of <span class="black fw500">2 claims</span> amounted to <span class="black fw500">2,034.00 $</span></div>
-        <div class="HCAU-nodata type02 flex-column border-top border-bottom">
-            <img src="/static/html/pc/genesis/img/svg/ico_no_matches_hd02.svg" alt="">
-            <div class="HCAU-txt-sm">No matches found.</div>
-        </div>
+        
         <div class="HCAU-flex-table border-top">
+
             <div class="d-flex py28 px32 g40 align-items-center border-bottom">
                 <div>
                     <div class="HCAU-txt-sm">12/60</div>
                 </div>
                 <div>
                     <button type="button" class="HCAU-btn btn-sm">
-                        statement
-                        <span class="ico-print"><img src="/static/html/pc/genesis/img/svg/ico_print.svg" alt=""></span>
+                        Request a statement
                     </button>
                 </div>
                 <div>
-                    <div class="d-flex g12 align-items-center">
+                    <div class="d-flex g16 align-items-center">
                         <div class="HCAU-txt-sm">payment date : 10/04/2023</div>
                         <div>
                             <span class="HCAU-badge type01">Overdue</span>
                         </div>
                     </div>
-                    <div class="d-flex gap-3 pt-2">
+                    <div class="d-flex gap-3 pt12">
                         <div class="HCAU-txt-sm">Principal : 3,600.00 $</div>
                         <div class="HCAU-txt-sm">interest : 360.00 $</div>
                         <div class="HCAU-txt-sm">
                             etc : 20.00 $
-                            <span class="HCAU-tooltip">
+                            <!-- <span class="HCAU-tooltip">
                                 <a href=""><img src="/static/html/pc/genesis/img/svg/ico_tooltip.svg" alt=""></a>
                                 <div class="HCAU-tooltip-inner">
                                     <div class="HCAU-tooltip-arrow"></div>
@@ -114,12 +127,12 @@
                                         </div>
                                     </div>
                                 </div>
-                            </span>
+                            </span> -->
                         </div>
                     </div>
                 </div>
                 <div class="ms-auto text-end">
-                    <div class="HCAU-txt-sm">8,797.00 $</div>
+                    <div class="HCAU-txt-sm fw-bold">$ 8,797.00</div>
                 </div>
             </div>
             <div class="d-flex py28 px32 g40 align-items-center border-bottom">
@@ -128,18 +141,17 @@
                 </div>
                 <div>
                     <button type="button" class="HCAU-btn btn-sm">
-                        statement
-                        <span class="ico-print"><img src="/static/html/pc/genesis/img/svg/ico_print.svg" alt=""></span>
+                        Request a statement
                     </button>
                 </div>
                 <div>
-                    <div class="d-flex g12 align-items-center">
+                    <div class="d-flex g16 align-items-center">
                         <div class="HCAU-txt-sm">payment date : 10/04/2023</div>
-                        <div>
+                        <!-- <div>
                             <span class="HCAU-badge type01">Overdue</span>
-                        </div>
+                        </div> -->
                     </div>
-                    <div class="d-flex gap-3 pt-2">
+                    <div class="d-flex gap-3 pt12">
                         <div class="HCAU-txt-sm">Principal : 3,600.00 $</div>
                         <div class="HCAU-txt-sm">interest : 360.00 $</div>
                         <div class="HCAU-txt-sm">
@@ -164,21 +176,20 @@
                     </div>
                 </div>
                 <div class="ms-auto text-end">
-                    <div class="HCAU-txt-sm">8,797.00 $</div>
+                    <div class="HCAU-txt-sm fw-bold">$ 8,797.00</div>
                 </div>
+            </div>
+        </div>
+
+        <div class="mt80">
+            <div class="HCAU-txt-md gray04 pb-2">A total of <span class="black fw500">2 claims</span> amounted to <span class="black fw500">2,034.00 $</span></div>
+            <div class="HCAU-nodata type01 flex-column border-top border-bottom">
+                <img src="/static/html/pc/genesis/img/svg/ico_no_matches_hd01.svg" alt="">
+                <div class="HCAU-lead-txt">No matches found.</div>
             </div>
         </div>
     </section>
-    <div class="cta-btn-wrap">
-        <div class="d-flex g12 justify-content-center">
-            <!-- <button type="button" class="HCAU-btn btn-large">Show more</button> -->
-            <button type="button" class="HCAU-btn btn-large">List</button>
-            <!-- <button type="button" class="HCAU-btn btn-large gray03">Cancel</button> -->
-            <!-- <a href="#none" class="HCAU-btn btn-large">a link</a> -->
-            <!-- <a href="#none" class="HCAU-btn btn-large">a link</a> -->
-        </div>
-    </div>
-    <div class="g-notice">
+    <div class="g-notice mx-40">
         <dl>
             <dt>
                 <span class="ico-gnotice"><img src="/static/html/pc/genesis/img/svg/ico_notice.svg" alt=""></span>
@@ -187,42 +198,42 @@
             <dd>
                 <ul class="HCAU-bullet-list">
                     <li>
-                        Billing statements over the last three years are available only.
+                        Billing statements over the last five years are available only.
                     </li>
                     <li>
-                        If your repayment frequency is monthly, your billing statement gets issued a week before your payment due date.
+                        Your amount due will be determined three days before your payment due date and a billing statement will be created.
                     </li>
                     <li>
-                        If your repayment frequency is either weekly or fortnightly, your billing statement gets issued three days before your payment due date.
+                        When you request a statement, the amount due at the time of your request will appear on the statement and the statement will be sent to you via email.
                     </li>
                     <li>
-                        To check payment status of the amounts billed on the statement, please go to
-                        <a href="#none" class="link">Product details</a>
+                        To check payment status of the amounts billed on the statement, please go to Product details.
+                        <a href="#none" class="link">Account information</a>
                     </li>
                 </ul>
             </dd>
         </dl>
     </div>
-    <div class="d-flex gap-3 mt20">
-        <div class="border-box edge flex-fix p-4">
-            <p class="HCAU-txt-sm">Do you want to make a payment before your due date?</p>
-            <p class="pt12"><a href="#none" class="link">Make a payment </a></p>
+
+    <div class="d-flex g40 mt20 mx-40">
+        <div class="bg-box edge p40 d-flex flex-fix justify-content-between align-items-center">
+            <p class="fw-bold HCAU-txt-sm">Do you want to make a payment before your<br/> due date?</p>
+            <p class="ms-auto"><a href="#none" class="link">Make a payment </a></p>
         </div>
-        <div class="border-box edge flex-fix p-4">
-            <p class="HCAU-txt-sm">Do you want to pay off all or part of your loan early?</p>
-            <p class="pt12"><a href="#none" class="link">pay off early</a></p>
+        <div class="bg-box edge  p40 d-flex flex-fix justify-content-between align-items-center">
+            <p class="fw-bold HCAU-txt-sm">Do you want to pay off all or part of your<br/> loan early?</p>
+            <p class="ms-auto"><a href="#none" class="link">Early payout</a></p>
         </div>
     </div>
-
 </div>
 <!-- //HCAU-detail -->
 <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 <!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
 <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-</div><!--//HCAU-contents-->
-</div><!--//HCAU-contentainer-->
-</div><!--//wrap-->
-<footer include-html="/static/html/pc/genesis/footer.html"></footer>
+            </div><!--//HCAU-contents-->
+        </div><!--//HCAU-contentainer-->
+    </div><!--//wrap-->
+    <footer include-html="/static/html/pc/genesis/footer.html"></footer>
 <script src="/static/html/pc/genesis/js/bootstrap.bundle.min.js"></script>
 <script src="/static/html/pc/genesis/js/main.js"></script>
 <script src="/static/html/pc/genesis/js/includeHTML.js"></script>

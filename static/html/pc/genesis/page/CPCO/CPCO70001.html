@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
-  <title>HCAU-PUBL</title>
+  <title>GENESIS-PUBL</title>
   <link rel="stylesheet" href="/static/html/pc/genesis/css/bootstrap.min.css" />
   <link rel="stylesheet" href="/static/html/pc/genesis/css/styles.css" />
   <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
@@ -34,10 +34,10 @@
 
 
     <!-- HCAU-tab -->
-    <div class="HCAU-tab mt20">
+    <div class="HCAU-tab">
         <ul class="nav nav-tabs" id="" role="tablist">
-            <li class="nav-item"><button class="nav-link active" id="tab01"  data-bs-target="#tabCont01" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Individual</button></li>
-            <li class="nav-item"><button class="nav-link" id="tab02" data-bs-target="#tabCont02" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Businessman</button></li>
+            <li class="nav-item"><button class="nav-link active" id="tab01"  data-bs-target="#tabCont01" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Personal</button></li>
+            <li class="nav-item"><button class="nav-link" id="tab02" data-bs-target="#tabCont02" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Business</button></li>
         </ul>
     </div>
     <!-- //HCAU-tab -->
@@ -46,16 +46,15 @@
 
         <form class="HCAU-valid needs-validation row gx-20 gy-28 mt12" novalidate="">
             <div class="col-md-6">
-                <label for="validationCustom02" class="HCAU-txt-md fw-bold mb-3">E-mail ID</label>
-                <input type="text" class="form-control HCAU-form" id="validationCustom02" placeholder="Enter E-mail ID" value="" required="">
-                <div class="invalid-feedback d-block">invalid message1.</div>
-                <div class="invalid-feedback d-block">invalid message2.</div>
+                <label for="validationCustom02" class="HCAU-txt-md fw-bold mb-3">User ID</label>
+                <!-- <input type="text" class="form-control HCAU-form" id="validationCustom02" placeholder="Enter E-mail ID" value="" required=""> -->
+                <input type="text" class="form-control HCAU-form is-invalid" id="validationCustom02" placeholder="Please enter an User ID" value="" required="">
+                <div class="invalid-feedback d-block">Please enter an User ID.</div>
             </div>
             <div class="col-md-6">
                 <label for="validationCustom01" class="HCAU-txt-md fw-bold mb-3">Date of Birth</label>
-                <input type="text" class="form-control HCAU-form" id="validationCustom01" placeholder="8-digit input (DD/MM/YYYY)" value="" required="">
-                <div class="invalid-feedback d-block">invalid message1.</div>
-                <div class="invalid-feedback d-block">invalid message2.</div>
+                <input type="text" class="form-control HCAU-form is-invalid" id="validationCustom01" placeholder="8-digit input (DD/MM/YYYY)" value="" required="">
+                <div class="invalid-feedback d-block">Please enter a Date of Birth</div>
             </div>
         </form>
 
@@ -63,7 +62,7 @@
             <div class="d-flex g12 justify-content-center">
                 <!-- <button type="button" class="HCAU-btn btn-large">List</button> -->
                 <!-- <button type="button" class="HCAU-btn btn-large gray03">Home</button> -->
-                <button type="submit" class="HCAU-btn btn-large primary" disabled>Identification</button>
+                <button type="submit" class="HCAU-btn btn-large primary">Identification</button>
             </div>
         </div>
     </section>
@@ -73,7 +72,7 @@
     <!-- <div class="g-notice">
         <dl>
             <dt>
-                <span class="ico-gnotice"><img src="/static/html/pc/hyundai/img/svg/ico_notice.svg" alt=""></span>
+                <span class="ico-gnotice"><img src="/static/html/pc/genesis/img/svg/ico_notice.svg" alt=""></span>
                 <span>Guidance Notice</span>
             </dt>
             <dd>

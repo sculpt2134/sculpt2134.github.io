@@ -780,18 +780,18 @@ a {
   border-radius: 0 4px 4px 0;
 }
 
-.HCAU-tab {
+.HCAU-tab-scroll {
   margin-top: 20px;
   padding: 10px 10px 0 10px;
   border-radius: 4px 4px 0 0;
   border: 1px solid #e5e5e5;
 }
-.HCAU-tab .nav-tabs {
+.HCAU-tab-scroll .nav-tabs {
   border: 0;
   justify-content: space-around;
   position: relative;
 }
-.HCAU-tab .nav-tabs li, .HCAU-tab .nav-tabs .nav-link {
+.HCAU-tab-scroll .nav-tabs li, .HCAU-tab-scroll .nav-tabs .nav-link {
   border: 0;
   background: #fff;
   position: relative;
@@ -801,12 +801,12 @@ a {
   margin-bottom: -1px;
   padding: 0;
 }
-.HCAU-tab .nav-tabs li.active, .HCAU-tab .nav-tabs .nav-link.active {
+.HCAU-tab-scroll .nav-tabs li.active, .HCAU-tab-scroll .nav-tabs .nav-link.active {
   border-bottom: 2px solid #000;
   background: #fff;
   color: #000;
 }
-.HCAU-tab .nav-tabs li:before {
+.HCAU-tab-scroll .nav-tabs li:before {
   display: block;
   content: "";
   height: 20px;
@@ -817,38 +817,32 @@ a {
   top: 10px;
   z-index: 2;
 }
-
-.HCAU-tab .nav-tabs .nav-link.active {
+.HCAU-tab-scroll .nav-tabs .nav-link.active {
   border-bottom: 2px solid #000;
   background: #fff;
   color: #000;
 }
-
-.HCAU-tab .nav-tabs .nav-link.active:before,
-.HCAU-tab .nav-tabs li:first-child:before {
+.HCAU-tab-scroll .nav-tabs .nav-link.active:before,
+.HCAU-tab-scroll .nav-tabs li:first-child:before {
   clear: both;
   display: none;
 }
-
-.ellipsis {
+.HCAU-tab-scroll .ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-
-.tab-content {
+.HCAU-tab-scroll .tab-content {
   position: relative;
 }
-
-.tab-content > .tab-pane:before {
+.HCAU-tab-scroll .tab-content > .tab-pane:before {
   display: block;
   content: "";
   border-left: 1px solid #e5e5e5;
   height: 100px;
   position: absolute;
 }
-
-.tab-content > .tab-pane:after {
+.HCAU-tab-scroll .tab-content > .tab-pane:after {
   display: block;
   content: "";
   border-right: 1px solid #e5e5e5;
@@ -858,8 +852,7 @@ a {
   top: 0;
   width: 100%;
 }
-
-.d-flex.flex-column.px3.py24.border-bottom.pb-20 {
+.HCAU-tab-scroll .d-flex.flex-column.px3.py24.border-bottom.pb-20 {
   border-radius: 4px;
   border: 1px solid #e5e5e5;
 }
@@ -1631,11 +1624,13 @@ form + .g-notice {
 .HCAU-valid.was-validated .form-control:invalid {
   background: #fff;
   border-color: #E63312;
+  background-image: none;
 }
 
 .HCAU-form.form-control.is-invalid,
 .HCAU-form.form-control.HCAU-form-invalid {
   border-color: #E63312;
+  background-image: none;
 }
 .HCAU-form.form-control.is-invalid::placeholder,
 .HCAU-form.form-control.HCAU-form-invalid::placeholder {
@@ -1737,7 +1732,7 @@ form + .g-notice {
   width: 260px;
   position: absolute;
   right: 24px;
-  bottom: 80px;
+  bottom: 60px;
 }
 .HCAU-cs .chat-bot {
   background: #00aad2;

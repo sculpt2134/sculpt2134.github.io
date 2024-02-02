@@ -551,7 +551,7 @@ a{text-decoration: none;}
 	}
 }
 //scrolling tab
-.HCAU-tab {margin-top: 20px;
+.HCAU-tab-scroll {margin-top: 20px;
     padding: 10px 10px 0 10px;
     border-radius: 4px 4px 0 0;
     border: 1px solid #e5e5e5;
@@ -566,35 +566,36 @@ a{text-decoration: none;}
         }
         li:before{display: block;content:"";height:20px;width:1px;background:#e5e5e5;position:absolute;left:-40px;top:10px;z-index: 2;}
     }
+    .nav-tabs .nav-link.active {
+        border-bottom: 2px solid #000;
+        background: #fff;
+        color: #000;
+    }
+ 
+     .nav-tabs .nav-link.active:before,
+     .nav-tabs li:first-child:before{clear:both;display: none;}
+     .ellipsis {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+ 
+     .tab-content{position: relative;}
+     .tab-content>.tab-pane:before{display: block;content:"";border-left:1px solid #e5e5e5;height:100px;position:absolute;}
+     .tab-content>.tab-pane:after{display: block;
+         content: "";
+         border-right:1px solid #e5e5e5;
+         height: 100px;
+         position: absolute;
+         right: 0;
+         top: 0;
+         width: 100%;}
+         .d-flex.flex-column.px3.py24.border-bottom.pb-20{border-radius:4px;border:1px solid #e5e5e5}
+ 
     }
 
 
-    .HCAU-tab .nav-tabs .nav-link.active {
-       border-bottom: 2px solid #000;
-       background: #fff;
-       color: #000;
-   }
-
-    .HCAU-tab .nav-tabs .nav-link.active:before,
-    .HCAU-tab .nav-tabs li:first-child:before{clear:both;display: none;}
-    .ellipsis {
-       overflow: hidden;
-       text-overflow: ellipsis;
-       white-space: nowrap;
-     }
-
-    .tab-content{position: relative;}
-    .tab-content>.tab-pane:before{display: block;content:"";border-left:1px solid #e5e5e5;height:100px;position:absolute;}
-    .tab-content>.tab-pane:after{display: block;
-        content: "";
-        border-right:1px solid #e5e5e5;
-        height: 100px;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 100%;}
-        .d-flex.flex-column.px3.py24.border-bottom.pb-20{border-radius:4px;border:1px solid #e5e5e5}
-
+     
 
 
 //badge
@@ -1322,11 +1323,13 @@ form + .g-notice {
 .HCAU-valid.was-validated .form-control:invalid{
     background: $white;
     border-color: $point-red;
+    background-image: none;
 }
 
 .HCAU-form.form-control.is-invalid,
 .HCAU-form.form-control.HCAU-form-invalid{
     border-color: $point-red;
+    background-image: none;
     &::placeholder{
         color: $point-red;
     }
@@ -1414,7 +1417,7 @@ form + .g-notice {
 	width: 260px;
 	position: absolute;
 	right: 24px;
-	bottom: 80px;
+	bottom: 60px;
 	.chat-bot {
 		background: $point;
         box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.10);

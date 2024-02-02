@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
-  <title>HCAU-PUBL</title>
+  <title>GENESIS-PUBL</title>
   <link rel="stylesheet" href="/static/html/pc/genesis/css/bootstrap.min.css" />
   <link rel="stylesheet" href="/static/html/pc/genesis/css/styles.css" />
   <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
@@ -24,7 +24,7 @@
 <!-- HCAU-title -->
 <div class="HCAU-title">
     <!-- class option : border-bottom -->
-    <div class="HCAU-h1">Sign up</div>
+    <div class="HCAU-h1">Register</div>
     <div class="HCAU-txt-md">User authentication is required to sign up for the customer portal service.</div>
 </div>
 <!-- //HCAU-title -->
@@ -32,37 +32,36 @@
 <!-- HCAU-detail -->
 <div class="HCAU-detail">
 
-    <div class="mt10">
+    <div class="HCAU-step-wrap">
         <div class="HCAU-step">
-            <div class="step-item active">
-                <div class="num">1</div>
-                <div class="txt">Identity verification</div>
+            <div class="HCAU-step-inner">
+                <div class="step">STEP 1</div>
+                <div class="step-name">Identify verification</div>
             </div>
-            <div class="step-item">
-                <div class="num">2</div>
-                <div class="txt">Enter information and agree to terms and conditions</div>
+            <div class="step-paging">
+                <span class="step-current">1</span>
+                <span class="step-total">2</span>
             </div>
         </div>
     </div>
-    <div class="border-top mt28"></div>
     <!-- HCAU-valid -->
-    <form class="HCAU-valid needs-validation row gx-20 gy-28 mt-2" novalidate>
+    <form class="HCAU-valid needs-validation row gx-20 gy-28" novalidate>
         <div class="col-md-6">
-            <label for="validationCustom01" class="HCAU-txt-md fw-bold mb-3">Loan number</label>
-            <input type="text" class="form-control HCAU-form is-invalid" id="validationCustom01" placeholder="Enter loan number" value="" required>
-            <div class="invalid-feedback">Please enter your loan number</div>
-            <div class="invalid-feedback">Please enter a 16-digit combination of English and numbers.</div>
+            <label for="validationCustom01" class="HCAU-txt-md fw-bold mb-3">Contract number</label>
+            <input type="text" class="form-control HCAU-form is-invalid" id="validationCustom01" placeholder="Please enter a contract number" value="" required>
+            <div class="invalid-feedback">Please enter 13 characters of letters and numbers</div>
+            <!-- <div class="invalid-feedback">Please enter a 16-digit combination of English and numbers.</div> -->
         </div>
         <div class="col-md-6">
             <label for="validationCustom02" class="HCAU-txt-md fw-bold mb-3">ABN</label>
-            <input type="text" class="form-control HCAU-form" id="validationCustom02" placeholder="Enter 11 digit number" value="" required>
+            <input type="text" class="form-control HCAU-form" id="validationCustom02" placeholder="Please type in a 11-digit number" value="" required>
         </div>
 
         <div class="cta-btn-wrap">
             <div class="d-flex g12 justify-content-center">
                 <!-- <button type="button" class="HCAU-btn btn-large">List</button> -->
                 <!-- <button type="button" class="HCAU-btn btn-large gray03">Cancel</button> -->
-                <button type="submit" class="HCAU-btn btn-large primary">Identification</button>
+                <button type="submit" class="HCAU-btn btn-large primary" disabled>Identification</button>
             </div>
         </div>
 

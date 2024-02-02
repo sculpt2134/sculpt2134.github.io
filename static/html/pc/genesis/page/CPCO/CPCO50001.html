@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
-  <title>HCAU-PUBL</title>
+  <title>GENESIS-PUBL</title>
   <link rel="stylesheet" href="/static/html/pc/genesis/css/bootstrap.min.css" />
   <link rel="stylesheet" href="/static/html/pc/genesis/css/styles.css" />
   <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
@@ -33,79 +33,69 @@
 
     <!-- <button type="button" class="HCAU-btn primary" data-bs-toggle="modal" data-bs-target="#loginModal">login</button> -->
 
-    <!-- HCAU-tab -->
-    <div class="HCAU-tab mt20">
+<div class="HCAU-login-wrap">
+        <!-- HCAU-tab -->
+    <div class="HCAU-tab mt20" style="border:1px solid black;border-bottom:0;border-radius:12px 12px 0 0">
         <ul class="nav nav-tabs" id="" role="tablist">
-            <li class="nav-item"><button class="nav-link active" id="tab01" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Individual</button></li>
-            <li class="nav-item"><button class="nav-link" id="tab02" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Businessman</button></li>
+            <li class="nav-item one"><button class="nav-link active" id="tab01" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Personal</button></li>
+            <li class="nav-item two"><button class="nav-link" id="tab02" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Businessman</button></li>
         </ul>
     </div>
     <!-- //HCAU-tab -->
 
     <!-- tab-content -->
-    <div class="tab-content HCAU-login-wrap" id="">
+    <div class="tab-content" id="">
         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="tab01" tabindex="0">
-            <div class="HCAU-login bg-box">
-                <div class="border-box">
-                    <div class="d-flex g20">
+            <div class="HCAU-login">
+                    <div class="d-flex g20 flex-column">
                         <div class="HCAU-login-input">
                             <p><input type="email" class="form-control HCAU-form" id="" aria-describedby="" value="" placeholder="Enter E-mail"></p>
+                            <div class="invalid-feedback" style="display:block;">Please enter a properly formatted User ID</div>
                             <p class="mt20"><input type="email" class="form-control HCAU-form" id="" aria-describedby="" value="" placeholder="Enter Password"></p>
+                            <div class="invalid-feedback" style="display:block;">The password field is mandatory</div>
                         </div>
-                        <button type="button" class="HCAU-btn btn-cta primary flex-grow-1">Login</button>
+                        <button type="button" class="HCAU-btn btn-cta primary btn-large">Login</button>
                     </div>
                 </div>
-            </div>
-            <div class="invalid-feedback" style="display:block;">To protect your information, you will be automatically logged out if you do not use the service for more than 10 minutes.</div>
-
-            <div class="border-top border-bottom d-flex g20 py-3 px20 mt36">
-                <div>
+            <div class="d-flex g20 mt60  mb40 full">
                     <a href="#" class="link">Find ID</a>
-                </div>
-                <div>
-                    <a href="#" class="link">Find Password</a>
-                </div>
-                <div class="ms-auto">
-                    <a href="#" class="link">Sign up</a>
-                </div>
+                    <a href="#" class="link">Forgot my Password</a>
+                    <a href="#" class="link">Register</a>
             </div>
         </div>
         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="tab02" tabindex="0">
-            <div class="HCAU-login bg-box">
-                <div class="border-box">
-                    <div class="d-flex g20">
+            <div class="HCAU-login">
+                    <div class="d-flex g20 flex-column">
                         <div class="HCAU-login-input">
-                            <p><input type="email" class="form-control HCAU-form" id="" aria-describedby="" value="" placeholder="Enter ABN"></p>
-                            <p class="mt20"><input type="email" class="form-control HCAU-form" id="" aria-describedby="" value="" placeholder="Enter Password"></p>
-                        </div>
-                        <button type="button" class="HCAU-btn btn-cta primary flex-grow-1">Login</button>
+                            <p><input type="email" class="form-control HCAU-form" id="" aria-describedby="" value="" placeholder="Please enter an ABN"></p>
+                            <div class="invalid-feedback" style="display:block;">Please type in a 11-digit number</div>
+                            <p class="mt20"><input type="email" class="form-control HCAU-form" id="" aria-describedby="" value="" placeholder="Please type in password"></p>
+                            <div class="invalid-feedback" style="display:block;">The password field is mandatory</div>
+                        </div>                        
+                        <button type="button" class="HCAU-btn btn-cta primary btn-large">Login</button>
                     </div>
                 </div>
-            </div>
-            <div class="invalid-feedback" style="display:block;">To protect your information, you will be automatically logged out if you do not use the service for more than 10 minutes.</div>
-
-            <div class="border-top border-bottom d-flex g20 py-3 px20 mt36">
-                <!-- <div>
-                    <a href="#" class="link">Find ID</a>
-                </div> -->
-                <div>
-                    <a href="#" class="link">Find Password</a>
-                </div>
-                <div class="ms-auto">
-                    <a href="#" class="link">Sign up</a>
-                </div>
+            <div class="d-flex g20 mt60 mb40 full">
+                    <a href="#" class="link">Forgot my Password</a>
+                    <a href="#" class="link">Register</a>
             </div>
         </div>
-
-        <ul class="HCAU-bullet-list mt36">
-            <li>
-                To protect your information, you will be automatically logged out if you do not use the service for more than 10 minutes.
-            </li>
-            <li>
-                If you enter an incorrect password 5 times in a row, you must change your password after verifying your identity.
-            </li>
-        </ul>
-
+        <div class="g-notice">
+            <ul class="HCAU-bullet-list">
+                <li>
+                    By continuing you confirm that you have read and agree to our <a href="#" class="under">Privacy Collection Notice</a> and <a href="#" class="under">Privacy Policy</a>.
+                </li>
+                <li>
+                    To protect your information, you will be automatically logged out if you do not use the service for more than 10 minutes.
+                </li>
+                <li>
+                    For security purposes, if you enter an incorrect password 5 times in a row, your will be required to verify your identity and change your password.
+                </li>
+                <li>
+                    If you’re unable to re-set your password, please give our friendly Customer Service representative a call on 1300 xxx xxx 
+                </li>
+            </ul>
+        </div>
     </div>
     <!-- //tab-content -->
 

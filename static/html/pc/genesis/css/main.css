@@ -1,164 +1,97 @@
 html,body{overflow:auto;}
-        .HCAU-container {
+.wrap.main{background:transparent}
+.wrap.main .HCAU-container {
             width: 100%;
-            background: url(/static/html/pc/genesis/img/bg.png) right bottom no-repeat;
-            background-size: cover;
-            min-height:1080px;
-            flex:1 1 720px;
-            /*
-            width:971px;
-            padding-left:61px;*/
-
+            min-width:1440px;
+            flex-direction: row;
+            padding-top:92px;
+            height:100%;
+            justify-content: space-between;
         }
-        .wrap .HCAU-container .HCAU-contents{padding-left:57px}
-        .HCAU-container .HCAU-contents .main p {
-            padding: 140px 0 0 65px;
-            font-size: 5vw;
-            font-weight: bold;
-            color: #fff;
-            text-transform: uppercase
-        }
+        .pe-40{padding-right: 40px;}
+        .wrap .HCAU-container .HCAU-tlt-wrap{ width:947px;}
+        .wrap .HCAU-container .HCAU-tlt-wrap h1.HCAU-h1{font-size:80px;line-height: normal;}
+        .wrap .HCAU-container .HCAU-tlt-wrap p.HCAU-txt-md{line-height:130%;margin-top:32px;color:#fff}
+        .wrap .HCAU-container .HCAU-contents{width:493px ;min-width:auto;padding:72px 40px 78px;background-color: #111;}
+        
 
-        .HCAU-menubar .menu .logo {
-            padding-top: 36px;
-            padding-bottom: 80px
-        }
-
-
-        .HCAU-menubar .menu > ul > li {
-            font-weight: 700;
-            padding: 16px 0;
-            font-size: 18px;
-        }
-        .HCAU-menubar .menu > ul > li:first-child{padding-top:0}
-        .collapse.show>ul>li {
-            font-size: 14px;
-            font-weight: 500;
-            position:relative;
-            padding: 7px 0 7px 10px;
-        }
-
-        .menu li a.active {
-            color: #5d7d2b;
-            text-decoration: none;
-        }
-        .collapse > ul >li:before { content: "";
-        display: inline-block;
-        width: 3px;
-        height: 3px;
-        border-radius: 3px;
-        background: #444;
-        position: absolute;
-        left: 0;
-        top: 16px;}
-
+        .wrap .HCAU-contents .join{gap:12px;margin-top:20px;        }
+        .wrap .HCAU-contents .join .HCAU-btn.btn{background: transparent;font-family: GenesisHeadOffice;font-size:18px;line-height: 50px;
+          color: #fff;
+          border: 1px solid #fff;
+          border-radius: 0;
+          padding: 10px 25px;width:100%;display: flex;gap:12px;justify-content: center;}
         .wrap .HCAU-container .HCAU-footer{background:rgba(0,0,0,.6);border-left:1px solid #e5e5e5;color:#b7b7b7}
-        .carousel-item {
+        .promo .carousel-item {float: none;margin-right: 0;}
+        .promo .carousel-indicators{left:auto;margin:auto;right:0px;color:transparent;height:10px;justify-content: flex-end;bottom:auto;top:0}
+        .promo .carousel-indicators [data-bs-target]{width:8px ;height:8px;border-radius: 8px;border:1px solid #999;margin-top:6px;margin-bottom:6px;transition: all .6s ease;background:#999;opacity: 1;}
+        .promo .carousel-indicators .active{background-color: transparent;border:1px solid #fff}
+        .promo .carousel.slide{padding:0;background: transparent;height:110px;overflow: hidden;border-radius: 0;color:#fff;}
+        .promo .carousel.slide .carousel-inner{height:74px;line-height: 74px;margin-top:36px;background: #1a1a1a;padding:0 28px}
+        .promo .HCAU-h2,.HCAU-h2.title{color:#fff;font-size:26px;text-transform: uppercase;font-family: GenesisHeadOffice;}
+        .promo .HCAU-h2{margin-bottom:-26px;}
+        .promo.mt32{margin-top:42px}
+        .d-flex.col12.justify-content-between ul{}
+        .d-flex.col12.justify-content-between ul li:not(:last-child){margin-bottom:12px}
+        
+        button.box{position:relative;background: #000;width:100%;border:0;height:56px;color:#fff;font-size:16px;font-weight: 400;display: flex;padding:20px}
+        button.box span{position:absolute;right:22px;top:14px}
+        button.box:hover,button.box:focus{background:#c36f51}
+        button.box:hover span svg path,button.box:focus  span svg path{stroke: #fff;}
 
-            float: none;
+        .carousel.slide.product{width:100%;overflow: hidden;border-radius: 8px;color:#fff;padding-right:40px}
+        .carousel.slide.product .title-wrap{background: #1a1a1a; padding:28px 40px;margin-top:16px}
+        .title-wrap .title-area .HCAU-h3{max-width: 240px;height:40px;overflow: hidden;overflow: hidden;text-overflow: ellipsis;          white-space: nowrap;}
+        .carousel.slide.product .HCAU-nodata{justify-content: center;align-items: center;display: flex;height:320px}
+        .carousel.slide.product .HCAU-nodata section{font-size:24px}
+        .carousel.slide.product .carousel-inner .border-box{background:transparent}
+        .carousel.slide.product .carousel-inner .HCAU-btn.btn-md{border:0;border-radius: 0;background:#05141f;color:#999;font-weight: 400;font-size:14px;padding:12px}
+        .carousel.slide.product .title{font-size:24px}
+        .carousel.slide.product .p-detail{margin-top:75px}
+        .carousel.slide.product .btn-wrap{display: flex;gap:12px;}
+        .carousel.slide.product .carousel-item.one + button[data-bs-slide="prev"]{display:none}
+        .faq-inner{}
+        .faq-inner ul li,.title-detail ul li{padding:23px 8px;border-bottom:1px solid#333;position: relative;}
+        .faq-inner ul li:last-child{border-bottom:0}
+        .faq-inner ul li dl,.title-detail ul li dl{display:flex;justify-content:flex-start;align-items:center;}        
+        .faq-inner ul li dl dt,.title-detail ul li dt{font-size:15px;padding:5px 12px;border-radius: 4px;background:rgba(0,0,0,.2);color:#999;min-width: 95px;justify-content: center;font-weight: 400;}
+        .faq-inner ul li dl dd,.title-detail ul li dd{font-size:14px;color:#999;padding-left:12px;max-width: 300px;height:20px;overflow: hidden;overflow: hidden;text-overflow: ellipsis;          white-space: nowrap;}
+        .faq-inner ul li dl dt{background: #1a1a1a;text-align: center;}
+        .title-detail ul li dl{width:100%;display: flex;justify-content: space-between;}
+        .title-detail ul li dd{font-size:22px;font-weight: 700;color:#fff}
+        .wrap .HCAU-container h1.HCAU-h1{font-size:64px;color:#fff;padding-top:102px;line-height: 70px;}
+        .detail .usage-detail{margin-top:36px;margin-bottom:24px;margin-right:3px}
+        h2.HCAU-h2.title{text-transform: uppercase;color:#fff}
+        
+        h2.font-size-lg.title{font-size:18px;color:#fff}
 
-            margin-right: 0;
-
-        }
-
-        .vertical.carousel .carousel-item {
-            overflow: hidden;
-        }
-
-        .vertical.carousel .carousel-item-next:not(.carousel-item-start),
-        .vertical.carousel .active.carousel-item-end {
-            transform: translateY(100%);
-        }
-
-        .vertical.carousel .carousel-item-prev:not(.carousel-item-end),
-        .vertical.carousel .active.carousel-item-start {
-            transform: translateY(-100%);
-        }
-         .carousel-indicators{flex-direction: column;left:auto;margin:auto;right:18px;color:transparent;height:80px;justify-content: center;}
-         .carousel-indicators [data-bs-target]{width:4px ;height:4px;border-radius: 8px;border:0;margin-top:6px;margin-bottom:6px;transition: all .6s ease;background:#fff;opacity: 1;}
-         .carousel.slide.vertical{padding:22px;background: rgba(28,27,27,.24);width:450px;height:80px;overflow: hidden;border-radius: 8px;color:#fff;font-weight: bold;}
-         .carousel.slide.vertical .carousel-inner{height:40px;line-height: 40px;}
-         .promo .HCAU-h2{color:#fff;font-size:24px;margin-bottom:12px;text-transform: uppercase;}
-         .carousel-indicators .active{background-color: #000;}
-         .d-flex.col12.justify-content-between ul li{float:left;padding:6px}
-         .d-flex.col12.justify-content-between ul li:nth-child(odd){padding-left:0}
-         .d-flex.col12.justify-content-between ul li:nth-child(even){padding-right:0}
-         button.box{position:relative;background: rgba(28,27,27,.24);width:450px;border-radius: 8px;border:0;height:180px;color:#fff;text-transform: uppercase;font-size:24px;font-weight: bold;display: flex;padding:36px}
-         button.box span{position:absolute;right:36px;bottom:36px}
-         button.box.btn01{background:  rgba(5,20,31,.6);}
-         button.box.btn02{background:  rgba(5,20,31,.4);}
-         button.box.btn03{background:  rgba(5,20,31,.4);}
-         button.box.btn04{background:  rgba(5,20,31,.6);}
-
-         .carousel.slide.product{background: rgba(0,0,0,.32);width:910px;height:320px;overflow: hidden;border-radius: 8px;color:#fff;font-weight: bold;}
-         .carousel.slide.product .HCAU-nodata{justify-content: center;align-items: center;display: flex;height:320px}
-         .carousel.slide.product .HCAU-nodata section{font-size:24px}
-         .carousel.slide.product .carousel-inner .border-box{background:transparent}
-         .carousel.slide.product .carousel-inner .HCAU-btn.btn-md{border:0;border-radius: 30px;background:#05141f;color:#fff}
-         .carousel.slide.product .title{font-size:24px}
-         .carousel.slide.product .p-detail{margin-top:75px}
-         .carousel.slide.product .carousel-item.one + button[data-bs-slide="prev"]{display:none}
-         .faq-inner{}
-         .faq-inner ul li{background:rgba(255,255,255,.1);padding:6px 8px;border-radius: 8px;margin-bottom:4px;position: relative;}
-         .faq-inner ul li dl{display:flex;justify-content:flex-start;align-items:center;}
-         .faq-inner ul li dl dt,.faq-inner ul li dl dd{display:flex}
-         .faq-inner ul li dl dt{font-size:12px;padding:5px 12px;border-radius: 4px;background:rgba(0,0,0,.2);color:#fff;min-width: 95px;justify-content: center;}
-         .faq-inner ul li dl dd{font-size:14px;color:#fff;padding-left:12px}
-
-         .wrap .HCAU-container h1.HCAU-h1{font-size:64px;color:#fff;padding-top:102px;line-height: 70px;}
-         .detail .usage-detail{margin-top:36px;margin-bottom:24px;margin-right:3px}
-         h2.HCAU-h2.title{text-transform: uppercase;color:#fff}
-         .HCAU-btn.btn-more{
-            /* width:90px; */
-            /* height:20px; */
-            background:transparent;
-            color:#fff;
-            position: relative;
-            /* display: flex; */
-            border:0;
-            /* padding-right:10px; */
-            /* margin-right:8px */
-        }
-        .HCAU-btn.btn-more span{margin-left: 8px;}
-         h2.font-size-lg.title{font-size:18px;color:#fff}
-
-         .HCAU-breadcrumb .breadcrumb .dropdown-menu {
-            top: 6px !important;
-            --bs-dropdown-link-active-color: none;
-            --bs-dropdown-link-active-bg: none;
-            width: max-content;
-            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07);
-            border-color: #e5e5e5;
-          }
-          .HCAU-breadcrumb .breadcrumb .dropdown-menu li:nth-child(2n-1) {
-            background: #fff;
-          }
-          .HCAU-breadcrumb .breadcrumb .dropdown-menu li + li {
-            border-top: 1px solid #e5e5e5;
-          }
-          .HCAU-breadcrumb .breadcrumb .dropdown-menu .dropdown-item {
-            padding: 10px 20px;
-          }
+        
+          
           .carousel-control-prev:disabled, .carousel-control-next:disabled{display:none}
-          .carousel-control-next-icon, .carousel-control-prev-icon{width:32px;height:32px;border-radius: 16px;background-color: rgba(0,0,0,.32);background-image:none;opacity:1;
-            transition: all .15s ease;display:flex;justify-content: center;align-items: center;}
+          .carousel-control-next-icon, .carousel-control-prev-icon,.carousel-control-more-icon{width:32px;height:32px;border-radius: 16px;background-color: rgba(0,0,0,.32);background-image:none;opacity:1;
+            transition: all .15s ease;display:flex;justify-content: flex-end;align-items: flex-end;}
           .carousel-control-next-icon:focus,.carousel-control-next-icon:hover,.carousel-control-prev-icon:focus,.carousel-control-prev-icon:hover{background-color:#05141f}
-          .carousel-control-prev{left:-70px;}
-          .carousel-control-next{right:-62px;}
-          .title-area .bg-box{background-color: rgba(255,255,255,.1);padding:6px 20px}
-          .title-area .bg-box .line:before{display:inline-block;content:'';width: 1px;height: 14px;background: #E5E5E5;vertical-align: middle;}
-          .title-area {border-bottom:1px solid rgba(0,0,0,.1);padding:28px 40px;}
-          .title-area .title p{line-height: 32px;display: inline-block;}
-          .title-area .title span{line-height:14px}
-          .title-area + .p20{padding:40px!important}
-          /* .carousel-item.active + .carousel-control-next-icon{display: none} */
-
+          .carousel-control-prev{left:auto;right:80px}
+          .carousel-control-next{right:40px;}
+          .carousel-control-more{position: absolute; top: 0;bottom: 0; right:0;z-index: 1; display: flex;align-items: center;justify-content: center; width: 15%; padding: 0;color: #fff; text-align: center; background: 0 0;border: 0;opacity: .5; transition: opacity .15s ease;}
+          .carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover ,.carousel-control-more:focus, .carousel-control-more:hover {
+            color: #fff; text-decoration: none; outline: 0; opacity: 1;
+        }
+          button[class*="carousel-control-"]{width:32px}
+          
+          .title-area .HCAU-h3{color:#C36F51;text-transform: uppercase;font-size:22px;}
+          .title-wrap .title-txt{display: flex;justify-content: center;text-align: center;font-family: GenesisHeadOffice;font-size: 22px;margin-top:8px;margin-bottom:20px}
+          .title-wrap .HCAU-badge{background: #C36F51;border-radius: 4px;font-size: 13px;color:#fff;padding:2px 8px;height:18px;margin-top:3px}
+          .title-wrap .title-bgbox{display: flex;justify-content: space-between;border-radius: 40px;padding:8px 20px;background: #000;line-height: 18px;}
+          .title-wrap .title-bgbox span,.title-detail dt.HCAU-txt-md{color:#999;font-weight: 400;}
+          .btn-wrap .HCAU-btn.btn-xs{font-size:14px;color:#999;font-weight: 400;border-radius: 0;padding:12px;;background: #000;}
+          .btn-wrap .HCAU-btn.btn-xs:hover,.btn-wrap .HCAU-btn.btn-xs:focus{background: #C36F51;color:#fff}
+        
           div:has(.carousel-item:first-child.active) + button,
           div:has(.carousel-item:last-child.active) + button + button,
           .disabled{display:none !important}
           /* .carousel-item dl{min-width:200px} */
           .g40{gap:40px}
           .mt24{margin-top: 24px;}
-          .mb12{margin-bottom: 12px;}
-          .w250{width: 250px;}
-          
+          .HCAU-footer{background: transparent;height:92px}
+          html,body{background:#111 url(/static/html/pc/genesis/img/bg.png) no-repeat;}

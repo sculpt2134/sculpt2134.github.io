@@ -1,0 +1,165 @@
+<html lang="en">
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
+    <title>HCAU-PUBL</title>
+    <link rel="stylesheet" href="/static/html/m/hyundai/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/html/m/hyundai/css/styles.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+
+<body>
+    <div class="wrap">
+        <script type="text/javascript" src="/static/html/m/hyundai/js/Header.js"></script>
+
+        <!-- HCAU-container -->
+        <div class="HCAU-container">
+            <div class="HCAU-contents" id="contents">
+                <!-- HCAU-title -->
+                <div class="HCAU-title">
+                    <div class="HCAU-h1">Document</div>
+                </div>
+                <!-- //HCAU-title -->
+                <!-- HCAU-detail -->
+                <div class="HCAU-detail">
+
+                    <div class="HCAU-tab native-scroll" id="tabpage" role="tablist">
+                        <div>
+                            <button class="" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="false">Repayment schedule</button>
+                            <button class="active" data-bs-toggle="tab"  data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="true">Copy of contract</button>
+                            <button class="" data-bs-toggle="tab"  data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false">Certificate of contract facts</button>
+                            <button class="" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab" aria-controls="tab4" aria-selected="false">Loan termination confirmation</button>
+                        </div>
+                    </div>
+                    <div class="HCAU-tab-content tab-content" id="tabContent">
+                        <div class="tab-pane fade show active"  id="tab1" role="tabpanel" tabindex="0">
+                            <div class="mt40">
+                                <div class="title-area">
+                                    <div class="HCAU-txt-lg">Instructions for downloading a copy of the contract</div>
+                                </div>
+                                <ul class="HCAU-bullet-list">
+                                    <li class="HCAU-txt-sm gray04">계약서 사본을 다운로드 받을 수 있습니다.</li>
+                                    <li class="HCAU-txt-sm gray04">5년 전 1월부터 현재까지 이용중이거나, 이용이 종료된 상품에 대해서만 조회 가능합니다.</li>
+                                </ul>
+                                <div class="mt40">
+                                    <div class="HCAU-otp bg-box2 p-2">
+                                        <div class="border-box px-3 py20">
+                                            <div class="HCAU-form-wrap">
+                                                <div class="form-title HCAU-txt-md fw-bold">OTP certification</div>
+                                                <ul class="HCAU-tab-small" id="" role="tablist">
+                                                    <li class="" role="presentation">
+                                                        <button class="active" id="tabmenu01" data-bs-toggle="tab" data-bs-target="#tab01" type="button" role="tab" aria-controls="tab01" aria-selected="true">
+                                                            <span class="HCAU-txt-sm fw-bold">Mobile phone</span>
+                                                        </button>
+                                                    </li>
+                                                    <li class="" role="presentation">
+                                                        <button class="" id="tabmenu02" data-bs-toggle="tab" data-bs-target="#tab02" type="button" role="tab" aria-controls="tab02" aria-selected="false">
+                                                            <span class="HCAU-txt-sm fw-bold">E-mail</span>
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content mt20" id="myTabContent">
+                                                    <div class="tab-pane fade show active" id="tab01" role="tabpanel" aria-labelledby="tabmenu01">
+                                                        <div class="d-flex g12">
+                                                            <div class="flex-grow-1">
+                                                                <input type="text" class="form-control HCAU-form" id="form-txt01" aria-describedby="" value="01099999999" placeholder="Enter phone number" readonly>
+                                                                <!-- <div class="invalid-feedback" style="display: block;">invalid message1</div> -->
+                                                                <!-- <div class="invalid-feedback" style="display: block;">invalid message2</div> -->
+                                                            </div>
+                                                            <div>
+                                                                <button type="button" class="HCAU-btn btn-smd" style="width: 77px">Send</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex g12 mt12">
+                                                            <div class="flex-grow-1 position-relative">
+                                                                <input type="text" class="form-control HCAU-form time-limit" id="form-txt01" aria-describedby="" value="" placeholder="Enter OTP verification code">
+                                                                <span class="time-limit-num HCAU-txt-sm">2:59</span>
+                                                                <div class="invalid-feedback" style="display: block;">invalid message1</div>
+                                                                <div class="invalid-feedback" style="display: block;">invalid message2</div>
+                                                                <div class="invalid-feedback" style="display: block;">invalid message3</div>
+                                                                <div class="invalid-feedback" style="display: block;">invalid message4</div>
+                                                                <div class="valid-feedback" style="display: block;">valid message</div>
+                                                            </div>
+                                                            <div>
+                                                                <button type="button" class="HCAU-btn btn-smd" style="width: 77px">OK</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="tab02" role="tabpanel" aria-labelledby="tabmenu02">
+                                                        <div class="d-flex g12">
+                                                            <div class="flex-grow-1">
+                                                                <input type="text" class="form-control HCAU-form" id="form-txt01" aria-describedby="" value="hyundai@hcs.com" placeholder="Enter email address" readonly>
+                                                                <!-- <div class="invalid-feedback" style="display: block;">invalid message1</div> -->
+                                                                <!-- <div class="invalid-feedback" style="display: block;">invalid message2</div> -->
+                                                            </div>
+                                                            <div>
+                                                                <button type="button" class="HCAU-btn btn-smd" style="width: 77px">Send</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex g12 mt12">
+                                                            <div class="flex-grow-1 position-relative">
+                                                                <input type="text" class="form-control HCAU-form time-limit" id="form-txt01" aria-describedby="" value="" placeholder="Enter OTP verification code">
+                                                                <span class="time-limit-num HCAU-txt-sm">2:59</span>
+                                                                <div class="invalid-feedback" style="display: block;">invalid message1</div>
+                                                                <div class="invalid-feedback" style="display: block;">invalid message2</div>
+                                                                <div class="invalid-feedback" style="display: block;">invalid message3</div>
+                                                                <div class="invalid-feedback" style="display: block;">invalid message4</div>
+                                                                <div class="valid-feedback" style="display: block;">valid message</div>
+                                                            </div>
+                                                            <div>
+                                                                <button type="button" class="HCAU-btn btn-smd" style="width: 77px">OK</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="HCAU-info-msg">
+                                        You can view and download after OTP authentication.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- <div class="g-notice border-top-dashed">
+                                <div class="border-box edge px-4 py20">
+                                    <div class="HCAU-txt-sm">To check the products currently in use</div>
+                                    <div class="mt12">
+                                        <a href="" class="link HCAU-txt-sm">Account information</a>
+                                    </div>
+                                </div>
+                                <div class="border-box edge px-4 py20 mt12">
+                                    <div class="HCAU-txt-sm">To check your deposit details</div>
+                                    <div class="mt12">
+                                        <a href="" class="link HCAU-txt-sm">Payment details</a>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="tab-pane fade" id="tab2"></div>
+                        <div class="tab-pane fade" id="tab3"></div>
+                    </div>
+
+
+                </div>
+                <!-- //HCAU-detail -->
+            </div>
+        </div>
+        <!-- //HCAU-container -->
+
+        <!-- btn-cta-wrap -->
+        <div class="btn-cta-wrap">
+            <!-- <button type="button" class="HCAU-btn btn-cta gray03">Cancel</button> -->
+            <button type="button" class="HCAU-btn btn-cta primary">Ok</button>
+        </div>
+        <!-- //btn-cta-wrap -->
+
+        <script type="text/javascript" src="/static/html/m/hyundai/js/Footer.js"></script>
+    </div>
+    <!-- <script src="/static/html/m/hyundai/js/jquery-3.3.1.min.js"></script> -->
+    <script src="/static/html/m/hyundai/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/static/html/m/hyundai/js/main.js"></script>
+</body>
+
+</html>

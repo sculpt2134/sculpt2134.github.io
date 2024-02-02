@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
-  <title>HCAU-PUBL</title>
+  <title>GENESIS-PUBL</title>
   <link rel="stylesheet" href="/static/html/pc/genesis/css/bootstrap.min.css" />
   <link rel="stylesheet" href="/static/html/pc/genesis/css/styles.css" />
   <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
 </head>
 <body>
     <div class="wrap">
-      <div class="HCAU-sidebar" include-html="/static/html/pc/genesis/aside.html"></div>
-      <div class="HCAU-menubar" include-html="/static/html/pc/genesis/menu.html"></div>
+      <div class="HCAU-sidebar" include-html="/static/html/pc/genesis/aside.html" style="display:block;position:absolute;top:400px;height:calc(100% - 400px)"></div>
+      <div class="HCAU-menubar" include-html="/static/html/pc/genesis/nav.html"  id="parallax__nav" style="position:fixed"></div>
   
       <div class="HCAU-container">
             <div class="HCAU-contents" id="contents">
@@ -35,6 +35,23 @@
 
     <section>
         <div class="title-area d-flex align-items-baseline g16">
+            <div class="title">step</div>
+        </div>
+        <!-- HCAU-step -->
+        <div class="HCAU-step-wrap">
+            <div class="HCAU-step">
+                <div class="HCAU-step-inner">
+                    <div class="step">STEP 1</div>
+                    <div class="step-name">Identify verification</div>
+                </div>
+                <div class="step-paging">
+                    <span class="step-current">1</span>
+                    <span class="step-total">2</span>
+                </div>
+            </div>
+        </div>
+        <!-- //HCAU-step -->
+        <div class="title-area d-flex align-items-baseline g16">
             <div class="title">Tooltip</div>
         </div>
         <span class="HCAU-tooltip">
@@ -57,13 +74,37 @@
     </section>
 
     <section>
-         <div id="sandbox" class="calendar">
-                        <input type="text" class="form-control date">
-                        <span>
-                          <img src="/static/html/m/hyundai/img/ico_calendar.svg" alt="">
-                          <!-- readonly,disable용 <img src="/static/html/m/hyundai/img/ico_calendar_readonly.svg" alt=""> -->
-                        </span>
-                    </div>
+        <div class="title-area d-flex align-items-baseline g16">
+            <div class="title">Calendar</div>
+        </div>
+        
+        <div id="foo" data-date="01/25/2020"></div>
+
+       
+        <section class="section container-fluid">
+            <div class="d-flex flex-column gap-2">
+                <div id="sandbox" class="HCAU-calendar col-3">
+                    <input type="text" class="form-control date">
+                    <span>
+                        <img src="/static/html/m/genesis/img/ico_calendar.svg" alt="">
+                    </span>
+                </div>
+
+                <div id="sandbox2" class="HCAU-calendar col-3">
+                    <input type="text" class="form-control date" disabled>
+                    <span>
+                        <img src="/static/html/m/genesis/img/ico_calendar_readonly.svg" alt="">
+                    </span>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+      <div class="toggle-button"></div>
+
     </section>
     <section>
         <div class="title-area d-flex align-items-baseline g16">
@@ -218,12 +259,11 @@
             <div class="HCAU-modal modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-md"><!-- modal-lg modal-md modal-sm -->
                     <div class="modal-content">
-
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/html/pc/genesis/img/svg/ico_modal_close.svg" alt="Close" /></button>
                         <div class="modal-content-inner">
-                            <!-- <div class="modal-header">
-                                <div class="HCAU-h2" id="exampleModalLabel">title</div>
-                            </div> -->
+                            <div class="modal-header">
+                                <div class="HCAU-h2" id="exampleModalLabel"></div>
+                            </div>
                             <div class="modal-body">
                                 <div class="border-box">
                                     <div class="bg-box2 p32">
@@ -513,18 +553,27 @@
                                 <div class="HCAU-h2" id="exampleModalLabel">Agree to terms and conditions</div>
                             </div>
                             <div class="modal-body">
-                                <div class="HCAU-step">
+                                <!--HCAU-step-->
+                                <div class="HCAU-step-pop">
                                     <div class="step-item active">
                                         <div class="num">1</div>
-                                        <!-- <div class="txt">Choose the amount you want to pay</div> -->
+                                        <div class="txt">temporary text</div>
                                     </div>
                                     <div class="step-item">
                                         <div class="num">2</div>
-                                        <!-- <div class="txt">Choose the amount you want to pay</div> -->
+                                        <div class="txt"></div>
                                     </div>
                                     <div class="step-item">
                                         <div class="num">3</div>
-                                        <!-- <div class="txt">Choose the amount you want to pay</div> -->
+                                        <div class="txt"></div>
+                                    </div>
+                                    <div class="step-item">
+                                        <div class="num">4</div>
+                                        <div class="txt"></div>
+                                    </div>
+                                    <div class="step-item">
+                                        <div class="num">5</div>
+                                        <div class="txt"></div>
                                     </div>
                                 </div>
                                 <div class="border-box">
@@ -536,7 +585,7 @@
                                             </li>
                                             <li>
                                                 If you want to change your email address, please update your personal information first.<br>
-                                                <a href="#none" class="link">Change your personal info</a>
+                                                <a href="#none" class="under">Change your personal info</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -560,20 +609,15 @@
             <div class="HCAU-modal modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-xs"><!-- modal-lg modal-md modal-sm -->
                     <div class="modal-content">
-
-                        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/html/pc/genesis/img/svg/ico_modal_close.svg" alt="Close" /></button> -->
                         <div class="modal-content-inner">
-                            <!-- <div class="modal-header">
-                                <div class="HCAU-h2" id="exampleModalLabel">title</div>
-                            </div> -->
                             <div class="modal-body">
 
                                 <div class="text-center lh-sm">
                                     There is no matching customer information.
                                 </div>
-                                <div class="d-flex gap-2 justify-content-center mt28">
-                                    <button type="button" class="HCAU-btn btn-smd gray03 w92" data-bs-dismiss="modal">Cancel</button>
-                                    <button type="button" class="HCAU-btn btn-smd primary w92" data-bs-dismiss="modal">Ok</button>
+                                <div class="d-flex gap-1 justify-content-center mt40">
+                                    <button type="button" class="HCAU-btn btn-large gray03" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="HCAU-btn btn-large primary" data-bs-dismiss="modal">Ok</button>
                                 </div>
 
                             </div>
@@ -599,9 +643,9 @@
                                 <div class="text-center lh-sm">
                                     alert message
                                 </div>
-                                <div class="d-flex gap-2 justify-content-center mt28">
+                                <div class="d-flex gap-2 justify-content-center mt40">
                                     <!-- <button type="button" class="HCAU-btn btn-smd gray03 w92" data-bs-dismiss="modal">Cancel</button> -->
-                                    <button type="button" class="HCAU-btn btn-smd primary w92" data-bs-dismiss="modal">Ok</button>
+                                    <button type="button" class="HCAU-btn btn-large primary w92" data-bs-dismiss="modal">Ok</button>
                                 </div>
 
                             </div>
@@ -649,13 +693,7 @@
             <button type="button" class="HCAU-btn btn-sm">default</button>
             <button type="button" class="HCAU-btn btn-sm primary">primary</button>
             <button type="button" class="HCAU-btn btn-sm gray03">button</button>
-            <button type="button" class="HCAU-btn btn-sm gray01">Search</button>
-            <button type="button" class="HCAU-btn btn-sm">
-                statement
-                <span class="ico-print"><img src="/static/html/pc/genesis/img/svg/ico_print.svg" alt=""></span>
-            </button>
-            <a href="#none" class="HCAU-btn btn-sm">button(a)</a>
-            <a href="#none" class="HCAU-btn btn-sm">button(a)</a>
+            <button type="button" class="HCAU-btn btn-sm gray01">Search</button>            
             <button type="button" class="HCAU-btn btn-sm" disabled>disabled button</button>
         </div>
         <br>
@@ -691,7 +729,7 @@
             <a href="#none" class="HCAU-btn btn-large">a link</a>
         </div>
         <br>
-        <div class="d-flex g12 justify-content-center">
+        <div class="d-flex g12 ㅇ-ㅜㅐㅜㄷ">
             <button type="button" class="HCAU-btn btn-large">button</button>
             <button type="button" class="HCAU-btn btn-large">button</button>
             <a href="#none" class="HCAU-btn btn-large">a link</a>
@@ -753,23 +791,7 @@
         </div>
 
         <br>
-        <div class="">스텝</div>
-        <!-- HCAU-step -->
-        <div class="HCAU-step">
-            <div class="step-item">
-                <div class="num">STEP1</div>
-                <div class="txt">Choose the amount you want to pay</div>
-            </div>
-            <div class="step-item">
-                <div class="num">STEP2</div>
-                <div class="txt">Choose the amount you want to pay</div>
-            </div>
-            <div class="step-item  active">
-                <div class="num">STEP3</div>
-                <div class="txt">Choose the amount you want to pay</div>
-            </div>
-        </div>
-        <!-- //HCAU-step -->
+
 
     </section>
 
@@ -1347,7 +1369,7 @@
         <!-- HCAU-table -->
         <div class="HCAU-flex-table border-top">
 
-            <div class="d-flex py28 px32 g20 border-bottom align-items-center">
+            <div class="d-flex py28 px24 g20 border-bottom align-items-center">
                 <div>
                     <div class="d-flex gap-2 align-items-center">
                         <div class="HCAU-txt-md fw-bold">New Car Loan_Standard – H2023NA000248</div>
@@ -1365,7 +1387,7 @@
                     <button type="button" class="HCAU-btn btn-sm">View details</button>
                 </div>
             </div>
-            <div class="d-flex py28 px32 g20 border-bottom align-items-center">
+            <div class="d-flex py28 px24 g20 border-bottom align-items-center">
                 <div>
                     <div class="d-flex gap-2">
                         <span class="HCAU-txt-md fw-bold">New Car Loan_Standard – H2023NA000248</span>
@@ -1841,7 +1863,7 @@
         </div>
 
         <div class="border-box p20 mt-3">
-            <div class="bg-box d-flex justify-content-between align-items-center px32 py16 h60">
+            <div class="loan-items-tlt bg-box d-flex justify-content-between align-items-center px32 py16 h60">
                 <div class="HCAU-lead-txt fw-bold">NewCar Loan_Standard</div>
                 <div class="d-flex g20">
                     <span class="HCAU-lead-txt fw-bold align-items-center">H2023NA000248</span>
@@ -2104,7 +2126,7 @@
         <!-- HCAU-flex-table -->
         <div class="HCAU-flex-table border-top">
 
-            <div class="d-flex py28 px32 g20 border-bottom align-items-center">
+            <div class="d-flex py28 px24 g20 border-bottom align-items-center">
                 <div>
                     <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="radio01">
                 </div>
@@ -2121,7 +2143,7 @@
                     <div class="HCAU-txt-sm pt-2">Current payment due : <span class="HCAU-txt-md fw-bold">1,398,797 $</span></div>
                 </div>
             </div>
-            <div class="d-flex py28 px32 g20 border-bottom">
+            <div class="d-flex py28 px24 g20 border-bottom">
                 <div>
                     <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="radio02">
                 </div>
@@ -2144,7 +2166,7 @@
         <br>
         <div class="HCAU-flex-table border-top">
 
-            <div class="d-flex py28 px32 g20 border-bottom align-items-center">
+            <div class="d-flex py28 px24 g20 border-bottom align-items-center">
                 <!-- <div>
                     <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="radio01" checked="">
                 </div> -->
@@ -2321,7 +2343,7 @@
     <section>
         <div>
             <div class="HCAU-txt-md text-center mt80">
-                The transfer of the early redemption request information to B-pay has been completed.<br>
+                The transfer of the early redemption request information to BPAY has been completed.<br>
                 Payment is completed only when the requested amount is deposited.
             </div>
             <div class="mt-5">
@@ -2344,7 +2366,7 @@
                 <div class="border-box black">
                     <div class="px32 py16">
                         <dl class="d-flex justify-content-between HCAU-txt-sm">
-                            <dt class="fw-normal gray04">B-pay reference number</dt>
+                            <dt class="fw-normal gray04">BPAY reference number</dt>
                             <dd class="fw-bold">275394859173943</dd>
                         </dl>
                     </div>
@@ -2717,17 +2739,68 @@
         </div><!--//HCAU-contentainer-->
     </div><!--//wrap-->
     <footer include-html="/static/html/pc/genesis/footer.html"></footer>
-<script src="/static/html/pc/genesis/js/bootstrap.bundle.min.js"></script>
-<script src="/static/html/pc/genesis/js/main.js"></script>
-<script src="/static/html/pc/genesis/js/includeHTML.js"></script>
-<script src="/static/html/pc/genesis/js/includeRouter.js"></script>
-<script>
-includeHTML( function () {
-includeRouter( function () {
-});
-});
-
-</script>
+    <script src="/static/html/pc/genesis/js/main.js"></script>
+    <script src="/static/html/pc/genesis/js/includeHTML.js"></script>
+    <script src="/static/html/pc/genesis/js/includeRouter.js"></script>
+    <script>includeHTML();</script>
+    <!--datepicker-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="/static/html/pc/genesis/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js"></script>
+    <script src="/static/html/pc/genesis/js/datepicker-full.js"></script>
+    <script src="/static/html/pc/genesis/js/live-demo.js"></script>
+    <script>
+        initialize();
+        document.getElementById('types').querySelectorAll('input').forEach((el) => {
+            el.addEventListener('change', onChangeType);
+        });
+    </script>
+    <!--datepicker-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    <script>
+        ScrollTrigger.create({
+            start: "top -100",
+            end: 99999,
+            toggleClass: {
+                className: "is-active",
+                targets: "#parallax__nav"
+            }
+        });
+    </script>
+    <script type="text/javascript">
+    
+    
+        document.addEventListener("DOMContentLoaded", function(){
+                document.querySelectorAll('.nav-bar').forEach(function(everyitem){
+                    
+                    everyitem.addEventListener('mouseover', function(e){
+    
+                        let el_link = this.querySelector('button[data-bs-toggle]');
+    
+                        if(el_link != null){
+                            let nextEl = el_link.nextElementSibling;
+                            el_link.classList.add('show');
+                             nextEl.classList.add('show');
+                        }
+                        
+                    });
+                    everyitem.addEventListener('mouseleave', function(e){
+                         let el_link = this.querySelector('button[data-bs-toggle]');
+                        
+                        if(el_link != null){
+                            let nextEl = el_link.nextElementSibling;
+                            el_link.classList.remove('show');
+                             nextEl.classList.remove('show');
+                        }
+                        
+    
+                    })
+                });
+        }); 
+    
+    </script>
 </body>
 
 </html>

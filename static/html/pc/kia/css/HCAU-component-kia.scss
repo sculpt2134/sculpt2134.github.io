@@ -1278,11 +1278,13 @@ form + .g-notice {
 .HCAU-valid.was-validated .form-control:invalid{
     background: $white;
     border-color: $point-red;
+    background-image: none;
 }
 
 .HCAU-form.form-control.is-invalid,
 .HCAU-form.form-control.HCAU-form-invalid{
     border-color: $point-red;
+    background-image: none;
     &::placeholder{
         color: $point-red;
     }

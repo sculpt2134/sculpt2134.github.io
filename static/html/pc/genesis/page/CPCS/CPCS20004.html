@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
-  <title>HCAU-PUBL</title>
+  <title>GENESIS-PUBL</title>
   <link rel="stylesheet" href="/static/html/pc/genesis/css/bootstrap.min.css" />
   <link rel="stylesheet" href="/static/html/pc/genesis/css/styles.css" />
   <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
@@ -23,7 +23,7 @@
 <!-- HCAU-title -->
 <div class="HCAU-title">
     <!-- class option : border-bottom -->
-    <div class="HCAU-h1">HARDSHIP</div>
+    <div class="HCAU-h1">Financial Hardship Assistance</div>
 </div>
 <!-- //HCAU-title -->
 
@@ -31,77 +31,39 @@
 <div class="HCAU-detail">
 
     <section>
-        <div class="HCAU-step">
-            <div class="step-item">
-                <div class="num">1</div>
-                <div class="txt">Information confirmation </div>
+        <!-- HCAU-step -->
+            <div class="HCAU-step-wrap">
+                <div class="HCAU-step">
+                    <div class="HCAU-step-inner">
+                        <div class="step">STEP 2</div>
+                        <div class="step-name">Enter application item reason </div>
+                    </div>
+                    <div class="step-paging">
+                        <span class="step-current">2</span>
+                        <span class="step-total">5   </span>
+                    </div>
+                </div>
             </div>
-            <div class="step-item active">
-                <div class="num">2</div>
-                <div class="txt">Enter application item reason</div>
-            </div>
-            <div class="step-item">
-                <div class="num">3</div>
-                <div class="txt">Income/expenditure details</div>
-            </div>
-        </div>
-        
+        <!-- //HCAU-step -->
+
         <div class="title-area d-flex align-items-baseline g16">
-            <div class="title">Payment plan Request</div>
+            <div class="title">Reason for Hardship</div>
         </div>
-
-        <div class="border-top border-bottom">
-            <div class="py24 mx20 d-flex align-items-center justify-content-start g40">
-                <div class="form-check">
-                    <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
-                    <label class="form-check-label" for="exampleRadios1">
-                        Deferral
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked>
-                    <label class="form-check-label" for="exampleRadios2">
-                        Extension
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
-                    <label class="form-check-label" for="exampleRadios3">
-                        Deferral & Extension
-                    </label>
-                </div>
-          </div>
-        </div>
-
-        <div class="title-area d-flex align-items-baseline g16 mt50">
-            <div class="title mt10">Months of Request & Frequency</div>
-        </div>
-        
         <div class="HCAU-table HCAU-valid">
             <table class="table fixed">
                 <colgroup>
-                    <col style="width:150px">
-                    <col>
-                    <col style="width:150px">
+                    <col style="width:200px">
                     <col>
                 </colgroup>
                 <tbody>
+                    
                     <tr>
-                        <th class="align-middle">Month</th>
-                        <td>
-                            <div class="no-txt-input">
-                                <input type="text" class="form-control HCAU-form is-invalid" placeholder="Enter only numbers" value=""><span class="HCAU-txt-sm ps-2">Months</span>
-                            
-                            </div>
-                            <div class="invalid-feedback lh" style="display: block;">Please enter the month.</div>
-                        </td>
-                        <th class="align-middle">Frequency</th>
+                        <th class="align-middle">Reason for Hardship</th>                        
                         <td>
                             <div class="no-txt-input d-flex full">
-                                    
                                 <div class="dropdown">
-                                    <button class="HCAU-btn dropdown-toggle  HCAU-form is-invalid" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
-                                        Monthly
+                                    <button class="HCAU-btn dropdown-toggle  HCAU-form" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                                        S3120394T0012343
                                     </button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
@@ -111,29 +73,48 @@
                                         <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
                                     </ul>
                                 </div>
-                                
-                                
+
+
                             </div>
-                            <div class="invalid-feedback lh" style="display: block;">Please select frequency</div>
+                            <ul class="HCAU-bullet-list mt12">
+                                <li class=" gray03">
+                                    A medical certificate supporting your injury or illness, your time of work and anticipated return
+                                </li>
+                    
+                            </ul>
                         </td>
                     </tr>
-                    
+                    <tr>
+                        <th class="align-middle">Supporting Document</th>
+                        <td>
+
+                            <div class="filebox">
+                                <input class="form-control HCAU-form upload-name" value="text.pdf" placeholder="">
+                                <label for="file" class="HCAU-btn">Search</label>
+                                <input type="file" id="file" class="form-control HCAU-form">
+                                <a href="" class="btn-clear"><img src="/static/html/pc/genesis/img/svg/ico_clear.svg" alt="Close"></a>
+                            </div>
+                        </td>
+                    </tr>                    
                 </tbody>
             </table>
         </div>
+        
+
+        
 
         <div class="title-area align-items-baseline g16 mt50">
-            <div class="title mt10">Reason for Request</div>
-            <div class="HCAU-txt-sm mt10">Please write down the reason for the request in detail. HCAU may request proof documents for reason.</div>
+            <div class="title mt10">Additional Information</div>
+            <div class="HCAU-txt-sm mt10">Please provide any additional information which may assist us in assessing your request.</div>
 
         </div>
         <div class="mb-3 HCAU-valid">
             <div class="position-relative">
-                <textarea class="form-control HCAU-form is-invalid" id="exampleFormControlTextarea1" rows="6" placeholder="Enter Reason for request" required></textarea>
+                <textarea class="form-control HCAU-form is-invalid" id="exampleFormControlTextarea1" rows="6" placeholder="Enter Additional Information" required></textarea>
                 <p class="position-absolute end-0 bottom-0 HCAU-txt-sm gray03 mx-2 my-2 xs-font"><span class="black">0</span>/5000byte</p>
             </div>
             <div class="invalid-feedback lh" style="display:block">
-                Please enter Reason for Request.
+                Please enter Additional Information
             </div>
         </div>
         
