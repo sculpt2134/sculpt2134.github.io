@@ -29,7 +29,9 @@ $font-size-xs : 11px;
 .g30{gap: 30px;}
 .g40{gap: 40px;}
 .g54{gap: 54px;}
+.g86{gap: 73px;}
 .g96{gap: 96px;}
+.g160{gap: 160px;}
 .gx-20{--bs-gutter-x: 20px;}
 .gy-28{--bs-gutter-y: 28px;}
 
@@ -59,7 +61,7 @@ $font-size-xs : 11px;
 .py35{padding-top: 35px;padding-bottom: 35px;}
 .py40{padding-top: 40px;padding-bottom: 40px;}
 .py60{padding-top: 60px;padding-bottom: 60px;}
-
+.py100{padding-top: 100px;padding-bottom: 50px;}
 .px20{padding-left: 20px;padding-right: 20px;}
 .px32{padding-left: 32px !important;padding-right: 32px !important;}
 .px36{padding-left: 32px;padding-right: 36px;}
@@ -576,9 +578,9 @@ a{text-decoration: none;}
     &.type03 {color: $point;background: #EBF5F9;}
     &.type04 {color: #999; background: #f5f5f5;}
     &.small{width:85px;text-align:center;font-weight:700;}
-    &.success{background:#EDF6FA ;color:#1D8ABC;font-weight: 400;margin-left:12px;min-width:75px;text-align: center;}
-    &.fail{font-weight: 400;background:#FEEBEE;color: #ea0029;margin-left:12px;min-width:75px;text-align: center;}
-}
+    &.success{background:#EAF6E3 ;color:#43B100;font-weight: 400;margin-left:12px;min-width:60px;text-align: center;}
+    &.fail{font-weight: 400;background:#FEEBEE;color: #ea0029;margin-left:12px;min-width:60px;text-align: center;}
+}//#EAF6E3 ;color:#43B100;
 
 //스텝
 .HCAU-step{
@@ -1691,21 +1693,31 @@ form + .g-notice {
 .calendar {
     position: relative;
 }
-.calendar .HCAU-form.form-control {
-    padding-right: 50px;opacity: 1;
-}
-.calendar span button,
-.calendar span img {
-    position: absolute;
-    right: 16px;
-    top: 50%;
-    outline: none;
-    border: none;
-    background: none;
-    margin: -12px 0 0 0;
-    padding: 0;
+// .calendar .HCAU-form.form-control {
+//     padding-right: 50px;opacity: 1;
+// }
+// .calendar span button,
+// .calendar span img {
+//     position: absolute;
+//     right: 16px;
+//     top: 50%;
+//     outline: none;
+//     border: none;
+//     background: none;
+//     margin: -12px 0 0 0;
+//     padding: 0;
+// }
+// calendar
+// calendar
+.calendar {
+    .form-control:disabled+img{
+            opacity: .5;
+        }
+
 }
 
+
+.calendar .form-control.gray,.HCAU-calendar .form-control:disabled{background: $gray01;color:#000;opacity: 1;}
 
 
 .HCAU-accordion.faq .accordion .accordion-item{
@@ -1725,4 +1737,7 @@ form + .g-notice {
 // .HCAU-accordion.faq .accordion .accordion-item .accordion-header .accordion-button::after{background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='23' height='23' rx='3.5' stroke='black'/%3E%3Cpath d='M7 14.381L11.5847 9.79632C11.6383 9.74026 11.7028 9.69566 11.7742 9.66518C11.8456 9.63471 11.9224 9.619 12 9.619C12.0776 9.619 12.1544 9.63471 12.2258 9.66518C12.2972 9.69566 12.3617 9.74026 12.4153 9.79632L17 14.381' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");}
 // .HCAU-accordion.faq .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after{background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='24' y='24' width='24' height='24' rx='4' transform='rotate(180 24 24)' fill='black'/%3E%3Cpath d='M7 14.381L11.5847 9.79632C11.6383 9.74026 11.7028 9.69566 11.7742 9.66518C11.8456 9.63471 11.9224 9.619 12 9.619C12.0776 9.619 12.1544 9.63471 12.2258 9.66518C12.2972 9.69566 12.3617 9.74026 12.4153 9.79632L17 14.381' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");}
 
-
+dl.justify-content-between {
+    dt{min-width:152px;align-items: center;display: flex;}
+    dd{text-align: right !important;align-items: center;display: flex;}
+}

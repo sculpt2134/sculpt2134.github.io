@@ -46,12 +46,14 @@
 
                 </ul>
             </div>
-            <div id="sandbox" class="calendar" style="width: 255px;">
-                <input type="text" class="form-control HCAU-form date" value="April 2023">
-                <span>
-                  <img src="/static/html/m/hyundai/img/ico_calendar.svg" alt="">
-                  <!-- readonly,disable용 <img src="/static/html/m/hyundai/img/ico_calendar_readonly.svg" alt=""> -->
-                </span>
+            <div class="">
+                <div id="" class="HCAU-calendar">
+                    <input type="text" class="form-control HCAU-form" value="April 2023">
+                    <span>
+                        <img src="/static/html/m/genesis/img/ico_calendar.svg" alt="">
+                    </span>
+                </div>
+                <div class="toggle-button"></div>
             </div>
             <div class="dropdown flex-fill">
                 <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
@@ -145,19 +147,18 @@
             </dt>
             <dd>
                 <ul class="HCAU-bullet-list">
-                    <li>
-                        Billing statements over the last three years are available only.
-                    </li>
-                    <li>
-                        If your repayment frequency is monthly, your billing statement gets issued a week before your payment due date.
-                    </li>
-                    <li>
-                        If your repayment frequency is either weekly or fortnightly, your billing statement gets issued three days before your payment due date.
-                    </li>
-                    <li>
-                        To check payment status of the amounts billed on the statement, please go to
-                        <a href="#none" class="link">Product details</a>
-                    </li>
+                    <ul class="HCAU-bullet-list">
+                        <li>
+                            Your amount due will be determined three days before your payment due date and a billing statement will be created.
+                        </li>
+                        <li>
+                            When you request a statement, the amount due at the time of your request will appear on the statement.
+                        </li>                    
+                        <li>
+                            To check payment status of the amounts billed on the statement, please go to Product details.
+                            <a href="#none" class="link">Account information</a>
+                        </li>
+                    </ul>
                 </ul>
             </dd>
         </dl>
@@ -168,8 +169,8 @@
             <p class="pt12"><a href="#none" class="link">Make a payment </a></p>
         </div>
         <div class="border-box edge flex-fix p-4">
-            <p class="HCAU-txt-sm">Do you want to payout all or part of your loan early?</p>
-            <p class="pt12"><a href="#none" class="link">Early payout</a></p>
+            <p class="HCAU-txt-sm">Do you want to see the full repayment schedule?</p>
+            <p class="pt12"><a href="#none" class="link">Repayment schedule</a></p>
         </div>
     </div>
 </div>

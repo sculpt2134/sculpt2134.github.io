@@ -25,7 +25,7 @@
 <div class="HCAU-title">
     <!-- class option : border-bottom -->
     <div class="HCAU-h1">Change bank account</div>
-    <div class="HCAU-txt-md">You can change the payment account for the selected product.        </div>
+    <div class="HCAU-txt-md">You can change your bank account that you pay from. ​</div>
 </div>
 <!-- //HCAU-title -->
 
@@ -48,9 +48,9 @@
 
     <section>
 
-        <div class="mt40">
+        <div class="mt60">
             <div class="title-area ">
-                <div class="title">Existing payment information</div>
+                <div class="title">Current payment details​</div>
             </div>
             <div class="HCAU-table HCAU-valid">
                 <table class="table fixed">
@@ -60,7 +60,7 @@
                     </colgroup>
                     <tbody>
                         <tr>
-                            <th class="align-middle">Existing<br>payment method</th>
+                            <th class="align-middle">Current Method</th>
                             <td class="align-middle">
                                 <div class="no-txt-input">
                                     <p class="HCAU-txt-sm">Direct debit</p>
@@ -76,15 +76,31 @@
                             </td>
                         </tr>
                         <tr>
-                            <th class="align-middle">Customer code</th>
+                            <th class="align-middle">Reference number</th>
                             <td class="align-middle">
                                 <div class="no-txt-input">
                                     <p class="HCAU-txt-sm">Customer code</p>
                                 </div>
                             </td>
                         </tr>
+                    </tbody>
+                </table>
+                <table class="table fixed">
+                    <colgroup>
+                        <col style="width:200px">
+                        <col>
+                    </colgroup>
+                    <tbody>
                         <tr>
-                            <th class="align-middle">Existing<br>payment bank</th>
+                            <th class="align-middle">Current Method</th>
+                            <td class="align-middle">
+                                <div class="no-txt-input">
+                                    <p class="HCAU-txt-sm">Direct debit</p>
+                                </div>
+                            </td>
+                        </tr>       
+                        <tr>
+                            <th class="align-middle">Bank</th>
                             <td class="align-middle">
                                 <div class="no-txt-input">
                                     <p class="HCAU-txt-sm">KB Bank</p>
@@ -92,7 +108,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th class="align-middle">Existing<br>account number</th>
+                            <th class="align-middle">BSB&Account<br/> Number</th>
                             <td class="align-middle">
                                 <div class="no-txt-input">
                                     <p class="HCAU-txt-sm">12341**********1</p>
@@ -100,7 +116,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th class="align-middle">Existing<br>depositor</th>
+                            <th class="align-middle">Account name</th>
                             <td class="align-middle">
                                 <div class="no-txt-input">
                                     <p class="HCAU-txt-sm">Juan Sebastian Veron</p>
@@ -112,9 +128,9 @@
                 
             </div>
         </div>
-        <div class="mt40">
+        <div class="mt60">
             <div class="title-area ">
-                <div class="title">Payment information to change</div>
+                <div class="title">New payment details</div>
             </div>
             <div class="HCAU-table HCAU-valid">
                 <table class="table fixed">
@@ -124,7 +140,7 @@
                     </colgroup>
                     <tbody>
                         <tr>
-                            <th class="align-middle">Payment method</th>
+                            <th class="align-middle">New Method</th>
                             <td class="align-middle">
                                 <div class="no-txt-input">
                                     <div class="form-check form-check-inline mr40">
@@ -140,7 +156,7 @@
                         </tr>
 
                         <tr>
-                            <th class="align-middle">Payment method</th>
+                            <th class="align-middle">New Method</th>
                             <td class="align-middle">
                                 <div class="no-txt-input">
                                     <div class="form-check form-check-inline mr40">
@@ -155,7 +171,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th class="align-middle">Change<br>bank selection</th>
+                            <th class="align-middle">BSB</th>
                             <td class="align-middle">
                                 <div class="d-flex g12">
                                     <div class="flex-grow-1">
@@ -169,24 +185,24 @@
                             </td>
                         </tr>
                         <tr>
-                            <th class="align-middle">Change<br>account number</th>
+                            <th class="align-middle">Account Number</th>
                             <td class="align-middle">
-                                <input type="text" class="form-control HCAU-form" placeholder="Enter change account number" value="">
+                                <input type="text" class="form-control HCAU-form" placeholder="Enter numbers only" value="">
                                 <div class="invalid-feedback d-block">invalid messsage.</div>
                             </td>
                         </tr>
                         <tr>
-                            <th class="align-middle">Change<br>account holder</th>
+                            <th class="align-middle">Account Holders name</th>
                             <td class="align-middle">
-                                <input type="text" class="form-control HCAU-form" placeholder="Enter change account holder name" value="">
+                                <input type="text" class="form-control HCAU-form" placeholder="Please enter account holder’s name" value="">
                                 <div class="invalid-feedback d-block">invalid messsage.</div>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="border-box mt60 py32 px24">
-                <div class="d-flex justify-content-between">
+            <div class="border-box gray03 mt60 py32 px24">
+                <div class="d-flex justify-content-between align-items-center">
                     <div>
                         <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck4">
                         <label class="HCAU-txt-sm" for="defaultCheck4">
@@ -242,7 +258,7 @@
                                     <!-- <span class="time-limit-num">2:59</span> -->
                                 </div>
                                 <!-- <div>
-                                    <button type="button" class="HCAU-btn btn-smd">OK</button>
+                                    <button type="button" class="HCAU-btn btn-smd">Ok</button>
                                 </div> -->
                             </div>
                         </div>
@@ -262,7 +278,7 @@
                                     <span class="time-limit-num">2:59</span>
                                 </div>
                                 <div>
-                                    <button type="button" class="HCAU-btn btn-smd">OK</button>
+                                    <button type="button" class="HCAU-btn btn-smd">Ok</button>
                                 </div>
                             </div>
                         </div>
@@ -283,7 +299,7 @@
                                     <!-- <span class="time-limit-num">2:59</span> -->
                                 </div>
                                 <div>
-                                    <button type="button" class="HCAU-btn btn-smd">OK</button>
+                                    <button type="button" class="HCAU-btn btn-smd">Ok</button>
                                 </div>
                             </div>
                         </div>
@@ -304,7 +320,7 @@
                                     <!-- <span class="time-limit-num">2:59</span> -->
                                 </div>
                                 <div>
-                                    <button type="button" class="HCAU-btn btn-smd">OK</button>
+                                    <button type="button" class="HCAU-btn btn-smd">Ok</button>
                                 </div>
                             </div>
                         </div>
@@ -326,7 +342,7 @@
                                     <!-- <span class="time-limit-num">2:59</span> -->
                                 </div>
                                 <!-- <div>
-                                    <button type="button" class="HCAU-btn btn-smd">OK</button>
+                                    <button type="button" class="HCAU-btn btn-smd">Ok</button>
                                 </div> -->
                             </div>
                         </div>
@@ -346,7 +362,7 @@
                                     <span class="time-limit-num">2:59</span>
                                 </div>
                                 <div>
-                                    <button type="button" class="HCAU-btn btn-smd">OK</button>
+                                    <button type="button" class="HCAU-btn btn-smd">Ok</button>
                                 </div>
                             </div>
                         </div>
@@ -367,7 +383,7 @@
                                     <!-- <span class="time-limit-num">2:59</span> -->
                                 </div>
                                 <div>
-                                    <button type="button" class="HCAU-btn btn-smd">OK</button>
+                                    <button type="button" class="HCAU-btn btn-smd">Ok</button>
                                 </div>
                             </div>
                         </div>
@@ -388,7 +404,7 @@
                                     <!-- <span class="time-limit-num">2:59</span> -->
                                 </div>
                                 <div>
-                                    <button type="button" class="HCAU-btn btn-smd">OK</button>
+                                    <button type="button" class="HCAU-btn btn-smd">Ok</button>
                                 </div>
                             </div>
                         </div>

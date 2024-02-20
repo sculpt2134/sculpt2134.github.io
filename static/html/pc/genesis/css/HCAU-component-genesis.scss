@@ -76,6 +76,7 @@ $font-size-xs: 16px;
 .py20{padding-top: 20px;padding-bottom: 20px;}
 .py24{padding-top: 24px;padding-bottom: 24px;}
 .py28{padding-top: 28px;padding-bottom: 28px;}
+.py30{padding-top: 30px;padding-bottom: 30px;}
 .py32{padding-top: 32px;padding-bottom: 32px;}
 .py35{padding-top: 35px;padding-bottom: 35px;}
 .py40{padding-top: 40px;padding-bottom: 40px;}
@@ -100,6 +101,7 @@ $font-size-xs: 16px;
 .my20{margin-top: 20px;margin-bottom: 20px;}
 .my40{margin-top: 40px;margin-bottom:40px;}
 .mt0{margin-top: 0px;}
+.mt08{margin-top: 08px;}
 .mt10{margin-top: 10px;}
 .mt12{margin-top: 12px;}
 .mt16{margin-top: 16px;}
@@ -129,15 +131,20 @@ a{text-decoration: none;}
 .w50{width: 50px;}
 .w80{width: 80px;}
 .w92{width: 92px;}
+.w140{width:140px}
 .w180{width: 180px;}
 .w200{width: 200px;}
 .w320{width: 320px;}
+.w330{width: 330px;}
 .w350{width: 350px;}
 .w360{width: 360px;}
 .w380{width: 380px;}
+.w386{width: 386px;}
 .w440{width: 440px;}
+.w480{width: 480px;}
 .w540{width: 540px;}
 .w600{width: 600px;}
+.h32{height: 32px;}
 .h44{height: 44px;}
 .h52{height: 52px;}
 .h60{height: 60px;}
@@ -149,6 +156,7 @@ a{text-decoration: none;}
 .border-top{
     border-top:1px solid $border-color;
     &.black{border-color : $black !important;}
+    &.gray03{border-color : $gray03 !important;}
 }
 
 .border-top-dashed{border-top:1px dashed $black;}
@@ -158,6 +166,7 @@ a{text-decoration: none;}
 //폰트 사이즈
 .HCAU-h1{color: $black;font-size: $font-size-h1;text-transform: uppercase;line-height: 1.2;font-family: GenesisHeadOffice;}
 .HCAU-h2{color: $black;font-size: $font-size-h2;font-weight: 700;}
+.HCAU-h2.lg{font-size: 32px}
 .HCAU-lead-txt{color: $black;font-size: $font-size-lg;}
 .HCAU-txt-lg{color: $black;font-size: $font-size-lg;}
 .HCAU-txt-md{color: $black;font-size: $font-size-md;}
@@ -478,7 +487,7 @@ a{text-decoration: none;}
                     & + section{margin-top: 60px;}
                     .title-area{
                         margin-bottom: 28px;
-                        .title{font-size: 24px;font-weight: 700;line-height: 1.1;}
+                        .title{font-size: 28px;font-weight: 700;line-height: 1.1;}
                         .sub-title{font-size: 14px;color: $gray04;}
                     }
                 }
@@ -603,7 +612,7 @@ a{text-decoration: none;}
     .border-box{background:$gray01;border:0 ;display:flex;justify-content:space-between;padding:40px !important;}
     .HCAU-bullet-list li + li{margin-top:8px}
 }
-.mx-40{margin-left:-40px;margin-right:-40px;}
+.mx-40{margin-left:-40px;margin-right:-40px;padding-bottom:0;}
 //g-notice.outer/border-box
 .d-flex.gap-3.outer{
     .border-box{background:$gray01;border:0 ;display:flex;justify-content:space-between;padding:40px !important;
@@ -632,6 +641,7 @@ a{text-decoration: none;}
         .link{margin-left: 4px;}
         & + li{margin-top: 20px;}
     }
+   
     .point-red{color: $point-red;}
     .point-red:before{
         background-color: $point-red;
@@ -653,6 +663,7 @@ a{text-decoration: none;}
             margin-right:8px;
             top: 8px;
         }
+        & + li{margin-top:8px}
     }
     &.alpha li{
         list-style: lower-alpha;
@@ -666,9 +677,9 @@ a{text-decoration: none;}
             }
         }
     }
-    
+    &.px40 li+li{margin-top:8px}
 }
-
+.no-txt-input .HCAU-bullet-list li + li{margin-top: 12px;}
 
 //링크
 .link{
@@ -695,13 +706,13 @@ a{text-decoration: none;}
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		gap: 8px;
+		gap: 20px;
 		.arrow {
 			display: flex;
 		}
 		.page {
 			display: flex;
-			gap: 20px;
+			gap: 24px;
 			border-top: 2px solid $white;
 			border-bottom: 2px solid $white;
 			a {
@@ -884,6 +895,31 @@ a{text-decoration: none;}
         }
     }
 }
+.HCAU-swipe{
+    position: relative;
+    overflow: hidden;
+    height:88px;
+    .swiper-slide{width:auto;padding:20px 40px 0; border-color: #ddd;
+        border-bottom-color: $black;}    
+    .swiper-button-next,.swiper-button-prev{background:#fff}
+    .nav-link{
+       
+        color: $gray03;
+        background: #fff;
+        font-weight: 700;
+        border:0;
+        border-bottom:1px solid $black;
+        height: 44px;
+        font-size:20px;
+    }
+    .swiper-slide-active .nav-link{
+        background: #fff;
+        color: #000000;
+        border: 0;
+        border-bottom: 2px solid $black;
+        margin-top:-1px;
+    }
+}
 
 .HCAU-tab-small {
 	.nav-tabs {
@@ -950,6 +986,9 @@ a{text-decoration: none;}
     &.small{width:85px;text-align:center;font-weight:700;}
     &.success{background:#EDF6FA ;color:#1D8ABC;font-weight: 400;margin-left:12px;min-width:75px;text-align: center;}
     &.fail{font-weight: 400;background:#FEEBEE;color: #ea0029;margin-left:12px;min-width:75px;text-align: center;}
+    &.overdue{font-weight: 400;background: #FBEFEF ;color:#ce2d2d;margin-left:12px;min-width:75px;text-align: center;}
+    &.complete{font-weight: 400;background: #F9F3F1 ;color:#AF6249;margin-left:12px;min-width:75px;text-align: center;}
+   
     // &.fail{background:#EDF6FA ;color:#1D8ABC;font-weight: 400;}
 }
 // step
@@ -1186,10 +1225,11 @@ a{text-decoration: none;}
 }
 .HCAU-form.form-control:read-only{
     background-color: $gray01;
+    border-color: $border-color;
     color: $gray03;
     &:focus{
         outline:none;
-        border-color: $border-color;
+        border-color: $gray03;
     }
     &.black{color: $black;}
 }
@@ -1234,6 +1274,7 @@ top:15px;}
     border-color: $gray03;
     background-image: url(/static/html/pc/genesis/img/bg/bg_input_check.svg);
     background-size: 14px 14px;
+    margin-top:0;
     &:checked{
         background-color: $primary;
         border-color: $primary;
@@ -1257,6 +1298,7 @@ top:15px;}
     border-color: $primary;
     background-image: url(/static/html/pc/genesis/img/bg/bg_input_radio_on.svg);
     background-size: 14px 14px;
+    margin-top:0;
 }
 .HCAU-form.time-limit{
     padding-right: 54px;
@@ -1303,7 +1345,9 @@ top:15px;}
     .btn-clear img {top:16px;right:135px;margin-right:16px}
 }
 
-.HCAU-terms-detail .tlt{font-weight: 700;margin-top:28px;margin-bottom:16px}
+.HCAU-terms-detail .tlt{font-weight: 700;margin-top:28px;margin-bottom:16px;}
+.HCAU-terms-detail .tlt2{font-weight: 700;margin-top:60px;margin-bottom:16px}
+.HCAU-terms-detail .tlt2-lg{font-weight: 700;margin-top:60px;margin-bottom:16px;font-size:20px}
 //테이블
 .HCAU-table{
     .table{
@@ -1320,6 +1364,11 @@ top:15px;}
                     align-items: center;
                 }
             }
+        &.type02{
+            .no-txt-input{
+                min-height:35px;
+            }
+        }
         }
         border-top: 1px solid $border-color;
         margin-bottom: 0;
@@ -1327,7 +1376,7 @@ top:15px;}
             border-color: $border-color;
         }
         th{
-            padding: 22px;
+            padding: 20px;
             //background: $secondary02;
             background: transparent;
             // line-height: 1.1;
@@ -1409,7 +1458,11 @@ top:15px;}
 }
 .HCAU-table.type02{
     th,
-    td{padding: 30px 20px;}
+    td{padding: 20px 40px;}
+}
+.HCAU-table.type01{
+    th,
+    td{padding: 28px 24px;}
 }
 .separator{
     span + span::before{
@@ -1419,7 +1472,7 @@ top:15px;}
         height: 14px;
         background: $secondary01;
         position: relative;
-        left: -8px;
+        left: -18px;
         top: 3px;
     }
     &.type02{
@@ -1620,12 +1673,12 @@ top:15px;}
         &.modal-sm{max-width: 480px;}
         &.modal-md{max-width: 640px;}
         &.modal-lg{max-width: 800px;max-height: 800px;}
-        &.modal-xl{max-width: 920px;max-height: 1280px;overflow:auto;}
+        &.modal-xl{max-width: 1000px;max-height: 1280px;overflow:auto;}
 
     }
 }
 
-
+.border-top > div .d-flex.w350.justify-content-between{align-items:center}
 .HCAU-address-result ul{max-height:250px;overflow: auto;}
 .radio-group{
     white-space: nowrap;
@@ -1653,7 +1706,7 @@ top:15px;}
         .radio-group .radio-group-inner .HCAU-btn{padding:19.5px 24px;font-weight:400}
     }
 }
-
+.border-box .d-flex.w350.justify-content-between dl dt dd{text-align:right}
 .dropdown-menu{
     width: 100%;
     padding:0;
@@ -1694,7 +1747,7 @@ top:15px;}
     display: flex;
     justify-content: center;
     align-items:center;
-    padding: 84px 0;
+    padding: 115px 0;
     .HCAU-txt-sm{
         font-weight: 700;
         margin-top: 8px;
@@ -1742,11 +1795,15 @@ top:15px;}
     background: #fff ;
     padding: 32px 40px;
     min-height:90px;
-    .loan-btn{
-        display: flex;
-        align-items:center;
-        gap:20px;
+    .loan-btn{        
         margin-left:auto;
+        display:flex;
+        gap:24px;
+        .HCAU-h2.lg{
+            display: flex;
+        align-items:center;
+        gap:8px;
+        }
     }
 }
 .loan-items-wrap{
@@ -1816,7 +1873,7 @@ top:15px;}
         .loan-text{float:none;dd{text-align:left};margin-right:auto;margin-left:0;}
     }
 }
-
+.loan-items-tlt .HCAU-lead-txt{font-size:24px}
 //payment request
 .HCAU-payment-request{
     .border-box > .d-flex{height: 70px;gap:120px}
@@ -1862,7 +1919,7 @@ top:15px;}
 		box-sizing: border-box;
 		min-width: 200px;
 		max-width: 250px;
-		background: $gray04;
+		background: $black;
 		position: absolute;
 		left: -20px;
 		bottom: 25px;
@@ -1870,7 +1927,7 @@ top:15px;}
 		.HCAU-tooltip-arrow {
 			width: 10px;
 			height: 10px;
-			background: $gray04;
+			background: $black;
 			position: absolute;
 			left: 23px;
 			bottom: -4px;
@@ -1890,6 +1947,7 @@ section + .d-flex.gap-3.border-top-dashed {
 }
 .cta-btn-wrap {
     margin-top: 80px;
+    .d-flex.g12{gap:20px}
 }
 .cta-btn-wrap + .g-notice,
 form + .g-notice {
@@ -1907,6 +1965,7 @@ form + .g-notice {
     .HCAU-txt-sm{font-weight: 700;display:flex}
     .pt12{padding-top:0;display:flex}
     }
+    &.gray03{border-top:1px dashed $gray03}
 }
 
 .ms-auto.car{text-transform: uppercase;}
@@ -1969,12 +2028,17 @@ form + .g-notice {
     &.lh:before{
         top:6px;
     }
+    &.black{color:#000;margin-top:16px;
+        &:before{
+            background:#000
+        }
+    }
 }
 .valid-feedback,
 .HCAU-valid-feedback{
     color: $valid;
     &:before{
-        background: $point;
+        background: $valid;
     }
 }
 .invalid-feedback,
@@ -2345,6 +2409,7 @@ form + .g-notice {
         &:not(.collapsed)::after{width:32px; height:32px;background-size:32px;transform:rotate(360deg);background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgICA8cmVjdCB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHJ4PSI0IiBmaWxsPSJibGFjayIvPg0KICAgIDxwYXRoIGQ9Ik0xMiAyMC44NTU1TDE3LjUwMTYgMTUuMzUzOUMxNy41NjYgMTUuMjg2NiAxNy42NDM0IDE1LjIzMzEgMTcuNzI5IDE1LjE5NjVDMTcuODE0NyAxNS4xNTk5IDE3LjkwNjkgMTUuMTQxMSAxOCAxNS4xNDExQzE4LjA5MzEgMTUuMTQxMSAxOC4xODUzIDE1LjE1OTkgMTguMjcxIDE1LjE5NjVDMTguMzU2NiAxNS4yMzMxIDE4LjQzNCAxNS4yODY2IDE4LjQ5ODQgMTUuMzUzOUwyNCAyMC44NTU1IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+DQogICAgPC9zdmc+DQogICAg)}
 
     }
+    .accordion-collapse .accordion-body{padding:28px 32px}
 }
 .HCAU-accordion.faq .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after{}
 /*!SECTION
@@ -2566,3 +2631,10 @@ nav.AU-tabs {
 
 
 
+    .HCAU-nodata [class*="HCAU-"]{font-size:24px; margin-top:40px !important;font-weight: 700;}
+
+    dl.justify-content-between {
+        dt{min-width:176px;align-items: center;display: flex;}
+        dd{text-align: right !important;align-items: center;display: flex;}
+    }
+    

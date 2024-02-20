@@ -1,40 +1,4 @@
-<style>
-    .HCAU-tab {margin-top: 20px;
-     padding: 10px 10px 0 10px;
-     border-radius: 4px 4px 0 0;
-     border: 1px solid #e5e5e5;
-     }
-          .HCAU-tab .nav-tabs{border:0;justify-content: space-around;position: relative;}
-     .HCAU-tab .nav-tabs li,.HCAU-tab .nav-tabs .nav-link{border:0;background:#fff;position: relative;border:0;color:#444; border-bottom: 1px solid #e5e5e5;
-        margin-bottom: -1px;padding:0}
-     .HCAU-tab .nav-tabs li:before{display: block;content:"";height:20px;width:1px;background:#e5e5e5;position:absolute;left:-40px;top:10px;z-index: 2;}
-     .HCAU-tab .nav-tabs .nav-link.active {
-        border-bottom: 2px solid #000;
-        background: #fff;
-        color: #000;
-    }
 
-     .HCAU-tab .nav-tabs .nav-link.active:before,
-     .HCAU-tab .nav-tabs li:first-child:before{clear:both;display: none;}
-     .ellipsis {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-      }
-
-     .tab-content{position: relative;}
-     .tab-content>.tab-pane:before{display: block;content:"";border-left:1px solid #e5e5e5;height:100px;position:absolute;}
-     .tab-content>.tab-pane:after{display: block;
-         content: "";
-         border-right:1px solid #e5e5e5;
-         height: 100px;
-         position: absolute;
-         right: 0;
-         top: 0;
-         width: 100%;}
-         .d-flex.flex-column.px3.py24.border-bottom.pb-20{border-radius:4px;border:1px solid #e5e5e5}
-
- </style>
 
 <!DOCTYPE html>
 <head>
@@ -43,6 +7,45 @@
   <link rel="stylesheet" href="/static/html/pc/kia/css/bootstrap.min.css" />
   <link rel="stylesheet" href="/static/html/pc/kia/css/styles.css" />
   <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+<style>
+    .HCAU-tab {margin-top: 20px;
+        padding: 10px 10px 0 10px;
+        border-radius: 4px 4px 0 0;
+        border: 1px solid #e5e5e5;
+        }
+             .HCAU-tab .nav-tabs{border:0;justify-content: space-around;position: relative;}
+        .HCAU-tab .nav-tabs li,.HCAU-tab .nav-tabs .nav-link{border:0;background:#fff;position: relative;border:0;color:#444; border-bottom: 1px solid #e5e5e5;
+           margin-bottom: -1px;padding:0}
+        .HCAU-tab .nav-tabs li:before{display: block;content:"";height:20px;width:1px;background:#e5e5e5;position:absolute;left:-40px;top:10px;z-index: 2;}
+        .HCAU-tab .nav-tabs .nav-link.active {
+           border-bottom: 2px solid #000;
+           background: #fff;
+           color: #000;
+       }
+   
+        .HCAU-tab .nav-tabs .nav-link.active:before,
+        .HCAU-tab .nav-tabs li:first-child:before{clear:both;display: none;}
+        .ellipsis {
+           overflow: hidden;
+           text-overflow: ellipsis;
+           white-space: nowrap;
+         }
+   
+        .tab-content{position: relative;}
+        .tab-content>.tab-pane:before{display: block;content:"";border-left:1px solid #e5e5e5;height:100px;position:absolute;}
+        .tab-content>.tab-pane:after{display: block;
+            content: "";
+            border-right:1px solid #e5e5e5;
+            height: 100px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;}
+            .d-flex.flex-column.px3.py24.border-bottom.pb-20{border-radius:4px;border:1px solid #e5e5e5}
+   
+ </style>
+
+
 </head>
 <body>
     <div class="wrap">
@@ -72,43 +75,46 @@
     <section>
         <div class="d-flex align-items-baseline g40">
             <div class="dropdown me-auto">
-                <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
-                    April 2023
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
-                </ul>
+                <div class="">
+                    <div id="" class="calendar">
+                        <input type="text" class="form-control HCAU-form" value="April 2023">
+                        <span>
+                            <img src="/static/html/m/genesis/img/ico_calendar.svg" alt="">
+                        </span>
+                    </div>
+                    <div class="toggle-button"></div>
+                </div>
             </div>
             <div class="HCAU-txt-md fw500">Total amount billed</div>
-            <div class="HCAU-h2">2,034.00 $</div>
+            <div class="HCAU-h2">$ 2,034.00</div>
         </div>
         <div class="detail-contents">
 
            <!-- HCAU-tab -->
-            <div class="HCAU-tab">
-                <ul class="nav nav-tabs" id="" role="tablist">
-                    <li><button class="nav-link active" id="tab01" data-bs-toggle="tab" data-bs-target="#state01" type="button" role="tab" aria-controls="state01" aria-selected="true">NewCar Standard H2023NA000248</button></li>
-                    <li><button class="nav-link" id="tab02" data-bs-toggle="tab" data-bs-target="#state02" type="button" role="tab" aria-controls="state02" aria-selected="false">loarnH2023NA000248</button></li>
-                    <li><button class="nav-link" id="tab03" data-bs-toggle="tab" data-bs-target="#state03" type="button" role="tab" aria-controls="state03" aria-selected="false">lease H2023NA000248</button></li>
-                    <li><button class="nav-link ellipsis" id="tab04" data-bs-toggle="tab" data-bs-target="#state04" type="button" role="tab" aria-controls="state04" aria-selected="false">NewCar Loan</button></li>
+           <div class="HCAU-tab">
+            <ul class="nav nav-tabs" id="" role="tablist">
+                <li><button class="nav-link active" id="tab01" data-bs-toggle="tab" data-bs-target="#state01" type="button" role="tab" aria-controls="state01" aria-selected="true">NewCar Standard H2023NA000248</button></li>
+                <li><button class="nav-link" id="tab02" data-bs-toggle="tab" data-bs-target="#state02" type="button" role="tab" aria-controls="state02" aria-selected="false">loarnH2023NA000248</button></li>
+                <li><button class="nav-link" id="tab03" data-bs-toggle="tab" data-bs-target="#state03" type="button" role="tab" aria-controls="state03" aria-selected="false">lease H2023NA000248</button></li>
+                <li><button class="nav-link ellipsis" id="tab04" data-bs-toggle="tab" data-bs-target="#state04" type="button" role="tab" aria-controls="state04" aria-selected="false">NewCar Loan</button></li>
 
-                </ul>
-            </div>
+            </ul>
+        </div>
             <div class="tab-content" id="">
                 <!--tab content01-->
                 <div class="tab-pane show active" id="state01" role="tabpanel" aria-labelledby="tab01" tabindex="0">
                     <div class="d-flex flex-column px32 py24 border-bottom pb-20">
                         <div class="d-flex justify-content-between align-items-end">
-                            <div class="HCAU-txt-sm gray04">Payment Cycle / Payment Date</div>
+                            <div class="HCAU-txt-sm gray04">Frequency / Due date</div>
                             <div class="HCAU-txt-md fw-bold">Monthly / 11th of every month</div>
                         </div>
                         <div class="d-flex justify-content-between align-items-end pt16">
-                            <div class="HCAU-txt-sm gray04">Bank / Account number</div>
-                            <div class="HCAU-txt-md fw-bold">ANZ / 2635****9</div>
+                            <div class="HCAU-txt-sm gray04">Method</div>
+                            <div class="HCAU-txt-md fw-bold">BPAY</div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-end pt16">
+                            <div class="HCAU-txt-sm gray04">Reference number</div>
+                            <div class="HCAU-txt-md fw-bold">283495019465728</div>
                         </div>
                     </div>
                     <section class="pt40">
@@ -139,10 +145,10 @@
                                         </p>
                                     </div>
                                     <div class="d-flex gap-3 pt12">
-                                        <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
-                                        <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                        <span class="HCAU-txt-sm">Principal  :  $ 3,600.00</span>
+                                        <span class="HCAU-txt-sm">interest : $ 360.00</span>
                                         <span class="HCAU-txt-sm">
-                                            etc : 20.00 $&nbsp;
+                                            etc : $ 20.00&nbsp;
                                             <span class="HCAU-tooltip">
                                                 <a href=""><img src="/static/html/pc/kia/img/svg/ico_tooltip.svg" alt=""></a>
                                                 <div class="HCAU-tooltip-inner">
@@ -150,11 +156,11 @@
                                                     <div class="HCAU-tooltip-cont HCAU-txt-sm">
                                                         <div class="d-flex justify-content-between">
                                                             <p>fines</p>
-                                                            <p>120.00 $</p>
+                                                            <p> $ 120.00</p>
                                                         </div>
                                                         <div class="d-flex justify-content-between">
                                                             <p>toll gate fee</p>
-                                                            <p>290.00 $</p>
+                                                            <p>$ 290.00</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -184,10 +190,10 @@
                                         </p> -->
                                     </div>
                                     <div class="d-flex gap-3 pt12">
-                                        <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
-                                        <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                        <span class="HCAU-txt-sm">Principal  :  $ 3,600.00</span>
+                                        <span class="HCAU-txt-sm">interest : $ 360.00</span>
                                         <span class="HCAU-txt-sm">
-                                            etc : 20.00 $&nbsp;
+                                            etc : $ 20.00&nbsp;
                                             <span class="HCAU-tooltip">
                                                 <a href=""><img src="/static/html/pc/kia/img/svg/ico_tooltip.svg" alt=""></a>
                                                 <div class="HCAU-tooltip-inner">
@@ -195,11 +201,11 @@
                                                     <div class="HCAU-tooltip-cont HCAU-txt-sm">
                                                         <div class="d-flex justify-content-between">
                                                             <p>fines</p>
-                                                            <p>120.00 $</p>
+                                                            <p> $ 120.00</p>
                                                         </div>
                                                         <div class="d-flex justify-content-between">
                                                             <p>toll gate fee</p>
-                                                            <p>290.00 $</p>
+                                                            <p>$ 290.00</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -229,10 +235,10 @@
                                         </p>
                                     </div>
                                     <div class="d-flex gap-3 pt12">
-                                        <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
-                                        <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                        <span class="HCAU-txt-sm">Principal  :  $ 3,600.00</span>
+                                        <span class="HCAU-txt-sm">interest : $ 360.00</span>
                                         <span class="HCAU-txt-sm">
-                                            etc : 20.00 $&nbsp;
+                                            etc : $ 20.00&nbsp;
                                             <span class="HCAU-tooltip">
                                                 <a href=""><img src="/static/html/pc/kia/img/svg/ico_tooltip.svg" alt=""></a>
                                                 <div class="HCAU-tooltip-inner">
@@ -240,11 +246,11 @@
                                                     <div class="HCAU-tooltip-cont HCAU-txt-sm">
                                                         <div class="d-flex justify-content-between">
                                                             <p>fines</p>
-                                                            <p>120.00 $</p>
+                                                            <p> $ 120.00</p>
                                                         </div>
                                                         <div class="d-flex justify-content-between">
                                                             <p>toll gate fee</p>
-                                                            <p>290.00 $</p>
+                                                            <p>$ 290.00</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -274,10 +280,10 @@
                                         </p>
                                     </div>
                                     <div class="d-flex gap-3 pt12">
-                                        <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
-                                        <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                        <span class="HCAU-txt-sm">Principal  :  $ 3,600.00</span>
+                                        <span class="HCAU-txt-sm">interest : $ 360.00</span>
                                         <span class="HCAU-txt-sm">
-                                            etc : 20.00 $&nbsp;
+                                            etc : $ 20.00&nbsp;
                                             <span class="HCAU-tooltip">
                                                 <a href=""><img src="/static/html/pc/kia/img/svg/ico_tooltip.svg" alt=""></a>
                                                 <div class="HCAU-tooltip-inner">
@@ -285,11 +291,11 @@
                                                     <div class="HCAU-tooltip-cont HCAU-txt-sm">
                                                         <div class="d-flex justify-content-between">
                                                             <p>fines</p>
-                                                            <p>120.00 $</p>
+                                                            <p> $ 120.00</p>
                                                         </div>
                                                         <div class="d-flex justify-content-between">
                                                             <p>toll gate fee</p>
-                                                            <p>290.00 $</p>
+                                                            <p>$ 290.00</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -360,10 +366,10 @@
                                         </p>
                                     </div>
                                     <div class="d-flex gap-3 pt12">
-                                        <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
-                                        <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                        <span class="HCAU-txt-sm">Principal  :  $ 3,600.00</span>
+                                        <span class="HCAU-txt-sm">interest : $ 360.00</span>
                                         <span class="HCAU-txt-sm">
-                                            etc : 20.00 $&nbsp;
+                                            etc : $ 20.00&nbsp;
                                             <span class="HCAU-tooltip">
                                                 <a href=""><img src="/static/html/pc/kia/img/svg/ico_tooltip.svg" alt=""></a>
                                                 <div class="HCAU-tooltip-inner">
@@ -371,11 +377,11 @@
                                                     <div class="HCAU-tooltip-cont HCAU-txt-sm">
                                                         <div class="d-flex justify-content-between">
                                                             <p>fines</p>
-                                                            <p>120.00 $</p>
+                                                            <p> $ 120.00</p>
                                                         </div>
                                                         <div class="d-flex justify-content-between">
                                                             <p>toll gate fee</p>
-                                                            <p>290.00 $</p>
+                                                            <p>$ 290.00</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -405,10 +411,10 @@
                                         </p> -->
                                     </div>
                                     <div class="d-flex gap-3 pt12">
-                                        <span class="HCAU-txt-sm">Principal : 3,600.00 $</span>
-                                        <span class="HCAU-txt-sm">interest : 360.00 $</span>
+                                        <span class="HCAU-txt-sm">Principal  :  $ 3,600.00</span>
+                                        <span class="HCAU-txt-sm">interest : $ 360.00</span>
                                         <span class="HCAU-txt-sm">
-                                            etc : 20.00 $&nbsp;
+                                            etc : $ 20.00&nbsp;
                                             <span class="HCAU-tooltip">
                                                 <a href=""><img src="/static/html/pc/kia/img/svg/ico_tooltip.svg" alt=""></a>
                                                 <div class="HCAU-tooltip-inner">
@@ -416,11 +422,11 @@
                                                     <div class="HCAU-tooltip-cont HCAU-txt-sm">
                                                         <div class="d-flex justify-content-between">
                                                             <p>fines</p>
-                                                            <p>120.00 $</p>
+                                                            <p> $ 120.00</p>
                                                         </div>
                                                         <div class="d-flex justify-content-between">
                                                             <p>toll gate fee</p>
-                                                            <p>290.00 $</p>
+                                                            <p>$ 290.00</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -470,24 +476,23 @@
     <div class="g-notice">
         <dl>
             <dt>
-                <span class="ico-gnotice"><img src="/static/html/pc/kia/img/svg/ico_notice.svg" alt=""></span>
+                <span class="ico-gnotice"><img src="/static/html/pc/hyundai/img/svg/ico_notice.svg" alt=""></span>
                 <span>Guidance Notice</span>
             </dt>
             <dd>
                 <ul class="HCAU-bullet-list">
-                    <li>
-                        Billing statements over the last three years are available only.
-                    </li>
-                    <li>
-                        If your repayment frequency is monthly, your billing statement gets issued a week before your payment due date.
-                    </li>
-                    <li>
-                        If your repayment frequency is either weekly or fortnightly, your billing statement gets issued three days before your payment due date.
-                    </li>
-                    <li>
-                        To check payment status of the amounts billed on the statement, please go to
-                        <a href="#none" class="link">Product details</a>
-                    </li>
+                    <ul class="HCAU-bullet-list">
+                        <li>
+                            Your amount due will be determined three days before your payment due date and a billing statement will be created.
+                        </li>
+                        <li>
+                            When you request a statement, the amount due at the time of your request will appear on the statement.
+                        </li>                    
+                        <li>
+                            To check payment status of the amounts billed on the statement, please go to Product details.
+                            <a href="#none" class="link">Account information</a>
+                        </li>
+                    </ul>
                 </ul>
             </dd>
         </dl>
@@ -498,8 +503,8 @@
             <p class="pt12"><a href="#none" class="link">Make a payment </a></p>
         </div>
         <div class="border-box edge flex-fix p-4">
-            <p class="HCAU-txt-sm">Do you want to payout all or part of your loan early?</p>
-            <p class="pt12"><a href="#none" class="link">Early payout</a></p>
+            <p class="HCAU-txt-sm">Do you want to see the full repayment schedule?</p>
+            <p class="pt12"><a href="#none" class="link">Repayment schedule</a></p>
         </div>
     </div>
 

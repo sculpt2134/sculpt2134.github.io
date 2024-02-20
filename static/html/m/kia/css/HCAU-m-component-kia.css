@@ -511,34 +511,34 @@ footer .copy {
   color: #697279;
 }
 
-body.main footer {
+.main footer {
   background: #05141f;
 }
-body.main footer .family-site .HCAU-btn {
+.main footer .family-site .HCAU-btn {
   border-color: #37434c;
   color: #37434c;
 }
-body.main footer .family-site .ico-dropdown path {
+.main footer .family-site .ico-dropdown path {
   fill: #37434c;
 }
-body.main footer .mail path,
-body.main footer .call path,
-body.main footer .bar rect {
+.main footer .mail path,
+.main footer .call path,
+.main footer .bar rect {
   fill: #37434c !important;
 }
-body.main footer .arrow path {
+.main footer .arrow path {
   stroke: #37434c;
 }
-body.main footer .contact-us * {
+.main footer .contact-us * {
   color: #37434c;
 }
-body.main footer .footer-menu rect {
+.main footer .footer-menu rect {
   fill: #37434c;
 }
-body.main footer .footer-menu a {
+.main footer .footer-menu a {
   color: #37434c;
 }
-body.main footer .copy {
+.main footer .copy {
   color: #37434c;
 }
 
@@ -1955,7 +1955,7 @@ textarea.HCAU-form.form-control {
   border: 2px solid transparent;
 }
 .HCAU-prd ul li .card.active, .HCAU-prd ul li .card:hover {
-  border: 2px solid #00aad2;
+  border: 2px solid #5d7d2b;
 }
 .HCAU-prd .card-body {
   padding: 0;

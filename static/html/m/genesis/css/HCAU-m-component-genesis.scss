@@ -137,6 +137,9 @@ a{text-decoration: none;}
 .border-top-dashed.black{
     border-color: $black !important;
 }
+.border-top-dashed.d5{
+    border-color: $border-color !important;
+}
 .border-bottom-dashed {
     border-bottom: 1px dashed $gray03 !important;
 }
@@ -195,8 +198,8 @@ footer{
         position: relative;
         .HCAU-btn{
             background: transparent;
-            border-color: #444;
-            color: #444;
+            border-color: $gray04;
+            color: $gray04;
         }
         .HCAU-btn::after{
             display: none;
@@ -207,33 +210,33 @@ footer{
             top: 50%;
             margin-top: -12px;
             path{
-                fill: #444;
+                fill: $gray04;
             }
         }
     }
     .mail path,
     .call path,
-    .bar rect{fill: #444 !important}
-    .arrow path{stroke: #444}
+    .bar rect{fill: $gray04 !important}
+    .arrow path{stroke: $gray04}
 
     .contact-us *{
         font-size: 13px;
-        color: #444;
+        color: $gray04;
     }
     .footer-menu{
         span{display: inline-block;margin-top: 4px;}
-        rect{fill: #444;}
+        rect{fill: $gray04;}
         a{
             font-size: 13px;
-            color: #444;
+            color: $gray04;
         }
     }
     .copy{
         font-size: 13px;
-        color: #444;
+        color: $gray04;
     }
 }
-body.main footer{
+.main footer{
     background: $black;
     .family-site{
         .HCAU-btn{
@@ -321,9 +324,9 @@ body.main footer{
     &.btn-md {
         font-size: $font-size-md;
         font-weight: 700;
-        padding: 0 20px;
+        padding: 14px 20px;
         line-height: 1;
-        height: 48px;
+        min-height: 48px;
     }
     &.btn-lg {
         font-size: $font-size-md;
@@ -461,7 +464,7 @@ body.main footer{
     }
     &.secondary {
         border-color: $secondary01;
-        background: $secondary02;
+        background: $gray01;
     }
     &.rad12{border-radius: 12px}
     &.gray03{border-color: $gray03;}
@@ -536,7 +539,7 @@ textarea.HCAU-form.form-control {
 .HCAU-form.form-control:disabled,
 .HCAU-form.form-select:disabled {
     background-color: $gray01;
-    color: $black;
+    color: $gray04;
     border-color: $gray02;
     & + span img{opacity:0.6}
 
@@ -570,7 +573,7 @@ textarea.HCAU-form.form-control {
     width: 20px;
     height: 20px;
     // box-shadow: none;
-    border-color: $border-color;
+    border-color: $gray03;
     margin-top: 2px;
     & + label {
         // vertical-align: bottom;
@@ -580,7 +583,7 @@ textarea.HCAU-form.form-control {
     }
 }
 .HCAU-form.form-check-input[type="checkbox"] {
-    border-color: $border-color;
+    border-color: $gray03;
     background-image: url(/static/html/m/genesis/img/bg_input_check.svg);
     background-size: 14px 14px;
     &:checked {
@@ -595,7 +598,7 @@ textarea.HCAU-form.form-control {
     }
 }
 .HCAU-form.form-check-input[type="radio"] {
-    border-color: $border-color;
+    border-color: $gray03;
     &:disabled {
         opacity: 1;
         background: $gray01;
@@ -622,7 +625,7 @@ textarea.HCAU-form.form-control {
 .HCAU-valid .form-control.is-valid,
 .HCAU-valid.was-validated .form-control:valid {
     background: $white;
-    border-color: $border-color;
+    border-color: $gray03;
 }
 .HCAU-valid .form-control.is-valid:read-only,
 .HCAU-valid.was-validated .form-control:valid:read-only {
@@ -821,7 +824,7 @@ textarea.HCAU-form.form-control {
 
 //pagination
 .HCAU-pagination {
-    margin-top: 45px;
+    margin-top: 40px;
     .inner {
         display: flex;
         // align-items: end;
@@ -1082,6 +1085,7 @@ textarea.HCAU-form.form-control {
         display: flex;
         align-items: center;
         gap: 32px;
+        height: 40px;
         .step{
             flex-shrink: 0;
             font-size: 15px;
@@ -1176,7 +1180,7 @@ textarea.HCAU-form.form-control {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 110px 0;
+    padding: 110px 20px;
     padding-top: 78px;
     .HCAU-txt-md {
         font-weight: 700;
@@ -1266,6 +1270,7 @@ textarea.HCAU-form.form-control {
         > div{
             display:inline-flex;
             position: relative;
+            button{font-size: 17px;}
             button:first-child{
                 margin-left:20px;
             }
@@ -1440,7 +1445,7 @@ textarea.HCAU-form.form-control {
 
 // result msg
 .HCAU-result-msg{
-    padding: 48px 10px 40px;
+    padding: 48px 20px 40px;
     text-align: center;
 }
 // .HCAU-result-msg + .g-notice{margin-top: 0;}
@@ -1524,21 +1529,30 @@ textarea.HCAU-form.form-control {
         border-top: 1px solid $border-color;
         .accordion-item{
             border: none;
-            & + .accordion-item{
-                border-bottom: 1px solid $border-color;
-            }
+            border-bottom: 1px solid $border-color;
+            // & + .accordion-item{
+            //     border-bottom: 1px solid $border-color;
+            // }
             .accordion-header{
                 .accordion-button{
                     gap: 16px;
                     border-radius: 0;
                     padding: 24px 16px;
+                    box-shadow: none;
+                }
+                .accordion-button:after{
+                    width: 24px;
+                    height: 24px;
+                    background-image: url(/static/html/m/genesis/img/ico_accordion.svg);
+                    background-position: center;
                 }
                 .accordion-button:not(.collapsed){
                     background: none;
                     .HCAU-txt-sm.mt-1{font-weight: 700;}
                 }
                 .accordion-button:focus{
-                    box-shadow: 0 0 0 2px rgba(93, 125, 43, 1);
+                    box-shadow: 0 0 0 2px rgba(175, 98, 73, 1);
+
                 }
             }
             .accordion-collapse{
@@ -1744,6 +1758,7 @@ textarea.HCAU-form.form-control {
         border-color: $black;
         flex: 1 1 100%;
         overflow: hidden;
+        box-shadow: 5px 5px 15px 0px #00000012;
         // img{width: 60px;}
         img.hover{display: none;}
         span{
@@ -1973,6 +1988,7 @@ textarea.HCAU-form.form-control {
             display: inline-block;
             width: 100%;
             padding: 16px 0;
+            font-size: 14px;
         }
     }
     li + li:before{

@@ -33,7 +33,7 @@
 
     <div class="HCAU-search-bar d-flex g20">
         <div class="d-flex g20 flex-grow-1">
-            <div class="dropdown flex-grow-1" style="width: 255px;">
+            <div class="dropdown  flex-fix">
                 <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
                     Product name (all)
                 </button>
@@ -46,7 +46,7 @@
 
                 </ul>
             </div>
-            <div class="">
+            <div class=" flex-fix">
                 <div id="sandbox2" class="HCAU-calendar">
                     <input type="text" class="form-control HCAU-form" value="April 2023">
                     <span>
@@ -56,7 +56,7 @@
                 <div class="toggle-button"></div>
             </div>
 
-            <div class="dropdown flex-fill">
+            <div class="dropdown flex-fix">
                 <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
                     Repayment frequency (all)
                 </button>
@@ -87,7 +87,7 @@
                         </div> -->
                     </div>
                     <div class="d-flex gap-3 pt12">
-                        <span class="HCAU-txt-sm">Repayment period : 01/09/2023~01/09/2027</span>
+                        <span class="HCAU-txt-sm">Term : 01/09/2023~01/09/2027</span>
                     </div>
                 </div>
                 <div class="ms-auto text-end">
@@ -103,7 +103,7 @@
                         </div> -->
                     </div>
                     <div class="d-flex gap-3 pt12">
-                        <span class="HCAU-txt-sm">Repayment period : 01/09/2023~01/09/2027</span>
+                        <span class="HCAU-txt-sm">Term : 01/09/2023~01/09/2027</span>
                     </div>
                 </div>
                 <div class="ms-auto text-end">
@@ -119,7 +119,7 @@
                         </div> -->
                     </div>
                     <div class="d-flex gap-3 pt12">
-                        <span class="HCAU-txt-sm">Period of use : 01/09/2023~01/09/2027</span>
+                        <span class="HCAU-txt-sm">Term : 01/09/2023~01/09/2027</span>
                     </div>
                 </div>
                 <div class="ms-auto text-end">
@@ -153,11 +153,11 @@
         </div>
 
         <div class="HCAU-nodata type01 flex-column border-bottom mt40">
-            <img src="/static/html/pc/genesis/img/svg/ico_no_matches_hd02.svg" alt="">
-            <div class="HCAU-txt-md fw-bold">No matches found.</div>
+            <img src="/static/html/pc/genesis/img/svg/ico_no_matches_hd01.svg" alt="">
+            <div class="HCAU-h2 fw-bold mt40">No matches found.</div>
         </div>
     </section>
-    <div class="g-notice">
+    <div class="g-notice mx-40">
         <dl>
             <dt>
                 <span class="ico-gnotice"><img src="/static/html/pc/genesis/img/svg/ico_notice.svg" alt=""></span>
@@ -166,30 +166,28 @@
             <dd>
                 <ul class="HCAU-bullet-list">
                     <li>
-                        Billing statements over the last three years are available only.
+                        Your amount due will be determined three days before your payment due date and a billing statement will be created.
                     </li>
                     <li>
-                        If your repayment frequency is monthly, your billing statement gets issued a week before your payment due date.
-                    </li>
+                        When you request a statement, the amount due at the time of your request will appear on the statement.
+                    </li>                    
                     <li>
-                        If your repayment frequency is either weekly or fortnightly, your billing statement gets issued three days before your payment due date.
-                    </li>
-                    <li>
-                        To check payment status of the amounts billed on the statement, please go to
-                        <a href="#none" class="link">Product details</a>
+                        To check payment status of the amounts billed on the statement, please go to Product details.
+                        <a href="#none" class="link">Account information</a>
                     </li>
                 </ul>
             </dd>
         </dl>
     </div>
-    <div class="d-flex gap-3 mt20">
-        <div class="border-box edge flex-fix p-4">
-            <p class="HCAU-txt-sm">Do you want to make a payment before your due date?</p>
-            <p class="pt12"><a href="#none" class="link">Make a payment </a></p>
+
+    <div class="d-flex g40 mt20 mx-40">
+        <div class="bg-box edge p40 d-flex flex-fix justify-content-between align-items-center">
+            <p class="fw-bold HCAU-txt-sm">Do you want to make a payment before your<br/> due date?</p>
+            <p class="ms-auto"><a href="#none" class="link">Make a payment </a></p>
         </div>
-        <div class="border-box edge flex-fix p-4">
-            <p class="HCAU-txt-sm">Do you want to payout all or part of your loan early?</p>
-            <p class="pt12"><a href="#none" class="link">Early payout</a></p>
+        <div class="bg-box edge  p40 d-flex flex-fix justify-content-between align-items-center">
+            <p class="fw-bold HCAU-txt-sm">Do you want to see the full repayment <br/>schedule?</p>
+            <p class="ms-auto"><a href="#none" class="link">Repayment schedule</a></p>
         </div>
     </div>
 </div>

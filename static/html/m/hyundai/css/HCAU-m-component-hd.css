@@ -511,34 +511,34 @@ footer .copy {
   color: #999;
 }
 
-body.main footer {
+.main footer {
   background: #000;
 }
-body.main footer .family-site .HCAU-btn {
+.main footer .family-site .HCAU-btn {
   border-color: #444;
   color: #444;
 }
-body.main footer .family-site .ico-dropdown path {
+.main footer .family-site .ico-dropdown path {
   fill: #444;
 }
-body.main footer .mail path,
-body.main footer .call path,
-body.main footer .bar rect {
+.main footer .mail path,
+.main footer .call path,
+.main footer .bar rect {
   fill: #444 !important;
 }
-body.main footer .arrow path {
+.main footer .arrow path {
   stroke: #444;
 }
-body.main footer .contact-us * {
+.main footer .contact-us * {
   color: #444;
 }
-body.main footer .footer-menu rect {
+.main footer .footer-menu rect {
   fill: #444;
 }
-body.main footer .footer-menu a {
+.main footer .footer-menu a {
   color: #444;
 }
-body.main footer .copy {
+.main footer .copy {
   color: #444;
 }
 

@@ -30,6 +30,10 @@
   gap: 54px;
 }
 
+.g86 {
+  gap: 73px;
+}
+
 .g96 {
   gap: 96px;
 }
@@ -141,6 +145,11 @@
 .py60 {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.py100 {
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 .px20 {
@@ -818,6 +827,37 @@ a {
   border-radius: 0 4px 4px 0;
 }
 
+.HCAU-swipe {
+  position: relative;
+  overflow: hidden;
+  height: 88px;
+}
+.HCAU-swipe .swiper-slide {
+  width: auto;
+  padding: 0;
+  border-color: #ddd;
+  border-bottom-color: #000;
+}
+.HCAU-swipe .swiper-slide .nav-link {
+  color: #999;
+  background: #fff;
+  font-weight: 700;
+  border: 0;
+  border-bottom: 1px solid #000;
+  height: 44px;
+  font-size: 20px;
+}
+.HCAU-swipe .swiper-button-next, .HCAU-swipe .swiper-button-prev {
+  background: #fff;
+}
+.HCAU-swipe .swiper-slide-active .nav-link {
+  background: #fff;
+  color: #000000;
+  border: 0;
+  border-bottom: 2px solid #000;
+  margin-top: -1px;
+}
+
 .HCAU-tab-scroll {
   margin-top: 20px;
   padding: 10px 10px 0 10px;
@@ -928,7 +968,7 @@ a {
   color: #1D8ABC;
   font-weight: 400;
   margin-left: 12px;
-  min-width: 75px;
+  min-width: 60px;
   text-align: center;
 }
 .HCAU-badge.fail {
@@ -936,7 +976,7 @@ a {
   background: #FEEBEE;
   color: #ea0029;
   margin-left: 12px;
-  min-width: 75px;
+  min-width: 60px;
   text-align: center;
 }
 
@@ -2168,21 +2208,14 @@ form + .g-notice {
   position: relative;
 }
 
-.calendar .HCAU-form.form-control {
-  padding-right: 50px;
-  opacity: 1;
+.calendar .form-control:disabled + img {
+  opacity: 0.5;
 }
 
-.calendar span button,
-.calendar span img {
-  position: absolute;
-  right: 16px;
-  top: 50%;
-  outline: none;
-  border: none;
-  background: none;
-  margin: -12px 0 0 0;
-  padding: 0;
+.HCAU-calendar .form-control.gray, .HCAU-calendar .form-control:disabled {
+  background: #f5f5f5;
+  color: #000;
+  opacity: 1;
 }
 
 .HCAU-accordion.faq .accordion .accordion-item:first-child {
@@ -2205,4 +2238,15 @@ form + .g-notice {
 }
 .HCAU-accordion.faq .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='24' y='24' width='24' height='24' rx='4' transform='rotate(180 24 24)' fill='black'/%3E%3Cpath d='M7 14.381L11.5847 9.79632C11.6383 9.74026 11.7028 9.69566 11.7742 9.66518C11.8456 9.63471 11.9224 9.619 12 9.619C12.0776 9.619 12.1544 9.63471 12.2258 9.66518C12.2972 9.69566 12.3617 9.74026 12.4153 9.79632L17 14.381' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+
+dl.justify-content-between dt {
+  min-width: 152px;
+  align-items: center;
+  display: flex;
+}
+dl.justify-content-between dd {
+  text-align: right !important;
+  align-items: center;
+  display: flex;
 }/*# sourceMappingURL=HCAU-component.css.map */

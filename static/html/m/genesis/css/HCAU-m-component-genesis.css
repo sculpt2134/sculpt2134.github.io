@@ -385,6 +385,10 @@ a {
   border-color: #000000 !important;
 }
 
+.border-top-dashed.d5 {
+  border-color: #d5d5d5 !important;
+}
+
 .border-bottom-dashed {
   border-bottom: 1px dashed #a2a2a2 !important;
 }
@@ -505,8 +509,8 @@ footer .family-site {
 }
 footer .family-site .HCAU-btn {
   background: transparent;
-  border-color: #444;
-  color: #444;
+  border-color: #666666;
+  color: #666666;
 }
 footer .family-site .HCAU-btn::after {
   display: none;
@@ -518,64 +522,64 @@ footer .family-site .ico-dropdown {
   margin-top: -12px;
 }
 footer .family-site .ico-dropdown path {
-  fill: #444;
+  fill: #666666;
 }
 footer .mail path,
 footer .call path,
 footer .bar rect {
-  fill: #444 !important;
+  fill: #666666 !important;
 }
 footer .arrow path {
-  stroke: #444;
+  stroke: #666666;
 }
 footer .contact-us * {
   font-size: 13px;
-  color: #444;
+  color: #666666;
 }
 footer .footer-menu span {
   display: inline-block;
   margin-top: 4px;
 }
 footer .footer-menu rect {
-  fill: #444;
+  fill: #666666;
 }
 footer .footer-menu a {
   font-size: 13px;
-  color: #444;
+  color: #666666;
 }
 footer .copy {
   font-size: 13px;
-  color: #444;
+  color: #666666;
 }
 
-body.main footer {
+.main footer {
   background: #000000;
 }
-body.main footer .family-site .HCAU-btn {
+.main footer .family-site .HCAU-btn {
   border-color: #666666;
   color: #666666;
 }
-body.main footer .family-site .ico-dropdown path {
+.main footer .family-site .ico-dropdown path {
   fill: #666666;
 }
-body.main footer .mail path,
-body.main footer .call path,
-body.main footer .bar rect {
+.main footer .mail path,
+.main footer .call path,
+.main footer .bar rect {
   fill: #666666 !important;
 }
-body.main footer .arrow path {
+.main footer .arrow path {
   stroke: #666666;
 }
-body.main footer .contact-us * {
+.main footer .contact-us * {
   color: #666666;
 }
-body.main footer .footer-menu rect {
+.main footer .footer-menu rect {
   fill: #666666;
 }
-body.main footer .footer-menu a {
+.main footer .footer-menu a {
   color: #666666;
 }
-body.main footer .copy {
+.main footer .copy {
   color: #666666;
 }
 
@@ -640,9 +644,9 @@ body.main footer .copy {
 .HCAU-btn.btn-md {
   font-size: 17px;
   font-weight: 700;
-  padding: 0 20px;
+  padding: 14px 20px;
   line-height: 1;
-  height: 48px;
+  min-height: 48px;
 }
 .HCAU-btn.btn-lg {
   font-size: 17px;
@@ -775,7 +779,7 @@ body.main footer .copy {
 }
 .border-box.secondary {
   border-color: #ccc;
-  background: #f5f5f5;
+  background: #f8f8f8;
 }
 .border-box.rad12 {
   border-radius: 12px;
@@ -863,7 +867,7 @@ textarea.HCAU-form.form-control {
 .HCAU-form.form-control:disabled,
 .HCAU-form.form-select:disabled {
   background-color: #f8f8f8;
-  color: #000000;
+  color: #666666;
   border-color: #e5e5e5;
 }
 .HCAU-form.form-control:disabled + span img,
@@ -896,7 +900,7 @@ textarea.HCAU-form.form-control {
 .HCAU-form.form-check-input {
   width: 20px;
   height: 20px;
-  border-color: #d5d5d5;
+  border-color: #a2a2a2;
   margin-top: 2px;
 }
 .HCAU-form.form-check-input + label {
@@ -906,7 +910,7 @@ textarea.HCAU-form.form-control {
 }
 
 .HCAU-form.form-check-input[type=checkbox] {
-  border-color: #d5d5d5;
+  border-color: #a2a2a2;
   background-image: url(/static/html/m/genesis/img/bg_input_check.svg);
   background-size: 14px 14px;
 }
@@ -921,7 +925,7 @@ textarea.HCAU-form.form-control {
 }
 
 .HCAU-form.form-check-input[type=radio] {
-  border-color: #d5d5d5;
+  border-color: #a2a2a2;
 }
 .HCAU-form.form-check-input[type=radio]:disabled {
   opacity: 1;
@@ -949,7 +953,7 @@ textarea.HCAU-form.form-control {
 .HCAU-valid .form-control.is-valid,
 .HCAU-valid.was-validated .form-control:valid {
   background: #fff;
-  border-color: #d5d5d5;
+  border-color: #a2a2a2;
 }
 
 .HCAU-valid .form-control.is-valid:read-only,
@@ -1152,7 +1156,7 @@ textarea.HCAU-form.form-control {
 }
 
 .HCAU-pagination {
-  margin-top: 45px;
+  margin-top: 40px;
 }
 .HCAU-pagination .inner {
   display: flex;
@@ -1396,6 +1400,7 @@ textarea.HCAU-form.form-control {
   display: flex;
   align-items: center;
   gap: 32px;
+  height: 40px;
 }
 .HCAU-step .HCAU-step-inner .step {
   flex-shrink: 0;
@@ -1508,7 +1513,7 @@ textarea.HCAU-form.form-control {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 110px 0;
+  padding: 110px 20px;
   padding-top: 78px;
 }
 .HCAU-nodata.type01 .HCAU-txt-md {
@@ -1592,6 +1597,9 @@ textarea.HCAU-form.form-control {
 .HCAU-tab.native-scroll > div {
   display: inline-flex;
   position: relative;
+}
+.HCAU-tab.native-scroll > div button {
+  font-size: 17px;
 }
 .HCAU-tab.native-scroll > div button:first-child {
   margin-left: 20px;
@@ -1747,7 +1755,7 @@ textarea.HCAU-form.form-control {
 }
 
 .HCAU-result-msg {
-  padding: 48px 10px 40px;
+  padding: 48px 20px 40px;
   text-align: center;
 }
 
@@ -1836,14 +1844,19 @@ textarea.HCAU-form.form-control {
 }
 .HCAU-accordion .accordion .accordion-item {
   border: none;
-}
-.HCAU-accordion .accordion .accordion-item + .accordion-item {
   border-bottom: 1px solid #d5d5d5;
 }
 .HCAU-accordion .accordion .accordion-item .accordion-header .accordion-button {
   gap: 16px;
   border-radius: 0;
   padding: 24px 16px;
+  box-shadow: none;
+}
+.HCAU-accordion .accordion .accordion-item .accordion-header .accordion-button:after {
+  width: 24px;
+  height: 24px;
+  background-image: url(/static/html/m/genesis/img/ico_accordion.svg);
+  background-position: center;
 }
 .HCAU-accordion .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
   background: none;
@@ -1852,7 +1865,7 @@ textarea.HCAU-form.form-control {
   font-weight: 700;
 }
 .HCAU-accordion .accordion .accordion-item .accordion-header .accordion-button:focus {
-  box-shadow: 0 0 0 2px rgb(93, 125, 43);
+  box-shadow: 0 0 0 2px rgb(175, 98, 73);
 }
 .HCAU-accordion .accordion .accordion-item .accordion-collapse .accordion-body {
   padding: 24px 16px;
@@ -2036,6 +2049,7 @@ textarea.HCAU-form.form-control {
   border-color: #000000;
   flex: 1 1 100%;
   overflow: hidden;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.0705882353);
 }
 .select-membership a.border-box img.hover {
   display: none;
@@ -2361,6 +2375,7 @@ textarea.HCAU-form.form-control {
   display: inline-block;
   width: 100%;
   padding: 16px 0;
+  font-size: 14px;
 }
 .login-btn li + li:before {
   content: "";

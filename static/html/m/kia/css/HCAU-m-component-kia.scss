@@ -208,7 +208,7 @@ footer{
         color: $gray03;
     }
 }
-body.main footer{
+.main footer{
     background: $black;
     .family-site{
         .HCAU-btn{
@@ -1705,7 +1705,7 @@ textarea.HCAU-form.form-control {
             &:nth-child(even) .card{margin-left:12.5px}
             .card{
             border:2px solid transparent;
-            &.active,&:hover{border:2px solid #00aad2;}
+            &.active,&:hover{border:2px solid $point;}
 
             }
         }

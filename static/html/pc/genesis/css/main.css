@@ -82,7 +82,7 @@ html,body{overflow:auto;}
           
           .title-area .HCAU-h3{color:#fff;font-size:20px;padding-bottom:20px}
           .title-wrap .title-txt{display: flex;justify-content: center;text-align: center;font-family: GenesisHeadOffice;font-size: 22px;margin-top:8px;margin-bottom:20px}
-          .title-wrap .HCAU-badge{background: #C36F51;border-radius: 0;font-size: 13px;color:#fff;padding:2px 8px;height:18px;position: absolute;top:0;left:20px;}
+          .title-wrap .HCAU-badge{background: #C36F51;border-radius: 0;font-size: 13px;color:#fff;padding:2px 8px;height:18px;position: absolute;top:0;left:20px;line-height: 13px;}
           
           .title-wrap .title-bgbox{display: flex;justify-content: center;gap:20px;border-radius: 40px;padding:8px 20px;background: #000;line-height: 18px;}
           .title-wrap .title-bgbox span,.title-detail dt.HCAU-txt-md{color:#999;font-weight: 400;}

@@ -1,0 +1,88 @@
+<html lang="en">
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
+    <title>HCAU-PUBL</title>
+    <link rel="stylesheet" href="/static/html/m/genesis/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/html/m/genesis/css/styles.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+
+<body>
+    <div class="wrap">
+        <script type="text/javascript" src="/static/html/m/genesis/js/Header.js"></script>
+        <!-- HCAU-title -->
+        <div class="HCAU-title">
+            <div class="HCAU-h1">Find contract number</div>
+            <div class="HCAU-txt-md gray04">In order to find your contract number, you will need to verify your identity.</div>
+        </div>
+        <!-- //HCAU-title -->
+        <!-- HCAU-container -->
+        <div class="HCAU-container">
+            <div class="HCAU-contents" id="contents">
+
+                <!-- HCAU-detail -->
+                <div class="HCAU-detail">
+
+
+
+
+                    <div class="d-flex flex-column gap-3">
+                        <label for="form-txt01" class="form-label">calendar</label>
+                        <div id="sandbox" class="HCAU-calendar">
+                            <input type="text" class="form-control HCAU-form date">
+                            <span>
+                                <img src="/static/html/m/genesis/img/ico_calendar.svg" alt="">
+                            </span>
+                        </div>
+                        <div id="sandbox2" class="HCAU-calendar">
+                            <input type="text" class="form-control HCAU-form date" disabled>
+                            <span>
+                                <img src="/static/html/m/genesis/img/ico_calendar_readonly.svg" alt="">
+                            </span>
+                        </div>
+                    </div>
+
+
+                    <aside class="d-none"><section class="section"><div class="card"><div class="card-body"><h4 class="subtitle">Type</h4><form id="types"><div class="mb-3"><div class="form-check form-check-inline"><input type="radio" class="form-check-input" id="type-input" name="type" value="input" checked><label for="type-input" class="form-check-label">Input</label></div><div class="form-check form-check-inline"><input type="radio" class="form-check-input" id="type-inline" name="type" value="inline"><label for="type-inline" class="form-check-label">Inline</label></div><div class="form-check form-check-inline"><input type="radio" class="form-check-input" id="type-range" name="type" value="range"><label for="type-range" class="form-check-label">Range</label></div></div></form></div><hr><div class="card-body"><h4 class="subtitle">Options</h4><form id="options"><div class="mb-1 form-check" data-bs-toggle="tooltip" title="Only effective in range picker"><input type="checkbox" class="form-check-input" id="allowOneSidedRange" name="allowOneSidedRange" value="true"><label for="allowOneSidedRange" class="form-check-label">allowOneSidedRange</label></div><div class="mb-1 form-check"><input type="checkbox" class="form-check-input" id="autohide" name="autohide" value="true"><label for="autohide" class="form-check-label">autohide</label></div><div class="mb-1 form-check"><input type="checkbox" class="form-check-input" id="beforeShowDay" name="beforeShowDay" value="true"><label for="beforeShowDay" class="form-check-label">beforeShowDay</label><div class="code-wrap"><pre id="code-beforeShowDay"><code class="language-javascript"></code></pre><div class="collapse-button" data-target="code-beforeShowDay">code show/hide</div></div></div><div class="mb-1 form-check"><input type="checkbox" class="form-check-input" id="beforeShowMonth" name="beforeShowMonth" value="true"><label for="beforeShowMonth" class="form-check-label">beforeShowMonth</label><div class="code-wrap"><pre id="code-beforeShowMonth"><code class="language-javascript"></code></pre><div class="collapse-button" data-target="code-beforeShowMonth">code show/hide</div></div></div><div class="mb-1 form-check"><input type="checkbox" class="form-check-input" id="beforeShowYear" name="beforeShowYear" value="true"><label for="beforeShowYear" class="form-check-label">beforeShowYear</label><div class="code-wrap"><pre id="code-beforeShowYear"><code class="language-javascript"></code></pre><div class="collapse-button" data-target="code-beforeShowYear">code show/hide</div></div></div><div class="mb-1 form-check"><input type="checkbox" class="form-check-input" id="beforeShowDecade" name="beforeShowDecade" value="true"><label for="beforeShowDecade" class="form-check-label">beforeShowDecade</label><div class="code-wrap"><pre id="code-beforeShowDecade"><code class="language-javascript"></code></pre><div class="collapse-button" data-target="code-beforeShowDecade">code show/hide</div></div></div><div class="mb-1 form-check"><input type="checkbox" class="form-check-input" id="clearButton" name="clearButton" value="true"><label for="clearButton" class="form-check-label">clearButton</label></div><div class="mb-3"><label class="form-label">dateDelimiter</label><input type="text" class="form-control" name="dateDelimiter" placeholder=","></div><div class="mb-3"><label class="form-label">datesDisabled</label><div class="option-type-selector">use<label class="radio"><input type="radio" name="datesDisabledFn" value="" checked>array</label><label class="radio"><input type="radio" name="datesDisabledFn" value="1">function</label></div><div id="datesDisabled-arr" data-bs-toggle="tooltip" title="enter in JSON format"><textarea class="form-control" name="datesDisabled" placeholder="[]"></textarea><div class="invalid-feedback"></div></div><div id="datesDisabled-fn" class="code-wrap is-hidden"><pre id="code-datesDisabled"><code class="language-javascript"></code></pre><div class="collapse-button" data-target="code-datesDisabled">code show/hide</div></div></div><div class="mb-3"><label for="daysOfWeekDisabled" class="form-label">daysOfWeekDisabled</label><div><div class="form-check form-check-inline"><input type="checkbox" class="form-check-input" id="daysOfWeekDisabled-0" name="daysOfWeekDisabled" value="0"><label for="daysOfWeekDisabled-0" class="form-check-label">0</label>&nbsp;</div><div class="form-check form-check-inline"><input type="checkbox" class="form-check-input" id="daysOfWeekDisabled-1" name="daysOfWeekDisabled" value="1"><label for="daysOfWeekDisabled-1" class="form-check-label">1</label>&nbsp;</div><div class="form-check form-check-inline"><input type="checkbox" class="form-check-input" id="daysOfWeekDisabled-2" name="daysOfWeekDisabled" value="2"><label for="daysOfWeekDisabled-2" class="form-check-label">2</label>&nbsp;</div><div class="form-check form-check-inline"><input type="checkbox" class="form-check-input" id="daysOfWeekDisabled-3" name="daysOfWeekDisabled" value="3"><label for="daysOfWeekDisabled-3" class="form-check-label">3</label>&nbsp;</div><div class="form-check form-check-inline"><input type="checkbox" class="form-check-input" id="daysOfWeekDisabled-4" name="daysOfWeekDisabled" value="4"><label for="daysOfWeekDisabled-4" class="form-check-label">4</label>&nbsp;</div><div class="form-check form-check-inline"><input type="checkbox" class="form-check-input" id="daysOfWeekDisabled-5" name="daysOfWeekDisabled" value="5"><label for="daysOfWeekDisabled-5" class="form-check-label">5</label>&nbsp;</div><div class="form-check form-check-inline"><input type="checkbox" class="form-check-input" id="daysOfWeekDisabled-6" name="daysOfWeekDisabled" value="6"><label for="daysOfWeekDisabled-6" class="form-check-label">6</label>&nbsp;</div></div></div><div class="mb-3"><label for="daysOfWeekHighlighted" class="form-label">daysOfWeekHighlighted</label><div><div class="form-check form-check-inline"><input type="checkbox" class="form-check-input" id="daysOfWeekHighlighted-0" name="daysOfWeekHighlighted" value="0"><label for="daysOfWeekHighlighted-0" class="form-check-label">0</label>&nbsp;</div><div class="form-check form-check-inline"><input type="checkbox" class="form-check-input" id="daysOfWeekHighlighted-1" name="daysOfWeekHighlighted" value="1"><label for="daysOfWeekHighlighted-1" class="form-check-label">1</label>&nbsp;</div><div class="form-check form-check-inline"><input type="checkbox" class="form-check-input" id="daysOfWeekHighlighted-2" name="daysOfWeekHighlighted" value="2"><label for="daysOfWeekHighlighted-2" class="form-check-label">2</label>&nbsp;</div><div class="form-check form-check-inline"><input type="checkbox" class="form-check-input" id="daysOfWeekHighlighted-3" name="daysOfWeekHighlighted" value="3"><label for="daysOfWeekHighlighted-3" class="form-check-label">3</label>&nbsp;</div><div class="form-check form-check-inline"><input type="checkbox" class="form-check-input" id="daysOfWeekHighlighted-4" name="daysOfWeekHighlighted" value="4"><label for="daysOfWeekHighlighted-4" class="form-check-label">4</label>&nbsp;</div><div class="form-check form-check-inline"><input type="checkbox" class="form-check-input" id="daysOfWeekHighlighted-5" name="daysOfWeekHighlighted" value="5"><label for="daysOfWeekHighlighted-5" class="form-check-label">5</label>&nbsp;</div><div class="form-check form-check-inline"><input type="checkbox" class="form-check-input" id="daysOfWeekHighlighted-6" name="daysOfWeekHighlighted" value="6"><label for="daysOfWeekHighlighted-6" class="form-check-label">6</label>&nbsp;</div></div></div><div class="mb-3"><label class="form-label">defaultViewDate</label><input type="text" class="form-control" name="defaultViewDate" placeholder="today"></div><div class="mb-1 form-check"><input type="checkbox" class="form-check-input" id="enableOnReadonly" name="enableOnReadonly" value="true" checked><label for="enableOnReadonly" class="form-check-label">enableOnReadonly</label></div><div class="mb-3"><label class="form-label">format</label><input type="text" class="form-control" name="format" placeholder="mm/dd/yyyy"></div><div class="mb-3"><label class="form-label">language</label><select class="form-control" name="language" ><option value="en">en – English (US)</option></select></div><div class="mb-3"><label class="form-label">maxDate</label><input type="text" class="form-control" name="maxDate" placeholder="null"></div><div class="mb-3" data-bs-toggle="tooltip" title="Not effective in range picker"><label class="form-label">maxNumberOfDates</label><input type="text" class="form-control" name="maxNumberOfDates" placeholder="1"></div><div class="mb-3"><label class="form-label">maxView</label><select class="form-control" name="maxView"><option value="0">0 – days</option><option value="1">1 – months</option><option value="2">2 – years</option><option value="3" selected>3 – decades</option></select></div><div class="mb-3"><label class="form-label">minDate</label><input type="text" class="form-control" name="minDate" placeholder="null"></div><div class="mb-3"><label class="form-label">nextArrow</label><textarea class="form-control" name="nextArrow" placeholder="»"></textarea></div><div class="mb-3"><label class="form-label">orientation</label><select class="form-control" name="orientation" ><option value="auto">auto</option><option value="top auto">top auto</option><option value="bottom auto">bottom auto</option><option value="auto left">auto left</option><option value="top left">top left</option><option value="bottom left">bottom left</option><option value="auto right">auto right</option><option value="top right">top right</option><option value="bottom right">bottom right</option></select></div><div class="mb-3"><label class="form-label">pickLevel</label><select class="form-control" name="pickLevel"><option value="0">0 – date</option><option value="1">1 – month</option><option value="2">2 – year</option></select></div><div class="mb-3"><label class="form-label">prevArrow</label><textarea class="form-control" name="prevArrow" placeholder="«"></textarea></div><div class="mb-1 form-check"><input type="checkbox" class="form-check-input" id="showDaysOfWeek" name="showDaysOfWeek" value="true" checked><label for="showDaysOfWeek" class="form-check-label">showDaysOfWeek</label></div><div class="mb-1 form-check"><input type="checkbox" class="form-check-input" id="showOnClick" name="showOnClick" value="true" checked><label for="showOnClick" class="form-check-label">showOnClick</label></div><div class="mb-1 form-check"><input type="checkbox" class="form-check-input" id="showOnFocus" name="showOnFocus" value="true" checked><label for="showOnFocus" class="form-check-label">showOnFocus</label></div><div class="mb-3"><label class="form-label">startView</label><select class="form-control" name="startView"><option value="0">0 – days</option><option value="1">1 – months</option><option value="2">2 – years</option><option value="3">3 – decades</option></select></div><div class="mb-3"><label class="form-label">title</label><input type="text" class="form-control" name="title"></div><div class="mb-1 form-check"><input type="checkbox" class="form-check-input" id="todayButton" name="todayButton" value="true"><label for="todayButton" class="form-check-label">todayButton</label></div><div class="mb-3"><label class="form-label">todayButtonMode</label><select class="form-control" name="todayButtonMode"><option value="0">0 – focus</option><option value="1">1 – select</option></select></div><div class="mb-1 form-check"><input type="checkbox" class="form-check-input" id="todayHighlight" name="todayHighlight" value="true"><label for="todayHighlight" class="form-check-label">todayHighlight</label></div><div class="mb-1 form-check"><input type="checkbox" class="form-check-input" id="updateOnBlur" name="updateOnBlur" value="true" checked><label for="updateOnBlur" class="form-check-label">updateOnBlur</label></div><div class="mb-3"><label class="form-label">weekNumbers</label><select class="form-control" name="weekNumbers"><option value="0">0 – None</option><option value="1">1 – ISO 8601</option><option value="2">2 – Western traditional</option><option value="3">3 – Middle Eastern</option><option value="4">4 – Guess from weekStart</option></select></div><div class="mb-3"><label class="form-label">weekStart</label><input type="text" class="form-control" name="weekStart" placeholder="0"></div></form></div><hr><div class="card-body"><h4 class="subtitle">Text direction</h4><form id="direction"><div class="mb-3"><div class="form-check form-check-inline"><input type="radio" class="form-check-input" id="direction-ltr" name="direction" value="ltr" checked><label for="direction-ltr" class="form-check-label">LTR</label></div><div class="form-check form-check-inline"><input type="radio" class="form-check-input" id="direction-rtl" name="direction" value="rtl"><label for="direction-rtl" class="form-check-label">RTL</label></div></div></form></div></div></section></aside>
+
+
+                </div>
+                <!-- //HCAU-detail -->
+            </div>
+
+        </div>
+        <!-- //HCAU-container -->
+
+
+
+        <!-- btn-cta-wrap -->
+        <div class="btn-cta-wrap">
+            <!-- <button type="button" class="HCAU-btn btn-cta gray03">Cancel</button> -->
+            <button type="button" class="HCAU-btn btn-cta primary">Submit</button>
+        </div>
+        <!-- //btn-cta-wrap -->
+
+        <script type="text/javascript" src="/static/html/m/genesis/js/Footer.js"></script>
+    </div>
+    <!-- <script src="/static/html/m/genesis/js/jquery-3.3.1.min.js"></script> -->
+    <!-- <script src="/static/html/m/genesis/js/bootstrap.bundle.min.js"></script> -->
+    <script type="module" src="/static/html/m/genesis/js/main.js"></script>
+    <!--datepicker-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="/static/html/m/genesis/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js"></script>
+    <script src="/static/html/m/genesis/js/datepicker-full.js"></script>
+    <script type='application/javascript' src="/static/html/m/genesis/js/live-demo.js"></script>
+    <script>
+        initialize();
+        document.getElementById('types').querySelectorAll('input').forEach((el) => {
+            el.addEventListener('change', onChangeType);
+        });
+    </script>
+    <!--datepicker-->
+</body>
+
+</html>
