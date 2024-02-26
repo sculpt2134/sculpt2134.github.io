@@ -2235,4 +2235,8 @@ textarea.HCAU-form.form-control {
 }
 .accordion-toggle-area button.collapsed {
   transform: rotate(180deg);
-}/*# sourceMappingURL=HCAU-m-component-hd.css.map */
+}
+
+.btn-disabled > img {
+  opacity: 0.15;
+}

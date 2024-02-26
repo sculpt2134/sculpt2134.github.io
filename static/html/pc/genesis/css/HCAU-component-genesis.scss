@@ -136,6 +136,7 @@ a{text-decoration: none;}
 .w200{width: 200px;}
 .w320{width: 320px;}
 .w330{width: 330px;}
+.w335{width: 335px;}
 .w350{width: 350px;}
 .w360{width: 360px;}
 .w380{width: 380px;}
@@ -501,6 +502,8 @@ a{text-decoration: none;}
     //footer
     .HCAU-footer {
         width: 100%;
+        min-width:1440px;
+        // max-width:1440px;
         height:280px;
         background: #111;
         color: #697279;
@@ -1655,19 +1658,20 @@ top:15px;}
         }
         &.modal-xs{max-width: 280px;
             .modal-content{
-               // border-radius: 0;
-               padding:0 40px;
-               .gap-1{gap:1px !important}
-                .btn-large{
+                padding:40px 0 0;
+                .gap-1{gap:1px !important}
+                .HCAU-btn{
                     min-width:140px;
                     padding: 16px;
-                    border-radius: 0;
                     font-size:16px;
-                &:first-child{border-radius: 0 0 0 var(--bs-modal-border-radius);}
-                &:last-child{border-radius: 0 0 var(--bs-modal-border-radius) 0 ;}
-                &:only-child{min-width:280px;border-radius:0 0 var(--bs-modal-border-radius) var(--bs-modal-border-radius)}
+                    &:first-child{border-radius: 0 0 0 5px;}
+                    &:last-child{border-radius: 0 0 5px 0 ;}
+                    &:only-child{min-width:280px;border-radius:0 0 5px 5px}                    
                 }
-
+                .HCAU-btn.btn-smd{padding:18.5px;
+                    &:only-child{border-radius: 0 0 8px 8px;min-width:280px;}}
+                .modal-body{padding:40px 40px 0}
+                .modal-footer{margin-top:40px}
             }
         }
         &.modal-sm{max-width: 480px;}
@@ -1863,7 +1867,7 @@ top:15px;}
         &.min{
             dt,dd{min-width:0px;}
         }
-        dd{text-align: right;}
+        dd{text-align: right;max-width:250px;justify-content: flex-end;}
     }
     &.col-4{
         &:nth-child(even),
@@ -2632,7 +2636,7 @@ nav.AU-tabs {
 
 
     .HCAU-nodata [class*="HCAU-"]{font-size:24px; margin-top:40px !important;font-weight: 700;}
-
+    .d-flex.gap-3{gap:40px !important}
     dl.justify-content-between {
         dt{min-width:176px;align-items: center;display: flex;}
         dd{text-align: right !important;align-items: center;display: flex;}

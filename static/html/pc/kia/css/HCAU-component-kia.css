@@ -287,12 +287,24 @@ a {
   width: 120px;
 }
 
+.w140 {
+  width: 140px;
+}
+
 .w180 {
   width: 180px;
 }
 
+.w192 {
+  width: 192px;
+}
+
 .w200 {
   width: 200px;
+}
+
+.w210 {
+  width: 210px;
 }
 
 .w320 {
@@ -1330,14 +1342,36 @@ a {
 }
 
 .HCAU-modal .modal-dialog.modal-xs {
-  max-width: 320px;
+  max-width: 280px;
 }
 .HCAU-modal .modal-dialog.modal-xs .modal-content {
-  border-radius: 0;
+  padding: 40px 0 0;
 }
-.HCAU-modal .modal-dialog.modal-xs .modal-content .btn-smd {
-  min-height: 40px;
-  padding: 8px 16px;
+.HCAU-modal .modal-dialog.modal-xs .modal-content .gap-1 {
+  gap: 1px !important;
+}
+.HCAU-modal .modal-dialog.modal-xs .modal-content .HCAU-btn {
+  min-width: 140px;
+  padding: 16px;
+  font-size: 16px;
+}
+.HCAU-modal .modal-dialog.modal-xs .modal-content .HCAU-btn:first-child {
+  border-radius: 0 0 0 5px;
+}
+.HCAU-modal .modal-dialog.modal-xs .modal-content .HCAU-btn:last-child {
+  border-radius: 0 0 5px 0;
+}
+.HCAU-modal .modal-dialog.modal-xs .modal-content .HCAU-btn:only-child {
+  min-width: 280px;
+  border-radius: 0 0 5px 5px;
+}
+.HCAU-modal .modal-dialog.modal-xs .modal-content .modal-body {
+  padding: 0 40px;
+  margin-top: 0;
+  font-size: 13px;
+}
+.HCAU-modal .modal-dialog.modal-xs .modal-content .modal-footer {
+  margin-top: 40px;
 }
 .HCAU-modal .modal-dialog.modal-sm {
   max-width: 480px;
@@ -1429,8 +1463,10 @@ a {
 }
 .radio-group .radio-group-inner .HCAU-btn {
   border: none;
+  font-size: 13px;
   border-radius: 0;
-  min-height: 42px;
+  min-height: 44px;
+  padding-top: 14px;
 }
 .radio-group .radio-group-inner input[type=radio]:checked + .HCAU-btn {
   background: #05141f;
@@ -2154,4 +2190,4 @@ dl.justify-content-between dd {
   text-align: right !important;
   align-items: center;
   display: flex;
-}/*# sourceMappingURL=HCAU-component-kia.css.map */
+}

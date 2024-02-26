@@ -434,6 +434,10 @@ a {
   width: 330px;
 }
 
+.w335 {
+  width: 335px;
+}
+
 .w350 {
   width: 350px;
 }
@@ -971,6 +975,7 @@ a {
 
 .HCAU-footer {
   width: 100%;
+  min-width: 1440px;
   height: 280px;
   background: #111;
   color: #697279;
@@ -2290,26 +2295,38 @@ a {
   max-width: 280px;
 }
 .HCAU-modal .modal-dialog.modal-xs .modal-content {
-  padding: 0 40px;
+  padding: 40px 0 0;
 }
 .HCAU-modal .modal-dialog.modal-xs .modal-content .gap-1 {
   gap: 1px !important;
 }
-.HCAU-modal .modal-dialog.modal-xs .modal-content .btn-large {
+.HCAU-modal .modal-dialog.modal-xs .modal-content .HCAU-btn {
   min-width: 140px;
   padding: 16px;
-  border-radius: 0;
   font-size: 16px;
 }
-.HCAU-modal .modal-dialog.modal-xs .modal-content .btn-large:first-child {
-  border-radius: 0 0 0 var(--bs-modal-border-radius);
+.HCAU-modal .modal-dialog.modal-xs .modal-content .HCAU-btn:first-child {
+  border-radius: 0 0 0 5px;
 }
-.HCAU-modal .modal-dialog.modal-xs .modal-content .btn-large:last-child {
-  border-radius: 0 0 var(--bs-modal-border-radius) 0;
+.HCAU-modal .modal-dialog.modal-xs .modal-content .HCAU-btn:last-child {
+  border-radius: 0 0 5px 0;
 }
-.HCAU-modal .modal-dialog.modal-xs .modal-content .btn-large:only-child {
+.HCAU-modal .modal-dialog.modal-xs .modal-content .HCAU-btn:only-child {
   min-width: 280px;
-  border-radius: 0 0 var(--bs-modal-border-radius) var(--bs-modal-border-radius);
+  border-radius: 0 0 5px 5px;
+}
+.HCAU-modal .modal-dialog.modal-xs .modal-content .HCAU-btn.btn-smd {
+  padding: 18.5px;
+}
+.HCAU-modal .modal-dialog.modal-xs .modal-content .HCAU-btn.btn-smd:only-child {
+  border-radius: 0 0 8px 8px;
+  min-width: 280px;
+}
+.HCAU-modal .modal-dialog.modal-xs .modal-content .modal-body {
+  padding: 40px 40px 0;
+}
+.HCAU-modal .modal-dialog.modal-xs .modal-content .modal-footer {
+  margin-top: 40px;
 }
 .HCAU-modal .modal-dialog.modal-sm {
   max-width: 480px;
@@ -2502,6 +2519,8 @@ a {
 }
 .loan-items .loan-text dd {
   text-align: right;
+  max-width: 250px;
+  justify-content: flex-end;
 }
 .loan-items.col-4:nth-child(even), .loan-items.col-4:nth-child(odd) {
   width: 33.3%;
@@ -3455,6 +3474,10 @@ nav.AU-tabs .active span:after {
   font-size: 24px;
   margin-top: 40px !important;
   font-weight: 700;
+}
+
+.d-flex.gap-3 {
+  gap: 40px !important;
 }
 
 dl.justify-content-between dt {

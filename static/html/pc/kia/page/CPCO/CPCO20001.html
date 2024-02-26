@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>HCAU-PUBL</title>
+  <link rel="stylesheet" href="/static/html/pc/kia/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/html/pc/kia/css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+  <div class="wrap">
+    <div class="HCAU-sidebar" include-html="/static/html/pc/kia/aside.html"></div>
+    <!-- <div class="HCAU-menubar" include-html="/static/html/pc/kia/nav.html"></div> -->
+    <div class="HCAU-menubar" include-html="/static/html/pc/kia/nav.html"></div>
+
+    <div class="HCAU-container">
+      <div class="HCAU-contents" id="contents">
+          <!-- HCAU-breadcrumb -->
+          <div class="HCAU-breadcrumb" include-html="/static/html/pc/kia/breadcrumb.html"></div>
+      <!-- //HCAU-breadcrumb -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////START PAGE CONTENTS/////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- HCAU-title -->
+<div class="HCAU-title"><!-- class option : border-bottom -->
+<div class="HCAU-h1">Title text</div>
+<div class="HCAU-txt-md">lead text area</div>
+</div>
+<!-- //HCAU-title -->
+
+<!-- HCAU-detail -->
+<div class="HCAU-detail">
+    
+    <!--////////////////////loadingmodal/////////////////////////////////////////-->
+    <button type="button" class="HCAU-btn" data-bs-toggle="modal" data-bs-target="#loadingModal">
+        loading
+    </button>
+    <style>
+      .main-l{
+          width: 90vw;
+          margin: 0 auto;
+          text-align: center;
+        }
+        
+        .droplet_spinner {
+          display: flex;
+          justify-content: center;
+          margin: 28px;
+        }
+        
+        .droplet_spinner .droplet {
+          width: 16px;
+          height: 16px;
+          margin: 0 16px;
+          
+          background-color: #fff;
+          border-radius: 50%;
+          transform-origin: center bottom;            
+          animation: bounce 1.2s cubic-bezier(0.3, 0.01, 0.4, 1) infinite;
+        }
+        
+        .droplet_spinner .droplet:nth-child(1) {
+          animation-delay: -0.4s;
+        }
+        
+        .droplet_spinner .droplet:nth-child(2) {
+          animation-delay: -0.2s;
+        }
+        
+        .droplet_spinner .droplet:nth-child(3) {
+          animation-delay: 0s;
+        }
+        
+        @keyframes bounce {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-20px);
+          }
+        }
+    </style>
+    <!-- loaingModal  -->
+    <div class="HCAU-modal modal fade" id="loadingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg"><!-- modal-lg modal-md modal-sm -->
+
+            <div class="main-l">
+                <div class="droplet_spinner">
+                    <div class="droplet"></div>
+                    <div class="droplet"></div>
+                    <div class="droplet"></div>
+                </div>
+                <span><svg width="266" height="28" viewBox="0 0 266 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M64.1587 23.6759C64.1587 23.8789 64.2237 24.0007 64.3455 24.0007C64.4348 24.0007 64.516 23.9601 64.6134 23.8951L99.0879 1.51021C99.6888 1.11236 100.249 0.909362 101.077 0.909362H108.652C109.822 0.909362 110.593 1.68883 110.593 2.84989V17.3185C110.593 19.0641 110.203 20.079 108.652 21.0128L99.4614 26.5339C99.3396 26.6069 99.2422 26.6476 99.1529 26.6476C99.0392 26.6476 98.9418 26.5583 98.9418 26.2497V9.36156C98.9418 9.17481 98.8768 9.03679 98.7551 9.03679C98.6657 9.03679 98.5927 9.07738 98.4871 9.13422L73.2848 25.5027C72.5784 25.9574 71.9938 26.0954 71.3524 26.0954H54.6429C53.4737 26.0954 52.7024 25.316 52.7024 24.1549V3.30457C52.7024 3.1503 52.6374 3.01226 52.5156 3.01226C52.4263 3.01226 52.3533 3.05287 52.2477 3.10971L35.6275 13.0964C35.4651 13.1939 35.4164 13.2751 35.4164 13.3563C35.4164 13.4293 35.4489 13.4943 35.5625 13.6161L47.4329 25.4865C47.5872 25.6489 47.7009 25.7626 47.7009 25.8925C47.7009 26.0305 47.5304 26.0954 47.3274 26.0954H36.5856C35.7412 26.0954 35.0916 25.9655 34.6451 25.5109L27.4432 18.309C27.3702 18.236 27.3133 18.1954 27.2321 18.1954C27.1672 18.1954 27.086 18.2278 27.0129 18.2766L14.972 25.5109C14.2413 25.9493 13.7379 26.0954 13.0234 26.0954H1.94051C0.771333 26.0954 0 25.316 0 24.1549V9.95427C0 8.20862 0.389726 7.20182 1.94051 6.26811L11.1884 0.714506C11.2777 0.657671 11.367 0.633308 11.4401 0.633308C11.5781 0.633308 11.6593 0.77947 11.6593 1.10424V20.0953C11.6593 20.2983 11.7161 20.3876 11.8461 20.3876C11.9354 20.3876 12.0166 20.3389 12.1221 20.2739L43.3652 1.49395C44.1122 1.04739 44.5668 0.909362 45.4275 0.909362H62.2426C63.4117 0.909362 64.1831 1.68883 64.1831 2.84989V23.6759H64.1587Z" fill="white"/><path d="M131.111 26.745V0.211128H148.146V4.05157H135.821V11.4158H145.913V15.3617H135.821V26.745H131.111Z" fill="white"/><path d="M152.514 4.78228V0H157.02V4.78228H152.514ZM152.514 26.745V7.68085H157.02V26.745H152.514Z" fill="white"/><path d="M162.955 26.745V7.68085H167.177L167.453 10.4414C168.639 8.83381 170.766 7.16122 173.526 7.16122C177.716 7.16122 180.233 9.6782 180.233 14.2818V26.745H175.727V14.2818C175.727 12.2601 175.028 10.6525 172.796 10.6525C170.49 10.6525 168.225 12.6742 167.453 15.1181V26.745H162.955Z" fill="white"/><path d="M185.86 17.7407C187.362 16.0681 189.806 15.3292 192.77 14.8746L196.789 14.2494C196.578 11.8055 195.075 10.5145 192.177 10.5145C190.082 10.5145 187.776 11.6999 186.347 13.7297V9.36155C187.606 8.34664 189.733 7.16122 193.119 7.16122C197.584 7.16122 201.319 9.42651 201.319 15.0532V26.745H197.552L197.13 24.5446C195.352 26.2578 193.468 27.2646 190.707 27.2646C186.867 27.2646 184.602 25.0318 184.602 21.4025C184.602 19.8679 185.089 18.6419 185.86 17.7407ZM191.584 23.6759C193.955 23.6759 196.017 22.0033 196.894 20.079V17.424L194.629 17.8056C191.105 18.3983 190.334 18.9586 189.741 19.5188C189.319 19.941 189.075 20.4931 189.075 21.1914C189.067 22.734 190.082 23.6759 191.584 23.6759Z" fill="white"/><path d="M206.904 26.745V7.68085H211.126L211.402 10.4414C212.588 8.83381 214.715 7.16122 217.476 7.16122C221.665 7.16122 224.182 9.6782 224.182 14.2818V26.745H219.676V14.2818C219.676 12.2601 218.978 10.6525 216.745 10.6525C214.439 10.6525 212.174 12.6742 211.402 15.1181V26.745H206.904Z" fill="white"/><path d="M228.551 16.8638C228.551 11.6268 232.465 7.16122 238.676 7.16122C241.014 7.16122 242.939 7.93256 244.189 8.8338V13.4456C242.898 11.5619 240.909 10.7256 238.984 10.7256C235.915 10.7256 233.26 13.137 233.26 16.8719V17.5702C233.26 21.1345 236.053 23.684 238.984 23.684C240.909 23.684 242.687 22.8071 244.189 21.0615V25.5271C243.036 26.4364 241.12 27.2727 238.53 27.2727C232.562 27.2727 228.543 22.8396 228.543 17.6026V16.8638H228.551Z" fill="white"/><path d="M247.688 16.8313C247.688 11.2452 251.317 7.16122 256.692 7.16122C262.278 7.16122 265.42 10.9692 265.42 17.0424V18.7881H252.121C252.437 21.8978 254.248 23.7814 257.358 23.8139C259.801 23.8464 261.969 23.1157 264.129 20.9153V25.2104C262.457 26.5014 260.013 27.2727 257.358 27.2727C251.041 27.2727 247.688 23.1887 247.688 17.5296V16.8313ZM260.954 15.3617C260.954 12.2926 259.209 10.5064 256.586 10.547C254.28 10.5795 252.324 12.4307 252.153 15.3617H260.954Z" fill="white"/></svg></span>
+            </div>
+
+        </div>
+    </div>
+    <!--////////////////////loadingmodal/////////////////////////////////////////-->
+
+
+
+
+
+
+</div>
+<!-- HCAU-detail -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////END PAGE CONTENTS//////////////////////////////////////////////////////// -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+            </div><!--//HCAU-contents-->
+            <footer class="HCAU-footer" include-html="/static/html/pc/kia/footer.html"></footer>
+        </div><!--//HCAU-contentainer-->
+    </div><!--//wrap-->
+
+  <script src="/static/html/pc/kia/js/main.js"></script>
+  <script src="/static/html/pc/kia/js/includeHTML.js"></script>
+  <script src="/static/html/pc/kia/js/includeRouter.js"></script>
+  <script>includeHTML();</script>
+    <!--datepicker-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="/static/html/pc/kia/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js"></script>
+    <script src="/static/html/pc/kia/js/datepicker-full.js"></script>
+    <script src="/static/html/pc/kia/js/live-demo.js"></script>
+    <script>
+        initialize();
+        document.getElementById('types').querySelectorAll('input').forEach((el) => {
+            el.addEventListener('change', onChangeType);
+        });
+    </script>
+    <!--datepicker-->
+</body>
+
+</html>

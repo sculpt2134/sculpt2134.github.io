@@ -5,8 +5,8 @@
 .HCAU-calendar .form-control:not(:disabled){padding-right: 50px;}
 .HCAU-calendar span button,.HCAU-calendar span img{position: absolute;  right: 16px;  top: 50%;  outline: none;  border: none;  background: none;  margin: -12px 0 0 0;  padding: 0;}
 .HCAU-calendar .form-control:disabled{padding-right:0;opacity: .5;}
-.datepicker-cell.prev,.datepicker-cell.next{opacity: 0.5;background: #eee;}
-.datepicker-cell.prev:hover,.datepicker-cell.next:hover{background: #eee;cursor: default;}
+.datepicker-cell.days.prev,.datepicker-cell.days.next{opacity: 0.5;background: #eee;}
+.datepicker-cell.days.prev:hover,.datepicker-cell.days.next:hover{background: #eee;cursor: default;}
 .datepicker-main{padding:20px}
 .datepicker span{border-radius:2rem}
 .datepicker-cell.focused:not(.selected),.datepicker-cell.selected, .datepicker-cell.selected:hover{background-color: #af6249;color:#fff;}

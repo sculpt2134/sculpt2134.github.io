@@ -1886,3 +1886,7 @@ textarea.HCAU-form.form-control{
         }
     }
 }
+
+.btn-disabled > img{
+    opacity:0.15;
+}

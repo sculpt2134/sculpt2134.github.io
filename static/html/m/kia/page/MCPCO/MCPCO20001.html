@@ -1,0 +1,102 @@
+<html lang="en">
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
+    <title>HCAU-PUBL</title>
+    <link rel="stylesheet" href="/static/html/m/kia/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/html/m/kia/css/styles.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+
+<body>
+    <div class="wrap">
+        <script type="text/javascript" src="/static/html/m/kia/js/Header.js"></script>
+        <div class="HCAU-container">
+            <div class="HCAU-contents" id="contents">
+                <!-- HCAU-title -->
+                <div class="HCAU-title">
+                    <div class="HCAU-h1">HCAU-h1 title 영역</div>
+                </div>
+                <!-- //HCAU-title -->
+                <!-- HCAU-detail -->
+                <div class="HCAU-detail" style="min-height:500px">
+
+                   
+                            <!--/////////////loadingModal-->
+                            <button type="button" class="HCAU-btn btn-sm" data-bs-toggle="modal" data-bs-target="#loadingModal">loading</button>
+                             <!-- Modal full -->
+                             <div class="HCAU-modal modal fade" id="loadingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <style>
+                                    .main-l{
+                                        width: 100vw;
+                                        margin: 0 auto;
+                                        text-align: center;
+                                      }
+                                      
+                                      .droplet_spinner {
+                                        display: flex;
+                                        justify-content: center;
+                                        margin: 20px;
+                                      }
+                                      
+                                      .droplet_spinner .droplet {
+                                        width: 8px;
+                                        height: 8px;
+                                        margin: 0 14px;
+                                        
+                                        background-color: #fff;
+                                        border-radius: 50%;
+                                        transform-origin: center bottom;            
+                                        animation: bounce 1.2s cubic-bezier(0.3, 0.01, 0.4, 1) infinite;
+                                      }
+                                      
+                                      .droplet_spinner .droplet:nth-child(1) {
+                                        animation-delay: -0.4s;
+                                      }
+                                      
+                                      .droplet_spinner .droplet:nth-child(2) {
+                                        animation-delay: -0.2s;
+                                      }
+                                      
+                                      .droplet_spinner .droplet:nth-child(3) {
+                                        animation-delay: 0s;
+                                      }
+                                      
+                                      @keyframes bounce {
+                                        0%, 100% {
+                                          transform: translateY(0);
+                                        }
+                                        50% {
+                                          transform: translateY(-20px);
+                                        }
+                                      }
+                                </style>
+                                <div class="modal-dialog modal-fullscreen  d-flex align-items-center">
+                                    <div class="main-l">
+                                        <div class="droplet_spinner">
+                                            <div class="droplet"></div>
+                                            <div class="droplet"></div>
+                                            <div class="droplet"></div>
+                                        </div>
+                                        <span><svg width="160" height="17" viewBox="0 0 160 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M38.676 14.2723C38.676 14.3946 38.7152 14.468 38.7886 14.468C38.8425 14.468 38.8914 14.4436 38.9501 14.4044L59.732 0.910385C60.0942 0.670557 60.4319 0.548185 60.9312 0.548185H65.4977C66.2025 0.548185 66.6675 1.01806 66.6675 1.71797V10.4399C66.6675 11.4922 66.4325 12.104 65.4977 12.6669L59.9572 15.9951C59.8838 16.0392 59.825 16.0636 59.7712 16.0636C59.7027 16.0636 59.6439 16.0098 59.6439 15.8238V5.64332C59.6439 5.53075 59.6048 5.44755 59.5314 5.44755C59.4775 5.44755 59.4335 5.47202 59.3698 5.50628L44.1774 15.3735C43.7516 15.6476 43.3992 15.7308 43.0125 15.7308H32.9397C32.2349 15.7308 31.77 15.2609 31.77 14.561V1.99206C31.77 1.89906 31.7308 1.81585 31.6574 1.81585C31.6035 1.81585 31.5595 1.84033 31.4959 1.8746L21.4769 7.89478C21.379 7.95351 21.3497 8.00246 21.3497 8.0514C21.3497 8.09545 21.3692 8.13461 21.4377 8.20803L28.5935 15.3637C28.6864 15.4616 28.755 15.5301 28.755 15.6085C28.755 15.6917 28.6522 15.7308 28.5298 15.7308H22.0544C21.5454 15.7308 21.1539 15.6525 20.8847 15.3784L16.5433 11.037C16.4992 10.993 16.465 10.9685 16.416 10.9685C16.3769 10.9685 16.3279 10.9881 16.2839 11.0174L9.02539 15.3784C8.58489 15.6427 8.28144 15.7308 7.85072 15.7308H1.16978C0.464974 15.7308 0 15.2609 0 14.561V6.00062C0 4.94831 0.234934 4.3414 1.16978 3.77853L6.74457 0.430723C6.79841 0.396461 6.85225 0.381775 6.8963 0.381775C6.9795 0.381775 7.02845 0.469884 7.02845 0.665662V12.1138C7.02845 12.2362 7.06271 12.29 7.14102 12.29C7.19486 12.29 7.24381 12.2606 7.30744 12.2215L26.1413 0.900587C26.5916 0.631391 26.8657 0.548185 27.3845 0.548185H37.521C38.2258 0.548185 38.6907 1.01806 38.6907 1.71797V14.2723H38.676Z" fill="white"/><path d="M79.0356 16.1224V0.127258H89.3042V2.44234H81.8744V6.88161H87.9583V9.26033H81.8744V16.1224H79.0356Z" fill="white"/><path d="M91.9375 2.88285V0H94.6539V2.88285H91.9375ZM91.9375 16.1224V4.63016H94.6539V16.1224H91.9375Z" fill="white"/><path d="M98.2314 16.1223V4.63013H100.777L100.943 6.29426C101.658 5.32516 102.94 4.31689 104.604 4.31689C107.13 4.31689 108.647 5.83417 108.647 8.60933V16.1223H105.93V8.60933C105.93 7.39061 105.51 6.42151 104.164 6.42151C102.774 6.42151 101.408 7.64023 100.943 9.11346V16.1223H98.2314Z" fill="white"/><path d="M112.039 10.6944C112.944 9.68612 114.418 9.24072 116.204 8.96663L118.627 8.58977C118.5 7.11653 117.594 6.33831 115.847 6.33831C114.584 6.33831 113.194 7.0529 112.333 8.27651V5.64329C113.091 5.03148 114.374 4.31689 116.415 4.31689C119.107 4.31689 121.358 5.68245 121.358 9.07431V16.1223H119.087L118.832 14.7959C117.761 15.8287 116.625 16.4356 114.961 16.4356C112.646 16.4356 111.28 15.0896 111.28 12.9018C111.28 11.9767 111.574 11.2377 112.039 10.6944ZM115.49 14.2722C116.919 14.2722 118.162 13.264 118.69 12.104V10.5035L117.325 10.7335C115.201 11.0908 114.736 11.4285 114.378 11.7663C114.124 12.0208 113.977 12.3536 113.977 12.7745C113.972 13.7045 114.584 14.2722 115.49 14.2722Z" fill="white"/><path d="M124.726 16.1223V4.63013H127.271L127.437 6.29426C128.152 5.32516 129.434 4.31689 131.098 4.31689C133.624 4.31689 135.141 5.83417 135.141 8.60933V16.1223H132.425V8.60933C132.425 7.39061 132.004 6.42151 130.658 6.42151C129.268 6.42151 127.902 7.64023 127.437 9.11346V16.1223H124.726Z" fill="white"/><path d="M137.774 10.1658C137.774 7.00886 140.133 4.31689 143.877 4.31689C145.287 4.31689 146.447 4.78187 147.201 5.32515V8.1052C146.422 6.96969 145.223 6.46556 144.063 6.46556C142.213 6.46556 140.613 7.91921 140.613 10.1707V10.5916C140.613 12.7403 142.296 14.2771 144.063 14.2771C145.223 14.2771 146.295 13.7485 147.201 12.6962V15.3882C146.506 15.9363 145.351 16.4405 143.789 16.4405C140.192 16.4405 137.769 13.7681 137.769 10.6112V10.1658H137.774Z" fill="white"/><path d="M149.311 10.1462C149.311 6.77881 151.498 4.31689 154.739 4.31689C158.106 4.31689 160 6.6124 160 10.2735V11.3258H151.983C152.174 13.2003 153.265 14.3359 155.14 14.3554C156.613 14.375 157.92 13.9345 159.222 12.6081V15.1973C158.214 15.9755 156.74 16.4405 155.14 16.4405C151.332 16.4405 149.311 13.9786 149.311 10.5671V10.1462ZM157.308 9.2603C157.308 7.4102 156.256 6.33342 154.675 6.35789C153.285 6.37747 152.105 7.4934 152.003 9.2603H157.308Z" fill="white"/></svg></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/////////////loadingModal-->
+                            
+
+
+
+
+                </div>
+                <!-- //HCAU-detail -->
+                <script type="text/javascript" src="/static/html/m/kia/js/Footer.js"></script>
+            </div>
+            <!-- <script src="/static/html/m/kia/js/jquery-3.3.1.min.js"></script> -->
+            <script src="/static/html/m/kia/js/bootstrap.bundle.min.js"></script>
+            <script type="module" src="/static/html/m/kia/js/main.js"></script>
+</body>
+
+</html>

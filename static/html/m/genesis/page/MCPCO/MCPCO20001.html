@@ -1,0 +1,102 @@
+<html lang="en">
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
+    <title>HCAU-PUBL</title>
+    <link rel="stylesheet" href="/static/html/m/genesis/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/html/m/genesis/css/styles.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+
+<body>
+    <div class="wrap">
+        <script type="text/javascript" src="/static/html/m/genesis/js/Header.js"></script>
+        <div class="HCAU-container">
+            <div class="HCAU-contents" id="contents">
+                <!-- HCAU-title -->
+                <div class="HCAU-title">
+                    <div class="HCAU-h1 black">HCAU-h1 title</div>
+                </div>
+                <!-- //HCAU-title -->
+                <!-- HCAU-detail -->
+                <div class="HCAU-detail" style="min-height:500px">
+
+                   
+                            <!--/////////////loadingModal-->
+                            <button type="button" class="HCAU-btn btn-sm" data-bs-toggle="modal" data-bs-target="#loadingModal">loading</button>
+                             <!-- Modal full -->
+                             <div class="HCAU-modal modal fade" id="loadingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <style>
+                                    .main-l{
+                                        width: 100vw;
+                                        margin: 0 auto;
+                                        text-align: center;
+                                      }
+                                      
+                                      .droplet_spinner {
+                                        display: flex;
+                                        justify-content: center;
+                                        margin: 20px;
+                                      }
+                                      
+                                      .droplet_spinner .droplet {
+                                        width: 8px;
+                                        height: 8px;
+                                        margin: 0 14px;
+                                        
+                                        background-color: #fff;
+                                        border-radius: 50%;
+                                        transform-origin: center bottom;            
+                                        animation: bounce 1.2s cubic-bezier(0.3, 0.01, 0.4, 1) infinite;
+                                      }
+                                      
+                                      .droplet_spinner .droplet:nth-child(1) {
+                                        animation-delay: -0.4s;
+                                      }
+                                      
+                                      .droplet_spinner .droplet:nth-child(2) {
+                                        animation-delay: -0.2s;
+                                      }
+                                      
+                                      .droplet_spinner .droplet:nth-child(3) {
+                                        animation-delay: 0s;
+                                      }
+                                      
+                                      @keyframes bounce {
+                                        0%, 100% {
+                                          transform: translateY(0);
+                                        }
+                                        50% {
+                                          transform: translateY(-20px);
+                                        }
+                                      }
+                                </style>
+                                <div class="modal-dialog modal-fullscreen  d-flex align-items-center">
+                                    <div class="main-l">
+                                        <div class="droplet_spinner">
+                                            <div class="droplet"></div>
+                                            <div class="droplet"></div>
+                                            <div class="droplet"></div>
+                                        </div>
+                                        <span><svg width="160" height="13" viewBox="0 0 160 13" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_3826_76046)"><path d="M0.26123 6.306C0.26123 2.80256 2.83475 0.0761719 6.38629 0.0761719C8.80207 0.0761719 10.5959 1.20806 11.6415 2.97774L10.4156 3.88055C9.59981 2.50164 8.26573 1.61678 6.38629 1.61678C3.68658 1.61678 1.94686 3.65147 1.94686 6.306C1.94686 8.96052 3.75869 10.9952 6.52601 10.9952C8.07193 10.9952 9.43756 10.3933 10.2038 9.59833V7.22677H7.78798V5.75803H11.8353V10.308C10.5057 11.6195 8.6939 12.5358 6.50798 12.5358C2.88884 12.5358 0.26123 9.80943 0.26123 6.306Z" fill="white"/><path d="M15.3149 0.291992H21.6203V1.74276H16.951V5.52916H21.2642V6.97994H16.951V10.8741H21.6203V12.3249H15.3149V0.291992Z" fill="white"/><path d="M26.8215 3.75909V12.3245H25.1899V0.287109H25.6001L33.875 8.85254V0.287109H35.5066V12.5311H35.0964L26.8215 3.75909Z" fill="white"/><path d="M39.6216 0.291992H45.9269V1.74276H41.2576V5.52916H45.5709V6.97994H41.2576V10.8741H45.9269V12.3249H39.6216V0.291992Z" fill="white"/><path d="M48.4644 9.45888L49.7444 8.71777C50.2582 10.0248 51.2362 10.9995 52.8497 10.9995C54.3596 10.9995 55.2475 10.1326 55.2475 8.94684C55.2475 7.97217 54.6615 7.33886 53.2598 6.96606L52.0339 6.64716C50.3303 6.20698 49.1404 5.10654 49.1404 3.48059C49.1404 1.55371 50.6142 0.0849609 52.9398 0.0849609C54.8418 0.0849609 56.2075 1.16293 56.7573 2.40261L55.5314 3.21558C54.9635 2.22294 54.0756 1.62108 52.9218 1.62108C51.6418 1.62108 50.826 2.34871 50.826 3.39076C50.826 4.2217 51.412 4.80561 52.408 5.07061L53.5979 5.38951C55.6756 5.93749 56.9376 7.03343 56.9376 8.89294C56.9376 10.9815 55.252 12.5401 52.8362 12.5401C50.3663 12.5356 49.0503 10.995 48.4644 9.45888Z" fill="white"/><path d="M60.1553 0.291992H61.7868V12.3249H60.1553V0.291992Z" fill="white"/><path d="M64.7119 9.45888L65.9919 8.71777C66.5057 10.0248 67.4837 10.9995 69.0973 10.9995C70.6071 10.9995 71.495 10.1326 71.495 8.94684C71.495 7.97217 70.9091 7.33886 69.5074 6.96606L68.2815 6.64716C66.5778 6.20698 65.388 5.10654 65.388 3.48059C65.388 1.55371 66.8618 0.0849609 69.1874 0.0849609C71.0894 0.0849609 72.455 1.16293 73.0049 2.40261L71.7789 3.21558C71.2111 2.22294 70.3232 1.62108 69.1694 1.62108C67.8894 1.62108 67.0736 2.34871 67.0736 3.39076C67.0736 4.2217 67.6595 4.80561 68.6556 5.07061L69.8454 5.38951C71.9232 5.93749 73.1852 7.03343 73.1852 8.89294C73.1852 10.9815 71.4995 12.5401 69.0837 12.5401C66.6139 12.5356 65.2978 10.995 64.7119 9.45888Z" fill="white"/><path d="M84.7368 0.350586H90.9791V1.78787H86.3548V5.53834H90.6275V6.97565H86.3548V12.2667H84.7368V0.350586Z" fill="white"/><path d="M93.9854 0.350586H95.6034V12.2622H93.9854V0.350586Z" fill="white"/><path d="M101.156 3.78622V12.2663H99.5381V0.143555H99.9437L108.133 8.83026V0.350177H109.751V12.4729H109.345L101.156 3.78622Z" fill="white"/><path d="M117.643 0.143555H117.977L123.39 12.2663H121.65L120.505 9.60281H115.11L113.965 12.2663H112.226L117.643 0.143555ZM115.728 8.16551H119.892L117.819 3.33256L115.728 8.16551Z" fill="white"/><path d="M127.486 3.78622V12.2663H125.868V0.143555H126.274L134.463 8.83026V0.350177H136.081V12.4729H135.675L127.486 3.78622Z" fill="white"/><path d="M145.311 12.4735C144.433 12.4735 143.621 12.3163 142.878 12.0019C142.134 11.6875 141.494 11.2518 140.962 10.6949C140.43 10.1424 140.011 9.48662 139.705 8.73204C139.398 7.97745 139.25 7.16897 139.25 6.30659C139.25 5.4442 139.403 4.63572 139.705 3.88114C140.011 3.12655 140.43 2.47528 140.962 1.91832C141.494 1.36586 142.134 0.930162 142.878 0.611261C143.621 0.296848 144.433 0.139648 145.311 0.139648C146.555 0.139648 147.633 0.418124 148.557 0.97957C149.476 1.54102 150.188 2.28661 150.693 3.22086L149.426 4.07877C149.039 3.34215 148.502 2.75823 147.817 2.31805C147.132 1.88237 146.303 1.6623 145.33 1.6623C144.662 1.6623 144.059 1.78357 143.518 2.02162C142.977 2.25967 142.517 2.58755 142.13 3.00078C141.742 3.41401 141.444 3.9036 141.233 4.47403C141.021 5.03996 140.917 5.65082 140.917 6.30659C140.917 6.96236 141.021 7.56872 141.233 8.13915C141.444 8.70509 141.742 9.19467 142.13 9.61239C142.517 10.0256 142.977 10.3535 143.518 10.5916C144.059 10.8296 144.658 10.9509 145.33 10.9509C146.303 10.9509 147.132 10.7308 147.817 10.2951C148.502 9.85942 149.039 9.27103 149.426 8.53441L150.693 9.3923C150.188 10.3265 149.476 11.0721 148.557 11.6336C147.633 12.195 146.551 12.4735 145.311 12.4735Z" fill="white"/><path d="M153.623 0.350586H159.865V1.78787H155.241V5.53834H159.513V6.97565H155.241V10.8294H159.865V12.2667H153.623V0.350586Z" fill="white"/></g><defs><clipPath id="clip0_3826_76046"><rect width="160" height="12.5764" fill="white"/></clipPath></defs></svg></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/////////////loadingModal-->
+                            
+
+
+
+
+                </div>
+                <!-- //HCAU-detail -->
+                <script type="text/javascript" src="/static/html/m/genesis/js/Footer.js"></script>
+            </div>
+            <!-- <script src="/static/html/m/genesis/js/jquery-3.3.1.min.js"></script> -->
+            <script src="/static/html/m/genesis/js/bootstrap.bundle.min.js"></script>
+            <script type="module" src="/static/html/m/genesis/js/main.js"></script>
+</body>
+
+</html>

@@ -146,7 +146,7 @@ html,body{overflow:auto;}
           .carousel-control-prev{left:-70px;}
           .carousel-control-next{right:-62px;}
           .title-area .bg-box{background-color: rgba(255,255,255,.1);padding:6px 20px}
-          .title-area .bg-box .line:before{display:inline-block;content:'';width: 1px;height: 14px;background: #E5E5E5;vertical-align: middle;}
+          .title-area .bg-box .line:before{display:inline-block;content:'';width: 1px;height: 14px;background: #b7b7b7;vertical-align: middle;}
           .title-area {border-bottom:1px solid rgba(0,0,0,.1);padding:28px 40px;}
           .title-area .title p{line-height: 32px;display: inline-block;}
           .title-area .title span{line-height:14px}

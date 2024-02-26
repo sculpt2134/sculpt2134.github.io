@@ -24,7 +24,7 @@
   font-family: Kia Signature Fix;
   font-style: normal;
   font-weight: 400;
-  src:
+  src: local('Kia Signature Fix'),
     url(/static/html/pc/kia/font/KiaSignatureFixRegular.ttf) format("truetype"),
     url(/static/html/pc/kia/font/KiaSignatureFixRegular.woff) format("woff"),
     url(/static/html/pc/kia/font/KiaSignatureFixRegular.woff2) format("woff2"),

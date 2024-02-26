@@ -2395,4 +2395,8 @@ textarea.HCAU-form.form-control {
 }
 .HCAU-otp.bg-box2 > .border-box {
   border-color: transparent;
-}/*# sourceMappingURL=HCAU-m-component-genesis.css.map */
+}
+
+.btn-disabled > img {
+  opacity: 0.15;
+}

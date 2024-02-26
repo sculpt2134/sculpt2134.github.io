@@ -2012,3 +2012,7 @@ textarea.HCAU-form.form-control {
         border-color: transparent;
     }
 }
+
+.btn-disabled > img{
+    opacity:0.15;
+}

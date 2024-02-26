@@ -102,7 +102,7 @@ html,body{overflow:auto;}
 
 
           
-          .wrap .HCAU-footer{background: transparent;height:92px;max-width:1440px;width:100%;margin:0 auto;display: flex;}
+          .wrap .HCAU-footer{background: transparent;height:92px;min-width:1440px;max-width:1440px;width:100%;margin:0 auto;display: flex;}
           .HCAU-footer .footer-inner{margin:0;max-width: none;display: flex;justify-content: space-between;}
           .HCAU-footer .family-site{padding-right:40px}
           .HCAU-footer .footer-inner .copyright,.HCAU-footer .HCAU-cs .contact-us div a{font-size:14px; font-weight:700;text-transform: inherit;color:rgba(255,255,255,.6);line-height: 14px;;}

@@ -113,9 +113,9 @@
         <div>
 
             <!-- Button trigger modal -->
-            <button type="button" class="HCAU-btn primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <!-- <button type="button" class="HCAU-btn primary" data-bs-toggle="modal" data-bs-target="#loginModal">
                 login
-            </button>
+            </button> -->
             <button type="button" class="HCAU-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 modal sample 1
             </button>
@@ -140,7 +140,72 @@
             <button type="button" class="HCAU-btn" data-bs-toggle="modal" data-bs-target="#exampleModal8">
                 xsmall alert
             </button>
+            <!--////////////////////loadingmodal/////////////////////////////////////////-->
+      <button type="button" class="HCAU-btn" data-bs-toggle="modal" data-bs-target="#loadingModal">
+        loading
+    </button>
+    <style>
+      .main-l{
+          width: 90vw;
+          margin: 0 auto;
+          text-align: center;
+        }
+        
+        .droplet_spinner {
+          display: flex;
+          justify-content: center;
+          margin: 28px;
+        }
+        
+        .droplet_spinner .droplet {
+          width: 16px;
+          height: 16px;
+          margin: 0 16px;
+          
+          background-color: #fff;
+          border-radius: 50%;
+          transform-origin: center bottom;            
+          animation: bounce 1.2s cubic-bezier(0.3, 0.01, 0.4, 1) infinite;
+        }
+        
+        .droplet_spinner .droplet:nth-child(1) {
+          animation-delay: -0.4s;
+        }
+        
+        .droplet_spinner .droplet:nth-child(2) {
+          animation-delay: -0.2s;
+        }
+        
+        .droplet_spinner .droplet:nth-child(3) {
+          animation-delay: 0s;
+        }
+        
+        @keyframes bounce {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-20px);
+          }
+        }
+    </style>
+    <!-- loaingModal  -->
+    <div class="HCAU-modal modal fade" id="loadingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg"><!-- modal-lg modal-md modal-sm -->
+          
 
+            <div class="main-l">
+                <div class="droplet_spinner">
+                    <div class="droplet"></div>
+                    <div class="droplet"></div>
+                    <div class="droplet"></div>
+                </div>
+                <span><svg width="300" height="24" viewBox="0 0 300 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1_16)"><path d="M0.490158 11.8241C0.490158 5.25513 5.3155 0.143155 11.9747 0.143155C16.5042 0.143155 19.8676 2.26544 21.8282 5.58359L19.5296 7.27637C18 4.6909 15.4986 3.0318 11.9747 3.0318C6.91269 3.0318 3.65072 6.84683 3.65072 11.8241C3.65072 16.8013 7.0479 20.6163 12.2366 20.6163C15.1352 20.6163 17.6958 19.4878 19.1324 17.9972V13.5505H14.6028V10.7966H22.1916V19.3278C19.6986 21.787 16.3014 23.505 12.2028 23.505C5.41692 23.505 0.490158 18.393 0.490158 11.8241Z" fill="white"/><path d="M28.7155 0.547431H40.538V3.26762H31.7831V10.3671H39.8704V13.0873H31.7831V20.389H40.538V23.1092H28.7155V0.547431Z" fill="white"/><path d="M50.2901 7.04897V23.1092H47.231V0.539002H48L63.5155 16.5992V0.539002H66.5746V23.4966H65.8056L50.2901 7.04897Z" fill="white"/><path d="M74.2901 0.547431H86.1127V3.26762H77.3577V10.3671H85.4451V13.0873H77.3577V20.389H86.1127V23.1092H74.2901V0.547431Z" fill="white"/><path d="M90.8704 17.7361L93.2704 16.3465C94.2338 18.7973 96.0676 20.6248 99.093 20.6248C101.924 20.6248 103.589 18.9994 103.589 16.776C103.589 14.9485 102.49 13.7611 99.862 13.0621L97.5634 12.4641C94.369 11.6388 92.138 9.57548 92.138 6.52682C92.138 2.91391 94.9014 0.160014 99.262 0.160014C102.828 0.160014 105.389 2.18121 106.42 4.5056L104.121 6.02992C103.056 4.16872 101.392 3.04023 99.2282 3.04023C96.8282 3.04023 95.2986 4.40455 95.2986 6.35838C95.2986 7.9164 96.3972 9.01123 98.2648 9.50811L100.496 10.1061C104.392 11.1335 106.758 13.1884 106.758 16.675C106.758 20.5911 103.597 23.5134 99.0676 23.5134C94.4366 23.505 91.969 20.6163 90.8704 17.7361Z" fill="white"/><path d="M112.792 0.547431H115.851V23.1092H112.792V0.547431Z" fill="white"/><path d="M121.335 17.7361L123.735 16.3465C124.699 18.7973 126.532 20.6248 129.558 20.6248C132.389 20.6248 134.054 18.9994 134.054 16.776C134.054 14.9485 132.955 13.7611 130.327 13.0621L128.028 12.4641C124.834 11.6388 122.603 9.57548 122.603 6.52682C122.603 2.91391 125.366 0.160014 129.727 0.160014C133.293 0.160014 135.854 2.18121 136.884 4.5056L134.586 6.02992C133.521 4.16872 131.856 3.04023 129.693 3.04023C127.293 3.04023 125.763 4.40455 125.763 6.35838C125.763 7.9164 126.862 9.01123 128.73 9.50811L130.961 10.1061C134.856 11.1335 137.223 13.1884 137.223 16.675C137.223 20.5911 134.062 23.5134 129.532 23.5134C124.901 23.505 122.434 20.6163 121.335 17.7361Z" fill="white"/><path d="M158.882 0.656918H170.586V3.35182H161.915V10.384H169.927V13.0789H161.915V22.9997H158.882V0.656918Z" fill="white"/><path d="M176.223 0.656918H179.256V22.9913H176.223V0.656918Z" fill="white"/><path d="M189.668 7.09949V22.9997H186.634V0.269501H187.394L202.749 16.5571V0.656918H205.783V23.3871H205.023L189.668 7.09949Z" fill="white"/><path d="M220.58 0.269501H221.206L231.355 22.9997H228.093L225.946 18.0056H215.831L213.685 22.9997H210.423L220.58 0.269501ZM216.989 15.3107H224.797L220.91 6.24889L216.989 15.3107Z" fill="white"/><path d="M239.037 7.09949V22.9997H236.003V0.269501H236.763L252.118 16.5571V0.656918H255.152V23.3871H254.392L239.037 7.09949Z" fill="white"/><path d="M272.459 23.3871C270.811 23.3871 269.29 23.0923 267.896 22.5028C266.501 21.9133 265.301 21.0964 264.304 20.0521C263.307 19.0162 262.521 17.7866 261.946 16.3718C261.372 14.957 261.093 13.441 261.093 11.8241C261.093 10.2071 261.38 8.6912 261.946 7.27636C262.521 5.86152 263.307 4.64038 264.304 3.59609C265.301 2.56022 266.501 1.74329 267.896 1.14534C269.29 0.55582 270.811 0.261071 272.459 0.261071C274.792 0.261071 276.811 0.783213 278.544 1.83592C280.268 2.88864 281.603 4.28663 282.549 6.03835L280.175 7.64693C279.448 6.26577 278.442 5.1709 277.158 4.34558C275.873 3.52867 274.318 3.11604 272.493 3.11604C271.242 3.11604 270.11 3.34342 269.096 3.78977C268.082 4.23612 267.22 4.8509 266.493 5.62569C265.766 6.40049 265.208 7.31848 264.811 8.38804C264.414 9.44916 264.22 10.5945 264.22 11.8241C264.22 13.0536 264.414 14.1906 264.811 15.2601C265.208 16.3213 265.766 17.2392 266.493 18.0225C267.22 18.7973 268.082 19.412 269.096 19.8584C270.11 20.3047 271.234 20.5321 272.493 20.5321C274.318 20.5321 275.873 20.1195 277.158 19.3026C278.442 18.4857 279.448 17.3824 280.175 16.0012L282.549 17.6098C281.603 19.3615 280.268 20.7595 278.544 21.8122C276.811 22.8649 274.783 23.3871 272.459 23.3871Z" fill="white"/><path d="M288.042 0.656918H299.746V3.35182H291.076V10.384H299.087V13.0789H291.076V20.3047H299.746V22.9997H288.042V0.656918Z" fill="white"/></g><defs><clipPath id="clip0_1_16"><rect width="300" height="23.5808" fill="white"/></clipPath></defs></svg></span>
+            </div>
+          
+      </div>
+  </div>
+  <!--////////////////////loadingmodal/////////////////////////////////////////-->
             <!-- modal login -->
             <div class="HCAU-modal modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-sm"><!-- modal-lg modal-md modal-sm -->
@@ -209,190 +274,159 @@
             </div>
             <!-- modal sample 1 -->
             <div class="HCAU-modal modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg"><!-- modal-lg modal-md modal-sm -->
+                <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
-
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/html/pc/genesis/img/svg/ico_modal_close.svg" alt="Close" /></button>
                         <div class="modal-content-inner">
                             <div class="modal-header">
                                 <div class="HCAU-h2" id="exampleModalLabel">Get a copy of your billing statement via email</div>
                             </div>
                             <div class="modal-body">
-                                <div class="border-box">
-                                    <div class="bg-box2 p32">
-
-                                        <ul class="HCAU-bullet-list">
-                                            <li>
-                                                We will send a copy of your billing statement to the email address associated with your account.
-                                            </li>
-                                            <li>
-                                                If you want to change your email address, please update your personal information first.<br>
-                                                <a href="#none" class="link">Change your personal info</a>
-                                            </li>
-                                        </ul>
-                                        <div class="pt32">
-                                            <input type="email" class="form-control HCAU-form" id="exampleInputEmail1" aria-describedby="emailHelp" value="hyundai@hyundaicapital.com" disabled="">
-                                        </div>
-
-                                        <div class="d-flex g12 justify-content-center mt40">
-                                            <button type="button" class="HCAU-btn btn-large primary">Request statements</button>
-                                            <!-- <button type="button" class="HCAU-btn btn-large" data-bs-dismiss="modal">Close</button>
-                                            <button type="button" class="HCAU-btn btn-large">Save changes</button>
-                                            <button type="button" class="HCAU-btn btn-large">button</button>
-                                            <a href="#none" class="HCAU-btn btn-large">a link</a>
-                                            <a href="#none" class="HCAU-btn btn-large">a link</a> -->
-                                        </div>
-
-
+                                <div class="modal-content-box g40">
+        
+                                    <ul class="HCAU-bullet-list px40">
+                                        <li>
+                                            We will send a copy of your billing statement to the email address associated<br/> with your account.
+                                        </li>
+                                        <li>
+                                            If you want to change your email address, please update your personal information first.<a href="#none" class="link fw-bold">Change the email</a>
+                                        </li>
+                                    </ul>
+                                    <div class="px40">
+                                        <input type="email" class="form-control HCAU-form" id="exampleInputEmail1" aria-describedby="emailHelp" value="hyundai@hyundaicapital.com" readonly>
                                     </div>
                                 </div>
-
+                                <div class="modal-btn-wrap">
+                                    <button type="button" class="HCAU-btn primary">Request statements</button>
+                                </div>
                             </div>
-                            <!-- <div class="modal-footer">
-
-                            </div> -->
                         </div>
                     </div>
                 </div>
             </div>
             <!-- modal sample 2 -->
             <div class="HCAU-modal modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-md"><!-- modal-lg modal-md modal-sm -->
+                <div class="modal-dialog modal-dialog-centered modal-lg"><!-- modal-lg modal-md modal-sm -->
                     <div class="modal-content">
+        
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/html/pc/genesis/img/svg/ico_modal_close.svg" alt="Close" /></button>
                         <div class="modal-content-inner">
                             <div class="modal-header">
                                 <div class="HCAU-h2" id="exampleModalLabel"></div>
                             </div>
                             <div class="modal-body">
-                                <div class="border-box">
-                                    <div class="bg-box2 p32">
-
-                                        <div class="text-center">
-                                            <span class="HCAU-txt-md fw-bold">000 Customer is already a member of the<br>Hyundai finance customer portal site.</span>
-                                        </div>
-                                        <div class="bg-box3 text-center p-3 mt32">
-                                            <span class="HCAU-txt-sm">E-mail ID :</span>
-                                            <span class="HCAU-txt-sm fw-bold">hyundai@hcs.com</span>
-                                        </div>
-                                        <div class="text-center mt32">
-                                            <p>You can use the customer portal service after logging in.</p>
-                                            <p class="mt20">If you are not a 000 customer,<br>please check your loan number and DOB again.</p>
-                                        </div>
-                                        <div class="d-flex g12 justify-content-center mt40">
-                                            <button type="button" class="HCAU-btn btn-large gray03">Cancel</button>
-                                            <button type="button" class="HCAU-btn btn-large primary">Ok</button>
-                                            <!-- <button type="button" class="HCAU-btn btn-large" data-bs-dismiss="modal">Close</button> -->
-                                            <!-- <button type="button" class="HCAU-btn btn-large">button</button> -->
-                                            <!-- <a href="#none" class="HCAU-btn btn-large">a link</a> -->
-                                            <!-- <a href="#none" class="HCAU-btn btn-large">a link</a> -->
-                                        </div>
-
-
+                                    <div class="modal-content-box text-center g40 HCAU-txt-md">
+                                        <p class="fw-bold">000 Customer is already a member of the<br/>
+                                            Genesis finance customer portal site.</p>
+                                        <p>You can use the customer portal service after logging in.</p>
+                                        <p>If you are not a 000 customer,<br/>please check your loan number and ABN again.</p>
                                     </div>
-                                </div>
-
+                                    <div class="modal-btn-wrap">
+                                        <button type="button" class="HCAU-btn gray03">Cancel</button>
+                                        <button type="button" class="HCAU-btn primary">Login</button>
+                                    </div>
+        
                             </div>
-                            <!-- <div class="modal-footer">
-
-                            </div> -->
                         </div>
                     </div>
                 </div>
             </div>
             <!-- modal sample 3 -->
             <div class="HCAU-modal modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg"><!-- modal-lg modal-md modal-sm -->
-                    <div class="modal-content">
-
+                <div class="modal-dialog modal-dialog-centered modal-xl"  style="max-height:1200px"><!-- modal-lg modal-md modal-sm -->
+                    <div class="modal-content mt100">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/html/pc/genesis/img/svg/ico_modal_close.svg" alt="Close" /></button>
                         <div class="modal-content-inner">
                             <div class="modal-header">
                                 <div class="HCAU-h2" id="exampleModalLabel">Expected cost to buy out</div>
                             </div>
                             <div class="modal-body">
-                                <div class="border-box">
-                                    <div class="bg-box2 p32">
-
-                                        <div class="d-flex g54">
-                                            <p>
-                                                <span class="HCAU-txt-sm">Car registration number : </span>
-                                                <span class="HCAU-txt-sm fw-bold">Quebec 31 XPM</span>
-                                            </p>
-                                            <p>
-                                                <span class="HCAU-txt-sm">Model :</span>
-                                                <span class="HCAU-txt-sm fw-bold">The all-new SANTA FE</span>
-                                            </p>
-                                        </div>
-                                        <div class="border-top-dashed mt32 mb32"></div>
-                                        <div class="HCAU-txt-md fw-bold">Date of settlement</div>
-                                        <div class="pt-3">
-                                            <input type="text" class="form-control HCAU-form" id="" aria-describedby="Date of settlement" readonly value="2023.05.17">
-                                        </div>
-
-                                        <div class="mt32 border-box black pb32">
-                                            <div class="d-flex align-items-center justify-content-between border-bottom py-3 px32">
-                                                <p class="HCAU-txt-sm">Payment due date</p>
-                                                <p class="HCAU-txt-sm">Monthly 15</p>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-between border-bottom py-3 px32">
-                                                <p class="HCAU-txt-sm">Date of termination</p>
-                                                <p class="HCAU-txt-sm">2020.04.19</p>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-between border-bottom py-3 px32">
-                                                <p class="HCAU-txt-sm">Date of maturity</p>
-                                                <p class="HCAU-txt-sm">2020.04.19</p>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-between border-bottom py-3 px32">
-                                                <p class="HCAU-txt-sm">Car’s residual value</p>
-                                                <p class="HCAU-txt-sm">8,000,000 $</p>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-between pt32 px32">
-                                                <p class="HCAU-txt-md fw-bold">Total settlement cost</p>
-                                                <p class="HCAU-lead-txt fw-bold">8,100,000 $</p>
-                                            </div>
-                                            <div class="border-top mx32 my20"></div>
-                                            <div class="d-flex align-items-center justify-content-between mx32">
-                                                <p class="d-flex g08">
-                                                    <span class="HCAU-txt-xs fw-bold num-circle">1</span>
-                                                    <span class="HCAU-txt-sm fw-bold">Base lease payoff</span>
-                                                </p>
-                                                <p class="HCAU-txt-sm fw-bold">8,000,000 $</p>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-between mx32 pt12">
-                                                <p class="d-flex g08">
-                                                    <span class="HCAU-txt-xs fw-bold num-circle">2</span>
-                                                    <span class="HCAU-txt-sm fw-bold">Interests</span>
-                                                </p>
-                                                <p class="HCAU-txt-sm fw-bold">100,000 $</p>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-between mx32 pt12">
-                                                <p class="d-flex g08">
-                                                    <span class="HCAU-txt-xs fw-bold num-circle">3</span>
-                                                    <span class="HCAU-txt-sm fw-bold">Termination fee</span>
-                                                </p>
-                                                <p class="HCAU-txt-sm fw-bold">0 $</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="d-flex g12 justify-content-center mt40">
-                                            <button type="button" class="HCAU-btn btn-large primary">Ok</button>
-                                            <!-- <button type="button" class="HCAU-btn btn-large" data-bs-dismiss="modal">Close</button>
-                                            <button type="button" class="HCAU-btn btn-large">Save changes</button>
-                                            <button type="button" class="HCAU-btn btn-large">button</button>
-                                            <a href="#none" class="HCAU-btn btn-large">a link</a>
-                                            <a href="#none" class="HCAU-btn btn-large">a link</a> -->
-                                        </div>
-
-
-                                    </div>
+                                <div class="modal-content-head mx-40">
+                                    <p>
+                                        <span class="HCAU-txt-md">Contract number : </span>
+                                        <span class="HCAU-txt-md fw-bold">H2023NA000248</span>
+                                    </p>
+                                    <p>
+                                        <span class="HCAU-txt-md">Model :</span>
+                                        <span class="HCAU-txt-md fw-bold">The all-new SANTA FE</span>
+                                    </p>
                                 </div>
-
+                                <div class="modal-content-box p-0">
+                                    <div class="HCAU-txt-md fw-bold pt40">Date of settlement</div>
+                                    <div id="sandbox2" class="HCAU-calendar mt16">
+                                        <input type="text" class="form-control HCAU-form date" disabled  value="19/05/2023">
+                                        <span><img src="/static/html/m/genesis/img/ico_calendar.svg" alt=""></span>
+                                    </div>
+                                    <div class="toggle-button"></div>
+        
+                                    <div class="mt40 border-box black">
+                                        <div class="d-flex align-items-center justify-content-between border-bottom py24 px32">
+                                            <p class="HCAU-txt-sm">Frequency / Due Date</p>
+                                            <p class="HCAU-txt-sm">Monthly 15</p>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between border-bottom py24 px32">
+                                            <p class="HCAU-txt-sm">Date of termination</p>
+                                            <p class="HCAU-txt-sm">19/04/2020</p>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between border-bottom py24 px32">
+                                            <p class="HCAU-txt-sm">Payment of maturity</p>
+                                            <p class="HCAU-txt-sm">19/04/2020</p>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between border-bottom py24 px32">
+                                            <p class="HCAU-txt-sm">Car's residual value</p>
+                                            <p class="HCAU-txt-sm">$ 8,000,000.00</p>
+                                        </div>
+        
+                                        <div class="bg-box2">
+                                            <div class="p32">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <p class="d-flex g08">
+                                                        <span class="HCAU-txt-sm fw-bold">① Base lease payout</span>
+                                                    </p>
+                                                    <p class="HCAU-txt-sm fw-bold">$ 8,000,000.00</p>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-between pt20">
+                                                    <p class="d-flex g08">
+                                                        <span class="HCAU-txt-sm fw-bold">② Late charge</span>
+                                                    </p>
+                                                    <p class="HCAU-txt-sm fw-bold">$ 100,000.00</p>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-between pt20">
+                                                    <p class="d-flex g08">
+                                                        <span class="HCAU-txt-sm fw-bold">③ Termination Fee</span>
+                                                    </p>
+                                                    <p class="HCAU-txt-sm fw-bold">$ 0.00</p>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-between pt20">
+                                                    <p class="d-flex g08">
+                                                        <span class="HCAU-txt-sm fw-bold">④ VAT</span>
+                                                    </p>
+                                                    <p class="HCAU-txt-sm fw-bold">$ 100.00</p>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-between pt20">
+                                                    <p class="d-flex g08">
+                                                        <span class="HCAU-txt-sm fw-bold">⑤ Other Fee</span>
+                                                    </p>
+                                                    <p class="HCAU-txt-sm fw-bold">$ 0.00</p>
+                                                </div>
+                                                <div class="border-top gray03 mt20">
+                                                    <div class="d-flex align-items-center justify-content-between mt20">
+                                                        <p class="HCAU-txt-md fw-bold">Total settlement cost</p>
+                                                        <p class="HCAU-lead-txt fw-bold">$ 8,100,000.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                                <div class="modal-btn-wrap bd-none">
+                                    <button type="button" class="HCAU-btn primary">Ok</button>
+                                    <button type="button" class="HCAU-btn primary">Request for consultation</button>
+                                </div>
                             </div>
-                            <!-- <div class="modal-footer">
-
-                            </div> -->
                         </div>
+                    
                     </div>
                 </div>
             </div>
@@ -429,115 +463,123 @@
             <!-- modal address 2 -->
             <div class="HCAU-modal modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
-                    <!-- modal-lg modal-md modal-sm -->
-                    <div class="modal-content">
-
+                    <div class="modal-content p-0">
+                        <!--//////////modal body product////////-->
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/html/pc/genesis/img/svg/ico_modal_close.svg" alt="Close" /></button>
                         <div class="modal-content-inner">
                             <div class="modal-header">
-                                <div class="HCAU-h2" id="exampleModalLabel">Enter your address</div>
+                                <div class="HCAU-h2" id="exampleModalLabel">Find a dealer</div>
                             </div>
-                            <div class="modal-body">
-                                <div class="HCAU-search-bar d-flex g12 pb20">
-                                    <input type="text" class="form-control HCAU-form" placeholder="Enter a Suburb or postcode">
-                                    <div class="search-btn">
-                                        <button type="button" class="HCAU-btn btn-smd full">Search</button>
+                            <div class="modal-body mt60">                    
+                                <div class="modal-content-head">
+                                    <div class="HCAU-txt-sm fw-normal">We will guide customers who need in-person consultation to the nearest branch.</div>
+                                </div>
+                                <div class="modal-content-box product">
+                                    <div class="pt40">
+                                        <div class="HCAU-txt-md fw-bold mb-3">Region</div>
+                                        <div class="d-flex g12">
+                                            <div class="d-flex flex-fill g20">
+                                                <div class="dropdown flex-fix">
+                                                    <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                                                        select state
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="dropdown flex-fix">
+                                                    <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                                                        select city
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                                                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="search-btn">
+                                                <button type="button" class="HCAU-btn btn-smd full">Search</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="result-list mb40">
+                                        <div class="border-top bg-white">
+                                            <div class="d-flex g-3 px32 py-3 border-bottom">
+                                                <div class="HCAU-txt-sm fw-bold w180">Westpoint Hillcrest Hyundai</div>
+                                                <div>
+                                                    <div class="d-flex g16">
+                                                        <div class="HCAU-txt-sm w50">Address</div>
+                                                        <div class="HCAU-txt-sm w335">1 Corporate place, Hillcrest QLD 4118</div>
+                                                    </div>
+                                                    <div class="d-flex g16 mt-2">
+                                                        <div class="HCAU-txt-sm w50">Phone</div>
+                                                        <div class="HCAU-txt-sm">07 3483 0919</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex g-3 px32 py-3 border-bottom">
+                                                <div class="HCAU-txt-sm fw-bold w180">Westpoint Hillcrest Hyundai</div>
+                                                <div>
+                                                    <div class="d-flex g16">
+                                                        <div class="HCAU-txt-sm w50">Address</div>
+                                                        <div class="HCAU-txt-sm w335">1 Corporate place, Hillcrest QLD 4118 Hill Cre</div>
+                                                    </div>
+                                                    <div class="d-flex g16 mt-2">
+                                                        <div class="HCAU-txt-sm w50">Phone</div>
+                                                        <div class="HCAU-txt-sm">07 3483 0919</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex g-3 px32 py-3 border-bottom">
+                                                <div class="HCAU-txt-sm fw-bold w180">Westpoint Hillcrest Hyundai</div>
+                                                <div>
+                                                    <div class="d-flex g16">
+                                                        <div class="HCAU-txt-sm w50">Address</div>
+                                                        <div class="HCAU-txt-sm w335">1 Corporate place, Hillcrest QLD 4118 place, Hillcrest QLD 4118</div>
+                                                    </div>
+                                                    <div class="d-flex g16 mt-2">
+                                                        <div class="HCAU-txt-sm w50">Phone</div>
+                                                        <div class="HCAU-txt-sm">07 3483 0919</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex g-3 px32 py-3 border-bottom">
+                                                <div class="HCAU-txt-sm fw-bold w180">Westpoint Hillcrest Hyundai</div>
+                                                <div>
+                                                    <div class="d-flex g16">
+                                                        <div class="HCAU-txt-sm w50">Address</div>
+                                                        <div class="HCAU-txt-sm w330">1 Corporate place, Hillcrest QLD 4118 place, Hillcrest QLD 4118</div>
+                                                    </div>
+                                                    <div class="d-flex g16 mt-2">
+                                                        <div class="HCAU-txt-sm w50">Phone</div>
+                                                        <div class="HCAU-txt-sm">07 3483 0919</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex g-3 px32 py-3 border-bottom">
+                                                <div class="HCAU-txt-sm fw-bold w180">Westpoint Hillcrest Hyundai</div>
+                                                <div>
+                                                    <div class="d-flex g16">
+                                                        <div class="HCAU-txt-sm w50">Address</div>
+                                                        <div class="HCAU-txt-sm w335">1 Corporate place, Hillcrest QLD 4118 place, Hillcrest QLD 4118</div>
+                                                    </div>
+                                                    <div class="d-flex g16 mt-2">
+                                                        <div class="HCAU-txt-sm w50">Phone</div>
+                                                        <div class="HCAU-txt-sm">07 3483 0919</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-
-                                <div class="HCAU-address-result">
-                                    <ul class="border-top">
-                                        <li class="border-bottom px32 py15">
-                                            <a href="">
-                                                <img src="/static/html/pc/genesis/img/svg/ico_location.svg" alt="">
-                                                <span class="HCAU-txt-sm fw500 align-text-bottom">600 Parramatta Road, Croydon, NSW 2132</span>
-                                            </a>
-                                        </li>
-                                        <li class="border-bottom px32 py15">
-                                            <a href="">
-                                                <img src="/static/html/pc/genesis/img/svg/ico_location.svg" alt="">
-                                                <span class="HCAU-txt-sm fw500 align-text-bottom">600 Parramatta Road, Croydon, NSW 2132</span>
-                                            </a>
-                                        </li>
-                                        <li class="border-bottom px32 py15">
-                                            <a href="">
-                                                <img src="/static/html/pc/genesis/img/svg/ico_location.svg" alt="">
-                                                <span class="HCAU-txt-sm fw500 align-text-bottom">600 Parramatta Road, Croydon, NSW 2132</span>
-                                            </a>
-                                        </li>
-                                        <li class="border-bottom px32 py15">
-                                            <a href="">
-                                                <img src="/static/html/pc/genesis/img/svg/ico_location.svg" alt="">
-                                                <span class="HCAU-txt-sm fw500 align-text-bottom">600 Parramatta Road, Croydon, NSW 2132</span>
-                                            </a>
-                                        </li>
-                                        <li class="border-bottom px32 py15">
-                                            <a href="">
-                                                <img src="/static/html/pc/genesis/img/svg/ico_location.svg" alt="">
-                                                <span class="HCAU-txt-sm fw500 align-text-bottom">600 Parramatta Road, Croydon, NSW 2132</span>
-                                            </a>
-                                        </li>
-                                        <li class="border-bottom px32 py15">
-                                            <a href="">
-                                                <img src="/static/html/pc/genesis/img/svg/ico_location.svg" alt="">
-                                                <span class="HCAU-txt-sm fw500 align-text-bottom">600 Parramatta Road, Croydon, NSW 2132</span>
-                                            </a>
-                                        </li>
-                                        <li class="border-bottom px32 py15">
-                                            <a href="">
-                                                <img src="/static/html/pc/genesis/img/svg/ico_location.svg" alt="">
-                                                <span class="HCAU-txt-sm fw500 align-text-bottom">600 Parramatta Road, Croydon, NSW 2132</span>
-                                            </a>
-                                        </li>
-                                        <li class="border-bottom px32 py15">
-                                            <a href="">
-                                                <img src="/static/html/pc/genesis/img/svg/ico_location.svg" alt="">
-                                                <span class="HCAU-txt-sm fw500 align-text-bottom">600 Parramatta Road, Croydon, NSW 2132</span>
-                                            </a>
-                                        </li>
-                                        <li class="border-bottom px32 py15">
-                                            <a href="">
-                                                <img src="/static/html/pc/genesis/img/svg/ico_location.svg" alt="">
-                                                <span class="HCAU-txt-sm fw500 align-text-bottom">600 Parramatta Road, Croydon, NSW 2132</span>
-                                            </a>
-                                        </li>
-                                        <li class="border-bottom px32 py15">
-                                            <a href="">
-                                                <img src="/static/html/pc/genesis/img/svg/ico_location.svg" alt="">
-                                                <span class="HCAU-txt-sm fw500 align-text-bottom">600 Parramatta Road, Croydon, NSW 2132</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="HCAU-pagination">
-                                    <div class="inner">
-                                        <ul class="arrow">
-                                            <li class="arrow"><a href=""><img src="/static/html/pc/genesis/img/svg/ico_pagination_01.svg" alt="First"></a></li>
-                                            <li class="arrow"><a href=""><img src="/static/html/pc/genesis/img/svg/ico_pagination_02.svg" alt="Prev"></a></li>
-                                        </ul>
-                                        <ul class="page">
-                                            <li class="page active"><a href="" class="HCAU-txt-md fw500">1</a></li>
-                                            <li class="page"><a href="" class="HCAU-txt-md fw500">2</a></li>
-                                            <li class="page"><a href="" class="HCAU-txt-md fw500">3</a></li>
-                                            <li class="page"><a href="" class="HCAU-txt-md fw500">4</a></li>
-                                            <li class="page"><a href="" class="HCAU-txt-md fw500">5</a></li>
-                                            <li class="page"><a href="" class="HCAU-txt-md fw500">6</a></li>
-                                            <li class="page"><a href="" class="HCAU-txt-md fw500">7</a></li>
-                                            <li class="page"><a href="" class="HCAU-txt-md fw500">8</a></li>
-                                            <li class="page"><a href="" class="HCAU-txt-md fw500">9</a></li>
-                                            <li class="page"><a href="" class="HCAU-txt-md fw500">10</a></li>
-                                        </ul>
-                                        <ul class="arrow">
-                                            <li class="arrow"><a href=""><img src="/static/html/pc/genesis/img/svg/ico_pagination_03.svg" alt="Next"></a></li>
-                                            <li class="arrow"><a href=""><img src="/static/html/pc/genesis/img/svg/ico_pagination_04.svg" alt="Last"></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
                             </div>
-                            <!-- <div class="modal-footer">
-
-                                                        </div> -->
                         </div>
                     </div>
                 </div>
@@ -546,59 +588,46 @@
             <div class="HCAU-modal modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg"><!-- modal-lg modal-md modal-sm -->
                     <div class="modal-content">
-
+        
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/html/pc/genesis/img/svg/ico_modal_close.svg" alt="Close" /></button>
                         <div class="modal-content-inner">
                             <div class="modal-header">
                                 <div class="HCAU-h2" id="exampleModalLabel">Agree to terms and conditions</div>
                             </div>
                             <div class="modal-body">
-                                <!--HCAU-step-->
-                                <div class="HCAU-step-pop">
-                                    <div class="step-item active">
-                                        <div class="num">1</div>
-                                        <div class="txt">temporary text</div>
+                                <div class="modal-content-box p-0 border-0">
+                                    <!--HCAU-step-->
+                                    <div class="HCAU-step-pop pt40">
+                                        <div class="step-item active">
+                                            <div class="num">1</div>
+                                            <div class="txt">temporary text</div>
+                                        </div>
+                                        <div class="step-item">
+                                            <div class="num">2</div>
+                                            <div class="txt"></div>
+                                        </div>
+                                        <div class="step-item">
+                                            <div class="num">3</div>
+                                            <div class="txt"></div>
+                                        </div>
+                                        <div class="step-item">
+                                            <div class="num">4</div>
+                                            <div class="txt"></div>
+                                        </div>
+                                        <div class="step-item">
+                                            <div class="num">5</div>
+                                            <div class="txt"></div>
+                                        </div>
                                     </div>
-                                    <div class="step-item">
-                                        <div class="num">2</div>
-                                        <div class="txt"></div>
-                                    </div>
-                                    <div class="step-item">
-                                        <div class="num">3</div>
-                                        <div class="txt"></div>
-                                    </div>
-                                    <div class="step-item">
-                                        <div class="num">4</div>
-                                        <div class="txt"></div>
-                                    </div>
-                                    <div class="step-item">
-                                        <div class="num">5</div>
-                                        <div class="txt"></div>
-                                    </div>
-                                </div>
-                                <div class="border-box">
-                                    <div class="bg-box2 p32">
-
-                                        <ul class="HCAU-bullet-list">
-                                            <li>
-                                                We will send a copy of your billing statement to the email address associated with your account.
-                                            </li>
-                                            <li>
-                                                If you want to change your email address, please update your personal information first.<br>
-                                                <a href="#none" class="under">Change your personal info</a>
-                                            </li>
-                                        </ul>
+        
+                                    <div class="border-box">
+                                        <div class="bg-box2 scroll-wrap">
+                                            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="modal-footer">
-                                <div class="d-flex g12 justify-content-center mt40">
-                                    <button type="button" class="HCAU-btn btn-large primary">Request statements</button>
-                                    <!-- <button type="button" class="HCAU-btn btn-large" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="HCAU-btn btn-large">Save changes</button>
-                                    <button type="button" class="HCAU-btn btn-large">button</button>
-                                    <a href="#none" class="HCAU-btn btn-large">a link</a>
-                                    <a href="#none" class="HCAU-btn btn-large">a link</a> -->
+                                <div class="modal-btn-wrap">
+                                    <button type="button" class="HCAU-btn btn-large primary">Agreement</button>
                                 </div>
                             </div>
                         </div>
@@ -635,23 +664,14 @@
 
                         <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/html/pc/genesis/img/svg/ico_modal_close.svg" alt="Close" /></button> -->
                         <div class="modal-content-inner">
-                            <!-- <div class="modal-header">
-                                <div class="HCAU-h2" id="exampleModalLabel">title</div>
-                            </div> -->
                             <div class="modal-body">
-
                                 <div class="text-center lh-sm">
-                                    alert message
+                                    There is no matching customer
                                 </div>
-                                <div class="d-flex gap-2 justify-content-center mt40">
-                                    <!-- <button type="button" class="HCAU-btn btn-smd gray03 w92" data-bs-dismiss="modal">Cancel</button> -->
-                                    <button type="button" class="HCAU-btn btn-large primary w92" data-bs-dismiss="modal">Ok</button>
-                                </div>
-
                             </div>
-                            <!-- <div class="modal-footer">
-
-                            </div> -->
+                            <div class="modal-footer ">
+                                <button type="button" class="HCAU-btn btn-large primary" data-bs-dismiss="modal">Ok</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -872,11 +892,58 @@
             </div>
         </div>
         <br>
-        <div class="HCAU-search-bar d-flex g08">
-            <div class="flex-grow-1 d-flex g08">
+        <div class="HCAU-search-bar">
+            <div class="d-flex justify-content-between g20">
+                <div class="dropdown flex-fix">
+                    <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                        Finance type (all)
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown flex-fix">
+                    <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                        Product name (all)
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown flex-fix">
+                    <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                        Vehicle type (all)
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between g20 mt20">
+                <div class="dropdown w386">
+                    <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                        Method (all)
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown flex-fix d-flex g12">
+                    <input type="text" class="form-control HCAU-form flex-grow-1" placeholder="Enter a contract number" value="">
+                    <button type="button" class="HCAU-btn btn-smd">Search</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="HCAU-search-bar d-flex g12">
+            <div class="d-flex w-100 g20">
                 <div class="dropdown">
                     <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
-                        Vin
+                        Product classification (all)
                     </button>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
@@ -884,33 +951,34 @@
                         <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
                         <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
                         <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
-
+    
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                        Product name (all)
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                        <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+    
                     </ul>
                 </div>
                 <div class="flex-grow-1">
-                    <input type="text" class="form-control HCAU-form" placeholder="Last name" aria-label="Last name" value="KMHEM13BPBA000002">
+                    <input type="text" class="form-control HCAU-form" placeholder="Last name" aria-label="Last name" value="Enter vehicle number">
                 </div>
             </div>
             <div class="search-btn">
                 <button type="button" class="HCAU-btn btn-smd full">Search</button>
             </div>
         </div>
+        
         <br>
         <div class="HCAU-search-bar d-flex g20">
-            <div class="dropdown">
-                <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
-                    Product classification (all)
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
-
-                </ul>
-            </div>
-            <div class="dropdown">
+            <div class="dropdown  flex-fix">
                 <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
                     Product name (all)
                 </button>
@@ -920,74 +988,128 @@
                     <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
                     <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
                     <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
-
+    
                 </ul>
             </div>
-            <div class="flex-grow-1">
-                <input type="text" class="form-control HCAU-form" placeholder="Last name" aria-label="Last name" value="Enter vehicle number">
+            <div class="flex-fix">
+                <div id="sandbox2" class="HCAU-calendar">
+                    <input type="text" class="form-control HCAU-form" value="April 2023">
+                    <span>
+                        <img src="/static/html/m/genesis/img/ico_calendar.svg" alt="">
+                    </span>
+                </div>
+                <div class="toggle-button"></div>
+            </div>
+    
+            <div class="dropdown flex-fix">
+                <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                    Repayment frequency (all)
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
+    
+                </ul>
             </div>
             <div class="search-btn">
                 <button type="button" class="HCAU-btn btn-smd full">Search</button>
             </div>
         </div>
         <br>
-        <div class="HCAU-search-bar d-flex g20 align-items-top">
-            <div class="d-flex g20">
+        <div class="HCAU-search-bar d-flex g20 align-items-top flex-wrap">
+            <div class="d-flex g20 radio-group  filter w-100">
                 <div class="radio-group">
                     <div class="radio-group-inner">
                         <div>
-                            <input type="radio" class="btn-check" name="options-base" id="option5" autocomplete="off" checked>
+                            <input type="radio" class="btn-check" name="options-base" id="option1" autocomplete="off">
+                            <label class="HCAU-btn btn-smd" for="option1">1 month</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="btn-check" name="options-base" id="option2" autocomplete="off">
+                            <label class="HCAU-btn btn-smd" for="option2">3 months</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="btn-check" name="options-base" id="option3" autocomplete="off" checked>
+                            <label class="HCAU-btn btn-smd" for="option3">6 months</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="btn-check" name="options-base" id="option4" autocomplete="off">
+                            <label class="HCAU-btn btn-smd" for="option4">Enter manually</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex w-100 g20">
+                    <div class="d-flex rg0 align-items-top flex-wrap w-100">
+                        <div id="sandbox2" class="HCAU-calendar flex-fix">
+                            <input type="text" class="HCAU-form form-control date" value="19/01/2023" disabled>
+                            <span>
+                                <img src="/static/html/m/genesis/img/ico_calendar_readonly.svg" alt="">
+                            </span>
+                            <div class="toggle-button"></div>
+                        </div>
+                        <div class="d-flex align-items-center mx-1">~</div>                    
+                        <div id="sandbox1" class="HCAU-calendar flex-fix">
+                            <input type="text" class="HCAU-form form-control date" value="18/07/2023" disabled>
+                            <span>
+                                <img src="/static/html/m/genesis/img/ico_calendar_readonly.svg" alt="">
+                            </span>
+                            <div class="toggle-button"></div>
+                        </div>
+                    </div>
+                    <div class="search-btn">
+                        <button type="button" class="HCAU-btn btn-smd full">Search</button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex g20 radio-group  filter w-100">
+                <div class="radio-group">
+                    <div class="radio-group-inner">
+                        <div>
+                            <input type="radio" class="btn-check" name="options-base2" id="option5" autocomplete="off">
                             <label class="HCAU-btn btn-smd" for="option5">1 month</label>
                         </div>
                         <div>
-                            <input type="radio" class="btn-check" name="options-base" id="option6" autocomplete="off">
-                            <label class="HCAU-btn btn-smd" for="option6">3 month</label>
+                            <input type="radio" class="btn-check" name="options-base2" id="option6" autocomplete="off">
+                            <label class="HCAU-btn btn-smd" for="option6">3 months</label>
                         </div>
                         <div>
-                            <input type="radio" class="btn-check" name="options-base" id="option7" autocomplete="off">
-                            <label class="HCAU-btn btn-smd" for="option7">6 month</label>
+                            <input type="radio" class="btn-check" name="options-base2" id="option7" autocomplete="off">
+                            <label class="HCAU-btn btn-smd" for="option7">6 months</label>
                         </div>
                         <div>
-                            <input type="radio" class="btn-check" name="options-base" id="option8" autocomplete="off">
+                            <input type="radio" class="btn-check" name="options-base2" id="option8" autocomplete="off" checked>
                             <label class="HCAU-btn btn-smd" for="option8">Enter manually</label>
                         </div>
                     </div>
                 </div>
-                <div class="d-flex g08 rg0 align-items-top flex-wrap">
-                    <div class="dropdown flex-grow-1">
-                        <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
-                            April 2023
-                        </button>
-                        <ul class="dropdown-menu flex-fill">
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#none">label 1</a></li>
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#none">label 2</a></li>
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#none">label 3</a></li>
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#none">label 4</a></li>
-                        </ul>
+                <div class="d-flex g20 w-100">
+                    <div class="d-flex rg0 align-items-top flex-wrap w-100">
+                        <div id="sandbox2" class="HCAU-calendar flex-fix">
+                            <input type="text" class="HCAU-form form-control date" value="19/01/2023">
+                            <span>
+                                <img src="/static/html/m/genesis/img/ico_calendar.svg" alt="">
+                            </span>
+                            <div class="toggle-button"></div>
+                        </div>
+                        <div class="d-flex align-items-center mx-1">~</div>                    
+                        <div id="sandbox1" class="HCAU-calendar flex-fix">
+                            <input type="text" class="HCAU-form form-control date" value="19/01/2023">
+                            <span>
+                                <img src="/static/html/m/genesis/img/ico_calendar.svg" alt="">
+                            </span>
+                            <div class="toggle-button"></div>
+                        </div>
                     </div>
-                    <div class="h44 d-flex align-items-center">
-                        <div>~</div>
-                    </div>
-                    <div class="dropdown flex-grow-1">
-                        <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
-                            April 2023
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
-                            <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
-                        </ul>
-                    </div>
-                    <div class="invalid-feedback" style="display: block;">
-                        invalid message.
+                    <div class="search-btn">
+                        <button type="button" class="HCAU-btn btn-smd full">Search</button>
                     </div>
                 </div>
             </div>
-            <div class="search-btn ms-auto">
-                <button type="button" class="HCAU-btn btn-smd full">Search</button>
-            </div>
         </div>
+        
     </section>
 
     <section>
@@ -1718,48 +1840,7 @@
             </div> -->
         </div>
 
-        <!-- g-notice -->
-        <div class="g-notice">
-            <dl>
-                <dt>
-                    <span class="ico-gnotice"><img src="/static/html/pc/genesis/img/svg/ico_notice.svg" alt=""></span>
-                    <span>Guidance Notice</span>
-                </dt>
-                <dd>
-                    <ul class="HCAU-bullet-list">
-                        <li>
-                            The estimated billing amount may differ from the actual billing amount.
-                        </li>
-                        <li>
-                            The expected payment amount may differ from the actual payment amount.
-                        </li>
-                        <li>
-                            Details of the payment amount are available through the payment history.
-                            <a href="#none" class="link">Payment details</a>
-                        </li>
-                        <li>
-                            You can view and print the entire redemption schedule for products that are in use or terminated.
-                            <a href="#none" class="link">Repayment schedule</a>
-                        </li>
-                        <li class="point-red">
-                            For GFV products and Lease products, prepayment is possible through 0000-0000.
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-        </div>
-        <!-- //g-notice -->
-
-        <div class="d-flex gap-3">
-            <div class="border-box flex-fill p-4">
-                <p class="HCAU-txt-sm">Do you want to make a payment before your due date?</p>
-                <p class="pt12"><a href="#none" class="link">Make a payment</a></p>
-            </div>
-            <div class="border-box flex-fill p-4">
-                <p class="HCAU-txt-sm">Do you want to payout all or part of your loan early?</p>
-                <p class="pt12"><a href="#none" class="link">Early payout</a></p>
-            </div>
-        </div>
+        
 
     </section>
 
@@ -1805,185 +1886,919 @@
     </section>
 
     <section>
-        <div class="title-area d-flex align-items-baseline g16">
-            <div class="title">Payment information</div>
-            <!-- <div class="sub-title">Reference date : 2023.12.31</div>
-            <div class="ms-auto">
-                <button type="button" class="HCAU-btn btn-sm">default</button>
-            </div> -->
-        </div>
-
-        <div class="border-box p32 d-flex g96">
-            <dl>
-                <dt class="HCAU-txt-sm gray04 fw-normal">Payment Cycle / Payment Date</dt>
-                <dd class="HCAU-txt-md fw-bold mt-2">Monthly / 11th</dd>
-            </dl>
-            <dl>
-                <dt class="HCAU-txt-sm gray04 fw-normal">Bank / Account number</dt>
-                <dd class="HCAU-txt-md fw-bold mt-2">ANZ / 2635****9</dd>
-            </dl>
-            <dl>
-                <dt class="HCAU-txt-sm gray04 fw-normal">How to receive statement</dt>
-                <dd class="HCAU-txt-md fw-bold mt-2">No Send</dd>
-            </dl>
-        </div>
-
-        <div class="d-flex full g20 pt20">
-            <button type="button" class="HCAU-btn btn-md">Pay the bill</button>
-            <button type="button" class="HCAU-btn btn-md">Prepayment</button>
-            <button type="button" class="HCAU-btn btn-md">Payment information inquiry</button>
-        </div>
-
-    </section>
-
-    <section>
-        <div class="title-area d-flex align-items-baseline g16">
-            <div class="title">Payment information</div>
-            <!-- <div class="sub-title">Reference date : 2023.12.31</div>
-            <div class="ms-auto">
-                <button type="button" class="HCAU-btn btn-sm">default</button>
-            </div> -->
-        </div>
-
-        <div class="d-flex align-items-baseline g40">
-            <div class="dropdown me-auto">
-                <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
-                    April 2023
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
-                </ul>
-            </div>
-            <div class="HCAU-txt-md">Total amount billed</div>
-            <div class="HCAU-h2">$ 2,034.00</div>
-        </div>
-
-        <div class="border-box p20 mt-3">
-            <div class="loan-items-tlt bg-box d-flex justify-content-between align-items-center px32 py16 h60">
+        <div class="border-box black mb40">
+            <div class="loan-items-tlt bg-box d-flex justify-content-between align-items-center border-bottom">
                 <div class="HCAU-lead-txt fw-bold">NewCar Loan_Standard</div>
-                <div class="d-flex g20">
-                    <span class="HCAU-lead-txt fw-bold align-items-center">H2023NA000248</span>
-                    <a href="#" class="ico-loan-btn"><img src="/static/html/pc/genesis/img/svg/ico_loan_btn.svg" alt=""></a>
+                <div class="loan-btn">
+                    <div class="HCAU-h2 lg">$ 2,034.00<span class="HCAU-txt-sm fw-normal"> / 15th</span></div>
                 </div>
             </div>
-
-            <div class="d-flex flex-column px32 py24 border-bottom">
-                <div class="d-flex justify-content-between align-items-end">
-                    <div class="HCAU-txt-sm gray04">Payment Cycle / Payment Date</div>
-                    <div class="HCAU-txt-md fw-bold">Monthly / 11th of every month</div>
+            <div class="d-flex justify-content-between px40 mt32 mb20 g160">
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Overdue</dt>
+                        <dd class="HCAU-txt-md fw-bold">
+                            <span class="point">Completed</span>
+                            <span class="point-red ms-3">Overdue</span>
+                            <span class="point-blue ms-3">Scheduled</span>
+                        </dd>
+                    </dl>
                 </div>
-                <div class="d-flex justify-content-between align-items-end pt16">
-                    <div class="HCAU-txt-sm gray04">Bank / Account number</div>
-                    <div class="HCAU-txt-md fw-bold">ANZ / 2635****9</div>
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Next due date</dt>
+                        <dd class="HCAU-txt-md fw-bold">
+                            11/05/2023
+                        </dd>
+                    </dl>
                 </div>
             </div>
-
-            <div class="d-flex align-items-center justify-content-between px32 py35 border-bottom">
-                <div class="HCAU-txt-md fw500">15th payment</div>
-                <div class="HCAU-h2">$ 2,034.00</div>
-            </div>
-
-            <div class="d-flex flex-wrap justify-content-between px32 py24 gap-3 border-bottom">
-                <dl class="loan-items d-flex justify-content-between align-items-end">
-                    <dt class="fw-normal HCAU-txt-sm gray04">Overdue</dt>
-                    <dd class="fw-bold HCAU-txt-md">
-                        <span class="point-red">Y</span>
-                    </dd>
-                </dl>
-                <dl class="loan-items d-flex justify-content-between align-items-end">
-                    <dt class="fw-normal HCAU-txt-sm gray04">Next repayment date</dt>
-                    <dd class="fw-bold HCAU-txt-md">2023.05.10</dd>
-                </dl>
-                <dl class="loan-items d-flex justify-content-between align-items-end">
-                    <dt class="fw-normal HCAU-txt-sm gray04">Loan Principal Balance</dt>
-                    <dd class="fw-bold HCAU-txt-md">23,300.00 $</dd>
-                </dl>
-                <dl class="loan-items d-flex justify-content-between align-items-end">
-                    <dt class="fw-normal HCAU-txt-sm gray04">Current repayment principal</dt>
-                    <dd class="fw-bold HCAU-txt-md">4,175.00 $</dd>
-                </dl>
+            <div class="d-flex justify-content-between px40 mb32 g160">
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Principal balance</dt>
+                        <dd class="HCAU-txt-md fw-bold">$ 17,154.62</dd>
+                    </dl>
+                </div>
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Principal paid</dt>
+                        <dd class="HCAU-txt-md fw-bold">$ 4,175.00</dd>
+                    </dl>
+                </div>
             </div>
             <div class="loan-items-wrap d-flex flex-wrap px32 py20">
-                <div class="loan-items">
+                <div class="loan-items d-flex justify-content-start">
                     <div class="loan-items-ico">
                         <img src="/static/html/pc/genesis/img/svg/ico_loan01.svg" alt="">
                     </div>
-                    <dl class="loan-text">
-                        <dt class="">Contract number</dt>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Contract number</dt>
                         <dd class="HCAU-txt-sm fw-bold">H2023NA000248</dd>
                     </dl>
                 </div>
-                <div class="loan-items">
+                <div class="loan-items d-flex justify-content-start">
                     <div class="loan-items-ico">
                         <img src="/static/html/pc/genesis/img/svg/ico_loan02.svg" alt="">
                     </div>
-                    <dl class="loan-text">
-                        <dt class="">Loan amount</dt>
-                        <dd class="HCAU-txt-sm fw-bold">$ 2,034.00</dd>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Loan amount</dt>
+                        <dd class="HCAU-txt-sm fw-bold">$ 23,300.00</dd>
                     </dl>
                 </div>
-                <div class="loan-items">
+                <div class="loan-items d-flex justify-content-start">
                     <div class="loan-items-ico">
                         <img src="/static/html/pc/genesis/img/svg/ico_loan03.svg" alt="">
                     </div>
-                    <dl class="loan-text">
-                        <dt class="">Interest rate / repayment method</dt>
-                        <dd class="HCAU-txt-sm fw-bold">2.6% / principle equal repayment</dd>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Interest rate</dt>
+                        <dd class="HCAU-txt-sm fw-bold">2.6%</dd>
                     </dl>
                 </div>
-                <div class="loan-items">
-                    <div class="loan-items-ico">
-                        <img src="/static/html/pc/genesis/img/svg/ico_loan04.svg" alt="">
+
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items d-flex justify-content-start">
+                        <div class="loan-items-ico">
+                            <img src="/static/html/pc/genesis/img/svg/ico_loan04.svg" alt="">
+                        </div>
+                        <dl class="loan-text d-flex justify-content-between">
+                            <dt class="HCAU-txt-sm fw-normal">Term</dt>
+                            <dd class="HCAU-txt-sm fw-bold">11/02/2022~11/02/2027</dd>
+                        </dl>
                     </div>
-                    <dl class="loan-text">
-                        <dt class="">Term</dt>
-                        <dd class="HCAU-txt-sm fw-bold">22.02.11~27.02.11(60months)</dd>
+                </div>
+
+                <div class="border-top-dashed gray pt20 d-flex">
+                    <div class="loan-items d-flex justify-content-start">
+                        <div class="loan-items-ico">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="36" height="36" rx="18" fill="white"/><path d="M26.8889 9H9.11111V11.2222H26.8889V9ZM28 20.1111V17.8889L26.8889 12.3333H9.11111L8 17.8889V20.1111H9.11111V26.7778H20.2222V20.1111H24.6667V26.7778H26.8889V20.1111H28ZM18 24.5556H11.3333V20.1111H18V24.5556Z" fill="#A2A2A2"/></svg>
+                        </div>
+                        <dl class="loan-text min d-flex justify-content-between align-items-center">
+                            <dt class="HCAU-txt-sm fw-normal" style="min-width:140px">Dealership name</dt>
+                            <dd class="HCAU-txt-sm fw-bold">Sydney Branch(000-000-0000)</dd>
+                        </dl>
+                    </div>
+                    <div class="loan-items d-flex justify-content-start">
+                        <div class="loan-items-ico">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="36" height="36" rx="18" fill="white"/><path d="M16.3821 16.4087C18.7041 16.4087 20.5865 14.5264 20.5865 12.2044C20.5865 9.88236 18.7041 8 16.3821 8C14.0601 8 12.1777 9.88236 12.1777 12.2044C12.1777 14.5264 14.0601 16.4087 16.3821 16.4087Z" fill="#A2A2A2"/><path d="M19.0762 24.0947H23.632V25.0059H19.0762V24.0947Z" fill="#A2A2A2"/><path d="M15.1723 25.3965V27.349C15.1723 27.5216 15.2408 27.6872 15.3629 27.8092C15.4849 27.9313 15.6505 27.9999 15.8231 27.9999H26.8872C27.0598 27.9999 27.2253 27.9313 27.3474 27.8092C27.4695 27.6872 27.538 27.5216 27.538 27.349V20.8407C27.538 20.6681 27.4695 20.5026 27.3474 20.3805C27.2253 20.2585 27.0598 20.1899 26.8872 20.1899H22.3314V19.2332C22.3314 19.0606 22.2628 18.895 22.1408 18.773C22.0187 18.6509 21.8532 18.5823 21.6806 18.5823C21.5079 18.5823 21.3424 18.6509 21.2203 18.773C21.0983 18.895 21.0297 19.0606 21.0297 19.2332V20.1899H19.7281V17.8599C18.6221 17.6793 17.5034 17.5879 16.3828 17.5866C13.9115 17.5761 11.4678 18.107 9.22367 19.1421C8.85432 19.3164 8.54271 19.593 8.32584 19.939C8.10896 20.2851 7.99592 20.6862 8.00011 21.0946V25.3965H15.1723ZM26.2364 26.6982H16.4739V21.4916H21.0297V21.7649C21.0297 21.9375 21.0983 22.1031 21.2203 22.2251C21.3424 22.3472 21.5079 22.4157 21.6806 22.4157C21.8532 22.4157 22.0187 22.3472 22.1408 22.2251C22.2628 22.1031 22.3314 21.9375 22.3314 21.7649V21.4916H26.2364V26.6982Z" fill="#A2A2A2"/></svg>
+                        </div>
+                        <dl class="loan-text d-flex justify-content-between">
+                            <dt class="HCAU-txt-sm fw-normal">BM name</dt>
+                            <dd class="HCAU-txt-sm fw-bold">Hong gil dong</dd>
+                        </dl>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="border-box black mb40">
+            <div class="loan-items-tlt bg-box d-flex justify-content-between align-items-center border-bottom">
+                <div class="HCAU-lead-txt fw-bold">NewCar Loan_Standard</div>
+                <div class="loan-btn">
+                    <div class="HCAU-h2 lg">$ 2,034.00<span class="HCAU-txt-sm fw-normal"> / 15th</span></div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between px40 mt32 mb20 g160">
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Overdue</dt>
+                        <dd class="HCAU-txt-md fw-bold">
+                            <span class="point">Completed</span>
+                            <span class="point-red ms-3">Overdue</span>
+                            <span class="point-blue ms-3">Scheduled</span>
+                        </dd>
                     </dl>
                 </div>
-                <div class="loan-items">
-                    <div class="loan-items-ico">
-                        <img src="/static/html/pc/genesis/img/svg/ico_loan05.svg" alt="">
-                    </div>
-                    <dl class="loan-text">
-                        <dt class="">Amortization period</dt>
-                        <dd class="HCAU-txt-sm fw-bold">23.02.11~27.02.11(48months)</dd>
-                    </dl>
-                </div>
-                <div class="loan-items">
-                    <div class="loan-items-ico">
-                        <img src="/static/html/pc/genesis/img/svg/ico_loan06.svg" alt="">
-                    </div>
-                    <dl class="loan-text">
-                        <dt class="">GFV % / GFV amount</dt>
-                        <dd class="HCAU-txt-sm fw-bold">45% / $ 1,022.00</dd>
-                    </dl>
-                </div>
-                <div class="loan-items">
-                    <div class="loan-items-ico">
-                        <img src="/static/html/pc/genesis/img/svg/ico_loan07.svg" alt="">
-                    </div>
-                    <dl class="loan-text">
-                        <dt class="">Balloon % / Balloon amount</dt>
-                        <dd class="HCAU-txt-sm fw-bold">45% / $ 1,022.00</dd>
-                    </dl>
-                </div>
-                <div class="loan-items">
-                    <div class="loan-items-ico">
-                        <img src="/static/html/pc/genesis/img/svg/ico_loan08.svg" alt="">
-                    </div>
-                    <dl class="loan-text">
-                        <dt class="">Agreed mileage</dt>
-                        <dd class="HCAU-txt-sm fw-bold">10,000km</dd>
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Next due date</dt>
+                        <dd class="HCAU-txt-md fw-bold">
+                            11/05/2023
+                        </dd>
                     </dl>
                 </div>
             </div>
+            <div class="d-flex justify-content-between px40 mb32 g160">
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Principal balance</dt>
+                        <dd class="HCAU-txt-md fw-bold">$ 17,154.62</dd>
+                    </dl>
+                </div>
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Principal paid</dt>
+                        <dd class="HCAU-txt-md fw-bold">$ 4,175.00</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="loan-items-wrap d-flex flex-wrap px32 py20">
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan01.svg" alt="">
+                    </div>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Contract number</dt>
+                        <dd class="HCAU-txt-sm fw-bold">H2023NA000248</dd>
+                    </dl>
+                </div>
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan02.svg" alt="">
+                    </div>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Loan amount</dt>
+                        <dd class="HCAU-txt-sm fw-bold">$ 23,300.00</dd>
+                    </dl>
+                </div>
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan03.svg" alt="">
+                    </div>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Interest rate</dt>
+                        <dd class="HCAU-txt-sm fw-bold">2.6%</dd>
+                    </dl>
+                </div>
+
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items d-flex justify-content-start">
+                        <div class="loan-items-ico">
+                            <img src="/static/html/pc/genesis/img/svg/ico_loan04.svg" alt="">
+                        </div>
+                        <dl class="loan-text d-flex justify-content-between">
+                            <dt class="HCAU-txt-sm fw-normal">Term</dt>
+                            <dd class="HCAU-txt-sm fw-bold">11/02/2022~11/02/2027</dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="border-top-dashed gray pt20 d-flex">
+                    <div class="loan-items d-flex justify-content-start">
+                        <div class="loan-items-ico">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="36" height="36" rx="18" fill="white"/><path d="M26.8889 9H9.11111V11.2222H26.8889V9ZM28 20.1111V17.8889L26.8889 12.3333H9.11111L8 17.8889V20.1111H9.11111V26.7778H20.2222V20.1111H24.6667V26.7778H26.8889V20.1111H28ZM18 24.5556H11.3333V20.1111H18V24.5556Z" fill="#A2A2A2"/></svg>
+                        </div>
+                        <dl class="loan-text min d-flex justify-content-between align-items-center">
+                            <dt class="HCAU-txt-sm fw-normal" style="min-width:140px">Dealership name</dt>
+                            <dd class="HCAU-txt-sm fw-bold">Sydney Branch(000-000-0000)Sydney Branch(000-000-0000)Sydney Branch(000-000-0000)</dd>
+                        </dl>
+                    </div>
+                    <div class="loan-items d-flex justify-content-start">
+                        <div class="loan-items-ico">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="36" height="36" rx="18" fill="white"/><path d="M16.3821 16.4087C18.7041 16.4087 20.5865 14.5264 20.5865 12.2044C20.5865 9.88236 18.7041 8 16.3821 8C14.0601 8 12.1777 9.88236 12.1777 12.2044C12.1777 14.5264 14.0601 16.4087 16.3821 16.4087Z" fill="#A2A2A2"/><path d="M19.0762 24.0947H23.632V25.0059H19.0762V24.0947Z" fill="#A2A2A2"/><path d="M15.1723 25.3965V27.349C15.1723 27.5216 15.2408 27.6872 15.3629 27.8092C15.4849 27.9313 15.6505 27.9999 15.8231 27.9999H26.8872C27.0598 27.9999 27.2253 27.9313 27.3474 27.8092C27.4695 27.6872 27.538 27.5216 27.538 27.349V20.8407C27.538 20.6681 27.4695 20.5026 27.3474 20.3805C27.2253 20.2585 27.0598 20.1899 26.8872 20.1899H22.3314V19.2332C22.3314 19.0606 22.2628 18.895 22.1408 18.773C22.0187 18.6509 21.8532 18.5823 21.6806 18.5823C21.5079 18.5823 21.3424 18.6509 21.2203 18.773C21.0983 18.895 21.0297 19.0606 21.0297 19.2332V20.1899H19.7281V17.8599C18.6221 17.6793 17.5034 17.5879 16.3828 17.5866C13.9115 17.5761 11.4678 18.107 9.22367 19.1421C8.85432 19.3164 8.54271 19.593 8.32584 19.939C8.10896 20.2851 7.99592 20.6862 8.00011 21.0946V25.3965H15.1723ZM26.2364 26.6982H16.4739V21.4916H21.0297V21.7649C21.0297 21.9375 21.0983 22.1031 21.2203 22.2251C21.3424 22.3472 21.5079 22.4157 21.6806 22.4157C21.8532 22.4157 22.0187 22.3472 22.1408 22.2251C22.2628 22.1031 22.3314 21.9375 22.3314 21.7649V21.4916H26.2364V26.6982Z" fill="#A2A2A2"/></svg>
+                        </div>
+                        <dl class="loan-text d-flex justify-content-between">
+                            <dt class="HCAU-txt-sm fw-normal">BM name</dt>
+                            <dd class="HCAU-txt-sm fw-bold">Hong gil dongHong gil dongHong gil dong</dd>
+                        </dl>
+                    </div>
+                </div>
+
+            </div>
+
 
         </div>
+        <div class="border-box black mb40">
+            <div class="loan-items-tlt bg-box d-flex justify-content-between align-items-center border-bottom">
+                <div class="HCAU-lead-txt fw-bold">Lease Finance_MT</div>
+                <div class="loan-btn">
+                    <div class="HCAU-h2 lg">$ 2,034.00<span class="HCAU-txt-sm fw-normal"> / 15th</span></div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between px40 mt32 mb20 g160">
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Overdue</dt>
+                        <dd class="HCAU-txt-md fw-bold">
+                            <span class="point">Completed</span>
+                            <span class="point-red ms-3">Overdue</span>
+                            <span class="point-blue ms-3">Scheduled</span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Next due date</dt>
+                        <dd class="HCAU-txt-md fw-bold">
+                            11/05/2023
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between px40 mb32 g160">
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Principal balance</dt>
+                        <dd class="HCAU-txt-md fw-bold">$ 17,154.62</dd>
+                    </dl>
+                </div>
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Principal paid</dt>
+                        <dd class="HCAU-txt-md fw-bold">$ 4,175.00</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="loan-items-wrap d-flex flex-wrap px32 py20">
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan01.svg" alt="">
+                    </div>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Contract number</dt>
+                        <dd class="HCAU-txt-sm fw-bold">H2023NA000248</dd>
+                    </dl>
+                </div>
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items d-flex justify-content-start">
+                        <div class="loan-items-ico">
+                            <img src="/static/html/pc/genesis/img/svg/ico_loan04.svg" alt="">
+                        </div>
+                        <dl class="loan-text d-flex justify-content-between">
+                            <dt class="HCAU-txt-sm fw-normal">Term</dt>
+                            <dd class="HCAU-txt-sm fw-bold">11/02/2022~11/02/2027</dd>
+                        </dl>
+                    </div>
+                </div>
 
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan06.svg" alt="">
+                    </div>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">RV % / RV amount</dt>
+                        <dd class="HCAU-txt-sm fw-bold">45% / $ 104,850.00</dd>
+                    </dl>
+                </div>
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan02.svg" alt="">
+                    </div>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Lease payment<br/>(GST included)</dt>
+                        <dd class="HCAU-txt-sm fw-bold">$ 7,954.57</dd>
+                    </dl>
+                </div>
+
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items d-flex justify-content-start">
+                        <div class="loan-items-ico">
+                            <img src="/static/html/pc/genesis/img/svg/ico_loan08.svg" alt="">
+                        </div>
+                        <dl class="loan-text d-flex justify-content-between">
+                            <dt class="HCAU-txt-sm fw-normal">Agreed mileage</dt>
+                            <dd class="HCAU-txt-sm fw-bold">10,000km</dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="border-top-dashed gray pt20 d-flex">
+                    <div class="loan-items d-flex justify-content-start">
+                        <div class="loan-items-ico">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="36" height="36" rx="18" fill="white"/><path d="M26.8889 9H9.11111V11.2222H26.8889V9ZM28 20.1111V17.8889L26.8889 12.3333H9.11111L8 17.8889V20.1111H9.11111V26.7778H20.2222V20.1111H24.6667V26.7778H26.8889V20.1111H28ZM18 24.5556H11.3333V20.1111H18V24.5556Z" fill="#A2A2A2"/></svg>
+                        </div>
+                        <dl class="loan-text min d-flex justify-content-between align-items-center">
+                            <dt class="HCAU-txt-sm fw-normal" style="min-width:140px">Dealership name</dt>
+                            <dd class="HCAU-txt-sm fw-bold">Sydney Branch(000-000-0000)</dd>
+                        </dl>
+                    </div>
+                    <div class="loan-items d-flex justify-content-start">
+                        <div class="loan-items-ico">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="36" height="36" rx="18" fill="white"/><path d="M16.3821 16.4087C18.7041 16.4087 20.5865 14.5264 20.5865 12.2044C20.5865 9.88236 18.7041 8 16.3821 8C14.0601 8 12.1777 9.88236 12.1777 12.2044C12.1777 14.5264 14.0601 16.4087 16.3821 16.4087Z" fill="#A2A2A2"/><path d="M19.0762 24.0947H23.632V25.0059H19.0762V24.0947Z" fill="#A2A2A2"/><path d="M15.1723 25.3965V27.349C15.1723 27.5216 15.2408 27.6872 15.3629 27.8092C15.4849 27.9313 15.6505 27.9999 15.8231 27.9999H26.8872C27.0598 27.9999 27.2253 27.9313 27.3474 27.8092C27.4695 27.6872 27.538 27.5216 27.538 27.349V20.8407C27.538 20.6681 27.4695 20.5026 27.3474 20.3805C27.2253 20.2585 27.0598 20.1899 26.8872 20.1899H22.3314V19.2332C22.3314 19.0606 22.2628 18.895 22.1408 18.773C22.0187 18.6509 21.8532 18.5823 21.6806 18.5823C21.5079 18.5823 21.3424 18.6509 21.2203 18.773C21.0983 18.895 21.0297 19.0606 21.0297 19.2332V20.1899H19.7281V17.8599C18.6221 17.6793 17.5034 17.5879 16.3828 17.5866C13.9115 17.5761 11.4678 18.107 9.22367 19.1421C8.85432 19.3164 8.54271 19.593 8.32584 19.939C8.10896 20.2851 7.99592 20.6862 8.00011 21.0946V25.3965H15.1723ZM26.2364 26.6982H16.4739V21.4916H21.0297V21.7649C21.0297 21.9375 21.0983 22.1031 21.2203 22.2251C21.3424 22.3472 21.5079 22.4157 21.6806 22.4157C21.8532 22.4157 22.0187 22.3472 22.1408 22.2251C22.2628 22.1031 22.3314 21.9375 22.3314 21.7649V21.4916H26.2364V26.6982Z" fill="#A2A2A2"/></svg>
+                        </div>
+                        <dl class="loan-text d-flex justify-content-between">
+                            <dt class="HCAU-txt-sm fw-normal">BM name</dt>
+                            <dd class="HCAU-txt-sm fw-bold">Hong gil dong</dd>
+                        </dl>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <div class="HCAU-txt-md point-red">12p_Loan Ballon</div>
+        <div class="border-box black mb40">
+            <div class="loan-items-tlt bg-box d-flex justify-content-between align-items-center border-bottom">
+                <div class="HCAU-lead-txt fw-bold">NewCar Loan_Ballon</div>
+                <div class="loan-btn">
+                    <div class="HCAU-h2 lg">$ 2,034.00<span class="HCAU-txt-sm fw-normal"> / 15th</span></div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between px40 mt32 mb20 g160">
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Overdue</dt>
+                        <dd class="HCAU-txt-md fw-bold">
+                            <span class="point">Completed</span>
+                            <span class="point-red ms-3">Overdue</span>
+                            <span class="point-blue ms-3">Scheduled</span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Next due date</dt>
+                        <dd class="HCAU-txt-md fw-bold">
+                            11/05/2023
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between px40 mb32 g160">
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Principal balance</dt>
+                        <dd class="HCAU-txt-md fw-bold">$ 17,154.62</dd>
+                    </dl>
+                </div>
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Principal paid</dt>
+                        <dd class="HCAU-txt-md fw-bold">$ 4,175.00</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="loan-items-wrap d-flex flex-wrap px32 py20">
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan01.svg" alt="">
+                    </div>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Contract number</dt>
+                        <dd class="HCAU-txt-sm fw-bold">H2023NA000248</dd>
+                    </dl>
+                </div>
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan02.svg" alt="">
+                    </div>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Loan amount</dt>
+                        <dd class="HCAU-txt-sm fw-bold">$ 23,300.00</dd>
+                    </dl>
+                </div>
+                <div class="loan-items d-flex justify-content-start min">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan07.svg" alt="">
+                    </div>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Balloon % / Balloon amount</dt>
+                        <dd class="HCAU-txt-sm fw-bold">45% / $ 104,850.00</dd>
+                    </dl>
+                </div>
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan03.svg" alt="">
+                    </div>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Interest rate</dt>
+                        <dd class="HCAU-txt-sm fw-bold">2.6%</dd>
+                    </dl>
+                </div>
+
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items d-flex justify-content-start">
+                        <div class="loan-items-ico">
+                            <img src="/static/html/pc/genesis/img/svg/ico_loan04.svg" alt="">
+                        </div>
+                        <dl class="loan-text d-flex justify-content-between">
+                            <dt class="HCAU-txt-sm fw-normal">Term</dt>
+                            <dd class="HCAU-txt-sm fw-bold">11/02/2022~11/02/2027</dd>
+                        </dl>
+                    </div>
+                </div>
+<!--
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan06.svg" alt="">
+                    </div>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">RV % / RV amount</dt>
+                        <dd class="HCAU-txt-sm fw-bold">45% / $ 104,850.00</dd>
+                    </dl>
+                </div>
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan02.svg" alt="">
+                    </div>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Lease payment<br/>(GST included)</dt>
+                        <dd class="HCAU-txt-sm fw-bold">$ 7,954.57</dd>
+                    </dl>
+                </div>
+
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items d-flex justify-content-start">
+                        <div class="loan-items-ico">
+                            <img src="/static/html/pc/genesis/img/svg/ico_loan08.svg" alt="">
+                        </div>
+                        <dl class="loan-text d-flex justify-content-between">
+                            <dt class="HCAU-txt-sm fw-normal">Agreed mileage</dt>
+                            <dd class="HCAU-txt-sm fw-bold">10,000km</dd>
+                        </dl>
+                    </div>
+                </div> -->
+
+                <div class="border-top-dashed gray pt20 d-flex">
+                    <div class="loan-items d-flex justify-content-start">
+                        <div class="loan-items-ico">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="36" height="36" rx="18" fill="white"/><path d="M26.8889 9H9.11111V11.2222H26.8889V9ZM28 20.1111V17.8889L26.8889 12.3333H9.11111L8 17.8889V20.1111H9.11111V26.7778H20.2222V20.1111H24.6667V26.7778H26.8889V20.1111H28ZM18 24.5556H11.3333V20.1111H18V24.5556Z" fill="#A2A2A2"/></svg>
+                        </div>
+                        <dl class="loan-text min d-flex justify-content-between align-items-center">
+                            <dt class="HCAU-txt-sm fw-normal" style="min-width:140px">Dealership name</dt>
+                            <dd class="HCAU-txt-sm fw-bold">Sydney Branch(000-000-0000)</dd>
+                        </dl>
+                    </div>
+                    <div class="loan-items d-flex justify-content-start">
+                        <div class="loan-items-ico">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="36" height="36" rx="18" fill="white"/><path d="M16.3821 16.4087C18.7041 16.4087 20.5865 14.5264 20.5865 12.2044C20.5865 9.88236 18.7041 8 16.3821 8C14.0601 8 12.1777 9.88236 12.1777 12.2044C12.1777 14.5264 14.0601 16.4087 16.3821 16.4087Z" fill="#A2A2A2"/><path d="M19.0762 24.0947H23.632V25.0059H19.0762V24.0947Z" fill="#A2A2A2"/><path d="M15.1723 25.3965V27.349C15.1723 27.5216 15.2408 27.6872 15.3629 27.8092C15.4849 27.9313 15.6505 27.9999 15.8231 27.9999H26.8872C27.0598 27.9999 27.2253 27.9313 27.3474 27.8092C27.4695 27.6872 27.538 27.5216 27.538 27.349V20.8407C27.538 20.6681 27.4695 20.5026 27.3474 20.3805C27.2253 20.2585 27.0598 20.1899 26.8872 20.1899H22.3314V19.2332C22.3314 19.0606 22.2628 18.895 22.1408 18.773C22.0187 18.6509 21.8532 18.5823 21.6806 18.5823C21.5079 18.5823 21.3424 18.6509 21.2203 18.773C21.0983 18.895 21.0297 19.0606 21.0297 19.2332V20.1899H19.7281V17.8599C18.6221 17.6793 17.5034 17.5879 16.3828 17.5866C13.9115 17.5761 11.4678 18.107 9.22367 19.1421C8.85432 19.3164 8.54271 19.593 8.32584 19.939C8.10896 20.2851 7.99592 20.6862 8.00011 21.0946V25.3965H15.1723ZM26.2364 26.6982H16.4739V21.4916H21.0297V21.7649C21.0297 21.9375 21.0983 22.1031 21.2203 22.2251C21.3424 22.3472 21.5079 22.4157 21.6806 22.4157C21.8532 22.4157 22.0187 22.3472 22.1408 22.2251C22.2628 22.1031 22.3314 21.9375 22.3314 21.7649V21.4916H26.2364V26.6982Z" fill="#A2A2A2"/></svg>
+                        </div>
+                        <dl class="loan-text d-flex justify-content-between">
+                            <dt class="HCAU-txt-sm fw-normal">BM name</dt>
+                            <dd class="HCAU-txt-sm fw-bold">Hong gil dong</dd>
+                        </dl>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <div class="HCAU-txt-md point-red">12p_Loan GFV</div>
+        <div class="border-box black mb40">
+            <div class="loan-items-tlt bg-box d-flex justify-content-between align-items-center border-bottom">
+                <div class="HCAU-lead-txt fw-bold">NewCar Loan_GFV</div>
+                <div class="loan-btn">
+                    <div class="HCAU-h2 lg">$ 2,034.00<span class="HCAU-txt-sm fw-normal"> / 15th</span></div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between px40 mt32 mb20 g160">
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Overdue</dt>
+                        <dd class="HCAU-txt-md fw-bold">
+                            <span class="point">Completed</span>
+                            <span class="point-red ms-3">Overdue</span>
+                            <span class="point-blue ms-3">Scheduled</span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Next due date</dt>
+                        <dd class="HCAU-txt-md fw-bold">
+                            11/05/2023
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between px40 mb32 g160">
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Principal balance</dt>
+                        <dd class="HCAU-txt-md fw-bold">$ 17,154.62</dd>
+                    </dl>
+                </div>
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Principal paid</dt>
+                        <dd class="HCAU-txt-md fw-bold">$ 4,175.00</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="loan-items-wrap d-flex flex-wrap px32 py20">
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan01.svg" alt="">
+                    </div>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Contract number</dt>
+                        <dd class="HCAU-txt-sm fw-bold">H2023NA000248</dd>
+                    </dl>
+                </div>
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan02.svg" alt="">
+                    </div>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Loan amount</dt>
+                        <dd class="HCAU-txt-sm fw-bold">$ 23,300.00</dd>
+                    </dl>
+                </div>
+
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan06.svg" alt="">
+                    </div>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">GFV % / GFV amount</dt>
+                        <dd class="HCAU-txt-sm fw-bold">45% / $ 104,850.00</dd>
+                    </dl>
+                </div>
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan03.svg" alt="">
+                    </div>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Interest rate</dt>
+                        <dd class="HCAU-txt-sm fw-bold">2.6%</dd>
+                    </dl>
+                </div>
+
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items d-flex justify-content-start">
+                        <div class="loan-items-ico">
+                            <img src="/static/html/pc/genesis/img/svg/ico_loan04.svg" alt="">
+                        </div>
+                        <dl class="loan-text d-flex justify-content-between">
+                            <dt class="HCAU-txt-sm fw-normal">Term</dt>
+                            <dd class="HCAU-txt-sm fw-bold">11/02/2022~11/02/2027</dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="border-top-dashed gray pt20 d-flex">
+                    <div class="loan-items d-flex justify-content-start">
+                        <div class="loan-items-ico">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="36" height="36" rx="18" fill="white"/><path d="M26.8889 9H9.11111V11.2222H26.8889V9ZM28 20.1111V17.8889L26.8889 12.3333H9.11111L8 17.8889V20.1111H9.11111V26.7778H20.2222V20.1111H24.6667V26.7778H26.8889V20.1111H28ZM18 24.5556H11.3333V20.1111H18V24.5556Z" fill="#A2A2A2"/></svg>
+                        </div>
+                        <dl class="loan-text min d-flex justify-content-between align-items-center">
+                            <dt class="HCAU-txt-sm fw-normal w140">Dealership name</dt>
+                            <dd class="HCAU-txt-sm fw-bold">Sydney Branch(000-000-0000)</dd>
+                        </dl>
+                    </div>
+                    <div class="loan-items d-flex justify-content-start">
+                        <div class="loan-items-ico">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="36" height="36" rx="18" fill="white"/><path d="M16.3821 16.4087C18.7041 16.4087 20.5865 14.5264 20.5865 12.2044C20.5865 9.88236 18.7041 8 16.3821 8C14.0601 8 12.1777 9.88236 12.1777 12.2044C12.1777 14.5264 14.0601 16.4087 16.3821 16.4087Z" fill="#A2A2A2"/><path d="M19.0762 24.0947H23.632V25.0059H19.0762V24.0947Z" fill="#A2A2A2"/><path d="M15.1723 25.3965V27.349C15.1723 27.5216 15.2408 27.6872 15.3629 27.8092C15.4849 27.9313 15.6505 27.9999 15.8231 27.9999H26.8872C27.0598 27.9999 27.2253 27.9313 27.3474 27.8092C27.4695 27.6872 27.538 27.5216 27.538 27.349V20.8407C27.538 20.6681 27.4695 20.5026 27.3474 20.3805C27.2253 20.2585 27.0598 20.1899 26.8872 20.1899H22.3314V19.2332C22.3314 19.0606 22.2628 18.895 22.1408 18.773C22.0187 18.6509 21.8532 18.5823 21.6806 18.5823C21.5079 18.5823 21.3424 18.6509 21.2203 18.773C21.0983 18.895 21.0297 19.0606 21.0297 19.2332V20.1899H19.7281V17.8599C18.6221 17.6793 17.5034 17.5879 16.3828 17.5866C13.9115 17.5761 11.4678 18.107 9.22367 19.1421C8.85432 19.3164 8.54271 19.593 8.32584 19.939C8.10896 20.2851 7.99592 20.6862 8.00011 21.0946V25.3965H15.1723ZM26.2364 26.6982H16.4739V21.4916H21.0297V21.7649C21.0297 21.9375 21.0983 22.1031 21.2203 22.2251C21.3424 22.3472 21.5079 22.4157 21.6806 22.4157C21.8532 22.4157 22.0187 22.3472 22.1408 22.2251C22.2628 22.1031 22.3314 21.9375 22.3314 21.7649V21.4916H26.2364V26.6982Z" fill="#A2A2A2"/></svg>
+                        </div>
+                        <dl class="loan-text d-flex justify-content-between">
+                            <dt class="HCAU-txt-sm fw-normal">BM name</dt>
+                            <dd class="HCAU-txt-sm fw-bold">Hong gil dong</dd>
+                        </dl>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <div class="HCAU-txt-md point-red">12p_Only interest</div>
+        <div class="border-box black mb40">
+            <div class="loan-items-tlt bg-box d-flex justify-content-between align-items-center border-bottom">
+                <div class="HCAU-lead-txt fw-bold">NewCar Loan_ Only interest</div>
+                <div class="loan-btn">
+                    <div class="HCAU-h2 lg">$ 2,034.00<span class="HCAU-txt-sm fw-normal"> / 15th</span></div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between px40 mt32 mb20 g160">
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Overdue</dt>
+                        <dd class="HCAU-txt-md fw-bold">
+                            <span class="point">Completed</span>
+                            <span class="point-red ms-3">Overdue</span>
+                            <span class="point-blue ms-3">Scheduled</span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Next due date</dt>
+                        <dd class="HCAU-txt-md fw-bold">
+                            11/05/2023
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between px40 mb32 g160">
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Principal balance</dt>
+                        <dd class="HCAU-txt-md fw-bold">$ 17,154.62</dd>
+                    </dl>
+                </div>
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Principal paid</dt>
+                        <dd class="HCAU-txt-md fw-bold">$ 4,175.00</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="loan-items-wrap d-flex flex-wrap px32 py20">
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan01.svg" alt="">
+                    </div>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Contract number</dt>
+                        <dd class="HCAU-txt-sm fw-bold">H2023NA000248</dd>
+                    </dl>
+                </div>
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan02.svg" alt="">
+                    </div>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Loan amount</dt>
+                        <dd class="HCAU-txt-sm fw-bold">$ 23,300.00</dd>
+                    </dl>
+                </div>
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan03.svg" alt="">
+                    </div>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Interest rate</dt>
+                        <dd class="HCAU-txt-sm fw-bold">2.6%</dd>
+                    </dl>
+                </div>
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items d-flex justify-content-start">
+                        <div class="loan-items-ico">
+                            <img src="/static/html/pc/genesis/img/svg/ico_loan04.svg" alt="">
+                        </div>
+                        <dl class="loan-text d-flex justify-content-between">
+                            <dt class="HCAU-txt-sm fw-normal">Term</dt>
+                            <dd class="HCAU-txt-sm fw-bold">11/02/2022~11/02/2027</dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan05.svg" alt="">
+                    </div>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Interest-only period</dt>
+                        <dd class="HCAU-txt-sm fw-bold">01/09/2023~01/09/2023</dd>
+                    </dl>
+                </div>
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan11.svg" alt="">
+                    </div>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Amortization period</dt>
+                        <dd class="HCAU-txt-sm fw-bold">01/09/2023~01/09/2027</dd>
+                    </dl>
+                </div>
+
+
+
+                <div class="border-top-dashed gray pt20 d-flex">
+                    <div class="loan-items d-flex justify-content-start">
+                        <div class="loan-items-ico">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="36" height="36" rx="18" fill="white"/><path d="M26.8889 9H9.11111V11.2222H26.8889V9ZM28 20.1111V17.8889L26.8889 12.3333H9.11111L8 17.8889V20.1111H9.11111V26.7778H20.2222V20.1111H24.6667V26.7778H26.8889V20.1111H28ZM18 24.5556H11.3333V20.1111H18V24.5556Z" fill="#A2A2A2"/></svg>
+                        </div>
+                        <dl class="loan-text min d-flex justify-content-between">
+                            <dt class="HCAU-txt-sm fw-normal">Dealership name</dt>
+                            <dd class="HCAU-txt-sm fw-bold">Sydney Branch(000-000-0000)</dd>
+                        </dl>
+                    </div>
+                    <div class="loan-items d-flex justify-content-start">
+                        <div class="loan-items-ico">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="36" height="36" rx="18" fill="white"/><path d="M16.3821 16.4087C18.7041 16.4087 20.5865 14.5264 20.5865 12.2044C20.5865 9.88236 18.7041 8 16.3821 8C14.0601 8 12.1777 9.88236 12.1777 12.2044C12.1777 14.5264 14.0601 16.4087 16.3821 16.4087Z" fill="#A2A2A2"/><path d="M19.0762 24.0947H23.632V25.0059H19.0762V24.0947Z" fill="#A2A2A2"/><path d="M15.1723 25.3965V27.349C15.1723 27.5216 15.2408 27.6872 15.3629 27.8092C15.4849 27.9313 15.6505 27.9999 15.8231 27.9999H26.8872C27.0598 27.9999 27.2253 27.9313 27.3474 27.8092C27.4695 27.6872 27.538 27.5216 27.538 27.349V20.8407C27.538 20.6681 27.4695 20.5026 27.3474 20.3805C27.2253 20.2585 27.0598 20.1899 26.8872 20.1899H22.3314V19.2332C22.3314 19.0606 22.2628 18.895 22.1408 18.773C22.0187 18.6509 21.8532 18.5823 21.6806 18.5823C21.5079 18.5823 21.3424 18.6509 21.2203 18.773C21.0983 18.895 21.0297 19.0606 21.0297 19.2332V20.1899H19.7281V17.8599C18.6221 17.6793 17.5034 17.5879 16.3828 17.5866C13.9115 17.5761 11.4678 18.107 9.22367 19.1421C8.85432 19.3164 8.54271 19.593 8.32584 19.939C8.10896 20.2851 7.99592 20.6862 8.00011 21.0946V25.3965H15.1723ZM26.2364 26.6982H16.4739V21.4916H21.0297V21.7649C21.0297 21.9375 21.0983 22.1031 21.2203 22.2251C21.3424 22.3472 21.5079 22.4157 21.6806 22.4157C21.8532 22.4157 22.0187 22.3472 22.1408 22.2251C22.2628 22.1031 22.3314 21.9375 22.3314 21.7649V21.4916H26.2364V26.6982Z" fill="#A2A2A2"/></svg>
+                        </div>
+                        <dl class="loan-text d-flex justify-content-between">
+                            <dt class="HCAU-txt-sm fw-normal">BM name</dt>
+                            <dd class="HCAU-txt-sm fw-bold">Hong gil dong</dd>
+                        </dl>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <div class="HCAU-txt-md point-red">12p_Lease</div>
+        <div class="border-box black mb40">
+            <div class="loan-items-tlt bg-box d-flex justify-content-between align-items-center border-bottom">
+                <div class="HCAU-lead-txt fw-bold">Lease Finance_MT</div>
+                <div class="loan-btn">
+                    <div class="HCAU-h2 lg">$ 2,034.00<span class="HCAU-txt-sm fw-normal"> / 15th</span></div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between px40 mt32 mb20 g160">
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Overdue</dt>
+                        <dd class="HCAU-txt-md fw-bold">
+                            <span class="point">Completed</span>
+                            <span class="point-red ms-3">Overdue</span>
+                            <span class="point-blue ms-3">Scheduled</span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Next due date</dt>
+                        <dd class="HCAU-txt-md fw-bold">
+                            11/05/2023
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between px40 mb32 g160">
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Principal balance</dt>
+                        <dd class="HCAU-txt-md fw-bold">$ 17,154.62</dd>
+                    </dl>
+                </div>
+                <div class="w-50">
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Principal paid</dt>
+                        <dd class="HCAU-txt-md fw-bold">$ 4,175.00</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="loan-items-wrap d-flex flex-wrap px32 py20">
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan01.svg" alt="">
+                    </div>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Contract number</dt>
+                        <dd class="HCAU-txt-sm fw-bold">H2023NA000248</dd>
+                    </dl>
+                </div>
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items d-flex justify-content-start">
+                        <div class="loan-items-ico">
+                            <img src="/static/html/pc/genesis/img/svg/ico_loan04.svg" alt="">
+                        </div>
+                        <dl class="loan-text d-flex justify-content-between">
+                            <dt class="HCAU-txt-sm fw-normal">Term</dt>
+                            <dd class="HCAU-txt-sm fw-bold">11/02/2022~11/02/2027</dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan06.svg" alt="">
+                    </div>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">RV % / RV amount</dt>
+                        <dd class="HCAU-txt-sm fw-bold">45% / $ 104,850.00</dd>
+                    </dl>
+                </div>
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items-ico">
+                        <img src="/static/html/pc/genesis/img/svg/ico_loan02.svg" alt="">
+                    </div>
+                    <dl class="loan-text d-flex justify-content-between">
+                        <dt class="HCAU-txt-sm fw-normal">Lease payment<br/>(GST included)</dt>
+                        <dd class="HCAU-txt-sm fw-bold">$ 7,954.57</dd>
+                    </dl>
+                </div>
+
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items d-flex justify-content-start">
+                        <div class="loan-items-ico">
+                            <img src="/static/html/pc/genesis/img/svg/ico_loan08.svg" alt="">
+                        </div>
+                        <dl class="loan-text d-flex justify-content-between">
+                            <dt class="HCAU-txt-sm fw-normal">Agreed mileage</dt>
+                            <dd class="HCAU-txt-sm fw-bold">10,000km</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="loan-items d-flex justify-content-start">
+                    <div class="loan-items d-flex justify-content-start min">
+                        <div class="loan-items-ico">
+                            <img src="/static/html/pc/genesis/img/svg/ico_loan10.svg" alt="">
+                        </div>
+                        <dl class="loan-text d-flex justify-content-between">
+                            <dt class="HCAU-txt-sm fw-normal">MT service subscription status</dt>
+                            <dd class="HCAU-txt-sm">
+
+                                <span class="fw-bold">Y</span>
+                                <span class="HCAU-tooltip">
+                                    <a href=""><img src="/static/html/pc/genesis/img/svg/ico_tooltip.svg" alt=""></a>
+                                    <div class="HCAU-tooltip-inner">
+                                        <div class="HCAU-tooltip-arrow"></div>
+                                        <div class="HCAU-tooltip-cont HCAU-txt-sm">
+                                            <div class="d-flex justify-content-between">
+                                                <p>fines</p>
+                                                <p>$ 120.00</p>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>toll gate fee</p>
+                                                <p>$ 290.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </span>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="border-top-dashed gray pt20 d-flex">
+                    <div class="loan-items d-flex justify-content-start">
+                        <div class="loan-items-ico">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="36" height="36" rx="18" fill="white"/><path d="M26.8889 9H9.11111V11.2222H26.8889V9ZM28 20.1111V17.8889L26.8889 12.3333H9.11111L8 17.8889V20.1111H9.11111V26.7778H20.2222V20.1111H24.6667V26.7778H26.8889V20.1111H28ZM18 24.5556H11.3333V20.1111H18V24.5556Z" fill="#A2A2A2"/></svg>
+                        </div>
+                        <dl class="loan-text min d-flex justify-content-between">
+                            <dt class="HCAU-txt-sm fw-normal">Dealership name</dt>
+                            <dd class="HCAU-txt-sm fw-bold">Sydney Branch(000-000-0000)</dd>
+                        </dl>
+                    </div>
+                    <div class="loan-items d-flex justify-content-start">
+                        <div class="loan-items-ico">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="36" height="36" rx="18" fill="white"/><path d="M16.3821 16.4087C18.7041 16.4087 20.5865 14.5264 20.5865 12.2044C20.5865 9.88236 18.7041 8 16.3821 8C14.0601 8 12.1777 9.88236 12.1777 12.2044C12.1777 14.5264 14.0601 16.4087 16.3821 16.4087Z" fill="#A2A2A2"/><path d="M19.0762 24.0947H23.632V25.0059H19.0762V24.0947Z" fill="#A2A2A2"/><path d="M15.1723 25.3965V27.349C15.1723 27.5216 15.2408 27.6872 15.3629 27.8092C15.4849 27.9313 15.6505 27.9999 15.8231 27.9999H26.8872C27.0598 27.9999 27.2253 27.9313 27.3474 27.8092C27.4695 27.6872 27.538 27.5216 27.538 27.349V20.8407C27.538 20.6681 27.4695 20.5026 27.3474 20.3805C27.2253 20.2585 27.0598 20.1899 26.8872 20.1899H22.3314V19.2332C22.3314 19.0606 22.2628 18.895 22.1408 18.773C22.0187 18.6509 21.8532 18.5823 21.6806 18.5823C21.5079 18.5823 21.3424 18.6509 21.2203 18.773C21.0983 18.895 21.0297 19.0606 21.0297 19.2332V20.1899H19.7281V17.8599C18.6221 17.6793 17.5034 17.5879 16.3828 17.5866C13.9115 17.5761 11.4678 18.107 9.22367 19.1421C8.85432 19.3164 8.54271 19.593 8.32584 19.939C8.10896 20.2851 7.99592 20.6862 8.00011 21.0946V25.3965H15.1723ZM26.2364 26.6982H16.4739V21.4916H21.0297V21.7649C21.0297 21.9375 21.0983 22.1031 21.2203 22.2251C21.3424 22.3472 21.5079 22.4157 21.6806 22.4157C21.8532 22.4157 22.0187 22.3472 22.1408 22.2251C22.2628 22.1031 22.3314 21.9375 22.3314 21.7649V21.4916H26.2364V26.6982Z" fill="#A2A2A2"/></svg>
+                        </div>
+                        <dl class="loan-text d-flex justify-content-between">
+                            <dt class="HCAU-txt-sm fw-normal">BM name</dt>
+                            <dd class="HCAU-txt-sm fw-bold">Hong gil dong</dd>
+                        </dl>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </section>
+    <section class="mt40">
+        <div class="title-area d-flex align-items-center mb42">
+            <div class="HCAU-txt-md fw-bold">Payment information</div>
+        </div>
+
+        <div class="d-flex justify-content-between g120">
+            <div class="d-flex flex-column w-100">
+                <dl class="d-flex justify-content-between border-bottom py16 pt-0 align-items-center">
+                    <dt class="HCAU-txt-sm gray04 fw-normal">Frequency / Due date</dt>
+                    <dd class="HCAU-txt-md fw-bold">Monthly / 11th</dd>
+                </dl>
+                <dl class="d-flex justify-content-between border-bottom py16 align-items-center">
+                    <dt class="HCAU-txt-sm gray04 fw-normal">Method</dt>
+                    <dd class="HCAU-txt-md fw-bold">Direct debit</dd>
+                </dl>
+                <dl class="d-flex justify-content-between border-bottom py16 align-items-center">
+                    <dt class="HCAU-txt-sm gray04 fw-normal" style="min-width:180px">Bank / Account number</dt>
+                    <dd class="HCAU-txt-md fw-bold text-end">Australia and New Zealand Banking Group Limited / 2635*****9</dd>
+                </dl>
+                <dl class="d-flex justify-content-between py16 align-items-center">
+                    <dt class="HCAU-txt-sm gray04 fw-normal">Billing statement</dt>
+                    <dd class="HCAU-txt-md fw-bold">No Send</dd>
+                </dl>
+            </div>
+
+            <div class="d-flex flex-column w360 g12 justify-content-center">
+                <button type="button" class="HCAU-btn btn-md w360">Amount due</button>
+                <button type="button" class="HCAU-btn btn-md w360">Copy of contract</button>
+                <button type="button" class="HCAU-btn btn-md w360">Payment transactions</button>
+            </div>
+        </div>
     </section>
 
 
@@ -1999,11 +2814,6 @@
         <div class="HCAU-nodata type01 flex-column border-top">
             <img src="/static/html/pc/genesis/img/svg/ico_no_matches_hd01.svg" alt="">
             <div class="HCAU-lead-txt">No matches found.</div>
-        </div>
-
-        <div class="HCAU-nodata type02 flex-column border-top border-bottom">
-            <img src="/static/html/pc/genesis/img/svg/ico_no_matches_hd02.svg" alt="">
-            <div class="HCAU-txt-sm">No matches found.</div>
         </div>
     </section>
 
@@ -2201,52 +3011,54 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt28">
+                <div class="mt40">
                     <div class="d-flex align-items-baseline g16">
                         <div class="HCAU-txt-md fw-bold">Date to make a payment</div>
-                        <!-- <div class="ms-auto">
-                            <input class="form-check-input HCAU-form" type="checkbox" value="" id="payall">
-                            <label class="form-check-label gray04" for="payall">
-                                Pay all
-                            </label>
-                        </div> -->
                     </div>
-                    <div class="pt-3 d-flex g12">
-                        <div class="flex-grow-1">
-                            <input type="text" class="form-control HCAU-form" id="" aria-describedby="" value="2023.05.17" readonly="">
+
+                    <div class="pt20">
+                        <div id="sandbox2" class="HCAU-calendar">
+                            <input type="text" class="form-control HCAU-form date" disabled  value="19/05/2023">
+                            <span>
+                                <img src="/static/html/m/genesis/img/ico_calendar.svg" alt="">
+                            </span>
                         </div>
-                        <div>
-                            <button type="button" class="HCAU-btn btn-smd full">Select date</button>
-                        </div>
+                        <div class="toggle-button"></div>
                     </div>
-                </div>
-                <div class="border-top-dashed mt32 mb32"></div>
-                <div class="border-box black">
-                    <div class="px32 py16">
-                        <div class="HCAU-txt-sm">
-                            <span class="fw-bold">Principal balance with early payoff applied to your account 2,000,000 $</span>
-                        </div>
-                        <div class="HCAU-txt-sm mt-1">
-                            <span class="fw-bold gray04">Interest and fees 63,327 $</span>
-                        </div>
-                        <div class="d-flex gap-3 mt-1">
-                            <p class="HCAU-txt-sm gray04">Interest : 21,717 $</p>
-                            <p class="HCAU-txt-sm gray04">Early payoff fee : 35,559 $</p>
-                            <p class="HCAU-txt-sm gray04">Late fee : 4,051 $</p>
-                        </div>
-                    </div>
-                    <div class="px32 py16 border-top">
-                        <dl class="d-flex justify-content-between HCAU-txt-sm">
-                            <dt class="fw-normal">The amount you request to pay off early is</dt>
-                            <dd class="fw-bold">3,063,327 $</dd>
-                        </dl>
+                    <div class="mt40 text-center mb40">
+                        <button type="button" class="HCAU-btn btn-large">Apply</button>
                     </div>
                 </div>
-                <p class="HCAU-info-msg">
-                    Once you make a payment, you can check your updated repayment amounts on the payment schedule<br>
-                    with early payoff applied to your account.
-                </p>
-            </div>
+                <div class="border-top-dashed black"></div>
+                <div class="bg-box2 edge py32 px24">
+
+                    <div class="border-box black">
+                        <div class="d-flex px32 py28 align-items-center justify-content-between">
+                            <div class="HCAU-txt-sm fw-bold">The amount you request to payout early is</div>
+                            <div class="HCAU-h2 fw-bold">$ 3,063,327.00</div>
+                        </div>
+                        <div class="px32 py28 border-top">
+                            <div class="d-flex g20">
+                                <div class="HCAU-txt-sm">Interest : $  250.00</div>
+                                <div class="HCAU-txt-sm">Early payout fee : $  10.00</div>
+                                <div class="HCAU-txt-sm">Late fee : $  10.00</div>
+                                <div class="HCAU-txt-sm">Other fee : $  15.00</div>
+                                <div class="HCAU-txt-sm">tax : $  40.51</div>
+                            </div>
+                            <div class="mt12">
+                                <div class="HCAU-txt-sm">Suspense : <span class="point-red"> $ 100.00</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom d-flex px16 pt40 pb20 align-items-center justify-content-between">
+                        <div class="HCAU-txt-sm">Principal balance with early payout applied to your account </div>
+                        <div class="HCAU-txt-md fw-bold"> $ 3,063,327.00</div>
+                    </div>
+                    <p class="HCAU-info-msg">
+                        Once you make a payment, you can check your updated repayment amounts on the payment schedule with early payout applied to your account.
+                    </p>
+                </div>
+                
 
         </div>
     </section>
@@ -2262,81 +3074,94 @@
         </div>
 
         <!-- request step -->
-        <div class="request-step d-flex g20">
-            <div class="border-box flex-fix p-4">
+        <div class="request-step d-flex g40">
+            <div class="border-box flex-fix">
                 <div class="HCAU-txt-md fw-bold">STEP1</div>
-                <p class="HCAU-txt-sm mt-3">Search the product you have chosen</p>
+                <p class="HCAU-txt-sm">Search the product you have chosen</p>
                 <img src="/static/html/pc/genesis/img/svg/ico_step_arrow.svg" alt="">
             </div>
-            <div class="border-box flex-fix p-4">
+            <div class="border-box flex-fix">
                 <div class="HCAU-txt-md fw-bold">STEP2</div>
-                <p class="HCAU-txt-sm mt-3">
-                    Select the account to pay
-                    off and how much you
-                    want to pay off
+                <p class="HCAU-txt-sm">
+                    Select the account to payout and how much you want to payout
                 </p>
                 <img src="/static/html/pc/genesis/img/svg/ico_step_arrow.svg" alt="">
             </div>
-            <div class="border-box flex-fix p-4">
+            <div class="border-box flex-fix">
                 <div class="HCAU-txt-md fw-bold">STEP3</div>
-                <p class="HCAU-txt-sm mt-3">
-                    Choose a payment
-                    method and get
-                    authenticated via OTP
+                <p class="HCAU-txt-sm">
+                    Choose a payment method and get authenticated via OTP
                 </p>
                 <img src="/static/html/pc/genesis/img/svg/ico_step_arrow.svg" alt="">
             </div>
-            <div class="border-box flex-fix p-4">
+            <div class="border-box flex-fix">
                 <div class="HCAU-txt-md fw-bold">STEP4</div>
-                <p class="HCAU-txt-sm mt-3">Search the product you have chosen</p>
+                <p class="HCAU-txt-sm">
+                    Complete your early payout request
+                </p>
             </div>
         </div>
         <!-- //request-step -->
         <br>
-        <div class="border-box black pb32">
-            <div class="d-flex align-items-center justify-content-between border-bottom py-3 px32">
-                <p class="HCAU-txt-sm">Payment due date</p>
+        
+        
+        <div class="py28 HCAU-txt-md fw-bold ">Date of settlement</div>
+        <div id="sandbox2" class="HCAU-calendar flex-fix">
+            <input type="text" class="HCAU-form form-control date" value="19/01/2023" disabled>
+            <span>
+                <img src="/static/html/m/genesis/img/ico_calendar_readonly.svg" alt="">
+            </span>
+            <div class="toggle-button"></div>
+        </div>
+
+        <div class="border-box black mt20">
+            <div class="d-flex align-items-center justify-content-between border-bottom py24 px32">
+                <p class="HCAU-txt-sm">Frequency / Due Date</p>
                 <p class="HCAU-txt-sm">Monthly 15</p>
             </div>
-            <div class="d-flex align-items-center justify-content-between border-bottom py-3 px32">
+            <div class="d-flex align-items-center justify-content-between border-bottom py24 px32">
                 <p class="HCAU-txt-sm">Date of termination</p>
-                <p class="HCAU-txt-sm">2020.04.19</p>
+                <p class="HCAU-txt-sm">19/04/2020</p>
             </div>
-            <div class="d-flex align-items-center justify-content-between border-bottom py-3 px32">
-                <p class="HCAU-txt-sm">Date of maturity</p>
-                <p class="HCAU-txt-sm">2020.04.19</p>
+            <div class="d-flex align-items-center justify-content-between border-bottom py24 px32">
+                <p class="HCAU-txt-sm">Payment of maturityy</p>
+                <p class="HCAU-txt-sm">19/04/2020</p>
             </div>
-            <div class="d-flex align-items-center justify-content-between border-bottom py-3 px32">
+            <div class="d-flex align-items-center justify-content-between border-bottom py24 px32">
                 <p class="HCAU-txt-sm">Car’s residual value</p>
-                <p class="HCAU-txt-sm">8,000,000 $</p>
+                <p class="HCAU-txt-sm">$ 8,000,000.00</p>
             </div>
-            <div class="d-flex align-items-center justify-content-between pt32 px32">
-                <p class="HCAU-txt-md fw-bold">Total settlement cost</p>
-                <p class="HCAU-lead-txt fw-bold">8,100,000 $</p>
-            </div>
-            <div class="border-top mx32 my20"></div>
-            <div class="d-flex align-items-center justify-content-between mx32">
-                <p class="d-flex g08">
-                    <span class="HCAU-txt-xs fw-bold num-circle">1</span>
-                    <span class="HCAU-txt-sm fw-bold">Base lease payoff</span>
-                </p>
-                <p class="HCAU-txt-sm fw-bold">8,000,000 $</p>
-            </div>
-            <div class="d-flex align-items-center justify-content-between mx32 pt12">
-                <p class="d-flex g08">
-                    <span class="HCAU-txt-xs fw-bold num-circle">2</span>
-                    <span class="HCAU-txt-sm fw-bold">Interests</span>
-                </p>
-                <p class="HCAU-txt-sm fw-bold">100,000 $</p>
-            </div>
-            <div class="d-flex align-items-center justify-content-between mx32 pt12">
-                <p class="d-flex g08">
-                    <span class="HCAU-txt-xs fw-bold num-circle">3</span>
-                    <span class="HCAU-txt-sm fw-bold">Termination fee</span>
-                </p>
-                <p class="HCAU-txt-sm fw-bold">0 $</p>
+
+            <div class="bg-box2">
+                <div class="p32">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p class="d-flex g08">
+                            <span class="HCAU-txt-sm fw-bold">① Base lease payout</span>
+                        </p>
+                        <p class="HCAU-txt-sm fw-bold">$ 8,000,000.00</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between pt20">
+                        <p class="d-flex g08">
+                            <span class="HCAU-txt-sm fw-bold">② Early Term Fee</span>
+                        </p>
+                        <p class="HCAU-txt-sm fw-bold">$ 100,000.00</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between pt20">
+                        <p class="d-flex g08">
+                            <span class="HCAU-txt-sm fw-bold">③ Termination Fee</span>
+                        </p>
+                        <p class="HCAU-txt-sm fw-bold">$ 0.00</p>
+                    </div>                                     
+                    <div class="border-top gray03 mt20">
+                        <div class="d-flex align-items-center justify-content-between mt20">
+                            <p class="HCAU-txt-md fw-bold">Total settlement cost</p>
+                            <p class="HCAU-lead-txt fw-bold">$ 8,100,000.00</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        
     </section>
 
 
@@ -2347,7 +3172,7 @@
                 Payment is completed only when the requested amount is deposited.
             </div>
             <div class="mt-5">
-                <div class="bg-box d-flex justify-content-center align-items-center g40 p10 h52">
+                <div class="bg-box d-flex justify-content-center align-items-center g40 p32 h52">
                     <div class="HCAU-txt-sm">
                         Product name :
                         <span class="fw-bold">New Car Loan_Standard</span>
@@ -2364,20 +3189,24 @@
             </div>
             <div class="mt40">
                 <div class="border-box black">
-                    <div class="px32 py16">
-                        <dl class="d-flex justify-content-between HCAU-txt-sm">
-                            <dt class="fw-normal gray04">BPAY reference number</dt>
-                            <dd class="fw-bold">275394859173943</dd>
+                    <div class="d-flex justify-content-between px32 py28">
+                        <dl class="w380 d-flex justify-content-between">
+                            <dt class="HCAU-txt-sm fw-normal">Method</dt>
+                            <dd class="HCAU-txt-md fw-bold">Direct debit</dd>
+                        </dl>
+                        <dl class="w380 d-flex justify-content-between">
+                            <dt class="HCAU-txt-sm fw-normal">Bank</dt>
+                            <dd class="HCAU-txt-md fw-bold">Australia and New Zealand Banking Group Limited</dd>
                         </dl>
                     </div>
-                    <div class="d-flex justify-content-between px32 py16 border-top">
-                        <dl class="w320 d-flex justify-content-between HCAU-txt-sm">
-                            <dt class="fw-normal gray04">Date requested</dt>
-                            <dd class="fw-bold">2023-05-11</dd>
+                    <div class="d-flex justify-content-between px32 py28 border-top">
+                        <dl class="w380 d-flex justify-content-between">
+                            <dt class="HCAU-txt-sm fw-normal">Account number</dt>
+                            <dd class="HCAU-txt-md fw-bold">12341**********1</dd>
                         </dl>
-                        <dl class="w320 d-flex justify-content-between HCAU-txt-sm">
-                            <dt class="fw-normal gray04">Amount requested</dt>
-                            <dd class="fw-bold">2,795,457 $</dd>
+                        <dl class="w380 d-flex justify-content-between">
+                            <dt class="HCAU-txt-sm fw-normal">Account holder</dt>
+                            <dd class="HCAU-txt-md fw-bold">Juan Sebastian Veron</dd>
                         </dl>
                     </div>
                 </div>
@@ -2670,45 +3499,46 @@
             </div>
             <div class="col-md-12">
                 <label for="validationCustom11" class="HCAU-txt-md fw-bold mb-3">Agree to terms and conditions</label>
-                <div class="border-box edge p32">
-                    <div class="">
+                <div class="border-box gray03">
+                    <div class="p24 py15 bg-box">
                         <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck1">
                         <label class="HCAU-txt-sm fw-bold" for="defaultCheck1">
                             Full agreement
                         </label>
                     </div>
-                    <div class="border-top mt20"></div>
-                    <div class="d-flex justify-content-between mt20">
-                        <div>
-                            <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck2">
-                            <label class="HCAU-txt-sm" for="defaultCheck2">
-                                Consent to collection/use/handling consignment of personal information
-                            </label>
+                    <div class="border-top p24">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck2">
+                                <label class="HCAU-txt-sm" for="defaultCheck2">
+                                    Consent to collection/use/handling consignment of personal information
+                                </label>
+                            </div>
+                            <div>
+                                <a href="#" class="link">View content</a>
+                            </div>
                         </div>
-                        <div>
-                            <a href="#" class="link">View content</a>
+                        <div class="d-flex justify-content-between mt20">
+                            <div>
+                                <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck3">
+                                <label class="HCAU-txt-sm" for="defaultCheck3">
+                                    Consent to collection/use/handling consignment of personal information
+                                </label>
+                            </div>
+                            <div>
+                                <a href="#" class="link">View content</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-between mt20">
-                        <div>
-                            <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck3">
-                            <label class="HCAU-txt-sm" for="defaultCheck3">
-                                Consent to collection/use/handling consignment of personal information
-                            </label>
-                        </div>
-                        <div>
-                            <a href="#" class="link">View content</a>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-between mt20">
-                        <div>
-                            <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck4">
-                            <label class="HCAU-txt-sm" for="defaultCheck4">
-                                Consent to collection/use/handling consignment of personal information
-                            </label>
-                        </div>
-                        <div>
-                            <a href="#" class="link">View content</a>
+                        <div class="d-flex justify-content-between mt20">
+                            <div>
+                                <input class="form-check-input HCAU-form" type="checkbox" value="" id="defaultCheck4">
+                                <label class="HCAU-txt-sm" for="defaultCheck4">
+                                    Consent to collection/use/handling consignment of personal information
+                                </label>
+                            </div>
+                            <div>
+                                <a href="#" class="link">View content</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2728,7 +3558,48 @@
     </section>
 
 
+    <!-- g-notice -->
+    <div class="g-notice mx-40">
+        <dl>
+            <dt>
+                <span class="ico-gnotice"><img src="/static/html/pc/genesis/img/svg/ico_notice.svg" alt=""></span>
+                <span>Guidance Notice</span>
+            </dt>
+            <dd>
+                <ul class="HCAU-bullet-list">
+                    <li>
+                        The estimated billing amount may differ from the actual billing amount.
+                    </li>
+                    <li>
+                        The expected payment amount may differ from the actual payment amount.
+                    </li>
+                    <li>
+                        Details of the payment amount are available through the payment history.
+                        <a href="#none" class="link">Payment details</a>
+                    </li>
+                    <li>
+                        You can view and print the entire redemption schedule for products that are in use or terminated.
+                        <a href="#none" class="link">Repayment schedule</a>
+                    </li>
+                    <li class="point-red">
+                        For GFV products and Lease products, prepayment is possible through 0000-0000.
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+    <!-- //g-notice -->
 
+    <div class="d-flex gap-3 border-top-dashed gray03 mt80 pt32">
+        <div class="border-box p-4 flex-fix edge flex-column">
+            <p class="HCAU-txt-sm fw-bold">Do you want to view your account details?</p>
+            <p class="mt20"><a href="#none" class="link">Account information</a></p>
+        </div>
+        <div class="border-box p-4 flex-fix edge flex-column">
+            <p class="HCAU-txt-sm fw-bold">Do you want to change your personal information?</p>
+            <p class="mt20"><a href="#none" class="link">View personal information</a></p>
+        </div>
+    </div>
 
 </div>
 <!-- HCAU-detail -->
