@@ -73,7 +73,24 @@ body.main .usage-detail .carousel-box{margin-top:20px;position: relative;backgro
 body.main .usage-detail .carousel-box .carousel{}
 body.main .usage-detail .carousel-box .carousel-inner{}
 body.main .usage-detail .carousel-box .carousel-item{position:relative;padding: 36px 28px 28px}
-body.main .usage-detail .carousel-box .carousel-item .HCAU-badge{position: absolute;left: 28px;top: 0;background: #FEEBEE;color: #E63312;border-radius: 0;}
+body.main .usage-detail .carousel-box .carousel-item .HCAU-badge{
+  position: absolute;
+  left: 28px;
+  top: 0;
+  border-radius: 0;
+}
+body.main .usage-detail .carousel-box .carousel-item .HCAU-badge.flag01{
+  background: #FEEBEE;
+  color: #E63312;
+}
+body.main .usage-detail .carousel-box .carousel-item .HCAU-badge.flag02{
+  background: #EBEFF3;
+  color: #002C5F;
+}
+body.main .usage-detail .carousel-box .carousel-item .HCAU-badge.flag03{
+  background: #F5F5F5;
+  color: #999999;
+}
 body.main .usage-detail .carousel-box .carousel-item .title{border-bottom: 1px solid #999;padding-bottom: 12px;text-align: center;}
 body.main .usage-detail .carousel-box .carousel-item .title a{font-size: 18px;font-weight: 700;color: #fff;}
 body.main .usage-detail .carousel-box .carousel-item .details{margin-top: 20px;}

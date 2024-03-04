@@ -31,46 +31,41 @@
 <!-- HCAU-detail -->
 <div class="HCAU-detail">
 
-    <div class="HCAU-search-bar d-flex g20">
-        <div class="d-flex g20 flex-grow-1">
-            <div class="dropdown flex-grow-1" style="width: 255px;">
+    <div class="HCAU-search-bar">
+        <div class="d-flex justify-content-between g20">
+            <div class="dropdown flex-fix">
+                <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+                    Finance type (all)
+                </button>
+                <ul class="dropdown-menu">
+                    <li> <a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
+                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
+                </ul>
+            </div>
+            <div class="dropdown flex-fix">
                 <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
                     Product name (all)
                 </button>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
                     <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
-
                 </ul>
             </div>
-            <div class="">
-                <div id="" class="HCAU-calendar">
-                    <input type="text" class="form-control HCAU-form" value="April 2023">
-                    <span>
-                        <img src="/static/html/m/genesis/img/ico_calendar.svg" alt="">
-                    </span>
-                </div>
-                <div class="toggle-button"></div>
-            </div>
-            <div class="dropdown flex-fill">
+        </div>
+        <div class="d-flex justify-content-between g20 mt20">
+            <div class="dropdown flex-fix">
                 <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
-                    Repayment frequency (all)
+                    Model (all)
                 </button>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
                     <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 3</a></li>
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 4</a></li>
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 5</a></li>
-
                 </ul>
             </div>
-        </div>
-        <div class="search-btn">
-            <button type="button" class="HCAU-btn btn-smd full">Search</button>
+            <div class="dropdown flex-fix d-flex g12">
+                <input type="text" class="form-control HCAU-form flex-grow-1" placeholder="Enter contract number" value="">
+                <button type="button" class="HCAU-btn btn-smd">Search</button>
+            </div>
         </div>
     </div>
     <section class="mt40">
@@ -83,13 +78,14 @@
             <div class="d-flex py28 px32 g20 border-bottom align-items-center">
                 <div>
                     <div class="d-flex gap-2 align-items-center">
-                        <div class="HCAU-txt-md fw-bold">New Car Loan_Standard – H2023NA000248</div>
+                        <div class="HCAU-txt-md fw-bold">Chattle Mortagage_Only interest – H2023NA000248</div>
                         <!-- <div class="d-flex">
                             <span class="HCAU-badge type01">Overdue</span>
                         </div> -->
                     </div>
                     <div class="d-flex gap-3 pt12">
-                        <span class="HCAU-txt-sm">Repayment period : 01/09/2023~01/09/2027</span>
+                        <div class="HCAU-txt-sm">Model : Santa Fe</div>
+                        <div class="HCAU-txt-sm">Total billing amount : $ 13,232.00</div>
                     </div>
                 </div>
                 <div class="ms-auto text-end">
@@ -99,13 +95,14 @@
             <div class="d-flex py28 px32 g20 border-bottom align-items-center">
                 <div>
                     <div class="d-flex gap-2">
-                        <span class="HCAU-txt-md fw-bold">New Car Loan_Standard – H2023NA000248</span>
+                        <span class="HCAU-txt-md fw-bold">Chattle Mortagage_Only interest – H2023NA000248</span>
                         <!-- <div class="d-flex">
                             <span class="HCAU-badge type01">Overdue</span>
                         </div> -->
                     </div>
                     <div class="d-flex gap-3 pt12">
-                        <span class="HCAU-txt-sm">Period of use : 01/09/2023~01/09/2027</span>
+                        <div class="HCAU-txt-sm">Model : Santa Fe</div>
+                        <div class="HCAU-txt-sm">Total billing amount : $ 13,232.00</div>
                     </div>
                 </div>
                 <div class="ms-auto text-end">
@@ -154,10 +151,10 @@
                         <li>
                             When you request a statement, the amount due at the time of your request will appear on the statement.
                         </li>                    
-                        <li>
+                        <!-- <li>
                             To check payment status of the amounts billed on the statement, please go to Product details.
                             <a href="#none" class="link">Account information</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </ul>
             </dd>

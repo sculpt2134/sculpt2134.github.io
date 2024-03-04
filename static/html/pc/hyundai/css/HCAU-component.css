@@ -279,8 +279,16 @@ a {
   width: 92px;
 }
 
+.w100 {
+  width: 100px;
+}
+
 .w120 {
   width: 120px;
+}
+
+.w138 {
+  width: 138px;
 }
 
 .w140 {
@@ -301,6 +309,10 @@ a {
 
 .w210 {
   width: 210px;
+}
+
+.w300 {
+  width: 300px;
 }
 
 .w320 {
@@ -352,6 +364,12 @@ a {
 
 .border-bottom-dashed {
   border-bottom: 1px dashed #999;
+}
+
+.pt16.border-bottom-dashed.gray02 {
+  border-bottom: 1px dashed #e5e5e5;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .HCAU-h1 {
@@ -1282,7 +1300,7 @@ a {
   background: #999;
 }
 .HCAU-table .table .table-active td {
-  background: rgba(230, 51, 18, 0.05);
+  background: rgba(230, 51, 18, 0.02);
   box-shadow: none;
 }
 .HCAU-table .table .tb-inner-flex > div {

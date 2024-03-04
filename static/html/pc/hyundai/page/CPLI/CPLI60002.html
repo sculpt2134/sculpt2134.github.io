@@ -37,25 +37,72 @@
                 <div class="radio-group">
                     <div class="radio-group-inner">
                         <div>
-                            <input type="radio" class="btn-check" name="options-base" id="option5" autocomplete="off" checked>
-                            <label class="HCAU-btn btn-smd" for="option5">1 month</label>
+                            <input type="radio" class="btn-check" name="options-base" id="option1" autocomplete="off">
+                            <label class="HCAU-btn btn-smd" for="option1">1 mo.</label>
                         </div>
                         <div>
-                            <input type="radio" class="btn-check" name="options-base" id="option6" autocomplete="off">
-                            <label class="HCAU-btn btn-smd" for="option6">3 month</label>
+                            <input type="radio" class="btn-check" name="options-base" id="option2" autocomplete="off">
+                            <label class="HCAU-btn btn-smd" for="option2">3 mo.</label>
                         </div>
                         <div>
-                            <input type="radio" class="btn-check" name="options-base" id="option7" autocomplete="off">
-                            <label class="HCAU-btn btn-smd" for="option7">6 month</label>
+                            <input type="radio" class="btn-check" name="options-base" id="option3" autocomplete="off">
+                            <label class="HCAU-btn btn-smd" for="option3">6 mo.</label>
                         </div>
                         <div>
-                            <input type="radio" class="btn-check" name="options-base" id="option8" autocomplete="off">
-                            <label class="HCAU-btn btn-smd" for="option8">Enter manually</label>
+                            <input type="radio" class="btn-check" name="options-base" id="option4" autocomplete="off" checked>
+                            <label class="HCAU-btn btn-smd" for="option4">Manually</label>
                         </div>
                     </div>
                 </div>
-                <div class="d-flex g08 rg0 align-items-top flex-wrap w-full">
-                    <div id="sandbox2" class="calendar w192">
+                <div class="d-flex g08 rg0 align-items-top flex-wrap w300">
+                    <div id="sandbox2" class="calendar flex-fix">
+                        <input type="text" class="HCAU-form form-control date" value="19/01/2023">
+                        <span>
+                            <img src="/static/html/pc/hyundai/img/svg/ico_calendar.svg" alt="">
+                        </span>
+                        <div class="toggle-button"></div>
+                    </div>
+                    <div class="h44 d-flex align-items-center">
+                        <div>~</div>
+                    </div>
+                    <div id="sandbox2" class="calendar flex-fix">
+                        <input type="text" class="HCAU-form form-control date" value="19/01/2023">
+                        <span>
+                            <img src="/static/html/pc/hyundai/img/svg/ico_calendar.svg" alt="">
+                        </span>
+                        <div class="toggle-button"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown flex-fix d-flex g12">
+                <input type="text" class="form-control HCAU-form flex-grow-1" placeholder="Enter contract number" value="">
+                <button type="button" class="HCAU-btn btn-smd">Search</button>
+            </div>
+        </div>
+        <div class="HCAU-search-bar d-flex g12 justify-content-between mt20">
+            <div class="d-flex g20">
+                <div class="radio-group">
+                    <div class="radio-group-inner">
+                        <div>
+                            <input type="radio" class="btn-check" name="options-base2" id="option5" autocomplete="off" checked>
+                            <label class="HCAU-btn btn-smd" for="option5">1 mo.</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="btn-check" name="options-base2" id="option6" autocomplete="off">
+                            <label class="HCAU-btn btn-smd" for="option6">3 mo.</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="btn-check" name="options-base2" id="option7" autocomplete="off">
+                            <label class="HCAU-btn btn-smd" for="option7">6 mo.</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="btn-check" name="options-base2" id="option8" autocomplete="off">
+                            <label class="HCAU-btn btn-smd" for="option8">Manually</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex g08 rg0 align-items-top flex-wrap w300">
+                    <div id="sandbox2" class="calendar flex-fix">
                         <input type="text" class="HCAU-form form-control date" value="19/01/2023" disabled>
                         <span>
                             <img src="/static/html/pc/hyundai/img/svg/ico_calendar_readonly.svg" alt="">
@@ -65,7 +112,7 @@
                     <div class="h44 d-flex align-items-center">
                         <div>~</div>
                     </div>
-                    <div id="sandbox2" class="calendar w192">
+                    <div id="sandbox2" class="calendar flex-fix">
                         <input type="text" class="HCAU-form form-control date" value="19/01/2023" disabled>
                         <span>
                             <img src="/static/html/pc/hyundai/img/svg/ico_calendar_readonly.svg" alt="">
@@ -74,8 +121,9 @@
                     </div>
                 </div>
             </div>
-            <div class="search-btn">
-                <button type="button" class="HCAU-btn btn-smd full">Search</button>
+            <div class="dropdown flex-fix d-flex g12">
+                <input type="text" class="form-control HCAU-form flex-grow-1" placeholder="Enter contract number" value="">
+                <button type="button" class="HCAU-btn btn-smd">Search</button>
             </div>
         </div>
     </section>
@@ -88,7 +136,7 @@
                         <button type="button" class="HCAU-btn btn-sm">Download</button>
                     </div>
                     <div>
-                        <button type="button" class="HCAU-btn btn-sm">Send mail</button>
+                        <button type="button" class="HCAU-btn btn-sm">E-mail</button>
                     </div>
                 </div>
             </div>
@@ -101,9 +149,10 @@
             <div class="HCAU-table type02">
                 <table class="table">
                     <colgroup>
-                        <col style="width:100px;">
-                        <col style="width:100px;">
-                        <col style="width:160px;">
+                        <col style="width:90px;">
+                        <col style="width:140px;">
+                        <col style="width:90px;">
+                        <col style="width:120px;">
                         <col>
                         <col style="width:120px;">
                     </colgroup>
@@ -113,21 +162,7 @@
                                 <span class="HCAU-txt-sm">11/11/2022</span>
                             </td>
                             <td class="align-middle">
-                                <span class="HCAU-txt-sm">Deposit</span>
-                            </td>
-                            <td class="align-middle">
-                                <span class="HCAU-txt-sm">Direct debit</span>
-                            </td>
-                            <td class="align-middle">
-                                <span class="HCAU-txt-sm">100***********9</span>
-                            </td>
-                            <td class="align-middle text-end">
-                                <span class="HCAU-txt-sm">8,797.00 $</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="align-middle">
-                                <span class="HCAU-txt-sm">11/11/2022</span>
+                                <span class="HCAU-txt-sm">12345678912345</span>
                             </td>
                             <td class="align-middle">
                                 <span class="HCAU-txt-sm">Deposit</span>
@@ -139,29 +174,75 @@
                                 <span class="HCAU-txt-sm">100***********9</span>
                             </td>
                             <td class="align-middle text-end">
-                                <span class="HCAU-txt-sm">8,797.00 $</span>
+                                <span class="HCAU-txt-sm fw-bold">$ 8,797.00</span>
                             </td>
                         </tr>
                         <tr>
                             <td class="align-middle">
                                 <span class="HCAU-txt-sm">11/11/2022</span>
+                            </td>
+                            <td class="align-middle">
+                                <span class="HCAU-txt-sm">12345678912345</span>
                             </td>
                             <td class="align-middle">
                                 <span class="HCAU-txt-sm">Deposit</span>
                             </td>
                             <td class="align-middle">
-                                <span class="HCAU-txt-sm">Virtual account</span>
+                                <span class="HCAU-txt-sm">Direct debit</span>
                             </td>
                             <td class="align-middle">
-                                <span class="HCAU-txt-sm">Shinhan Bank 100***********9</span>
+                                <span class="HCAU-txt-sm">100***********9</span>
                             </td>
                             <td class="align-middle text-end">
-                                <span class="HCAU-txt-sm">8,797.00 $</span>
+                                <span class="HCAU-txt-sm fw-bold">$ 8,797.00</span>
                             </td>
                         </tr>
                         <tr>
                             <td class="align-middle">
                                 <span class="HCAU-txt-sm">11/11/2022</span>
+                            </td>
+                            <td class="align-middle">
+                                <span class="HCAU-txt-sm">12345678912345</span>
+                            </td>
+                            <td class="align-middle">
+                                <span class="HCAU-txt-sm">Deposit</span>
+                            </td>
+                            <td class="align-middle">
+                                <span class="HCAU-txt-sm">Direct debit</span>
+                            </td>
+                            <td class="align-middle">
+                                <span class="HCAU-txt-sm">100***********9</span>
+                            </td>
+                            <td class="align-middle text-end">
+                                <span class="HCAU-txt-sm fw-bold">$ 8,797.00</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle">
+                                <span class="HCAU-txt-sm">11/11/2022</span>
+                            </td>
+                            <td class="align-middle">
+                                <span class="HCAU-txt-sm">12345678912345</span>
+                            </td>
+                            <td class="align-middle">
+                                <span class="HCAU-txt-sm">Deposit</span>
+                            </td>
+                            <td class="align-middle">
+                                <span class="HCAU-txt-sm">BPAY</span>
+                            </td>
+                            <td class="align-middle">
+                                <span class="HCAU-txt-sm">Reference number  182731827312311​</span>
+                            </td>
+                            <td class="align-middle text-end">
+                                <span class="HCAU-txt-sm fw-bold">$ 8,797.00</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle">
+                                <span class="HCAU-txt-sm">11/11/2022</span>
+                            </td>
+                            <td class="align-middle">
+                                <span class="HCAU-txt-sm">12345678912345</span>
                             </td>
                             <td class="align-middle">
                                 <span class="HCAU-txt-sm">Deposit</span>
@@ -173,12 +254,15 @@
                                 <span class="HCAU-txt-sm">Biller Code 18273</span>
                             </td>
                             <td class="align-middle text-end">
-                                <span class="HCAU-txt-sm">8,797.00 $</span>
+                                <span class="HCAU-txt-sm fw-bold">$ 8,797.00</span>
                             </td>
                         </tr>
                         <tr>
                             <td class="align-middle">
                                 <span class="HCAU-txt-sm">11/11/2022</span>
+                            </td>
+                            <td class="align-middle">
+                                <span class="HCAU-txt-sm">12345678912345</span>
                             </td>
                             <td class="align-middle">
                                 <span class="HCAU-txt-sm">Refund</span>
@@ -190,7 +274,7 @@
                                 <span class="HCAU-txt-sm">100***********9</span>
                             </td>
                             <td class="align-middle text-end">
-                                <span class="HCAU-txt-sm point-red">- 8,797.00 $</span>
+                                <span class="HCAU-txt-sm fw-bold point-red">$ -8,797.00</span>
                             </td>
                         </tr>
                     </tbody>

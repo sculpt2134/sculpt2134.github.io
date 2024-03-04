@@ -98,6 +98,7 @@ html,body{overflow:auto;}
          .carousel.slide.product .title{font-size:24px}
          .carousel.slide.product .p-detail{margin-top:75px}
          .carousel.slide.product .carousel-item.one + button[data-bs-slide="prev"]{display:none}
+         .carousel.slide.vertical .carousel-inner{cursor: pointer;}
          .faq-inner{}
          .faq-inner ul li{background:rgba(255,255,255,.1);padding:6px 8px;border-radius: 8px;margin-bottom:4px;position: relative;}
          .faq-inner ul li dl{display:flex;justify-content:flex-start;align-items:center;}

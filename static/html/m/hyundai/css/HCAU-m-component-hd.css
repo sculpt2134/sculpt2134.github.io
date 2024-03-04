@@ -438,7 +438,7 @@ a {
 }
 
 .color-complete {
-  color: #002C5F;
+  color: #000;
 }
 
 .color-overdue {
@@ -446,7 +446,7 @@ a {
 }
 
 .color-scheduled {
-  color: #00AAD2;
+  color: #002C5F;
 }
 
 header {
@@ -1273,16 +1273,16 @@ textarea.HCAU-form.form-control {
   box-sizing: border-box;
   min-width: 180px;
   max-width: 180px;
-  background: #444;
+  background: #000;
   position: absolute;
-  left: -20px;
-  bottom: 25px;
+  left: -18px;
+  bottom: 30px;
   border-radius: 8px;
 }
 .HCAU-tooltip .HCAU-tooltip-inner .HCAU-tooltip-arrow {
   width: 10px;
   height: 10px;
-  background: #444;
+  background: #000;
   position: absolute;
   left: 23px;
   bottom: -4px;
@@ -1364,7 +1364,7 @@ textarea.HCAU-form.form-control {
   padding: 3px 8px;
   border-radius: 15px;
   vertical-align: middle;
-  min-width: 60px;
+  min-width: 50px;
   text-align: center;
 }
 .HCAU-badge.type01 {
@@ -1405,6 +1405,11 @@ textarea.HCAU-form.form-control {
   min-width: 83px;
   text-align: center;
   font-weight: 700;
+}
+.HCAU-badge.type07 {
+  color: #999;
+  background: #f5f5f5;
+  border: 1px solid #999;
 }
 
 .HCAU-nodata.type01 {
@@ -1584,7 +1589,7 @@ textarea.HCAU-form.form-control {
 }
 
 .HCAU-search-bar > div + div {
-  margin-top: 12px;
+  margin-top: 20px;
 }
 .HCAU-search-bar .radio-group {
   display: flex;
@@ -1635,6 +1640,34 @@ textarea.HCAU-form.form-control {
 }
 .card-list.border-box .bg-box {
   border-radius: 8px;
+}
+.card-list.border-box .card-list-button {
+  margin: 1rem -1rem 0;
+  display: flex;
+}
+.card-list.border-box .card-list-button.disabled {
+  border-color: #E5E5E5 !important;
+}
+.card-list.border-box .card-list-button button {
+  flex: 1 1 100%;
+  position: relative;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 16px 0;
+}
+.card-list.border-box .card-list-button button + button:before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 20px;
+  background: #d5d5d5;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10px;
+}
+.card-list.border-box .card-list-button button:disabled {
+  color: #E5E5E5;
 }
 
 .HCAU-result-msg {

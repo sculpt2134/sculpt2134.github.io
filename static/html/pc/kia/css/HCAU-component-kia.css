@@ -283,6 +283,10 @@ a {
   width: 92px;
 }
 
+.w100 {
+  width: 100px;
+}
+
 .w120 {
   width: 120px;
 }
@@ -305,6 +309,10 @@ a {
 
 .w210 {
   width: 210px;
+}
+
+.w300 {
+  width: 300px;
 }
 
 .w320 {
@@ -356,6 +364,12 @@ a {
 
 .border-bottom-dashed {
   border-bottom: 1px dashed #697279;
+}
+
+.pt16.border-bottom-dashed.gray02 {
+  border-bottom: 1px dashed #e5e5e5;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .HCAU-h1 {
@@ -858,15 +872,15 @@ a {
   background: #FEEBEE;
 }
 .HCAU-badge.type02 {
-  color: #05141f;
-  background: #EBEFF3;
-}
-.HCAU-badge.type03 {
   color: #5d7d2b;
   background: #EBF5F9;
 }
+.HCAU-badge.type03 {
+  color: #43B100;
+  background: #EAF6E3;
+}
 .HCAU-badge.type04 {
-  color: #999;
+  color: #697279;
   background: #f5f5f5;
 }
 .HCAU-badge.small {
@@ -2190,4 +2204,4 @@ dl.justify-content-between dd {
   text-align: right !important;
   align-items: center;
   display: flex;
-}
+}/*# sourceMappingURL=HCAU-component-kia.css.map */

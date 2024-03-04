@@ -25,12 +25,11 @@
                     <!-- HCAU-detail -->
                     <div class="HCAU-detail">
                         <!-- Button trigger modal -->
-                        <button type="button" class="HCAU-btn btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            MCPLI50006_P01
-                        </button>
+                        <p><button type="button" class="HCAU-btn btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal1">MCPLI50006_P01_Lease</button></p>
+                        <p class="mt-2"><button type="button" class="HCAU-btn btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal2">MCPLI50006_P01_Loan</button></p>
 
                         <!-- Modal -->
-                        <div class="HCAU-modal modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="HCAU-modal modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-fullscreen">
                                 <div class="modal-content">
                                     <div class="modal-top">
@@ -60,13 +59,10 @@
                                                     your personal information
                                                     first.
                                                 </li>
-                                                <li class="no-bullet mt-2">
-                                                    <a href="#none" class="link HCAU-txt-sm ml-0">Change the email</a>
-                                                </li>
                                             </ul>
-
                                             <div class="mt32">
-                                                <input type="text" class="form-control HCAU-form text-decoration-underline" id="form-txt04" aria-describedby="" value="hyundai@hyundaicapital.com" readonly="" />
+                                                <div class="mx12"><a href="#none" class="link HCAU-txt-sm ml-0">Change the email</a></div>
+                                                <div class="mt12"><input type="text" class="form-control HCAU-form text-decoration-underline" id="form-txt04" aria-describedby="" value="hyundai@hyundaicapital.com" readonly=""></div>
                                             </div>
                                         </div>
                                     </div>
@@ -81,6 +77,56 @@
                                 </div>
                             </div>
                         </div>
+
+
+                        <!-- Modal -->
+                        <div class="HCAU-modal modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-fullscreen">
+                                <div class="modal-content">
+                                    <div class="modal-top">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                            <img src="/static/html/m/genesis/img/ico_modal_close.svg" alt="Close" />
+                                        </button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <div class="modal-header">
+                                            <div class="HCAU-h1" id="exampleModalLabel">
+                                                Get a copy of your billing statement
+                                                via email
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <ul class="HCAU-bullet-list">
+                                                <li class="HCAU-txt-sm">
+                                                    We will send a copy of yourbilling statement to the email address associated with your account.
+                                                </li>
+                                                <li class="HCAU-txt-sm">
+                                                    If you want to change theemail you want to receive, please change the email in your membership information.
+                                                </li>
+                                                <li class="HCAU-txt-sm">
+                                                    For business customers, member information can be changed through the customer center (0000-0000).
+                                                </li>
+                                            </ul>
+                                            <div class="mt32">
+                                                <div class="mx12"><a href="#none" class="link HCAU-txt-sm ml-0">Change the email</a></div>
+                                                <div class="mt12"><input type="text" class="form-control HCAU-form text-decoration-underline" id="form-txt04" aria-describedby="" value="hyundai@hyundaicapital.com" readonly=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="btn-cta-wrap">
+                                            <!-- <button type="button" class="HCAU-btn btn-cta gray03" data-bs-dismiss="modal">Cancel</button> -->
+                                            <button type="button" class="HCAU-btn btn-cta primary">
+                                                Request statements
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                     <!-- //HCAU-detail -->
                 </div>

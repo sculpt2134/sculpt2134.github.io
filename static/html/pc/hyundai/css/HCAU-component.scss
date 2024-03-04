@@ -4,7 +4,7 @@ $secondary01 : #e4dcd3;
 $secondary02 : #F6F3F2;
 $point : #00aad2;
 $point-red : #E63312;
-$point-red-rgb : rgba(230, 51, 18, 0.05);
+$point-red-rgb : rgba(230, 51, 18, 0.02);
 $border-color : #e5e5e5;
 $bg-color : #fafafa;
 $white : #fff;
@@ -96,12 +96,15 @@ a{text-decoration: none;}
 .w50{width: 50px;}
 .w80{width: 80px;}
 .w92{width: 92px;}
+.w100{width: 100px;}
 .w120{width: 120px;}
+.w138{width: 138px;}
 .w140{width: 140px;}
 .w180{width: 180px;}
 .w192{width: 192px;}
 .w200{width: 200px;}
 .w210{width: 210px;}
+.w300{width: 300px;}
 .w320{width: 320px;}
 .w350{width: 350px;}
 .w540{width: 540px;}
@@ -118,7 +121,7 @@ a{text-decoration: none;}
 }
 .border-top-dashed{border-top:1px dashed $gray03;}
 .border-bottom-dashed{border-bottom:1px dashed $gray03;}
-
+.pt16.border-bottom-dashed.gray02{border-bottom:1px dashed $gray02;padding-bottom:20px;padding-top:20px}
 //폰트 사이즈
 .HCAU-h1{color: $black;font-size: $font-size-h1;text-transform: uppercase;font-weight: 700;line-height: 1.2;}
 .HCAU-h2{color: $black;font-size: $font-size-h2;font-weight: 700;}
@@ -991,7 +994,7 @@ top:15px;}
                 }
             }
         }
-    }
+    }    
 }
 .HCAU-table.type02{
     th,

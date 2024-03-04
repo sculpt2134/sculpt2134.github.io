@@ -79,7 +79,7 @@ html,body{overflow:auto;}
          .carousel.slide.vertical{padding:22px;background: rgba(28,27,27,.24);width:450px;height:80px;overflow: hidden;border-radius: 8px;color:#fff;font-weight: bold;}
          .carousel.slide.vertical .carousel-inner{height:40px;line-height: 40px;}
          .promo .HCAU-h2{color:#fff;font-size:24px;margin-bottom:12px;text-transform: uppercase;}
-         .carousel-indicators .active{background-color: #000;}
+         .carousel-indicators .active{background-color: #002c5f;}
          .d-flex.col12.justify-content-between ul li{float:left;padding:6px}
          .d-flex.col12.justify-content-between ul li:nth-child(odd){padding-left:0}
          .d-flex.col12.justify-content-between ul li:nth-child(even){padding-right:0}
@@ -98,6 +98,7 @@ html,body{overflow:auto;}
          .carousel.slide.product .title{font-size:24px}
          .carousel.slide.product .p-detail{margin-top:75px}
          .carousel.slide.product .carousel-item.one + button[data-bs-slide="prev"]{display:none}
+         .carousel.slide.vertical .carousel-inner{cursor: pointer;}
          .faq-inner{}
          .faq-inner ul li{background:rgba(255,255,255,.1);padding:6px 8px;border-radius: 8px;margin-bottom:4px;position: relative;}
          .faq-inner ul li dl{display:flex;justify-content:flex-start;align-items:center;}

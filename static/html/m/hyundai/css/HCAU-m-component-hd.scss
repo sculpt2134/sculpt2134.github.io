@@ -137,9 +137,9 @@ a{text-decoration: none;}
 .point-red{color: $point-red}
 .point-color{color: $point}
 .primary-color{color: $primary}
-.color-complete{color: #002C5F;}
-.color-overdue{color: #E63312;}
-.color-scheduled{color: #00AAD2;}
+.color-complete{color: $black;}
+.color-overdue{color: $point-red;}
+.color-scheduled{color: $primary;}
 
 //header
 header{
@@ -950,15 +950,15 @@ textarea.HCAU-form.form-control{
 		box-sizing: border-box;
 		min-width: 180px;
 		max-width: 180px;
-		background: $gray04;
+		background: $black;
 		position: absolute;
-		left: -20px;
-		bottom: 25px;
+		left: -18px;
+		bottom: 30px;
 		border-radius: 8px;
 		.HCAU-tooltip-arrow {
 			width: 10px;
 			height: 10px;
-			background: $gray04;
+			background: $black;
 			position: absolute;
 			left: 23px;
 			bottom: -4px;
@@ -1065,7 +1065,7 @@ textarea.HCAU-form.form-control{
     padding: 3px 8px;
     border-radius: 15px;
     vertical-align: middle;
-    min-width: 60px;
+    min-width: 50px;
     text-align: center;
     &.type01{color: $point-red;background: #FEEBEE;border: 1px solid $point-red}
     &.type02{color: $primary;background: #EBEFF3;border: 1px solid #3F6FA6;}
@@ -1073,6 +1073,7 @@ textarea.HCAU-form.form-control{
     &.type04{color: $primary;background: #EBEFF3;border: 1px solid #EBEFF3;min-width: 83px;text-align: center;font-weight: 700;}
     &.type05{color: $point;background: #EBF5F9;border: 1px solid #EBF5F9;min-width: 83px;text-align: center;font-weight: 700;}
     &.type06{color: $gray03;background: $gray01;border: 1px solid $gray01;min-width: 83px;text-align: center;font-weight: 700;}
+    &.type07{color: $gray03;background: $gray01;border: 1px solid $gray03;}
 }
 
 // nodata
@@ -1316,7 +1317,7 @@ textarea.HCAU-form.form-control{
 
 //search bar
 .HCAU-search-bar{
-    > div + div{margin-top: 12px;}
+    > div + div{margin-top: 20px;}
     .radio-group{
         display: flex;
         flex-wrap: wrap;
@@ -1368,6 +1369,34 @@ textarea.HCAU-form.form-control{
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.07);
     overflow: hidden;
     .bg-box{border-radius: 8px;}
+    .card-list-button{
+        margin: 1rem -1rem 0;
+        display: flex;
+        &.disabled{
+            border-color:#E5E5E5 !important;
+        }
+        button{
+            flex:1 1 100%;
+            position: relative;
+            font-size: $font-size-sm;
+            font-weight: 700;
+            padding: 16px 0;
+        }
+        button + button:before{
+            content:'';
+            display: block;
+            width: 1px;
+            height: 20px;
+            background: $gray02;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -10px;
+        }
+        button:disabled{
+            color: #E5E5E5;
+        }
+    }
 }
 
 // result msg

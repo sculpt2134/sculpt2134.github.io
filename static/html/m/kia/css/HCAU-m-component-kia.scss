@@ -147,9 +147,9 @@ a{text-decoration: none;}
 .point-red{color: $point-red}
 .point-color{color: $point}
 .primary-color{color: $primary}
-.color-complete{color: #5D7D2B;}
-.color-overdue{color: #EA0029;}
-.color-scheduled{color: #43B100;}
+.color-complete{color: $black;}
+.color-overdue{color: $point-red;}
+.color-scheduled{color: $point;}
 
 //header
 header {
@@ -996,8 +996,8 @@ textarea.HCAU-form.form-control {
         max-width: 180px;
         background: $gray04;
         position: absolute;
-        left: -20px;
-        bottom: 25px;
+        left: -18px;
+        bottom: 30px;
         border-radius: 8px;
         .HCAU-tooltip-arrow {
             width: 10px;
@@ -1111,7 +1111,7 @@ textarea.HCAU-form.form-control {
     padding: 3px 8px;
     border-radius: 15px;
     vertical-align: middle;
-    min-width: 60px;
+    min-width: 50px;
     text-align: center;
     &.type01 {
         color: $point-red;
@@ -1119,9 +1119,9 @@ textarea.HCAU-form.form-control {
         border: 1px solid $point-red;
     }
     &.type02 {
-        color: $primary;
-        background: #ebeff3;
-        border: 1px solid #3f6fa6;
+        color: #5D7D2B;
+        background: #EFF3EB;
+        border: 1px solid #5D7D2B;
     }
     &.type03 {
         color: #43B100;
@@ -1131,6 +1131,7 @@ textarea.HCAU-form.form-control {
     &.type04{color: $primary;background: #EBEFF3;border: 1px solid #EBEFF3;min-width: 83px;text-align: center;font-weight: 700;}
     &.type05{color: $point;background: #EBF5F9;border: 1px solid #EBF5F9;min-width: 83px;text-align: center;font-weight: 700;}
     &.type06{color: $gray03;background: $gray01;border: 1px solid $gray01;min-width: 83px;text-align: center;font-weight: 700;}
+    &.type07{color: $gray03;background: $gray01;border: 1px solid $gray03;}
 }
 
 // nodata
@@ -1330,7 +1331,7 @@ textarea.HCAU-form.form-control {
 //search bar
 .HCAU-search-bar {
     > div + div {
-        margin-top: 12px;
+        margin-top: 20px;
     }
     .radio-group {
         display: flex;
@@ -1384,6 +1385,31 @@ textarea.HCAU-form.form-control {
     overflow: hidden;
     .bg-box {
         border-radius: 8px;
+    }
+    .card-list-button{
+        margin: 1rem -1rem 0;
+        display: flex;
+        button{
+            flex:1 1 100%;
+            position: relative;
+            font-size: $font-size-sm;
+            font-weight: 700;
+            padding: 16px 0;
+        }
+        button + button:before{
+            content:'';
+            display: block;
+            width: 1px;
+            height: 20px;
+            background: $gray02;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -10px;
+        }
+        button:disabled{
+            color: #e5e5e5;
+        }
     }
 }
 
