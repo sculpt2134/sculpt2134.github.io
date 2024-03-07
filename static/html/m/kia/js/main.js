@@ -29,6 +29,18 @@
         // console.log(tabName);
     });
   });
+  document.querySelectorAll('.HCAU-tab-radio3 input[type="radio"]').forEach(radio => {
+    radio.addEventListener('change', function () {
+        const tabName = this.value;
+        document.querySelectorAll('.tab-radio-cont > div').forEach(div => {
+            div.style.display = 'none';
+        });
+        document.querySelectorAll(`.${tabName}`).forEach(selectedDiv => {
+            selectedDiv.style.display = 'block';
+        });
+        // console.log(tabName);
+    });
+  });
   document.addEventListener('DOMContentLoaded', () => {
     const button = document.querySelector('.native-scroll > div > button.active');
     const left = button.getBoundingClientRect().left;
@@ -45,5 +57,5 @@
     }
   };
   window.addEventListener('scroll', handleScroll);
-  
+
   //const carousel = new bootstrap.Carousel('#MortorsPromo','#FinancePromo')

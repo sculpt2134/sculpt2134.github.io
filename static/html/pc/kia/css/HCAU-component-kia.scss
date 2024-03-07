@@ -426,6 +426,8 @@ a{text-decoration: none;}
         min-width: 120px;
         text-align: center;
         padding: 11px 16px;
+        
+        &.t14{font-size:13px}
     }
     &.btn-large{
         font-size: 15px;
@@ -701,6 +703,7 @@ a{text-decoration: none;}
     box-shadow: none;
     border-radius: 4px;
 }
+::placeholder,.HCAU-form.form-control::placeholder, .HCAU-form.form-select::placeholder{color:$gray03}
 .HCAU-form.form-control:focus,
 .HCAU-form.form-select:focus,
 .HCAU-btn.dropdown-toggle:focus{

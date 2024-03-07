@@ -399,6 +399,7 @@ a {
 .HCAU-txt-md {
   color: #000;
   font-size: 16px;
+  letter-spacing: -0.01em;
 }
 
 .HCAU-txt-sm {
@@ -728,6 +729,9 @@ a {
   min-width: 120px;
   text-align: center;
   padding: 11px 16px;
+}
+.HCAU-btn.btn-md.t14 {
+  font-size: 14px;
 }
 .HCAU-btn.btn-large {
   font-size: 16px;
@@ -1126,6 +1130,10 @@ a {
   border-radius: 4px;
 }
 
+::placeholder, .HCAU-form.form-control::placeholder, .HCAU-form.form-select::placeholder {
+  color: #999;
+}
+
 .HCAU-form.form-control:focus,
 .HCAU-form.form-select:focus,
 .HCAU-btn.dropdown-toggle:focus {
@@ -1378,6 +1386,11 @@ a {
 .HCAU-table.type02 td {
   padding-top: 28px;
   padding-bottom: 28px;
+}
+
+.HCAU-table.type03 th,
+.HCAU-table.type03 td {
+  padding: 24px 20px;
 }
 
 .separator span + span::before {

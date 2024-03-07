@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP Scroll Effect</title>
+
+    <!-- <link href="https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet"> -->
+    <style>
+       /* font setting */
+@font-face {font-family:'HYRegular';src:url("../font/Youandi_Modern_TextRegular.eot");src:local('※'), url("../font/Youandi_Modern_TextRegular.woff") ;font-weight:normal;font-style:normal;}
+@font-face {font-family:'HYBold';src:url("../font/Youandi_Modern_TextBold.eot");src:local('※'), url("../font/Youandi_Modern_TextBold.woff");font-weight:normal;font-style:normal;}
+@font-face {font-family:'HYExtraBold';src:url("../font/Youandi_Modern_HeadExtraBold.eot");src:local('※'), url("../font/Youandi_Modern_HeadExtraBold.woff");font-weight:normal;font-style:normal;}
+html, body{height:100%;}
+#wrap{min-height:100%;}
+/* reset */
+html, body {margin:0;padding:0;color:#666666;font-family:'HYRegular', 'HYBold', 'HYExtraBold', dotum, '돋움', sans-serif;font-size:13px;line-height:1.5;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;}
+header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption {display:block}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, button, address, em, img, small, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td, hr {margin:0; padding:0; /*word-break:break-all; */ }
+a {color:#333333;text-decoration:none; word-break:break-all;}
+a:link, a:visited, a:hover, a:active, a:focus {text-decoration:none;}
+strong, b {font-weight:normal;}
+img {border:0 none;vertical-align:middle}
+/*img, button {border:0 none;vertical-align:middle}*/
+h1, h2, h3, h4, h5, h6 {color:#333333;line-height:1;font-weight:normal;}
+p {margin:0;}
+ol, ul, li {list-style:none}
+dl dt {font-weight:normal;}
+figure,figcaption {margin:0;}
+fieldset {border:0;margin:0;padding:0;}
+table {width:100%;border-collapse:collapse;border-spacing:0}
+table th {font-weight:normal;}
+caption, legend {overflow:hidden;width:0;height:0;margin:0;padding:0;font-size:0;text-indent:-9999px;}
+form, fieldset, iframe {display:block;border:0}
+hr {height:0; display:none}
+i, em, address {font-style:normal}
+label, button {cursor:pointer}
+input{ime-mode:inactive;}
+input:-ms-clear, input:-ms-reveal, input::-ms-clear, input::-ms-reveal{display:none;width:0;height:0;}
+input[type=text]:-ms-clear,input[type=text]::-ms-clear,input[type=text]:-ms-reveal, input[type=text]::-ms-reveal{display:none;width:0;height:0;}
+input::-ms-clear, input::-ms-reveal{display:none;width:0;height:0;}
+input[type="radio"],input[type="checkbox"] {margin:0;padding:0;}
+input[type="text"],input[type="password"],input[type="tel"],textarea {margin:0;padding:0;color:#333333;font-family:'HYRegular', Arial, Helvetica, sans-serif;font-size:13px;line-height:1;/*outline:0;*/}
+textarea {resize:none;overflow-x:hidden;overflow-y:auto;line-height:150%;/*outline:0;*/}/*2022-10-31 EDK 웹접근성 : outline 제거*/
+button {overflow:visible;margin:0;padding:0;border:0 solid transparent;color:#333333;font-family:'HYRegular', dotum, '돋움', sans-serif;font-size:13px;line-height:1;cursor:pointer;}
+button::-moz-focus-inner {border:0;padding:0;}
+/* common */
+.ellipsis {display:block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.blind {position:absolute !important;left:0 !important;top:0 !important;box-sizing:content-box;overflow:hidden;width:0 !important;height:0 !important;margin:0 !important;padding:0 !important;font-size:0 !important;line-height:0 !important; border-radius: 0 !important; border: 0 !important;}
+.w_100p{width:100% !important;} /* 17.12.01 add by YYK */
+        #parallax__title {
+            position: fixed;
+            left:0px;
+            top: 0px;
+            width:100%;
+            height:40px;
+            z-index: 1000;
+            padding:20px 20px 0;
+        }
+        #parallax__title h1 {
+            /* font-size: 30px;
+           border-bottom: 1px dashed #fff;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            font-weight: 400;*/
+            display: inline-block;
+        }
+        #parallax__title p {
+            font-size: 16px;
+        }
+        #parallax__title ul {
+            margin-top: 10px;
+        }
+        #parallax__title li {
+            display: inline;
+        }
+        #parallax__title li a {
+            width: 20px; 
+            height: 20px;
+            border-radius: 50%;
+            border: 1px dashed #fff;
+            display: inline-block;
+            text-align: center;
+            line-height: 20px;
+            font-size: 12px;
+        }
+        #parallax__title li.active a {
+            background: #fff;
+            color: #000;
+        }
+
+        /* parallax__cont */
+        #parallax__cont {
+            max-width: 1920px;
+            width: 98%;
+            margin: 0 auto;
+            /* background-color: rgba(255,255,255,0.1); */
+        }
+        .parallax__item {
+            width: 1920px;
+            max-width: 100vw;
+            margin: 30vw auto;
+            /* background-color: rgba(255,255,255,0.3); */
+            text-align: left;
+            margin-right: 0;
+            position: relative;
+            padding-top: 15vw;
+        }
+        .parallax__item:nth-child(even) {
+            margin-left: 0;
+            text-align: right;
+        }
+        .parallax__item__num {
+            font-size: 35vw;
+            position: absolute;
+            left: -5vw;
+            top: -13vw;
+            opacity: 0.07;
+            font-family: "Lato";
+            font-weight: 100;
+        }
+        .parallax__item:nth-child(even) .parallax__item__num {
+            left: auto;
+            right: -5vw;
+        }
+        .parallax__item__title {
+            padding-bottom: 5px;
+            font-weight: 400;
+        }
+        .parallax__item__imgWrap {
+            width: 100%;
+            padding-bottom: 56.25%;
+            background: #000;
+            position: relative;
+            overflow: hidden;
+        }
+        .parallax__item__img {
+            position: absolute;
+            left: -5%; 
+            top: -5%;
+            width: 110%;
+            height: 110%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            filter: saturate(0%);
+            transition: all 1s;
+        }
+        .parallax__item__img:hover {
+            filter: saturate(100%);
+            transform: scale(1.025);
+        }
+        #section1 .parallax__item__img {
+            background-image: url(assets/img/images01@2.jpg);
+        }
+        #section2 .parallax__item__img {
+            background-image: url(assets/img/images02@2.jpg);
+        }
+        #section3 .parallax__item__img {
+            background-image: url(assets/img/images03@2.jpg);
+        }
+        #section4 .parallax__item__img {
+            background-image: url(assets/img/images04@2.jpg);
+        }
+        #section5 .parallax__item__img {
+            background-image: url(assets/img/images05@2.jpg);
+        }
+        #section6 .parallax__item__img {
+            background-image: url(assets/img/images06@2.jpg);
+        }
+        #section7 .parallax__item__img {
+            background-image: url(assets/img/images07@2.jpg);
+        }
+        #section8 .parallax__item__img {
+            background-image: url(assets/img/images08@2.jpg);
+        }
+        #section9 .parallax__item__img {
+            background-image: url(assets/img/images09@2.jpg);
+        }
+        .parallax__item__desc {
+            font-size: 4vw;
+            line-height: 1.4;
+            margin-top: -5vw;
+            margin-left: -4vw;
+            z-index: 100;
+            position: relative;
+            word-break: keep-all;
+        }
+        .parallax__item:nth-child(even) .parallax__item__desc {
+            margin-left: auto;
+            margin-right: -4vw;
+        }
+        .btn-guide-arrow {
+            position: absolute;
+            z-index: 1;
+            bottom: 3%;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+            color: #fff;
+            -webkit-animation: arrow-down infinite 1.5s;
+            animation: arrow-down infinite 1.5s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header id="parallax__title" style="display:flex;justify-content:space-between;width:1440px;margin:0 auto;background:#000;position:fixed;">
+        <h1><svg width="170" height="30" viewBox="0 0 170 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.98117 0C3.58275 0 0 3.67261 0 8.18134V30H2.66383V8.18134C2.66383 5.17022 5.04889 2.72535 7.98633 2.72535H162.019C164.956 2.72535 167.341 5.16493 167.341 8.18134V30H170V8.18134C170 3.66731 166.422 0 162.019 0H7.98117Z" fill="white"/><path d="M24.5156 24.2529C24.5156 24.4646 24.3865 24.544 24.1542 24.544H22.1822C21.955 24.544 21.8776 24.4646 21.8776 24.2318V18.7282C21.8776 18.4741 21.7072 18.3366 21.4594 18.3366H16.2815C16.0543 18.3366 15.9201 18.4689 15.9201 18.7282V24.2318C15.9201 24.4646 15.791 24.544 15.5794 24.544H13.566C13.3802 24.544 13.3027 24.4646 13.3027 24.2529V10.5839C13.3027 10.3669 13.3802 10.2558 13.566 10.2558H15.5794C15.7859 10.2558 15.9201 10.3722 15.9201 10.5839V15.8705C15.9201 16.1245 16.0543 16.2409 16.2815 16.2409H21.4646C21.7124 16.2409 21.8828 16.1245 21.8828 15.8705V10.5839C21.8828 10.3669 21.955 10.2558 22.1873 10.2558H24.1594C24.3865 10.2558 24.5208 10.3722 24.5208 10.5839V24.2529H24.5156Z" fill="white"/><path d="M29.2745 24.7398C27.8136 24.7398 27.0547 23.5332 27.0547 22.5013V14.0025C27.0547 13.7484 27.1476 13.632 27.3748 13.632H29.2694C29.4604 13.632 29.5895 13.7484 29.5895 14.0025V22.2103C29.5895 22.4431 29.6824 22.5595 29.9508 22.5595H33.4252C33.6523 22.5595 33.8072 22.4431 33.8072 22.2103V14.0025C33.8072 13.7484 33.9001 13.632 34.1273 13.632H36.0271C36.2336 13.632 36.3678 13.7484 36.3678 14.0025V26.3909C36.3678 26.7031 36.2748 26.9942 36.1406 27.2852L34.85 29.4443C34.7416 29.6401 34.5661 29.7566 34.3751 29.7566H34.1273C33.9001 29.7566 33.8072 29.619 33.8072 29.4073V23.9248C33.8072 23.692 33.6781 23.5967 33.4665 23.655L29.8218 24.7028C29.6566 24.7398 29.4449 24.7398 29.2745 24.7398Z" fill="white"/><path d="M41.0965 24.7186C39.9401 24.7186 38.918 23.7449 38.918 22.4801V14.0025C38.918 13.7484 39.0109 13.632 39.238 13.632H41.1533C41.3237 13.632 41.4579 13.7484 41.4579 14.0025V22.2102C41.4579 22.4431 41.5715 22.5384 41.8399 22.5384H45.3143C45.5414 22.5384 45.6963 22.4431 45.6963 22.2102V14.0025C45.6963 13.7484 45.7686 13.632 46.0009 13.632H47.8955C48.102 13.632 48.2362 13.7484 48.2362 14.0025V24.2529C48.2362 24.4646 48.102 24.544 47.8955 24.544H46.0009C45.7737 24.544 45.6963 24.4646 45.6963 24.2318V23.9195C45.6963 23.6655 45.5414 23.5703 45.3349 23.6497L41.6954 24.6604C41.494 24.7186 41.2824 24.7186 41.0965 24.7186Z" fill="white"/><path d="M60.0846 15.7329V24.2529C60.0846 24.4646 59.9503 24.544 59.7438 24.544H57.8492C57.6221 24.544 57.5446 24.4646 57.5446 24.2318V16.024C57.5446 15.77 57.3949 15.6377 57.1678 15.6377H53.6934C53.4302 15.6377 53.3114 15.7753 53.3114 16.024V24.2318C53.3114 24.4646 53.1772 24.544 53.0068 24.544H51.0916C50.8644 24.544 50.7715 24.4646 50.7715 24.2529V14.0025C50.7715 13.7485 50.8696 13.632 51.0916 13.632H53.0068C53.1772 13.632 53.3114 13.7485 53.3114 14.0025V14.3306C53.3114 14.5422 53.4043 14.6428 53.6934 14.5634L57.3175 13.5527C57.5033 13.5156 57.6789 13.4574 57.8647 13.4574C59.1192 13.4574 60.0846 14.5317 60.0846 15.7329Z" fill="white"/><path d="M62.248 22.4801V17.5798C62.248 16.532 62.6869 15.7329 63.5903 15.2249L65.6036 14.0183C66.0218 13.7432 66.4348 13.6267 66.9304 13.6267H68.6753C68.9231 13.6267 69.0367 13.5315 69.0367 13.2986V9.27147C69.0367 9.05979 69.1348 8.90103 69.3206 8.90103H71.2565C71.4837 8.90103 71.5766 9.0545 71.5766 9.27147V24.2477C71.5766 24.4593 71.4837 24.5387 71.2565 24.5387H69.3206C69.1348 24.5387 69.0367 24.4593 69.0367 24.2265V23.9143C69.0367 23.6602 68.9283 23.565 68.6753 23.6444L65.0151 24.6551C64.8086 24.7133 64.6331 24.7133 64.4473 24.7133C63.4612 24.761 62.248 23.8243 62.248 22.4801ZM69.0367 22.2103V16.0451C69.0367 15.7753 68.9283 15.6377 68.6598 15.6377H65.1493C64.8861 15.6377 64.788 15.7753 64.788 16.0451V22.2103C64.788 22.4431 64.8809 22.5384 65.1493 22.5384H68.6598C68.9231 22.5436 69.0367 22.4431 69.0367 22.2103Z" fill="white"/><path d="M75.9394 24.7186C74.7417 24.7186 73.7402 23.7291 73.7402 22.4802V17.5798C73.7402 16.532 74.179 15.7329 75.067 15.2249L77.0958 14.0183C77.514 13.7432 77.927 13.6267 78.4019 13.6267H82.7487C82.9552 13.6267 83.0688 13.7432 83.0688 13.9972V24.2477C83.0688 24.4593 82.9552 24.5387 82.7487 24.5387H80.8128C80.6063 24.5387 80.5289 24.4593 80.5289 24.2265V23.9143C80.5289 23.6603 80.3947 23.565 80.1469 23.6444L76.5022 24.6551C76.3008 24.7186 76.1305 24.7186 75.9394 24.7186ZM80.534 22.2103V16.0452C80.534 15.7753 80.3998 15.6377 80.152 15.6377H76.6415C76.3783 15.6377 76.2802 15.7753 76.2802 16.0452V22.2103C76.2802 22.4431 76.3731 22.5384 76.6415 22.5384H80.152C80.3998 22.5437 80.534 22.4431 80.534 22.2103Z" fill="white"/><path d="M88.1591 10.8749C88.1591 11.1078 88.0249 11.1872 87.839 11.1872H85.9392C85.6966 11.1872 85.6191 11.1078 85.6191 10.8749V9.28206C85.6191 9.07038 85.6966 8.91162 85.9392 8.91162H87.839C88.03 8.91162 88.1591 9.06509 88.1591 9.28206V10.8749ZM88.1591 24.253C88.1591 24.4646 88.0249 24.544 87.839 24.544H85.9392C85.6966 24.544 85.6191 24.4646 85.6191 24.253V14.0025C85.6191 13.7485 85.6966 13.632 85.9392 13.632H87.839C88.03 13.632 88.1591 13.7485 88.1591 14.0025V24.253Z" fill="white"/><path d="M93.4805 21.7445V14.3729C93.4805 13.2827 93.9348 12.4466 94.864 11.8857L97.0839 10.6209C97.4865 10.3669 97.9563 10.2505 98.3951 10.2505H103.103C103.33 10.2505 103.444 10.3669 103.444 10.5997V12.018C103.444 12.2296 103.33 12.3302 103.103 12.3302H96.5212C96.294 12.3302 96.2011 12.4678 96.2011 12.7165V22.0885C96.2011 22.3425 96.294 22.459 96.5212 22.459H103.294C103.501 22.459 103.635 22.5595 103.635 22.75C103.635 22.9617 103.537 23.1416 103.33 23.258L101.699 24.1894C101.26 24.4381 100.811 24.5387 100.352 24.5387H96.2527C94.9001 24.544 93.4805 23.5544 93.4805 21.7445Z" fill="white"/><path d="M107.408 24.7186C106.21 24.7186 105.209 23.7291 105.209 22.4802V17.5798C105.209 16.532 105.648 15.7329 106.536 15.2249L108.565 14.0183C108.983 13.7432 109.401 13.6267 109.871 13.6267H114.217C114.424 13.6267 114.538 13.7432 114.538 13.9972V24.2477C114.538 24.4593 114.424 24.5387 114.217 24.5387H112.282C112.075 24.5387 111.998 24.4593 111.998 24.2265V23.9143C111.998 23.6603 111.863 23.565 111.616 23.6444L107.971 24.6551C107.764 24.7186 107.594 24.7186 107.408 24.7186ZM111.998 22.2103V16.0452C111.998 15.7753 111.863 15.6377 111.616 15.6377H108.105C107.842 15.6377 107.744 15.7753 107.744 16.0452V22.2103C107.744 22.4431 107.842 22.5384 108.105 22.5384H111.616C111.863 22.5437 111.998 22.4431 111.998 22.2103Z" fill="white"/><path d="M126.411 15.7329V20.6544C126.411 21.6864 125.978 22.4643 125.105 23.0093L123.04 24.2159C122.638 24.4699 122.188 24.544 121.75 24.544H120.005C119.741 24.544 119.643 24.6975 119.643 24.9515V28.8781C119.643 29.1321 119.514 29.2697 119.323 29.2697H117.408C117.181 29.2697 117.088 29.1321 117.088 28.8781V14.0025C117.088 13.7485 117.186 13.632 117.408 13.632H119.323C119.514 13.632 119.643 13.7485 119.643 14.0025V14.3306C119.643 14.5422 119.741 14.6428 120.005 14.5634L123.629 13.5527C123.835 13.5156 124.047 13.4574 124.217 13.4574C125.291 13.4574 126.411 14.357 126.411 15.7329ZM123.871 22.2103V16.0452C123.871 15.7753 123.742 15.6377 123.495 15.6377H120.005C119.741 15.6377 119.643 15.7753 119.643 16.0452V22.2103C119.643 22.4431 119.741 22.5384 120.005 22.5384H123.495C123.737 22.5437 123.871 22.4431 123.871 22.2103Z" fill="white"/><path d="M131.12 10.8749C131.12 11.1078 130.986 11.1872 130.8 11.1872H128.9C128.652 11.1872 128.58 11.1078 128.58 10.8749V9.28206C128.58 9.07038 128.658 8.91162 128.9 8.91162H130.8C130.991 8.91162 131.12 9.06509 131.12 9.28206V10.8749ZM131.12 24.253C131.12 24.4646 130.986 24.544 130.8 24.544H128.9C128.652 24.544 128.58 24.4646 128.58 24.253V14.0025C128.58 13.7485 128.658 13.632 128.9 13.632H130.8C130.991 13.632 131.12 13.7485 131.12 14.0025V24.253Z" fill="white"/><path d="M136.298 24.5652C134.703 24.5652 133.66 23.221 133.66 21.8822V12.0603C133.66 11.8275 133.738 11.6899 133.965 11.5946L135.916 11.0866C136.087 11.0496 136.236 11.1236 136.236 11.3194V13.3621C136.236 13.5579 136.309 13.632 136.479 13.632H139.933C140.18 13.632 140.294 13.7484 140.294 14.0025V15.3466C140.294 15.5424 140.18 15.6377 139.933 15.6377H136.577C136.334 15.6377 136.236 15.7753 136.236 16.0452V22.2103C136.236 22.4431 136.329 22.5384 136.577 22.5384H140.335C140.578 22.5384 140.697 22.6548 140.697 22.8665C140.697 23.057 140.604 23.1946 140.392 23.3163L138.895 24.2318C138.477 24.4858 138.043 24.5599 137.568 24.5599H136.298V24.5652Z" fill="white"/><path d="M144.475 24.7186C143.282 24.7186 142.275 23.7291 142.275 22.4802V17.5798C142.275 16.532 142.714 15.7329 143.607 15.2249L145.636 14.0183C146.054 13.7432 146.472 13.6267 146.947 13.6267H151.294C151.501 13.6267 151.614 13.7432 151.614 13.9972V24.2477C151.614 24.4593 151.501 24.5387 151.294 24.5387H149.358C149.152 24.5387 149.074 24.4593 149.074 24.2265V23.9143C149.074 23.6603 148.945 23.565 148.697 23.6444L145.058 24.6551C144.831 24.7186 144.666 24.7186 144.475 24.7186ZM149.064 22.2103V16.0452C149.064 15.7753 148.935 15.6377 148.687 15.6377H145.177C144.913 15.6377 144.815 15.7753 144.815 16.0452V22.2103C144.815 22.4431 144.908 22.5384 145.177 22.5384H148.687C148.93 22.5437 149.064 22.4431 149.064 22.2103Z" fill="white"/><path d="M156.69 24.2528C156.69 24.4645 156.561 24.5439 156.386 24.5439H154.491C154.243 24.5439 154.15 24.4645 154.15 24.2528V9.27663C154.15 9.06495 154.243 8.90619 154.491 8.90619H156.386C156.561 8.90619 156.69 9.05966 156.69 9.27663V24.2528Z" fill="white"/></svg></h1>
+        <nav>
+            <ul>
+                <li><a href="company.html">OUR COMPANY</a></li>
+                <li><a href="culture.html">OUR CULTURE</a></li>
+                <li><a href="career.html">CAREERS</a></li>
+                <li><a href="relation.html">INVESTOR RELATIONS</a></li>
+            </ul>
+        </nav>       
+    </header>
+    <!-- //parallax__title  -->
+
+    <main id="parallax__cont">
+        <section id="section1" class="parallax__item">
+            <span class="parallax__item__num">01</span>
+            <h2 class="parallax__item__title">section1</h2>
+            <figure class="parallax__item__imgWrap">
+                <div class="parallax__item__img"></div>
+            </figure>
+            <p class="parallax__item__desc">높은 목표를 세우고, 스스로 채찍질 한다.</p>
+        </section>
+        <!-- //section1 -->
+
+        <section id="section2" class="parallax__item">
+            <span class="parallax__item__num">02</span>
+            <h2 class="parallax__item__title">section2</h2>
+            <figure class="parallax__item__imgWrap">
+                <div class="parallax__item__img"></div>
+            </figure>
+            <p class="parallax__item__desc">결과도 중요하지만, 과정을 더 중요하게 생각한다.</p>
+        </section>
+        <!-- //section2 -->
+
+        <section id="section3" class="parallax__item">
+            <span class="parallax__item__num">03</span>
+            <h2 class="parallax__item__title">section3</h2>
+            <figure class="parallax__item__imgWrap">
+                <div class="parallax__item__img"></div>
+            </figure>
+            <p class="parallax__item__desc">매 순간에 최선을 다하고, 끊임없이 변화한다.</p>
+        </section>
+        <!-- //section3 -->
+
+        <section id="section4" class="parallax__item">
+            <span class="parallax__item__num">04</span>
+            <h2 class="parallax__item__title">section4</h2>
+            <figure class="parallax__item__imgWrap">
+                <div class="parallax__item__img"></div>
+            </figure>
+            <p class="parallax__item__desc">모든 일에는 기본을 중요하게 생각한다.</p>
+        </section>
+        <!-- //section4 -->
+
+        <section id="section5" class="parallax__item">
+            <span class="parallax__item__num">05</span>
+            <h2 class="parallax__item__title">section5</h2>
+            <figure class="parallax__item__imgWrap">
+                <div class="parallax__item__img"></div>
+            </figure>
+            <p class="parallax__item__desc">열정을 잃지 않고 실패에서 실패로 걸어가는 것이 성공이다.</p>
+        </section>
+        <!-- //section5 -->
+
+        <section id="section6" class="parallax__item">
+            <span class="parallax__item__num">06</span>
+            <h2 class="parallax__item__title">section6</h2>
+            <figure class="parallax__item__imgWrap">
+                <div class="parallax__item__img"></div>
+            </figure>
+            <p class="parallax__item__desc">천 마디 말보단 하나의 행동이 더 값지다.</p>
+        </section>
+        <!-- //section6 -->
+
+        <section id="section7" class="parallax__item">
+            <span class="parallax__item__num">07</span>
+            <h2 class="parallax__item__title">section7</h2>
+            <figure class="parallax__item__imgWrap">
+                <div class="parallax__item__img"></div>
+            </figure>
+            <p class="parallax__item__desc">조그만 성공에 만족하지 않으며, 방심을 경계한다.</p>
+        </section>
+        <!-- //section7 -->
+
+        <section id="section8" class="parallax__item">
+            <span class="parallax__item__num">08</span>
+            <h2 class="parallax__item__title">section8</h2>
+            <figure class="parallax__item__imgWrap">
+                <div class="parallax__item__img"></div>
+            </figure>
+            <p class="parallax__item__desc">나는 내가 더 노력할수록 운이 더 좋아진다는 걸 발견했다.</p>
+        </section>
+        <!-- //section8 -->
+
+        <section id="section9" class="parallax__item">
+            <span class="parallax__item__num">09</span>
+            <h2 class="parallax__item__title">section9</h2>
+            <figure class="parallax__item__imgWrap">
+                <div class="parallax__item__img"></div>
+            </figure>
+            <p class="parallax__item__desc">꿈이 있다면, 그 꿈을 잡고 절대 놓아주지마라.</p>
+        </section>
+        <!-- //section9 -->
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    <script>
+        //01. 이질감 표현하기 
+        // gsap.to(".parallax__item__desc", {
+        //     yPercent: -100,
+        //     ease: "none",
+        //     duration: 0.5,
+        //     scrollTrigger: {
+        //         trigger: ".parallax__item__desc",
+        //         start: "top bottom",
+        //         ene: "bottom top",
+        //         markers: true,
+        //         scrub: true
+        //     }
+        // });
+
+        //02. 여러개 이질감 표현하기
+        gsap.utils.toArray(".parallax__item__desc").forEach(item => {
+            gsap.to(item, {
+                yPercent: -200,
+                ease: "none",
+                duration: 0.5,
+                scrollTrigger: {
+                    trigger: item,
+                    start: "top bottom",
+                    end: "bottom top",
+                    markers: false,
+                    scrub: 0.5
+                }
+            });
+        });
+    </script>
+</body>
+</html>

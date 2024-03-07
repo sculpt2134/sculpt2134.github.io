@@ -29,7 +29,18 @@ document.querySelectorAll('.HCAU-tab-radio2 input[type="radio"]').forEach(radio 
       // console.log(tabName);
   });
 });
-
+document.querySelectorAll('.HCAU-tab-radio3 input[type="radio"]').forEach(radio => {
+  radio.addEventListener('change', function () {
+      const tabName = this.value;
+      document.querySelectorAll('.tab-radio-cont > div').forEach(div => {
+          div.style.display = 'none';
+      });
+      document.querySelectorAll(`.${tabName}`).forEach(selectedDiv => {
+          selectedDiv.style.display = 'block';
+      });
+      // console.log(tabName);
+  });
+});
 const handleScroll = () => {
   const header = document.querySelector('header');
   if (window.scrollY >= 1) {

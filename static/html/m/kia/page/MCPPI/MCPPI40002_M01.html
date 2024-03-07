@@ -47,15 +47,15 @@
                         <div class="HCAU-form-wrap">
                             <div class="form-title HCAU-txt-md fw-bold">Reception status</div>
                             <div>
-                                <div class="d-flex border-top border-bottom p-3 g40">
+                                <div class="d-flex border-top border-bottom p-3 g40 HCAU-tab-radio3">
                                     <div class="form-check">
-                                        <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="exampleRadios1" checked="">
+                                        <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="exampleRadios1" checked="" value="tab-nosend">
                                         <label class="form-check-label" for="exampleRadios1">
                                             No Send
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                        <input class="form-check-input HCAU-form" type="radio" name="exampleRadios" id="exampleRadios2" value="tab-email">
                                         <label class="form-check-label" for="exampleRadios2">
                                             E-mail
                                         </label>
@@ -63,29 +63,62 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="HCAU-form-wrap">
-                            <div class="form-title HCAU-txt-md fw-bold">Change email address</div>
-                            <div>
-                                <div class="d-flex g12">
-                                    <div class="flex-grow-1">
-                                        <input type="text" class="form-control HCAU-form" id="form-txt01" aria-describedby="" value="" placeholder="Enter email address" readonly>
-                                    </div>
+                        <div class="tab-radio-cont">
+                            <div class="mt20 tab-nosend">
+                                <div class="HCAU-form-wrap">
+                                    <div class="form-title HCAU-txt-md fw-bold">Email address</div>
                                     <div>
-                                        <button type="button" class="HCAU-btn btn-smd" style="width: 77px" disabled>Send</button>
+                                        <div class="d-flex g12">
+                                            <div class="flex-grow-1">
+                                                <input type="text" class="form-control HCAU-form" id="form-txt01" aria-describedby="" value="abc@hcs.com" placeholder="Enter email address" readonly>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="HCAU-btn btn-smd" style="width: 77px">Send</button>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex g12 mt12">
+                                            <div class="flex-grow-1 position-relative">
+                                                <input type="text" class="form-control HCAU-form time-limit" id="form-txt01" aria-describedby="" value="" placeholder="Enter OTP code">
+                                                <span class="time-limit-num HCAU-txt-sm">2:59</span>
+                                                <div class="invalid-feedback" style="display: block;">invalid message1</div>
+                                                <div class="invalid-feedback" style="display: block;">invalid message2</div>
+                                                <div class="invalid-feedback" style="display: block;">invalid message3</div>
+                                                <div class="invalid-feedback" style="display: block;">invalid message4</div>
+                                                <div class="valid-feedback" style="display: block;">valid message</div>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="HCAU-btn btn-smd" style="width: 77px">OK</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="d-flex g12 mt12">
-                                    <div class="flex-grow-1 position-relative">
-                                        <input type="text" class="form-control HCAU-form time-limit" id="form-txt01" aria-describedby="" value="" placeholder="Enter OTP code" readonly>
-                                        <!-- <span class="time-limit-num HCAU-txt-sm">2:59</span> -->
-                                        <!-- <div class="invalid-feedback" style="display: block;">invalid message1</div>
-                                        <div class="invalid-feedback" style="display: block;">invalid message2</div>
-                                        <div class="invalid-feedback" style="display: block;">invalid message3</div>
-                                        <div class="invalid-feedback" style="display: block;">invalid message4</div>
-                                        <div class="valid-feedback" style="display: block;">valid message</div> -->
-                                    </div>
+                            </div>
+                            <div class="mt20 tab-email" style="display: none;">
+                                <div class="HCAU-form-wrap">
+                                    <div class="form-title HCAU-txt-md fw-bold">Change email address</div>
                                     <div>
-                                        <button type="button" class="HCAU-btn btn-smd" style="width: 77px" disabled>OK</button>
+                                        <div class="d-flex g12">
+                                            <div class="flex-grow-1">
+                                                <input type="text" class="form-control HCAU-form" id="form-txt01" aria-describedby="" value="" placeholder="Enter email address">
+                                            </div>
+                                            <div>
+                                                <button type="button" class="HCAU-btn btn-smd" style="width: 77px">Send</button>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex g12 mt12">
+                                            <div class="flex-grow-1 position-relative">
+                                                <input type="text" class="form-control HCAU-form time-limit" id="form-txt01" aria-describedby="" value="" placeholder="Enter OTP code">
+                                                <span class="time-limit-num HCAU-txt-sm">2:59</span>
+                                                <div class="invalid-feedback" style="display: block;">invalid message1</div>
+                                                <div class="invalid-feedback" style="display: block;">invalid message2</div>
+                                                <div class="invalid-feedback" style="display: block;">invalid message3</div>
+                                                <div class="invalid-feedback" style="display: block;">invalid message4</div>
+                                                <div class="valid-feedback" style="display: block;">valid message</div>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="HCAU-btn btn-smd" style="width: 77px">OK</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

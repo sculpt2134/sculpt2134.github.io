@@ -1,0 +1,76 @@
+@charset "UTF-8";
+@import url("HCAU-common.css");
+@import url("HCAU-component.css");
+
+
+
+/* .wrap  .HCAU-footer {
+  background: #05141f;
+  color: #697279;
+}
+.wrap .HCAU-footer .footer-inner {
+  width: 1440px;
+  height: 80px;
+  padding-left: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrap .HCAU-container .HCAU-footer .footer-inner .copyright {
+  font-size: 12px;
+}
+.wrap .HCAU-container .HCAU-footer .footer-inner .sns {
+  display: flex;
+  gap: 16px;
+} */
+
+
+
+/* CSS ADD  */
+
+.main .HCAU-menubar .menu .logo {
+  padding-top: 36px;
+  padding-bottom: 80px
+}
+
+.HCAU-menubar .menu > ul > li {
+  font-weight: 700;
+  padding: 16px 0;
+  font-size: 18px;
+}
+
+.main .collapse.show>ul>li {
+  font-size: 14px;
+  font-weight: 500;
+  position:relative;
+  padding: 8px 0 8px 10px;
+}
+
+.main .menu li a.active {
+  color: #00AAD2;
+  text-decoration: none;
+}
+.main .collapse > ul >li:before { content: "";
+display: inline-block;
+width: 3px;
+height: 3px;
+border-radius: 3px;
+background: #444;
+position: absolute;
+left: 0;
+top: 16px;}
+
+.HCAU-btn .ico-print{width:23px;height:23px}
+
+.HCAU-btn.dropdown-toggle.is-invalid {
+  border-color: #E63312;
+}
+.HCAU-btn.dropdown-toggle.disabled{
+  background-color: #f5f5f5;
+  color: #697279;
+}
+.xs-font{font-size:13px}
+.table tr.sum td{background:#fafafa}
+
+
+

@@ -59,11 +59,9 @@
                         </div>
                         <div>
                             <div class="HCAU-form-wrap">
-                                <div class="form-title HCAU-txt-md fw-bold">Reason for Hardship</div>
-                                <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#filter01">Injury or Illness</button>
+                                <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#filter01">Unemployment</button>
                                 <div class="HCAU-bottom-sheet offcanvas offcanvas-bottom" tabindex="-1" id="filter01">
                                     <div class="offcanvas-header">
-                                        <!-- <h5 class="offcanvas-title" id="offcanvasBottomLabel">bottom sheet title</h5> -->
                                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
                                             <img src="/static/html/m/hyundai/img/ico_modal_close.svg" alt="Close">
                                         </button>
@@ -78,23 +76,52 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="HCAU-info-msg">A medical certificate supporting your injury or illness, your time of work and anticipated return</div>
+                                <div class="HCAU-info-msg">Documentation confirming your employment status or registration for unemployment benefits</div>
                             </div>
-                            <div class="HCAU-form-wrap">
-                                <div class="form-title HCAU-txt-md fw-bold">Supporting Document</div>
-                                <div class="filebox d-flex g12">
-                                    <div class="flex-fill position-relative">
-                                        <input type="text" class="form-control HCAU-form" id="" value="text.pdf">
-                                        <input type="file" id="file">
-                                        <a href="" class="btn-clear"><img src="/static/html/pc/hyundai/img/svg/ico_clear.svg" alt="Close"></a>
-                                    </div>
-                                    <div>
-                                        <button type="button" class="HCAU-btn btn-smd">
-                                            <label for="file">Search</label>
-                                        </button>
-                                    </div>
+                        </div>
+                    </div>
+                    <div class="mt52">
+                        <div class="title-area">
+                            <div class="HCAU-txt-lg">Document Upload</div>
+                        </div>
+                        <div class="HCAU-form-wrap">
+                            <div class="filebox d-flex g12">
+                                <div class="flex-fill position-relative">
+                                    <input type="text" class="form-control HCAU-form" id="" value="text.pdf">
+                                    <input type="file" id="file">
+                                    <a href="" class="btn-clear"><img src="/static/html/pc/hyundai/img/svg/ico_clear.svg" alt="Close"></a>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-smd">
+                                        <label for="file">Search</label>
+                                    </button>
                                 </div>
                             </div>
+                            <div class="filebox d-flex g12 mt12">
+                                <div class="flex-fill position-relative">
+                                    <input type="text" class="form-control HCAU-form" id="" value="text.pdf">
+                                    <input type="file" id="file">
+                                    <a href="" class="btn-clear"><img src="/static/html/pc/hyundai/img/svg/ico_clear.svg" alt="Close"></a>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-smd">
+                                        <label for="file">Search</label>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="filebox d-flex g12 mt12">
+                                <div class="flex-fill position-relative">
+                                    <input type="text" class="form-control HCAU-form" id="" value="text.pdf">
+                                    <input type="file" id="file">
+                                    <a href="" class="btn-clear"><img src="/static/html/pc/hyundai/img/svg/ico_clear.svg" alt="Close"></a>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-smd">
+                                        <label for="file">Search</label>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="HCAU-info-msg">Only *.xlsx, *.pdf and image files can be registered.</div>
                         </div>
                     </div>
                     <div class="mt52">
@@ -107,7 +134,7 @@
                         <div class="mt20">
                             <div class="HCAU-valid">
                                 <div class="position-relative">
-                                    <textarea class="form-control HCAU-form" id="exampleFormControlTextarea1" rows="6" placeholder="Enter Additional Information" required=""></textarea>
+                                    <textarea class="form-control HCAU-form" id="exampleFormControlTextarea1" rows="8" placeholder="Enter Additional Information" required=""></textarea>
                                     <p class="position-absolute end-0 bottom-0 HCAU-txt-xs gray03 mx-3 my-3"><span class="black">0</span>/5000byte</p>
                                 </div>
                                 <div class="invalid-feedback lh" style="display:block">
@@ -117,8 +144,10 @@
                         </div>
                     </div>
 
-
-                    <!-- <div class="g-notice border-top-dashed">
+                    <div class="mt52">
+                        <button type="button" class="HCAU-btn btn-md full">Save</button>
+                    </div>
+                    <div class="g-notice border-top-dashed">
                         <dl>
                             <dt>
                                 <span class="ico-gnotice"><img src="/static/html/m/hyundai/img/ico_notice.svg" alt=""></span>
@@ -126,11 +155,15 @@
                             </dt>
                             <dd>
                                 <ul class="HCAU-bullet-list">
-                                    <li class="HCAU-txt-sm">You can view and print the repayment schedule for products that are in use or have expired from January 5 years ago to the present.</li>
+                                    <li class="HCAU-txt-sm">
+                                        “Document Upload is optional and NOT Mandatory”<br>
+                                        We may also ask for documentation to support your situation. 
+                                    </li>
+                                    <li class="HCAU-txt-sm">If you can provide these with this application, it may assist us in making a decision quicker.</li>
                                 </ul>
                             </dd>
                         </dl>
-                    </div> -->
+                    </div>
 
                 </div>
                 <!-- //HCAU-detail -->

@@ -33,27 +33,8 @@
 <div class="HCAU-detail">
 
     <div class="HCAU-search-bar">
+        
         <div class="d-flex justify-content-between g20">
-            <div class="dropdown flex-fix">
-                <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
-                    Lease
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
-                </ul>
-            </div>
-            <div class="dropdown flex-fix">
-                <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
-                    Product name (all)
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 1</a></li>
-                    <li><a class="dropdown-item HCAU-txt-sm" href="#">label 2</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="d-flex justify-content-between g20 mt20">
             <div class="dropdown flex-fix">
                 <button class="HCAU-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
                     Vehicle type (all)
@@ -65,16 +46,12 @@
             </div>
             <div class="dropdown flex-fix d-flex g12">
                 <input type="text" class="form-control HCAU-form flex-grow-1" placeholder="Enter contract number" value="">
-                <button type="button" class="HCAU-btn btn-smd" disabled>Search</button>
+                <button type="button" class="HCAU-btn btn-smd">Search</button>
             </div>
         </div>
     </div>
 
     <section>
-        <div class="HCAU-nodata type02 flex-column border-top border-bottom mt40">
-            <img src="/static/html/pc/hyundai/img/svg/ico_no_matches_hd02.svg" alt="">
-            <div class="HCAU-txt-sm">No matches found.</div>
-        </div>
         <div class="px32 mt40">
             <input class="form-check-input HCAU-form" type="checkbox" value="" id="chk0">
             <label for="chk0">Select All</label>
@@ -125,7 +102,9 @@
                     <span class="HCAU-txt-sm">aaa@hcs.co.kr</span>
                 </label>
             </div>
+            
         </div>
+        
         <div class="HCAU-pagination">
             <div class="inner">
                 <ul class="arrow">
@@ -149,6 +128,11 @@
                     <li class="arrow"><a href=""><img src="/static/html/pc/hyundai/img/svg/ico_pagination_04.svg" alt="Last"></a></li>
                 </ul>
             </div>
+
+        <div class="HCAU-nodata type02 flex-column border-top border-bottom mt60">
+            <img src="/static/html/pc/hyundai/img/svg/ico_no_matches_hd02.svg" alt="">
+            <div class="HCAU-txt-sm">No matches found.</div>
+        </div>
         </div>
     </section>
     <section class="mt20">
@@ -165,129 +149,110 @@
                         <td class="align-middle">
                             <div class="no-txt-input">
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input HCAU-form" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                    <label class="form-check-label" for="inlineRadio1">No Sent</label>
+                                    <input class="form-check-input HCAU-form" type="radio" name="inlineRadioOptions" id="" value="">
+                                    <label class="form-check-label" for="">No Send</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input HCAU-form" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option1">
+                                    <input class="form-check-input HCAU-form" type="radio" name="inlineRadioOptions" id="" value="" checked>
+                                    <label class="form-check-label" for="">E-mail</label>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="align-middle">Change <br>email address</th>
+                        <td class="align-middle">
+                            <div class="d-flex g12 w-100">
+                                <div class="flex-grow-1">
+                                    <input type="text" class="form-control HCAU-form" placeholder="Enter your email address" value="">
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-md w120 t14">Send an OTP</button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="align-middle">OTP certification</th>
+                        <td class="align-middle">
+                            <div class="d-flex g12 w-100">
+                                <div class="flex-grow-1 position-relative">
+                                    <input type="text" class="form-control HCAU-form time-limit" placeholder="Enter OTP verification code" value="">
+                                    <span class="time-limit-num">2:59</span>
+                                </div>
+                                <div>
+                                    <button type="button" class="HCAU-btn btn-md w120 t14">Ok</button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>           
+        </div>
+        <div class="mt20">no-send</div>
+        <div class="HCAU-table HCAU-valid">
+            <table class="table fixed">
+                <colgroup>
+                    <col style="width:150px">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th class="align-middle">Reception status</th>
+                        <td>
+                            <div class="no-txt-input">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input HCAU-form" type="radio" name="" id="" value="" checked>
+                                    <label class="form-check-label" for="inlineRadio1">No Send</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input HCAU-form" type="radio" name="" id="" value="">
                                     <label class="form-check-label" for="inlineRadio2">E-mail</label>
                                 </div>
                             </div>
                         </td>
                     </tr>
                     <tr>
-                        <th class="align-middle">Change Email</th>
+                        <th class="align-middle">Existing <br> email address</th>
                         <td class="align-middle">
-                            <input type="text" class="form-control HCAU-form" placeholder="Please enter your email address" value="">
+                            <div class="no-txt-input">
+                                <p class="HCAU-txt-sm">abc@hcs.co.kr</p>
+                            </div>
                         </td>
                     </tr>
-                </tbody>
-            </table>
-        </div>
-
-    </section>
-
-    <section>
-        <!-- OTP certification -->
-        <div class="HCAU-valid bg-box2 p10">
-            <div class="border-box px32 py28">
-                <!-- title-area -->
-                <div class="title-area d-flex align-items-baseline g16">
-                    <div class="HCAU-txt-md fw-bold">OTP certification</div>
-                </div>
-                <!-- //title-area -->
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="tabCont_01" role="tabpanel">
-
-                        <div class="d-flex justify-content-between g20">
-                            <div class="d-flex g12 w-50">
+                    <tr>
+                        <th class="align-middle">Email address</th>
+                        <td class="align-middle">
+                            <div class="d-flex g12 w-100">
                                 <div class="flex-grow-1">
-                                    <input type="text" class="form-control HCAU-form" placeholder="Enter phone number" value="01099999999" readonly>
+                                    <input type="text" class="form-control HCAU-form" placeholder="Enter your email address" value="abc@hcs.co.kr" readonly>
                                 </div>
                                 <div>
-                                    <button type="button" class="HCAU-btn btn-smd">Send</button>
+                                    <button type="button" class="HCAU-btn btn-md w120 t14">Send an OTP</button>
                                 </div>
                             </div>
-                            <div class="d-flex g12 w-50">
-                                <div class="flex-grow-1 position-relative">
-                                    <input type="text" class="form-control HCAU-form time-limit" placeholder="Enter OTP verification code" value="">
-                                    <!-- <span class="time-limit-num">2:59</span> -->
-                                </div>
-                                <!-- <div>
-                                    <button type="button" class="HCAU-btn btn-smd">OK</button>
-                                </div> -->
-                            </div>
-                        </div>
-                        <br>
-                        <div class="d-flex justify-content-between g20">
-                            <div class="d-flex g12 w-50">
-                                <div class="flex-grow-1">
-                                    <input type="text" class="form-control HCAU-form" placeholder="Enter phone number" value="01099999999" readonly>
-                                </div>
-                                <div>
-                                    <button type="button" class="HCAU-btn btn-smd">Send</button>
-                                </div>
-                            </div>
-                            <div class="d-flex g12 w-50">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="align-middle">OTP certification</th>
+                        <td class="align-middle">
+                            <div class="d-flex g12 w-100">
                                 <div class="flex-grow-1 position-relative">
                                     <input type="text" class="form-control HCAU-form time-limit" placeholder="Enter OTP verification code" value="">
                                     <span class="time-limit-num">2:59</span>
                                 </div>
                                 <div>
-                                    <button type="button" class="HCAU-btn btn-smd">OK</button>
+                                    <button type="button" class="HCAU-btn btn-md w120 t14">Ok</button>
                                 </div>
                             </div>
-                        </div>
-                        <br>
-                        <div class="d-flex justify-content-between g20">
-                            <div class="d-flex g12 w-50">
-                                <div class="flex-grow-1">
-                                    <input type="text" class="form-control HCAU-form" placeholder="Enter phone number" value="01099999999" readonly>
-                                </div>
-                                <div>
-                                    <button type="button" class="HCAU-btn btn-smd">Send</button>
-                                </div>
-                            </div>
-                            <div class="d-flex g12 w-50">
-                                <div class="flex-grow-1 position-relative">
-                                    <input type="text" class="form-control HCAU-form time-limit is-invalid" placeholder="Enter OTP verification code" value="">
-                                    <div class="invalid-feedback">Please enter OTP verification code</div>
-                                    <!-- <span class="time-limit-num">2:59</span> -->
-                                </div>
-                                <div>
-                                    <button type="button" class="HCAU-btn btn-smd">OK</button>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="d-flex justify-content-between g20">
-                            <div class="d-flex g12 w-50">
-                                <div class="flex-grow-1">
-                                    <input type="text" class="form-control HCAU-form" placeholder="Enter phone number" value="01099999999" readonly>
-                                </div>
-                                <div>
-                                    <button type="button" class="HCAU-btn btn-smd">Send</button>
-                                </div>
-                            </div>
-                            <div class="d-flex g12 w-50">
-                                <div class="flex-grow-1 position-relative">
-                                    <input type="text" class="form-control HCAU-form time-limit is-valid" placeholder="Enter OTP verification code" value="1234567" readonly>
-                                    <div class="valid-feedback">Please enter OTP verification code</div>
-                                    <!-- <span class="time-limit-num">2:59</span> -->
-                                </div>
-                                <div>
-                                    <button type="button" class="HCAU-btn btn-smd">OK</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <!-- //OTP certification -->
     </section>
 
-
+    
 
     <div class="cta-btn-wrap">
         <div class="d-flex g12 justify-content-center">

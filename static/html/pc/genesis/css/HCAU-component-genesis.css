@@ -490,6 +490,10 @@ a {
   height: 80px;
 }
 
+.h113 {
+  height: 113px;
+}
+
 .h500 {
   height: 500px;
 }
@@ -1268,6 +1272,9 @@ a {
 .HCAU-btn.btn-sm + .btn-sm {
   margin-left: 4px;
 }
+.HCAU-btn.btn-sm.type02 {
+  padding: 8px 30px;
+}
 .HCAU-btn.btn-smd {
   font-size: 16px;
   font-weight: 700;
@@ -1486,28 +1493,26 @@ a {
   border-radius: 15px;
   vertical-align: middle;
 }
-.HCAU-badge.type01, .HCAU-badge.fail {
+.HCAU-badge.type01, .HCAU-badge.fail, .HCAU-badge.overdue {
   color: #ea0029;
   background: #FEEBEE;
-}
-.HCAU-badge.type02 {
-  color: #000000;
-  background: #EBEFF3;
-}
-.HCAU-badge.type03 {
-  color: #af6249;
-  background: #EBF5F9;
+  margin-left: 12px;
+  min-width: 75px;
+  text-align: center;
 }
 .HCAU-badge.type04 {
   color: #999;
   background: #f5f5f5;
+  margin-left: 12px;
+  min-width: 75px;
+  text-align: center;
 }
 .HCAU-badge.small {
   width: 85px;
   text-align: center;
   font-weight: 700;
 }
-.HCAU-badge.success {
+.HCAU-badge.success, .HCAU-badge.type03 {
   background: #EDF6FA;
   color: #1D8ABC;
   font-weight: 400;
@@ -1515,23 +1520,7 @@ a {
   min-width: 75px;
   text-align: center;
 }
-.HCAU-badge.fail {
-  font-weight: 400;
-  background: #FEEBEE;
-  color: #ea0029;
-  margin-left: 12px;
-  min-width: 75px;
-  text-align: center;
-}
-.HCAU-badge.overdue {
-  font-weight: 400;
-  background: #FBEFEF;
-  color: #ce2d2d;
-  margin-left: 12px;
-  min-width: 75px;
-  text-align: center;
-}
-.HCAU-badge.complete {
+.HCAU-badge.complete, .HCAU-badge.type02 {
   font-weight: 400;
   background: #F9F3F1;
   color: #AF6249;
@@ -2478,6 +2467,9 @@ a {
   align-items: center;
   gap: 8px;
 }
+.loan-items-tlt .loan-btn.g08 {
+  gap: 8px;
+}
 
 .loan-items-wrap {
   row-gap: 20px;
@@ -2535,6 +2527,21 @@ a {
   margin-left: 0;
 }
 .loan-items.col-4 .loan-text dd {
+  text-align: left;
+}
+.loan-items.col-6 {
+  width: 50%;
+}
+.loan-items.col-6 .loan-items-ico {
+  width: 48px;
+  height: 48px;
+}
+.loan-items.col-6 .loan-text {
+  float: none;
+  margin-right: auto;
+  margin-left: 0;
+}
+.loan-items.col-6 .loan-text dd {
   text-align: left;
 }
 
@@ -3489,4 +3496,4 @@ dl.justify-content-between dd {
   text-align: right !important;
   align-items: center;
   display: flex;
-}
+}/*# sourceMappingURL=HCAU-component-genesis.css.map */

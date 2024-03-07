@@ -1,0 +1,107 @@
+html,body{height: 100%;}
+body.w-main{background: url(/static/html/pc/genesis/img/bg_main2.png) no-repeat 0 0;}
+/* @media (min-width: 1918px){body.w-main{ background-size:cover;}body.login{ background-size:cover;}} */
+.wrap.main{display: flex;/* height: 100%; */min-height: 984px;background: none;}
+.wrap.main > div{/* border: 1px solid red */}
+.wrap.main > .empty-space{flex: 1 1 auto;}
+.wrap.main > .empty-space.right{background: #111;}
+.wrap.main > .HCAU-main-container-left{flex: 0 0 947px;padding-top: 192px;}
+.wrap.main > .HCAU-main-container-right{flex: 0 0 493px;background: #111;padding-left: 79px;padding-top: 192px;}
+.wrap.main .HCAU-main-container-left .HCAU-tlt-wrap h1.HCAU-h1{font-size:64px;color:#fff;line-height: 70px;}
+.wrap.main .HCAU-main-container-left .HCAU-tlt-wrap p.HCAU-txt-md{line-height:130%;margin-top:32px;color:#fff;font-weight: 400;}
+
+.wrap .HCAU-contents .join{gap:12px;margin-top:20px;}
+.wrap .HCAU-contents .join .HCAU-btn.btn{background: transparent;font-family: GenesisHeadOffice;font-size:18px;line-height: 50px;color: #fff;border: 1px solid #fff;border-radius: 0;padding: 10px 25px;width:100%;display: flex;gap:12px;justify-content: center;}
+.pe-40{padding-right: 40px;}
+.promo{position:relative;width:100%;height:100%}
+.promo .carousel-item {float: none;margin-right: 0;}
+.promo .carousel-indicators{left:auto;margin:auto;right:0px;color:transparent;height:10px;justify-content: flex-end;bottom:auto;top:0;gap:6px;}
+.promo .carousel-indicators [data-bs-target]{width:6px ;height:6px;border-radius: 6px;border:1px solid transparent;margin-top:6px;margin-bottom:6px;transition: all .6s ease;background:#999;opacity: 1;}
+.promo .carousel-indicators .active{background-color: transparent;border:1px solid #fff}
+.promo .carousel.slide{padding:0;background: transparent;height:110px;overflow: hidden;border-radius: 0;color:#fff;margin-top:14px}
+.promo .carousel.slide .carousel-inner{height:74px;line-height: 74px;margin-top:36px;background: #1a1a1a;padding:0 28px}
+.promo .HCAU-h2,.HCAU-h2.title{color:#fff;font-size:28px;text-transform: uppercase;font-family: GenesisHeadOffice;position:absolute;top:0;left:0;line-height:1.5}
+.promo+.promo{margin-top:32px}
+.d-flex.col12.justify-content-between ul li:not(:last-child){margin-bottom:12px}
+
+.button-wrap button.box{position:relative;background: #000;width:100%;border:0;height:72px;color:#fff;font-size:16px;font-weight: 400;display: flex;padding:24px;text-transform: uppercase;align-items: center;}
+.button-wrap button.box span{position:absolute;right:24px;top:24px}
+.button-wrap button.box:hover,button.box:focus{background:#c36f51}
+.button-wrap button.box:hover span svg path,button.box:focus  span svg path{stroke: #fff;}
+
+.carousel.slide.product{width:100%;overflow: hidden;border-radius: 0;color:#fff;}
+.carousel.slide.product .title-wrap{background: #1a1a1a; padding:40px 28px}
+.title-wrap .title-area .HCAU-h3{max-width:300px;overflow: hidden;overflow: hidden;text-overflow: ellipsis;          white-space: nowrap;}
+.carousel.slide.product .HCAU-nodata{justify-content: center;align-items: center;display: flex;height:320px;background-color: #181818;}
+.carousel.slide.product .HCAU-nodata .HCAU-txt-lg{color:#fff;text-transform: uppercase;}
+.carousel.slide.product .carousel-inner .border-box{background:transparent}
+.carousel.slide.product .carousel-inner .HCAU-btn.btn-md{border:0;border-radius: 0;background:#05141f;color:#999;font-weight: 400;font-size:14px;padding:12px}
+.carousel.slide.product .title{font-size:24px}
+.carousel.slide.product .p-detail{margin-top:75px}
+.carousel.slide.product .btn-wrap{display: flex;gap:12px;}
+.carousel.slide.product .carousel-item.one + button[data-bs-slide="prev"]{display:none}
+.faq{padding-top:8px}
+.faq-inner ul li,.title-detail ul li{padding:12px 0;border-bottom:1px solid#1F1F1F;position: relative;}
+.faq-inner ul li:last-child{border-bottom:0}
+.faq-inner ul li dl,.title-detail ul li dl{display:flex;justify-content:flex-start;align-items:center;}
+.faq-inner ul li dl dt,.title-detail ul li dt{font-size:15px;padding:4px 8px;border-radius: 0;color:#999;min-width: 95px;justify-content: center;font-weight: 400;}
+
+.faq-inner ul li dl dd,.title-detail ul li dd{font-size:14px;color:#999;padding-left:12px;max-width: 320px;height:20px;overflow: hidden;overflow: hidden;text-overflow: ellipsis;          white-space: nowrap;}
+.faq-inner ul li dl:hover dt,.faq-inner ul li dl:hover dd{color:#fff;cursor: pointer;}
+.faq-inner ul li dl dt{background: #1a1a1a;text-align: center;font-size:13px}
+.faq-inner ul li dl dd{font-size:16px;}
+.title-detail ul li dl{width:100%;display: flex;justify-content: space-between;}
+.title-detail ul li dd{font-size:20px;font-weight: 700;color:#fff}
+
+.detail .usage-detail{margin-top:36px;margin-bottom:24px;margin-right:3px}
+h2.HCAU-h2.title{text-transform: uppercase;color:#fff}
+h2.font-size-lg.title{font-size:18px;color:#fff}
+
+.carousel-control-prev:disabled, .carousel-control-next:disabled{display:none}
+.carousel-control-next-icon, .carousel-control-prev-icon,.carousel-control-more-icon{width:24px;height:24px;border-radius: 16px;background-color: rgba(0,0,0,.32);background-image:none;opacity:1; transition: all .15s ease;display:flex;justify-content: flex-end;align-items: center;}
+.carousel-control-next-icon:focus,.carousel-control-next-icon:hover,.carousel-control-prev-icon:focus,.carousel-control-prev-icon:hover{background-color:#05141f}
+.carousel-btn{position: relative;}
+.carousel-control-prev{top:80px;left:-12px}
+.carousel-control-next{top:80px;right:-12px;}
+.carousel-control-more{position: absolute; top: 0;bottom: 0; right:0;z-index: 1; display: flex;align-items: center;justify-content: center; width: 15%; padding: 0;color: #fff; text-align: center; background: 0 0;border: 0;opacity:1; transition: opacity .15s ease;}
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover ,.carousel-control-more:focus, .carousel-control-more:hover {color: #fff; text-decoration: none; outline: 0; opacity: 1;}
+button[class*="carousel-control-"]{width:24px}
+
+.title-area .HCAU-h3{color:#fff;font-size:20px;padding-bottom:20px}
+.title-wrap .title-txt{display: flex;justify-content: center;text-align: center;font-family: GenesisHeadOffice;font-size: 22px;margin-top:8px;margin-bottom:20px}
+.title-wrap .HCAU-badge{background: #C36F51;border-radius: 0;font-size: 13px;color:#fff;padding:2px 8px;height:18px;position: absolute;top:0;left:20px;line-height: 13px;}
+
+.title-wrap .title-bgbox{display: flex;justify-content: center;gap:20px;border-radius: 40px;padding:8px 20px;background: #000;line-height: 18px;}
+.title-wrap .title-bgbox span,.title-detail dt.HCAU-txt-md{color:#999;font-weight: 400;}
+.btn-wrap .HCAU-btn.btn-xs{font-size:14px;color:#999;font-weight: 400;border-radius: 0;padding:16px;;background: #000;white-space: nowrap;}
+.btn-wrap .HCAU-btn.btn-xs:hover,.btn-wrap .HCAU-btn.btn-xs:focus{background: #C36F51;color:#fff}
+
+div:has(.carousel-item:first-child.active) + button,
+div:has(.carousel-item:last-child.active) + button + button,
+.disabled{display:none !important}
+/* .carousel-item dl{min-width:200px} */
+.g40{gap:40px}
+.mt24{margin-top: 24px;}
+.wrap .HCAU-menubar{top:32px;}
+
+
+.footer-wrap{display: flex;}
+.footer-wrap > div{}
+.footer-empty{flex: 1 1 auto;}
+.footer-empty.right{background: #111;}
+.footer-left{flex: 0 0 947px;display: flex;height: 96px;align-items: center;justify-content: space-between;}
+.footer-right{flex: 0 0 493px;height: 96px;background: #111;}
+
+.footer-wrap .copyright,
+.footer-wrap .contact-us div a{font-size:14px; font-weight:400;text-transform: inherit;color:rgba(255,255,255,.6);line-height: 14px;;}
+.footer-wrap .copyright span{font-weight: 400;margin-top:8px;display: inline-block;}
+.footer-wrap .family-site{padding-right: 48px;}
+.footer-wrap .HCAU-btn.dropdown-toggle{background:rgba(0,0,0,.2);color:#fff;border:none;padding-top: 11px;padding-bottom: 11px;font-size:13px}
+.footer-wrap .HCAU-btn.dropdown-toggle:after{color:#fff}
+
+.footer-wrap .contact-us{height: 96px;display: flex;gap: 20px;justify-content: end; align-items:center; padding-top: 35px;}
+.footer-wrap .contact-us .email{}
+.footer-wrap .contact-us .email img{vertical-align: middle;}
+.footer-wrap .contact-us .email a svg{margin-left:4px;}
+.footer-wrap .contact-us .call a + a:before{content:'';display: inline-block;width: 1px;height: 8px;background: rgba(255,255,255,.6);margin-left: 4px;margin-right: 6px;}
+.footer-wrap .chat-bot{position: fixed;right:0px;bottom:0px}

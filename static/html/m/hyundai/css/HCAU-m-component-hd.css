@@ -743,6 +743,10 @@ footer .copy {
   background: #d5d5d5;
 }
 
+.bg-box4 {
+  background: #e5e5e5;
+}
+
 [class*=bg-box],
 .border-box {
   border-radius: 4px;
@@ -2272,4 +2276,4 @@ textarea.HCAU-form.form-control {
 
 .btn-disabled > img {
   opacity: 0.15;
-}
+}/*# sourceMappingURL=HCAU-m-component-hd.css.map */

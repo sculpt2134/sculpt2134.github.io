@@ -127,10 +127,11 @@ a{text-decoration: none;}
 .HCAU-h2{color: $black;font-size: $font-size-h2;font-weight: 700;}
 .HCAU-lead-txt{color: $black;font-size: $font-size-lt;}
 .HCAU-txt-lg{color: $black;font-size: $font-size-lg;}
-.HCAU-txt-md{color: $black;font-size: $font-size-md;}
+.HCAU-txt-md{color: $black;font-size: $font-size-md;letter-spacing: -0.01em;}
 .HCAU-txt-sm{color: $black;font-size: $font-size-sm;}
 .HCAU-txt-xs{color: $black;font-size: $font-size-xs;}
 .lh20{line-height:20px;}
+
 //폰트 컬러
 .white{color: $white}
 .gray01{color : $gray01}
@@ -424,6 +425,7 @@ a{text-decoration: none;}
         min-width: 120px;
         text-align: center;
         padding: 11px 16px;
+        &.t14{font-size: 14px;}
     }
     &.btn-large{
         font-size: 16px;
@@ -775,6 +777,7 @@ a{text-decoration: none;}
     box-shadow: none;
     border-radius: 4px;
 }
+::placeholder,.HCAU-form.form-control::placeholder, .HCAU-form.form-select::placeholder{color:$gray03}
 .HCAU-form.form-control:focus,
 .HCAU-form.form-select:focus,
 .HCAU-btn.dropdown-toggle:focus{
@@ -999,6 +1002,10 @@ top:15px;}
 .HCAU-table.type02{
     th,
     td{padding-top: 28px;padding-bottom: 28px;}
+}
+.HCAU-table.type03{
+    th,
+    td{padding: 24px 20px;}
 }
 .separator{
     span + span::before{

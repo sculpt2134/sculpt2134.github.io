@@ -732,6 +732,9 @@ a {
   text-align: center;
   padding: 11px 16px;
 }
+.HCAU-btn.btn-md.t14 {
+  font-size: 13px;
+}
 .HCAU-btn.btn-large {
   font-size: 15px;
   font-weight: 700;
@@ -1019,6 +1022,10 @@ a {
   border-color: #e5e5e5;
   box-shadow: none;
   border-radius: 4px;
+}
+
+::placeholder, .HCAU-form.form-control::placeholder, .HCAU-form.form-select::placeholder {
+  color: #697279;
 }
 
 .HCAU-form.form-control:focus,

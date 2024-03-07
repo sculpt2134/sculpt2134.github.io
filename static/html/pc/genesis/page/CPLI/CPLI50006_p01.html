@@ -36,9 +36,11 @@
 
     <!-- Button trigger modal -->
     <button type="button" class="HCAU-btn btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        popup
+        lease
     </button>
-
+    <button type="button" class="HCAU-btn btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+        loan
+    </button>
     <!-- Modal -->
     <div class="HCAU-modal modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -49,17 +51,18 @@
                         <div class="HCAU-h2" id="exampleModalLabel">Get a copy of your billing statement via email</div>
                     </div>
                     <div class="modal-body">
-                        <div class="modal-content-box g40">
+                        <div class="modal-content-box">
 
                             <ul class="HCAU-bullet-list px40">
                                 <li>
                                     We will send a copy of your billing statement to the email address associated<br/> with your account.
                                 </li>
                                 <li>
-                                    If you want to change your email address, please update your personal information first.<a href="#none" class="link fw-bold">Change the email</a>
+                                    If you want to change your email address, please update your personal information first.<br/>
+                                    <a href="#none" class="link fw-bold d-block pt32 ms-0">Change the email</a>
                                 </li>
                             </ul>
-                            <div class="px40">
+                            <div class="px40 pt12">
                                 <input type="email" class="form-control HCAU-form" id="exampleInputEmail1" aria-describedby="emailHelp" value="hyundai@hyundaicapital.com" readonly>
                             </div>
                         </div>
@@ -72,7 +75,41 @@
         </div>
     </div>
 
+    <div class="HCAU-modal modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/static/html/pc/genesis/img/svg/ico_modal_close.svg" alt="Close" /></button>
+                <div class="modal-content-inner">
+                    <div class="modal-header">
+                        <div class="HCAU-h2" id="exampleModalLabel">Get a copy of your billing statement via email</div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-content-box">
 
+                            <ul class="HCAU-bullet-list px40">
+                                <li>
+                                    We will send a copy of your billing statement to the email address associated with your account.
+                                </li>
+                                <li>
+                                    If you want to change theemail you want to receive, please change the email in your membership information.
+                                </li>
+                                <li>
+                                    For business customers, member information can be changed through the<br/> customer center (0000-0000).<br>
+                                    <a href="#none" class="link fw-bold d-block pt32 ms-0">Change the email</a>
+                                </li>
+                            </ul>
+                            <div class="px40 pt12">
+                                <input type="email" class="form-control HCAU-form" id="exampleInputEmail1" aria-describedby="emailHelp" value="hyundai@hyundaicapital.com" readonly>
+                            </div>
+                        </div>
+                        <div class="modal-btn-wrap">
+                            <button type="button" class="HCAU-btn primary">Request statements</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 </div>
