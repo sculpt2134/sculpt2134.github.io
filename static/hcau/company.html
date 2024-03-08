@@ -14,10 +14,11 @@
 
 	<link rel="stylesheet" href="/static/hcau/css/HCAU-style.css">
 	<script src="/static/hcau/js/app.js" defer></script>
-	<!-- <script src="/kr/assets/js/lib/modernizr-custom.js"></script> -->
+	<script src="/kr/assets/js/lib/modernizr-custom.js"></script>
 	<link rel="preload" href="/static/hcau/fonts/Youandi_Modern_HeadExtraBold.woff" as="font" type="font/woff" crossorigin>
 	<link rel="preload" href="/static/hcau/fonts/Youandi_Modern_TextBold.woff" as="font" type="font/woff" crossorigin>
 	<link rel="preload" href="/static/hcau/fonts/Youandi_Modern_TextRegular.woff" as="font" type="font/woff" crossorigin>
+	<!-- <link rel="preload" href="/static/hcau/fonts/icon.woff2" as="font" type="font/woff2" crossorigin> -->
 </head>
 <body>
 
@@ -34,7 +35,7 @@
 				</div>
 		</nav>
 		<!-- //parallax__nav -->
-		<aside>
+		<aside class="d-none">
 			<div><a href="#one" class="active">Main theme</a></div>
 			<div><a href="#two">Our campany</a></div>
 			<div><a href="#three">Our culture</a></div>
@@ -43,16 +44,16 @@
 
 		<div class="content">
 			<!--//one mainpage-->
-			<header class="hero-section" id="#random" >
+			<header class="hero-section">
 				<img data-speed=".6" class="hero" src="/static/hcau/img/mainbg_01.png" alt="Alt" >
 				<!-- <img data-speed=".6" class="hero" src="/static/hcau/img/mainbg_01.png" alt="Alt" > -->
 				<div class="container">
 					<div  class="main-header" data-speed="0.8">
 						<div class="main-title">Global Leader in Mobility Finance</div>
-						<div class="sub-title">Hyundai Capital Services is in pursuit of a vision to become 'Global Leader in finance mobility' and its mobility finance services are available in 14 countries across the world</div>
+						<div class="sub-title">Hyundai Capital Services is in pursuit of a vision to become ‘Global Leader in finance mobility’ and its mobility finance services are available in 14 countries across the world</div>
 					</div>
 				</div>
-				<button data-speed="" type="button" class="btn-guide-arrow" style="opacity: 1; visibility: inherit;">
+				<button data-speed="2.2" type="button" class="btn-guide-arrow" style="opacity: 1; visibility: inherit;">
 					<span class="a11y"><img src="/static/hcau/img/btn-ani.svg" alt="scroll down button"></span>
 				</button>
 			</header>
@@ -63,10 +64,10 @@
 			<div class="our_company"id="#company">
 				<div class="container">
 					<main class="gallery">
-						<div class="gallery__center">
+						<div data-speed=".9" class="gallery__center">
 							<img class="gallery__item" src="/static/hcau/img/mainbg_02.png" alt="Alt">
 							<h2 class="text-block__h text-uppercase" data-speed="">Our Company</h2>
-							<div class="text-block gallery__item gallery__bg"data-speed="1.2" >
+							<div class="text-block gallery__item gallery__bg">
 								<p class="text-block__p">As a captive auto finance company, we achieve success by helping our partners succeed—working to fuel the growth of our auto manufacturers and dealers.</p>
 								<button><span>see more</span></button>
 							</div>
@@ -75,7 +76,40 @@
 				</div>
 			</div>
 			
-			
+			<div class="portfolio">
+				<div class="container">
+					<main class="gallery">
+	
+						<div data-speed=".9" class="gallery__left">
+		
+							<img class="gallery__item" src="img/work/1.jpg" alt="Alt">
+							<img class="gallery__item" src="img/work/2.jpg" alt="Alt">
+		
+							<div class="text-block gallery__item">
+								<h2 class="text-block__h">Creative floating scroll with amazing parallax effect</h2>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+							</div>
+		
+							<img class="gallery__item" src="img/work/6.jpg" alt="Alt">
+		
+						</div>
+
+						<div data-speed="1.1" class="gallery__right">
+		
+							<div class="text-block gallery__item">
+								<h2 class="text-block__h">Creative floating scroll with amazing parallax effect</h2>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+							</div>
+		
+							<img class="gallery__item" src="img/work/4.jpg" alt="Alt">
+							<img class="gallery__item" src="img/work/5.jpg" alt="Alt">
+							<img class="gallery__item" src="img/work/3.jpg" alt="Alt">
+		
+						</div>
+
+					</main>
+				</div>
+			</div>
 			<!--//three our culture-->
 			<div class="our_culture" id="#culuture">
 				<div class="container container__hero hero-section__gap">
@@ -108,34 +142,6 @@
 						</div>
 					</main>
 				</div>
-			</div>
-
-
-
-			<div class="hero-section2">
-				<main class="gallery position-relative">
-					<img data-speed="" class="hero" src="/static/hcau/img/mainbg_05.png" alt="Alt" >
-					<!-- <div data-speed=".9" class="gallery__center"> -->
-					<div data-speed=".9" class="gallery__center">
-						<div>
-							<h2 class="text-block__h text-uppercase">Our Csdfompany</h2>
-							<img class="gallery__item" src="/static/hcau/img/mainbg_06.png" alt="Alt">
-							<!-- <div  data-speed="0.9" class="text-block gallery__box"> -->
-							<div  data-speed=".9" class="text-block gallery__box">
-								<div class="text-wrap">
-								<p class="text-block__p">As a captive auto finance company, we achieve success by helping our partners succeed—working to fuel the growth of our auto manufacturers and dealers.</p>
-								
-								</div>
-								<div class="opacity-box"></div>
-							</div>
-						</div>
-						
-	
-						<img class="gallery__item" src="/static/hcau/img/mainbg_06.png" alt="Alt">
-						
-					</div>
-					<!-- <div data-speed="1.1" class="gallery__center"> -->
-				</main>
 			</div>
 
 			<!-- HCAU-footer -->
@@ -220,33 +226,38 @@
 		}
 		//
 		$(document).ready(function(){
-			var images=['/static/hcau/img/mainbg_010.png',
-						'/static/hcau/img/mainbg_020.png',
-						'/static/hcau/img/mainbg_030.png'];
+			var images=['images/001.jpg',
+						'images/002.jpg',
+						'images/003.jpg',
+						'images/004.jpg',
+						'images/005.jpg',];
 			
 			var randomNumber = Math.floor(Math.random() * images.length);
 			var bgImg = 'url(' + images[randomNumber] + ')';
 			
-			$('header').css({'background':bgImg, 'background-size':'cover', });
+			$('body').css({'background':bgImg, 'background-size':'cover', });
 			
 			});
 		//
 		function randombg(){
 			var random= Math.floor(Math.random() * 6) + 0;
-			var bigSize = ["url('/static/hcau/img/mainbg_010.png')",
-					"url('/static/hcau/img/mainbg_020.png')",
-					"url('/static/hcau/img/mainbg_030.png')"];
+			var bigSize = ["url('http://placehold.it/300&text=banner1')",
+					"url('http://placehold.it/300&text=banner2')",
+					"url('http://placehold.it/300&text=banner3')",
+					"url('http://placehold.it/300&text=banner4')",
+					"url('http://placehold.it/300&text=banner5')",
+					"url('http://placehold.it/300&text=banner6')"];
 			document.getElementById("random").style.backgroundImage=bigSize[random];
 		}
 		  //
 		var imgCount = 3;
-		var dir = '/static/hcau/img/';
+		var dir = 'images/';
 		var randomCount = Math.round(Math.random() * (imgCount - 1)) + 1;
 		var images = new Array
-				images[1] = "mainbg_010.png",
-				images[2] = "mainbg_020.png",
-				images[3] = "mainbg_030.png",
-		document.header.image.src = "url(" + dir + images[randomCount] + ")"; 
+				images[1] = "bg-01.jpg",
+				images[2] = "bg-02.jpg",
+				images[3] = "bg-03.jpg",
+		document.body.style.backgroundImage = "url(" + dir + images[randomCount] + ")"; 
 		//
 		document.addEventListener('DOMContentLoaded', function() {
 			var images = [

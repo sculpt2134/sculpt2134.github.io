@@ -14,6 +14,11 @@
     --HYBold: 'HYExtraBold';
     // font-size:calc(1vw - 1vh +.5vmin)
 }
+
+@function get-vw($target) {
+    $vw-context: (1920 * 0.01) * 1px;
+    @return ($target / $vw-context) * 1vw;
+    }
 body {
 	background:#000;
 	color: #fafafa;
@@ -21,43 +26,6 @@ body {
 	overflow-x: hidden;
 }
 
-#parallax__title {
-    position: fixed;
-    left: 20px;
-    top: 20px;
-    z-index: 1000;
-}
-#parallax__title h1 {
-    font-size: 30px;
-    border-bottom: 1px dashed var(--bs-black);
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-    font-weight: 400;
-    display: inline-block;
-}
-#parallax__title p {
-    font-size: 16px;
-}
-#parallax__title ul {
-    margin-top: 10px;
-}
-#parallax__title li {
-    display: inline;
-}
-#parallax__title li a {
-    width: 20px; 
-    height: 20px;
-    border-radius: 50%;
-    border: 1px dashed #fff;
-    display: inline-block;
-    text-align: center;
-    line-height: 20px;
-    font-size: 12px;
-}
-#parallax__title li.active a {
-    background: #fff;
-    color: var(--bs-black);
-}
 #parallax__nav {
     position: fixed;
     left: 0;
@@ -83,7 +51,6 @@ body {
                     display: inline-block;
                     color:#999;
                     transition: all 0.3s;
-                    font-size: 18px;
                     text-decoration: none;
                     font-family: var(--HYBold);
                     
@@ -95,6 +62,84 @@ body {
         }
     }
 }
+/****/
+aside {
+    position: fixed;
+    height:calc(100vh - 200px);
+    top: 0;
+    transform: translateY(50%);
+    right: 10px;
+    padding: 0px 10px;
+    z-index: 55;
+    display:flex;
+    flex-direction: column;
+    gap:40px;
+    a {
+    color: transparent;
+    font-size: calc(var(--width) * 0.5);
+    line-height: 35px;
+    text-decoration: none;
+    height:25px;
+    width:110px;
+    animation: all ease-in .5s;
+    -webkit-animation: all ease-in .5s;
+    &::before{
+        background:url(/static/hcau/img/aside.svg) no-repeat;
+        content:"";
+        position:absolute;
+        left:-20px;
+        margin-top:8px;
+        margin-right:8px;
+        width:18px;
+        height:18px;
+        // border: 2px solid red;
+    }
+    &:hover {
+        color:#fff;
+    }
+    &.active {
+        color: #fff;
+        &::before{
+            background:url(/static/hcau/img/aside_on.svg) no-repeat;
+            content:"";
+            position:absolute;
+            left:-20px;
+            margin-top:8px;
+            margin-right:8px;
+            width:18px;
+            height:18px;
+            // border: 2px solid red;
+            }
+        }
+
+    }
+}
+.btn-guide-arrow {
+    position: absolute;
+    z-index: 1;
+    bottom: 8%;
+    left: 50%;
+    width: 90px;
+    height: 26px;
+    background: transparent;
+    border:0;    
+   -webkit-animation: arrow-down infinite 1.5s;
+   animation: arrow-down infinite 1.5s;
+}
+
+
+
+@-webkit-keyframes arrow-down {
+    0% {        -webkit-transform: translate3d(0, 0, 0);        transform: translate3d(0, 0, 0)   ;opacity:1;  }
+    30% {        -webkit-transform: translate3d(0, 50%, 0);        transform: translate3d(0, 50%, 0)  ;opacity: .5;  }
+    60% {        -webkit-transform: translate3d(0, 0, 0);        transform: translate3d(0, 0, 0)  }
+}
+@keyframes arrow-down {
+    0% {        -webkit-transform: translate3d(0, 0, 0);        transform: translate3d(0, 0, 0)   ;opacity: 1;  }
+    30% {        -webkit-transform: translate3d(0, 50%, 0);        transform: translate3d(0, 50%, 0)   ;opacity: .5;  }
+    60% {        -webkit-transform: translate3d(0, 0, 0);        transform: translate3d(0, 0, 0)     }
+}
+
 
 .hero-section{
     position: relative;
@@ -110,8 +155,6 @@ body {
 	top: 0;
 	z-index: -1;
 }
-
-
 .container {
 	padding: 0 7vw;
     &__hero{
@@ -128,145 +171,37 @@ body {
             
         }
     }
-}
-
-.main-header { 
-    height: 100vh; 
-    display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-    position:relative;
-    gap:60px;
-    .main-title {
-            font-size: calc(var(--width) * 2.5);
-            font-family:var(--HYBold);
-            text-transform: uppercase;
-    }
-    .sub-title{
-        font-size: calc(var(--index) * 0.68);
+    
+    .main-header { 
+        height: 100vh; 
         display: flex;
-        justify-content: center;
-        font-family:var(--HYReg);
-        text-align: center;
-        
-    }
-}
-/****/
-aside {
-    position: fixed;
-    height:calc(100vh - 200px);
-    top: 0;
-    transform: translateY(50%);
-    right: 10px;
-    padding: 0px 10px;
-    z-index: 55;
-    ul{
-        display:flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        a {
-            color: white;
-            font-size: 1.3em;
-            line-height: 1.7;
-            text-decoration: none;
-            display: none;
-        &:hover,
-        .active {
-            display: block;
-            color: red;
-            }
-        &::before{
-            background:url(/static/hcau/img/aside_on.svg);
-            content:"";
-            width:18px;
-            height:18px;
-            border: 2px solid red;
+        position:relative;
+        gap:60px;
+        .main-title {
+                font-size: calc(var(--width) * 2.5);
+                font-family:var(--HYBold);
+                text-transform: uppercase;
         }
+        .sub-title{
+            font-size: calc(var(--index) * 0.68);
+            display: flex;
+            justify-content: center;
+            font-family:var(--HYReg);
+            text-align: center;
+            
         }
     }
-  }
-  aside {
-    display:flex;
-    flex-direction: column;
-    gap:40px;
-    a {
-    color: transparent;
-    font-size: calc(var(--index) * 0.5);
-    line-height: 35px;
-    text-decoration: none;
-    height:25px;
-    width:110px;
-    &::before{
-        background:url(/static/hcau/img/aside.svg) no-repeat;
-        content:"";
-        position:absolute;
-        left:-20px;
-        margin-top:8px;
-        margin-right:8px;
-        width:18px;
-        height:18px;
-        // border: 2px solid red;
-    }
-
-    &:hover {
-       // text-decoration: underline;
-      }
-    &.active {
-        color: #fff;
-        &::before{
-            background:url(/static/hcau/img/aside_on.svg) no-repeat;
-            content:"";
-            position:absolute;
-            left:-20px;
-            margin-top:8px;
-            margin-right:8px;
-            width:18px;
-            height:18px;
-            // border: 2px solid red;
-        }
-      }
-
-  }
-}
-//   aside a:hover {
-//     text-decoration: underline;
-//   }
-  
-//   aside a.active {
-//     color: red;
-//   }
-.btn-guide-arrow {
-    position: absolute;
-    z-index: 1;
-    bottom: 2%;
-    left: 50%;
-    width: 90px;
-    height: 56px;
-    background: transparent;
-    border:0;
-    -webkit-transform: translate3d(2%, 0, 0);
-    transform: translate3d(-2%, 0, 0);
-    //color: #fff;
-    -webkit-animation: arrow-down infinite 1.5s;
-    animation: arrow-down infinite 1.5s;
-
-    //cursor: pointer
+    
+   
 }
 
 
-@-webkit-keyframes arrow-down {
-    0% {        -webkit-transform: translate3d(-50%, 0, 0);        transform: translate3d(-50%, 0, 0)    }
-    30% {        -webkit-transform: translate3d(-50%, 2%, 0);        transform: translate3d(-50%, 2%, 0)    }
-    60% {        -webkit-transform: translate3d(-50%, 0, 0);        transform: translate3d(-50%, 0, 0)    }
-}
-@keyframes arrow-down {
-    0% {        -webkit-transform: translate3d(-50%, 0, 0);        transform: translate3d(-50%, 0, 0)    }
-    30% {        -webkit-transform: translate3d(-50%, 2%, 0);        transform: translate3d(-50%, 2%, 0)    }
-    60% {        -webkit-transform: translate3d(-50%, 0, 0);        transform: translate3d(-50%, 0, 0)    }
-}
+
  //footer
- .HCAU-footer {
+.HCAU-footer {
     width: 100%;
     min-width:1440px;
     // max-width:1440px;
@@ -376,7 +311,7 @@ aside {
         .gallery__bg{
             margin: -390px calc(var(--index) * 2);
             background: rgba(0,0,0,.2) ;
-            backdrop-filter: url(filters.svg#filter) blur(10px) saturate(150%);
+            backdrop-filter: blur(10px) saturate(150%);
             height: 300px;
             display: flex;
             align-items: center;
@@ -405,8 +340,7 @@ aside {
             
         }
     }
-    opacity-box{width:100%;height:400px;background: rgba(0,0,0,.2);filter: blur(10px);}
-    
+
 
 .text-block {
 	color: var(--color-text);

@@ -20,13 +20,15 @@ if (ScrollTrigger.isTouch !== 1) {
 	})
 	
 	
-	gsap.fromTo('.btn-guide-arrow', { opacity: 1, y: 0 }, {
-		opacity: 0, y: 0,
+	gsap.fromTo('.btn-guide-arrow', { opacity: 1 }, {
+		opacity: 0,
 		scrollTrigger: {
-			trigger: '.btn-guide-arrow',
-			// start: '0',
-			// end: '0',
-			// scrub: true
+			start: "top top",
+	end:10,
+		//	trigger: '.hero-section',
+			// start: '100',
+			// end: '-100',
+		//	scrub: true
 		}
 	})
 
