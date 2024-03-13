@@ -1,0 +1,98 @@
+
+// font - poppins
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+// initialize
+html {
+  font-family: 'Poppins', sans-serif;
+  color: #660707;
+  background: #d0d99a;
+}
+
+body {
+  margin: 0 !important;
+}
+
+// set max width
+$vw-viewport: 1200;
+@mixin SCREEN{ @media (max-width: #{$vw-viewport}px){ @content; } }
+
+@function get-vw($px){
+    $vw-context: $vw-viewport * 0.01 * 1px;
+  @return $px / $vw-context * 1vw;
+}
+
+@mixin set-vw($property, $px){
+    @include SCREEN {
+        #{$property}: get-vw($px);
+    }
+    #{$property}: $px;
+}
+
+@mixin set-pair-vw($property, $vertical, $horizontal){
+    @include SCREEN {
+        #{$property}: get-vw($vertical) get-vw($horizontal);
+    }
+    #{$property}: $vertical $horizontal;
+}
+
+// colors
+$blue : #1abab1;
+
+// app
+#app {
+  width: -webkit-fill-available;
+  height: 100vh;
+  max-width: #{$vw-viewport}px;
+  margin: auto;
+  @include set-pair-vw(padding, 0px, 15px);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-weight: 700;
+  @include set-vw(font-size, 28px);
+  @include set-vw(margin-bottom, 5px);
+}
+
+.description {
+    @include set-vw(font-size, 18px);
+    @include set-vw(margin-bottom, 20px);
+}
+
+img {
+  @include set-vw(width, 300px);
+  @include set-vw(height, 300px);
+  @include set-vw(border-radius, 10px);
+}
+
+.speech-bubble {
+  $bubble-color: ivory;
+  
+  background-color: #88c157;
+  background-color: $bubble-color;
+  position: relative;
+  
+  @include set-pair-vw(padding, 20px, 25px);
+  @include set-vw(min-width, 300px);
+  @include set-vw(margin-top, 30px);
+  @include set-vw(border-radius, 20px);
+  @include set-vw(font-size, 18px);
+  
+  &::after {
+    content: "";
+    border-bottom: solid $bubble-color;
+    border-left: solid #00000000;
+    border-right: solid #00000000;
+    position: absolute;
+    bottom: 100%;
+    left: 30%;
+    @include set-vw(border-left-width, 8px);
+    @include set-vw(border-right-width, 8px);
+    @include set-vw(border-bottom-width, 12px);
+  }
+}

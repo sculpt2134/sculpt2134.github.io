@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>HCAU</title>
+
+	<!-- <script src="/static/hcau/js/gsap.min.js" defer></script>-->
+	
+	<link rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css'>
+	<link rel="stylesheet" href="/static/hcau/css/HCAU-style2.css">
+	
+	<!-- <script src="/kr/assets/js/lib/modernizr-custom.js"></script> -->
+	<link rel="preload" href="/static/hcau/fonts/Youandi_Modern_HeadExtraBold.woff" as="font" type="font/woff" crossorigin>
+	<link rel="preload" href="/static/hcau/fonts/Youandi_Modern_TextBold.woff" as="font" type="font/woff" crossorigin>
+	<link rel="preload" href="/static/hcau/fonts/Youandi_Modern_TextRegular.woff" as="font" type="font/woff" crossorigin>
+</head>
+<body>
+
+	
+	
+    <div class="swiper-container wrapper">
+        <nav id="parallax__nav">
+            <div>
+                <h1><img src="/static/hcau/img/logo.svg" alt="hyundai capital au logo"></h1>
+                <ul>
+                    <li><a href="company.html">OUR COMPANY</a></li>
+                    <li><a href="culture.html">OUR CULTURE</a></li>
+                    <li><a href="career.html">CAREERS</a></li>
+                    <li class="active"><a href="relation.html">INVESTOR RELATIONS</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="slider swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide-inner">
+                    <img data-speed=".1" class="hero" src="/static/hcau/img/mainbg_01.png" alt="Alt" >
+                    <!-- <img data-speed=".6" class="hero" src="/static/hcau/img/mainbg_01.png" alt="Alt" > -->
+                    <div class="container">
+                        <div  class="main-header" data-speed="0.8">
+                            <div class="main-title">Global Leader in Mobility Finance</div>
+                            <div class="sub-title">Hyundai Capital Services is in pursuit of a vision to become 'Global Leader in finance mobility' and its mobility finance services are available in 14 countries across the world</div>
+                        </div>
+                    </div>
+                    <button data-speed="" type="button" class="btn-guide-arrow" style="opacity: 1; visibility: inherit;">
+                        <span class="a11y"><img src="/static/hcau/img/btn-ani.svg" alt="scroll down button"></span>
+                    </button>
+             
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-inner">
+                <div class="content">
+                    <div class="our_company"id="#company">
+                        <div class="container">
+                            <main class="gallery">
+                                <div class="gallery__center">
+                                    <img  data-speed=".9" class="gallery__item" src="/static/hcau/img/mainbg_02.png" alt="Alt">
+                                    <h2 class="text-block__h text-uppercase" data-speed="">Our Company</h2>
+                                    <div class="text-block gallery__item gallery__bg" data-speed="0.9" >
+                                        <p class="text-block__p">As a captive auto finance company, we achieve success by helping our partners succeed—working to fuel the growth of our auto manufacturers and dealers.</p>
+                                        <button><span>see more</span></button>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-inner">
+                  <img src="/static/hcau/img/mainbg_03.png" alt="home">
+                  <div data-speed=".6" class="gallery__center">
+                    <img class="gallery__item" src="/static/hcau/img/mainbg_04.png" alt="Alt">
+                    <h2 class="text-block__h text-uppercase" data-speed="">Our Culture</h2>
+                    <div class="text-block gallery__item gallery__bg" data-speed="0.9">
+                        <p class="text-block__p">We encourage every individual in our team to bring their full selves to work and offer their unique perspectives on how we can continuously strive to challenge the status quo in pursuit of shared team success.</p>
+                        <button class="margin-bottom:100px"><span>see more</span></button>
+                    </div>
+                </div>
+                </div>
+                <div id="content">more content</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-inner">
+                  <img src="https://html.nkdev.info/piroll/assets/images/home-6-4.jpg" alt="home">
+                  <div id="content">more content</div>
+                  <div id="content">more content</div>
+                </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div id="content">more content</div>
+	
+	  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+	  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.0/gsap.min.js'></script>
+      <script src="/static/hcau/js/ScrollTrigger.min.js" defer></script>
+	  <script src="/static/hcau/js/ScrollSmoother.min.js" defer></script>
+	  <script src='https://unpkg.com/swiper/swiper-bundle.min.js'></script>
+      <script src="/static/hcau/js/app.js" defer></script>
+	  
+	  <script>
+		  const interleaveOffset = 0.75;
+	  
+		  var swiper = new Swiper('.swiper-container', {
+			direction: 'vertical',
+			speed: 800,
+			mousewheelControl: true,
+			watchSlidesProgress: true,
+			mousewheel: {
+			  releaseOnEdges: true,
+			},
+			pagination: {
+			  el: '.swiper-pagination',
+			  clickable: false,
+			  type: 'bullets',
+			  renderBullet: function (index, className) {
+				return '<span class="' + className + '">' + ('0' + (index + 1)) + '</span>';
+			  }
+			},
+			on: {
+			  progress: function() {
+				console.log('test')
+				let swiper = this;
+		  
+				for (let i = 0; i < swiper.slides.length; i++) {
+				  let slideProgress = swiper.slides[i].progress;
+				  let innerOffset = swiper.height * interleaveOffset;
+				  let innerTranslate = slideProgress * innerOffset;
+		  
+				  TweenMax.set(swiper.slides[i].querySelector(".slide-inner"), {
+					y: innerTranslate,
+				  });
+				}
+			  },
+			  setTransition: function(slider, speed) {
+				let swiper = this;
+				for (let i = 0; i < swiper.slides.length; i++) {
+				  swiper.slides[i].style.transition = speed + "ms";
+				  swiper.slides[i].querySelector(".slide-inner").style.transition =
+					speed + "ms";
+				}
+			  }
+			}
+		  });
+	  </script>
+</body>
+</html>

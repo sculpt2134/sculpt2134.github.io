@@ -1,0 +1,19 @@
+    @function get-vw($target) {
+        $vw-context: (1920 * 0.01) * 1px;
+        @return calc($target / $vw-context) * 1vw;
+    }
+    @function get-px($target) {
+        $px-context: (1000) * 1px;
+        @return calc($target / $px-context) * 1;
+    }
+    .tlt-wrap{
+        min-width:1440px;max-width:1440px;min-height:800px;width:100%;margin:70px auto 0;
+        .sub-tlt{
+            font-size: get-vw(80px);
+            color:#000;font-family:'HYExtraBold';padding-top: get-vw(120px);
+        }
+        .hero{top:get-vw(300px);}
+    }
+
+  //  @mixin SCREEN{ @media (max-width: #{$vw-viewport}px){ @content; } and (min-width: #{$px-viewport}px){ @content; } }
+  

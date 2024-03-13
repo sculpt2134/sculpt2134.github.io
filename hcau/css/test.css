@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+html {
+  font-family: "Poppins", sans-serif;
+  color: #660707;
+  background: #d0d99a;
+}
+
+body {
+  margin: 0 !important;
+}
+
+#app {
+  width: -webkit-fill-available;
+  height: 100vh;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1200px) {
+  #app {
+    padding: 0vw 1.25vw;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+@media (max-width: 1200px) {
+  .title {
+    font-size: 2.3333333333vw;
+  }
+}
+@media (max-width: 1200px) {
+  .title {
+    margin-bottom: 0.4166666667vw;
+  }
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1200px) {
+  .description {
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 1200px) {
+  .description {
+    margin-bottom: 1.6666666667vw;
+  }
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+@media (max-width: 1200px) {
+  img {
+    width: 25vw;
+  }
+}
+@media (max-width: 1200px) {
+  img {
+    height: 25vw;
+  }
+}
+@media (max-width: 1200px) {
+  img {
+    border-radius: 0.8333333333vw;
+  }
+}
+
+.speech-bubble {
+  background-color: #88c157;
+  background-color: ivory;
+  position: relative;
+  padding: 20px 25px;
+  min-width: 300px;
+  margin-top: 30px;
+  border-radius: 20px;
+  font-size: 18px;
+}
+@media (max-width: 1200px) {
+  .speech-bubble {
+    padding: 1.6666666667vw 2.0833333333vw;
+  }
+}
+@media (max-width: 1200px) {
+  .speech-bubble {
+    min-width: 25vw;
+  }
+}
+@media (max-width: 1200px) {
+  .speech-bubble {
+    margin-top: 2.5vw;
+  }
+}
+@media (max-width: 1200px) {
+  .speech-bubble {
+    border-radius: 1.6666666667vw;
+  }
+}
+@media (max-width: 1200px) {
+  .speech-bubble {
+    font-size: 1.5vw;
+  }
+}
+.speech-bubble::after {
+  content: "";
+  border-bottom: solid ivory;
+  border-left: solid rgba(0, 0, 0, 0);
+  border-right: solid rgba(0, 0, 0, 0);
+  position: absolute;
+  bottom: 100%;
+  left: 30%;
+  border-left-width: 8px;
+  border-right-width: 8px;
+  border-bottom-width: 12px;
+}
+@media (max-width: 1200px) {
+  .speech-bubble::after {
+    border-left-width: 0.6666666667vw;
+  }
+}
+@media (max-width: 1200px) {
+  .speech-bubble::after {
+    border-right-width: 0.6666666667vw;
+  }
+}
+@media (max-width: 1200px) {
+  .speech-bubble::after {
+    border-bottom-width: 1vw;
+  }
+}/*# sourceMappingURL=test.css.map */
