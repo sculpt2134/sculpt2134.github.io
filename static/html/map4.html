@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>간단한 지도 표시하기</title>
+    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=bg1zcyrcbe"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+
+
+<body>
+
+<!-- 네이버 지도가 뿌려질 곳 !  -->
+<div id="map" style="width:100%;height:75vh; margin: 0 auto;"></div>
+
+
+</body>
+
+
+
+    <script type="text/javascript">
+$(function() {
+	
+	initMap();
+	
+});
+
+function initMap() {
+	
+	let markers = new Array(); // 마커 정보를 담는 배열
+	let infoWindows = new Array(); // 정보창을 담는 배열
+	
+	var map = new naver.maps.Map('map', {
+        center: new naver.maps.LatLng(37.552758094502494, 126.98732600494576),
+        zoom: 15,
+        zoomControl: true,
+    });
+//https://jisoo-log.tistory.com/12
+
+    var marker = new naver.maps.Marker({
+        map: map,
+        title: "남산서울타워",
+        position: new naver.maps.LatLng(37.552758094502494, 126.98732600494576),
+        /*https://navermaps.github.io/maps.js.en/docs/img/example/sp_mapbridge5.png*/
+        icon: {
+            content: '<img src="flag.png" alt="" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; max-width: none; max-height: none; -webkit-user-select: none; position: absolute; width: 32px; height: 32px; left: 0px; top: 0px;">',
+            size: new naver.maps.Size(32, 32),
+            anchor: new naver.maps.Point(16, 32)
+        }
+    });
+    
+    /* 정보창 */
+	 var infoWindow = new naver.maps.InfoWindow({
+	        content: '<div style="min-width:120px;text-align:center;padding:2px 4px;margin: 2px 10px 0"><b>서울남산타워</b></div>'
+	 }); // 클릭했을 때 띄워줄 정보 입력
+    
+	 markers.push(marker); // 생성한 마커를 담는다.
+	 infoWindows.push(infoWindow); // 생성한 정보창을 담는다.
+    
+    
+    function getClickHandler(seq) {
+		
+            return function(e) {  // 마커를 클릭하는 부분
+                var marker = markers[seq], // 클릭한 마커의 시퀀스로 찾는다.
+                    infoWindow = infoWindows[seq]; // 클릭한 마커의 시퀀스로 찾는다
+
+                if (infoWindow.getMap()) {
+                    infoWindow.close();
+                } else {
+                    infoWindow.open(map, marker); // 표출
+                }
+    		}
+    	}
+    
+    for (var i=0, ii=markers.length; i<ii; i++) {
+    	console.log(markers[i] , getClickHandler(i));
+        naver.maps.Event.addListener(markers[i], 'click', getClickHandler(i)); // 클릭한 마커 핸들러
+    }
+
+    
+}
+
+
+</script>
+<!--https://bcdragonfly.tistory.com/56-->
+</html>
+
+

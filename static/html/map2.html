@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>간단한 지도 표시하기</title>
+    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=bg1zcyrcbe"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<style>
+    code {
+  padding: 0;
+}
+
+p {
+    margin: 18px 0 !important;
+}
+
+.control-btn {
+    margin: 0;
+    color: #555;
+    padding: 2px 6px;
+    background: #fff;
+    border: solid 1px #333;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    outline: 0 none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.5) !important;
+}
+.control-on {
+    background-color: #2780E3;
+    color: #FFF;
+}
+/* 요약정보레이어 예제 */
+.iw_inner {
+    padding: 10px;
+}
+.iw_inner h3 {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin: 10px 0;
+}
+.iw_inner p {
+    font-size: 12px;
+    color: #333;
+}
+.iw_inner img.thumb {
+    float: right;
+    border: solid 1px #aeaeae;
+}
+#wrap > h2 {
+    display: none;
+}
+#wrap > a.back {
+    display: none;
+}
+#wrap2 > h2 {
+    display: none;
+}
+#wrap2 > a.back {
+    display: none;
+}
+
+/* HTML Marker */
+.cs_mapbridge .map_group .map_marker{position:absolute;width:20px;height:20px;z-index:5}
+.cs_mapbridge .map_group .map_marker[class*=_big]{z-index:6}
+.cs_mapbridge .map_group .map_marker .ico{position:absolute;background:url(../img/example/sp_mapbridge5.png) no-repeat;background-size:400px 450px;-webkit-background-size:400px 450px;z-index:10}
+.cs_mapbridge .map_group .map_marker .ico:after{position:absolute;top:-5px;right:-5px;bottom:-5px;left:-5px;background-color:transparent;content:'';z-index:30}
+.cs_mapbridge .map_group .map_marker .shd{position:absolute;top:0;left:0;background:url(../img/example/sp_mapbridge5.png) no-repeat;background-size:400px 450px;-webkit-background-size:400px 450px;content:''}
+.cs_mapbridge .map_marker.hp .ico{width:26px;height:36px;background-position:-175px 0;background-size:400px 450px;-webkit-background-size:400px 450px;transform-origin:12px 100%;-webkit-transform-origin:12px 100%}
+.cs_mapbridge .map_marker.hp_big .ico{width:38px;height:58px;background-position:-175px -45px;background-size:400px 450px;-webkit-background-size:400px 450px;transform-origin:19px 54px;-webkit-transform-origin:19px 54px}
+.cs_mapbridge .map_marker.hp_big .shd{top:24px;left:8px;width:38px;height:34px;background-position:-175px -105px;background-size:400px 450px;-webkit-background-size:400px 450px}
+.cs_mapbridge .map_marker.tvhp .ico{width:26px;height:36px;background-position:-210px 0;background-size:400px 450px;-webkit-background-size:400px 450px;transform-origin:12px 100%;-webkit-transform-origin:12px 100%}
+.cs_mapbridge .map_marker.tvhp_big .ico{width:38px;height:58px;background-position:-220px -45px;background-size:400px 450px;-webkit-background-size:400px 450px;transform-origin:19px 54px;-webkit-transform-origin:19px 54px}
+.cs_mapbridge .map_marker.tvhp_big .shd{top:24px;left:8px;width:38px;height:34px;background-position:-220px -105px;background-size:400px 450px;-webkit-background-size:400px 450px}
+.cs_mapbridge .crs .map_marker[class*=_big] .shd{top:24px;left:8px;width:38px;height:34px;background-position:-50px -270px;background-size:400px 450px;-webkit-background-size:400px 450px}
+.cs_mapbridge .crs .map_marker .ico{width:25px;height:36px}
+.cs_mapbridge .crs .map_marker.num1 .ico{background-position:-5px -215px;background-size:400px 450px;-webkit-background-size:400px 450px;transform-origin:12px 100%;-webkit-transform-origin:12px 100%}
+.cs_mapbridge .crs .map_marker.num2 .ico{background-position:-35px -215px;background-size:400px 450px;-webkit-background-size:400px 450px;transform-origin:12px 100%;-webkit-transform-origin:12px 100%}
+.cs_mapbridge .crs .map_marker.num3 .ico{background-position:-65px -215px;background-size:400px 450px;-webkit-background-size:400px 450px;transform-origin:12px 100%;-webkit-transform-origin:12px 100%}
+.cs_mapbridge .crs .map_marker.num4 .ico{background-position:-95px -215px;background-size:400px 450px;-webkit-background-size:400px 450px;transform-origin:12px 100%;-webkit-transform-origin:12px 100%}
+.cs_mapbridge .crs .map_marker.num5 .ico{background-position:-125px -215px;background-size:400px 450px;-webkit-background-size:400px 450px;transform-origin:12px 100%;-webkit-transform-origin:12px 100%}
+.cs_mapbridge .crs .map_marker.num6 .ico{background-position:-278px -387px;background-size:400px 450px;-webkit-background-size:400px 450px;transform-origin:12px 100%;-webkit-transform-origin:12px 100%}
+.cs_mapbridge .crs .map_marker.num7 .ico{background-position:-305px -387px;background-size:400px 450px;-webkit-background-size:400px 450px;transform-origin:12px 100%;-webkit-transform-origin:12px 100%}
+.cs_mapbridge .crs .map_marker.num8 .ico{background-position:-334px -387px;background-size:400px 450px;-webkit-background-size:400px 450px;transform-origin:12px 100%;-webkit-transform-origin:12px 100%}
+.cs_mapbridge .crs .map_marker[class*=_big] .ico{width:38px;height:58px}
+.cs_mapbridge .crs .map_marker.num1_big .ico{background-position:-160px -215px;background-size:400px 450px;-webkit-background-size:400px 450px;transform-origin:19px 54px;-webkit-transform-origin:19px 54px}
+.cs_mapbridge .crs .map_marker.num2_big .ico{background-position:-205px -215px;background-size:400px 450px;-webkit-background-size:400px 450px;transform-origin:19px 54px;-webkit-transform-origin:19px 54px}
+.cs_mapbridge .crs .map_marker.num3_big .ico{background-position:-250px -215px;background-size:400px 450px;-webkit-background-size:400px 450px;transform-origin:19px 54px;-webkit-transform-origin:19px 54px}
+.cs_mapbridge .crs .map_marker.num4_big .ico{background-position:-295px -215px;background-size:400px 450px;-webkit-background-size:400px 450px;transform-origin:19px 54px;-webkit-transform-origin:19px 54px}
+.cs_mapbridge .crs .map_marker.num5_big .ico{background-position:-5px -260px;background-size:400px 450px;-webkit-background-size:400px 450px;transform-origin:19px 54px;-webkit-transform-origin:19px 54px}
+.cs_mapbridge .crs .map_marker.num6_big .ico{background-position:-140px -387px;background-size:400px 450px;-webkit-background-size:400px 450px;transform-origin:19px 54px;-webkit-transform-origin:19px 54px}
+.cs_mapbridge .crs .map_marker.num7_big .ico{background-position:-185px -387px;background-size:400px 450px;-webkit-background-size:400px 450px;transform-origin:19px 54px;-webkit-transform-origin:19px 54px}
+.cs_mapbridge .crs .map_marker.num8_big .ico{background-position:-231px -387px;background-size:400px 450px;-webkit-background-size:400px 450px;transform-origin:19px 54px;-webkit-transform-origin:19px 54px}
+
+</style>
+</head>
+<body>
+    <div id="main" itemscope="" itemtype="https://schema.org/TechArticle">
+        <div style="display:none;">
+            <div itemprop="image" itemscope,="" itemtype="http://schema.org/ImageObject">
+                <meta itemprop="thumbnailUrl" content="./img/logo_200x200.png">
+                <img src="./img/logo_200x200.png" alt="logo">
+            </div>
+            <div>
+                <a href="tutorial-0-Getting-Started.html" itemprop="mainEntityOfPage">Tutorials</a>
+                <a href="tutorial-digest.example.html" itemprop="mainEntityOfPage">Examples</a>
+                <span itemprop="keywords">naver</span>
+                <span itemprop="keywords">map</span>
+                <span itemprop="keywords">js</span>
+                <span itemprop="keywords">api</span>
+                <span itemprop="keywords">v3</span>
+                <span itemprop="keywords">네이버 지도 API</span>
+                <span itemprop="keywords">Moving the map</span>
+            </div>
+        </div>
+        <script src="https://navermaps.github.io/maps.js.en/js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="https://navermaps.github.io/maps.js.en/js/base.js"></script>
+    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=83bfuniegk&amp;submodules=panorama,geocoder,drawing,visualization"></script>
+    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps-panorama.js"></script>
+    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps-geocoder.js"></script>
+    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps-drawing.js"></script>
+    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps-visualization.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/base.css">
+    
+    <section class="tutorial-section">
+    <header></header>
+    <article>
+    
+    
+    <h1>Moving the map</h1>
+    
+    
+    
+    <!--  -->
+    
+    <style type="text/css">
+    #wrap .buttons { position:absolute;top:0;left:0;z-index:1000;padding:5px; }
+    #wrap .buttons .control-btn { margin:0 5px 5px 0; }
+    </style>
+    <div id="wrap" class="section">
+    <h2>Moving the map</h2>
+    <p>The following code example shows various ways to move a map. This example contains jQuery code.</p>
+    <p>For more information on methods for moving the map, refer to <a href="naver.maps.Map.html">Map</a>.</p>
+    <div id="map" style="width: 100%; height: 600px; position: relative; overflow: hidden; background: rgb(248, 249, 250);" tabindex="0">
+    <div class="buttons">
+        <input id="to-jeju" type="button" value="setCenter (Jeju-do)" class="control-btn">
+        <input id="to-1" type="button" value="setZoom (level 6)" class="control-btn">
+        <input id="to-dokdo" type="button" value="fitBounds (Dokdo)" class="control-btn">
+        <input id="to-busan" type="button" value="panTo (Busan)" class="control-btn">
+        <input id="to-seoul" type="button" value="panToBounds (Seoul)" class="control-btn">
+        <input id="panBy" type="button" value="panBy" class="control-btn">
+    </div>
+    <div style="position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; overflow: visible; width: 100%; height: 100%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); z-index: 0; cursor: url(&quot;https://ssl.pstatic.net/static/maps/mantle/2x/openhand.cur&quot;), default;"><div style="position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; overflow: visible; width: 100%; height: 100%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); z-index: 0;"><div style="overflow: visible; width: 100%; height: 0px; position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 1;"><div style="overflow: visible; width: 100%; height: 0px; position: absolute; display: none; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 0; user-select: none;"></div><div style="overflow: visible; width: 100%; height: 0px; position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 1; user-select: none;"><div style="position: absolute; top: 0px; left: 0px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; display: block; width: 0px; height: 0px; overflow: visible; box-sizing: content-box !important;"><div draggable="false" unselectable="on" style="position: absolute; top: 231px; left: 419px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/436/198@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: -25px; left: 419px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/436/197@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: 487px; left: 419px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/436/199@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: -281px; left: 419px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/436/196@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: -281px; left: 675px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/437/196@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: 487px; left: 163px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/435/199@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: -25px; left: 675px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/437/197@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: 231px; left: 163px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/435/198@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: 231px; left: 675px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/437/198@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: -25px; left: 163px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/435/197@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: 487px; left: 675px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/437/199@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: -281px; left: 163px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/435/196@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: -281px; left: 931px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/438/196@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: 487px; left: -93px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/434/199@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: -25px; left: 931px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/438/197@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: 231px; left: -93px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/434/198@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: 231px; left: 931px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/438/198@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: -25px; left: -93px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/434/197@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: 487px; left: 931px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/438/199@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: -281px; left: -93px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/434/196@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: -281px; left: 1187px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/439/196@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: 487px; left: -349px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/433/199@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: -25px; left: 1187px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/439/197@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: 231px; left: -349px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/433/198@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: 231px; left: 1187px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/439/198@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: -25px; left: -349px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/433/197@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: 487px; left: 1187px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/439/199@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: -281px; left: -349px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1717723233/9/433/196@2x.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div></div></div><div style="overflow: visible; width: 100%; height: 0px; position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 100;"><div style="overflow: visible; width: 100%; height: 0px; position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 101;"></div><div style="overflow: visible; width: 100%; height: 0px; position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 103;"></div><div style="overflow: visible; width: 100%; height: 0px; position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 106;"></div></div></div><div style="position: absolute; display: none; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; overflow: visible; width: 100%; height: 100%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); background-color: rgb(255, 255, 255); z-index: 10000; opacity: 0.5;"></div></div></div><div style="position: absolute; z-index: 100; margin: 0px; padding: 0px; pointer-events: none; bottom: 0px; right: 0px;"><div style="border: 0px none; margin: -3px 0px 0px; padding: 0px; pointer-events: none; float: right; height: 20px;"><div style="position: relative; width: 83px; height: 14px; margin: 0px 12px 6px 2px; overflow: hidden; pointer-events: auto;"><span style="display: block; margin: 0px; padding: 0px 4px; text-align: center; font-size: 10px; line-height: 11px; font-family: Helvetica, AppleSDGothicNeo-Light, nanumgothic, NanumGothic, 나눔고딕, Dotum, 돋움, sans-serif; font-weight: 700; color: rgb(34, 34, 37); text-shadow: rgba(255, 255, 255, 0.8) -1px 0px, rgba(255, 255, 255, 0.8) 0px 1px, rgba(255, 255, 255, 0.8) 1px 0px, rgba(255, 255, 255, 0.8) 0px -1px;">20km</span><img src="https://ssl.pstatic.net/static/maps/mantle/2x/new-scale-normal-b.png" width="77" height="3" alt="" style="position: absolute; left: 3px; bottom: 0px; z-index: 2; display: block; width: 77px; height: 3px; overflow: hidden; margin: 0px; padding: 0px; border: 0px none; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important;"><img src="https://ssl.pstatic.net/static/maps/mantle/2x/new-scale-normal-l.png" width="3" height="8" alt="" style="position:absolute;left:0;bottom:0;z-index:2;display:block;width:3px;height:8px;overflow:hidden;margin:0;padding:0;border:0 none;max-width:none !important;max-height:none !important;min-width:0 !important;min-height:0 !important;"><img src="https://ssl.pstatic.net/static/maps/mantle/2x/new-scale-normal-r.png" width="3" height="8" alt="" style="position:absolute;right:0;bottom:0;z-index:2;display:block;width:3px;height:8px;overflow:hidden;margin:0;padding:0;border:0 none;max-width:none !important;max-height:none !important;min-width:0 !important;min-height:0 !important;"></div></div><div style="border: 0px none; margin: 0px; padding: 0px; pointer-events: none; float: right;"><a href="https://ssl.pstatic.net/static/maps/mantle/notice/legal.html" target="_blank" style="display: block; width: 45px; height: 10px; overflow: hidden; margin: 0px 5px 7px 12px; pointer-events: auto;"><img src="https://ssl.pstatic.net/static/maps/mantle/2x/naver-logo-normal-new.png" width="45" height="10" alt="NAVER" style="display:block;width:45px;height:10px;overflow:hidden;border:0 none;margin:0;padding:0;max-width:none !important;max-height:none !important;min-width:0 !important;min-height:0 !important;"></a></div></div><div style="position: absolute; z-index: 100; margin: 0px; padding: 0px; pointer-events: none; bottom: 0px; left: 0px;"><div style="border: 0px none; margin: 0px; padding: 0px; pointer-events: none; float: left; height: 19px;"><div class="map_copyright" style="margin: 0px; padding: 0px 0px 2px 10px; height: 19px; line-height: 19px; color: rgb(68, 68, 68); font-family: Helvetica, AppleSDGothicNeo-Light, nanumgothic, NanumGothic, 나눔고딕, Dotum, 돋움, sans-serif; font-size: 11px; clear: both; white-space: nowrap; pointer-events: none;"><div style="float: left;"><span style="white-space: pre; color: rgb(68, 68, 68);">© NAVER Corp.</span></div><a href="#" style="font-family: Helvetica, AppleSDGothicNeo-Light, nanumgothic, NanumGothic, 나눔고딕, Dotum, 돋움, sans-serif; font-size: 11px; line-height: 19px; margin: 0px 0px 0px 5px; padding: 0px; color: rgb(68, 68, 68); float: left; pointer-events: auto; text-decoration: underline; display: none;">더보기</a><div style="float: left;"><a target="_blank" href="http://www.openstreetmap.org/copyright" style="pointer-events: auto; white-space: pre; display: none; color: rgb(68, 68, 68);"> /OpenStreetMap</a></div></div></div></div><div style="border: 1px solid rgb(41, 41, 48); background: rgb(255, 255, 255); padding: 15px; color: rgb(51, 51, 51); position: absolute; font-size: 11px; line-height: 1.5; clear: both; display: none; max-width: 350px !important; max-height: 300px !important;"><h5 style="font-size: 12px; margin-top: 0px; margin-bottom: 10px;">지도 데이터</h5><a href="#" style="position: absolute; top: 8px; right: 8px; width: 14px; height: 14px; font-size: 14px; line-height: 14px; display: block; overflow: hidden; color: rgb(68, 68, 68); text-decoration: none; font-weight: bold; text-align: center;">x</a><div><span style="white-space: pre; color: rgb(68, 68, 68); float: left;">© NAVER Corp.</span><a target="_blank" href="http://www.openstreetmap.org/copyright" style="pointer-events: auto; white-space: pre; color: rgb(68, 68, 68); float: left; display: none;"> /OpenStreetMap</a></div></div></div>
+    <code id="snippet" class="snippet"><pre class=" hljs javascript">
+    <span class="hljs-keyword">var</span> map = <span class="hljs-keyword">new</span> naver.maps.Map(<span class="hljs-string">'map'</span>, {
+    center: <span class="hljs-keyword">new</span> naver.maps.LatLng(<span class="hljs-number">37.5666805</span>, <span class="hljs-number">126.9784147</span>),
+    zoom: <span class="hljs-number">9</span>
+    });
+    
+    <span class="hljs-keyword">var</span> jeju = <span class="hljs-keyword">new</span> naver.maps.LatLng(<span class="hljs-number">33.3590628</span>, <span class="hljs-number">126.534361</span>),
+    busan = <span class="hljs-keyword">new</span> naver.maps.LatLng(<span class="hljs-number">35.1797865</span>, <span class="hljs-number">129.0750194</span>),
+    dokdo = <span class="hljs-keyword">new</span> naver.maps.LatLngBounds(
+            <span class="hljs-keyword">new</span> naver.maps.LatLng(<span class="hljs-number">37.2380651</span>, <span class="hljs-number">131.8562652</span>),
+            <span class="hljs-keyword">new</span> naver.maps.LatLng(<span class="hljs-number">37.2444436</span>, <span class="hljs-number">131.8786475</span>)),
+    seoul = <span class="hljs-keyword">new</span> naver.maps.LatLngBounds(
+            <span class="hljs-keyword">new</span> naver.maps.LatLng(<span class="hljs-number">37.42829747263545</span>, <span class="hljs-number">126.76620435615891</span>),
+            <span class="hljs-keyword">new</span> naver.maps.LatLng(<span class="hljs-number">37.7010174173061</span>, <span class="hljs-number">127.18379493229875</span>));
+    
+    $(<span class="hljs-string">"#to-jeju"</span>).on(<span class="hljs-string">"click"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(e)</span> {</span>
+    e.preventDefault();
+    
+    map.setCenter(jeju);
+    });
+    
+    $(<span class="hljs-string">"#to-1"</span>).on(<span class="hljs-string">"click"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(e)</span> {</span>
+    e.preventDefault();
+    
+    map.setZoom(<span class="hljs-number">6</span>, <span class="hljs-literal">true</span>);
+    });
+    
+    $(<span class="hljs-string">"#to-dokdo"</span>).on(<span class="hljs-string">"click"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(e)</span> {</span>
+    e.preventDefault();
+    
+    map.fitBounds(dokdo);
+    });
+    
+    $(<span class="hljs-string">"#to-busan"</span>).on(<span class="hljs-string">"click"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(e)</span> {</span>
+    e.preventDefault();
+    
+    map.panTo(busan);
+    });
+    
+    $(<span class="hljs-string">"#to-seoul"</span>).on(<span class="hljs-string">"click"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(e)</span> {</span>
+    e.preventDefault();
+    
+    map.panToBounds(seoul);
+    });
+    
+    $(<span class="hljs-string">"#panBy"</span>).on(<span class="hljs-string">"click"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(e)</span> {</span>
+    e.preventDefault();
+    
+    map.panBy(<span class="hljs-keyword">new</span> naver.maps.Point(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>));
+    });
+    </pre></code>
+    </div>
+    <script id="code">
+    var map = new naver.maps.Map('map', {
+    center: new naver.maps.LatLng(37.5666805, 126.9784147),
+    zoom: 9
+    });
+    
+    var jeju = new naver.maps.LatLng(33.3590628, 126.534361),
+    busan = new naver.maps.LatLng(35.1797865, 129.0750194),
+    dokdo = new naver.maps.LatLngBounds(
+            new naver.maps.LatLng(37.2380651, 131.8562652),
+            new naver.maps.LatLng(37.2444436, 131.8786475)),
+    seoul = new naver.maps.LatLngBounds(
+            new naver.maps.LatLng(37.42829747263545, 126.76620435615891),
+            new naver.maps.LatLng(37.7010174173061, 127.18379493229875));
+    
+    $("#to-jeju").on("click", function(e) {
+    e.preventDefault();
+    
+    map.setCenter(jeju);
+    });
+    
+    $("#to-1").on("click", function(e) {
+    e.preventDefault();
+    
+    map.setZoom(6, true);
+    });
+    
+    $("#to-dokdo").on("click", function(e) {
+    e.preventDefault();
+    
+    map.fitBounds(dokdo);
+    });
+    
+    $("#to-busan").on("click", function(e) {
+    e.preventDefault();
+    
+    map.panTo(busan);
+    });
+    
+    $("#to-seoul").on("click", function(e) {
+    e.preventDefault();
+    
+    map.panToBounds(seoul);
+    });
+    
+    $("#panBy").on("click", function(e) {
+    e.preventDefault();
+    
+    map.panBy(new naver.maps.Point(10, 10));
+    });
+    </script>
+    
+    
+    
+    
+    </article>
+    
+    </section>
+    
+    </div>
+    
+
+</body>
+</html>
