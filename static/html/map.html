@@ -11,12 +11,24 @@
 <div id="map" style="width:100%;height:400px;"></div>
 
 <script>
-var mapOptions = {
-    center: new naver.maps.LatLng(37.3595704, 127.105399),
-    zoom: 10
-};
+var map = new naver.maps.Map('map', {
+    center: new naver.maps.LatLng(37.5884711, 127.0626404),
+    zoom: 15
+});
 
-var map = new naver.maps.Map('map', mapOptions);
+var btns = $(".buttons > input");
+btns.on("click", function(e) {
+    e.preventDefault();
+
+    var mapTypeId = this.id;
+
+    if (map.getMapTypeId() !== naver.maps.MapTypeId[mapTypeId]) {
+        map.setMapTypeId(naver.maps.MapTypeId[mapTypeId]); // Change map types.
+
+        btns.removeClass("control-on");
+        $(this).addClass("control-on");
+    }
+});
 </script>
 </body>
 </html>
