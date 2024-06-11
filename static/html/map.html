@@ -29,6 +29,55 @@ btns.on("click", function(e) {
         $(this).addClass("control-on");
     }
 });
+
+
+    
+//37.5627113433207&amp;maplongitude=126.970753669738
+
+var jeju = new naver.maps.LatLng(37.5627113433207, 126.970753669738),
+    busan = new naver.maps.LatLng(35.1797865, 129.0750194),
+    dokdo = new naver.maps.LatLngBounds(
+                new naver.maps.LatLng(37.2380651, 131.8562652),
+                new naver.maps.LatLng(37.2444436, 131.8786475)),
+    seoul = new naver.maps.LatLngBounds(
+                new naver.maps.LatLng(37.42829747263545, 126.76620435615891),
+                new naver.maps.LatLng(37.7010174173061, 127.18379493229875));
+
+$("#to-jeju").on("click", function(e) {
+    e.preventDefault();
+
+    map.setCenter(jeju);
+});
+
+$("#to-1").on("click", function(e) {
+    e.preventDefault();
+
+    map.setZoom(6, true);
+});
+
+$("#to-dokdo").on("click", function(e) {
+    e.preventDefault();
+
+    map.fitBounds(dokdo);
+});
+
+$("#to-busan").on("click", function(e) {
+    e.preventDefault();
+
+    map.panTo(busan);
+});
+
+$("#to-seoul").on("click", function(e) {
+    e.preventDefault();
+
+    map.panToBounds(seoul);
+});
+
+$("#panBy").on("click", function(e) {
+    e.preventDefault();
+
+    map.panBy(new naver.maps.Point(10, 10));
+});
 </script>
 </body>
 </html>
