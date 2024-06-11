@@ -8,8 +8,15 @@
     <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=bg1zcyrcbe"></script>
 </head>
 <body>
-<div id="map" style="width:100%;height:400px;"></div>
-
+<div id="map" style="width:100%;height:800px;"></div>
+<div class="buttons">
+            <input id="to-jeju" type="button" value="setCenter (Jeju-do)" class="control-btn">
+            <input id="to-1" type="button" value="setZoom (level 6)" class="control-btn">
+            <input id="to-dokdo" type="button" value="fitBounds (Dokdo)" class="control-btn">
+            <input id="to-busan" type="button" value="panTo (Busan)" class="control-btn">
+            <input id="to-seoul" type="button" value="panToBounds (Seoul)" class="control-btn">
+            <input id="panBy" type="button" value="panBy" class="control-btn">
+        </div>
 <script>
 var map = new naver.maps.Map('map', {
     center: new naver.maps.LatLng(37.5884711, 127.0626404),
