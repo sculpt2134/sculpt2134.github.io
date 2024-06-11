@@ -315,4 +315,118 @@ $(document).ready(function() {
 });
 
 
+
+$(document).ready(function() {
+    function validateInput(id) {
+        return $(id).val().trim() !== "";
+    }
+
+    function openNextStep(currentStepHeaderId, nextStepHeaderId) {
+        $(currentStepHeaderId).removeClass('active');
+        $(nextStepHeaderId).addClass('active');
+        $(nextStepHeaderId).next().addClass('active-panel');
+        $(nextStepHeaderId).find('.reset-btn').prop('disabled', false);
+        $(nextStepHeaderId).next().find('button').prop('disabled', false);
+    }
+
+    function resetStep(step) {
+        switch(step) {
+            case 1:
+                $('#english-input, #korean-input').hide().prop('disabled', true);
+                $('#english-btn, #korean-btn').removeClass('selected');
+                $('#step2-header, #step3-header, #step4-header, #step5-header').removeClass('active').find('.reset-btn').prop('disabled', true);
+                $('.gender-btn, .alphabet-btn, #address').prop('disabled', true).val('');
+                $('#submit-btn').prop('disabled', true);
+                $('.panel').removeClass('active-panel');
+                $('#step1-header').text('Step 1: 입력 방식 선택');
+                break;
+            case 2:
+                $('.gender-btn').prop('disabled', false).removeClass('selected');
+                $('#step3-header, #step4-header, #step5-header').removeClass('active').find('.reset-btn').prop('disabled', true);
+                $('.alphabet-btn, #address').prop('disabled', true).val('');
+                $('#submit-btn').prop('disabled', true);
+                $('.panel').filter(':gt(2)').removeClass('active-panel');
+                $('#step2-header').text('Step 2: 성별 선택');
+                break;
+            case 3:
+                $('.gender-btn').prop('disabled', false);
+                $('#step3-header').text('Step 3: 성별 선택');
+                $('.alphabet-btn').prop('disabled', false).removeClass('selected');
+                $('#step4-header, #step5-header').removeClass('active').find('.reset-btn').prop('disabled', true);
+                $('#address').prop('disabled', true).val('');
+                $('#submit-btn').prop('disabled', true);
+                $('.panel').filter(':gt(3)').removeClass('active-panel');
+                break;
+            case 4:
+                $('.alphabet-btn').prop('disabled', false);
+                $('#step4-header').text('Step 4: 알파벳 선택');
+                $('#address').prop('disabled', false).val('').focus();
+                $('#step5-header').removeClass('active').find('.reset-btn').prop('disabled', true);
+                $('#submit-btn').prop('disabled', true);
+                $('.panel').filter(':gt(4)').removeClass('active-panel');
+                break;
+            case 5:
+                $('#submit-btn').prop('disabled', true);
+                $('#step5-header').text('Step 5: 확인');
+                break;
+        }
+    }
+
+    $('.reset-btn').click(function() {
+        const step = $(this).data('step');
+        resetStep(step);
+    });
+
+    $('#english-input, #korean-input').on('input', function() {
+        const inputType = $(this).attr('id') === 'english-input' ? '영문' : '한글';
+        if (validateInput('#' + $(this).attr('id'))) {
+            $('#step1-header').text('Step 1: ' + inputType + ' 입력 - ' + $(this).val());
+            openNextStep('#step1-header', '#step2-header');
+        }
+    });
+
+    $('.input-type-btn').click(function() {
+        $('.input-type-btn').removeClass('selected');
+        $(this).addClass('selected');
+        const inputType = $(this).data('value');
+        if (inputType === '영문') {
+            $('#english-input').show().prop('disabled', false).focus();
+            $('#korean-input').hide().prop('disabled', true);
+        } else {
+            $('#korean-input').show().prop('disabled', false).focus();
+            $('#english-input').hide().prop('disabled', true);
+        }
+        $('#step1-header').text('Step 1: 입력 방식 선택 - ' + inputType);
+    });
+
+    $('.gender-btn').click(function() {
+        $('.gender-btn').removeClass('selected');
+        $(this).addClass('selected');
+        $('#step2-header').text('Step 2: 성별 선택 - ' + $(this).data('value'));
+        openNextStep('#step2-header', '#step3-header');
+    });
+
+    $('.alphabet-btn').click(function() {
+        $('.alphabet-btn').removeClass('selected');
+        $(this).addClass('selected');
+        $('#step3-header').text('Step 3: 알파벳 선택 - ' + $(this).data('value'));
+        openNextStep('#step3-header', '#step4-header');
+        $('#address').prop('disabled', false).focus();
+    });
+
+    $('#address').on('input', function() {
+        if (validateInput('#address')) {
+            $('#step4-header').text('Step 4: 주소 입력 - ' + $(this).val());
+            openNextStep('#step4-header', '#step5-header');
+            $('#submit-btn').prop('disabled', false);
+        }
+    });
+
+    $('#submit-btn').click(function() {
+        alert('제출 완료!');
+    });
+});
+
+
+                    
                       
