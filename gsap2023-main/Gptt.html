@@ -174,3 +174,205 @@
     </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>5-스텝 신청 페이지</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-selectric/1.13.0/selectric.css">
+    <style>
+        .accordion {
+            cursor: pointer;
+            padding: 18px;
+            border: 1px solid #ddd;
+            margin: 5px 0;
+            transition: 0.4s;
+            background-color: #f1f1f1;
+            color: grey;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .accordion button {
+            background: none;
+            border: none;
+            color: inherit;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .active {
+            background-color: #2196F3;
+            color: white;
+        }
+        .panel {
+            display: none;
+            padding: 0 18px;
+            background-color: white;
+            overflow: hidden;
+        }
+        .active-panel {
+            display: block;
+        }
+        .button-group button {
+            margin: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .selected {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="accordion" id="step1-header">
+        Step 1: 이름 입력
+        <button class="reset-btn" data-step="1">↻</button>
+    </div>
+    <div class="panel">
+        <input type="text" id="name" placeholder="이름을 입력하세요">
+    </div>
+
+    <div class="accordion" id="step2-header">
+        Step 2: 성별 선택
+        <button class="reset-btn" data-step="2" disabled>↻</button>
+    </div>
+    <div class="panel button-group">
+        <button class="gender-btn" data-value="남자" disabled>남자</button>
+        <button class="gender-btn" data-value="여자" disabled>여자</button>
+        <button class="gender-btn" data-value="선택 안 함" disabled>선택 안 함</button>
+    </div>
+
+    <div class="accordion" id="step3-header">
+        Step 3: 알파벳 선택
+        <button class="reset-btn" data-step="3" disabled>↻</button>
+    </div>
+    <div class="panel button-group">
+        <button class="alphabet-btn" data-value="A" disabled>A</button>
+        <button class="alphabet-btn" data-value="B" disabled>B</button>
+        <button class="alphabet-btn" data-value="C" disabled>C</button>
+    </div>
+
+    <div class="accordion" id="step4-header">
+        Step 4: 주소 입력
+        <button class="reset-btn" data-step="4" disabled>↻</button>
+    </div>
+    <div class="panel">
+        <input type="text" id="address" placeholder="주소를 입력하세요" disabled>
+    </div>
+
+    <div class="accordion" id="step5-header">
+        Step 5: 확인
+        <button class="reset-btn" data-step="5" disabled>↻</button>
+    </div>
+    <div class="panel">
+        <button id="submit-btn" disabled>제출</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-selectric/1.13.0/jquery.selectric.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            function validateInput(id) {
+                return $(id).val().trim() !== "";
+            }
+
+            function openNextStep(currentStepHeaderId, nextStepHeaderId) {
+                $(currentStepHeaderId).removeClass('active');
+                $(nextStepHeaderId).removeClass('hidden').addClass('active');
+                $(nextStepHeaderId).next().addClass('active-panel');
+                $(nextStepHeaderId).find('.reset-btn').prop('disabled', false);
+                $(nextStepHeaderId).next().find('button').prop('disabled', false);
+            }
+
+            function resetStep(step) {
+                switch(step) {
+                    case 1:
+                        $('#name').val('').focus();
+                        $('#step2-header, #step3-header, #step4-header, #step5-header').removeClass('active').find('.reset-btn').prop('disabled', true);
+                        $('.gender-btn, .alphabet-btn, #address').prop('disabled', true).val('');
+                        $('#submit-btn').prop('disabled', true);
+                        $('.panel').removeClass('active-panel');
+                        $('#step1-header').text('Step 1: 이름 입력');
+                        break;
+                    case 2:
+                        $('.gender-btn').prop('disabled', false).removeClass('selected');
+                        $('#step3-header, #step4-header, #step5-header').removeClass('active').find('.reset-btn').prop('disabled', true);
+                        $('.alphabet-btn, #address').prop('disabled', true).val('');
+                        $('#submit-btn').prop('disabled', true);
+                        $('.panel').filter(':gt(1)').removeClass('active-panel');
+                        $('#step2-header').text('Step 2: 성별 선택');
+                        break;
+                    case 3:
+                        $('.alphabet-btn').prop('disabled', false).removeClass('selected');
+                        $('#step4-header, #step5-header').removeClass('active').find('.reset-btn').prop('disabled', true);
+                        $('#address').prop('disabled', true).val('');
+                        $('#submit-btn').prop('disabled', true);
+                        $('.panel').filter(':gt(2)').removeClass('active-panel');
+                        $('#step3-header').text('Step 3: 알파벳 선택');
+                        break;
+                    case 4:
+                        $('#address').val('').focus();
+                        $('#step5-header').removeClass('active').find('.reset-btn').prop('disabled', true);
+                        $('#submit-btn').prop('disabled', true);
+                        $('.panel').filter(':gt(3)').removeClass('active-panel');
+                        $('#step4-header').text('Step 4: 주소 입력');
+                        break;
+                    case 5:
+                        $('#submit-btn').prop('disabled', true);
+                        $('#step5-header').text('Step 5: 확인');
+                        break;
+                }
+            }
+
+            $('.reset-btn').click(function() {
+                const step = $(this).data('step');
+                resetStep(step);
+            });
+
+            $('#name').on('input', function() {
+                if (validateInput('#name')) {
+                    $('#step1-header').text('Step 1: 이름 입력 - ' + $('#name').val());
+                    openNextStep('#step1-header', '#step2-header');
+                }
+            });
+
+            $('.gender-btn').click(function() {
+                $('.gender-btn').removeClass('selected');
+                $(this).addClass('selected');
+                $('#step2-header').text('Step 2: 성별 선택 - ' + $(this).data('value'));
+                openNextStep('#step2-header', '#step3-header');
+            });
+
+            $('.alphabet-btn').click(function() {
+                $('.alphabet-btn').removeClass('selected');
+                $(this).addClass('selected');
+                $('#step3-header').text('Step 3: 알파벳 선택 - ' + $(this).data('value'));
+                openNextStep('#step3-header', '#step4-header');
+            });
+
+            $('#address').on('input', function() {
+                if (validateInput('#address')) {
+                    $('#step4-header').text('Step 4: 주소 입력 - ' + $('#address').val());
+                    openNextStep('#step4-header', '#step5-header');
+                    $('#submit-btn').prop('disabled', false);
+                }
+            });
+
+            $('.accordion').click(function() {
+                $(this).next().toggleClass('active-panel');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+</html>
+
