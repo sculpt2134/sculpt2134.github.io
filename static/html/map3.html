@@ -58,7 +58,7 @@ function initMap() {
 		 {location : '용산' , lat : '37.5311008' , lng : '126.9810742'},  // 용산구 중심좌표
 		 {location : '은평' , lat : '37.6176125' , lng : '126.9227004'},  // 은평구 중심좌표
 		 {location : '종로' , lat : '37.5990998' , lng : '126.9861493'},  // 종로구 중심좌표
-		 {location : '중구' , lat : '37.5579452' , lng : '126.9941904'},  // 중구 중심좌표
+		 {location : 'OPIc시청' , lat : '37.5579452' , lng : '126.9941904'},  // 중구 중심좌표
 		 {location : '중랑구' , lat : '37.598031'  , lng : '127.092931' }   // 중랑구 중심좌표
 	);
 	
@@ -83,7 +83,7 @@ function initMap() {
 	        title: areaArr[i].location, // 지역구 이름 
 	        position: new naver.maps.LatLng(areaArr[i].lat , areaArr[i].lng), // 지역구의 위도 경도 넣기
 			icon: {
-            content: '<img src="flag.png" alt="" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; max-width: none; max-height: none; -webkit-user-select: none; position: absolute; width: 32px; height: 32px; left: 0px; top: 0px;">',
+            content: '<img src="map.png" alt="" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; max-width: none; max-height: none; -webkit-user-select: none; position: absolute; width: 32px; height: 32px; left: 0px; top: 0px;">',
             size: new naver.maps.Size(32, 32),
             anchor: new naver.maps.Point(16, 32)
         } 
